@@ -1,0 +1,7 @@
+---
+Checks: '-*,readability-identifier-naming'
+CheckOptions:
+  readability-identifier-naming.FunctionCase: camelBack
+  readability-identifier-naming.MethodCase: camelBack
+  readability-identifier-naming.FunctionIgnoredRegexp: '^(fromRGBA8|packRGBA8|handleOSEvent)$'
+  readability-identifier-naming.MethodIgnoredRegexp: '^(fromRGBA8|packRGBA8|handleOSEvent)$'
