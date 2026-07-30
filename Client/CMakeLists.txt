@@ -14,5 +14,6 @@ target_compile_definitions(Client PRIVATE
 	"PONYDOCK_PACKS_DIR=\"${CMAKE_SOURCE_DIR}/Packs\"")
 
 find_package(nlohmann_json CONFIG REQUIRED)
+find_package(EnTT CONFIG REQUIRED)
 
-target_link_libraries(Client PRIVATE imgui nlohmann_json::nlohmann_json)
+target_link_libraries(Client PRIVATE imgui nlohmann_json::nlohmann_json EnTT::EnTT d3dcompiler dwmapi)

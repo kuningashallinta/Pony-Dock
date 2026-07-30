@@ -28,8 +28,11 @@ bool PDImGui::initialize(HINSTANCE instance, const char *title, int width, int h
 		nullptr, nullptr, "PonyDockClassName", icon};
 	RegisterClassEx(&windowClass);
 
-	m_window = CreateWindow(windowClass.lpszClassName, title, WS_OVERLAPPEDWINDOW, 100, 100, width, height, nullptr,
-		nullptr, instance, nullptr);
+	RECT windowRect = {0, 0, width, height};
+	AdjustWindowRect(&windowRect, WS_OVERLAPPEDWINDOW, FALSE);
+
+	m_window = CreateWindow(windowClass.lpszClassName, title, WS_OVERLAPPEDWINDOW, 100, 100,
+		windowRect.right - windowRect.left, windowRect.bottom - windowRect.top, nullptr, nullptr, instance, nullptr);
 
 	if (not createDevice())
 	{

@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 3.28)
 
+if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
+	set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/vendor/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		CACHE STRING "")
+endif()
+
 project(PonyDock CXX)
 
 set(CMAKE_CXX_STANDARD 23)
