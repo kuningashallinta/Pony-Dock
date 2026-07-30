@@ -1,5 +1,7 @@
 #include <App/PDMainApplication.h>
 
+#include <Assets/resource.h>
+
 PDMainApplication::PDMainApplication()
 	: m_mainWindow(*this)
 {
@@ -9,7 +11,9 @@ int PDMainApplication::run(HINSTANCE instance)
 {
 	m_host.setFrameCallback([this]() { m_mainWindow.draw(); });
 
-	if (not m_host.initialize(instance, "Pony Dock", 720, 480))
+	HICON const icon = LoadIcon(instance, MAKEINTRESOURCE(IDI_APPICON));
+
+	if (not m_host.initialize(instance, "Pony Dock", 720, 480, icon))
 	{
 		return 1;
 	}

@@ -18,12 +18,12 @@ void PDImGui::setFrameCallback(std::function<void()> callback)
 	m_frameCallback = std::move(callback);
 }
 
-bool PDImGui::initialize(HINSTANCE instance, const char *title, int width, int height)
+bool PDImGui::initialize(HINSTANCE instance, const char *title, int width, int height, HICON icon)
 {
 	s_instance = this;
 
-	WNDCLASSEX windowClass = {sizeof(WNDCLASSEX), CS_CLASSDC, staticWndProc, 0, 0, instance, nullptr, nullptr,
-		nullptr, nullptr, "PonyDockClassName", nullptr};
+	WNDCLASSEX windowClass = {sizeof(WNDCLASSEX), CS_CLASSDC, staticWndProc, 0, 0, instance, icon, nullptr,
+		nullptr, nullptr, "PonyDockClassName", icon};
 	RegisterClassEx(&windowClass);
 
 	m_window = CreateWindow(windowClass.lpszClassName, title, WS_OVERLAPPEDWINDOW, 100, 100, width, height, nullptr,

@@ -1,6 +1,7 @@
 file(GLOB_RECURSE CLIENT_SOURCES CONFIGURE_DEPENDS
 	"*.h"
-	"*.cpp")
+	"*.cpp"
+	"*.rc")
 
 add_executable(Client WIN32 ${CLIENT_SOURCES})
 

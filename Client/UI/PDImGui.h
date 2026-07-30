@@ -10,7 +10,7 @@ class PDImGui
 public:
 	void setFrameCallback(std::function<void()> callback);
 
-	bool initialize(HINSTANCE instance, const char *title, int width, int height);
+	bool initialize(HINSTANCE instance, const char *title, int width, int height, HICON icon = nullptr);
 	void shutdown();
 
 	bool pumpMessages();
