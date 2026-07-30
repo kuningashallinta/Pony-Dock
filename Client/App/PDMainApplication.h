@@ -1,5 +1,6 @@
 #pragma once
 
+#include <Engine/PDDiagnostics.h>
 #include <Engine/PDOverlayWindow.h>
 #include <Engine/PDScene.h>
 #include <Engine/PDSpriteRenderer.h>
@@ -34,6 +35,7 @@ private:
 	void runOverlay(HINSTANCE instance);
 	void applyPendingScene();
 
+	PDDiagnostics m_diagnostics;
 	PDImGui m_host;
 	PDMainWindow m_mainWindow;
 

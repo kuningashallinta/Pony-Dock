@@ -7,7 +7,7 @@
 #include <utility>
 
 PDMainApplication::PDMainApplication()
-	: m_mainWindow(*this, m_host)
+	: m_mainWindow(*this, m_host, m_diagnostics)
 {
 }
 
@@ -50,12 +50,23 @@ int PDMainApplication::run(HINSTANCE instance)
 
 void PDMainApplication::runOverlay(HINSTANCE instance)
 {
-	if (not m_overlay.initialize(instance) or not m_spriteRenderer.initialize(m_overlay.device()))
+	if (not m_overlay.initialize(instance))
 	{
+		m_diagnostics.write("Overlay window failed to initialize");
+
 		return;
 	}
 
-	m_scene.initialize(m_overlay.device());
+	if (not m_spriteRenderer.initialize(m_overlay.device()))
+	{
+		m_diagnostics.write("Sprite renderer failed to initialize");
+
+		return;
+	}
+
+	m_scene.initialize(m_overlay.device(), m_diagnostics);
+
+	m_diagnostics.write("Overlay ready at " + std::to_string(m_overlay.width()) + "x" + std::to_string(m_overlay.height()));
 
 	std::chrono::steady_clock::time_point lastTick = std::chrono::steady_clock::now();
 
@@ -105,7 +116,7 @@ void PDMainApplication::applyPendingScene()
 	{
 		for (int i = 0; i < entry.quantity; i += 1)
 		{
-			m_scene.spawnEntity(entry.previewPath, std::string(PONYDOCK_SCRIPTS_DIR) + "/walk.lua", x, 0.0f);
+			m_scene.spawnEntity(entry.packPath, std::string(PONYDOCK_SCRIPTS_DIR) + "/walk.lua", x, 0.0f);
 			x += 120.0f;
 		}
 	}

@@ -9,7 +9,17 @@ public:
 	void shutdown();
 
 	void begin(ID3D11DeviceContext *context, int screenWidth, int screenHeight);
-	void draw(ID3D11ShaderResourceView *texture, float x, float y, float width, float height);
+
+	void draw(
+		ID3D11ShaderResourceView *texture,
+		float x,
+		float y,
+		float width,
+		float height,
+		float u0,
+		float v0,
+		float u1,
+		float v1);
 
 private:
 	ID3D11VertexShader *m_vertexShader = nullptr;

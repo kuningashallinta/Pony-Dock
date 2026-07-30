@@ -1,5 +1,6 @@
 #pragma once
 
+#include <Engine/PDDiagnostics.h>
 #include <Engine/PDTexture.h>
 #include <Library/PDPonyCatalog.h>
 #include <Library/PDSceneEntry.h>
@@ -14,7 +15,7 @@ class PDImGui;
 class PDMainWindow
 {
 public:
-	PDMainWindow(PDMainApplication &app, PDImGui &host);
+	PDMainWindow(PDMainApplication &app, PDImGui &host, PDDiagnostics &diagnostics);
 
 	void draw();
 
@@ -24,7 +25,8 @@ private:
 		Browser,
 		Scene,
 		Modules,
-		Settings
+		Settings,
+		Log
 	};
 
 	void drawSidebar(float width, float height);
@@ -42,8 +44,11 @@ private:
 	void removeSceneEntry(std::size_t index);
 	int sceneTotalQuantity() const;
 
+	void drawLogView();
+
 	PDMainApplication &m_app;
 	PDImGui &m_host;
+	PDDiagnostics &m_diagnostics;
 	View m_activeView = View::Browser;
 
 	PDPonyCatalog m_catalog;

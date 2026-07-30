@@ -183,7 +183,16 @@ void PDSpriteRenderer::begin(ID3D11DeviceContext *context, int screenWidth, int 
 	context->IASetVertexBuffers(0, 1, &m_vertexBuffer, &stride, &offset);
 }
 
-void PDSpriteRenderer::draw(ID3D11ShaderResourceView *texture, float x, float y, float width, float height)
+void PDSpriteRenderer::draw(
+	ID3D11ShaderResourceView *texture,
+	float x,
+	float y,
+	float width,
+	float height,
+	float u0,
+	float v0,
+	float u1,
+	float v1)
 {
 	if (m_context == nullptr or texture == nullptr or m_screenWidth <= 0 or m_screenHeight <= 0)
 	{
@@ -200,10 +209,10 @@ void PDSpriteRenderer::draw(ID3D11ShaderResourceView *texture, float x, float y,
 	};
 
 	PDVertex2D const vertices[4] = {
-		{toNdcX(x), toNdcY(y), 0.0f, 0.0f},
-		{toNdcX(x + width), toNdcY(y), 1.0f, 0.0f},
-		{toNdcX(x), toNdcY(y + height), 0.0f, 1.0f},
-		{toNdcX(x + width), toNdcY(y + height), 1.0f, 1.0f},
+		{toNdcX(x), toNdcY(y), u0, v0},
+		{toNdcX(x + width), toNdcY(y), u1, v0},
+		{toNdcX(x), toNdcY(y + height), u0, v1},
+		{toNdcX(x + width), toNdcY(y + height), u1, v1},
 	};
 
 	D3D11_MAPPED_SUBRESOURCE mapped;

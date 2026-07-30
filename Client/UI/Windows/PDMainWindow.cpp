@@ -67,9 +67,10 @@ namespace
 	}
 } // namespace
 
-PDMainWindow::PDMainWindow(PDMainApplication &app, PDImGui &host)
+PDMainWindow::PDMainWindow(PDMainApplication &app, PDImGui &host, PDDiagnostics &diagnostics)
 	: m_app(app),
-	  m_host(host)
+	  m_host(host),
+	  m_diagnostics(diagnostics)
 {
 	m_catalog.load(PONYDOCK_PACKS_DIR);
 }
@@ -125,6 +126,8 @@ void PDMainWindow::drawSidebar(float width, float height)
 	navItem("Modules", View::Modules);
 	ImGui::Dummy(ImVec2(0.0f, 2.0f));
 	navItem("Settings", View::Settings);
+	ImGui::Dummy(ImVec2(0.0f, 2.0f));
+	navItem("Log", View::Log);
 
 	constexpr float bottomGap = 20.0f;
 	constexpr float footerHeight = 42.0f + 8.0f + 30.0f + bottomGap;
@@ -249,6 +252,13 @@ void PDMainWindow::drawContent()
 		case View::Scene:
 		{
 			drawSceneView();
+
+			break;
+		}
+
+		case View::Log:
+		{
+			drawLogView();
 
 			break;
 		}
@@ -538,6 +548,7 @@ void PDMainWindow::addToScene(std::string const &displayName, PDPonyPack const &
 	entry.id = pack.id;
 	entry.displayName = displayName;
 	entry.previewPath = pack.previewPath;
+	entry.packPath = pack.packPath;
 	entry.quantity = 1;
 	m_scene.push_back(std::move(entry));
 }
@@ -550,6 +561,71 @@ void PDMainWindow::removeSceneEntry(std::size_t index)
 	}
 
 	m_scene.erase(m_scene.begin() + static_cast<std::ptrdiff_t>(index));
+}
+
+void PDMainWindow::drawLogView()
+{
+	if (ImGui::Button("Clear"))
+	{
+		m_diagnostics.clear();
+	}
+
+	std::vector<std::string> const lines = m_diagnostics.lines();
+	std::vector<std::pair<std::string, int>> const repeats = m_diagnostics.repeats();
+
+	ImGui::SameLine();
+
+	char summary[64];
+	std::snprintf(summary, sizeof(summary), "%zu lines", lines.size());
+	const float summaryWidth = ImGui::CalcTextSize(summary).x;
+	ImGui::SetCursorPosX(ImGui::GetCursorPosX() + ImGui::GetContentRegionAvail().x - summaryWidth);
+	ImGui::AlignTextToFramePadding();
+	ImGui::TextDisabled("%s", summary);
+
+	ImGui::Dummy(ImVec2(0.0f, 8.0f));
+
+	if (not repeats.empty())
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+		ImGui::TextUnformatted("Repeated");
+		ImGui::PopStyleColor();
+
+		for (std::pair<std::string, int> const &entry : repeats)
+		{
+			ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::AccentText);
+			ImGui::Text("%d x", entry.second);
+			ImGui::PopStyleColor();
+			ImGui::SameLine();
+			ImGui::TextWrapped("%s", entry.first.c_str());
+		}
+
+		ImGui::Dummy(ImVec2(0.0f, 8.0f));
+		ImGui::Separator();
+		ImGui::Dummy(ImVec2(0.0f, 8.0f));
+	}
+
+	if (lines.empty())
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+		ImGui::TextUnformatted("Nothing logged yet.");
+		ImGui::PopStyleColor();
+
+		return;
+	}
+
+	ImGui::BeginChild("logLines");
+
+	for (std::string const &line : lines)
+	{
+		ImGui::TextWrapped("%s", line.c_str());
+	}
+
+	if (ImGui::GetScrollY() >= ImGui::GetScrollMaxY() - 1.0f)
+	{
+		ImGui::SetScrollHereY(1.0f);
+	}
+
+	ImGui::EndChild();
 }
 
 int PDMainWindow::sceneTotalQuantity() const
