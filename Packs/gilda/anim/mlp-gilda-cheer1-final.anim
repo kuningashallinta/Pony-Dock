@@ -1,0 +1,24 @@
+{
+  "atlas": "mlp-gilda-cheer1-final.png",
+  "atlasSize": [
+    106,
+    104
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        106,
+        104
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    43,
+    56
+  ],
+  "schemaVersion": 1
+}

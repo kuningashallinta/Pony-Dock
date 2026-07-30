@@ -1,0 +1,33 @@
+{
+  "atlas": "thunderlane-sleep-right.png",
+  "atlasSize": [
+    172,
+    62
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        86,
+        62
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        86,
+        0,
+        86,
+        62
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    45,
+    20
+  ],
+  "schemaVersion": 1
+}

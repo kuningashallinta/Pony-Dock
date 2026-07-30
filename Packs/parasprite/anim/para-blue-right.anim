@@ -1,0 +1,51 @@
+{
+  "atlas": "para-blue-right.png",
+  "atlasSize": [
+    56,
+    44
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        28,
+        22
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        28,
+        0,
+        28,
+        22
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        22,
+        28,
+        22
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        28,
+        22,
+        28,
+        22
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,33 @@
+{
+  "atlas": "applefritter-sleep-right.png",
+  "atlasSize": [
+    152,
+    48
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        76,
+        48
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        76,
+        0,
+        76,
+        48
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    32,
+    8
+  ],
+  "schemaVersion": 1
+}

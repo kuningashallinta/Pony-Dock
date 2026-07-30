@@ -1,0 +1,60 @@
+{
+  "atlas": "standingright-left.png",
+  "atlasSize": [
+    294,
+    176
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        0,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        0,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        88,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        98,
+        88,
+        98,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

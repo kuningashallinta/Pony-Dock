@@ -1,0 +1,542 @@
+{
+  "animations": {
+    "winona-run": {
+      "left": "anim/winona-run-left.anim",
+      "right": "anim/winona-run-right.anim"
+    },
+    "winona-stand": {
+      "left": "anim/winona-stand-left.anim",
+      "right": "anim/winona-stand-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "winona-stand",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "mouseover",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "mouseover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "run",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "run",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": 67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack",
+      "linkedBehavior": "follow_applejack2",
+      "movement": "All",
+      "name": "follow_applejack",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": -67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack2",
+      "linkedBehavior": "follow_applejack3",
+      "movement": "All",
+      "name": "follow_applejack2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": 67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack3",
+      "linkedBehavior": "follow_applejack4",
+      "movement": "All",
+      "name": "follow_applejack3",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": -67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack4",
+      "linkedBehavior": "follow_applejack5",
+      "movement": "All",
+      "name": "follow_applejack4",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": 67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack5",
+      "linkedBehavior": "follow_applejack6",
+      "movement": "All",
+      "name": "follow_applejack5",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": -67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack6",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_applejack6",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": 67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_angel",
+      "linkedBehavior": "follow_applejack2",
+      "movement": "All",
+      "name": "follow_angel",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": -67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack12",
+      "linkedBehavior": "follow_applejack2",
+      "movement": "All",
+      "name": "follow_applejack12",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": 67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack22",
+      "linkedBehavior": "follow_applejack3",
+      "movement": "All",
+      "name": "follow_applejack22",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": -67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack32",
+      "linkedBehavior": "follow_applejack4",
+      "movement": "All",
+      "name": "follow_applejack32",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": 67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack42",
+      "linkedBehavior": "follow_applejack5",
+      "movement": "All",
+      "name": "follow_applejack42",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": -67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack52",
+      "linkedBehavior": "follow_applejack6",
+      "movement": "All",
+      "name": "follow_applejack52",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": 67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_applejack62",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_applejack62",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-run",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_applejack",
+        "offsetX": -67,
+        "offsetY": 75,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_angel12",
+      "linkedBehavior": "follow_applejack2",
+      "movement": "All",
+      "name": "follow_angel12",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "winona-stand",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "winona",
+  "interactions": [],
+  "name": "Winona",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "pets",
+    "non-ponies"
+  ]
+}

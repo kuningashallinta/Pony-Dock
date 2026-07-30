@@ -1,0 +1,114 @@
+{
+  "atlas": "breezie-pinkiepie-left.png",
+  "atlasSize": [
+    328,
+    198
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        82,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        82,
+        0,
+        82,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        164,
+        0,
+        82,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        246,
+        0,
+        82,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        66,
+        82,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        82,
+        66,
+        82,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        164,
+        66,
+        82,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        246,
+        66,
+        82,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        132,
+        82,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        82,
+        132,
+        82,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        164,
+        132,
+        82,
+        66
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

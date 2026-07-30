@@ -1,0 +1,123 @@
+{
+  "atlas": "sunsetshimmer-gallop-left.png",
+  "atlasSize": [
+    472,
+    246
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        118,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        118,
+        0,
+        118,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        236,
+        0,
+        118,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        354,
+        0,
+        118,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        82,
+        118,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        118,
+        82,
+        118,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        236,
+        82,
+        118,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        354,
+        82,
+        118,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        164,
+        118,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        118,
+        164,
+        118,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        236,
+        164,
+        118,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        354,
+        164,
+        118,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    50,
+    44
+  ],
+  "schemaVersion": 1
+}

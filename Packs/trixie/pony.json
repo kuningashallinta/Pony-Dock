@@ -1,0 +1,329 @@
+{
+  "animations": {
+    "fireworks": {
+      "left": "anim/fireworks.anim",
+      "right": "anim/fireworks.anim"
+    },
+    "sit": {
+      "left": "anim/sit-left.anim",
+      "right": "anim/sit-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "stand-2": {
+      "left": "anim/stand-2-left.anim",
+      "right": "anim/stand-2-right.anim"
+    },
+    "trixie-fireworks": {
+      "left": "anim/trixie-fireworks-left.anim",
+      "right": "anim/trixie-fireworks-right.anim"
+    },
+    "trixie-flowers": {
+      "left": "anim/trixie-flowers-left.anim",
+      "right": "anim/trixie-flowers-right.anim"
+    },
+    "trixie-naked-stand-rights": {
+      "left": "anim/trixie-naked-stand-rights-left.anim",
+      "right": "anim/trixie-naked-stand-rights-right.anim"
+    },
+    "trixie-naked-stand-rights-2": {
+      "left": "anim/trixie-naked-stand-rights-2-left.anim",
+      "right": "anim/trixie-naked-stand-rights-2-right.anim"
+    },
+    "trixie-naked-trot": {
+      "left": "anim/trixie-naked-trot-left.anim",
+      "right": "anim/trixie-naked-trot-right.anim"
+    },
+    "walking": {
+      "left": "anim/walking-left.anim",
+      "right": "anim/walking-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    },
+    {
+      "id": 2,
+      "name": "No Cape"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walking",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sit",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trixie-fireworks",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand_fireworks",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand_fireworks",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "soundboard #8",
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trixie-flowers",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 7000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flowers",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "flowers",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trixie-naked-stand-rights",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "stand-naked",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand-naked",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trixie-naked-trot",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "walking-naked",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walking-naked",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 10240,
+        "min": 10240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "take_off_cape",
+      "linkedBehavior": "stand-naked",
+      "movement": "None",
+      "name": "take_off_cape",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trixie-naked-stand-rights-2",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10240,
+        "min": 10240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "put_on_cape",
+      "linkedBehavior": "stand",
+      "movement": "None",
+      "name": "put_on_cape",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Shopkeeper"
+      },
+      "group": 0,
+      "id": "deal_trixie",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_trixie",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "fireworks",
+      "behavior": "stand_fireworks",
+      "centering": {
+        "left": "Bottom_Center",
+        "right": "Bottom_Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "fireworks",
+      "name": "fireworks",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "trixie",
+  "interactions": [],
+  "name": "Trixie",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

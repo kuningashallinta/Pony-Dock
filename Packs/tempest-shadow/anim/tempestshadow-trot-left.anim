@@ -1,0 +1,159 @@
+{
+  "atlas": "tempestshadow-trot-left.png",
+  "atlasSize": [
+    304,
+    424
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        0,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        0,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        0,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        106,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        106,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        106,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        106,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        212,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        212,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        212,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        212,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        318,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        318,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        318,
+        76,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        318,
+        76,
+        106
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    37,
+    58
+  ],
+  "schemaVersion": 1
+}

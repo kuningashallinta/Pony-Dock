@@ -1,0 +1,51 @@
+{
+  "atlas": "big-mac-sleep-right.png",
+  "atlasSize": [
+    172,
+    116
+  ],
+  "frames": [
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        0,
+        86,
+        58
+      ]
+    },
+    {
+      "durationMs": 800,
+      "rect": [
+        86,
+        0,
+        86,
+        58
+      ]
+    },
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        58,
+        86,
+        58
+      ]
+    },
+    {
+      "durationMs": 800,
+      "rect": [
+        86,
+        58,
+        86,
+        58
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

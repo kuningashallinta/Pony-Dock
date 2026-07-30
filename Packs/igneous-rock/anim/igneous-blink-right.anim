@@ -1,0 +1,123 @@
+{
+  "atlas": "igneous-blink-right.png",
+  "atlasSize": [
+    336,
+    276
+  ],
+  "frames": [
+    {
+      "durationMs": 1500,
+      "rect": [
+        0,
+        0,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        84,
+        0,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        168,
+        0,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        252,
+        0,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        92,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        84,
+        92,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 4500,
+      "rect": [
+        168,
+        92,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        252,
+        92,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        184,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        84,
+        184,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        168,
+        184,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        252,
+        184,
+        84,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    41,
+    46
+  ],
+  "schemaVersion": 1
+}

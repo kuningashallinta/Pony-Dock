@@ -1,0 +1,33 @@
+{
+  "atlas": "silverspeed-sleep-left.png",
+  "atlasSize": [
+    136,
+    72
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        68,
+        72
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        68,
+        0,
+        68,
+        72
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

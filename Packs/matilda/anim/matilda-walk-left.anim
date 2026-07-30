@@ -1,0 +1,123 @@
+{
+  "atlas": "matilda-walk-left.png",
+  "atlasSize": [
+    336,
+    282
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        84,
+        0,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        168,
+        0,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        252,
+        0,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        94,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        84,
+        94,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        168,
+        94,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        252,
+        94,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        188,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        84,
+        188,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        168,
+        188,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        252,
+        188,
+        84,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

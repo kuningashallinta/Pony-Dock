@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "igneous-blink": {
+      "left": "anim/igneous-blink-left.anim",
+      "right": "anim/igneous-blink-right.anim"
+    },
+    "igneus-rock-trotting": {
+      "left": "anim/igneus-rock-trotting-left.anim",
+      "right": "anim/igneus-rock-trotting-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "igneous-blink",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "igneus-rock-trotting",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "igneous-rock",
+  "interactions": [],
+  "name": "Igneous Rock",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "supporting ponies",
+    "earth ponies"
+  ]
+}

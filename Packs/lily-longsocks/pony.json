@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "trot": {
+      "left": "anim/trot-left.anim",
+      "right": "anim/trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "lily-longsocks",
+  "interactions": [],
+  "name": "Lily Longsocks",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "fillies",
+    "earth ponies"
+  ]
+}

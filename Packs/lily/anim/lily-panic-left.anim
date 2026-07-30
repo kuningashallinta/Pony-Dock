@@ -1,0 +1,141 @@
+{
+  "atlas": "lily-panic-left.png",
+  "atlasSize": [
+    464,
+    392
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        0,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        0,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        348,
+        0,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        98,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        116,
+        98,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        232,
+        98,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        98,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        196,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        116,
+        196,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        232,
+        196,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        348,
+        196,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        294,
+        116,
+        98
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        116,
+        294,
+        116,
+        98
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    69,
+    56
+  ],
+  "schemaVersion": 1
+}

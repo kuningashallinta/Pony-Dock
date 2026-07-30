@@ -1,0 +1,69 @@
+{
+  "atlas": "random-pony.png",
+  "atlasSize": [
+    318,
+    192
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        106,
+        0,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        212,
+        0,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        96,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        106,
+        96,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        212,
+        96,
+        106,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

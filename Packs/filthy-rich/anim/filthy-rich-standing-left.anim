@@ -1,0 +1,33 @@
+{
+  "atlas": "filthy-rich-standing-left.png",
+  "atlasSize": [
+    172,
+    80
+  ],
+  "frames": [
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        0,
+        86,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        86,
+        0,
+        86,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

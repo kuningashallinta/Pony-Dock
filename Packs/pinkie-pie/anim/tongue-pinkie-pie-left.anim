@@ -1,0 +1,42 @@
+{
+  "atlas": "tongue-pinkie-pie-left.png",
+  "atlasSize": [
+    216,
+    160
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        108,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        108,
+        0,
+        108,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        80,
+        108,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    49,
+    36
+  ],
+  "schemaVersion": 1
+}

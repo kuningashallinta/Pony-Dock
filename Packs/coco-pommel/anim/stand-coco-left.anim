@@ -1,0 +1,69 @@
+{
+  "atlas": "stand-coco-left.png",
+  "atlasSize": [
+    240,
+    164
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        80,
+        82
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        80,
+        0,
+        80,
+        82
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        160,
+        0,
+        80,
+        82
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        82,
+        80,
+        82
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        80,
+        82,
+        80,
+        82
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        160,
+        82,
+        80,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    41,
+    36
+  ],
+  "schemaVersion": 1
+}

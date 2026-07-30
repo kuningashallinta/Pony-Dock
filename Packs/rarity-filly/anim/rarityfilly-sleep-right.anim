@@ -1,0 +1,60 @@
+{
+  "atlas": "rarityfilly-sleep-right.png",
+  "atlasSize": [
+    204,
+    112
+  ],
+  "frames": [
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        0,
+        68,
+        56
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        68,
+        0,
+        68,
+        56
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        136,
+        0,
+        68,
+        56
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        56,
+        68,
+        56
+      ]
+    },
+    {
+      "durationMs": 12000,
+      "rect": [
+        68,
+        56,
+        68,
+        56
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    29,
+    22
+  ],
+  "schemaVersion": 1
+}

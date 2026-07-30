@@ -1,0 +1,159 @@
+{
+  "atlas": "princess-twilight-zoom-left.png",
+  "atlasSize": [
+    472,
+    368
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        118,
+        0,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        236,
+        0,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        354,
+        0,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        92,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        118,
+        92,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        236,
+        92,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        354,
+        92,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        184,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        118,
+        184,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        236,
+        184,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        354,
+        184,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        276,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        118,
+        276,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        236,
+        276,
+        118,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        354,
+        276,
+        118,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    52
+  ],
+  "schemaVersion": 1
+}

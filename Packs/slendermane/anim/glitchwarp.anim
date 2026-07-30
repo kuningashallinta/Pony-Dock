@@ -1,0 +1,24 @@
+{
+  "atlas": "glitchwarp.png",
+  "atlasSize": [
+    100,
+    88
+  ],
+  "frames": [
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        0,
+        100,
+        88
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

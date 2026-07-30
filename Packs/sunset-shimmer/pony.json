@@ -1,0 +1,183 @@
+{
+  "animations": {
+    "sunset-teleport-end": {
+      "left": "anim/sunset-teleport-end-left.anim",
+      "right": "anim/sunset-teleport-end-right.anim"
+    },
+    "sunset-teleport-start": {
+      "left": "anim/sunset-teleport-start-left.anim",
+      "right": "anim/sunset-teleport-start-right.anim"
+    },
+    "sunsetshimmer": {
+      "left": "anim/sunsetshimmer-left.anim",
+      "right": "anim/sunsetshimmer-right.anim"
+    },
+    "sunsetshimmer-gallop": {
+      "left": "anim/sunsetshimmer-gallop-left.anim",
+      "right": "anim/sunsetshimmer-gallop-right.anim"
+    },
+    "sunsetshimmer-idle": {
+      "left": "anim/sunsetshimmer-idle-left.anim",
+      "right": "anim/sunsetshimmer-idle-right.anim"
+    },
+    "transit": {
+      "left": "anim/transit.anim",
+      "right": "anim/transit.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "sunsetshimmer-idle",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sunsetshimmer",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sunsetshimmer-gallop",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "gallop",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "gallop",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sunset-teleport-start",
+      "chance": 0.17,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "warp1",
+      "linkedBehavior": "warp2",
+      "movement": "None",
+      "name": "warp1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "transit",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 750,
+        "min": 375
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "warp2",
+      "linkedBehavior": "warp3",
+      "movement": "Diagonal_Vertical",
+      "name": "warp2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 266.6666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sunset-teleport-end",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1360,
+        "min": 1360
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "warp3",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "warp3",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "sunset-shimmer",
+  "interactions": [],
+  "name": "Sunset Shimmer",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "mares",
+    "unicorns",
+    "supporting ponies"
+  ]
+}

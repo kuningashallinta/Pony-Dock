@@ -1,0 +1,123 @@
+{
+  "atlas": "front-flip-full-twist-salto-pinkie-pie-left.png",
+  "atlasSize": [
+    440,
+    444
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        110,
+        148
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        110,
+        0,
+        110,
+        148
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        220,
+        0,
+        110,
+        148
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        330,
+        0,
+        110,
+        148
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        148,
+        110,
+        148
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        110,
+        148,
+        110,
+        148
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        220,
+        148,
+        110,
+        148
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        330,
+        148,
+        110,
+        148
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        296,
+        110,
+        148
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        110,
+        296,
+        110,
+        148
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        220,
+        296,
+        110,
+        148
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        330,
+        296,
+        110,
+        148
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    66,
+    103
+  ],
+  "schemaVersion": 1
+}

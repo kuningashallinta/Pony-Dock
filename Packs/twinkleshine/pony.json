@@ -1,0 +1,154 @@
+{
+  "animations": {
+    "twinkleshine-sit": {
+      "left": "anim/twinkleshine-sit-left.anim",
+      "right": "anim/twinkleshine-sit-right.anim"
+    },
+    "twinkleshine-sleep": {
+      "left": "anim/twinkleshine-sleep-left.anim",
+      "right": "anim/twinkleshine-sleep-right.anim"
+    },
+    "twinkleshine-stand": {
+      "left": "anim/twinkleshine-stand-left.anim",
+      "right": "anim/twinkleshine-stand-right.anim"
+    },
+    "twinkleshine-trot": {
+      "left": "anim/twinkleshine-trot-left.anim",
+      "right": "anim/twinkleshine-trot-right.anim"
+    },
+    "twinkleshine-trot-right-blink": {
+      "left": "anim/twinkleshine-trot-right-blink-left.anim",
+      "right": "anim/twinkleshine-trot-right-blink-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "twinkleshine-stand",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 16000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "twinkleshine-trot",
+      "chance": 0.18,
+      "durationMs": {
+        "max": 15000,
+        "min": 13000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "twinkleshine-trot-right-blink",
+      "chance": 0.24,
+      "durationMs": {
+        "max": 24000,
+        "min": 19000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "twinkleshine-sit",
+      "chance": 0.16,
+      "durationMs": {
+        "max": 18000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "twinkleshine-sleep",
+      "chance": 0.13,
+      "durationMs": {
+        "max": 43000,
+        "min": 39000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": "sit",
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "twinkleshine",
+  "interactions": [],
+  "name": "Twinkleshine",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

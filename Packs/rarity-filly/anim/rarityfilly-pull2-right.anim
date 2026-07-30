@@ -1,0 +1,123 @@
+{
+  "atlas": "rarityfilly-pull2-right.png",
+  "atlasSize": [
+    336,
+    204
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        84,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        84,
+        0,
+        84,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        168,
+        0,
+        84,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        252,
+        0,
+        84,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        68,
+        84,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        84,
+        68,
+        84,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        168,
+        68,
+        84,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        252,
+        68,
+        84,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        136,
+        84,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        84,
+        136,
+        84,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        168,
+        136,
+        84,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        252,
+        136,
+        84,
+        68
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    35,
+    36
+  ],
+  "schemaVersion": 1
+}

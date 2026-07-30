@@ -1,0 +1,159 @@
+{
+  "atlas": "princess-twilight-flight-right.png",
+  "atlasSize": [
+    400,
+    432
+  ],
+  "frames": [
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        0,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        100,
+        0,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        200,
+        0,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        300,
+        0,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        108,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        100,
+        108,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        200,
+        108,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        300,
+        108,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        216,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        100,
+        216,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        200,
+        216,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        300,
+        216,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        324,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        100,
+        324,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        200,
+        324,
+        100,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        300,
+        324,
+        100,
+        108
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    57,
+    60
+  ],
+  "schemaVersion": 1
+}

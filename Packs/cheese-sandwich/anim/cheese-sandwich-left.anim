@@ -1,0 +1,159 @@
+{
+  "atlas": "cheese-sandwich-left.png",
+  "atlasSize": [
+    352,
+    416
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        0,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        0,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        0,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        104,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        88,
+        104,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        176,
+        104,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        104,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        208,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        208,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        208,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        208,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        312,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        88,
+        312,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        176,
+        312,
+        88,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        312,
+        88,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

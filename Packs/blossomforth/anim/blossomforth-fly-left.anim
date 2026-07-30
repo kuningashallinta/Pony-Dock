@@ -1,0 +1,78 @@
+{
+  "atlas": "blossomforth-fly-left.png",
+  "atlasSize": [
+    243,
+    264
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        81,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        81,
+        0,
+        81,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        162,
+        0,
+        81,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        88,
+        81,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        81,
+        88,
+        81,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        162,
+        88,
+        81,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        176,
+        81,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

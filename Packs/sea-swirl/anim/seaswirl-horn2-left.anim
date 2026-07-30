@@ -1,0 +1,51 @@
+{
+  "atlas": "seaswirl-horn2-left.png",
+  "atlasSize": [
+    200,
+    172
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        100,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        100,
+        0,
+        100,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        86,
+        100,
+        86
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        100,
+        86,
+        100,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    51,
+    42
+  ],
+  "schemaVersion": 1
+}

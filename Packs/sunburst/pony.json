@@ -1,0 +1,311 @@
+{
+  "animations": {
+    "sunburst-cape-idle": {
+      "left": "anim/sunburst-cape-idle-left.anim",
+      "right": "anim/sunburst-cape-idle-right.anim"
+    },
+    "sunburst-cape-trot": {
+      "left": "anim/sunburst-cape-trot-left.anim",
+      "right": "anim/sunburst-cape-trot-right.anim"
+    },
+    "sunburst-idle": {
+      "left": "anim/sunburst-idle-left.anim",
+      "right": "anim/sunburst-idle-right.anim"
+    },
+    "sunburst-trot": {
+      "left": "anim/sunburst-trot-left.anim",
+      "right": "anim/sunburst-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "robe"
+    },
+    {
+      "id": 2,
+      "name": "no robe"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "sunburst-cape-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sunburst-cape-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walking",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walking",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sunburst-cape-trot",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "remove_robe",
+      "linkedBehavior": "stand1",
+      "movement": "Diagonal_Horizontal",
+      "name": "remove_robe",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sunburst-cape-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 5000,
+        "min": 4500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "stand",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Starlight Glimmer"
+      },
+      "group": 1,
+      "id": "friendship1",
+      "linkedBehavior": "friendship1a",
+      "movement": "None",
+      "name": "friendship1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sunburst-cape-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 7000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "stand",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Starlight Glimmer"
+      },
+      "group": 1,
+      "id": "friendship1a",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "friendship1a",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Starlight",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sunburst-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "stand1",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sunburst-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "walking1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walking1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sunburst-trot",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "wear_robe",
+      "linkedBehavior": "stand",
+      "movement": "Diagonal_Horizontal",
+      "name": "wear_robe",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sunburst-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 5000,
+        "min": 4500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "stand1",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand1",
+        "target": "Starlight Glimmer"
+      },
+      "group": 2,
+      "id": "friendship2",
+      "linkedBehavior": "friendship2a",
+      "movement": "None",
+      "name": "friendship2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sunburst-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 7000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "stand1",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand1",
+        "target": "Starlight Glimmer"
+      },
+      "group": 2,
+      "id": "friendship2a",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "friendship2a",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Starlight",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "sunburst",
+  "interactions": [],
+  "name": "Sunburst",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "unicorns",
+    "supporting ponies"
+  ]
+}

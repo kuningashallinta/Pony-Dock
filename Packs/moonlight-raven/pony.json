@@ -1,0 +1,178 @@
+{
+  "animations": {
+    "moonlightraven-hug": {
+      "left": "anim/moonlightraven-hug-left.anim",
+      "right": "anim/moonlightraven-hug-right.anim"
+    },
+    "moonlightraven-idle": {
+      "left": "anim/moonlightraven-idle-left.anim",
+      "right": "anim/moonlightraven-idle-right.anim"
+    },
+    "moonlightraven-trot": {
+      "left": "anim/moonlightraven-trot-left.anim",
+      "right": "anim/moonlightraven-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "moonlightraven-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "moonlightraven-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "moonlightraven-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "moonlightraven-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "stand",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Sunshine Smiles"
+      },
+      "group": 0,
+      "id": "hug_start1",
+      "linkedBehavior": "hug",
+      "movement": "None",
+      "name": "hug_start1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Hi",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "moonlightraven-hug",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 10000
+      },
+      "endSpeech": "Heart",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "hug",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "hug",
+        "target": "Sunshine Smiles"
+      },
+      "group": 0,
+      "id": "hug",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "hug",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "moonlight-raven",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "hug_start1"
+      ],
+      "chance": 0.25,
+      "id": "MoonlightRaven_SunshineSmiles",
+      "name": "MoonlightRaven_SunshineSmiles",
+      "proximityPx": 200,
+      "reactivationDelayMs": 240000,
+      "targets": [
+        "sunshine-smiles"
+      ]
+    }
+  ],
+  "name": "Moonlight Raven",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

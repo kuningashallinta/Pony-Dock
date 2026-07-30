@@ -1,0 +1,104 @@
+{
+  "animations": {
+    "score-idle": {
+      "left": "anim/score-idle-left.anim",
+      "right": "anim/score-idle-right.anim"
+    },
+    "score-trot": {
+      "left": "anim/score-trot-left.anim",
+      "right": "anim/score-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "score-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "score-trot",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walking",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walking",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "score-trot",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": true,
+        "movingBehavior": null,
+        "offsetX": -44,
+        "offsetY": 14,
+        "stoppedBehavior": null,
+        "target": "Dumb-Bell"
+      },
+      "group": 0,
+      "id": "follow",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "score",
+  "interactions": [],
+  "name": "Score",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "pegasi",
+    "supporting ponies"
+  ]
+}

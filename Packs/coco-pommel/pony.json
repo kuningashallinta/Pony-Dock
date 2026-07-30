@@ -1,0 +1,123 @@
+{
+  "animations": {
+    "coco-sew": {
+      "left": "anim/coco-sew-left.anim",
+      "right": "anim/coco-sew-right.anim"
+    },
+    "stand-coco": {
+      "left": "anim/stand-coco-left.anim",
+      "right": "anim/stand-coco-right.anim"
+    },
+    "trot-coco": {
+      "left": "anim/trot-coco-left.anim",
+      "right": "anim/trot-coco-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand-coco",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot-coco",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot-coco",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "coco-sew",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 16000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Sew",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Sew",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "coco-pommel",
+  "interactions": [],
+  "name": "Coco Pommel",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

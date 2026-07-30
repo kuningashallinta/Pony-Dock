@@ -1,0 +1,296 @@
+{
+  "animations": {
+    "fly": {
+      "left": "anim/fly-left.anim",
+      "right": "anim/fly-right.anim"
+    },
+    "luna-abacus": {
+      "left": "anim/luna-abacus.anim",
+      "right": "anim/luna-abacus.anim"
+    },
+    "luna-happy-jump": {
+      "left": "anim/luna-happy-jump-left.anim",
+      "right": "anim/luna-happy-jump-right.anim"
+    },
+    "magic": {
+      "left": "anim/magic-left.anim",
+      "right": "anim/magic-right.anim"
+    },
+    "sleeping": {
+      "left": "anim/sleeping-left.anim",
+      "right": "anim/sleeping-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "walking": {
+      "left": "anim/walking-left.anim",
+      "right": "anim/walking-right.anim"
+    },
+    "walking-wing": {
+      "left": "anim/walking-wing-left.anim",
+      "right": "anim/walking-wing-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fly",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walking",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walking-wing",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk_wing",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk_wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walking",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Princess Celestia (Alternate Filly)"
+      },
+      "group": 0,
+      "id": "follow sister",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow sister",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Princess Celestia (Alternate Filly)"
+      },
+      "group": 0,
+      "id": "follow sister 2",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow sister 2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sleeping",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 60000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleeping",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleeping",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "luna-happy-jump",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "happy_jump",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "happy_jump",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "magic",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Magic",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Magic",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "luna-abacus",
+      "behavior": "Magic",
+      "centering": {
+        "left": "Center_Right",
+        "right": "Center_Left"
+      },
+      "durationMs": 0,
+      "follow": false,
+      "id": "Magic",
+      "name": "Magic",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "princess-luna-season-1",
+  "interactions": [],
+  "name": "Princess Luna",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "alicorns"
+  ]
+}

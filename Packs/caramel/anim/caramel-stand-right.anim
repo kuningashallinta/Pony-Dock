@@ -1,0 +1,69 @@
+{
+  "atlas": "caramel-stand-right.png",
+  "atlasSize": [
+    228,
+    168
+  ],
+  "frames": [
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        0,
+        76,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        76,
+        0,
+        76,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        152,
+        0,
+        76,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        84,
+        76,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        76,
+        84,
+        76,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        152,
+        84,
+        76,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,123 @@
+{
+  "animations": {
+    "beauty-brass-stand": {
+      "left": "anim/beauty-brass-stand-left.anim",
+      "right": "anim/beauty-brass-stand-right.anim"
+    },
+    "beauty-brass-trotcycle": {
+      "left": "anim/beauty-brass-trotcycle-left.anim",
+      "right": "anim/beauty-brass-trotcycle-right.anim"
+    },
+    "beauty-brass-tuba": {
+      "left": "anim/beauty-brass-tuba.anim",
+      "right": "anim/beauty-brass-tuba.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "beauty-brass-stand",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "beauty-brass-trotcycle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Vertical",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "beauty-brass-trotcycle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk_diag",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "walk_diag",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "beauty-brass-tuba",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "tuba",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "tuba",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "beauty-brass",
+  "interactions": [],
+  "name": "Beauty Brass",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "mares",
+    "earth ponies",
+    "supporting ponies"
+  ]
+}

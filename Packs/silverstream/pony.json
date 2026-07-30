@@ -1,0 +1,99 @@
+{
+  "animations": {
+    "silverstream-fly": {
+      "left": "anim/silverstream-fly-left.anim",
+      "right": "anim/silverstream-fly-right.anim"
+    },
+    "silverstream-idle": {
+      "left": "anim/silverstream-idle-left.anim",
+      "right": "anim/silverstream-idle-right.anim"
+    },
+    "silverstream-trot": {
+      "left": "anim/silverstream-trot-left.anim",
+      "right": "anim/silverstream-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "silverstream-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 18000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "silverstream-trot",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walking",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walking",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "silverstream-fly",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 13000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "flying",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "flying",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "silverstream",
+  "interactions": [],
+  "name": "Silverstream",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Mares",
+    "Non-Ponies"
+  ]
+}

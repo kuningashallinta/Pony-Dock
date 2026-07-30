@@ -1,0 +1,104 @@
+{
+  "animations": {
+    "dinky-idle": {
+      "left": "anim/dinky-idle-left.anim",
+      "right": "anim/dinky-idle-right.anim"
+    },
+    "dinky-trot-r": {
+      "left": "anim/dinky-trot-r-left.anim",
+      "right": "anim/dinky-trot-r-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "dinky-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "dinky-trot-r",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "dinky-trot-r",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 60000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 78,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Derpy Hooves"
+      },
+      "group": 0,
+      "id": "follow_derpy",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_derpy",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "dinky-hooves",
+  "interactions": [],
+  "name": "Dinky Hooves",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "fillies",
+    "unicorns"
+  ]
+}

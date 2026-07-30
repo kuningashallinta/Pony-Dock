@@ -1,0 +1,159 @@
+{
+  "animations": {
+    "rumble-sit": {
+      "left": "anim/rumble-sit-left.anim",
+      "right": "anim/rumble-sit-right.anim"
+    },
+    "rumble-sleep": {
+      "left": "anim/rumble-sleep-left.anim",
+      "right": "anim/rumble-sleep-right.anim"
+    },
+    "rumble-stand": {
+      "left": "anim/rumble-stand-left.anim",
+      "right": "anim/rumble-stand-right.anim"
+    },
+    "rumble-trot": {
+      "left": "anim/rumble-trot-left.anim",
+      "right": "anim/rumble-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "rumble-stand",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "rumble-trot",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 26000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "rumble-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 30000,
+        "min": 20000
+      },
+      "endSpeech": "bye",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "trot",
+        "offsetX": -35,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Thunderlane"
+      },
+      "group": 0,
+      "id": "follow",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 116.66666666666667,
+      "startSpeech": "bro!",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rumble-sit",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rumble-sleep",
+      "chance": 0.17,
+      "durationMs": {
+        "max": 47000,
+        "min": 36000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": "sit",
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "rumble",
+  "interactions": [],
+  "name": "Rumble",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "colts",
+    "pegasi"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "atlas": "blossomforth-sleep-right.png",
+  "atlasSize": [
+    124,
+    64
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        62,
+        64
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        62,
+        0,
+        62,
+        64
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

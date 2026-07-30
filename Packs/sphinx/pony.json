@@ -1,0 +1,237 @@
+{
+  "animations": {
+    "sphinx-fly": {
+      "left": "anim/sphinx-fly-left.anim",
+      "right": "anim/sphinx-fly-right.anim"
+    },
+    "sphinx-idle": {
+      "left": "anim/sphinx-idle-left.anim",
+      "right": "anim/sphinx-idle-right.anim"
+    },
+    "sphinx-idle2": {
+      "left": "anim/sphinx-idle2-left.anim",
+      "right": "anim/sphinx-idle2-right.anim"
+    },
+    "sphinx-pose": {
+      "left": "anim/sphinx-pose-left.anim",
+      "right": "anim/sphinx-pose-right.anim"
+    },
+    "sphinx-tailwhip": {
+      "left": "anim/sphinx-tailwhip-left.anim",
+      "right": "anim/sphinx-tailwhip-right.anim"
+    },
+    "sphinx-tailwhip2": {
+      "left": "anim/sphinx-tailwhip2-left.anim",
+      "right": "anim/sphinx-tailwhip2-right.anim"
+    },
+    "sphinx-trot": {
+      "left": "anim/sphinx-trot-left.anim",
+      "right": "anim/sphinx-trot-right.anim"
+    },
+    "sphinx-trot2": {
+      "left": "anim/sphinx-trot2-left.anim",
+      "right": "anim/sphinx-trot2-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "sphinx-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sphinx-idle2",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand2",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sphinx-tailwhip",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 2300,
+        "min": 1800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "tailwhip",
+      "linkedBehavior": "stand",
+      "movement": "None",
+      "name": "tailwhip",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sphinx-tailwhip2",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 2300,
+        "min": 1800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "tailwhip2",
+      "linkedBehavior": "stand2",
+      "movement": "None",
+      "name": "tailwhip2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sphinx-pose",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "pose",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "pose",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sphinx-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 150.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sphinx-trot2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 150.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sphinx-fly",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 9000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 156.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "sphinx",
+  "interactions": [],
+  "name": "Sphinx",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Mares",
+    "Non-Ponies"
+  ]
+}

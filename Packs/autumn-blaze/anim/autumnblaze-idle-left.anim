@@ -1,0 +1,204 @@
+{
+  "atlas": "autumnblaze-idle-left.png",
+  "atlasSize": [
+    430,
+    470
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        0,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        0,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        258,
+        0,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        344,
+        0,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        94,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        94,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        94,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        258,
+        94,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        344,
+        94,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        188,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        86,
+        188,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 3800,
+      "rect": [
+        172,
+        188,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        258,
+        188,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        344,
+        188,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        282,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        282,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        282,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        258,
+        282,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        344,
+        282,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 3800,
+      "rect": [
+        0,
+        376,
+        86,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    34,
+    60
+  ],
+  "schemaVersion": 1
+}

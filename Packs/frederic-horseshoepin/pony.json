@@ -1,0 +1,100 @@
+{
+  "animations": {
+    "fred-piano-play": {
+      "left": "anim/fred-piano-play.anim",
+      "right": "anim/fred-piano-play.anim"
+    },
+    "fred-stand": {
+      "left": "anim/fred-stand-left.anim",
+      "right": "anim/fred-stand-right.anim"
+    },
+    "fred-trot": {
+      "left": "anim/fred-trot-left.anim",
+      "right": "anim/fred-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "fred-stand",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fred-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fred-piano-play",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "cello",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "cello",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "frederic-horseshoepin",
+  "interactions": [],
+  "name": "Frederic Horseshoepin",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

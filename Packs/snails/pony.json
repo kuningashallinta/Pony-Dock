@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "snails-stand": {
+      "left": "anim/snails-stand-left.anim",
+      "right": "anim/snails-stand-right.anim"
+    },
+    "walk": {
+      "left": "anim/walk-left.anim",
+      "right": "anim/walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "snails-stand",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 30000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walk",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "snails",
+  "interactions": [],
+  "name": "Snails",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "colts",
+    "unicorns"
+  ]
+}

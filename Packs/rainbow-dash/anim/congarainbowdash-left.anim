@@ -1,0 +1,96 @@
+{
+  "atlas": "congarainbowdash-left.png",
+  "atlasSize": [
+    270,
+    276
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        90,
+        0,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        180,
+        0,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        92,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        90,
+        92,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        180,
+        92,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        184,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        90,
+        184,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        180,
+        184,
+        90,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    46,
+    47
+  ],
+  "schemaVersion": 1
+}

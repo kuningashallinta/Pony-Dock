@@ -1,0 +1,141 @@
+{
+  "atlas": "derpy-stand-wing-left.png",
+  "atlasSize": [
+    376,
+    336
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        94,
+        0,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        188,
+        0,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        282,
+        0,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        84,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        94,
+        84,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        188,
+        84,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        282,
+        84,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        168,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        94,
+        168,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        188,
+        168,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        282,
+        168,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        252,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        94,
+        252,
+        94,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,69 @@
+{
+  "atlas": "coco-sew-right.png",
+  "atlasSize": [
+    294,
+    192
+  ],
+  "frames": [
+    {
+      "durationMs": 210,
+      "rect": [
+        0,
+        0,
+        98,
+        96
+      ]
+    },
+    {
+      "durationMs": 210,
+      "rect": [
+        98,
+        0,
+        98,
+        96
+      ]
+    },
+    {
+      "durationMs": 210,
+      "rect": [
+        196,
+        0,
+        98,
+        96
+      ]
+    },
+    {
+      "durationMs": 210,
+      "rect": [
+        0,
+        96,
+        98,
+        96
+      ]
+    },
+    {
+      "durationMs": 210,
+      "rect": [
+        98,
+        96,
+        98,
+        96
+      ]
+    },
+    {
+      "durationMs": 210,
+      "rect": [
+        196,
+        96,
+        98,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

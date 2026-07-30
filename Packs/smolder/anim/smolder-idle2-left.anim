@@ -1,0 +1,150 @@
+{
+  "atlas": "smolder-idle2-left.png",
+  "atlasSize": [
+    184,
+    328
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        46,
+        0,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        0,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        138,
+        0,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        82,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        46,
+        82,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        82,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        138,
+        82,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        164,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        46,
+        164,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        164,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        138,
+        164,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        246,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        46,
+        246,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        92,
+        246,
+        46,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    24,
+    44
+  ],
+  "schemaVersion": 1
+}

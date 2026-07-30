@@ -1,0 +1,51 @@
+{
+  "atlas": "groove-left.png",
+  "atlasSize": [
+    560,
+    316
+  ],
+  "frames": [
+    {
+      "durationMs": 180,
+      "rect": [
+        0,
+        0,
+        280,
+        158
+      ]
+    },
+    {
+      "durationMs": 180,
+      "rect": [
+        280,
+        0,
+        280,
+        158
+      ]
+    },
+    {
+      "durationMs": 180,
+      "rect": [
+        0,
+        158,
+        280,
+        158
+      ]
+    },
+    {
+      "durationMs": 180,
+      "rect": [
+        280,
+        158,
+        280,
+        158
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    141,
+    78
+  ],
+  "schemaVersion": 1
+}

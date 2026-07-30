@@ -1,0 +1,895 @@
+{
+  "animations": {
+    "ocellus-dragon-idle": {
+      "left": "anim/ocellus-dragon-idle-left.anim",
+      "right": "anim/ocellus-dragon-idle-right.anim"
+    },
+    "ocellus-dragon-pose": {
+      "left": "anim/ocellus-dragon-pose-left.anim",
+      "right": "anim/ocellus-dragon-pose-right.anim"
+    },
+    "ocellus-dragon-sit": {
+      "left": "anim/ocellus-dragon-sit-left.anim",
+      "right": "anim/ocellus-dragon-sit-right.anim"
+    },
+    "ocellus-dragon-walk": {
+      "left": "anim/ocellus-dragon-walk-left.anim",
+      "right": "anim/ocellus-dragon-walk-right.anim"
+    },
+    "ocellus-fly": {
+      "left": "anim/ocellus-fly-left.anim",
+      "right": "anim/ocellus-fly-right.anim"
+    },
+    "ocellus-idle": {
+      "left": "anim/ocellus-idle-left.anim",
+      "right": "anim/ocellus-idle-right.anim"
+    },
+    "ocellus-pony-idle": {
+      "left": "anim/ocellus-pony-idle-left.anim",
+      "right": "anim/ocellus-pony-idle-right.anim"
+    },
+    "ocellus-pony-sit": {
+      "left": "anim/ocellus-pony-sit-left.anim",
+      "right": "anim/ocellus-pony-sit-right.anim"
+    },
+    "ocellus-pony-trot": {
+      "left": "anim/ocellus-pony-trot-left.anim",
+      "right": "anim/ocellus-pony-trot-right.anim"
+    },
+    "ocellus-transform": {
+      "left": "anim/ocellus-transform.anim",
+      "right": "anim/ocellus-transform.anim"
+    },
+    "ocellus-trot": {
+      "left": "anim/ocellus-trot-left.anim",
+      "right": "anim/ocellus-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "changeling"
+    },
+    {
+      "id": 2,
+      "name": "pony"
+    },
+    {
+      "id": 3,
+      "name": "dragon"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "ocellus-idle",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 15000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 96.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "trot2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 90.00000000000001,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-fly",
+      "chance": 0.18,
+      "durationMs": {
+        "max": 8000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 116.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-fly",
+      "chance": 0.13,
+      "durationMs": {
+        "max": 1000,
+        "min": 500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 233.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-idle",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "trans-changeling-pony",
+      "linkedBehavior": "pony idle",
+      "movement": "None",
+      "name": "trans-changeling-pony",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ocellus-idle",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "trans-changeling-dragon",
+      "linkedBehavior": "dragon idle",
+      "movement": "None",
+      "name": "trans-changeling-dragon",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-trot",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "trans-changeling-pony2",
+      "linkedBehavior": "pony trot",
+      "movement": "Diagonal_Horizontal",
+      "name": "trans-changeling-pony2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 90.00000000000001,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ocellus-trot",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "trans-changeling-dragon2",
+      "linkedBehavior": "dragon walk",
+      "movement": "Diagonal_Horizontal",
+      "name": "trans-changeling-dragon2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 90.00000000000001,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-pony-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "pony idle",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "pony idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-pony-sit",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 20000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "pony sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "pony sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ocellus-pony-trot",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 18000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "pony trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "pony trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-pony-trot",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 18000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "pony trot2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "pony trot2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 86.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-pony-idle",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "trans-pony-changeling",
+      "linkedBehavior": "idle",
+      "movement": "None",
+      "name": "trans-pony-changeling",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ocellus-pony-idle",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "trans-pony-dragon",
+      "linkedBehavior": "dragon idle",
+      "movement": "None",
+      "name": "trans-pony-dragon",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-pony-trot",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "trans-pony-changeling2",
+      "linkedBehavior": "trot2",
+      "movement": "Diagonal_Horizontal",
+      "name": "trans-pony-changeling2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 86.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ocellus-pony-trot",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "trans-pony-dragon2",
+      "linkedBehavior": "dragon walk",
+      "movement": "Diagonal_Horizontal",
+      "name": "trans-pony-dragon2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 86.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-dragon-idle",
+      "chance": 0.13,
+      "durationMs": {
+        "max": 14000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "dragon idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "dragon idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-dragon-sit",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 20000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "dragon sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "dragon sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-dragon-pose",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 14000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "dragon pose",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "dragon pose",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-dragon-walk",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 17000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "dragon walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "dragon walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 80.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-dragon-walk",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 17000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "dragon walk2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "dragon walk2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 73.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-dragon-idle",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "trans-dragon-changeling",
+      "linkedBehavior": "idle",
+      "movement": "None",
+      "name": "trans-dragon-changeling",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-dragon-idle",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "trans-dragon-pony",
+      "linkedBehavior": "pony idle",
+      "movement": "None",
+      "name": "trans-dragon-pony",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-dragon-walk",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "trans-dragon-changeling2",
+      "linkedBehavior": "trot2",
+      "movement": "Diagonal_Horizontal",
+      "name": "trans-dragon-changeling2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 80.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ocellus-dragon-walk",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 560,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "trans-dragon-pony2",
+      "linkedBehavior": "pony trot2",
+      "movement": "Diagonal_Horizontal",
+      "name": "trans-dragon-pony2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 80.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-changeling-pony",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans c-2-p",
+      "name": "trans c-2-p",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-changeling-dragon",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans c-2-d",
+      "name": "trans c-2-d",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-pony-changeling",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans p-2-c",
+      "name": "trans p-2-c",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-pony-dragon",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans p-2-d",
+      "name": "trans p-2-d",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-dragon-changeling",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans d-2-c",
+      "name": "trans d-2-c",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-dragon-pony",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans d-2-p",
+      "name": "trans d-2-p",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-changeling-pony2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans c-2-p 2",
+      "name": "trans c-2-p 2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-changeling-dragon2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans c-2-d 2",
+      "name": "trans c-2-d 2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-pony-changeling2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans p-2-c 2",
+      "name": "trans p-2-c 2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-pony-dragon2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans p-2-d 2",
+      "name": "trans p-2-d 2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-dragon-changeling2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans d-2-c 2",
+      "name": "trans d-2-c 2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "ocellus-transform",
+      "behavior": "trans-dragon-pony2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1250,
+      "follow": true,
+      "id": "trans d-2-p 2",
+      "name": "trans d-2-p 2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "ocellus",
+  "interactions": [],
+  "name": "Ocellus",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Mares",
+    "Non-Ponies"
+  ]
+}

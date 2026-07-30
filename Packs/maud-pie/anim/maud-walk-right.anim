@@ -1,0 +1,114 @@
+{
+  "atlas": "maud-walk-right.png",
+  "atlasSize": [
+    304,
+    240
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        76,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        76,
+        0,
+        76,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        152,
+        0,
+        76,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        228,
+        0,
+        76,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        80,
+        76,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        76,
+        80,
+        76,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        152,
+        80,
+        76,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        228,
+        80,
+        76,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        160,
+        76,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        76,
+        160,
+        76,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        152,
+        160,
+        76,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    38,
+    38
+  ],
+  "schemaVersion": 1
+}

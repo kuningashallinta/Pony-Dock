@@ -1,0 +1,123 @@
+{
+  "atlas": "runlikeachicken1-left.png",
+  "atlasSize": [
+    264,
+    192
+  ],
+  "frames": [
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        0,
+        66,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        66,
+        0,
+        66,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        132,
+        0,
+        66,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        198,
+        0,
+        66,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        64,
+        66,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        66,
+        64,
+        66,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        132,
+        64,
+        66,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        198,
+        64,
+        66,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        128,
+        66,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        66,
+        128,
+        66,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        132,
+        128,
+        66,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        198,
+        128,
+        66,
+        64
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

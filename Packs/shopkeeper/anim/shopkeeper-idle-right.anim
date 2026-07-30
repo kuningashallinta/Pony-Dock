@@ -1,0 +1,150 @@
+{
+  "atlas": "shopkeeper-idle-right.png",
+  "atlasSize": [
+    272,
+    360
+  ],
+  "frames": [
+    {
+      "durationMs": 300,
+      "rect": [
+        0,
+        0,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        68,
+        0,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        136,
+        0,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        204,
+        0,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        90,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        68,
+        90,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        136,
+        90,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        204,
+        90,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        180,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 3500,
+      "rect": [
+        68,
+        180,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        136,
+        180,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        204,
+        180,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        270,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        68,
+        270,
+        68,
+        90
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        136,
+        270,
+        68,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    34,
+    51
+  ],
+  "schemaVersion": 1
+}

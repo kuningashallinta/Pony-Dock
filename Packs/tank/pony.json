@@ -1,0 +1,52 @@
+{
+  "animations": {
+    "tank-fly": {
+      "left": "anim/tank-fly-left.anim",
+      "right": "anim/tank-fly-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "tank-fly",
+      "chance": 1.0,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -10,
+        "offsetY": -10,
+        "stoppedBehavior": null,
+        "target": "Rainbow Dash"
+      },
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "tank",
+  "interactions": [],
+  "name": "Tank",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "pets",
+    "non-ponies"
+  ]
+}

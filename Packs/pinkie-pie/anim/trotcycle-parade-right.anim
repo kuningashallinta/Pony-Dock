@@ -1,0 +1,159 @@
+{
+  "atlas": "trotcycle-parade-right.png",
+  "atlasSize": [
+    376,
+    408
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        0,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        0,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        0,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        102,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        94,
+        102,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        102,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        102,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        204,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        204,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        204,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        204,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        306,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        94,
+        306,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        306,
+        94,
+        102
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        306,
+        94,
+        102
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    55
+  ],
+  "schemaVersion": 1
+}

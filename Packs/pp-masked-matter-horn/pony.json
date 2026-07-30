@@ -1,0 +1,99 @@
+{
+  "animations": {
+    "masked-matterhorn": {
+      "left": "anim/masked-matterhorn-left.anim",
+      "right": "anim/masked-matterhorn-right.anim"
+    },
+    "masked-matterhorn-fly": {
+      "left": "anim/masked-matterhorn-fly-left.anim",
+      "right": "anim/masked-matterhorn-fly-right.anim"
+    },
+    "masked-matterhorn-idle1": {
+      "left": "anim/masked-matterhorn-idle1-left.anim",
+      "right": "anim/masked-matterhorn-idle1-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "masked-matterhorn-idle1",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "masked-matterhorn",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 12000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "masked-matterhorn-fly",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 12000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "pp-masked-matter-horn",
+  "interactions": [],
+  "name": "Masked Matter-Horn",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "mares",
+    "alicorns"
+  ]
+}

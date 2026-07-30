@@ -1,0 +1,369 @@
+{
+  "animations": {
+    "cloudchaser-fly": {
+      "left": "anim/cloudchaser-fly-left.anim",
+      "right": "anim/cloudchaser-fly-right.anim"
+    },
+    "cloudchaser-sit": {
+      "left": "anim/cloudchaser-sit-left.anim",
+      "right": "anim/cloudchaser-sit-right.anim"
+    },
+    "cloudchaser-sleep": {
+      "left": "anim/cloudchaser-sleep-left.anim",
+      "right": "anim/cloudchaser-sleep-right.anim"
+    },
+    "cloudchaser-stretch": {
+      "left": "anim/cloudchaser-stretch-left.anim",
+      "right": "anim/cloudchaser-stretch-right.anim"
+    },
+    "stand-cloudchaser": {
+      "left": "anim/stand-cloudchaser-left.anim",
+      "right": "anim/stand-cloudchaser-right.anim"
+    },
+    "stand-cloudchaser-wing": {
+      "left": "anim/stand-cloudchaser-wing-left.anim",
+      "right": "anim/stand-cloudchaser-wing-right.anim"
+    },
+    "trotcycle-cloudchaser": {
+      "left": "anim/trotcycle-cloudchaser-left.anim",
+      "right": "anim/trotcycle-cloudchaser-right.anim"
+    },
+    "trotcycle-cloudchaser-right-blinking": {
+      "left": "anim/trotcycle-cloudchaser-right-blinking-left.anim",
+      "right": "anim/trotcycle-cloudchaser-right-blinking-right.anim"
+    },
+    "trotcycle-cloudchaser-wing": {
+      "left": "anim/trotcycle-cloudchaser-wing-left.anim",
+      "right": "anim/trotcycle-cloudchaser-wing-right.anim"
+    },
+    "trotcycle-cloudchaser-wing-right-blinking": {
+      "left": "anim/trotcycle-cloudchaser-wing-right-blinking-left.anim",
+      "right": "anim/trotcycle-cloudchaser-wing-right-blinking-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand-cloudchaser",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 14000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-cloudchaser",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 12000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-cloudchaser-wing",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 12000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot wing",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand-cloudchaser-wing",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 14000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand wing",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-cloudchaser-wing-right-blinking",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 24000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot wing blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot wing blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-cloudchaser-right-blinking",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 24000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-cloudchaser-wing-right-blinking",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 20000,
+        "min": 14000
+      },
+      "endSpeech": "later",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "trot wing blink",
+        "offsetX": 50,
+        "offsetY": 0,
+        "stoppedBehavior": "stand wing",
+        "target": "Flitter"
+      },
+      "group": 0,
+      "id": "follow",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": "follow",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cloudchaser-fly",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cloudchaser-fly",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "hover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cloudchaser-sit",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 17000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cloudchaser-sleep",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 40000,
+        "min": 35000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": "sit",
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cloudchaser-stretch",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 20000,
+        "min": 16000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "nice flexibility",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "nice flexibility",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cloudchaser-stretch",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 17000,
+        "min": 17000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "training",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "training",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "cloudchaser",
+  "interactions": [],
+  "name": "Cloudchaser",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "pegasi"
+  ]
+}

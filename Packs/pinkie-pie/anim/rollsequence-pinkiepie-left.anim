@@ -1,0 +1,69 @@
+{
+  "atlas": "rollsequence-pinkiepie-left.png",
+  "atlasSize": [
+    246,
+    164
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        82,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        82,
+        0,
+        82,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        164,
+        0,
+        82,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        82,
+        82,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        82,
+        82,
+        82,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        164,
+        82,
+        82,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    38,
+    26
+  ],
+  "schemaVersion": 1
+}

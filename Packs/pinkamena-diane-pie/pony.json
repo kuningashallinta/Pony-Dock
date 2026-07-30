@@ -1,0 +1,162 @@
+{
+  "animations": {
+    "madame-laflour": {
+      "left": "anim/madame-laflour.anim",
+      "right": "anim/madame-laflour.anim"
+    },
+    "mr-turnip": {
+      "left": "anim/mr-turnip.anim",
+      "right": "anim/mr-turnip.anim"
+    },
+    "rocky": {
+      "left": "anim/rocky.anim",
+      "right": "anim/rocky.anim"
+    },
+    "sir-lints-a-lot": {
+      "left": "anim/sir-lints-a-lot.anim",
+      "right": "anim/sir-lints-a-lot.anim"
+    },
+    "stand-pinkamena": {
+      "left": "anim/stand-pinkamena-left.anim",
+      "right": "anim/stand-pinkamena-right.anim"
+    },
+    "trotcycle-pinkamena": {
+      "left": "anim/trotcycle-pinkamena-left.anim",
+      "right": "anim/trotcycle-pinkamena-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand-pinkamena",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-pinkamena",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [
+    {
+      "animation": "rocky",
+      "behavior": "stand",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": false,
+      "id": "Rocky",
+      "name": "Rocky",
+      "placement": {
+        "left": "Top_Right",
+        "right": "Top_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 15000
+    },
+    {
+      "animation": "mr-turnip",
+      "behavior": "stand",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": false,
+      "id": "Mr Turnip",
+      "name": "Mr Turnip",
+      "placement": {
+        "left": "Top_Left",
+        "right": "Top_Left"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 15000
+    },
+    {
+      "animation": "madame-laflour",
+      "behavior": "stand",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": false,
+      "id": "Madam LeFlour",
+      "name": "Madam LeFlour",
+      "placement": {
+        "left": "Bottom_Left",
+        "right": "Bottom_Left"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 15000
+    },
+    {
+      "animation": "sir-lints-a-lot",
+      "behavior": "stand",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": false,
+      "id": "Sir Lints-a-lot",
+      "name": "Sir Lints-a-lot",
+      "placement": {
+        "left": "Bottom_Right",
+        "right": "Bottom_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 15000
+    }
+  ],
+  "id": "pinkamena-diane-pie",
+  "interactions": [],
+  "name": "Pinkamena Diane Pie",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "mares",
+    "earth ponies",
+    "alternate art"
+  ]
+}

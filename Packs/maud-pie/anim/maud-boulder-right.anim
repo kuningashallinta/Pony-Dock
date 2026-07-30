@@ -1,0 +1,204 @@
+{
+  "atlas": "maud-boulder-right.png",
+  "atlasSize": [
+    500,
+    360
+  ],
+  "frames": [
+    {
+      "durationMs": 1500,
+      "rect": [
+        0,
+        0,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        100,
+        0,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        200,
+        0,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        300,
+        0,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        400,
+        0,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        72,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        100,
+        72,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        200,
+        72,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        300,
+        72,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        400,
+        72,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 3200,
+      "rect": [
+        0,
+        144,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        100,
+        144,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        200,
+        144,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        300,
+        144,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        400,
+        144,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        216,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        100,
+        216,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        200,
+        216,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        300,
+        216,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        400,
+        216,
+        100,
+        72
+      ]
+    },
+    {
+      "durationMs": 3200,
+      "rect": [
+        0,
+        288,
+        100,
+        72
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    26
+  ],
+  "schemaVersion": 1
+}

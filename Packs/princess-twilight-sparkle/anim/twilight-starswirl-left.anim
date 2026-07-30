@@ -1,0 +1,159 @@
+{
+  "atlas": "twilight-starswirl-left.png",
+  "atlasSize": [
+    432,
+    496
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        0,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        216,
+        0,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        324,
+        0,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        124,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        108,
+        124,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        216,
+        124,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        324,
+        124,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        248,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        248,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        216,
+        248,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        324,
+        248,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        372,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        108,
+        372,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        216,
+        372,
+        108,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        324,
+        372,
+        108,
+        124
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    50,
+    84
+  ],
+  "schemaVersion": 1
+}

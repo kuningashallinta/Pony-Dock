@@ -1,0 +1,87 @@
+{
+  "atlas": "jumpy-pinkiepie-right.png",
+  "atlasSize": [
+    318,
+    378
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        106,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        212,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        106,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        212,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        252,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        106,
+        252,
+        106,
+        126
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    57,
+    78
+  ],
+  "schemaVersion": 1
+}

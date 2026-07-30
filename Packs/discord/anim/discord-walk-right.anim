@@ -1,0 +1,87 @@
+{
+  "atlas": "discord-walk-right.png",
+  "atlasSize": [
+    360,
+    600
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        120,
+        200
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        120,
+        0,
+        120,
+        200
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        240,
+        0,
+        120,
+        200
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        200,
+        120,
+        200
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        120,
+        200,
+        120,
+        200
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        240,
+        200,
+        120,
+        200
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        400,
+        120,
+        200
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        120,
+        400,
+        120,
+        200
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

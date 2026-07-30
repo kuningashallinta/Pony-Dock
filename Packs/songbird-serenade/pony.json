@@ -1,0 +1,99 @@
+{
+  "animations": {
+    "songbirdserenade-fly": {
+      "left": "anim/songbirdserenade-fly-left.anim",
+      "right": "anim/songbirdserenade-fly-right.anim"
+    },
+    "songbirdserenade-idle": {
+      "left": "anim/songbirdserenade-idle-left.anim",
+      "right": "anim/songbirdserenade-idle-right.anim"
+    },
+    "songbirdserenade-trot": {
+      "left": "anim/songbirdserenade-trot-left.anim",
+      "right": "anim/songbirdserenade-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "songbirdserenade-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "songbirdserenade-fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "songbirdserenade-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "songbird-serenade",
+  "interactions": [],
+  "name": "Songbird Serenade",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Mares",
+    "Pegasi"
+  ]
+}

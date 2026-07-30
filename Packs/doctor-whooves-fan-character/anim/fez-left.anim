@@ -1,0 +1,132 @@
+{
+  "atlas": "fez-left.png",
+  "atlasSize": [
+    336,
+    364
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        84,
+        0,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        168,
+        0,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        252,
+        0,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        91,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        84,
+        91,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 2040,
+      "rect": [
+        168,
+        91,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        252,
+        91,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        182,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        84,
+        182,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        168,
+        182,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        252,
+        182,
+        84,
+        91
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        273,
+        84,
+        91
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    44,
+    58
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,132 @@
+{
+  "atlas": "gallus-idle1-right.png",
+  "atlasSize": [
+    440,
+    376
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        110,
+        0,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        220,
+        0,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        330,
+        0,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        94,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        110,
+        94,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        220,
+        94,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        330,
+        94,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        188,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        110,
+        188,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        220,
+        188,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        330,
+        188,
+        110,
+        94
+      ]
+    },
+    {
+      "durationMs": 8000,
+      "rect": [
+        0,
+        282,
+        110,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    77,
+    52
+  ],
+  "schemaVersion": 1
+}

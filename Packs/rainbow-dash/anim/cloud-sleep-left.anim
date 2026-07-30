@@ -1,0 +1,51 @@
+{
+  "atlas": "cloud-sleep-left.png",
+  "atlasSize": [
+    212,
+    140
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        106,
+        70
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        106,
+        0,
+        106,
+        70
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        70,
+        106,
+        70
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        106,
+        70,
+        106,
+        70
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    60,
+    35
+  ],
+  "schemaVersion": 1
+}

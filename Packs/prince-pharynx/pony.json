@@ -1,0 +1,178 @@
+{
+  "animations": {
+    "pharynx-fly": {
+      "left": "anim/pharynx-fly-left.anim",
+      "right": "anim/pharynx-fly-right.anim"
+    },
+    "pharynx-idle": {
+      "left": "anim/pharynx-idle-left.anim",
+      "right": "anim/pharynx-idle-right.anim"
+    },
+    "pharynx-idle1": {
+      "left": "anim/pharynx-idle1-left.anim",
+      "right": "anim/pharynx-idle1-right.anim"
+    },
+    "pharynx-trot": {
+      "left": "anim/pharynx-trot-left.anim",
+      "right": "anim/pharynx-trot-right.anim"
+    },
+    "pharynx-trot1": {
+      "left": "anim/pharynx-trot1-left.anim",
+      "right": "anim/pharynx-trot1-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "pharynx-idle1",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pharynx-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle1",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pharynx-trot1",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pharynx-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pharynx-fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 12000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "flight",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "flight",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pharynx-fly",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1000,
+        "min": 300
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "flight1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "flight1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "prince-pharynx",
+  "interactions": [],
+  "name": "Prince Pharynx",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Stallions",
+    "Non-Ponies"
+  ]
+}

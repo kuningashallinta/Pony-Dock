@@ -1,0 +1,100 @@
+{
+  "animations": {
+    "screwloose-bark": {
+      "left": "anim/screwloose-bark-left.anim",
+      "right": "anim/screwloose-bark-right.anim"
+    },
+    "screwloose-idle": {
+      "left": "anim/screwloose-idle-left.anim",
+      "right": "anim/screwloose-idle-right.anim"
+    },
+    "screwloose-trot": {
+      "left": "anim/screwloose-trot-left.anim",
+      "right": "anim/screwloose-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "screwloose-idle",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "screwloose-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "screwloose-bark",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "bark",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "bark",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "speech 1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "screw-loose",
+  "interactions": [],
+  "name": "Screw Loose",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

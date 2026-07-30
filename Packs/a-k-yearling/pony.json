@@ -1,0 +1,104 @@
+{
+  "animations": {
+    "a-k-yearling-idle": {
+      "left": "anim/a-k-yearling-idle-left.anim",
+      "right": "anim/a-k-yearling-idle-right.anim"
+    },
+    "a-k-yearling-trot": {
+      "left": "anim/a-k-yearling-trot-left.anim",
+      "right": "anim/a-k-yearling-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "a-k-yearling-idle",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Standing",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "Standing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "a-k-yearling-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Trotting",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Trotting",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "a-k-yearling-idle",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 11000,
+        "min": 10000
+      },
+      "endSpeech": "Paradox #2",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "Trotting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "Standing",
+        "target": "Daring Do"
+      },
+      "group": 0,
+      "id": "daring_paradox_start",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "daring_paradox_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Paradox #1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "a-k-yearling",
+  "interactions": [],
+  "name": "A.K. Yearling",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "pegasi"
+  ]
+}

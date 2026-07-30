@@ -1,0 +1,114 @@
+{
+  "atlas": "leapend-left.png",
+  "atlasSize": [
+    368,
+    222
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        92,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        0,
+        92,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        0,
+        92,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        276,
+        0,
+        92,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        74,
+        92,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        74,
+        92,
+        74
+      ]
+    },
+    {
+      "durationMs": 250,
+      "rect": [
+        184,
+        74,
+        92,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        276,
+        74,
+        92,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        148,
+        92,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        148,
+        92,
+        74
+      ]
+    },
+    {
+      "durationMs": 5500,
+      "rect": [
+        184,
+        148,
+        92,
+        74
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    40,
+    43
+  ],
+  "schemaVersion": 1
+}

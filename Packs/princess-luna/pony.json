@@ -1,0 +1,147 @@
+{
+  "animations": {
+    "luna-flight": {
+      "left": "anim/luna-flight-left.anim",
+      "right": "anim/luna-flight-right.anim"
+    },
+    "luna-idle": {
+      "left": "anim/luna-idle-left.anim",
+      "right": "anim/luna-idle-right.anim"
+    },
+    "luna-walk": {
+      "left": "anim/luna-walk-left.anim",
+      "right": "anim/luna-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "luna-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "luna-walk",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "luna-flight",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 8000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "flight",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "flight",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "luna-idle",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Nightmare Moon"
+      },
+      "group": 0,
+      "id": "NMM Luna",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "NMM Luna",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "NMM",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "princess-luna",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "NMM Luna"
+      ],
+      "chance": 0.2,
+      "id": "NMM Luna",
+      "name": "NMM Luna",
+      "proximityPx": 200,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "nightmare-moon"
+      ]
+    }
+  ],
+  "name": "Princess Luna",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "alicorns"
+  ]
+}

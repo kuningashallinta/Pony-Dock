@@ -1,0 +1,132 @@
+{
+  "atlas": "bulk-lift-left.png",
+  "atlasSize": [
+    504,
+    552
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        126,
+        0,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        252,
+        0,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        378,
+        0,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        138,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        126,
+        138,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        252,
+        138,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        378,
+        138,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        276,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        126,
+        276,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        252,
+        276,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        378,
+        276,
+        126,
+        138
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        0,
+        414,
+        126,
+        138
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    65,
+    93
+  ],
+  "schemaVersion": 1
+}

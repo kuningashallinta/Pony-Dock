@@ -1,0 +1,258 @@
+{
+  "atlas": "derpy-muffin-right.png",
+  "atlasSize": [
+    576,
+    440
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        96,
+        0,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        192,
+        0,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        288,
+        0,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        384,
+        0,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        480,
+        0,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        88,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        96,
+        88,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        192,
+        88,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        288,
+        88,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        384,
+        88,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        480,
+        88,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        176,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        96,
+        176,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        192,
+        176,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        288,
+        176,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        384,
+        176,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        480,
+        176,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        264,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        96,
+        264,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        192,
+        264,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        288,
+        264,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        384,
+        264,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        480,
+        264,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        352,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        96,
+        352,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        192,
+        352,
+        96,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

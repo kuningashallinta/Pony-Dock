@@ -1,0 +1,186 @@
+{
+  "atlas": "rofl-hickup3-pinkie-pie-right.png",
+  "atlasSize": [
+    490,
+    576
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        0,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        0,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        294,
+        0,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        392,
+        0,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        144,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        144,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        144,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        294,
+        144,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        392,
+        144,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        288,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        288,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        288,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        294,
+        288,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        392,
+        288,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        432,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        432,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        432,
+        98,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        294,
+        432,
+        98,
+        144
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    49,
+    60
+  ],
+  "schemaVersion": 1
+}

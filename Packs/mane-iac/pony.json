@@ -1,0 +1,127 @@
+{
+  "animations": {
+    "mane-iac-idle": {
+      "left": "anim/mane-iac-idle-left.anim",
+      "right": "anim/mane-iac-idle-right.anim"
+    },
+    "mane-iac-lying": {
+      "left": "anim/mane-iac-lying-left.anim",
+      "right": "anim/mane-iac-lying-right.anim"
+    },
+    "mane-iac-sleep": {
+      "left": "anim/mane-iac-sleep-left.anim",
+      "right": "anim/mane-iac-sleep-right.anim"
+    },
+    "mane-iac-walk": {
+      "left": "anim/mane-iac-walk-left.anim",
+      "right": "anim/mane-iac-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "mane-iac-idle",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "mane-iac-walk",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "mane-iac-lying",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "relax",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "relax",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "mane-iac-sleep",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "mane-iac",
+  "interactions": [],
+  "name": "Mane-iac",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "mares",
+    "earth ponies",
+    "supporting ponies"
+  ]
+}

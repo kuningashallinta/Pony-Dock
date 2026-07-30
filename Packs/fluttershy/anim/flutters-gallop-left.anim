@@ -1,0 +1,123 @@
+{
+  "atlas": "flutters-gallop-left.png",
+  "atlasSize": [
+    552,
+    240
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        138,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        138,
+        0,
+        138,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        276,
+        0,
+        138,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        414,
+        0,
+        138,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        80,
+        138,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        138,
+        80,
+        138,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        276,
+        80,
+        138,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        414,
+        80,
+        138,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        160,
+        138,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        138,
+        160,
+        138,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        276,
+        160,
+        138,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        414,
+        160,
+        138,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    53,
+    37
+  ],
+  "schemaVersion": 1
+}

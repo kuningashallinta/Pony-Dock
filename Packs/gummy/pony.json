@@ -1,0 +1,353 @@
+{
+  "animations": {
+    "bite": {
+      "left": "anim/bite.anim",
+      "right": "anim/bite.anim"
+    },
+    "bouncing": {
+      "left": "anim/bouncing-left.anim",
+      "right": "anim/bouncing-right.anim"
+    },
+    "dance-gummy": {
+      "left": "anim/dance-gummy-left.anim",
+      "right": "anim/dance-gummy-right.anim"
+    },
+    "stand-gummy": {
+      "left": "anim/stand-gummy-left.anim",
+      "right": "anim/stand-gummy-right.anim"
+    },
+    "walkcycle-gummy": {
+      "left": "anim/walkcycle-gummy-left.anim",
+      "right": "anim/walkcycle-gummy-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand-gummy",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walkcycle-gummy",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walkcycle-gummy",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bouncing",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "balloon_bounce",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "balloon_bounce",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walkcycle-gummy",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -45,
+        "offsetY": 56,
+        "stoppedBehavior": null,
+        "target": "Pinkamena Diane Pie"
+      },
+      "group": 0,
+      "id": "follow_pinkamena",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_pinkamena",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bouncing",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "gummy_balloon_poke",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "gummy_balloon_poke",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walkcycle-gummy",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -45,
+        "offsetY": 56,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 0,
+      "id": "follow_pinkie",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_pinkie",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bite",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 11500,
+        "min": 11500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "bite_left",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "bite_left",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bite",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 11500,
+        "min": 11500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "bite_right",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "bite_right",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "dance-gummy",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "crocodance",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "crocodance",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walkcycle-gummy",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -63,
+        "offsetY": 25,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 0,
+      "id": "bite_position_left",
+      "linkedBehavior": "bite_left",
+      "movement": "All",
+      "name": "bite_position_left",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walkcycle-gummy",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 63,
+        "offsetY": 25,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 0,
+      "id": "bite_position_right",
+      "linkedBehavior": "bite_right",
+      "movement": "All",
+      "name": "bite_position_right",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "gummy",
+  "interactions": [],
+  "name": "Gummy",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "pets",
+    "non-ponies"
+  ]
+}

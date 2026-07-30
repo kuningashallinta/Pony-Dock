@@ -1,0 +1,204 @@
+{
+  "atlas": "oink-pinkie-pie-left.png",
+  "atlasSize": [
+    470,
+    560
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        0,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        0,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        0,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        376,
+        0,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        112,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        112,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        112,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        112,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        376,
+        112,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        224,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        224,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        224,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        224,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        376,
+        224,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        336,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        336,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        336,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        336,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        376,
+        336,
+        94,
+        112
+      ]
+    },
+    {
+      "durationMs": 1040,
+      "rect": [
+        0,
+        448,
+        94,
+        112
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    36,
+    74
+  ],
+  "schemaVersion": 1
+}

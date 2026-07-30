@@ -1,0 +1,159 @@
+{
+  "atlas": "troubleshoes-idle-right.png",
+  "atlasSize": [
+    392,
+    488
+  ],
+  "frames": [
+    {
+      "durationMs": 1300,
+      "rect": [
+        0,
+        0,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        0,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        0,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        294,
+        0,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        122,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        122,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        122,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        294,
+        122,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        244,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 3250,
+      "rect": [
+        98,
+        244,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        196,
+        244,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        294,
+        244,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        366,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        98,
+        366,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        196,
+        366,
+        98,
+        122
+      ]
+    },
+    {
+      "durationMs": 3250,
+      "rect": [
+        294,
+        366,
+        98,
+        122
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    49,
+    60
+  ],
+  "schemaVersion": 1
+}

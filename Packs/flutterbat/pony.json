@@ -1,0 +1,132 @@
+{
+  "animations": {
+    "flutterbat-dragged": {
+      "left": "anim/flutterbat-dragged.anim",
+      "right": "anim/flutterbat-dragged.anim"
+    },
+    "flutterbat-fly": {
+      "left": "anim/flutterbat-fly-left.anim",
+      "right": "anim/flutterbat-fly-right.anim"
+    },
+    "flutterbat-idle": {
+      "left": "anim/flutterbat-idle-left.anim",
+      "right": "anim/flutterbat-idle-right.anim"
+    },
+    "flutterbat-trot": {
+      "left": "anim/flutterbat-trot-left.anim",
+      "right": "anim/flutterbat-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 3,
+      "name": "Bat"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "flutterbat-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "bat-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "bat-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flutterbat-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "bat-walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "bat-walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flutterbat-fly",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "bat-fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "bat-fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flutterbat-dragged",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "bat-drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "bat-drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "flutterbat",
+  "interactions": [],
+  "name": "Flutterbat",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "mares",
+    "pegasi",
+    "alternate art"
+  ]
+}

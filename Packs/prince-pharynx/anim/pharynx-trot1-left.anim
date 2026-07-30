@@ -1,0 +1,159 @@
+{
+  "atlas": "pharynx-trot1-left.png",
+  "atlasSize": [
+    392,
+    464
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        0,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        0,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        294,
+        0,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        116,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        116,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        116,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        294,
+        116,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        232,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        232,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        232,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        294,
+        232,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        348,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        348,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        348,
+        98,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        294,
+        348,
+        98,
+        116
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    41,
+    78
+  ],
+  "schemaVersion": 1
+}

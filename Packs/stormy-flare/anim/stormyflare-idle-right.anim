@@ -1,0 +1,150 @@
+{
+  "atlas": "stormyflare-idle-right.png",
+  "atlasSize": [
+    304,
+    344
+  ],
+  "frames": [
+    {
+      "durationMs": 1200,
+      "rect": [
+        0,
+        0,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        0,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        0,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        228,
+        0,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        86,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        86,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        152,
+        86,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        228,
+        86,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 3900,
+      "rect": [
+        0,
+        172,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        172,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        172,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        228,
+        172,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        258,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        258,
+        76,
+        86
+      ]
+    },
+    {
+      "durationMs": 3900,
+      "rect": [
+        152,
+        258,
+        76,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    38,
+    42
+  ],
+  "schemaVersion": 1
+}

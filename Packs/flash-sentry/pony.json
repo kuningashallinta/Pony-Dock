@@ -1,0 +1,100 @@
+{
+  "animations": {
+    "flashsentry-flight": {
+      "left": "anim/flashsentry-flight-left.anim",
+      "right": "anim/flashsentry-flight-right.anim"
+    },
+    "flashsentry-idle": {
+      "left": "anim/flashsentry-idle-left.anim",
+      "right": "anim/flashsentry-idle-right.anim"
+    },
+    "flashsentry-trot": {
+      "left": "anim/flashsentry-trot-left.anim",
+      "right": "anim/flashsentry-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "flashsentry-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flashsentry-trot",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 80.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flashsentry-flight",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "flight",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "flight",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 113.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "flash-sentry",
+  "interactions": [],
+  "name": "Flash Sentry",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "pegasi",
+    "supporting ponies"
+  ]
+}

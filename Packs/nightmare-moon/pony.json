@@ -1,0 +1,295 @@
+{
+  "animations": {
+    "nmm-fly": {
+      "left": "anim/nmm-fly-left.anim",
+      "right": "anim/nmm-fly-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "stand-2": {
+      "left": "anim/stand-2-left.anim",
+      "right": "anim/stand-2-right.anim"
+    },
+    "walk": {
+      "left": "anim/walk-left.anim",
+      "right": "anim/walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walk",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "tomorrow 1",
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Princess Celestia"
+      },
+      "group": 0,
+      "id": "tomorrow 1",
+      "linkedBehavior": "tomorrow 2",
+      "movement": "None",
+      "name": "tomorrow 1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "tomorrow 2",
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Princess Celestia"
+      },
+      "group": 0,
+      "id": "tomorrow 2",
+      "linkedBehavior": "tomorrow 3",
+      "movement": "None",
+      "name": "tomorrow 2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "tomorrow 3",
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Princess Celestia"
+      },
+      "group": 0,
+      "id": "tomorrow 3",
+      "linkedBehavior": "tomorrow 4",
+      "movement": "None",
+      "name": "tomorrow 3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 7000,
+        "min": 7000
+      },
+      "endSpeech": "tomorrow 4",
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Princess Celestia"
+      },
+      "group": 0,
+      "id": "tomorrow 4",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "tomorrow 4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": "Luna",
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Princess Luna"
+      },
+      "group": 0,
+      "id": "NMM Luna",
+      "linkedBehavior": "NMM Luna 1",
+      "movement": "None",
+      "name": "NMM Luna",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 4000,
+        "min": 4000
+      },
+      "endSpeech": "Luna 1",
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Princess Luna"
+      },
+      "group": 0,
+      "id": "NMM Luna 1",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "NMM Luna 1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "nmm-fly",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 12000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 40.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "nightmare-moon",
+  "interactions": [],
+  "name": "Nightmare Moon",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "alicorns"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "gsnap-idle": {
+      "left": "anim/gsnap-idle-left.anim",
+      "right": "anim/gsnap-idle-right.anim"
+    },
+    "gsnap-trot": {
+      "left": "anim/gsnap-trot-left.anim",
+      "right": "anim/gsnap-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "gsnap-idle",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "gsnap-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "ginger-snap",
+  "interactions": [],
+  "name": "Ginger Snap",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "fillies",
+    "earth ponies"
+  ]
+}

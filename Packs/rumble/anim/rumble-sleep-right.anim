@@ -1,0 +1,33 @@
+{
+  "atlas": "rumble-sleep-right.png",
+  "atlasSize": [
+    124,
+    84
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        62,
+        84
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        62,
+        0,
+        62,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,69 @@
+{
+  "atlas": "fido-idle-right.png",
+  "atlasSize": [
+    264,
+    212
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        0,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        176,
+        0,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        106,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        106,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 390,
+      "rect": [
+        176,
+        106,
+        88,
+        106
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,114 @@
+{
+  "atlas": "slendermane-glitchin-right.png",
+  "atlasSize": [
+    360,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        90,
+        0,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        180,
+        0,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        270,
+        0,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        84,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        90,
+        84,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        180,
+        84,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        270,
+        84,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        168,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        90,
+        168,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        180,
+        168,
+        90,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    42
+  ],
+  "schemaVersion": 1
+}

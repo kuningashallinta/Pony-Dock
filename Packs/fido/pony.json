@@ -1,0 +1,139 @@
+{
+  "animations": {
+    "fido-idle": {
+      "left": "anim/fido-idle-left.anim",
+      "right": "anim/fido-idle-right.anim"
+    },
+    "fido-treat": {
+      "left": "anim/fido-treat-left.anim",
+      "right": "anim/fido-treat-right.anim"
+    },
+    "fido-walk": {
+      "left": "anim/fido-walk-left.anim",
+      "right": "anim/fido-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "fido-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fido-walk",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 25000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk_normal",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk_normal",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fido-treat",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "threat",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Rarity"
+      },
+      "group": 0,
+      "id": "threat",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "threat",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fido-walk",
+      "chance": 1.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk_normal",
+        "offsetX": 0,
+        "offsetY": -40,
+        "stoppedBehavior": "stand",
+        "target": "Rover"
+      },
+      "group": 0,
+      "id": "walk_rover",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "walk_rover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 71.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "fido",
+  "interactions": [],
+  "name": "Fido",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "non-ponies",
+    "stallions",
+    "supporting ponies"
+  ]
+}

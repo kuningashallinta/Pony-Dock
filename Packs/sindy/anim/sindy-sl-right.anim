@@ -1,0 +1,24 @@
+{
+  "atlas": "sindy-sl-right.png",
+  "atlasSize": [
+    76,
+    66
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        76,
+        66
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

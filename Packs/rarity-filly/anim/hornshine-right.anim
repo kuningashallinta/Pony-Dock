@@ -1,0 +1,69 @@
+{
+  "atlas": "hornshine-right.png",
+  "atlasSize": [
+    276,
+    176
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        92,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        0,
+        92,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        0,
+        92,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        88,
+        92,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        88,
+        92,
+        88
+      ]
+    },
+    {
+      "durationMs": 10040,
+      "rect": [
+        184,
+        88,
+        92,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

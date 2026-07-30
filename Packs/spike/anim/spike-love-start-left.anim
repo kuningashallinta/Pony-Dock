@@ -1,0 +1,51 @@
+{
+  "atlas": "spike-love-start-left.png",
+  "atlasSize": [
+    84,
+    116
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        42,
+        58
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        42,
+        0,
+        42,
+        58
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        58,
+        42,
+        58
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        42,
+        58,
+        42,
+        58
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    25,
+    28
+  ],
+  "schemaVersion": 1
+}

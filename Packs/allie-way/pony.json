@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "allie-idle": {
+      "left": "anim/allie-idle-left.anim",
+      "right": "anim/allie-idle-right.anim"
+    },
+    "allie-trot": {
+      "left": "anim/allie-trot-left.anim",
+      "right": "anim/allie-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "allie-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 18000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "allie-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 103.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "allie-way",
+  "interactions": [],
+  "name": "Allie Way",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "mares",
+    "unicorns",
+    "supporting ponies"
+  ]
+}

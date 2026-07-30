@@ -1,0 +1,123 @@
+{
+  "atlas": "backtrack-pinkie-pie-left.png",
+  "atlasSize": [
+    376,
+    258
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        94,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        94,
+        0,
+        94,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        188,
+        0,
+        94,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        282,
+        0,
+        94,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        86,
+        94,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        94,
+        86,
+        94,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        188,
+        86,
+        94,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        282,
+        86,
+        94,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        172,
+        94,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        94,
+        172,
+        94,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        188,
+        172,
+        94,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        282,
+        172,
+        94,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    48,
+    41
+  ],
+  "schemaVersion": 1
+}

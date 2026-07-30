@@ -1,0 +1,215 @@
+{
+  "animations": {
+    "cadance-dance": {
+      "left": "anim/cadance-dance-left.anim",
+      "right": "anim/cadance-dance-right.anim"
+    },
+    "cadance-flight": {
+      "left": "anim/cadance-flight-left.anim",
+      "right": "anim/cadance-flight-right.anim"
+    },
+    "cadance-trot": {
+      "left": "anim/cadance-trot-left.anim",
+      "right": "anim/cadance-trot-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cadance-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cadance-flight",
+      "chance": 0.18,
+      "durationMs": {
+        "max": 8000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "flight",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "flight",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Shopkeeper"
+      },
+      "group": 0,
+      "id": "deal_cadance",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_cadance",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cadance-trot",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "walk",
+        "offsetX": -60,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Pinkie Pie"
+      },
+      "group": 0,
+      "id": "weddingdance_start",
+      "linkedBehavior": "weddingdance",
+      "movement": "All",
+      "name": "weddingdance_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cadance-dance",
+      "chance": 0.0001,
+      "durationMs": {
+        "max": 15000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "weddingdance",
+        "offsetX": -60,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Pinkie Pie"
+      },
+      "group": 0,
+      "id": "weddingdance",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "weddingdance",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 99.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "princess-cadance",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "weddingdance_start"
+      ],
+      "chance": 0.1,
+      "id": "Wedding_dance",
+      "name": "Wedding_dance",
+      "proximityPx": 200,
+      "reactivationDelayMs": 120000,
+      "targets": [
+        "pinkie-pie"
+      ]
+    }
+  ],
+  "name": "Princess Cadance",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "alicorns"
+  ]
+}

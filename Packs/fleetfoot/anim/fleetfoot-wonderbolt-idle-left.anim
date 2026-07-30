@@ -1,0 +1,96 @@
+{
+  "atlas": "fleetfoot-wonderbolt-idle-left.png",
+  "atlasSize": [
+    258,
+    276
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        86,
+        0,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        172,
+        0,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        92,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        86,
+        92,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        172,
+        92,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        184,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        86,
+        184,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        172,
+        184,
+        86,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    42,
+    46
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,24 @@
+{
+  "atlas": "rarity-c-drag-right.png",
+  "atlasSize": [
+    90,
+    84
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        90,
+        84
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    49,
+    51
+  ],
+  "schemaVersion": 1
+}

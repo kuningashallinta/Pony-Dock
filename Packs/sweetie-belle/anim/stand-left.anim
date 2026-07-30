@@ -1,0 +1,24 @@
+{
+  "atlas": "stand-left.png",
+  "atlasSize": [
+    78,
+    64
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        78,
+        64
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,150 @@
+{
+  "atlas": "stand-twilight-right.png",
+  "atlasSize": [
+    392,
+    320
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        0,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        0,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        294,
+        0,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        80,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 5100,
+      "rect": [
+        98,
+        80,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        80,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        294,
+        80,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        160,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        160,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        160,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        294,
+        160,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        240,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        240,
+        98,
+        80
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        196,
+        240,
+        98,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    50,
+    34
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,69 @@
+{
+  "atlas": "beep-right.png",
+  "atlasSize": [
+    438,
+    134
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        146,
+        67
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        146,
+        0,
+        146,
+        67
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        292,
+        0,
+        146,
+        67
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        67,
+        146,
+        67
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        146,
+        67,
+        146,
+        67
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        292,
+        67,
+        146,
+        67
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    72,
+    33
+  ],
+  "schemaVersion": 1
+}

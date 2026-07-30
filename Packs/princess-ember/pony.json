@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "ember-fly": {
+      "left": "anim/ember-fly-left.anim",
+      "right": "anim/ember-fly-right.anim"
+    },
+    "ember-idle": {
+      "left": "anim/ember-idle-left.anim",
+      "right": "anim/ember-idle-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "ember-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 18000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ember-fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 18000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "princess-ember",
+  "interactions": [],
+  "name": "Princess Ember",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Mares",
+    "Non-Ponies"
+  ]
+}

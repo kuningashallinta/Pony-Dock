@@ -1,0 +1,132 @@
+{
+  "atlas": "changeling-sit-left.png",
+  "atlasSize": [
+    240,
+    312
+  ],
+  "frames": [
+    {
+      "durationMs": 2400,
+      "rect": [
+        0,
+        0,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        60,
+        0,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        120,
+        0,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        180,
+        0,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        78,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        60,
+        78,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 4800,
+      "rect": [
+        120,
+        78,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        180,
+        78,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        156,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        60,
+        156,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        120,
+        156,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        180,
+        156,
+        60,
+        78
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        234,
+        60,
+        78
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    26,
+    46
+  ],
+  "schemaVersion": 1
+}

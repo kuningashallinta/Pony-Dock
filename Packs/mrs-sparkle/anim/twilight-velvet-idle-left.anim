@@ -1,0 +1,141 @@
+{
+  "atlas": "twilight-velvet-idle-left.png",
+  "atlasSize": [
+    392,
+    312
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        0,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        0,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        294,
+        0,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        78,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        78,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        78,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        294,
+        78,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 3500,
+      "rect": [
+        0,
+        156,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        156,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        156,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        294,
+        156,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        234,
+        98,
+        78
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        98,
+        234,
+        98,
+        78
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

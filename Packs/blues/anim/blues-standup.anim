@@ -1,0 +1,114 @@
+{
+  "atlas": "blues-standup.png",
+  "atlasSize": [
+    360,
+    240
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        90,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        0,
+        90,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        180,
+        0,
+        90,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        270,
+        0,
+        90,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        80,
+        90,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        80,
+        90,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        180,
+        80,
+        90,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        270,
+        80,
+        90,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        160,
+        90,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        160,
+        90,
+        80
+      ]
+    },
+    {
+      "durationMs": 10000,
+      "rect": [
+        180,
+        160,
+        90,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    51,
+    40
+  ],
+  "schemaVersion": 1
+}

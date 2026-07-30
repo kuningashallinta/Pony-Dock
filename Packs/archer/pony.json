@@ -1,0 +1,128 @@
+{
+  "animations": {
+    "archer-marksmare-target": {
+      "left": "anim/archer-marksmare-target-left.anim",
+      "right": "anim/archer-marksmare-target-right.anim"
+    },
+    "archer-sit": {
+      "left": "anim/archer-sit-left.anim",
+      "right": "anim/archer-sit-right.anim"
+    },
+    "archer-stand": {
+      "left": "anim/archer-stand-left.anim",
+      "right": "anim/archer-stand-right.anim"
+    },
+    "archer-walk": {
+      "left": "anim/archer-walk-left.anim",
+      "right": "anim/archer-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "archer-stand",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "archer-walk",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "archer-sit",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "archer-marksmare-target",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 3490,
+        "min": 1170
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fire",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "fire",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "archer",
+  "interactions": [],
+  "name": "Archer",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "fillies",
+    "earth ponies"
+  ]
+}

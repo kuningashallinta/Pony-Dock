@@ -1,0 +1,51 @@
+{
+  "atlas": "angel-stand-unannoyed-right.png",
+  "atlasSize": [
+    48,
+    68
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        24,
+        34
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        24,
+        0,
+        24,
+        34
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        34,
+        24,
+        34
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        24,
+        34,
+        24,
+        34
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

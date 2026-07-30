@@ -1,0 +1,51 @@
+{
+  "atlas": "beauty-brass-tuba.png",
+  "atlasSize": [
+    152,
+    220
+  ],
+  "frames": [
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        0,
+        76,
+        110
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        76,
+        0,
+        76,
+        110
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        110,
+        76,
+        110
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        76,
+        110,
+        76,
+        110
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    37,
+    66
+  ],
+  "schemaVersion": 1
+}

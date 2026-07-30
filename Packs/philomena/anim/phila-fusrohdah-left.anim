@@ -1,0 +1,285 @@
+{
+  "atlas": "phila-fusrohdah-left.png",
+  "atlasSize": [
+    516,
+    370
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        86,
+        0,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        172,
+        0,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        258,
+        0,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        344,
+        0,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        430,
+        0,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        74,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        86,
+        74,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        172,
+        74,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        258,
+        74,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        344,
+        74,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        430,
+        74,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        148,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        86,
+        148,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        172,
+        148,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        258,
+        148,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 140,
+      "rect": [
+        344,
+        148,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        430,
+        148,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        222,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        86,
+        222,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        172,
+        222,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        258,
+        222,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        344,
+        222,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        430,
+        222,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        296,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        86,
+        296,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        172,
+        296,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        258,
+        296,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        344,
+        296,
+        86,
+        74
+      ]
+    },
+    {
+      "durationMs": 1400,
+      "rect": [
+        430,
+        296,
+        86,
+        74
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

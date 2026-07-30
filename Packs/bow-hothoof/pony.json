@@ -1,0 +1,127 @@
+{
+  "animations": {
+    "bowhothoof-idle": {
+      "left": "anim/bowhothoof-idle-left.anim",
+      "right": "anim/bowhothoof-idle-right.anim"
+    },
+    "bowhothoof-trot": {
+      "left": "anim/bowhothoof-trot-left.anim",
+      "right": "anim/bowhothoof-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "bowhothoof-idle",
+      "chance": 0.18,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bowhothoof-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 103.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bowhothoof-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk1",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 96.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bowhothoof-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -22,
+        "offsetY": -12,
+        "stoppedBehavior": null,
+        "target": "Rainbow Dash"
+      },
+      "group": 0,
+      "id": "Follow RD",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Follow RD",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 96.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "bow-hothoof",
+  "interactions": [],
+  "name": "Bow Hothoof",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "pegasi"
+  ]
+}

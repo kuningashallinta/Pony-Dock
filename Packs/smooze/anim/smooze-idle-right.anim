@@ -1,0 +1,69 @@
+{
+  "atlas": "smooze-idle-right.png",
+  "atlasSize": [
+    408,
+    244
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        136,
+        122
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        136,
+        0,
+        136,
+        122
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        272,
+        0,
+        136,
+        122
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        122,
+        136,
+        122
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        136,
+        122,
+        136,
+        122
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        272,
+        122,
+        136,
+        122
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    68,
+    60
+  ],
+  "schemaVersion": 1
+}

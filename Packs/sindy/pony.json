@@ -1,0 +1,99 @@
+{
+  "animations": {
+    "sindy-2": {
+      "left": "anim/sindy-2-left.anim",
+      "right": "anim/sindy-2-right.anim"
+    },
+    "sindy-s": {
+      "left": "anim/sindy-s-left.anim",
+      "right": "anim/sindy-s-right.anim"
+    },
+    "sindy-sl": {
+      "left": "anim/sindy-sl-left.anim",
+      "right": "anim/sindy-sl-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "sindy-s",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sindy-2",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sindy-sl",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 30000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "sindy",
+  "interactions": [],
+  "name": "Sindy",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "atlas": "blossomforth-too-flexible-right.png",
+  "atlasSize": [
+    164,
+    96
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        82,
+        96
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        82,
+        0,
+        82,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

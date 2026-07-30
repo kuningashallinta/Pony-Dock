@@ -1,0 +1,114 @@
+{
+  "atlas": "lyra-jump-right.png",
+  "atlasSize": [
+    416,
+    474
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        104,
+        158
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        104,
+        0,
+        104,
+        158
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        208,
+        0,
+        104,
+        158
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        312,
+        0,
+        104,
+        158
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        158,
+        104,
+        158
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        104,
+        158,
+        104,
+        158
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        208,
+        158,
+        104,
+        158
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        312,
+        158,
+        104,
+        158
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        316,
+        104,
+        158
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        104,
+        316,
+        104,
+        158
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        208,
+        316,
+        104,
+        158
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    60,
+    114
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,78 @@
+{
+  "atlas": "nmn-ss-stand2-left.png",
+  "atlasSize": [
+    264,
+    318
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        88,
+        0,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        176,
+        0,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        106,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        88,
+        106,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        176,
+        106,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        212,
+        88,
+        106
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    62
+  ],
+  "schemaVersion": 1
+}

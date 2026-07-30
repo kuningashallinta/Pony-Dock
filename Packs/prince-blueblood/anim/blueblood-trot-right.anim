@@ -1,0 +1,159 @@
+{
+  "atlas": "blueblood-trot-right.png",
+  "atlasSize": [
+    360,
+    432
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        90,
+        0,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        180,
+        0,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        270,
+        0,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        108,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        90,
+        108,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        180,
+        108,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        270,
+        108,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        216,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        90,
+        216,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        180,
+        216,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        270,
+        216,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        324,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        90,
+        324,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        180,
+        324,
+        90,
+        108
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        270,
+        324,
+        90,
+        108
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    51,
+    64
+  ],
+  "schemaVersion": 1
+}

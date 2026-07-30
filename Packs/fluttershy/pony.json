@@ -1,0 +1,1102 @@
+{
+  "animations": {
+    "breezie-fluttershy": {
+      "left": "anim/breezie-fluttershy-left.anim",
+      "right": "anim/breezie-fluttershy-right.anim"
+    },
+    "congafluttershy": {
+      "left": "anim/congafluttershy-left.anim",
+      "right": "anim/congafluttershy-right.anim"
+    },
+    "critter": {
+      "left": "anim/critter-left.anim",
+      "right": "anim/critter-right.anim"
+    },
+    "critter-catch": {
+      "left": "anim/critter-catch-left.anim",
+      "right": "anim/critter-catch-right.anim"
+    },
+    "crystal-fluttershy": {
+      "left": "anim/crystal-fluttershy-left.anim",
+      "right": "anim/crystal-fluttershy-right.anim"
+    },
+    "cuddles": {
+      "left": "anim/cuddles.anim",
+      "right": "anim/cuddles.anim"
+    },
+    "flutter-mouseover": {
+      "left": "anim/flutter-mouseover-left.anim",
+      "right": "anim/flutter-mouseover-right.anim"
+    },
+    "flutters-gallop": {
+      "left": "anim/flutters-gallop-left.anim",
+      "right": "anim/flutters-gallop-right.anim"
+    },
+    "fluttershy-drag": {
+      "left": "anim/fluttershy-drag-left.anim",
+      "right": "anim/fluttershy-drag-right.anim"
+    },
+    "fluttershy-stare": {
+      "left": "anim/fluttershy-stare-left.anim",
+      "right": "anim/fluttershy-stare-right.anim"
+    },
+    "fly-fluttershy": {
+      "left": "anim/fly-fluttershy-left.anim",
+      "right": "anim/fly-fluttershy-right.anim"
+    },
+    "fly-fluttershy-updown": {
+      "left": "anim/fly-fluttershy-updown-left.anim",
+      "right": "anim/fly-fluttershy-updown-right.anim"
+    },
+    "gala-fluttershy-stand": {
+      "left": "anim/gala-fluttershy-stand-left.anim",
+      "right": "anim/gala-fluttershy-stand-right.anim"
+    },
+    "gala-fluttershy-stand-right-wings": {
+      "left": "anim/gala-fluttershy-stand-right-wings-left.anim",
+      "right": "anim/gala-fluttershy-stand-right-wings-right.anim"
+    },
+    "gala-fluttershy-trot": {
+      "left": "anim/gala-fluttershy-trot-left.anim",
+      "right": "anim/gala-fluttershy-trot-right.anim"
+    },
+    "gala-fluttershy-trot-right-wings": {
+      "left": "anim/gala-fluttershy-trot-right-wings-left.anim",
+      "right": "anim/gala-fluttershy-trot-right-wings-right.anim"
+    },
+    "gala-fly": {
+      "left": "anim/gala-fly-left.anim",
+      "right": "anim/gala-fly-right.anim"
+    },
+    "sleeping-fluttershy": {
+      "left": "anim/sleeping-fluttershy-left.anim",
+      "right": "anim/sleeping-fluttershy-right.anim"
+    },
+    "sparkle": {
+      "left": "anim/sparkle.anim",
+      "right": "anim/sparkle.anim"
+    },
+    "stand-fluttershy": {
+      "left": "anim/stand-fluttershy-left.anim",
+      "right": "anim/stand-fluttershy-right.anim"
+    },
+    "stand-fluttershy-2": {
+      "left": "anim/stand-fluttershy-2.anim",
+      "right": "anim/stand-fluttershy-2.anim"
+    },
+    "stand-fluttershy-3": {
+      "left": "anim/stand-fluttershy-3-left.anim",
+      "right": "anim/stand-fluttershy-3-right.anim"
+    },
+    "trotcycle-fluttershy": {
+      "left": "anim/trotcycle-fluttershy-left.anim",
+      "right": "anim/trotcycle-fluttershy-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    },
+    {
+      "id": 2,
+      "name": "Gala_Dress"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "stand-fluttershy",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fly-fluttershy",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly_straight",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "fly_straight",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fly-fluttershy-updown",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-fluttershy",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fluttershy-stare",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 4280,
+        "min": 4280
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stare",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stare",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sleeping-fluttershy",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 60000,
+        "min": 45000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-fluttershy",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 40,
+        "offsetY": -18,
+        "stoppedBehavior": null,
+        "target": "Angel"
+      },
+      "group": 1,
+      "id": "follow_angel",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_angel",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fluttershy-drag",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flutter-mouseover",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "mouseover",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "mouseover",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flutters-gallop",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 7200,
+        "min": 1440
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "gallop",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "gallop",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "crystal-fluttershy",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "crystallized",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "crystallized",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-fluttershy-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "photo_shoot_start",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "photo_shoot_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-fluttershy",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 18000,
+        "min": 18000
+      },
+      "endSpeech": "Theme 1",
+      "follow": null,
+      "group": 1,
+      "id": "theme 1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "theme 1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-fluttershy-3",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10240,
+        "min": 10240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Flottosho",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Flottosho",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "breezie-fluttershy",
+      "chance": 0.001,
+      "durationMs": {
+        "max": 40000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "breezie",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "breezie",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-fluttershy",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": -80,
+        "offsetY": 0,
+        "stoppedBehavior": "breezie",
+        "target": "Seabreeze"
+      },
+      "group": 0,
+      "id": "breezie_start",
+      "linkedBehavior": "breezie1",
+      "movement": "Horizontal_Only",
+      "name": "breezie_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "breezie-fluttershy",
+      "chance": 0.001,
+      "durationMs": {
+        "max": 40000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "breezie",
+        "offsetX": -80,
+        "offsetY": 0,
+        "stoppedBehavior": "breezie",
+        "target": "Seabreeze"
+      },
+      "group": 1,
+      "id": "breezie1",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "breezie1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-fluttershy",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "gallop",
+        "offsetX": -80,
+        "offsetY": 40,
+        "stoppedBehavior": "stand",
+        "target": "Pinkie Pie"
+      },
+      "group": 0,
+      "id": "Conga Start",
+      "linkedBehavior": "Conga",
+      "movement": "Diagonal_Horizontal",
+      "name": "Conga Start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 333.33333333333337,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "congafluttershy",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "Conga",
+        "offsetX": -43,
+        "offsetY": -1,
+        "stoppedBehavior": "stand",
+        "target": "Twilight Sparkle"
+      },
+      "group": 1,
+      "id": "Conga",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "Conga",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 40.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cuddles",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "cuddles",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "cuddles",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-fluttershy",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": -60,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Pinkie Pie"
+      },
+      "group": 1,
+      "id": "cuddle_position_left",
+      "linkedBehavior": "cuddles",
+      "movement": "All",
+      "name": "cuddle_position_left",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-fluttershy",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 60,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Pinkie Pie"
+      },
+      "group": 1,
+      "id": "cuddle_position_right",
+      "linkedBehavior": "cuddles",
+      "movement": "All",
+      "name": "cuddle_position_right",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-fluttershy",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "walk",
+        "offsetX": 40,
+        "offsetY": 13,
+        "stoppedBehavior": "stand",
+        "target": "Manticore"
+      },
+      "group": 1,
+      "id": "cuddle_manticore_start",
+      "linkedBehavior": "cuddles",
+      "movement": "All",
+      "name": "cuddle_manticore_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-fluttershy",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "fly_straight",
+        "offsetX": 0,
+        "offsetY": -30,
+        "stoppedBehavior": "fly",
+        "target": "Bulk Biceps"
+      },
+      "group": 0,
+      "id": "lift_start",
+      "linkedBehavior": "lift",
+      "movement": "All",
+      "name": "lift_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cuddles",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "lift",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "lift",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-fluttershy",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 10240,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "goto_galla",
+      "linkedBehavior": "stand_left",
+      "movement": "None",
+      "name": "goto_galla",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-fluttershy-stand",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "stand_left",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand_left",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "gala-fluttershy-stand-right-wings",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "stand_wings",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand_wings",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "gala-fluttershy-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "gala-fluttershy-trot-right-wings",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "trot_wings",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot_wings",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "gala-fluttershy-trot",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 18000,
+        "min": 18000
+      },
+      "endSpeech": "Theme 1",
+      "follow": null,
+      "group": 2,
+      "id": "theme 1 gala",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "theme 1 gala",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "critter",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "critter",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "critter",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "critter-catch",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3160,
+        "min": 3160
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "critter_catch",
+      "linkedBehavior": "critter",
+      "movement": "None",
+      "name": "critter_catch",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Soundboard #23",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-fly",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "fly_gala",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly_gala",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-fluttershy-stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10240,
+        "min": 10240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "Flottosho gala",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Flottosho gala",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-fluttershy-stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "gala_drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "gala_drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-fluttershy-stand",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "leave_gala",
+      "linkedBehavior": "stand",
+      "movement": "None",
+      "name": "leave_gala",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "sparkle",
+      "behavior": "crystallized",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "crystalspark",
+      "name": "crystalspark",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "fluttershy",
+  "interactions": [
+    {
+      "activation": "Any",
+      "behaviors": [
+        "photo_shoot_start"
+      ],
+      "chance": 0.5,
+      "id": "fluttershy_photoshoot",
+      "name": "fluttershy_photoshoot",
+      "proximityPx": 100,
+      "reactivationDelayMs": 120000,
+      "targets": [
+        "elsie",
+        "photo-finish"
+      ]
+    }
+  ],
+  "name": "Fluttershy",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "pegasi",
+    "mares"
+  ]
+}

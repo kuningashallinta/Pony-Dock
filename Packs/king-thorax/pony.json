@@ -1,0 +1,178 @@
+{
+  "animations": {
+    "thorax-fly": {
+      "left": "anim/thorax-fly-left.anim",
+      "right": "anim/thorax-fly-right.anim"
+    },
+    "thorax-idle": {
+      "left": "anim/thorax-idle-left.anim",
+      "right": "anim/thorax-idle-right.anim"
+    },
+    "thorax-idle1": {
+      "left": "anim/thorax-idle1-left.anim",
+      "right": "anim/thorax-idle1-right.anim"
+    },
+    "thorax-trot": {
+      "left": "anim/thorax-trot-left.anim",
+      "right": "anim/thorax-trot-right.anim"
+    },
+    "thorax-trot1": {
+      "left": "anim/thorax-trot1-left.anim",
+      "right": "anim/thorax-trot1-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "thorax-idle1",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thorax-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle1",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thorax-trot1",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thorax-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thorax-fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 12000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "flight",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "flight",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "thorax-fly",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1000,
+        "min": 300
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "flight1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "flight1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "king-thorax",
+  "interactions": [],
+  "name": "King Thorax",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Stallions",
+    "Non-Ponies"
+  ]
+}

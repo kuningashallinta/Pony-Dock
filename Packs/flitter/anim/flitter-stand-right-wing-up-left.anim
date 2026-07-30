@@ -1,0 +1,69 @@
+{
+  "atlas": "flitter-stand-right-wing-up-left.png",
+  "atlasSize": [
+    246,
+    176
+  ],
+  "frames": [
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        0,
+        82,
+        88
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        82,
+        0,
+        82,
+        88
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        164,
+        0,
+        82,
+        88
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        88,
+        82,
+        88
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        82,
+        88,
+        82,
+        88
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        164,
+        88,
+        82,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

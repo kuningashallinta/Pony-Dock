@@ -1,0 +1,200 @@
+{
+  "animations": {
+    "clone-idle": {
+      "left": "anim/clone-idle-left.anim",
+      "right": "anim/clone-idle-right.anim"
+    },
+    "clone-trot": {
+      "left": "anim/clone-trot-left.anim",
+      "right": "anim/clone-trot-right.anim"
+    },
+    "hourglass": {
+      "left": "anim/hourglass-left.anim",
+      "right": "anim/hourglass-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "tardis1": {
+      "left": "anim/tardis1.anim",
+      "right": "anim/tardis1.anim"
+    },
+    "trot": {
+      "left": "anim/trot-left.anim",
+      "right": "anim/trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 10000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk tardis",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk tardis",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "hourglass",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10800,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hourglass",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "hourglass",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "clone-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "clone stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "clone stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "clone-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "clone walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "clone walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [
+    {
+      "animation": "tardis1",
+      "behavior": "walk tardis",
+      "centering": {
+        "left": "Bottom_Center",
+        "right": "Bottom_Center"
+      },
+      "durationMs": 7000,
+      "follow": false,
+      "id": "TARDIS",
+      "name": "TARDIS",
+      "placement": {
+        "left": "Bottom_Right",
+        "right": "Bottom_Left"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "doctor-whooves",
+  "interactions": [],
+  "name": "Doctor Whooves",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

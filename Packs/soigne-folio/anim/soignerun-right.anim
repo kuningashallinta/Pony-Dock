@@ -1,0 +1,69 @@
+{
+  "atlas": "soignerun-right.png",
+  "atlasSize": [
+    420,
+    148
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        140,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        140,
+        0,
+        140,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        280,
+        0,
+        140,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        74,
+        140,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        140,
+        74,
+        140,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        280,
+        74,
+        140,
+        74
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    94,
+    30
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,99 @@
+{
+  "animations": {
+    "applebumkin-idle": {
+      "left": "anim/applebumkin-idle-left.anim",
+      "right": "anim/applebumkin-idle-right.anim"
+    },
+    "applebumkin-sleep": {
+      "left": "anim/applebumkin-sleep-left.anim",
+      "right": "anim/applebumkin-sleep-right.anim"
+    },
+    "applebumkin-trot": {
+      "left": "anim/applebumkin-trot-left.anim",
+      "right": "anim/applebumkin-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "applebumkin-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "applebumkin-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "applebumkin-sleep",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "apple-bumpkin",
+  "interactions": [],
+  "name": "Apple Bumpkin",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

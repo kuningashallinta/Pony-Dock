@@ -1,0 +1,144 @@
+{
+  "animations": {
+    "changeling2-fly": {
+      "left": "anim/changeling2-fly-left.anim",
+      "right": "anim/changeling2-fly-right.anim"
+    },
+    "changeling2-idle": {
+      "left": "anim/changeling2-idle-left.anim",
+      "right": "anim/changeling2-idle-right.anim"
+    },
+    "changeling2-trot": {
+      "left": "anim/changeling2-trot-left.anim",
+      "right": "anim/changeling2-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "changeling2-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "changeling2-trot",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "changeling2-trot",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "changeling2-fly",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 6000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "changeling2-fly",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 2000,
+        "min": 500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "changeling-lv2-3",
+  "interactions": [],
+  "name": "Changeling",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Non-Ponies"
+  ]
+}

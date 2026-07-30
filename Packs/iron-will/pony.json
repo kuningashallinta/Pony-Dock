@@ -1,0 +1,45 @@
+{
+  "animations": {
+    "ironwill-walk": {
+      "left": "anim/ironwill-walk-left.anim",
+      "right": "anim/ironwill-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "ironwill-walk",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "iron-will",
+  "interactions": [],
+  "name": "Iron Will",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "non-ponies",
+    "supporting ponies",
+    "stallions"
+  ]
+}

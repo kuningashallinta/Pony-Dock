@@ -1,0 +1,159 @@
+{
+  "atlas": "little-strongheart-trot-left.png",
+  "atlasSize": [
+    336,
+    416
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        84,
+        0,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        168,
+        0,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        252,
+        0,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        104,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        84,
+        104,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        168,
+        104,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        252,
+        104,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        208,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        84,
+        208,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        168,
+        208,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        252,
+        208,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        312,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        84,
+        312,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        168,
+        312,
+        84,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        252,
+        312,
+        84,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    39,
+    52
+  ],
+  "schemaVersion": 1
+}

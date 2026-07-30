@@ -1,0 +1,123 @@
+{
+  "atlas": "roflsit-pinkie-pie-left.png",
+  "atlasSize": [
+    504,
+    288
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        126,
+        96
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        126,
+        0,
+        126,
+        96
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        252,
+        0,
+        126,
+        96
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        378,
+        0,
+        126,
+        96
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        96,
+        126,
+        96
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        126,
+        96,
+        126,
+        96
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        252,
+        96,
+        126,
+        96
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        378,
+        96,
+        126,
+        96
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        192,
+        126,
+        96
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        126,
+        192,
+        126,
+        96
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        252,
+        192,
+        126,
+        96
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        378,
+        192,
+        126,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    50
+  ],
+  "schemaVersion": 1
+}

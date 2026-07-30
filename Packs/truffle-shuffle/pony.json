@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "truffle-idle": {
+      "left": "anim/truffle-idle-left.anim",
+      "right": "anim/truffle-idle-right.anim"
+    },
+    "truffle-trot": {
+      "left": "anim/truffle-trot-left.anim",
+      "right": "anim/truffle-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "truffle-idle",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "truffle-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "truffle-shuffle",
+  "interactions": [],
+  "name": "Truffle Shuffle",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "colts",
+    "supporting ponies",
+    "earth ponies"
+  ]
+}

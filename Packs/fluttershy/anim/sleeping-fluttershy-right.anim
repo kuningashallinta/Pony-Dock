@@ -1,0 +1,33 @@
+{
+  "atlas": "sleeping-fluttershy-right.png",
+  "atlasSize": [
+    156,
+    78
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        78,
+        78
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        78,
+        0,
+        78,
+        78
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    30,
+    12
+  ],
+  "schemaVersion": 1
+}

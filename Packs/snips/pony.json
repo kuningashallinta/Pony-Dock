@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "snips-stand": {
+      "left": "anim/snips-stand-left.anim",
+      "right": "anim/snips-stand-right.anim"
+    },
+    "snips-walk": {
+      "left": "anim/snips-walk-left.anim",
+      "right": "anim/snips-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "snips-stand",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 30000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "snips-walk",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "snips",
+  "interactions": [],
+  "name": "Snips",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "colts",
+    "unicorns"
+  ]
+}

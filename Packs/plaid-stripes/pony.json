@@ -1,0 +1,150 @@
+{
+  "animations": {
+    "plaidstripes-eyebrows": {
+      "left": "anim/plaidstripes-eyebrows-left.anim",
+      "right": "anim/plaidstripes-eyebrows-right.anim"
+    },
+    "plaidstripes-idle": {
+      "left": "anim/plaidstripes-idle-left.anim",
+      "right": "anim/plaidstripes-idle-right.anim"
+    },
+    "plaidstripes-idle1": {
+      "left": "anim/plaidstripes-idle1-left.anim",
+      "right": "anim/plaidstripes-idle1-right.anim"
+    },
+    "plaidstripes-trot": {
+      "left": "anim/plaidstripes-trot-left.anim",
+      "right": "anim/plaidstripes-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "plaidstripes-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "plaidstripes-idle1",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand1",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "plaidstripes-eyebrows",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 4000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "eyebrows",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "eyebrows",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "plaidstripes-trot",
+      "chance": 0.32,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "plaidstripes-trot",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 86.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "plaid-stripes",
+  "interactions": [],
+  "name": "Plaid Stripes",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Mares",
+    "Earth Ponies"
+  ]
+}

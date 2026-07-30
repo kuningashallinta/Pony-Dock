@@ -1,0 +1,87 @@
+{
+  "atlas": "djdecks-playing-strobe1-right.png",
+  "atlasSize": [
+    318,
+    312
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        106,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        106,
+        0,
+        106,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        212,
+        0,
+        106,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        104,
+        106,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        106,
+        104,
+        106,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        212,
+        104,
+        106,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        208,
+        106,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        106,
+        208,
+        106,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

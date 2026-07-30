@@ -1,0 +1,159 @@
+{
+  "atlas": "igneus-rock-trotting-left.png",
+  "atlasSize": [
+    328,
+    392
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        82,
+        0,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        164,
+        0,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        246,
+        0,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        98,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        82,
+        98,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        164,
+        98,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        246,
+        98,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        196,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        82,
+        196,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        164,
+        196,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        246,
+        196,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        294,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        82,
+        294,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        164,
+        294,
+        82,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        246,
+        294,
+        82,
+        98
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

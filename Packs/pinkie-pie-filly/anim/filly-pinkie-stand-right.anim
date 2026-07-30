@@ -1,0 +1,60 @@
+{
+  "atlas": "filly-pinkie-stand-right.png",
+  "atlasSize": [
+    192,
+    124
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        64,
+        62
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        64,
+        0,
+        64,
+        62
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        128,
+        0,
+        64,
+        62
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        62,
+        64,
+        62
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        64,
+        62,
+        64,
+        62
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    32,
+    30
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,123 @@
+{
+  "atlas": "mlp-gilda-flight-right-big-right.png",
+  "atlasSize": [
+    520,
+    432
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        130,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        130,
+        0,
+        130,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        260,
+        0,
+        130,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        390,
+        0,
+        130,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        144,
+        130,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        130,
+        144,
+        130,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        260,
+        144,
+        130,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        390,
+        144,
+        130,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        288,
+        130,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        130,
+        288,
+        130,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        260,
+        288,
+        130,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        390,
+        288,
+        130,
+        144
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    75,
+    72
+  ],
+  "schemaVersion": 1
+}

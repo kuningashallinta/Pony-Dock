@@ -1,0 +1,78 @@
+{
+  "atlas": "ch-pi-start.png",
+  "atlasSize": [
+    384,
+    300
+  ],
+  "frames": [
+    {
+      "durationMs": 400,
+      "rect": [
+        0,
+        0,
+        128,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        128,
+        0,
+        128,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        256,
+        0,
+        128,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        100,
+        128,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        128,
+        100,
+        128,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        256,
+        100,
+        128,
+        100
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        200,
+        128,
+        100
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    61,
+    68
+  ],
+  "schemaVersion": 1
+}

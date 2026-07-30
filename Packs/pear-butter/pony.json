@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "pear-butter-stand": {
+      "left": "anim/pear-butter-stand-left.anim",
+      "right": "anim/pear-butter-stand-right.anim"
+    },
+    "pear-butter-trot": {
+      "left": "anim/pear-butter-trot-left.anim",
+      "right": "anim/pear-butter-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "pear-butter-stand",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pear-butter-trot",
+      "chance": 0.8,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "pear-butter",
+  "interactions": [],
+  "name": "Pear Butter",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Mares",
+    "Earth Ponies"
+  ]
+}

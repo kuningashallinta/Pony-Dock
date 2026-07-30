@@ -1,0 +1,69 @@
+{
+  "atlas": "stella-speed-left.png",
+  "atlasSize": [
+    252,
+    144
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        84,
+        0,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        168,
+        0,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        72,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        84,
+        72,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        168,
+        72,
+        84,
+        72
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    41,
+    32
+  ],
+  "schemaVersion": 1
+}

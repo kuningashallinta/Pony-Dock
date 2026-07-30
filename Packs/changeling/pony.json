@@ -1,0 +1,6731 @@
+{
+  "animations": {
+    "aj-gallop": {
+      "left": "anim/aj-gallop-left.anim",
+      "right": "anim/aj-gallop-right.anim"
+    },
+    "bounce-pinkiepie": {
+      "left": "anim/bounce-pinkiepie-left.anim",
+      "right": "anim/bounce-pinkiepie-right.anim"
+    },
+    "ch-aj-finish": {
+      "left": "anim/ch-aj-finish.anim",
+      "right": "anim/ch-aj-finish.anim"
+    },
+    "ch-aj-finish-2": {
+      "left": "anim/ch-aj-finish-2.anim",
+      "right": "anim/ch-aj-finish-2.anim"
+    },
+    "ch-aj-start": {
+      "left": "anim/ch-aj-start.anim",
+      "right": "anim/ch-aj-start.anim"
+    },
+    "ch-aj-start-2": {
+      "left": "anim/ch-aj-start-2.anim",
+      "right": "anim/ch-aj-start-2.anim"
+    },
+    "ch-fl-finish": {
+      "left": "anim/ch-fl-finish.anim",
+      "right": "anim/ch-fl-finish.anim"
+    },
+    "ch-fl-finish-2": {
+      "left": "anim/ch-fl-finish-2.anim",
+      "right": "anim/ch-fl-finish-2.anim"
+    },
+    "ch-fl-start": {
+      "left": "anim/ch-fl-start.anim",
+      "right": "anim/ch-fl-start.anim"
+    },
+    "ch-fl-start-2": {
+      "left": "anim/ch-fl-start-2.anim",
+      "right": "anim/ch-fl-start-2.anim"
+    },
+    "ch-pi-finish": {
+      "left": "anim/ch-pi-finish.anim",
+      "right": "anim/ch-pi-finish.anim"
+    },
+    "ch-pi-finish-2": {
+      "left": "anim/ch-pi-finish-2.anim",
+      "right": "anim/ch-pi-finish-2.anim"
+    },
+    "ch-pi-start": {
+      "left": "anim/ch-pi-start.anim",
+      "right": "anim/ch-pi-start.anim"
+    },
+    "ch-pi-start-2": {
+      "left": "anim/ch-pi-start-2.anim",
+      "right": "anim/ch-pi-start-2.anim"
+    },
+    "ch-ra-finish": {
+      "left": "anim/ch-ra-finish.anim",
+      "right": "anim/ch-ra-finish.anim"
+    },
+    "ch-ra-finish-2": {
+      "left": "anim/ch-ra-finish-2.anim",
+      "right": "anim/ch-ra-finish-2.anim"
+    },
+    "ch-ra-start": {
+      "left": "anim/ch-ra-start.anim",
+      "right": "anim/ch-ra-start.anim"
+    },
+    "ch-ra-start-2": {
+      "left": "anim/ch-ra-start-2.anim",
+      "right": "anim/ch-ra-start-2.anim"
+    },
+    "ch-rd-finish": {
+      "left": "anim/ch-rd-finish.anim",
+      "right": "anim/ch-rd-finish.anim"
+    },
+    "ch-rd-finish-2": {
+      "left": "anim/ch-rd-finish-2.anim",
+      "right": "anim/ch-rd-finish-2.anim"
+    },
+    "ch-rd-start": {
+      "left": "anim/ch-rd-start.anim",
+      "right": "anim/ch-rd-start.anim"
+    },
+    "ch-rd-start-2": {
+      "left": "anim/ch-rd-start-2.anim",
+      "right": "anim/ch-rd-start-2.anim"
+    },
+    "ch-trans-finish": {
+      "left": "anim/ch-trans-finish.anim",
+      "right": "anim/ch-trans-finish.anim"
+    },
+    "ch-trans-finish-2": {
+      "left": "anim/ch-trans-finish-2.anim",
+      "right": "anim/ch-trans-finish-2.anim"
+    },
+    "ch-trans-start": {
+      "left": "anim/ch-trans-start.anim",
+      "right": "anim/ch-trans-start.anim"
+    },
+    "ch-trans-start-2": {
+      "left": "anim/ch-trans-start-2.anim",
+      "right": "anim/ch-trans-start-2.anim"
+    },
+    "ch-twi-finish": {
+      "left": "anim/ch-twi-finish.anim",
+      "right": "anim/ch-twi-finish.anim"
+    },
+    "ch-twi-finish-2": {
+      "left": "anim/ch-twi-finish-2.anim",
+      "right": "anim/ch-twi-finish-2.anim"
+    },
+    "ch-twi-start": {
+      "left": "anim/ch-twi-start.anim",
+      "right": "anim/ch-twi-start.anim"
+    },
+    "ch-twi-start-2": {
+      "left": "anim/ch-twi-start-2.anim",
+      "right": "anim/ch-twi-start-2.anim"
+    },
+    "changeling-flight": {
+      "left": "anim/changeling-flight-left.anim",
+      "right": "anim/changeling-flight-right.anim"
+    },
+    "changeling-idle": {
+      "left": "anim/changeling-idle-left.anim",
+      "right": "anim/changeling-idle-right.anim"
+    },
+    "changeling-sit": {
+      "left": "anim/changeling-sit-left.anim",
+      "right": "anim/changeling-sit-right.anim"
+    },
+    "changeling-trot": {
+      "left": "anim/changeling-trot-left.anim",
+      "right": "anim/changeling-trot-right.anim"
+    },
+    "flutter-mouseover": {
+      "left": "anim/flutter-mouseover-left.anim",
+      "right": "anim/flutter-mouseover-right.anim"
+    },
+    "fly-fluttershy": {
+      "left": "anim/fly-fluttershy-left.anim",
+      "right": "anim/fly-fluttershy-right.anim"
+    },
+    "flyzoom-rainbow": {
+      "left": "anim/flyzoom-rainbow-left.anim",
+      "right": "anim/flyzoom-rainbow-right.anim"
+    },
+    "mouse-pinkiepie": {
+      "left": "anim/mouse-pinkiepie-left.anim",
+      "right": "anim/mouse-pinkiepie-right.anim"
+    },
+    "pinkie-galopp": {
+      "left": "anim/pinkie-galopp-left.anim",
+      "right": "anim/pinkie-galopp-right.anim"
+    },
+    "stand-aj": {
+      "left": "anim/stand-aj-left.anim",
+      "right": "anim/stand-aj-right.anim"
+    },
+    "stand-fluttershy": {
+      "left": "anim/stand-fluttershy-left.anim",
+      "right": "anim/stand-fluttershy-right.anim"
+    },
+    "stand-pinkiepie": {
+      "left": "anim/stand-pinkiepie-left.anim",
+      "right": "anim/stand-pinkiepie-right.anim"
+    },
+    "stand-rainbow": {
+      "left": "anim/stand-rainbow-left.anim",
+      "right": "anim/stand-rainbow-right.anim"
+    },
+    "stand-rarity": {
+      "left": "anim/stand-rarity-left.anim",
+      "right": "anim/stand-rarity-right.anim"
+    },
+    "stand-twilight": {
+      "left": "anim/stand-twilight-left.anim",
+      "right": "anim/stand-twilight-right.anim"
+    },
+    "transform": {
+      "left": "anim/transform.anim",
+      "right": "anim/transform.anim"
+    },
+    "trot-fluttershy": {
+      "left": "anim/trot-fluttershy-left.anim",
+      "right": "anim/trot-fluttershy-right.anim"
+    },
+    "trotcycle-aj": {
+      "left": "anim/trotcycle-aj-left.anim",
+      "right": "anim/trotcycle-aj-right.anim"
+    },
+    "trotcycle-pinkiepie": {
+      "left": "anim/trotcycle-pinkiepie-left.anim",
+      "right": "anim/trotcycle-pinkiepie-right.anim"
+    },
+    "trotcycle-rainbow": {
+      "left": "anim/trotcycle-rainbow-left.anim",
+      "right": "anim/trotcycle-rainbow-right.anim"
+    },
+    "trotcycle-rarity": {
+      "left": "anim/trotcycle-rarity-left.anim",
+      "right": "anim/trotcycle-rarity-right.anim"
+    },
+    "twilight-trot": {
+      "left": "anim/twilight-trot-left.anim",
+      "right": "anim/twilight-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    },
+    {
+      "id": 2,
+      "name": "Twilight"
+    },
+    {
+      "id": 3,
+      "name": "RD"
+    },
+    {
+      "id": 4,
+      "name": "AJ"
+    },
+    {
+      "id": 5,
+      "name": "Pinkie"
+    },
+    {
+      "id": 6,
+      "name": "Rarity"
+    },
+    {
+      "id": 7,
+      "name": "Fluttershy"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "changeling-idle",
+      "chance": 0.0001,
+      "durationMs": {
+        "max": 0,
+        "min": 0
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "failsafe",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "failsafe",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "changeling-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 18000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "changeling-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "changeling-flight",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 7000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flight",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "flight",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "changeling-flight",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 600,
+        "min": 200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flutter",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "flutter",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 333.33333333333337,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "changeling-sit",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "ch-transform-right",
+      "linkedBehavior": "stand",
+      "movement": "None",
+      "name": "ch-transform-right",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "ch-transform-left",
+      "linkedBehavior": "stand",
+      "movement": "None",
+      "name": "ch-transform-left",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "ch-transform-right1",
+      "linkedBehavior": "trot",
+      "movement": "None",
+      "name": "ch-transform-right1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "ch-transform-left1",
+      "linkedBehavior": "trot",
+      "movement": "None",
+      "name": "ch-transform-left1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "ch-transform-right2",
+      "linkedBehavior": "flight",
+      "movement": "None",
+      "name": "ch-transform-right2",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "ch-transform-left2",
+      "linkedBehavior": "flight",
+      "movement": "None",
+      "name": "ch-transform-left2",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-twi-right",
+      "linkedBehavior": "twi-transform-right",
+      "movement": "None",
+      "name": "transform-twi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-twi-left",
+      "linkedBehavior": "twi-transform-left",
+      "movement": "None",
+      "name": "transform-twi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-aj-right",
+      "linkedBehavior": "aj-transform-right",
+      "movement": "None",
+      "name": "transform-aj-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-aj-left",
+      "linkedBehavior": "aj-transform-left",
+      "movement": "None",
+      "name": "transform-aj-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-rd-right",
+      "linkedBehavior": "rd-transform-right",
+      "movement": "None",
+      "name": "transform-rd-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-rd-left",
+      "linkedBehavior": "rd-transform-left",
+      "movement": "None",
+      "name": "transform-rd-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-ra-right",
+      "linkedBehavior": "ra-transform-right",
+      "movement": "None",
+      "name": "transform-ra-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-ra-left",
+      "linkedBehavior": "ra-transform-left",
+      "movement": "None",
+      "name": "transform-ra-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-fl-right",
+      "linkedBehavior": "fl-transform-right",
+      "movement": "None",
+      "name": "transform-fl-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-fl-left",
+      "linkedBehavior": "fl-transform-left",
+      "movement": "None",
+      "name": "transform-fl-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-pi-right",
+      "linkedBehavior": "pi-transform-right",
+      "movement": "None",
+      "name": "transform-pi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-pi-left",
+      "linkedBehavior": "pi-transform-left",
+      "movement": "None",
+      "name": "transform-pi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-twi-right1",
+      "linkedBehavior": "twi-transform-right1",
+      "movement": "None",
+      "name": "transform-twi-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-twi-left1",
+      "linkedBehavior": "twi-transform-left1",
+      "movement": "None",
+      "name": "transform-twi-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-aj-right1",
+      "linkedBehavior": "aj-transform-right1",
+      "movement": "None",
+      "name": "transform-aj-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-aj-left1",
+      "linkedBehavior": "aj-transform-left1",
+      "movement": "None",
+      "name": "transform-aj-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-rd-right1",
+      "linkedBehavior": "rd-transform-right1",
+      "movement": "None",
+      "name": "transform-rd-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-rd-left1",
+      "linkedBehavior": "rd-transform-left1",
+      "movement": "None",
+      "name": "transform-rd-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-ra-right1",
+      "linkedBehavior": "ra-transform-right1",
+      "movement": "None",
+      "name": "transform-ra-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-ra-left1",
+      "linkedBehavior": "ra-transform-left1",
+      "movement": "None",
+      "name": "transform-ra-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-fl-right1",
+      "linkedBehavior": "fl-transform-right1",
+      "movement": "None",
+      "name": "transform-fl-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-fl-left1",
+      "linkedBehavior": "fl-transform-left1",
+      "movement": "None",
+      "name": "transform-fl-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-pi-right1",
+      "linkedBehavior": "pi-transform-right1",
+      "movement": "None",
+      "name": "transform-pi-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-trans-start-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform-pi-left1",
+      "linkedBehavior": "pi-transform-left1",
+      "movement": "None",
+      "name": "transform-pi-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "twi-transform-right",
+      "linkedBehavior": "twi-stand",
+      "movement": "None",
+      "name": "twi-transform-right",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "twi-transform-left",
+      "linkedBehavior": "twi-stand",
+      "movement": "None",
+      "name": "twi-transform-left",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "twi-transform-right1",
+      "linkedBehavior": "twi-trot",
+      "movement": "None",
+      "name": "twi-transform-right1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "twi-transform-left1",
+      "linkedBehavior": "twi-trot",
+      "movement": "None",
+      "name": "twi-transform-left1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-ch-right",
+      "linkedBehavior": "ch-transform-right",
+      "movement": "None",
+      "name": "transform-twi-ch-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-ch-left",
+      "linkedBehavior": "ch-transform-left",
+      "movement": "None",
+      "name": "transform-twi-ch-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-ch-right1",
+      "linkedBehavior": "ch-transform-right1",
+      "movement": "None",
+      "name": "transform-twi-ch-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-ch-left1",
+      "linkedBehavior": "ch-transform-left1",
+      "movement": "None",
+      "name": "transform-twi-ch-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-ch-right2",
+      "linkedBehavior": "ch-transform-right2",
+      "movement": "None",
+      "name": "transform-twi-ch-right2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-ch-left2",
+      "linkedBehavior": "ch-transform-left2",
+      "movement": "None",
+      "name": "transform-twi-ch-left2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-rd-right",
+      "linkedBehavior": "rd-transform-right1",
+      "movement": "None",
+      "name": "transform-twi-rd-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-rd-left",
+      "linkedBehavior": "rd-transform-left1",
+      "movement": "None",
+      "name": "transform-twi-rd-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-ra-right",
+      "linkedBehavior": "ra-transform-right1",
+      "movement": "None",
+      "name": "transform-twi-ra-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-ra-left",
+      "linkedBehavior": "ra-transform-left1",
+      "movement": "None",
+      "name": "transform-twi-ra-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-aj-right",
+      "linkedBehavior": "aj-transform-right1",
+      "movement": "None",
+      "name": "transform-twi-aj-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-aj-left",
+      "linkedBehavior": "aj-transform-left1",
+      "movement": "None",
+      "name": "transform-twi-aj-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-pi-right",
+      "linkedBehavior": "pi-transform-right1",
+      "movement": "None",
+      "name": "transform-twi-pi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-pi-left",
+      "linkedBehavior": "pi-transform-left1",
+      "movement": "None",
+      "name": "transform-twi-pi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-fl-right",
+      "linkedBehavior": "fl-transform-right1",
+      "movement": "None",
+      "name": "transform-twi-fl-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-twi-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform-twi-fl-left",
+      "linkedBehavior": "fl-transform-left1",
+      "movement": "None",
+      "name": "transform-twi-fl-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-twilight",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "twi-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "twi-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "twilight-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "twi-trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "twi-trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand-twilight",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "twi-drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "twi-drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ch-rd-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "rd-transform-right",
+      "linkedBehavior": "rd-stand",
+      "movement": "None",
+      "name": "rd-transform-right",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "rd-transform-left",
+      "linkedBehavior": "rd-stand",
+      "movement": "None",
+      "name": "rd-transform-left",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "rd-transform-right1",
+      "linkedBehavior": "rd-walk",
+      "movement": "None",
+      "name": "rd-transform-right1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "rd-transform-left1",
+      "linkedBehavior": "rd-walk",
+      "movement": "None",
+      "name": "rd-transform-left1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-ch-right",
+      "linkedBehavior": "ch-transform-right",
+      "movement": "None",
+      "name": "transform-rd-ch-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-ch-left",
+      "linkedBehavior": "ch-transform-left",
+      "movement": "None",
+      "name": "transform-rd-ch-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-ch-right1",
+      "linkedBehavior": "ch-transform-right1",
+      "movement": "None",
+      "name": "transform-rd-ch-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-ch-left1",
+      "linkedBehavior": "ch-transform-left1",
+      "movement": "None",
+      "name": "transform-rd-ch-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-ch-right2",
+      "linkedBehavior": "ch-transform-right2",
+      "movement": "None",
+      "name": "transform-rd-ch-right2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-ch-left2",
+      "linkedBehavior": "ch-transform-left2",
+      "movement": "None",
+      "name": "transform-rd-ch-left2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-twi-right",
+      "linkedBehavior": "twi-transform-right1",
+      "movement": "None",
+      "name": "transform-rd-twi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-twi-left",
+      "linkedBehavior": "twi-transform-left1",
+      "movement": "None",
+      "name": "transform-rd-twi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-ra-right",
+      "linkedBehavior": "ra-transform-right1",
+      "movement": "None",
+      "name": "transform-rd-ra-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-ra-left",
+      "linkedBehavior": "ra-transform-left1",
+      "movement": "None",
+      "name": "transform-rd-ra-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-aj-right",
+      "linkedBehavior": "aj-transform-right1",
+      "movement": "None",
+      "name": "transform-rd-aj-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-aj-left",
+      "linkedBehavior": "aj-transform-left1",
+      "movement": "None",
+      "name": "transform-rd-aj-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-pi-right",
+      "linkedBehavior": "pi-transform-right1",
+      "movement": "None",
+      "name": "transform-rd-pi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-pi-left",
+      "linkedBehavior": "pi-transform-left1",
+      "movement": "None",
+      "name": "transform-rd-pi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-fl-right",
+      "linkedBehavior": "fl-transform-right1",
+      "movement": "None",
+      "name": "transform-rd-fl-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-rd-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "transform-rd-fl-left",
+      "linkedBehavior": "fl-transform-left1",
+      "movement": "None",
+      "name": "transform-rd-fl-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-rainbow",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "rd-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "rd-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-rainbow",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 6000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "rd-walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "rd-walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 126.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flyzoom-rainbow",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "rd-flyzoom",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "rd-flyzoom",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 333.33333333333337,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand-rainbow",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "rd-drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "rd-drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ch-aj-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "aj-transform-right",
+      "linkedBehavior": "aj-stand",
+      "movement": "None",
+      "name": "aj-transform-right",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "aj-transform-left",
+      "linkedBehavior": "aj-stand",
+      "movement": "None",
+      "name": "aj-transform-left",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "aj-transform-right1",
+      "linkedBehavior": "aj-walk",
+      "movement": "None",
+      "name": "aj-transform-right1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "aj-transform-left1",
+      "linkedBehavior": "aj-walk",
+      "movement": "None",
+      "name": "aj-transform-left1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-ch-right",
+      "linkedBehavior": "ch-transform-right",
+      "movement": "None",
+      "name": "transform-aj-ch-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-ch-left",
+      "linkedBehavior": "ch-transform-left",
+      "movement": "None",
+      "name": "transform-aj-ch-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-ch-right1",
+      "linkedBehavior": "ch-transform-right1",
+      "movement": "None",
+      "name": "transform-aj-ch-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-ch-left1",
+      "linkedBehavior": "ch-transform-left1",
+      "movement": "None",
+      "name": "transform-aj-ch-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-ch-right2",
+      "linkedBehavior": "ch-transform-right2",
+      "movement": "None",
+      "name": "transform-aj-ch-right2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-ch-left2",
+      "linkedBehavior": "ch-transform-left2",
+      "movement": "None",
+      "name": "transform-aj-ch-left2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-twi-right",
+      "linkedBehavior": "twi-transform-right1",
+      "movement": "None",
+      "name": "transform-aj-twi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-twi-left",
+      "linkedBehavior": "twi-transform-left1",
+      "movement": "None",
+      "name": "transform-aj-twi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-rd-right",
+      "linkedBehavior": "rd-transform-right1",
+      "movement": "None",
+      "name": "transform-aj-rd-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-rd-left",
+      "linkedBehavior": "rd-transform-left1",
+      "movement": "None",
+      "name": "transform-aj-rd-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-ra-right",
+      "linkedBehavior": "ra-transform-right1",
+      "movement": "None",
+      "name": "transform-aj-ra-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-ra-left",
+      "linkedBehavior": "ra-transform-left1",
+      "movement": "None",
+      "name": "transform-aj-ra-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-pi-right",
+      "linkedBehavior": "pi-transform-right1",
+      "movement": "None",
+      "name": "transform-aj-pi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-pi-left",
+      "linkedBehavior": "pi-transform-left1",
+      "movement": "None",
+      "name": "transform-aj-pi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-fl-right",
+      "linkedBehavior": "fl-transform-right1",
+      "movement": "None",
+      "name": "transform-aj-fl-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-aj-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "transform-aj-fl-left",
+      "linkedBehavior": "fl-transform-left1",
+      "movement": "None",
+      "name": "transform-aj-fl-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-aj",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 10000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "aj-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "aj-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-aj",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 5000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "aj-walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "aj-walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 110.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "aj-gallop",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 6000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "aj-gallop",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "aj-gallop",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 266.6666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand-aj",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 10000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "aj-drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "aj-drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ch-pi-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pi-transform-right",
+      "linkedBehavior": "pinkie-stand",
+      "movement": "None",
+      "name": "pi-transform-right",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pi-transform-left",
+      "linkedBehavior": "pinkie-stand",
+      "movement": "None",
+      "name": "pi-transform-left",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pi-transform-right1",
+      "linkedBehavior": "pinkie-bounce",
+      "movement": "None",
+      "name": "pi-transform-right1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pi-transform-left1",
+      "linkedBehavior": "pinkie-bounce",
+      "movement": "None",
+      "name": "pi-transform-left1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-ch-right",
+      "linkedBehavior": "ch-transform-right",
+      "movement": "None",
+      "name": "transform-pi-ch-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-ch-left",
+      "linkedBehavior": "ch-transform-left",
+      "movement": "None",
+      "name": "transform-pi-ch-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-ch-right1",
+      "linkedBehavior": "ch-transform-right1",
+      "movement": "None",
+      "name": "transform-pi-ch-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-ch-left1",
+      "linkedBehavior": "ch-transform-left1",
+      "movement": "None",
+      "name": "transform-pi-ch-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-ch-right2",
+      "linkedBehavior": "ch-transform-right2",
+      "movement": "None",
+      "name": "transform-pi-ch-right2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-ch-left2",
+      "linkedBehavior": "ch-transform-left2",
+      "movement": "None",
+      "name": "transform-pi-ch-left2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-twi-right",
+      "linkedBehavior": "twi-transform-right1",
+      "movement": "None",
+      "name": "transform-pi-twi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-twi-left",
+      "linkedBehavior": "twi-transform-left1",
+      "movement": "None",
+      "name": "transform-pi-twi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-rd-right",
+      "linkedBehavior": "rd-transform-right1",
+      "movement": "None",
+      "name": "transform-pi-rd-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-rd-left",
+      "linkedBehavior": "rd-transform-left1",
+      "movement": "None",
+      "name": "transform-pi-rd-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-aj-right",
+      "linkedBehavior": "aj-transform-right1",
+      "movement": "None",
+      "name": "transform-pi-aj-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-aj-left",
+      "linkedBehavior": "aj-transform-left1",
+      "movement": "None",
+      "name": "transform-pi-aj-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-ra-right",
+      "linkedBehavior": "ra-transform-right1",
+      "movement": "None",
+      "name": "transform-pi-ra-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-ra-left",
+      "linkedBehavior": "ra-transform-left1",
+      "movement": "None",
+      "name": "transform-pi-ra-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-fl-right",
+      "linkedBehavior": "fl-transform-right1",
+      "movement": "None",
+      "name": "transform-pi-fl-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-pi-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "transform-pi-fl-left",
+      "linkedBehavior": "fl-transform-left1",
+      "movement": "None",
+      "name": "transform-pi-fl-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-pinkiepie",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pinkie-stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "pinkie-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-pinkiepie",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pinkie-walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "pinkie-walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bounce-pinkiepie",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pinkie-bounce",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "pinkie-bounce",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "mouse-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5200,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pinkie-mouseover",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "pinkie-mouseover",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "mouse-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5200,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pinkie-drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "pinkie-drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pinkie-galopp",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pinkie-galopp",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "pinkie-galopp",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ch-ra-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "ra-transform-right",
+      "linkedBehavior": "rarity-stand",
+      "movement": "None",
+      "name": "ra-transform-right",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "ra-transform-left",
+      "linkedBehavior": "rarity-stand",
+      "movement": "None",
+      "name": "ra-transform-left",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "ra-transform-right1",
+      "linkedBehavior": "rarity-walk",
+      "movement": "None",
+      "name": "ra-transform-right1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "ra-transform-left1",
+      "linkedBehavior": "rarity-walk",
+      "movement": "None",
+      "name": "ra-transform-left1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-ch-right",
+      "linkedBehavior": "ch-transform-right",
+      "movement": "None",
+      "name": "transform-ra-ch-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-ch-left",
+      "linkedBehavior": "ch-transform-left",
+      "movement": "None",
+      "name": "transform-ra-ch-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-ch-right1",
+      "linkedBehavior": "ch-transform-right1",
+      "movement": "None",
+      "name": "transform-ra-ch-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-ch-left1",
+      "linkedBehavior": "ch-transform-left1",
+      "movement": "None",
+      "name": "transform-ra-ch-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-ch-right2",
+      "linkedBehavior": "ch-transform-right2",
+      "movement": "None",
+      "name": "transform-ra-ch-right2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-ch-left2",
+      "linkedBehavior": "ch-transform-left2",
+      "movement": "None",
+      "name": "transform-ra-ch-left2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-twi-right",
+      "linkedBehavior": "twi-transform-right1",
+      "movement": "None",
+      "name": "transform-ra-twi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-twi-left",
+      "linkedBehavior": "twi-transform-left1",
+      "movement": "None",
+      "name": "transform-ra-twi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-rd-right",
+      "linkedBehavior": "rd-transform-right1",
+      "movement": "None",
+      "name": "transform-ra-rd-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-rd-left",
+      "linkedBehavior": "rd-transform-left1",
+      "movement": "None",
+      "name": "transform-ra-rd-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-aj-right",
+      "linkedBehavior": "aj-transform-right1",
+      "movement": "None",
+      "name": "transform-ra-aj-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-aj-left",
+      "linkedBehavior": "aj-transform-left1",
+      "movement": "None",
+      "name": "transform-ra-aj-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-pi-right",
+      "linkedBehavior": "pi-transform-right1",
+      "movement": "None",
+      "name": "transform-ra-pi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-pi-left",
+      "linkedBehavior": "pi-transform-left1",
+      "movement": "None",
+      "name": "transform-ra-pi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-fl-right",
+      "linkedBehavior": "fl-transform-right1",
+      "movement": "None",
+      "name": "transform-ra-fl-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-ra-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "transform-ra-fl-left",
+      "linkedBehavior": "fl-transform-left1",
+      "movement": "None",
+      "name": "transform-ra-fl-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-rarity",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 14240,
+        "min": 14240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "rarity-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "rarity-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-rarity",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "rarity-walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "rarity-walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand-rarity",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 14240,
+        "min": 14240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "rarity-drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "rarity-drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ch-fl-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "fl-transform-right",
+      "linkedBehavior": "flutter-stand",
+      "movement": "None",
+      "name": "fl-transform-right",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "fl-transform-left",
+      "linkedBehavior": "flutter-stand",
+      "movement": "None",
+      "name": "fl-transform-left",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-finish",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "fl-transform-right1",
+      "linkedBehavior": "flutter-fly",
+      "movement": "None",
+      "name": "fl-transform-right1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-finish-2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1850,
+        "min": 1850
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "fl-transform-left1",
+      "linkedBehavior": "flutter-fly",
+      "movement": "None",
+      "name": "fl-transform-left1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-ch-right",
+      "linkedBehavior": "ch-transform-right",
+      "movement": "None",
+      "name": "transform-fl-ch-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-ch-left",
+      "linkedBehavior": "ch-transform-left",
+      "movement": "None",
+      "name": "transform-fl-ch-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-ch-right1",
+      "linkedBehavior": "ch-transform-right1",
+      "movement": "None",
+      "name": "transform-fl-ch-right1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-ch-left1",
+      "linkedBehavior": "ch-transform-left1",
+      "movement": "None",
+      "name": "transform-fl-ch-left1",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-ch-right2",
+      "linkedBehavior": "ch-transform-right2",
+      "movement": "None",
+      "name": "transform-fl-ch-right2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start-2",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-ch-left2",
+      "linkedBehavior": "ch-transform-left2",
+      "movement": "None",
+      "name": "transform-fl-ch-left2",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-twi-right",
+      "linkedBehavior": "twi-transform-right1",
+      "movement": "None",
+      "name": "transform-fl-twi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-twi-left",
+      "linkedBehavior": "twi-transform-left1",
+      "movement": "None",
+      "name": "transform-fl-twi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-rd-right",
+      "linkedBehavior": "rd-transform-right1",
+      "movement": "None",
+      "name": "transform-fl-rd-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-rd-left",
+      "linkedBehavior": "rd-transform-left1",
+      "movement": "None",
+      "name": "transform-fl-rd-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-aj-right",
+      "linkedBehavior": "aj-transform-right1",
+      "movement": "None",
+      "name": "transform-fl-aj-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-aj-left",
+      "linkedBehavior": "aj-transform-left1",
+      "movement": "None",
+      "name": "transform-fl-aj-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-ra-right",
+      "linkedBehavior": "ra-transform-right1",
+      "movement": "None",
+      "name": "transform-fl-ra-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-ra-left",
+      "linkedBehavior": "ra-transform-left1",
+      "movement": "None",
+      "name": "transform-fl-ra-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-pi-right",
+      "linkedBehavior": "pi-transform-right1",
+      "movement": "None",
+      "name": "transform-fl-pi-right",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ch-fl-start-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "transform-fl-pi-left",
+      "linkedBehavior": "pi-transform-left1",
+      "movement": "None",
+      "name": "transform-fl-pi-left",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-fluttershy",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "flutter-stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "flutter-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flutter-mouseover",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "flutter-mouseover",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "flutter-mouseover",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flutter-mouseover",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "flutter-drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "flutter-drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot-fluttershy",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "flutter-walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "flutter-walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fly-fluttershy",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "flutter-fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "flutter-fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Twi right",
+      "name": "Ch Twi right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Twi left",
+      "name": "Ch Twi left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch AJ right",
+      "name": "Ch AJ right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch AJ left",
+      "name": "Ch AJ left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch RD right",
+      "name": "Ch RD right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch RD left",
+      "name": "Ch RD left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Ra right",
+      "name": "Ch Ra right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Ra left",
+      "name": "Ch Ra left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Fl right",
+      "name": "Ch Fl right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Fl left",
+      "name": "Ch Fl left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch PP right",
+      "name": "Ch PP right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch PP left",
+      "name": "Ch PP left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Twi right1",
+      "name": "Ch Twi right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Twi left1",
+      "name": "Ch Twi left1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch AJ right1",
+      "name": "Ch AJ right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch AJ left1",
+      "name": "Ch AJ left1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch RD right1",
+      "name": "Ch RD right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch RD left1",
+      "name": "Ch RD left1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Ra right1",
+      "name": "Ch Ra right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Ra lef1t",
+      "name": "Ch Ra lef1t",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Fl right1",
+      "name": "Ch Fl right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch Fl left1",
+      "name": "Ch Fl left1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch PP right1",
+      "name": "Ch PP right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ch PP left1",
+      "name": "Ch PP left1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-ch-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi Ch right",
+      "name": "Twi Ch right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-ch-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi Ch left",
+      "name": "Twi Ch left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-ch-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi Ch right1",
+      "name": "Twi Ch right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-ch-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi Ch left1",
+      "name": "Twi Ch left1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-ch-right2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi Ch right2",
+      "name": "Twi Ch right2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-ch-left2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi Ch left2",
+      "name": "Twi Ch left2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-rd-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi RD right",
+      "name": "Twi RD right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-rd-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi RD left",
+      "name": "Twi RD left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-ra-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi Ra right",
+      "name": "Twi Ra right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-ra-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi Ra left",
+      "name": "Twi Ra left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-aj-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi AJ right",
+      "name": "Twi AJ right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-aj-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi AJ left",
+      "name": "Twi AJ left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-pi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi PP right",
+      "name": "Twi PP right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-pi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi PP left",
+      "name": "Twi PP left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-fl-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi Fl right",
+      "name": "Twi Fl right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-twi-fl-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Twi Fl left",
+      "name": "Twi Fl left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-ch-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Ch right",
+      "name": "RD Ch right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-ch-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Ch left",
+      "name": "RD Ch left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-ch-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Ch right1",
+      "name": "RD Ch right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-ch-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Ch left1",
+      "name": "RD Ch left1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-ch-right2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Ch right2",
+      "name": "RD Ch right2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-ch-left2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Ch left2",
+      "name": "RD Ch left2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-twi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Twi right",
+      "name": "RD Twi right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-twi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Twi left",
+      "name": "RD Twi left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-ra-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Ra right",
+      "name": "RD Ra right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-ra-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Ra left",
+      "name": "RD Ra left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-aj-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD AJ right",
+      "name": "RD AJ right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-aj-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD AJ left",
+      "name": "RD AJ left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-pi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD PP right",
+      "name": "RD PP right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-pi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD PP left",
+      "name": "RD PP left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-fl-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Fl right",
+      "name": "RD Fl right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-rd-fl-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "RD Fl left",
+      "name": "RD Fl left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-ch-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Ch right",
+      "name": "AJ Ch right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-ch-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Ch left",
+      "name": "AJ Ch left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-ch-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Ch right1",
+      "name": "AJ Ch right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-ch-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Ch left1",
+      "name": "AJ Ch left1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-ch-right2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Ch right2",
+      "name": "AJ Ch right2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-ch-left2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Ch left2",
+      "name": "AJ Ch left2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-twi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Twi right",
+      "name": "AJ Twi right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-twi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Twi left",
+      "name": "AJ Twi left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-rd-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ RD right",
+      "name": "AJ RD right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-rd-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ RD left",
+      "name": "AJ RD left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-ra-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Ra right",
+      "name": "AJ Ra right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-ra-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Ra left",
+      "name": "AJ Ra left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-pi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ PP right",
+      "name": "AJ PP right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-pi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ PP left",
+      "name": "AJ PP left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-fl-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Fl right",
+      "name": "AJ Fl right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-aj-fl-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "AJ Fl left",
+      "name": "AJ Fl left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-ch-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Ch right",
+      "name": "PP Ch right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-ch-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Ch left",
+      "name": "PP Ch left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-ch-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Ch right1",
+      "name": "PP Ch right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-ch-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Ch left1",
+      "name": "PP Ch left1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-ch-right2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Ch right2",
+      "name": "PP Ch right2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-ch-left2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Ch left2",
+      "name": "PP Ch left2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-twi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Twi right",
+      "name": "PP Twi right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-twi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Twi left",
+      "name": "PP Twi left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-rd-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP RD right",
+      "name": "PP RD right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-rd-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP RD left",
+      "name": "PP RD left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-aj-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP AJ right",
+      "name": "PP AJ right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-aj-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP AJ left",
+      "name": "PP AJ left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-ra-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Ra right",
+      "name": "PP Ra right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-ra-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Ra left",
+      "name": "PP Ra left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-fl-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Fl right",
+      "name": "PP Fl right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-pi-fl-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "PP Fl left",
+      "name": "PP Fl left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-ch-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra Ch right",
+      "name": "Ra Ch right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-ch-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra Ch left",
+      "name": "Ra Ch left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-ch-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra Ch right1",
+      "name": "Ra Ch right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-ch-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra Ch left1",
+      "name": "Ra Ch left1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-ch-right2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra Ch right2",
+      "name": "Ra Ch right2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-ch-left2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra Ch left2",
+      "name": "Ra Ch left2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-twi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra Twi right",
+      "name": "Ra Twi right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-twi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra Twi left",
+      "name": "Ra Twi left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-rd-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra RD right",
+      "name": "Ra RD right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-rd-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra RD left",
+      "name": "Ra RD left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-aj-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra AJ right",
+      "name": "Ra AJ right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-aj-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra AJ left",
+      "name": "Ra AJ left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-pi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra PP right",
+      "name": "Ra PP right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-pi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra PP left",
+      "name": "Ra PP left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-fl-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra Fl right",
+      "name": "Ra Fl right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-ra-fl-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Ra Fl left",
+      "name": "Ra Fl left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-ch-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl Ch right",
+      "name": "Fl Ch right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-ch-right2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl Ch right2",
+      "name": "Fl Ch right2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-ch-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl Ch left",
+      "name": "Fl Ch left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-ch-left2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl Ch left2",
+      "name": "Fl Ch left2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-ch-right1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl Ch right1",
+      "name": "Fl Ch right1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-ch-left1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl Ch left1",
+      "name": "Fl Ch left1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-twi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl Twi right",
+      "name": "Fl Twi right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-twi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl Twi left",
+      "name": "Fl Twi left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-rd-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl RD right",
+      "name": "Fl RD right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-rd-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl RD left",
+      "name": "Fl RD left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-aj-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl AJ right",
+      "name": "Fl AJ right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-aj-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl AJ left",
+      "name": "Fl AJ left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-ra-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl Ra right",
+      "name": "Fl Ra right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-ra-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl Ra left",
+      "name": "Fl Ra left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-pi-right",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl PP right",
+      "name": "Fl PP right",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "transform",
+      "behavior": "transform-fl-pi-left",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": true,
+      "id": "Fl PP left",
+      "name": "Fl PP left",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "changeling",
+  "interactions": [],
+  "name": "Changeling",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "non-ponies"
+  ]
+}

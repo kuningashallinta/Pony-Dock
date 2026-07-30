@@ -1,0 +1,51 @@
+{
+  "atlas": "spike-moustache-working-left.png",
+  "atlasSize": [
+    94,
+    108
+  ],
+  "frames": [
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        0,
+        47,
+        54
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        47,
+        0,
+        47,
+        54
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        54,
+        47,
+        54
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        47,
+        54,
+        47,
+        54
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    27,
+    24
+  ],
+  "schemaVersion": 1
+}

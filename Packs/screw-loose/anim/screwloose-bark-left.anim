@@ -1,0 +1,222 @@
+{
+  "atlas": "screwloose-bark-left.png",
+  "atlasSize": [
+    460,
+    480
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        92,
+        0,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        0,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        276,
+        0,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        368,
+        0,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        96,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        96,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        96,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        276,
+        96,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        368,
+        96,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        192,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        192,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        192,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        276,
+        192,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        368,
+        192,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        288,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        288,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        288,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        276,
+        288,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        368,
+        288,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        384,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        92,
+        384,
+        92,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        384,
+        92,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    50
+  ],
+  "schemaVersion": 1
+}

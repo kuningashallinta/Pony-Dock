@@ -1,0 +1,191 @@
+{
+  "animations": {
+    "ruby-idle": {
+      "left": "anim/ruby-idle-left.anim",
+      "right": "anim/ruby-idle-right.anim"
+    },
+    "ruby-sit": {
+      "left": "anim/ruby-sit-left.anim",
+      "right": "anim/ruby-sit-right.anim"
+    },
+    "ruby-sleep": {
+      "left": "anim/ruby-sleep-left.anim",
+      "right": "anim/ruby-sleep-right.anim"
+    },
+    "ruby-trot-r": {
+      "left": "anim/ruby-trot-r-left.anim",
+      "right": "anim/ruby-trot-r-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "ruby-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ruby-trot-r",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ruby-trot-r",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 30000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Berry Punch"
+      },
+      "group": 0,
+      "id": "follow_mom1",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_mom1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ruby-trot-r",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 30000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Berry Punch"
+      },
+      "group": 0,
+      "id": "follow_mom2",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_mom2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ruby-sit",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 30000,
+        "min": 25000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "ruby-sleep",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "ruby-pinch",
+  "interactions": [],
+  "name": "Ruby Pinch",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "fillies",
+    "unicorns",
+    "supporting ponies"
+  ]
+}

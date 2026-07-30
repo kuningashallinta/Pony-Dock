@@ -1,0 +1,242 @@
+{
+  "animations": {
+    "balance-zecora": {
+      "left": "anim/balance-zecora.anim",
+      "right": "anim/balance-zecora.anim"
+    },
+    "dig-zecora": {
+      "left": "anim/dig-zecora-left.anim",
+      "right": "anim/dig-zecora-right.anim"
+    },
+    "joke": {
+      "left": "anim/joke.anim",
+      "right": "anim/joke.anim"
+    },
+    "stand-zecora": {
+      "left": "anim/stand-zecora-left.anim",
+      "right": "anim/stand-zecora-right.anim"
+    },
+    "stand-zecora-2": {
+      "left": "anim/stand-zecora-2-left.anim",
+      "right": "anim/stand-zecora-2-right.anim"
+    },
+    "trotcycle-zecora": {
+      "left": "anim/trotcycle-zecora-left.anim",
+      "right": "anim/trotcycle-zecora-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand-zecora",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-zecora",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-zecora",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk_diag",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "walk_diag",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "dig-zecora",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "dig",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "dig",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "balance-zecora",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "balance",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "balance",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-zecora",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -66,
+        "offsetY": -39,
+        "stoppedBehavior": null,
+        "target": "Apple Bloom"
+      },
+      "group": 0,
+      "id": "follow_applebloom",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_applebloom",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-zecora-2",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Shopkeeper"
+      },
+      "group": 0,
+      "id": "deal_zecora",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_zecora",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "joke",
+      "behavior": "dig",
+      "centering": {
+        "left": "Any_Not_Center",
+        "right": "Any_Not_Center"
+      },
+      "durationMs": 0,
+      "follow": false,
+      "id": "joke",
+      "name": "joke",
+      "placement": {
+        "left": "Any_Not_Center",
+        "right": "Any_Not_Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "zecora",
+  "interactions": [],
+  "name": "Zecora",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "mares",
+    "supporting ponies",
+    "non-ponies"
+  ]
+}

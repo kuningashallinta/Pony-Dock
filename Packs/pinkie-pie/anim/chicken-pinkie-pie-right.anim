@@ -1,0 +1,123 @@
+{
+  "atlas": "chicken-pinkie-pie-right.png",
+  "atlasSize": [
+    440,
+    342
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        110,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        110,
+        0,
+        110,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        220,
+        0,
+        110,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        330,
+        0,
+        110,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        114,
+        110,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        110,
+        114,
+        110,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        220,
+        114,
+        110,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        330,
+        114,
+        110,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        228,
+        110,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        110,
+        228,
+        110,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        220,
+        228,
+        110,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        330,
+        228,
+        110,
+        114
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    45,
+    56
+  ],
+  "schemaVersion": 1
+}

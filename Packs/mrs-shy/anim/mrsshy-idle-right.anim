@@ -1,0 +1,168 @@
+{
+  "atlas": "mrsshy-idle-right.png",
+  "atlasSize": [
+    430,
+    360
+  ],
+  "frames": [
+    {
+      "durationMs": 950,
+      "rect": [
+        0,
+        0,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        0,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        0,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        258,
+        0,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        344,
+        0,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        90,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        90,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        172,
+        90,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        258,
+        90,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 4100,
+      "rect": [
+        344,
+        90,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        180,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        180,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        172,
+        180,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        258,
+        180,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        344,
+        180,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        270,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 4100,
+      "rect": [
+        86,
+        270,
+        86,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    43,
+    44
+  ],
+  "schemaVersion": 1
+}

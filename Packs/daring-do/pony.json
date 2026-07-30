@@ -1,0 +1,228 @@
+{
+  "animations": {
+    "daring-gallop": {
+      "left": "anim/daring-gallop-left.anim",
+      "right": "anim/daring-gallop-right.anim"
+    },
+    "fly": {
+      "left": "anim/fly-left.anim",
+      "right": "anim/fly-right.anim"
+    },
+    "standingright": {
+      "left": "anim/standingright-left.anim",
+      "right": "anim/standingright-right.anim"
+    },
+    "trotcycle-daringdo": {
+      "left": "anim/trotcycle-daringdo-left.anim",
+      "right": "anim/trotcycle-daringdo-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "standingright",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Standing",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "Standing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-daringdo",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Trotting",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Trotting",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fly",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 10000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Flying",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "Flying",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "standingright",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 4000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "Trotting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "Standing",
+        "target": "A.K. Yearling"
+      },
+      "group": 0,
+      "id": "daring_paradox_start",
+      "linkedBehavior": "daring_paradox_end",
+      "movement": "None",
+      "name": "daring_paradox_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "standingright",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 7000,
+        "min": 6000
+      },
+      "endSpeech": "Paradox #2",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "Trotting",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "Standing",
+        "target": "A.K. Yearling"
+      },
+      "group": 0,
+      "id": "daring_paradox_end",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "daring_paradox_end",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Paradox #1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "daring-gallop",
+      "chance": 0.06,
+      "durationMs": {
+        "max": 7000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "gallop",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "gallop",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 233.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "daring-gallop",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 7000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "gallop1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "gallop1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 233.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "daring-do",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "daring_paradox_start"
+      ],
+      "chance": 0.2,
+      "id": "Daring_Paradox",
+      "name": "Daring_Paradox",
+      "proximityPx": 120,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "a-k-yearling"
+      ]
+    }
+  ],
+  "name": "Daring Do",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "pegasi"
+  ]
+}

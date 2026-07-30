@@ -1,0 +1,51 @@
+{
+  "atlas": "spot-blink-right.png",
+  "atlasSize": [
+    140,
+    144
+  ],
+  "frames": [
+    {
+      "durationMs": 1630,
+      "rect": [
+        0,
+        0,
+        70,
+        72
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        70,
+        0,
+        70,
+        72
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        72,
+        70,
+        72
+      ]
+    },
+    {
+      "durationMs": 630,
+      "rect": [
+        70,
+        72,
+        70,
+        72
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

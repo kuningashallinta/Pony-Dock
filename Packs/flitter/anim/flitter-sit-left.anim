@@ -1,0 +1,33 @@
+{
+  "atlas": "flitter-sit-left.png",
+  "atlasSize": [
+    132,
+    73
+  ],
+  "frames": [
+    {
+      "durationMs": 6000,
+      "rect": [
+        0,
+        0,
+        66,
+        73
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        66,
+        0,
+        66,
+        73
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

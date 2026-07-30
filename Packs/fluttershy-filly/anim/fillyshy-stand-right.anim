@@ -1,0 +1,60 @@
+{
+  "atlas": "fillyshy-stand-right.png",
+  "atlasSize": [
+    246,
+    136
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        82,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        82,
+        0,
+        82,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        164,
+        0,
+        82,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        68,
+        82,
+        68
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        82,
+        68,
+        82,
+        68
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

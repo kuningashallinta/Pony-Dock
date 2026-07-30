@@ -1,0 +1,159 @@
+{
+  "atlas": "fly-fluttershy-right.png",
+  "atlasSize": [
+    416,
+    360
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        104,
+        0,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        208,
+        0,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        312,
+        0,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        90,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        104,
+        90,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        208,
+        90,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        312,
+        90,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        180,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        104,
+        180,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        208,
+        180,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        312,
+        180,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        270,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        104,
+        270,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        208,
+        270,
+        104,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        312,
+        270,
+        104,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    57,
+    56
+  ],
+  "schemaVersion": 1
+}

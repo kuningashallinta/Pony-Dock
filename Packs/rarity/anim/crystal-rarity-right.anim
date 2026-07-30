@@ -1,0 +1,24 @@
+{
+  "atlas": "crystal-rarity-right.png",
+  "atlasSize": [
+    104,
+    88
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        104,
+        88
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    56,
+    44
+  ],
+  "schemaVersion": 1
+}

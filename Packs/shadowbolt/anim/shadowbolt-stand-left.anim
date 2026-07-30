@@ -1,0 +1,267 @@
+{
+  "atlas": "shadowbolt-stand-left.png",
+  "atlasSize": [
+    588,
+    440
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        0,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        0,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        294,
+        0,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        392,
+        0,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        490,
+        0,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        88,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        88,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        88,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        294,
+        88,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        392,
+        88,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        490,
+        88,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        176,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        176,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        176,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        294,
+        176,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        392,
+        176,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        490,
+        176,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        264,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        264,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        264,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        294,
+        264,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        392,
+        264,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        490,
+        264,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        352,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        352,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        352,
+        98,
+        88
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        294,
+        352,
+        98,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

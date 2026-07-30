@@ -1,0 +1,168 @@
+{
+  "atlas": "phila-liftoff-right.png",
+  "atlasSize": [
+    240,
+    344
+  ],
+  "frames": [
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        0,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        48,
+        0,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        96,
+        0,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        144,
+        0,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        192,
+        0,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        86,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        48,
+        86,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        96,
+        86,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        144,
+        86,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        192,
+        86,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        172,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        48,
+        172,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        96,
+        172,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        144,
+        172,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        192,
+        172,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        258,
+        48,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        48,
+        258,
+        48,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

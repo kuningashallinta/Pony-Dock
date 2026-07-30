@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "donny-idle": {
+      "left": "anim/donny-idle-left.anim",
+      "right": "anim/donny-idle-right.anim"
+    },
+    "donny-trot": {
+      "left": "anim/donny-trot-left.anim",
+      "right": "anim/donny-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "donny-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "donny-trot",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walking",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walking",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "donny",
+  "interactions": [],
+  "name": "Donny",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "earth ponies",
+    "supporting ponies"
+  ]
+}

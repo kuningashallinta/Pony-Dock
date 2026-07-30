@@ -1,0 +1,127 @@
+{
+  "animations": {
+    "big-mac-buck": {
+      "left": "anim/big-mac-buck-left.anim",
+      "right": "anim/big-mac-buck-right.anim"
+    },
+    "big-mac-sleep": {
+      "left": "anim/big-mac-sleep-left.anim",
+      "right": "anim/big-mac-sleep-right.anim"
+    },
+    "big-macintosh-standing": {
+      "left": "anim/big-macintosh-standing-left.anim",
+      "right": "anim/big-macintosh-standing-right.anim"
+    },
+    "big-macintosh-trot": {
+      "left": "anim/big-macintosh-trot-left.anim",
+      "right": "anim/big-macintosh-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "big-macintosh-standing",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "big-macintosh-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "big-mac-sleep",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 60000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "big-mac-buck",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 4000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "buck",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "buck",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "big-mac",
+  "interactions": [],
+  "name": "Big Mac",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

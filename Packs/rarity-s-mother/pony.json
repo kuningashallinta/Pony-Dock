@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "r-mom-idle": {
+      "left": "anim/r-mom-idle-left.anim",
+      "right": "anim/r-mom-idle-right.anim"
+    },
+    "raritysmom-trot": {
+      "left": "anim/raritysmom-trot-left.anim",
+      "right": "anim/raritysmom-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "r-mom-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 18000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "raritysmom-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "rarity-s-mother",
+  "interactions": [],
+  "name": "Rarity's Mother",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

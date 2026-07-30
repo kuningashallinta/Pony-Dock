@@ -1,0 +1,222 @@
+{
+  "atlas": "sweetie-belle-skipright-right.png",
+  "atlasSize": [
+    470,
+    500
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        94,
+        0,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        0,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        282,
+        0,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        376,
+        0,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        100,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        94,
+        100,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        100,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        282,
+        100,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        376,
+        100,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        200,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        94,
+        200,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        200,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        282,
+        200,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        376,
+        200,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        300,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        94,
+        300,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        300,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        282,
+        300,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        376,
+        300,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        400,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        94,
+        400,
+        94,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        400,
+        94,
+        100
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    64
+  ],
+  "schemaVersion": 1
+}

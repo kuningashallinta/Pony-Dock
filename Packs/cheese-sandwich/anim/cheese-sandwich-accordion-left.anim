@@ -1,0 +1,123 @@
+{
+  "atlas": "cheese-sandwich-accordion-left.png",
+  "atlasSize": [
+    320,
+    354
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        80,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        80,
+        0,
+        80,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        160,
+        0,
+        80,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        240,
+        0,
+        80,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        118,
+        80,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        80,
+        118,
+        80,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        160,
+        118,
+        80,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        240,
+        118,
+        80,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        236,
+        80,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        80,
+        236,
+        80,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        160,
+        236,
+        80,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        240,
+        236,
+        80,
+        118
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    40,
+    70
+  ],
+  "schemaVersion": 1
+}

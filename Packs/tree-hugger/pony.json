@@ -1,0 +1,127 @@
+{
+  "animations": {
+    "treehugger-idle": {
+      "left": "anim/treehugger-idle-left.anim",
+      "right": "anim/treehugger-idle-right.anim"
+    },
+    "treehugger-neigh": {
+      "left": "anim/treehugger-neigh-left.anim",
+      "right": "anim/treehugger-neigh-right.anim"
+    },
+    "treehugger-walk": {
+      "left": "anim/treehugger-walk-left.anim",
+      "right": "anim/treehugger-walk-right.anim"
+    },
+    "treehugger-walk-2": {
+      "left": "anim/treehugger-walk-2-left.anim",
+      "right": "anim/treehugger-walk-2-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "treehugger-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "treehugger-walk",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "treehugger-walk-2",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "treehugger-neigh",
+      "chance": 0.015,
+      "durationMs": {
+        "max": 7000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "neigh",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "neigh",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Omm...",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "tree-hugger",
+  "interactions": [],
+  "name": "Tree Hugger",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

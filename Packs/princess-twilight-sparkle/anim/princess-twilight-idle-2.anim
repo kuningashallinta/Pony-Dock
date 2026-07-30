@@ -1,0 +1,177 @@
+{
+  "atlas": "princess-twilight-idle-2.png",
+  "atlasSize": [
+    490,
+    376
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        0,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        0,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        294,
+        0,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        392,
+        0,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 5300,
+      "rect": [
+        0,
+        94,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        94,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        94,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        294,
+        94,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        392,
+        94,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        188,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 5300,
+      "rect": [
+        98,
+        188,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        188,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        294,
+        188,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        392,
+        188,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        282,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        282,
+        98,
+        94
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        196,
+        282,
+        98,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    57,
+    54
+  ],
+  "schemaVersion": 1
+}

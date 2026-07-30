@@ -1,0 +1,87 @@
+{
+  "atlas": "daisy-stand-left.png",
+  "atlasSize": [
+    258,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        86,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        86,
+        0,
+        86,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        172,
+        0,
+        86,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        84,
+        86,
+        84
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        86,
+        84,
+        86,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        172,
+        84,
+        86,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        168,
+        86,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        86,
+        168,
+        86,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

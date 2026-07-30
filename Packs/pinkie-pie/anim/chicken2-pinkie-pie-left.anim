@@ -1,0 +1,159 @@
+{
+  "atlas": "chicken2-pinkie-pie-left.png",
+  "atlasSize": [
+    488,
+    376
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        122,
+        0,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        244,
+        0,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        366,
+        0,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        94,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        122,
+        94,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        244,
+        94,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        366,
+        94,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        188,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        122,
+        188,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        244,
+        188,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        366,
+        188,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        282,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        122,
+        282,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        244,
+        282,
+        122,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        366,
+        282,
+        122,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    73,
+    46
+  ],
+  "schemaVersion": 1
+}

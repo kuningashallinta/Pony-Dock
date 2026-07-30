@@ -1,0 +1,33 @@
+{
+  "atlas": "fillyshy-sleep-left.png",
+  "atlasSize": [
+    196,
+    60
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        98,
+        60
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        98,
+        0,
+        98,
+        60
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    48,
+    20
+  ],
+  "schemaVersion": 1
+}

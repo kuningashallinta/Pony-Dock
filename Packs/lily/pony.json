@@ -1,0 +1,164 @@
+{
+  "animations": {
+    "lily-idle": {
+      "left": "anim/lily-idle-left.anim",
+      "right": "anim/lily-idle-right.anim"
+    },
+    "lily-panic": {
+      "left": "anim/lily-panic-left.anim",
+      "right": "anim/lily-panic-right.anim"
+    },
+    "lily-panicrun": {
+      "left": "anim/lily-panicrun-left.anim",
+      "right": "anim/lily-panicrun-right.anim"
+    },
+    "lily-trot": {
+      "left": "anim/lily-trot-left.anim",
+      "right": "anim/lily-trot-right.anim"
+    },
+    "lily-trot-2": {
+      "left": "anim/lily-trot-2-left.anim",
+      "right": "anim/lily-trot-2-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "lily-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 18000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lily-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lily-panic",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3000,
+        "min": 1000
+      },
+      "endSpeech": "speech2",
+      "follow": null,
+      "group": 0,
+      "id": "panic",
+      "linkedBehavior": "panic1",
+      "movement": "None",
+      "name": "panic",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "lily-panicrun",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 18000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "panic1",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "panic1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "lily-trot-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": true,
+        "movingBehavior": null,
+        "offsetX": -16,
+        "offsetY": 6,
+        "stoppedBehavior": null,
+        "target": "Daisy"
+      },
+      "group": 0,
+      "id": "follow Daisy",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow Daisy",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 90.00000000000001,
+      "startSpeech": "daisy",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "lily",
+  "interactions": [],
+  "name": "Lily",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

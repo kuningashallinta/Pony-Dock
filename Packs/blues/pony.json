@@ -1,0 +1,352 @@
+{
+  "animations": {
+    "blue-saxplay": {
+      "left": "anim/blue-saxplay.anim",
+      "right": "anim/blue-saxplay.anim"
+    },
+    "blue-saxplay-2": {
+      "left": "anim/blue-saxplay-2.anim",
+      "right": "anim/blue-saxplay-2.anim"
+    },
+    "blues-sit": {
+      "left": "anim/blues-sit.anim",
+      "right": "anim/blues-sit.anim"
+    },
+    "blues-sit-2": {
+      "left": "anim/blues-sit-2.anim",
+      "right": "anim/blues-sit-2.anim"
+    },
+    "blues-stand": {
+      "left": "anim/blues-stand-left.anim",
+      "right": "anim/blues-stand-right.anim"
+    },
+    "blues-standup": {
+      "left": "anim/blues-standup.anim",
+      "right": "anim/blues-standup.anim"
+    },
+    "blues-standup-2": {
+      "left": "anim/blues-standup-2.anim",
+      "right": "anim/blues-standup-2.anim"
+    },
+    "blues-walk": {
+      "left": "anim/blues-walk-left.anim",
+      "right": "anim/blues-walk-right.anim"
+    },
+    "bluesax": {
+      "left": "anim/bluesax.anim",
+      "right": "anim/bluesax.anim"
+    },
+    "bluesax-2": {
+      "left": "anim/bluesax-2.anim",
+      "right": "anim/bluesax-2.anim"
+    },
+    "bluesax2": {
+      "left": "anim/bluesax2.anim",
+      "right": "anim/bluesax2.anim"
+    },
+    "bluesax2-2": {
+      "left": "anim/bluesax2-2.anim",
+      "right": "anim/bluesax2-2.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "blues-stand",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "blues-walk",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "blues-sit",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 3000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit1-right",
+      "linkedBehavior": "sit2-right",
+      "movement": "None",
+      "name": "sit1-right",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bluesax",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 900,
+        "min": 900
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit2-right",
+      "linkedBehavior": "sit3-right",
+      "movement": "None",
+      "name": "sit2-right",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "blue-saxplay",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit3-right",
+      "linkedBehavior": "sit4-right",
+      "movement": "Sleep",
+      "name": "sit3-right",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bluesax2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 900,
+        "min": 900
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit4-right",
+      "linkedBehavior": "sit5-right",
+      "movement": "None",
+      "name": "sit4-right",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "blues-standup",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1500,
+        "min": 1500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit5-right",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit5-right",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "blues-sit-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 3000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit1-left",
+      "linkedBehavior": "sit2-left",
+      "movement": "None",
+      "name": "sit1-left",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bluesax-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 900,
+        "min": 900
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit2-left",
+      "linkedBehavior": "sit3-left",
+      "movement": "None",
+      "name": "sit2-left",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "blue-saxplay-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit3-left",
+      "linkedBehavior": "sit4-left",
+      "movement": "None",
+      "name": "sit3-left",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bluesax2-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 900,
+        "min": 900
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit4-left",
+      "linkedBehavior": "sit5-left",
+      "movement": "None",
+      "name": "sit4-left",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "blues-standup-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1500,
+        "min": 1500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit5-left",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit5-left",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "blues",
+  "interactions": [],
+  "name": "Blues",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

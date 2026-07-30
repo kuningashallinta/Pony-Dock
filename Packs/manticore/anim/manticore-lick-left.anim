@@ -1,0 +1,96 @@
+{
+  "atlas": "manticore-lick-left.png",
+  "atlasSize": [
+    570,
+    354
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        190,
+        118
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        190,
+        0,
+        190,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        380,
+        0,
+        190,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        118,
+        190,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        190,
+        118,
+        190,
+        118
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        380,
+        118,
+        190,
+        118
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        236,
+        190,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        190,
+        236,
+        190,
+        118
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        380,
+        236,
+        190,
+        118
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    100,
+    58
+  ],
+  "schemaVersion": 1
+}

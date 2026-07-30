@@ -1,0 +1,307 @@
+{
+  "animations": {
+    "fancy-blink": {
+      "left": "anim/fancy-blink-left.anim",
+      "right": "anim/fancy-blink-right.anim"
+    },
+    "fancy-blink5-right-8": {
+      "left": "anim/fancy-blink5-right-8-left.anim",
+      "right": "anim/fancy-blink5-right-8-right.anim"
+    },
+    "fancy-walk-right-8": {
+      "left": "anim/fancy-walk-right-8-left.anim",
+      "right": "anim/fancy-walk-right-8-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "fancy-blink5-right-8",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fancy-walk-right-8",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fancy-blink",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Flottosho",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Flottosho",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "fluttershy",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fancy-blink",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Rarara",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Rarara",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "rarity",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fancy-blink",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Ponko poe",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Ponko poe",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "pinky pie",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fancy-blink",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "RonboDosh",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "RonboDosh",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "rainbowdash",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fancy-blink",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Applojock",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Applojock",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "applejack",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fancy-blink",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Twologht",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Twologht",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "twilight",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "fancypants",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "Flottosho",
+        "Flottosho gala"
+      ],
+      "chance": 0.25,
+      "id": "Flottosho",
+      "name": "Flottosho",
+      "proximityPx": 150,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "fluttershy"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "Rarara"
+      ],
+      "chance": 0.25,
+      "id": "Rarara",
+      "name": "Rarara",
+      "proximityPx": 150,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "rarity"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "RonboDosh"
+      ],
+      "chance": 0.25,
+      "id": "RonboDosh",
+      "name": "RonboDosh",
+      "proximityPx": 150,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "rainbow-dash"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "Ponko poe",
+        "Ponko poe gala"
+      ],
+      "chance": 0.25,
+      "id": "Ponko Poe",
+      "name": "Ponko Poe",
+      "proximityPx": 150,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "pinkie-pie"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "Applojock"
+      ],
+      "chance": 0.25,
+      "id": "ApploJock",
+      "name": "ApploJock",
+      "proximityPx": 150,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "applejack"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "Twologht"
+      ],
+      "chance": 0.25,
+      "id": "Twologht",
+      "name": "Twologht",
+      "proximityPx": 150,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "twilight-sparkle"
+      ]
+    }
+  ],
+  "name": "Fancypants",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "unicorns",
+    "stallions"
+  ]
+}

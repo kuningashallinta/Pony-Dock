@@ -1,0 +1,132 @@
+{
+  "atlas": "ocellus-dragon-idle-right.png",
+  "atlasSize": [
+    360,
+    360
+  ],
+  "frames": [
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        0,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        90,
+        0,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        180,
+        0,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        270,
+        0,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        90,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        90,
+        90,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        180,
+        90,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        270,
+        90,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 3700,
+      "rect": [
+        0,
+        180,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        90,
+        180,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        180,
+        180,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        270,
+        180,
+        90,
+        90
+      ]
+    },
+    {
+      "durationMs": 3700,
+      "rect": [
+        0,
+        270,
+        90,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    55,
+    68
+  ],
+  "schemaVersion": 1
+}

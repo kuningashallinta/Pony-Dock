@@ -1,0 +1,320 @@
+{
+  "animations": {
+    "berrypunch-drink": {
+      "left": "anim/berrypunch-drink-left.anim",
+      "right": "anim/berrypunch-drink-right.anim"
+    },
+    "berrypunch-drink-right1": {
+      "left": "anim/berrypunch-drink-right1-left.anim",
+      "right": "anim/berrypunch-drink-right1-right.anim"
+    },
+    "sit-berry": {
+      "left": "anim/sit-berry-left.anim",
+      "right": "anim/sit-berry-right.anim"
+    },
+    "sit-oppp": {
+      "left": "anim/sit-oppp-left.anim",
+      "right": "anim/sit-oppp-right.anim"
+    },
+    "sleep-berry": {
+      "left": "anim/sleep-berry-left.anim",
+      "right": "anim/sleep-berry-right.anim"
+    },
+    "stand-berry": {
+      "left": "anim/stand-berry-left.anim",
+      "right": "anim/stand-berry-right.anim"
+    },
+    "stand-oppp": {
+      "left": "anim/stand-oppp-left.anim",
+      "right": "anim/stand-oppp-right.anim"
+    },
+    "trotcycle-berry": {
+      "left": "anim/trotcycle-berry-left.anim",
+      "right": "anim/trotcycle-berry-right.anim"
+    },
+    "trotcycle-oppp": {
+      "left": "anim/trotcycle-oppp-left.anim",
+      "right": "anim/trotcycle-oppp-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    },
+    {
+      "id": 2,
+      "name": "Drunk"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "stand-oppp",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-oppp",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-oppp",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sit-oppp",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 45000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sitting",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sitting",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "berrypunch-drink",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 4600,
+        "min": 4600
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "drink",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "drink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "berrypunch-drink-right1",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 4600,
+        "min": 4600
+      },
+      "endSpeech": "drunk #1",
+      "follow": null,
+      "group": 1,
+      "id": "drink 2",
+      "linkedBehavior": "stand2",
+      "movement": "None",
+      "name": "drink 2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-berry",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "stand2",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-berry",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "fly2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "fly2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-berry",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "walk2",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sit-berry",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 30000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "sitting2",
+      "linkedBehavior": "stand",
+      "movement": "None",
+      "name": "sitting2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sleep-berry",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 45000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "sleep",
+      "linkedBehavior": "walk",
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "berry-punch",
+  "interactions": [],
+  "name": "Berry Punch",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

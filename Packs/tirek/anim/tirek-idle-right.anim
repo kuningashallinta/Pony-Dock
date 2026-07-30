@@ -1,0 +1,123 @@
+{
+  "atlas": "tirek-idle-right.png",
+  "atlasSize": [
+    488,
+    486
+  ],
+  "frames": [
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        0,
+        122,
+        162
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        122,
+        0,
+        122,
+        162
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        244,
+        0,
+        122,
+        162
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        366,
+        0,
+        122,
+        162
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        162,
+        122,
+        162
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        122,
+        162,
+        122,
+        162
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        244,
+        162,
+        122,
+        162
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        366,
+        162,
+        122,
+        162
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        324,
+        122,
+        162
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        122,
+        324,
+        122,
+        162
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        244,
+        324,
+        122,
+        162
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        366,
+        324,
+        122,
+        162
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

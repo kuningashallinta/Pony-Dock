@@ -1,0 +1,204 @@
+{
+  "atlas": "stellareclipse-idle-left.png",
+  "atlasSize": [
+    430,
+    430
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        0,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        0,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        258,
+        0,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        344,
+        0,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        86,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        86,
+        86,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        172,
+        86,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        258,
+        86,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        344,
+        86,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        172,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        172,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        172,
+        172,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        258,
+        172,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        344,
+        172,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        258,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        258,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        258,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        258,
+        258,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        344,
+        258,
+        86,
+        86
+      ]
+    },
+    {
+      "durationMs": 2500,
+      "rect": [
+        0,
+        344,
+        86,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

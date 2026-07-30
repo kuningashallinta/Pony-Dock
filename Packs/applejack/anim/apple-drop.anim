@@ -1,0 +1,60 @@
+{
+  "atlas": "apple-drop.png",
+  "atlasSize": [
+    90,
+    100
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        30,
+        50
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        30,
+        0,
+        30,
+        50
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        60,
+        0,
+        30,
+        50
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        50,
+        30,
+        50
+      ]
+    },
+    {
+      "durationMs": 10000,
+      "rect": [
+        30,
+        50,
+        30,
+        50
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

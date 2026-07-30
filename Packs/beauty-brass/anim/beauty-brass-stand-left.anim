@@ -1,0 +1,150 @@
+{
+  "atlas": "beauty-brass-stand-left.png",
+  "atlasSize": [
+    304,
+    352
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        76,
+        0,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        152,
+        0,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        228,
+        0,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        88,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        76,
+        88,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        152,
+        88,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        228,
+        88,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        176,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        76,
+        176,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        152,
+        176,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        228,
+        176,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        264,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        76,
+        264,
+        76,
+        88
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        152,
+        264,
+        76,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

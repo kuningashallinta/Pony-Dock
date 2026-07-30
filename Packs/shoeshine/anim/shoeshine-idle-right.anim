@@ -1,0 +1,150 @@
+{
+  "atlas": "shoeshine-idle-right.png",
+  "atlasSize": [
+    352,
+    328
+  ],
+  "frames": [
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        0,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        0,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        0,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        264,
+        0,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        82,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        88,
+        82,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        176,
+        82,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        264,
+        82,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        164,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        88,
+        164,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        164,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        164,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        246,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        246,
+        88,
+        82
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        176,
+        246,
+        88,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    45,
+    36
+  ],
+  "schemaVersion": 1
+}

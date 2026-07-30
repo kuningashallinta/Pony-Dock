@@ -1,0 +1,60 @@
+{
+  "atlas": "chocolateraincloud.png",
+  "atlasSize": [
+    462,
+    420
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        154,
+        210
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        154,
+        0,
+        154,
+        210
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        308,
+        0,
+        154,
+        210
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        210,
+        154,
+        210
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        154,
+        210,
+        154,
+        210
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

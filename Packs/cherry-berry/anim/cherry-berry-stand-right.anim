@@ -1,0 +1,123 @@
+{
+  "atlas": "cherry-berry-stand-right.png",
+  "atlasSize": [
+    352,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        168,
+        88,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    44,
+    42
+  ],
+  "schemaVersion": 1
+}

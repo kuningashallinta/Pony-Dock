@@ -1,0 +1,183 @@
+{
+  "animations": {
+    "toetapper-idle": {
+      "left": "anim/toetapper-idle-left.anim",
+      "right": "anim/toetapper-idle-right.anim"
+    },
+    "toetapper-trot": {
+      "left": "anim/toetapper-trot-left.anim",
+      "right": "anim/toetapper-trot-right.anim"
+    },
+    "toetapper1-idle": {
+      "left": "anim/toetapper1-idle-left.anim",
+      "right": "anim/toetapper1-idle-right.anim"
+    },
+    "toetapper1-trot": {
+      "left": "anim/toetapper1-trot-left.anim",
+      "right": "anim/toetapper1-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "regular"
+    },
+    {
+      "id": 2,
+      "name": "clothed"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "toetapper1-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 14000,
+        "min": 9000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "toetapper1-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "toetapper1-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 2000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "get clothes",
+      "linkedBehavior": "stand 1",
+      "movement": "MouseOver",
+      "name": "get clothes",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "toetapper-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 14000,
+        "min": 9000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "stand 1",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand 1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "toetapper-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "trot 1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot 1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "toetapper-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 2000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "remove clothes",
+      "linkedBehavior": "stand",
+      "movement": "MouseOver",
+      "name": "remove clothes",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "toe-tapper",
+  "interactions": [],
+  "name": "Toe-Tapper",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

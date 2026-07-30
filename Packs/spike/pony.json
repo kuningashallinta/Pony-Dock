@@ -1,0 +1,388 @@
+{
+  "animations": {
+    "door": {
+      "left": "anim/door.anim",
+      "right": "anim/door.anim"
+    },
+    "moustache-stand": {
+      "left": "anim/moustache-stand-left.anim",
+      "right": "anim/moustache-stand-right.anim"
+    },
+    "running-spike": {
+      "left": "anim/running-spike-left.anim",
+      "right": "anim/running-spike-right.anim"
+    },
+    "spike-floating": {
+      "left": "anim/spike-floating-left.anim",
+      "right": "anim/spike-floating-right.anim"
+    },
+    "spike-idle": {
+      "left": "anim/spike-idle-left.anim",
+      "right": "anim/spike-idle-right.anim"
+    },
+    "spike-love": {
+      "left": "anim/spike-love-left.anim",
+      "right": "anim/spike-love-right.anim"
+    },
+    "spike-love-start": {
+      "left": "anim/spike-love-start-left.anim",
+      "right": "anim/spike-love-start-right.anim"
+    },
+    "spike-moustache-magic": {
+      "left": "anim/spike-moustache-magic-left.anim",
+      "right": "anim/spike-moustache-magic-right.anim"
+    },
+    "spike-moustache-ready": {
+      "left": "anim/spike-moustache-ready-left.anim",
+      "right": "anim/spike-moustache-ready-right.anim"
+    },
+    "spike-moustache-working": {
+      "left": "anim/spike-moustache-working-left.anim",
+      "right": "anim/spike-moustache-working-right.anim"
+    },
+    "spike-mustache-twirl": {
+      "left": "anim/spike-mustache-twirl-left.anim",
+      "right": "anim/spike-mustache-twirl-right.anim"
+    },
+    "spike-stand": {
+      "left": "anim/spike-stand-left.anim",
+      "right": "anim/spike-stand-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "spike-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "running-spike",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "spike-love-start",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 400,
+        "min": 400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Admire_Rarity_start",
+      "linkedBehavior": "Admire_Rarity",
+      "movement": "None",
+      "name": "Admire_Rarity_start",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spike-love",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Admire_Rarity",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Admire_Rarity",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spike-floating",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "Follow_Rarity",
+        "offsetX": -70,
+        "offsetY": -40,
+        "stoppedBehavior": "Follow_Rarity",
+        "target": "Rarity"
+      },
+      "group": 0,
+      "id": "Follow_Rarity",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "Follow_Rarity",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "door",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10240,
+        "min": 10240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "door",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "door",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spike-stand",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 7520,
+        "min": 7520
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand2",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "moustache-stand",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 12760,
+        "min": 12760
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "moustache_end",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "moustache_end",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spike-moustache-ready",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 760,
+        "min": 760
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "moustache_1",
+      "linkedBehavior": "moustache_2",
+      "movement": "None",
+      "name": "moustache_1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spike-moustache-magic",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 2600,
+        "min": 2600
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "moustache_2",
+      "linkedBehavior": "moustache_3",
+      "movement": "None",
+      "name": "moustache_2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spike-moustache-working",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 650,
+        "min": 650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "moustache_3",
+      "linkedBehavior": "moustache_4",
+      "movement": "None",
+      "name": "moustache_3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spike-mustache-twirl",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 800,
+        "min": 800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "moustache_4",
+      "linkedBehavior": "moustache_end",
+      "movement": "None",
+      "name": "moustache_4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "spike",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "Admire_Rarity_start"
+      ],
+      "chance": 1.0,
+      "id": "Admire_Rarity",
+      "name": "Admire_Rarity",
+      "proximityPx": 60,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "rarity"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "Follow_Rarity"
+      ],
+      "chance": 0.6,
+      "id": "Follow_Rarity",
+      "name": "Follow_Rarity",
+      "proximityPx": 60,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "rarity"
+      ]
+    }
+  ],
+  "name": "Spike",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "colts",
+    "non-ponies"
+  ]
+}

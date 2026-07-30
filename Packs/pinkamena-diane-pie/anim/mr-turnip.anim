@@ -1,0 +1,96 @@
+{
+  "atlas": "mr-turnip.png",
+  "atlasSize": [
+    180,
+    300
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 130,
+      "rect": [
+        60,
+        0,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 130,
+      "rect": [
+        120,
+        0,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 130,
+      "rect": [
+        0,
+        100,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 130,
+      "rect": [
+        60,
+        100,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 130,
+      "rect": [
+        120,
+        100,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 130,
+      "rect": [
+        0,
+        200,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 130,
+      "rect": [
+        60,
+        200,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 130,
+      "rect": [
+        120,
+        200,
+        60,
+        100
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

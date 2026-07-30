@@ -1,0 +1,181 @@
+{
+  "animations": {
+    "smolder-fly": {
+      "left": "anim/smolder-fly-left.anim",
+      "right": "anim/smolder-fly-right.anim"
+    },
+    "smolder-idle": {
+      "left": "anim/smolder-idle-left.anim",
+      "right": "anim/smolder-idle-right.anim"
+    },
+    "smolder-idle2": {
+      "left": "anim/smolder-idle2-left.anim",
+      "right": "anim/smolder-idle2-right.anim"
+    },
+    "smolder-pose": {
+      "left": "anim/smolder-pose-left.anim",
+      "right": "anim/smolder-pose-right.anim"
+    },
+    "smolder-walk1a": {
+      "left": "anim/smolder-walk1a-left.anim",
+      "right": "anim/smolder-walk1a-right.anim"
+    },
+    "smolder-walk2a": {
+      "left": "anim/smolder-walk2a-left.anim",
+      "right": "anim/smolder-walk2a-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "smolder-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 18000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "smolder-idle2",
+      "chance": 0.12,
+      "durationMs": {
+        "max": 18000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand2",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "smolder-walk1a",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 18000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "smolder-walk2a",
+      "chance": 0.12,
+      "durationMs": {
+        "max": 18000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "smolder-fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 110.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "smolder-pose",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 6000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "pose",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "pose",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "smolder",
+  "interactions": [],
+  "name": "Smolder",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Mares",
+    "Non-Ponies"
+  ]
+}

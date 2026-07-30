@@ -1,0 +1,223 @@
+{
+  "animations": {
+    "heart-big": {
+      "left": "anim/heart-big.anim",
+      "right": "anim/heart-big.anim"
+    },
+    "tealove-embarrassed": {
+      "left": "anim/tealove-embarrassed-left.anim",
+      "right": "anim/tealove-embarrassed-right.anim"
+    },
+    "tealove-heart-idle": {
+      "left": "anim/tealove-heart-idle-left.anim",
+      "right": "anim/tealove-heart-idle-right.anim"
+    },
+    "tealove-heart-trot": {
+      "left": "anim/tealove-heart-trot-left.anim",
+      "right": "anim/tealove-heart-trot-right.anim"
+    },
+    "tealove-idle": {
+      "left": "anim/tealove-idle-left.anim",
+      "right": "anim/tealove-idle-right.anim"
+    },
+    "tealove-trot": {
+      "left": "anim/tealove-trot-left.anim",
+      "right": "anim/tealove-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "tealove-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "tealove-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "tealove-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk 2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk 2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "tealove-heart-idle",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "bigmac-start",
+        "offsetX": -10,
+        "offsetY": 20,
+        "stoppedBehavior": "bigmac-start",
+        "target": "Big McIntosh"
+      },
+      "group": 1,
+      "id": "bigmac-start",
+      "linkedBehavior": "bigmac-follow",
+      "movement": "None",
+      "name": "bigmac-start",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "BigMac #1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "tealove-heart-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 30000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "bigmac-follow",
+        "offsetX": 16,
+        "offsetY": 26,
+        "stoppedBehavior": "bigmac-start",
+        "target": "Big McIntosh"
+      },
+      "group": 1,
+      "id": "bigmac-follow",
+      "linkedBehavior": "bigmac-end",
+      "movement": "Diagonal_Horizontal",
+      "name": "bigmac-follow",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 90.00000000000001,
+      "startSpeech": "BigMac #2",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "tealove-embarrassed",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "bigmac-end",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "bigmac-end",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "heart-big",
+      "behavior": "bigmac-follow",
+      "centering": {
+        "left": "Center_Right",
+        "right": "Center_Left"
+      },
+      "durationMs": 1000,
+      "follow": false,
+      "id": "hearts",
+      "name": "hearts",
+      "placement": {
+        "left": "Top_Center",
+        "right": "Top_Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 500
+    }
+  ],
+  "id": "tealove",
+  "interactions": [],
+  "name": "Tealove",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

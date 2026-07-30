@@ -1,0 +1,69 @@
+{
+  "atlas": "speed-walk-camera-right.png",
+  "atlasSize": [
+    396,
+    148
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        132,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        132,
+        0,
+        132,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        264,
+        0,
+        132,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        74,
+        132,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        132,
+        74,
+        132,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        264,
+        74,
+        132,
+        74
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

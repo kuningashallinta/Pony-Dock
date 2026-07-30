@@ -1,0 +1,33 @@
+{
+  "atlas": "twinkleshine-sleep-left.png",
+  "atlasSize": [
+    148,
+    66
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        74,
+        66
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        74,
+        0,
+        74,
+        66
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    27,
+    18
+  ],
+  "schemaVersion": 1
+}

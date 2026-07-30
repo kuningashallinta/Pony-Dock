@@ -1,0 +1,33 @@
+{
+  "atlas": "pie-right.png",
+  "atlasSize": [
+    204,
+    82
+  ],
+  "frames": [
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        0,
+        102,
+        82
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        102,
+        0,
+        102,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    42,
+    40
+  ],
+  "schemaVersion": 1
+}

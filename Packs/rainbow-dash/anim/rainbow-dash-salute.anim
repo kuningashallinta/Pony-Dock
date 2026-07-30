@@ -1,0 +1,78 @@
+{
+  "atlas": "rainbow-dash-salute.png",
+  "atlasSize": [
+    294,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        98,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        0,
+        98,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        0,
+        98,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        84,
+        98,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        84,
+        98,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        84,
+        98,
+        84
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        168,
+        98,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    45,
+    39
+  ],
+  "schemaVersion": 1
+}

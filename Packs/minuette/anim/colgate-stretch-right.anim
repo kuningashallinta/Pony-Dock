@@ -1,0 +1,42 @@
+{
+  "atlas": "colgate-stretch-right.png",
+  "atlasSize": [
+    224,
+    192
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        112,
+        96
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        112,
+        0,
+        112,
+        96
+      ]
+    },
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        96,
+        112,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,96 @@
+{
+  "atlas": "saddle-rager-transform2-left.png",
+  "atlasSize": [
+    474,
+    378
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        158,
+        126
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        158,
+        0,
+        158,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        316,
+        0,
+        158,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        126,
+        158,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        158,
+        126,
+        158,
+        126
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        316,
+        126,
+        158,
+        126
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        252,
+        158,
+        126
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        158,
+        252,
+        158,
+        126
+      ]
+    },
+    {
+      "durationMs": 1500,
+      "rect": [
+        316,
+        252,
+        158,
+        126
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    95,
+    72
+  ],
+  "schemaVersion": 1
+}

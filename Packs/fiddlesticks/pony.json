@@ -1,0 +1,100 @@
+{
+  "animations": {
+    "fiddlesticks-idle": {
+      "left": "anim/fiddlesticks-idle-left.anim",
+      "right": "anim/fiddlesticks-idle-right.anim"
+    },
+    "fiddlesticks-pose": {
+      "left": "anim/fiddlesticks-pose-left.anim",
+      "right": "anim/fiddlesticks-pose-right.anim"
+    },
+    "fiddlesticks-trot": {
+      "left": "anim/fiddlesticks-trot-left.anim",
+      "right": "anim/fiddlesticks-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "fiddlesticks-idle",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fiddlesticks-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fiddlesticks-pose",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "pose",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "pose",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "fiddlesticks",
+  "interactions": [],
+  "name": "Fiddlesticks",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "mares",
+    "earth ponies",
+    "supporting ponies"
+  ]
+}

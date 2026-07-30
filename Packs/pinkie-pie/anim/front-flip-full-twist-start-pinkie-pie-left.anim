@@ -1,0 +1,87 @@
+{
+  "atlas": "front-flip-full-twist-start-pinkie-pie-left.png",
+  "atlasSize": [
+    312,
+    258
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        104,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        104,
+        0,
+        104,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        208,
+        0,
+        104,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        86,
+        104,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        104,
+        86,
+        104,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        208,
+        86,
+        104,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        172,
+        104,
+        86
+      ]
+    },
+    {
+      "durationMs": 1080,
+      "rect": [
+        104,
+        172,
+        104,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    55,
+    40
+  ],
+  "schemaVersion": 1
+}

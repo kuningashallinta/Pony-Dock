@@ -1,0 +1,203 @@
+{
+  "animations": {
+    "starlightglimmer-idle": {
+      "left": "anim/starlightglimmer-idle-left.anim",
+      "right": "anim/starlightglimmer-idle-right.anim"
+    },
+    "starlightglimmer-popcorn": {
+      "left": "anim/starlightglimmer-popcorn-left.anim",
+      "right": "anim/starlightglimmer-popcorn-right.anim"
+    },
+    "starlightglimmer-trot": {
+      "left": "anim/starlightglimmer-trot-left.anim",
+      "right": "anim/starlightglimmer-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "starlightglimmer-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "starlightglimmer-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "starlightglimmer-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "starlightglimmer-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 12000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "stand",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Sunburst"
+      },
+      "group": 0,
+      "id": "friendship1",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "friendship1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Stay in touch",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "starlightglimmer-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 12000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "stand",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Sunburst"
+      },
+      "group": 0,
+      "id": "friendship2",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "friendship2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Stay in touch",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "starlightglimmer-popcorn",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 25000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "popcorn",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "popcorn",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "popcorn",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "starlight-glimmer",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "friendship1",
+        "friendship2"
+      ],
+      "chance": 0.25,
+      "id": "Starlight Sunburst",
+      "name": "Starlight Sunburst",
+      "proximityPx": 150,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "sunburst"
+      ]
+    }
+  ],
+  "name": "Starlight Glimmer",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

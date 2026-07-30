@@ -1,0 +1,123 @@
+{
+  "atlas": "shadowbolt-run-left.png",
+  "atlasSize": [
+    464,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        116,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        0,
+        116,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        0,
+        116,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        0,
+        116,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        84,
+        116,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        84,
+        116,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        84,
+        116,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        84,
+        116,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        168,
+        116,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        168,
+        116,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        168,
+        116,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        168,
+        116,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

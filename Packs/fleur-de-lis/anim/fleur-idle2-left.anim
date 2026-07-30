@@ -1,0 +1,132 @@
+{
+  "atlas": "fleur-idle2-left.png",
+  "atlasSize": [
+    352,
+    272
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        88,
+        0,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        176,
+        0,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        264,
+        0,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        68,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 1120,
+      "rect": [
+        88,
+        68,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        176,
+        68,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        264,
+        68,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        136,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 1120,
+      "rect": [
+        88,
+        136,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        176,
+        136,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        264,
+        136,
+        88,
+        68
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        204,
+        88,
+        68
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

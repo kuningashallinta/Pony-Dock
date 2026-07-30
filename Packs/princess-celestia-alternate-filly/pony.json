@@ -1,0 +1,303 @@
+{
+  "animations": {
+    "fly": {
+      "left": "anim/fly-left.anim",
+      "right": "anim/fly-right.anim"
+    },
+    "sleep": {
+      "left": "anim/sleep-left.anim",
+      "right": "anim/sleep-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "walking": {
+      "left": "anim/walking-left.anim",
+      "right": "anim/walking-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walking",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walking",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk_flap",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk_flap",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1500,
+        "min": 1500
+      },
+      "endSpeech": "yes luna",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Princess Luna (Filly)"
+      },
+      "group": 0,
+      "id": "miss parents 1 alternate",
+      "linkedBehavior": "miss parents 2 alternate",
+      "movement": "None",
+      "name": "miss parents 1 alternate",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": "me too",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Princess Luna (Filly)"
+      },
+      "group": 0,
+      "id": "miss parents 2 alternate",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "miss parents 2 alternate",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": "hooves off",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Princess Luna (Filly)"
+      },
+      "group": 0,
+      "id": "alfalfa monster alternate",
+      "linkedBehavior": "alfalfa monster 2 alternate",
+      "movement": "None",
+      "name": "alfalfa monster alternate",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "must eat",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": "munch",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Princess Luna (Filly)"
+      },
+      "group": 0,
+      "id": "alfalfa monster 2 alternate",
+      "linkedBehavior": "alfalfa monster 3 alternate",
+      "movement": "None",
+      "name": "alfalfa monster 2 alternate",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": "alfafa monster",
+      "follow": null,
+      "group": 0,
+      "id": "alfalfa monster 3 alternate",
+      "linkedBehavior": "walk",
+      "movement": "None",
+      "name": "alfalfa monster 3 alternate",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1500,
+        "min": 1500
+      },
+      "endSpeech": "you can do it",
+      "follow": null,
+      "group": 0,
+      "id": "flapping alternate",
+      "linkedBehavior": "walk_flap",
+      "movement": "None",
+      "name": "flapping alternate",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sleep",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 60000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "princess-celestia-alternate-filly",
+  "interactions": [],
+  "name": "Princess Celestia",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "alicorns",
+    "fillies",
+    "alternate art"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "atlas": "ch-twi-finish.png",
+  "atlasSize": [
+    306,
+    156
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        102,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        102,
+        0,
+        102,
+        78
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        204,
+        0,
+        102,
+        78
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        78,
+        102,
+        78
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        102,
+        78,
+        102,
+        78
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    55,
+    48
+  ],
+  "schemaVersion": 1
+}

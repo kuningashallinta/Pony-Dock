@@ -1,0 +1,105 @@
+{
+  "atlas": "madame-laflour.png",
+  "atlasSize": [
+    240,
+    330
+  ],
+  "frames": [
+    {
+      "durationMs": 1500,
+      "rect": [
+        0,
+        0,
+        60,
+        110
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        60,
+        0,
+        60,
+        110
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        120,
+        0,
+        60,
+        110
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        180,
+        0,
+        60,
+        110
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        110,
+        60,
+        110
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        60,
+        110,
+        60,
+        110
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        120,
+        110,
+        60,
+        110
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        180,
+        110,
+        60,
+        110
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        220,
+        60,
+        110
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        60,
+        220,
+        60,
+        110
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

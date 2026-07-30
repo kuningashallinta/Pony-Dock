@@ -1,0 +1,24 @@
+{
+  "atlas": "rarity-drag-left.png",
+  "atlasSize": [
+    98,
+    76
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        98,
+        76
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    42,
+    37
+  ],
+  "schemaVersion": 1
+}

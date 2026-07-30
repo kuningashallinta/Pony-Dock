@@ -1,0 +1,78 @@
+{
+  "atlas": "violet-stand-right.png",
+  "atlasSize": [
+    246,
+    240
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        82,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        82,
+        0,
+        82,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        164,
+        0,
+        82,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        80,
+        82,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        82,
+        80,
+        82,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        164,
+        80,
+        82,
+        80
+      ]
+    },
+    {
+      "durationMs": 2650,
+      "rect": [
+        0,
+        160,
+        82,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

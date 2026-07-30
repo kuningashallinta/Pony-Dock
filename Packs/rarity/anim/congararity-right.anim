@@ -1,0 +1,96 @@
+{
+  "atlas": "congararity-right.png",
+  "atlasSize": [
+    282,
+    276
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        94,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        94,
+        0,
+        94,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        188,
+        0,
+        94,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        92,
+        94,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        94,
+        92,
+        94,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        188,
+        92,
+        94,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        184,
+        94,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        94,
+        184,
+        94,
+        92
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        188,
+        184,
+        94,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    49,
+    48
+  ],
+  "schemaVersion": 1
+}

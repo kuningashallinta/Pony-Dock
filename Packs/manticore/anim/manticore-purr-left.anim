@@ -1,0 +1,60 @@
+{
+  "atlas": "manticore-purr-left.png",
+  "atlasSize": [
+    456,
+    232
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        152,
+        0,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        304,
+        0,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        116,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        152,
+        116,
+        152,
+        116
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    76,
+    57
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,69 @@
+{
+  "atlas": "run-twitchy-pinkie-pie-right.png",
+  "atlasSize": [
+    318,
+    168
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        0,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        212,
+        0,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        84,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        84,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        212,
+        84,
+        106,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    48,
+    42
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,131 @@
+{
+  "animations": {
+    "shadowbolt-fly": {
+      "left": "anim/shadowbolt-fly-left.anim",
+      "right": "anim/shadowbolt-fly-right.anim"
+    },
+    "shadowbolt-run": {
+      "left": "anim/shadowbolt-run-left.anim",
+      "right": "anim/shadowbolt-run-right.anim"
+    },
+    "shadowbolt-stand": {
+      "left": "anim/shadowbolt-stand-left.anim",
+      "right": "anim/shadowbolt-stand-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "shadowbolt-stand",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 5000,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "shadowbolt-run",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "run",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "run",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "shadowbolt-fly",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "shadowbolt-run",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": "us",
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Rainbow Dash"
+      },
+      "group": 0,
+      "id": "join",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "join",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": "join",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "shadowbolt",
+  "interactions": [],
+  "name": "Shadowbolt",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "pegasi",
+    "mares"
+  ]
+}

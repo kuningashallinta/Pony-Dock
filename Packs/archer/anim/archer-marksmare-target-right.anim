@@ -1,0 +1,177 @@
+{
+  "atlas": "archer-marksmare-target-right.png",
+  "atlasSize": [
+    1960,
+    376
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        392,
+        0,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        784,
+        0,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        1176,
+        0,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        1568,
+        0,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        94,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        392,
+        94,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        784,
+        94,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        1176,
+        94,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        1568,
+        94,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        188,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        392,
+        188,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        784,
+        188,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        1176,
+        188,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        1568,
+        188,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        282,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        392,
+        282,
+        392,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        784,
+        282,
+        392,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    30,
+    50
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,24 @@
+{
+  "atlas": "hurdle-left.png",
+  "atlasSize": [
+    34,
+    54
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        34,
+        54
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

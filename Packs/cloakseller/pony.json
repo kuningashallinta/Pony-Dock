@@ -1,0 +1,96 @@
+{
+  "animations": {
+    "cloakseller-idle-r": {
+      "left": "anim/cloakseller-idle-r-left.anim",
+      "right": "anim/cloakseller-idle-r-right.anim"
+    },
+    "cloakseller-r": {
+      "left": "anim/cloakseller-r-left.anim",
+      "right": "anim/cloakseller-r-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "cloakseller-idle-r",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 5600
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cloakseller-r",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cloakseller-r",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 8000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "SomebodyCallTheFashionPolice",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "SomebodyCallTheFashionPolice",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "cloakseller",
+  "interactions": [],
+  "name": "Cloakseller",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

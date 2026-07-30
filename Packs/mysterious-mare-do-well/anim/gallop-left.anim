@@ -1,0 +1,123 @@
+{
+  "atlas": "gallop-left.png",
+  "atlasSize": [
+    424,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        0,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        0,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        318,
+        0,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        84,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        84,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        84,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        318,
+        84,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        168,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        168,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        168,
+        106,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        318,
+        168,
+        106,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    56,
+    40
+  ],
+  "schemaVersion": 1
+}

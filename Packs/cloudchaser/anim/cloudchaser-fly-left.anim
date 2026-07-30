@@ -1,0 +1,78 @@
+{
+  "atlas": "cloudchaser-fly-left.png",
+  "atlasSize": [
+    264,
+    288
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        88,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        88,
+        0,
+        88,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        176,
+        0,
+        88,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        96,
+        88,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        88,
+        96,
+        88,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        176,
+        96,
+        88,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        192,
+        88,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,69 @@
+{
+  "atlas": "blossomforth-sit-right.png",
+  "atlasSize": [
+    240,
+    116
+  ],
+  "frames": [
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        0,
+        80,
+        58
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        80,
+        0,
+        80,
+        58
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        160,
+        0,
+        80,
+        58
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        58,
+        80,
+        58
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        80,
+        58,
+        80,
+        58
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        160,
+        58,
+        80,
+        58
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,132 @@
+{
+  "atlas": "featherweight-idle-right.png",
+  "atlasSize": [
+    232,
+    296
+  ],
+  "frames": [
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        0,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        58,
+        0,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        116,
+        0,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        174,
+        0,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        74,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        58,
+        74,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        116,
+        74,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        174,
+        74,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        148,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        58,
+        148,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        116,
+        148,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        174,
+        148,
+        58,
+        74
+      ]
+    },
+    {
+      "durationMs": 4500,
+      "rect": [
+        0,
+        222,
+        58,
+        74
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    29,
+    38
+  ],
+  "schemaVersion": 1
+}

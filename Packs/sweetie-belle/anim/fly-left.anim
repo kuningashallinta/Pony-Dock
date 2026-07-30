@@ -1,0 +1,51 @@
+{
+  "atlas": "fly-left.png",
+  "atlasSize": [
+    228,
+    152
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        114,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        114,
+        0,
+        114,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        76,
+        114,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        114,
+        76,
+        114,
+        76
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

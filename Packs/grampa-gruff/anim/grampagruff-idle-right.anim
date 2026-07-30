@@ -1,0 +1,168 @@
+{
+  "atlas": "grampagruff-idle-right.png",
+  "atlasSize": [
+    640,
+    384
+  ],
+  "frames": [
+    {
+      "durationMs": 1200,
+      "rect": [
+        0,
+        0,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        128,
+        0,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        256,
+        0,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        384,
+        0,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        512,
+        0,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        96,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        96,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        256,
+        96,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        384,
+        96,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        512,
+        96,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 4100,
+      "rect": [
+        0,
+        192,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        128,
+        192,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        256,
+        192,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        384,
+        192,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        512,
+        192,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        288,
+        128,
+        96
+      ]
+    },
+    {
+      "durationMs": 4100,
+      "rect": [
+        128,
+        288,
+        128,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    81,
+    48
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,123 @@
+{
+  "atlas": "ocellus-transform.png",
+  "atlasSize": [
+    584,
+    900
+  ],
+  "frames": [
+    {
+      "durationMs": 400,
+      "rect": [
+        0,
+        0,
+        146,
+        300
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        146,
+        0,
+        146,
+        300
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        292,
+        0,
+        146,
+        300
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        438,
+        0,
+        146,
+        300
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        300,
+        146,
+        300
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        146,
+        300,
+        146,
+        300
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        292,
+        300,
+        146,
+        300
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        438,
+        300,
+        146,
+        300
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        600,
+        146,
+        300
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        146,
+        600,
+        146,
+        300
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        292,
+        600,
+        146,
+        300
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        438,
+        600,
+        146,
+        300
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

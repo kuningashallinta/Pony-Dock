@@ -1,0 +1,60 @@
+{
+  "atlas": "rear-left.png",
+  "atlasSize": [
+    264,
+    196
+  ],
+  "frames": [
+    {
+      "durationMs": 300,
+      "rect": [
+        0,
+        0,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        88,
+        0,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 520,
+      "rect": [
+        176,
+        0,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        98,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        88,
+        98,
+        88,
+        98
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    43,
+    50
+  ],
+  "schemaVersion": 1
+}

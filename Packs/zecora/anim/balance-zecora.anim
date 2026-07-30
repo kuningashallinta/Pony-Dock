@@ -1,0 +1,87 @@
+{
+  "atlas": "balance-zecora.png",
+  "atlasSize": [
+    258,
+    486
+  ],
+  "frames": [
+    {
+      "durationMs": 320,
+      "rect": [
+        0,
+        0,
+        86,
+        162
+      ]
+    },
+    {
+      "durationMs": 320,
+      "rect": [
+        86,
+        0,
+        86,
+        162
+      ]
+    },
+    {
+      "durationMs": 800,
+      "rect": [
+        172,
+        0,
+        86,
+        162
+      ]
+    },
+    {
+      "durationMs": 160,
+      "rect": [
+        0,
+        162,
+        86,
+        162
+      ]
+    },
+    {
+      "durationMs": 320,
+      "rect": [
+        86,
+        162,
+        86,
+        162
+      ]
+    },
+    {
+      "durationMs": 320,
+      "rect": [
+        172,
+        162,
+        86,
+        162
+      ]
+    },
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        324,
+        86,
+        162
+      ]
+    },
+    {
+      "durationMs": 160,
+      "rect": [
+        86,
+        324,
+        86,
+        162
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

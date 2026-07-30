@@ -1,0 +1,69 @@
+{
+  "atlas": "scoot-left.png",
+  "atlasSize": [
+    273,
+    156
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        91,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        91,
+        0,
+        91,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        182,
+        0,
+        91,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        78,
+        91,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        91,
+        78,
+        91,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        182,
+        78,
+        91,
+        78
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

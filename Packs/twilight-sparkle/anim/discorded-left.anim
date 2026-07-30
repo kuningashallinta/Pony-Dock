@@ -1,0 +1,168 @@
+{
+  "atlas": "discorded-left.png",
+  "atlasSize": [
+    490,
+    324
+  ],
+  "frames": [
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        0,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        98,
+        0,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 400,
+      "rect": [
+        196,
+        0,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        294,
+        0,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        392,
+        0,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        81,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        81,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        81,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        294,
+        81,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        392,
+        81,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        162,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        162,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        162,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        294,
+        162,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        392,
+        162,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        243,
+        98,
+        81
+      ]
+    },
+    {
+      "durationMs": 1500,
+      "rect": [
+        98,
+        243,
+        98,
+        81
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    32
+  ],
+  "schemaVersion": 1
+}

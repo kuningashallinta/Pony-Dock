@@ -1,0 +1,87 @@
+{
+  "atlas": "door.png",
+  "atlasSize": [
+    318,
+    372
+  ],
+  "frames": [
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        0,
+        106,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        0,
+        106,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        0,
+        106,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        124,
+        106,
+        124
+      ]
+    },
+    {
+      "durationMs": 6000,
+      "rect": [
+        106,
+        124,
+        106,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        124,
+        106,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        248,
+        106,
+        124
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        248,
+        106,
+        124
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    72,
+    78
+  ],
+  "schemaVersion": 1
+}

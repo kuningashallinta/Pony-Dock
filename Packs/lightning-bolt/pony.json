@@ -1,0 +1,153 @@
+{
+  "animations": {
+    "lightning-bolt-fly": {
+      "left": "anim/lightning-bolt-fly-left.anim",
+      "right": "anim/lightning-bolt-fly-right.anim"
+    },
+    "lightning-bolt-hover": {
+      "left": "anim/lightning-bolt-hover-left.anim",
+      "right": "anim/lightning-bolt-hover-right.anim"
+    },
+    "lightning-bolt-sleep": {
+      "left": "anim/lightning-bolt-sleep-left.anim",
+      "right": "anim/lightning-bolt-sleep-right.anim"
+    },
+    "lightning-bolt-stand": {
+      "left": "anim/lightning-bolt-stand-left.anim",
+      "right": "anim/lightning-bolt-stand-right.anim"
+    },
+    "lightning-bolt-walk": {
+      "left": "anim/lightning-bolt-walk-left.anim",
+      "right": "anim/lightning-bolt-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "lightning-bolt-stand",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lightning-bolt-walk",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lightning-bolt-hover",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "hover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lightning-bolt-fly",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lightning-bolt-sleep",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 30000,
+        "min": 25000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "lightning-bolt",
+  "interactions": [],
+  "name": "Lightning Bolt",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "pegasi"
+  ]
+}

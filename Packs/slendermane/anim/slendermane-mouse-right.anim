@@ -1,0 +1,60 @@
+{
+  "atlas": "slendermane-mouse-right.png",
+  "atlasSize": [
+    180,
+    168
+  ],
+  "frames": [
+    {
+      "durationMs": 2200,
+      "rect": [
+        0,
+        0,
+        60,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        60,
+        0,
+        60,
+        84
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        120,
+        0,
+        60,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        84,
+        60,
+        84
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        60,
+        84,
+        60,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    33,
+    42
+  ],
+  "schemaVersion": 1
+}

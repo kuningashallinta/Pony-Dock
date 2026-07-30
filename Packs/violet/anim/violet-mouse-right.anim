@@ -1,0 +1,33 @@
+{
+  "atlas": "violet-mouse-right.png",
+  "atlasSize": [
+    120,
+    82
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        60,
+        82
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        60,
+        0,
+        60,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    17,
+    30
+  ],
+  "schemaVersion": 1
+}

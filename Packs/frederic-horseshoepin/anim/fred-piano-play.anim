@@ -1,0 +1,69 @@
+{
+  "atlas": "fred-piano-play.png",
+  "atlasSize": [
+    348,
+    256
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        116,
+        0,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        232,
+        0,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        128,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        116,
+        128,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        232,
+        128,
+        116,
+        128
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

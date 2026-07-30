@@ -1,0 +1,105 @@
+{
+  "atlas": "derpy-sit-left-short-right.png",
+  "atlasSize": [
+    316,
+    168
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        79,
+        56
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        79,
+        0,
+        79,
+        56
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        158,
+        0,
+        79,
+        56
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        237,
+        0,
+        79,
+        56
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        56,
+        79,
+        56
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        79,
+        56,
+        79,
+        56
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        158,
+        56,
+        79,
+        56
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        237,
+        56,
+        79,
+        56
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        112,
+        79,
+        56
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        79,
+        112,
+        79,
+        56
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,51 @@
+{
+  "atlas": "stand-aloe-left.png",
+  "atlasSize": [
+    152,
+    164
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        76,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        76,
+        0,
+        76,
+        82
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        82,
+        76,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        76,
+        82,
+        76,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    39,
+    36
+  ],
+  "schemaVersion": 1
+}

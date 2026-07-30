@@ -1,0 +1,4525 @@
+{
+  "animations": {
+    "backtrack-pinkie-pie": {
+      "left": "anim/backtrack-pinkie-pie-left.anim",
+      "right": "anim/backtrack-pinkie-pie-right.anim"
+    },
+    "bite-pinkie-gummy": {
+      "left": "anim/bite-pinkie-gummy.anim",
+      "right": "anim/bite-pinkie-gummy.anim"
+    },
+    "bite-pinkie-gummy-2": {
+      "left": "anim/bite-pinkie-gummy-2.anim",
+      "right": "anim/bite-pinkie-gummy-2.anim"
+    },
+    "bounce-pinkiepie": {
+      "left": "anim/bounce-pinkiepie-left.anim",
+      "right": "anim/bounce-pinkiepie-right.anim"
+    },
+    "bounce-pinkiepie-right-n-n": {
+      "left": "anim/bounce-pinkiepie-right-n-n-left.anim",
+      "right": "anim/bounce-pinkiepie-right-n-n-right.anim"
+    },
+    "bounce-pinkiepie-up-down": {
+      "left": "anim/bounce-pinkiepie-up-down-left.anim",
+      "right": "anim/bounce-pinkiepie-up-down-right.anim"
+    },
+    "bounceturn-pinkiepie": {
+      "left": "anim/bounceturn-pinkiepie-left.anim",
+      "right": "anim/bounceturn-pinkiepie-right.anim"
+    },
+    "breezie-pinkiepie": {
+      "left": "anim/breezie-pinkiepie-left.anim",
+      "right": "anim/breezie-pinkiepie-right.anim"
+    },
+    "cannoncake-pinkie-pie": {
+      "left": "anim/cannoncake-pinkie-pie-left.anim",
+      "right": "anim/cannoncake-pinkie-pie-right.anim"
+    },
+    "cannoncake2-pinkie-pie": {
+      "left": "anim/cannoncake2-pinkie-pie-left.anim",
+      "right": "anim/cannoncake2-pinkie-pie-right.anim"
+    },
+    "cannonfull-pinkie-pie": {
+      "left": "anim/cannonfull-pinkie-pie-left.anim",
+      "right": "anim/cannonfull-pinkie-pie-right.anim"
+    },
+    "cannonshoot-pinkie-pie": {
+      "left": "anim/cannonshoot-pinkie-pie-left.anim",
+      "right": "anim/cannonshoot-pinkie-pie-right.anim"
+    },
+    "cannonstart-pinkie-pie": {
+      "left": "anim/cannonstart-pinkie-pie-left.anim",
+      "right": "anim/cannonstart-pinkie-pie-right.anim"
+    },
+    "cartwheel-pinkiepie": {
+      "left": "anim/cartwheel-pinkiepie-left.anim",
+      "right": "anim/cartwheel-pinkiepie-right.anim"
+    },
+    "chicken-pinkie-pie": {
+      "left": "anim/chicken-pinkie-pie-left.anim",
+      "right": "anim/chicken-pinkie-pie-right.anim"
+    },
+    "chicken2-pinkie-pie": {
+      "left": "anim/chicken2-pinkie-pie-left.anim",
+      "right": "anim/chicken2-pinkie-pie-right.anim"
+    },
+    "choppa-start": {
+      "left": "anim/choppa-start-left.anim",
+      "right": "anim/choppa-start-right.anim"
+    },
+    "choppa-stop": {
+      "left": "anim/choppa-stop-left.anim",
+      "right": "anim/choppa-stop-right.anim"
+    },
+    "choppa-unfold": {
+      "left": "anim/choppa-unfold-left.anim",
+      "right": "anim/choppa-unfold-right.anim"
+    },
+    "congapinkiepie": {
+      "left": "anim/congapinkiepie-left.anim",
+      "right": "anim/congapinkiepie-right.anim"
+    },
+    "crystal-pinkie": {
+      "left": "anim/crystal-pinkie-left.anim",
+      "right": "anim/crystal-pinkie-right.anim"
+    },
+    "cupcake-pinkie-pie": {
+      "left": "anim/cupcake-pinkie-pie-left.anim",
+      "right": "anim/cupcake-pinkie-pie-right.anim"
+    },
+    "drag-pinkiepie": {
+      "left": "anim/drag-pinkiepie-left.anim",
+      "right": "anim/drag-pinkiepie-right.anim"
+    },
+    "epic-pinkie-pie": {
+      "left": "anim/epic-pinkie-pie-left.anim",
+      "right": "anim/epic-pinkie-pie-right.anim"
+    },
+    "flower1-pinkiepie": {
+      "left": "anim/flower1-pinkiepie-left.anim",
+      "right": "anim/flower1-pinkiepie-right.anim"
+    },
+    "flower2-pinkiepie": {
+      "left": "anim/flower2-pinkiepie-left.anim",
+      "right": "anim/flower2-pinkiepie-right.anim"
+    },
+    "flower3-pinkiepie": {
+      "left": "anim/flower3-pinkiepie-left.anim",
+      "right": "anim/flower3-pinkiepie-right.anim"
+    },
+    "flower4mix-pinkiepie": {
+      "left": "anim/flower4mix-pinkiepie-left.anim",
+      "right": "anim/flower4mix-pinkiepie-right.anim"
+    },
+    "flower5mix-pinkiepie": {
+      "left": "anim/flower5mix-pinkiepie-left.anim",
+      "right": "anim/flower5mix-pinkiepie-right.anim"
+    },
+    "flower6-pinkiepie": {
+      "left": "anim/flower6-pinkiepie-left.anim",
+      "right": "anim/flower6-pinkiepie-right.anim"
+    },
+    "flower7-pinkiepie": {
+      "left": "anim/flower7-pinkiepie-left.anim",
+      "right": "anim/flower7-pinkiepie-right.anim"
+    },
+    "fluttercuddles": {
+      "left": "anim/fluttercuddles.anim",
+      "right": "anim/fluttercuddles.anim"
+    },
+    "fluttercuddles-links": {
+      "left": "anim/fluttercuddles-links.anim",
+      "right": "anim/fluttercuddles-links.anim"
+    },
+    "fly": {
+      "left": "anim/fly-left.anim",
+      "right": "anim/fly-right.anim"
+    },
+    "front-flip-full-twist-end-pinkie-pie": {
+      "left": "anim/front-flip-full-twist-end-pinkie-pie-left.anim",
+      "right": "anim/front-flip-full-twist-end-pinkie-pie-right.anim"
+    },
+    "front-flip-full-twist-salto-pinkie-pie": {
+      "left": "anim/front-flip-full-twist-salto-pinkie-pie-left.anim",
+      "right": "anim/front-flip-full-twist-salto-pinkie-pie-right.anim"
+    },
+    "front-flip-full-twist-start-pinkie-pie": {
+      "left": "anim/front-flip-full-twist-start-pinkie-pie-left.anim",
+      "right": "anim/front-flip-full-twist-start-pinkie-pie-right.anim"
+    },
+    "gala-pinkie-bounce": {
+      "left": "anim/gala-pinkie-bounce-left.anim",
+      "right": "anim/gala-pinkie-bounce-right.anim"
+    },
+    "gala-pinkie-bounce-right-n-n": {
+      "left": "anim/gala-pinkie-bounce-right-n-n-left.anim",
+      "right": "anim/gala-pinkie-bounce-right-n-n-right.anim"
+    },
+    "gala-pinkie-idle": {
+      "left": "anim/gala-pinkie-idle-left.anim",
+      "right": "anim/gala-pinkie-idle-right.anim"
+    },
+    "gala-pinkie-trot": {
+      "left": "anim/gala-pinkie-trot-left.anim",
+      "right": "anim/gala-pinkie-trot-right.anim"
+    },
+    "gala-pinkie-trot-right-n-n": {
+      "left": "anim/gala-pinkie-trot-right-n-n-left.anim",
+      "right": "anim/gala-pinkie-trot-right-n-n-right.anim"
+    },
+    "giggle-pinkie-pie": {
+      "left": "anim/giggle-pinkie-pie-left.anim",
+      "right": "anim/giggle-pinkie-pie-right.anim"
+    },
+    "goovy-pinkie-pie": {
+      "left": "anim/goovy-pinkie-pie-left.anim",
+      "right": "anim/goovy-pinkie-pie-right.anim"
+    },
+    "haters-pinkiepie": {
+      "left": "anim/haters-pinkiepie-left.anim",
+      "right": "anim/haters-pinkiepie-right.anim"
+    },
+    "hatersstart-pinkiepie": {
+      "left": "anim/hatersstart-pinkiepie-left.anim",
+      "right": "anim/hatersstart-pinkiepie-right.anim"
+    },
+    "hatersstop-pinkie-pie": {
+      "left": "anim/hatersstop-pinkie-pie-left.anim",
+      "right": "anim/hatersstop-pinkie-pie-right.anim"
+    },
+    "hickup-start-pinkie-pie": {
+      "left": "anim/hickup-start-pinkie-pie-left.anim",
+      "right": "anim/hickup-start-pinkie-pie-right.anim"
+    },
+    "hickup-stop-pinkie-pie": {
+      "left": "anim/hickup-stop-pinkie-pie-left.anim",
+      "right": "anim/hickup-stop-pinkie-pie-right.anim"
+    },
+    "hickup2-start-pinkie-pie": {
+      "left": "anim/hickup2-start-pinkie-pie-left.anim",
+      "right": "anim/hickup2-start-pinkie-pie-right.anim"
+    },
+    "jumpy-pinkiepie": {
+      "left": "anim/jumpy-pinkiepie-left.anim",
+      "right": "anim/jumpy-pinkiepie-right.anim"
+    },
+    "mouse-pinkiepie": {
+      "left": "anim/mouse-pinkiepie-left.anim",
+      "right": "anim/mouse-pinkiepie-right.anim"
+    },
+    "oink-pinkie-pie": {
+      "left": "anim/oink-pinkie-pie-left.anim",
+      "right": "anim/oink-pinkie-pie-right.anim"
+    },
+    "oinkend-pinkie-pie": {
+      "left": "anim/oinkend-pinkie-pie-left.anim",
+      "right": "anim/oinkend-pinkie-pie-right.anim"
+    },
+    "oinkoinkoinktail-pinkie-pie": {
+      "left": "anim/oinkoinkoinktail-pinkie-pie-left.anim",
+      "right": "anim/oinkoinkoinktail-pinkie-pie-right.anim"
+    },
+    "oinkstart-pinkie-pie": {
+      "left": "anim/oinkstart-pinkie-pie-left.anim",
+      "right": "anim/oinkstart-pinkie-pie-right.anim"
+    },
+    "parasoloff-pinkie-pie": {
+      "left": "anim/parasoloff-pinkie-pie-left.anim",
+      "right": "anim/parasoloff-pinkie-pie-right.anim"
+    },
+    "parasolon-pinkie-pie": {
+      "left": "anim/parasolon-pinkie-pie-left.anim",
+      "right": "anim/parasolon-pinkie-pie-right.anim"
+    },
+    "paraspritestart-pinkie-pie": {
+      "left": "anim/paraspritestart-pinkie-pie-left.anim",
+      "right": "anim/paraspritestart-pinkie-pie-right.anim"
+    },
+    "paraspritestop-pinkie-pie": {
+      "left": "anim/paraspritestop-pinkie-pie-left.anim",
+      "right": "anim/paraspritestop-pinkie-pie-right.anim"
+    },
+    "partycannon-pinkie-pie": {
+      "left": "anim/partycannon-pinkie-pie-left.anim",
+      "right": "anim/partycannon-pinkie-pie-right.anim"
+    },
+    "pinkacopter": {
+      "left": "anim/pinkacopter-left.anim",
+      "right": "anim/pinkacopter-right.anim"
+    },
+    "pinkie-dance": {
+      "left": "anim/pinkie-dance-left.anim",
+      "right": "anim/pinkie-dance-right.anim"
+    },
+    "pinkie-galopp": {
+      "left": "anim/pinkie-galopp-left.anim",
+      "right": "anim/pinkie-galopp-right.anim"
+    },
+    "pinkie-sleep": {
+      "left": "anim/pinkie-sleep-left.anim",
+      "right": "anim/pinkie-sleep-right.anim"
+    },
+    "pose-pinkie-pie": {
+      "left": "anim/pose-pinkie-pie-left.anim",
+      "right": "anim/pose-pinkie-pie-right.anim"
+    },
+    "princess-pinkie": {
+      "left": "anim/princess-pinkie-left.anim",
+      "right": "anim/princess-pinkie-right.anim"
+    },
+    "rofl-hickup-pinkie-pie": {
+      "left": "anim/rofl-hickup-pinkie-pie-left.anim",
+      "right": "anim/rofl-hickup-pinkie-pie-right.anim"
+    },
+    "rofl-hickup2mix-pinkie-pie": {
+      "left": "anim/rofl-hickup2mix-pinkie-pie-left.anim",
+      "right": "anim/rofl-hickup2mix-pinkie-pie-right.anim"
+    },
+    "rofl-hickup3-pinkie-pie": {
+      "left": "anim/rofl-hickup3-pinkie-pie-left.anim",
+      "right": "anim/rofl-hickup3-pinkie-pie-right.anim"
+    },
+    "rofl2-pinkie-pie": {
+      "left": "anim/rofl2-pinkie-pie-left.anim",
+      "right": "anim/rofl2-pinkie-pie-right.anim"
+    },
+    "rofls2-pinkie-pie": {
+      "left": "anim/rofls2-pinkie-pie-left.anim",
+      "right": "anim/rofls2-pinkie-pie-right.anim"
+    },
+    "rofls2start-pinkie-pie": {
+      "left": "anim/rofls2start-pinkie-pie-left.anim",
+      "right": "anim/rofls2start-pinkie-pie-right.anim"
+    },
+    "rofls2stop-pinkie-pie": {
+      "left": "anim/rofls2stop-pinkie-pie-left.anim",
+      "right": "anim/rofls2stop-pinkie-pie-right.anim"
+    },
+    "roflsit-pinkie-pie": {
+      "left": "anim/roflsit-pinkie-pie-left.anim",
+      "right": "anim/roflsit-pinkie-pie-right.anim"
+    },
+    "rollend-pinkiepie": {
+      "left": "anim/rollend-pinkiepie-left.anim",
+      "right": "anim/rollend-pinkiepie-right.anim"
+    },
+    "rollfinish-pinkiepie": {
+      "left": "anim/rollfinish-pinkiepie-left.anim",
+      "right": "anim/rollfinish-pinkiepie-right.anim"
+    },
+    "rolljump-pinkiepie": {
+      "left": "anim/rolljump-pinkiepie-left.anim",
+      "right": "anim/rolljump-pinkiepie-right.anim"
+    },
+    "rollsequence-pinkiepie": {
+      "left": "anim/rollsequence-pinkiepie-left.anim",
+      "right": "anim/rollsequence-pinkiepie-right.anim"
+    },
+    "rollsequence-pinkiepie-2": {
+      "left": "anim/rollsequence-pinkiepie-2-left.anim",
+      "right": "anim/rollsequence-pinkiepie-2-right.anim"
+    },
+    "rollstart-pinkiepie": {
+      "left": "anim/rollstart-pinkiepie-left.anim",
+      "right": "anim/rollstart-pinkiepie-right.anim"
+    },
+    "rolltransition-pinkiepie": {
+      "left": "anim/rolltransition-pinkiepie-left.anim",
+      "right": "anim/rolltransition-pinkiepie-right.anim"
+    },
+    "run-twitchy-pinkie-pie": {
+      "left": "anim/run-twitchy-pinkie-pie-left.anim",
+      "right": "anim/run-twitchy-pinkie-pie-right.anim"
+    },
+    "salto-pinkie-pie": {
+      "left": "anim/salto-pinkie-pie-left.anim",
+      "right": "anim/salto-pinkie-pie-right.anim"
+    },
+    "saltoend-pinkie-pie": {
+      "left": "anim/saltoend-pinkie-pie-left.anim",
+      "right": "anim/saltoend-pinkie-pie-right.anim"
+    },
+    "saltostart-pinkie-pie": {
+      "left": "anim/saltostart-pinkie-pie-left.anim",
+      "right": "anim/saltostart-pinkie-pie-right.anim"
+    },
+    "sit-pinkie-pie": {
+      "left": "anim/sit-pinkie-pie-left.anim",
+      "right": "anim/sit-pinkie-pie-right.anim"
+    },
+    "sittinggiggle-pinkie-pie": {
+      "left": "anim/sittinggiggle-pinkie-pie-left.anim",
+      "right": "anim/sittinggiggle-pinkie-pie-right.anim"
+    },
+    "sleep1-pinkie-pie": {
+      "left": "anim/sleep1-pinkie-pie-left.anim",
+      "right": "anim/sleep1-pinkie-pie-right.anim"
+    },
+    "sleep2-pinkie-pie": {
+      "left": "anim/sleep2-pinkie-pie-left.anim",
+      "right": "anim/sleep2-pinkie-pie-right.anim"
+    },
+    "sneezecute-pinkie-pie": {
+      "left": "anim/sneezecute-pinkie-pie-left.anim",
+      "right": "anim/sneezecute-pinkie-pie-right.anim"
+    },
+    "sneezefly-pinkie-pie": {
+      "left": "anim/sneezefly-pinkie-pie-left.anim",
+      "right": "anim/sneezefly-pinkie-pie-right.anim"
+    },
+    "sneezestart-pinkie-pie": {
+      "left": "anim/sneezestart-pinkie-pie-left.anim",
+      "right": "anim/sneezestart-pinkie-pie-right.anim"
+    },
+    "sneezestop-pinkie-pie": {
+      "left": "anim/sneezestop-pinkie-pie-left.anim",
+      "right": "anim/sneezestop-pinkie-pie-right.anim"
+    },
+    "sonic-pinksneeze": {
+      "left": "anim/sonic-pinksneeze-left.anim",
+      "right": "anim/sonic-pinksneeze-right.anim"
+    },
+    "sonic-pinksneeze2": {
+      "left": "anim/sonic-pinksneeze2-left.anim",
+      "right": "anim/sonic-pinksneeze2-right.anim"
+    },
+    "sparkle": {
+      "left": "anim/sparkle.anim",
+      "right": "anim/sparkle.anim"
+    },
+    "stand-pinkiepie": {
+      "left": "anim/stand-pinkiepie-left.anim",
+      "right": "anim/stand-pinkiepie-right.anim"
+    },
+    "stand-pinkiepie-2": {
+      "left": "anim/stand-pinkiepie-2-left.anim",
+      "right": "anim/stand-pinkiepie-2-right.anim"
+    },
+    "stand-pinkiepie-3": {
+      "left": "anim/stand-pinkiepie-3-left.anim",
+      "right": "anim/stand-pinkiepie-3-right.anim"
+    },
+    "teleporreapear-pinkie-pie": {
+      "left": "anim/teleporreapear-pinkie-pie-left.anim",
+      "right": "anim/teleporreapear-pinkie-pie-right.anim"
+    },
+    "teleportmove-pinkie-pie": {
+      "left": "anim/teleportmove-pinkie-pie.anim",
+      "right": "anim/teleportmove-pinkie-pie.anim"
+    },
+    "teleportstart-pinkie-pie": {
+      "left": "anim/teleportstart-pinkie-pie-left.anim",
+      "right": "anim/teleportstart-pinkie-pie-right.anim"
+    },
+    "tom": {
+      "left": "anim/tom.anim",
+      "right": "anim/tom.anim"
+    },
+    "tongue-pinkie-pie": {
+      "left": "anim/tongue-pinkie-pie-left.anim",
+      "right": "anim/tongue-pinkie-pie-right.anim"
+    },
+    "tonguedance-pinkie-pie": {
+      "left": "anim/tonguedance-pinkie-pie-left.anim",
+      "right": "anim/tonguedance-pinkie-pie-right.anim"
+    },
+    "trotcycle-parade": {
+      "left": "anim/trotcycle-parade-left.anim",
+      "right": "anim/trotcycle-parade-right.anim"
+    },
+    "trotcycle-pinkiepie": {
+      "left": "anim/trotcycle-pinkiepie-left.anim",
+      "right": "anim/trotcycle-pinkiepie-right.anim"
+    },
+    "trotcycle-pinkiepie-2": {
+      "left": "anim/trotcycle-pinkiepie-2-left.anim",
+      "right": "anim/trotcycle-pinkiepie-2-right.anim"
+    },
+    "trotcycle-pinkiepie-3": {
+      "left": "anim/trotcycle-pinkiepie-3-left.anim",
+      "right": "anim/trotcycle-pinkiepie-3-right.anim"
+    },
+    "trotcycle-pinkiepie-right-n-n": {
+      "left": "anim/trotcycle-pinkiepie-right-n-n-left.anim",
+      "right": "anim/trotcycle-pinkiepie-right-n-n-right.anim"
+    },
+    "twitchytail-pinkie-pie": {
+      "left": "anim/twitchytail-pinkie-pie-left.anim",
+      "right": "anim/twitchytail-pinkie-pie-right.anim"
+    },
+    "walk-pinkie-pie": {
+      "left": "anim/walk-pinkie-pie-left.anim",
+      "right": "anim/walk-pinkie-pie-right.anim"
+    },
+    "wink-pinkie-pie": {
+      "left": "anim/wink-pinkie-pie-left.anim",
+      "right": "anim/wink-pinkie-pie-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    },
+    {
+      "id": 2,
+      "name": "Gala_Dress"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "stand-pinkiepie",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-pinkiepie",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-pinkiepie-right-n-n",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk_n_n",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk_n_n",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-parade",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parade",
+      "linkedBehavior": "parasprite_stop",
+      "movement": "Horizontal_Only",
+      "name": "parade",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bounce-pinkiepie",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "bounce",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "bounce",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bounce-pinkiepie-right-n-n",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "bounce_n_n",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "bounce_n_n",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bounce-pinkiepie-up-down",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "bounce_up",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "bounce_up",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-parade",
+      "chance": 1.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parasprite_follow_circle1",
+      "linkedBehavior": "parasprite_follow_circle2",
+      "movement": "Diagonal_Horizontal",
+      "name": "parasprite_follow_circle1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": "parasprite_greet",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-parade",
+      "chance": 1.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parasprite_follow_circle2",
+      "linkedBehavior": "parasprite_follow_circle3",
+      "movement": "Diagonal_Only",
+      "name": "parasprite_follow_circle2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-parade",
+      "chance": 1.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parasprite_follow_circle3",
+      "linkedBehavior": "parasprite_follow_circle4",
+      "movement": "Diagonal_Horizontal",
+      "name": "parasprite_follow_circle3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-parade",
+      "chance": 1.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parasprite_follow_circle4",
+      "linkedBehavior": "parasprite_follow_circle5",
+      "movement": "Diagonal_Only",
+      "name": "parasprite_follow_circle4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-parade",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parasprite_follow_circle5",
+      "linkedBehavior": "parasprite_stop",
+      "movement": "Diagonal_Horizontal",
+      "name": "parasprite_follow_circle5",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bounce-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 13600,
+        "min": 13600
+      },
+      "endSpeech": "theme 1",
+      "follow": null,
+      "group": 1,
+      "id": "theme 1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "theme 1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "pinkie_balloon_poke",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "pinkie_balloon_poke",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "choppa-start",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 2150,
+        "min": 2150
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "Stalking_start",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "Stalking_start",
+        "target": "Rainbow Dash"
+      },
+      "group": 1,
+      "id": "Stalking_start",
+      "linkedBehavior": "Stalking_Dash",
+      "movement": "None",
+      "name": "Stalking_start",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pinkacopter",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "Stalking_Dash",
+        "offsetX": 50,
+        "offsetY": 50,
+        "stoppedBehavior": "Stalking_Dash",
+        "target": "Rainbow Dash"
+      },
+      "group": 1,
+      "id": "Stalking_Dash",
+      "linkedBehavior": "Stalking_stop",
+      "movement": "Horizontal_Only",
+      "name": "Stalking_Dash",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": "dash_follow",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "choppa-stop",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2150,
+        "min": 2150
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Stalking_stop",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Stalking_stop",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "wink-pinkie-pie",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 1080,
+        "min": 1080
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "wink",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "wink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "drag-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2400,
+        "min": 0
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "drag",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "mouse-pinkiepie",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 5200,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "mouseover",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "mouseover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "haters-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 15000,
+        "min": 1280
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hatersgonnahate",
+      "linkedBehavior": "haters_stop",
+      "movement": "Diagonal_Horizontal",
+      "name": "hatersgonnahate",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "hatersstart-pinkiepie",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 2400,
+        "min": 2400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "haterstart",
+      "linkedBehavior": "hatersgonnahate",
+      "movement": "None",
+      "name": "haterstart",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "giggle-pinkie-pie",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 2160,
+        "min": 2160
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "giggle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "giggle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bounceturn-pinkiepie",
+      "chance": 0.06,
+      "durationMs": {
+        "max": 7540,
+        "min": 1080
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "jumpturn",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "jumpturn",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bounceturn-pinkiepie",
+      "chance": 0.06,
+      "durationMs": {
+        "max": 7540,
+        "min": 1080
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "jumpturnpl",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "jumpturnpl",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flower1-pinkiepie",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3100,
+        "min": 3100
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flower1",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "flower1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walk-pinkie-pie",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 10000,
+        "min": 770
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk2",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 26.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "jumpy-pinkiepie",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 5000,
+        "min": 560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "jumpy",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "jumpy",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rollfinish-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rollfinish",
+      "linkedBehavior": "rolltransition",
+      "movement": "None",
+      "name": "rollfinish",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rollend-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 700,
+        "min": 700
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rollend",
+      "linkedBehavior": "rollfinish",
+      "movement": "Horizontal_Only",
+      "name": "rollend",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rollsequence-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 600,
+        "min": 600
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rollsequence",
+      "linkedBehavior": "rollend",
+      "movement": "Horizontal_Only",
+      "name": "rollsequence",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rollstart-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 800,
+        "min": 800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rollstart",
+      "linkedBehavior": "rollsequence",
+      "movement": "Horizontal_Only",
+      "name": "rollstart",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rolljump-pinkiepie",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 780,
+        "min": 780
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rolljump",
+      "linkedBehavior": "rollstart",
+      "movement": "None",
+      "name": "rolljump",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rollfinish-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rollfinish2",
+      "linkedBehavior": "rolltransition",
+      "movement": "None",
+      "name": "rollfinish2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rollend-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 700,
+        "min": 700
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rollend2",
+      "linkedBehavior": "rollfinish2",
+      "movement": "Horizontal_Only",
+      "name": "rollend2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rollsequence-pinkiepie-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 600,
+        "min": 600
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rollsequence2",
+      "linkedBehavior": "rollend2",
+      "movement": "Horizontal_Only",
+      "name": "rollsequence2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rollstart-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 800,
+        "min": 800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rollstart2",
+      "linkedBehavior": "rollsequence2",
+      "movement": "Horizontal_Only",
+      "name": "rollstart2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rolljump-pinkiepie",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 780,
+        "min": 780
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rolljump2",
+      "linkedBehavior": "rollstart2",
+      "movement": "None",
+      "name": "rolljump2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rolltransition-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1280,
+        "min": 1280
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rolltransition",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "rolltransition",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rofl-hickup-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 7000,
+        "min": 1700
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hick1",
+      "linkedBehavior": "hickup_stop",
+      "movement": "None",
+      "name": "hick1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rofl-hickup2mix-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 15000,
+        "min": 3600
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hick2mix",
+      "linkedBehavior": "hickup_stop",
+      "movement": "None",
+      "name": "hick2mix",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rofl2-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 700
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rofl",
+      "linkedBehavior": "hickup_stop",
+      "movement": "None",
+      "name": "rofl",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rofl-hickup3-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 1900
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hick3",
+      "linkedBehavior": "hickup_stop",
+      "movement": "None",
+      "name": "hick3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bounce-pinkiepie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 4860,
+        "min": 540
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "jumpflower",
+      "linkedBehavior": "jumppreflowe",
+      "movement": "Diagonal_Horizontal",
+      "name": "jumpflower",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bounce-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 540,
+        "min": 540
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "jumppreflowe",
+      "linkedBehavior": "flower2",
+      "movement": "Horizontal_Vertical",
+      "name": "jumppreflowe",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flower2-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2700,
+        "min": 2700
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flower2",
+      "linkedBehavior": "bounce_n_n",
+      "movement": "None",
+      "name": "flower2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flower3-pinkiepie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 2800,
+        "min": 2800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flower3",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "flower3",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "tongue-pinkie-pie",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 4000,
+        "min": 300
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "tongue",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "tongue",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flower6-pinkiepie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 2550,
+        "min": 2550
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flower6",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "flower6",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flower5mix-pinkiepie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 4150,
+        "min": 4150
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flower5",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "flower5",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flower4mix-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 4250,
+        "min": 4250
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flower4mix",
+      "linkedBehavior": "bounce",
+      "movement": "None",
+      "name": "flower4mix",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flower7-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2650,
+        "min": 2650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flower7",
+      "linkedBehavior": "bounce",
+      "movement": "None",
+      "name": "flower7",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bounce-pinkiepie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 4860,
+        "min": 540
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "jumpflower2",
+      "linkedBehavior": "jumppreflowe2",
+      "movement": "Diagonal_Horizontal",
+      "name": "jumpflower2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bounce-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 540,
+        "min": 540
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "jumppreflowe2",
+      "linkedBehavior": "flower7",
+      "movement": "Horizontal_Vertical",
+      "name": "jumppreflowe2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bounce-pinkiepie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 4860,
+        "min": 540
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "jumpflower3",
+      "linkedBehavior": "jumppreflowe3",
+      "movement": "Diagonal_Horizontal",
+      "name": "jumpflower3",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bounce-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 540,
+        "min": 540
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "jumppreflowe3",
+      "linkedBehavior": "flower4mix",
+      "movement": "Horizontal_Vertical",
+      "name": "jumppreflowe3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cupcake-pinkie-pie",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "cupcake",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "cupcake",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "chicken-pinkie-pie",
+      "chance": 0.12,
+      "durationMs": {
+        "max": 10000,
+        "min": 2400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "chicken",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "chicken",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sleep2-pinkie-pie",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 30000,
+        "min": 11500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sleep1-pinkie-pie",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rest",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "rest",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pinkacopter",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Pinkacopter",
+      "linkedBehavior": "Pinkacopter2",
+      "movement": "All",
+      "name": "Pinkacopter",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pinkacopter",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Pinkacopter2",
+      "linkedBehavior": "Pinkacopter3",
+      "movement": "All",
+      "name": "Pinkacopter2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pinkacopter",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Pinkacopter3",
+      "linkedBehavior": "Pinkacopter4",
+      "movement": "All",
+      "name": "Pinkacopter3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pinkacopter",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Pinkacopter4",
+      "linkedBehavior": "Pinkacopter5",
+      "movement": "All",
+      "name": "Pinkacopter4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pinkacopter",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Pinkacopter5",
+      "linkedBehavior": "Pinkacopter_stop",
+      "movement": "All",
+      "name": "Pinkacopter5",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "jumpy-pinkiepie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 1950,
+        "min": 1950
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Pinkacopter_start",
+      "linkedBehavior": "Pinkacopter",
+      "movement": "None",
+      "name": "Pinkacopter_start",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "choppa-start",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 2150,
+        "min": 2150
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Pinkacopter_begin",
+      "linkedBehavior": "Pinkacopter",
+      "movement": "None",
+      "name": "Pinkacopter_begin",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "choppa-stop",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2150,
+        "min": 2150
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Pinkacopter_stop",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Pinkacopter_stop",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "backtrack-pinkie-pie",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 10000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "backtrack",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "backtrack",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "paraspritestop-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 700,
+        "min": 700
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parasprite_stop",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "parasprite_stop",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "paraspritestart-pinkie-pie",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 700,
+        "min": 700
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parade_start",
+      "linkedBehavior": "parade",
+      "movement": "None",
+      "name": "parade_start",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "paraspritestart-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 700,
+        "min": 700
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parasprite_follow_circle",
+      "linkedBehavior": "parasprite_follow_circle1",
+      "movement": "None",
+      "name": "parasprite_follow_circle",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "tonguedance-pinkie-pie",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 4500,
+        "min": 4500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Dance_tongue",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Dance_tongue",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "hatersstop-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 760,
+        "min": 760
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "haters_stop",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "haters_stop",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "princess-pinkie",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 15000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "princess",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "princess",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cartwheel-pinkiepie",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "cartwheel",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "cartwheel",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sittinggiggle-pinkie-pie",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 2300,
+        "min": 2300
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sittinggiggle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sittinggiggle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sneezestop-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1100,
+        "min": 1100
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sneeze_stop",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sneeze_stop",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sneezefly-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sneeze_fly",
+      "linkedBehavior": "sneeze_stop",
+      "movement": "Horizontal_Only",
+      "name": "sneeze_fly",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 700.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sneezestart-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 3300,
+        "min": 3300
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sneeze_start",
+      "linkedBehavior": "sneeze_fly",
+      "movement": "None",
+      "name": "sneeze_start",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sneezecute-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 4600,
+        "min": 4600
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sneeze_cute",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sneeze_cute",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "parasoloff-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parasoloff",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "parasoloff",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "run-twitchy-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "twitchyrun",
+      "linkedBehavior": "parasoloff",
+      "movement": "Horizontal_Only",
+      "name": "twitchyrun",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "parasolon-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 4000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parasolon",
+      "linkedBehavior": "twitchyrun",
+      "movement": "None",
+      "name": "parasolon",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "twitchytail-pinkie-pie",
+      "chance": 0.005,
+      "durationMs": {
+        "max": 4000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "twitchytail",
+      "linkedBehavior": "parasolon",
+      "movement": "None",
+      "name": "twitchytail",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "parasolon-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 4000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "parasolon2",
+      "linkedBehavior": "twitchyrun",
+      "movement": "None",
+      "name": "parasolon2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "twitchytail-pinkie-pie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 4000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "twitchytail2",
+      "linkedBehavior": "parasolon2",
+      "movement": "None",
+      "name": "twitchytail2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bite-pinkie-gummy",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 11500,
+        "min": 11500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Bite_left",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Bite_left",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bite-pinkie-gummy-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 11500,
+        "min": 11500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Bite_right",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Bite_right",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-pinkiepie-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 63,
+        "offsetY": -25,
+        "stoppedBehavior": null,
+        "target": "Gummy"
+      },
+      "group": 1,
+      "id": "bite_position_left",
+      "linkedBehavior": "Bite_left",
+      "movement": "None",
+      "name": "bite_position_left",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-pinkiepie-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -63,
+        "offsetY": -25,
+        "stoppedBehavior": null,
+        "target": "Gummy"
+      },
+      "group": 1,
+      "id": "bite_position_right",
+      "linkedBehavior": "Bite_right",
+      "movement": "None",
+      "name": "bite_position_right",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pose-pinkie-pie",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 7300,
+        "min": 7300
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "pose",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "pose",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "hickup-start-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 1580,
+        "min": 1580
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hickup_start_1",
+      "linkedBehavior": "hick1",
+      "movement": "None",
+      "name": "hickup_start_1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "hickup2-start-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 400,
+        "min": 400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hickup_start_1-2",
+      "linkedBehavior": "hick1",
+      "movement": "None",
+      "name": "hickup_start_1-2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "hickup-start-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 1580,
+        "min": 1580
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hickup_start_2",
+      "linkedBehavior": "hick2mix",
+      "movement": "None",
+      "name": "hickup_start_2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "hickup2-start-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 400,
+        "min": 400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hickup_start_2-2",
+      "linkedBehavior": "hick2mix",
+      "movement": "None",
+      "name": "hickup_start_2-2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "hickup-start-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 1580,
+        "min": 1580
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hickup_start_3",
+      "linkedBehavior": "rofl",
+      "movement": "None",
+      "name": "hickup_start_3",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "hickup2-start-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 400,
+        "min": 400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hickup_start_3-2",
+      "linkedBehavior": "rofl",
+      "movement": "None",
+      "name": "hickup_start_3-2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "hickup-start-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 1580,
+        "min": 1580
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hickup_start_4",
+      "linkedBehavior": "hick3",
+      "movement": "None",
+      "name": "hickup_start_4",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "hickup2-start-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 400,
+        "min": 400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hickup_start_4-2",
+      "linkedBehavior": "hick3",
+      "movement": "None",
+      "name": "hickup_start_4-2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "hickup-stop-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 400,
+        "min": 400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hickup_stop",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "hickup_stop",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "roflsit-pinkie-pie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 1880,
+        "min": 1880
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sitrofl",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sitrofl",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rofls2stop-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 900,
+        "min": 900
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rofls2stop",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "rofls2stop",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rofls2-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rofls2",
+      "linkedBehavior": "rofls2stop",
+      "movement": "None",
+      "name": "rofls2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rofls2start-pinkie-pie",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 1720,
+        "min": 1720
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "rofls2start",
+      "linkedBehavior": "rofls2",
+      "movement": "None",
+      "name": "rofls2start",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "goovy-pinkie-pie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "crocodance",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "crocodance",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "teleporreapear-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3600,
+        "min": 3600
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "teleportreappear",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "teleportreappear",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "teleportmove-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 300,
+        "min": 300
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "teleport run",
+        "offsetX": 75,
+        "offsetY": 10,
+        "stoppedBehavior": "teleport run",
+        "target": "Twilight Sparkle"
+      },
+      "group": 1,
+      "id": "teleport run",
+      "linkedBehavior": "teleportreappear",
+      "movement": "All",
+      "name": "teleport run",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 666.6666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "teleportstart-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1100,
+        "min": 1100
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "pinkaport",
+      "linkedBehavior": "teleport run",
+      "movement": "None",
+      "name": "pinkaport",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cannonshoot-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1820,
+        "min": 1820
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "cannonshoot",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "cannonshoot",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "partycannon-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "cannonrun",
+      "linkedBehavior": "cannonshoot",
+      "movement": "Horizontal_Only",
+      "name": "cannonrun",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cannonstart-pinkie-pie",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 2200,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "cannostart",
+      "linkedBehavior": "cannonrun",
+      "movement": "None",
+      "name": "cannostart",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cannonfull-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 3920,
+        "min": 3920
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "cannonfull",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "cannonfull",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-pinkiepie-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10240,
+        "min": 10240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Ponko Poe",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Ponko Poe",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "oinkend-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 400,
+        "min": 400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "oink-end",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "oink-end",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "oink-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 840,
+        "min": 840
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "oinkbutt",
+      "linkedBehavior": "oink-end",
+      "movement": "Horizontal_Only",
+      "name": "oinkbutt",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "oinkoinkoinktail-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1480,
+        "min": 1480
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "oinktail",
+      "linkedBehavior": "oinkbutt",
+      "movement": "Horizontal_Only",
+      "name": "oinktail",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "oinkstart-pinkie-pie",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 400,
+        "min": 400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "oinkstart",
+      "linkedBehavior": "oinktail",
+      "movement": "Horizontal_Only",
+      "name": "oinkstart",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "saltoend-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "salto_end",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "salto_end",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "salto-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 960,
+        "min": 960
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "salto",
+      "linkedBehavior": "salto_end",
+      "movement": "Horizontal_Only",
+      "name": "salto",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "saltostart-pinkie-pie",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 500,
+        "min": 500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "salto_start",
+      "linkedBehavior": "salto",
+      "movement": "None",
+      "name": "salto_start",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "salto-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2880,
+        "min": 2880
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "salto2",
+      "linkedBehavior": "salto_end",
+      "movement": "Horizontal_Only",
+      "name": "salto2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "saltostart-pinkie-pie",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 500,
+        "min": 500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "salto_start2",
+      "linkedBehavior": "salto2",
+      "movement": "None",
+      "name": "salto_start2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "front-flip-full-twist-end-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2400,
+        "min": 2400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flip_end",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "flip_end",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "front-flip-full-twist-salto-pinkie-pie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 860,
+        "min": 860
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flip",
+      "linkedBehavior": "flip_end",
+      "movement": "Horizontal_Only",
+      "name": "flip",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "front-flip-full-twist-start-pinkie-pie",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 640,
+        "min": 640
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flip_start",
+      "linkedBehavior": "flip",
+      "movement": "None",
+      "name": "flip_start",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-pinkiepie-2",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10,
+        "min": 10
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "oinkprestart",
+      "linkedBehavior": "oinkstart",
+      "movement": "None",
+      "name": "oinkprestart",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sit-pinkie-pie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 4720,
+        "min": 4720
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "epic-pinkie-pie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "epic rearing",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "epic rearing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "epic-pinkie-pie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "epic rearing2",
+      "linkedBehavior": "galopp",
+      "movement": "None",
+      "name": "epic rearing2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cannoncake-pinkie-pie",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 13060,
+        "min": 13060
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "canoncake",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "canoncake",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cannoncake2-pinkie-pie",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 18160,
+        "min": 18160
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "canoncake2",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "canoncake2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pinkie-galopp",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "galopp",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "galopp",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 233.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "jumpy-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Conga Start",
+      "linkedBehavior": "Conga",
+      "movement": "None",
+      "name": "Conga Start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "congapinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Conga",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "Conga",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "chicken2-pinkie-pie",
+      "chance": 0.12,
+      "durationMs": {
+        "max": 10000,
+        "min": 2400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "chicken2",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "chicken2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fluttercuddles-links",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Fluttercuddle_left",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Fluttercuddle_left",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fluttercuddles",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Fluttercuddle_right",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Fluttercuddle_right",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-pinkiepie-3",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk_n_n",
+        "offsetX": 60,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Fluttershy"
+      },
+      "group": 1,
+      "id": "cuddle_position_left",
+      "linkedBehavior": "Fluttercuddle_left",
+      "movement": "All",
+      "name": "cuddle_position_left",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-pinkiepie-3",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk_n_n",
+        "offsetX": -60,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Fluttershy"
+      },
+      "group": 1,
+      "id": "cuddle_position_right",
+      "linkedBehavior": "Fluttercuddle_right",
+      "movement": "All",
+      "name": "cuddle_position_right",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "crystal-pinkie",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "crystallized",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "crystallized",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-pinkiepie-3",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 10240,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "goto_gala",
+      "linkedBehavior": "gala_stand",
+      "movement": "None",
+      "name": "goto_gala",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-pinkie-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "gala_stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "gala_stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-pinkie-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "gala_trot",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "gala_trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-pinkie-trot-right-n-n",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "gala_trot n_n",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "gala_trot n_n",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-pinkie-bounce",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "gala_bounce",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "gala_bounce",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-pinkie-bounce-right-n-n",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "gala_bounce n_n",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "gala_bounce n_n",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-pinkie-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "gala_drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "gala_drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-pinkie-idle",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10240,
+        "min": 10240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "Ponko Poe gala",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Ponko Poe gala",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-pinkie-bounce",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 13600,
+        "min": 13600
+      },
+      "endSpeech": "theme 1",
+      "follow": null,
+      "group": 2,
+      "id": "theme 1 gala",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "theme 1 gala",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gala-pinkie-idle",
+      "chance": 0.12,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "leave_gala",
+      "linkedBehavior": "stand",
+      "movement": "None",
+      "name": "leave_gala",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "breezie-pinkiepie",
+      "chance": 0.001,
+      "durationMs": {
+        "max": 40000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "breezie",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "breezie",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-pinkiepie",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 8000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk_n_n",
+        "offsetX": 80,
+        "offsetY": 0,
+        "stoppedBehavior": "breezie",
+        "target": "Seabreeze"
+      },
+      "group": 0,
+      "id": "breezie_start",
+      "linkedBehavior": "breezie1",
+      "movement": "Horizontal_Only",
+      "name": "breezie_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "breezie-pinkiepie",
+      "chance": 0.001,
+      "durationMs": {
+        "max": 40000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "breezie",
+        "offsetX": 80,
+        "offsetY": 0,
+        "stoppedBehavior": "breezie",
+        "target": "Seabreeze"
+      },
+      "group": 1,
+      "id": "breezie1",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "breezie1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pinkie-sleep",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 28000,
+        "min": 28000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sleep1",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand-pinkiepie",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "weddingdance_start",
+      "linkedBehavior": "weddingdance",
+      "movement": "None",
+      "name": "weddingdance_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pinkie-dance",
+      "chance": 0.001,
+      "durationMs": {
+        "max": 15000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "weddingdance",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "weddingdance",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "choppa-unfold",
+      "behavior": "Pinkacopter_start",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1950,
+      "follow": true,
+      "id": "Pinkacopt_unfold",
+      "name": "Pinkacopt_unfold",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "sonic-pinksneeze",
+      "behavior": "sneeze_fly",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 400,
+      "follow": false,
+      "id": "sonic_pinksneeze",
+      "name": "sonic_pinksneeze",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "sonic-pinksneeze2",
+      "behavior": "sneeze_fly",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "speedlines",
+      "name": "speedlines",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 5000
+    },
+    {
+      "animation": "tom",
+      "behavior": "parasolon2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 7400,
+      "follow": false,
+      "id": "fallingtom",
+      "name": "fallingtom",
+      "placement": {
+        "left": "Top_Center",
+        "right": "Top_Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "sparkle",
+      "behavior": "crystallized",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "crystalspark",
+      "name": "crystalspark",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "pinkie-pie",
+  "interactions": [
+    {
+      "activation": "Any",
+      "behaviors": [
+        "parasprite_follow_circle",
+        "parasprite_follow_circle_2",
+        "parasprite_follow_circle_3",
+        "parasprite_follow_circle_4",
+        "parasprite_follow_circle_5",
+        "parasprite_follow_circle_6",
+        "parasprite_follow_circle_7",
+        "parasprite_follow_circle_8",
+        "parasprite_follow_circle_9"
+      ],
+      "chance": 0.35,
+      "id": "Pinkie_Lures_Parasprites",
+      "name": "Pinkie_Lures_Parasprites",
+      "proximityPx": 125,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "parasprite",
+        "princess-celestia"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "Dance_tongue"
+      ],
+      "chance": 0.1,
+      "id": "DanceDance",
+      "name": "DanceDance",
+      "proximityPx": 300,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "pinkie-pie",
+        "surprise"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "bite_position_left"
+      ],
+      "chance": 0.5,
+      "id": "bite_left",
+      "name": "bite_left",
+      "proximityPx": 300,
+      "reactivationDelayMs": 180000,
+      "targets": [
+        "gummy"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "bite_position_right"
+      ],
+      "chance": 0.5,
+      "id": "bite_right",
+      "name": "bite_right",
+      "proximityPx": 300,
+      "reactivationDelayMs": 180000,
+      "targets": [
+        "gummy"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "crocodance"
+      ],
+      "chance": 0.05,
+      "id": "crocodance",
+      "name": "crocodance",
+      "proximityPx": 100,
+      "reactivationDelayMs": 120000,
+      "targets": [
+        "gummy"
+      ]
+    },
+    {
+      "activation": "All",
+      "behaviors": [
+        "Conga Start"
+      ],
+      "chance": 0.2,
+      "id": "Conga",
+      "name": "Conga",
+      "proximityPx": 250,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "applejack",
+        "fluttershy",
+        "rainbow-dash",
+        "rarity",
+        "twilight-sparkle"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "cuddle_position_left"
+      ],
+      "chance": 0.1,
+      "id": "cuddle_left",
+      "name": "cuddle_left",
+      "proximityPx": 300,
+      "reactivationDelayMs": 180000,
+      "targets": [
+        "fluttershy"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "cuddle_position_right"
+      ],
+      "chance": 0.1,
+      "id": "cuddle_right",
+      "name": "cuddle_right",
+      "proximityPx": 300,
+      "reactivationDelayMs": 180000,
+      "targets": [
+        "fluttershy"
+      ]
+    }
+  ],
+  "name": "Pinkie Pie",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

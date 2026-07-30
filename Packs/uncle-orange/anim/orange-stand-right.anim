@@ -1,0 +1,123 @@
+{
+  "atlas": "orange-stand-right.png",
+  "atlasSize": [
+    296,
+    240
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        74,
+        0,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        148,
+        0,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        222,
+        0,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        80,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        74,
+        80,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        148,
+        80,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        222,
+        80,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        160,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        74,
+        160,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        148,
+        160,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        222,
+        160,
+        74,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

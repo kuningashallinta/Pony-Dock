@@ -1,0 +1,33 @@
+{
+  "atlas": "sleep-right.png",
+  "atlasSize": [
+    128,
+    86
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        64,
+        86
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        64,
+        0,
+        64,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

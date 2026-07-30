@@ -1,0 +1,369 @@
+{
+  "animations": {
+    "flitter-fly": {
+      "left": "anim/flitter-fly-left.anim",
+      "right": "anim/flitter-fly-right.anim"
+    },
+    "flitter-sit": {
+      "left": "anim/flitter-sit-left.anim",
+      "right": "anim/flitter-sit-right.anim"
+    },
+    "flitter-sleep": {
+      "left": "anim/flitter-sleep-left.anim",
+      "right": "anim/flitter-sleep-right.anim"
+    },
+    "flitter-stand": {
+      "left": "anim/flitter-stand-left.anim",
+      "right": "anim/flitter-stand-right.anim"
+    },
+    "flitter-stand-right-wing-up": {
+      "left": "anim/flitter-stand-right-wing-up-left.anim",
+      "right": "anim/flitter-stand-right-wing-up-right.anim"
+    },
+    "flitter-stretch": {
+      "left": "anim/flitter-stretch-left.anim",
+      "right": "anim/flitter-stretch-right.anim"
+    },
+    "flitter-trotcycle": {
+      "left": "anim/flitter-trotcycle-left.anim",
+      "right": "anim/flitter-trotcycle-right.anim"
+    },
+    "flitter-trotcycle-right-blinking": {
+      "left": "anim/flitter-trotcycle-right-blinking-left.anim",
+      "right": "anim/flitter-trotcycle-right-blinking-right.anim"
+    },
+    "flitter-trotcycle-right-blinking-wing-up": {
+      "left": "anim/flitter-trotcycle-right-blinking-wing-up-left.anim",
+      "right": "anim/flitter-trotcycle-right-blinking-wing-up-right.anim"
+    },
+    "flitter-trotcycle-right-wing-up": {
+      "left": "anim/flitter-trotcycle-right-wing-up-left.anim",
+      "right": "anim/flitter-trotcycle-right-wing-up-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "flitter-stand",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 18000,
+        "min": 9000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flitter-trotcycle-right-blinking-wing-up",
+      "chance": 0.45,
+      "durationMs": {
+        "max": 27000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot wing blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot wing blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flitter-stand-right-wing-up",
+      "chance": 0.18,
+      "durationMs": {
+        "max": 18000,
+        "min": 9000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand wing",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flitter-trotcycle-right-blinking",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 27000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flitter-trotcycle-right-wing-up",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 14000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot wing",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flitter-trotcycle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 14000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flitter-trotcycle-right-blinking-wing-up",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 25000,
+        "min": 16000
+      },
+      "endSpeech": "bye",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "trot wing blink",
+        "offsetX": -50,
+        "offsetY": 0,
+        "stoppedBehavior": "stand wing",
+        "target": "Cloudchaser"
+      },
+      "group": 0,
+      "id": "follow",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": "follow",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flitter-fly",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flitter-fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 14000,
+        "min": 9000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "hover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flitter-sit",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 17000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flitter-sleep",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 45000,
+        "min": 35000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": "sit",
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flitter-stretch",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 25000,
+        "min": 16000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "gluts",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "gluts",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flitter-stretch",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 17000,
+        "min": 17000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "training",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "training",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "flitter",
+  "interactions": [],
+  "name": "Flitter",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "pegasi"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "donutjoe-idle": {
+      "left": "anim/donutjoe-idle-left.anim",
+      "right": "anim/donutjoe-idle-right.anim"
+    },
+    "donutjoe-trot": {
+      "left": "anim/donutjoe-trot-left.anim",
+      "right": "anim/donutjoe-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "donutjoe-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 18000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "donutjoe-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "donut-joe",
+  "interactions": [],
+  "name": "Donut Joe",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "unicorns"
+  ]
+}

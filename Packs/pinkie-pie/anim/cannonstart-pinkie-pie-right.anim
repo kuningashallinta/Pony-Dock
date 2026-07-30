@@ -1,0 +1,114 @@
+{
+  "atlas": "cannonstart-pinkie-pie-right.png",
+  "atlasSize": [
+    552,
+    300
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        138,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        138,
+        0,
+        138,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        276,
+        0,
+        138,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        414,
+        0,
+        138,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        100,
+        138,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        138,
+        100,
+        138,
+        100
+      ]
+    },
+    {
+      "durationMs": 700,
+      "rect": [
+        276,
+        100,
+        138,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        414,
+        100,
+        138,
+        100
+      ]
+    },
+    {
+      "durationMs": 700,
+      "rect": [
+        0,
+        200,
+        138,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        138,
+        200,
+        138,
+        100
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        276,
+        200,
+        138,
+        100
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    60,
+    56
+  ],
+  "schemaVersion": 1
+}

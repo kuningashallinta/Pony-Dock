@@ -1,0 +1,105 @@
+{
+  "atlas": "big-mac-buck-left.png",
+  "atlasSize": [
+    440,
+    264
+  ],
+  "frames": [
+    {
+      "durationMs": 700,
+      "rect": [
+        0,
+        0,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        110,
+        0,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        220,
+        0,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        330,
+        0,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        88,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        110,
+        88,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        220,
+        88,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        330,
+        88,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        176,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        110,
+        176,
+        110,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

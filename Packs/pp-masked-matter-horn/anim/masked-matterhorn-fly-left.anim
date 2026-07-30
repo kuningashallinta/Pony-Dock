@@ -1,0 +1,159 @@
+{
+  "atlas": "masked-matterhorn-fly-left.png",
+  "atlasSize": [
+    376,
+    424
+  ],
+  "frames": [
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        0,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        94,
+        0,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        0,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        0,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        106,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        106,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        106,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        106,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        212,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        212,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        212,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        212,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        318,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        318,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        318,
+        94,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        282,
+        318,
+        94,
+        106
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

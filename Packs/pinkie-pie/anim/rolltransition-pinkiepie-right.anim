@@ -1,0 +1,159 @@
+{
+  "atlas": "rolltransition-pinkiepie-right.png",
+  "atlasSize": [
+    424,
+    512
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        0,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        212,
+        0,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        318,
+        0,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        128,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        128,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        212,
+        128,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        318,
+        128,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        256,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        256,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        212,
+        256,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        318,
+        256,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        384,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        384,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        212,
+        384,
+        106,
+        128
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        318,
+        384,
+        106,
+        128
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    61,
+    80
+  ],
+  "schemaVersion": 1
+}

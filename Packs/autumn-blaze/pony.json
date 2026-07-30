@@ -1,0 +1,99 @@
+{
+  "animations": {
+    "autumnblaze-angry": {
+      "left": "anim/autumnblaze-angry-left.anim",
+      "right": "anim/autumnblaze-angry-right.anim"
+    },
+    "autumnblaze-idle": {
+      "left": "anim/autumnblaze-idle-left.anim",
+      "right": "anim/autumnblaze-idle-right.anim"
+    },
+    "autumnblaze-trot": {
+      "left": "anim/autumnblaze-trot-left.anim",
+      "right": "anim/autumnblaze-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "autumnblaze-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "autumnblaze-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "autumnblaze-angry",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 6000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "angry idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "angry idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "autumn-blaze",
+  "interactions": [],
+  "name": "Autumn Blaze",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

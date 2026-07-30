@@ -1,0 +1,69 @@
+{
+  "atlas": "fly-right.png",
+  "atlasSize": [
+    276,
+    224
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        92,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        0,
+        92,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        184,
+        0,
+        92,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        112,
+        92,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        112,
+        92,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        184,
+        112,
+        92,
+        112
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    50,
+    70
+  ],
+  "schemaVersion": 1
+}

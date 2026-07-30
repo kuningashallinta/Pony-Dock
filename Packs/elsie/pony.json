@@ -1,0 +1,263 @@
+{
+  "animations": {
+    "camera-place": {
+      "left": "anim/camera-place.anim",
+      "right": "anim/camera-place.anim"
+    },
+    "speed-walk": {
+      "left": "anim/speed-walk-left.anim",
+      "right": "anim/speed-walk-right.anim"
+    },
+    "speed-walk-camera": {
+      "left": "anim/speed-walk-camera-left.anim",
+      "right": "anim/speed-walk-camera-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "walk-camera": {
+      "left": "anim/walk-camera-left.anim",
+      "right": "anim/walk-camera-right.anim"
+    },
+    "walk-normal": {
+      "left": "anim/walk-normal-left.anim",
+      "right": "anim/walk-normal-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.45,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walk-normal",
+      "chance": 0.45,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walk-camera",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk_camera",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk_camera",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "speed-walk",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Photo Finish"
+      },
+      "group": 0,
+      "id": "photo_shoot_start",
+      "linkedBehavior": "get_in_position_fluttershy",
+      "movement": "All",
+      "name": "photo_shoot_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "speed-walk-camera",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -104,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Fluttershy"
+      },
+      "group": 0,
+      "id": "get_in_position_fluttershy",
+      "linkedBehavior": "deploy_camera",
+      "movement": "All",
+      "name": "get_in_position_fluttershy",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "camera-place",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1700,
+        "min": 1700
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "deploy_camera",
+      "linkedBehavior": "move_away",
+      "movement": "None",
+      "name": "deploy_camera",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walk-normal",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 15000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -149,
+        "offsetY": -149,
+        "stoppedBehavior": null,
+        "target": "Photo Finish"
+      },
+      "group": 0,
+      "id": "move_away",
+      "linkedBehavior": "follow_photo",
+      "movement": "All",
+      "name": "move_away",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walk-normal",
+      "chance": 1.0,
+      "durationMs": {
+        "max": 15000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Photo Finish"
+      },
+      "group": 0,
+      "id": "follow_photo",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_photo",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "elsie",
+  "interactions": [],
+  "name": "Elsie",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "earth ponies",
+    "mares"
+  ]
+}

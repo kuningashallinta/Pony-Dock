@@ -1,0 +1,105 @@
+{
+  "atlas": "phila-landing-left.png",
+  "atlasSize": [
+    184,
+    246
+  ],
+  "frames": [
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        0,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        46,
+        0,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        92,
+        0,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        138,
+        0,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        82,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        46,
+        82,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        92,
+        82,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        138,
+        82,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        164,
+        46,
+        82
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        46,
+        164,
+        46,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

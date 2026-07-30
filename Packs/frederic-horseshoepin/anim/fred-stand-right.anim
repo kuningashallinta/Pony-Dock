@@ -1,0 +1,51 @@
+{
+  "atlas": "fred-stand-right.png",
+  "atlasSize": [
+    144,
+    152
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        72,
+        0,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        76,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        72,
+        76,
+        72,
+        76
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

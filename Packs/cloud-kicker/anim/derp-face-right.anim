@@ -1,0 +1,24 @@
+{
+  "atlas": "derp-face-right.png",
+  "atlasSize": [
+    92,
+    80
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        92,
+        80
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

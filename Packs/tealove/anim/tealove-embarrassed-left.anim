@@ -1,0 +1,231 @@
+{
+  "atlas": "tealove-embarrassed-left.png",
+  "atlasSize": [
+    470,
+    420
+  ],
+  "frames": [
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        0,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        0,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        0,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        282,
+        0,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        376,
+        0,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        84,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        94,
+        84,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        84,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        84,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        376,
+        84,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        168,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        168,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        188,
+        168,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        282,
+        168,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        376,
+        168,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        252,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        252,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        252,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        282,
+        252,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        376,
+        252,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        336,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        94,
+        336,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        188,
+        336,
+        94,
+        84
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        282,
+        336,
+        94,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    45,
+    42
+  ],
+  "schemaVersion": 1
+}

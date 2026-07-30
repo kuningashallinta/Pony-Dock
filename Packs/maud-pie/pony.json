@@ -1,0 +1,296 @@
+{
+  "animations": {
+    "maud-boulder": {
+      "left": "anim/maud-boulder-left.anim",
+      "right": "anim/maud-boulder-right.anim"
+    },
+    "maud-idle": {
+      "left": "anim/maud-idle-left.anim",
+      "right": "anim/maud-idle-right.anim"
+    },
+    "maud-lying": {
+      "left": "anim/maud-lying-left.anim",
+      "right": "anim/maud-lying-right.anim"
+    },
+    "maud-walk": {
+      "left": "anim/maud-walk-left.anim",
+      "right": "anim/maud-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "maud-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "maud-walk",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "maud-lying",
+      "chance": 0.06,
+      "durationMs": {
+        "max": 40000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "lying",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "lying",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "maud-boulder",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 40000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "boulder",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "boulder",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "maud-idle",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 1200,
+        "min": 1200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "poem 1",
+      "linkedBehavior": "poem 2",
+      "movement": "None",
+      "name": "poem 1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Poem #1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "maud-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1800,
+        "min": 1800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "poem 2",
+      "linkedBehavior": "poem 3",
+      "movement": "None",
+      "name": "poem 2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Poem #2",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "maud-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "poem 3",
+      "linkedBehavior": "poem 4",
+      "movement": "None",
+      "name": "poem 3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Poem #3",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "maud-idle",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1400,
+        "min": 1400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "poem 4",
+      "linkedBehavior": "poem 5",
+      "movement": "None",
+      "name": "poem 4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Poem #4",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "maud-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1400,
+        "min": 1400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "poem 5",
+      "linkedBehavior": "poem 6",
+      "movement": "None",
+      "name": "poem 5",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Poem #5",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "maud-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1500,
+        "min": 1500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "poem 6",
+      "linkedBehavior": "poem 7",
+      "movement": "None",
+      "name": "poem 6",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Poem #6",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "maud-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 7000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "poem 7",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "poem 7",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Poem #7",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "maud-pie",
+  "interactions": [],
+  "name": "Maud Pie",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

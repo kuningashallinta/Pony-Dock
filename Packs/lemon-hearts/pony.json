@@ -1,0 +1,182 @@
+{
+  "animations": {
+    "lemon-hearts-sit": {
+      "left": "anim/lemon-hearts-sit-left.anim",
+      "right": "anim/lemon-hearts-sit-right.anim"
+    },
+    "lemon-hearts-sleep": {
+      "left": "anim/lemon-hearts-sleep-left.anim",
+      "right": "anim/lemon-hearts-sleep-right.anim"
+    },
+    "lemon-hearts-stand": {
+      "left": "anim/lemon-hearts-stand-left.anim",
+      "right": "anim/lemon-hearts-stand-right.anim"
+    },
+    "lemon-hearts-sweeping": {
+      "left": "anim/lemon-hearts-sweeping-left.anim",
+      "right": "anim/lemon-hearts-sweeping-right.anim"
+    },
+    "lemon-hearts-trot": {
+      "left": "anim/lemon-hearts-trot-left.anim",
+      "right": "anim/lemon-hearts-trot-right.anim"
+    },
+    "lemon-hearts-trot-right-blink": {
+      "left": "anim/lemon-hearts-trot-right-blink-left.anim",
+      "right": "anim/lemon-hearts-trot-right-blink-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "lemon-hearts-stand",
+      "chance": 0.28,
+      "durationMs": {
+        "max": 19000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lemon-hearts-sweeping",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 9100,
+        "min": 9100
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sweeping",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "sweeping",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "lemon-hearts-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 19000,
+        "min": 14000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lemon-hearts-trot-right-blink",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 26000,
+        "min": 18000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lemon-hearts-sit",
+      "chance": 0.16,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "lemon-hearts-sleep",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 40000,
+        "min": 36000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": "sit",
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "lemon-hearts",
+  "interactions": [],
+  "name": "Lemon Hearts",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

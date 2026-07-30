@@ -1,0 +1,45 @@
+{
+  "animations": {
+    "screwball": {
+      "left": "anim/screwball-left.anim",
+      "right": "anim/screwball-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "screwball",
+      "chance": 1.0,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "float",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "float",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "screwball",
+  "interactions": [],
+  "name": "Screwball",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

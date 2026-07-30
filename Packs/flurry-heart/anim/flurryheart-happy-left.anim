@@ -1,0 +1,51 @@
+{
+  "atlas": "flurryheart-happy-left.png",
+  "atlasSize": [
+    128,
+    120
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        64,
+        60
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        64,
+        0,
+        64,
+        60
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        60,
+        64,
+        60
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        64,
+        60,
+        64,
+        60
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    28,
+    39
+  ],
+  "schemaVersion": 1
+}

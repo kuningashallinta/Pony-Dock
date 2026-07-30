@@ -1,0 +1,78 @@
+{
+  "atlas": "leap-left.png",
+  "atlasSize": [
+    348,
+    234
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        116,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        0,
+        116,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        0,
+        116,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        78,
+        116,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        78,
+        116,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        78,
+        116,
+        78
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        156,
+        116,
+        78
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    60,
+    44
+  ],
+  "schemaVersion": 1
+}

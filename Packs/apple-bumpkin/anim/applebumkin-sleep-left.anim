@@ -1,0 +1,24 @@
+{
+  "atlas": "applebumkin-sleep-left.png",
+  "atlasSize": [
+    74,
+    68
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        74,
+        68
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

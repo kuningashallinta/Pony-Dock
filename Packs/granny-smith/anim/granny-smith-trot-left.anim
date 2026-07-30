@@ -1,0 +1,114 @@
+{
+  "atlas": "granny-smith-trot-left.png",
+  "atlasSize": [
+    288,
+    228
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        72,
+        0,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 130,
+      "rect": [
+        144,
+        0,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        216,
+        0,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        76,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        72,
+        76,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        144,
+        76,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        216,
+        76,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        152,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        72,
+        152,
+        72,
+        76
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        144,
+        152,
+        72,
+        76
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    35,
+    36
+  ],
+  "schemaVersion": 1
+}

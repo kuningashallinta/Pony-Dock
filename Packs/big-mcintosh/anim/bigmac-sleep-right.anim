@@ -1,0 +1,96 @@
+{
+  "atlas": "bigmac-sleep-right.png",
+  "atlasSize": [
+    282,
+    180
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        94,
+        60
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        94,
+        0,
+        94,
+        60
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        188,
+        0,
+        94,
+        60
+      ]
+    },
+    {
+      "durationMs": 2500,
+      "rect": [
+        0,
+        60,
+        94,
+        60
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        94,
+        60,
+        94,
+        60
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        188,
+        60,
+        94,
+        60
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        120,
+        94,
+        60
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        94,
+        120,
+        94,
+        60
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        188,
+        120,
+        94,
+        60
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    4
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,24 @@
+{
+  "atlas": "crystal-applejack-right.png",
+  "atlasSize": [
+    90,
+    90
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        90,
+        90
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    50,
+    41
+  ],
+  "schemaVersion": 1
+}

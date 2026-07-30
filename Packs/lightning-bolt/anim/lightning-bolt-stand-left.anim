@@ -1,0 +1,51 @@
+{
+  "atlas": "lightning-bolt-stand-left.png",
+  "atlasSize": [
+    168,
+    160
+  ],
+  "frames": [
+    {
+      "durationMs": 1600,
+      "rect": [
+        0,
+        0,
+        84,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        84,
+        0,
+        84,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        80,
+        84,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        84,
+        80,
+        84,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,204 @@
+{
+  "atlas": "ladyjustice-idle-right.png",
+  "atlasSize": [
+    330,
+    430
+  ],
+  "frames": [
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        0,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        66,
+        0,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        132,
+        0,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        198,
+        0,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        0,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        86,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        66,
+        86,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        132,
+        86,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        198,
+        86,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        86,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        172,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        66,
+        172,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        132,
+        172,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        198,
+        172,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        264,
+        172,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        258,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        66,
+        258,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        132,
+        258,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        198,
+        258,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        258,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        344,
+        66,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

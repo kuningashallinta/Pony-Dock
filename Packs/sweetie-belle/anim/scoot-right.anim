@@ -1,0 +1,105 @@
+{
+  "atlas": "scoot-right.png",
+  "atlasSize": [
+    400,
+    156
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        100,
+        52
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        100,
+        0,
+        100,
+        52
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        200,
+        0,
+        100,
+        52
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        300,
+        0,
+        100,
+        52
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        52,
+        100,
+        52
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        100,
+        52,
+        100,
+        52
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        200,
+        52,
+        100,
+        52
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        300,
+        52,
+        100,
+        52
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        104,
+        100,
+        52
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        100,
+        104,
+        100,
+        52
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    50,
+    18
+  ],
+  "schemaVersion": 1
+}

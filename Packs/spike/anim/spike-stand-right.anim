@@ -1,0 +1,123 @@
+{
+  "atlas": "spike-stand-right.png",
+  "atlasSize": [
+    152,
+    186
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        38,
+        62
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        38,
+        0,
+        38,
+        62
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        0,
+        38,
+        62
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        114,
+        0,
+        38,
+        62
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        62,
+        38,
+        62
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        38,
+        62,
+        38,
+        62
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        76,
+        62,
+        38,
+        62
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        114,
+        62,
+        38,
+        62
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        124,
+        38,
+        62
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        38,
+        124,
+        38,
+        62
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        124,
+        38,
+        62
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        114,
+        124,
+        38,
+        62
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    19,
+    32
+  ],
+  "schemaVersion": 1
+}

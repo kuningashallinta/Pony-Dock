@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "orange-stand": {
+      "left": "anim/orange-stand-left.anim",
+      "right": "anim/orange-stand-right.anim"
+    },
+    "orange-trot": {
+      "left": "anim/orange-trot-left.anim",
+      "right": "anim/orange-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "orange-stand",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 7520
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "orange-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 30000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "uncle-orange",
+  "interactions": [],
+  "name": "Uncle Orange",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

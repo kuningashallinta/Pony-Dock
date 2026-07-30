@@ -1,0 +1,218 @@
+{
+  "animations": {
+    "fly": {
+      "left": "anim/fly-left.anim",
+      "right": "anim/fly-right.anim"
+    },
+    "idle": {
+      "left": "anim/idle-left.anim",
+      "right": "anim/idle-right.anim"
+    },
+    "pie": {
+      "left": "anim/pie-left.anim",
+      "right": "anim/pie-right.anim"
+    },
+    "smoke-trail": {
+      "left": "anim/smoke-trail.anim",
+      "right": "anim/smoke-trail.anim"
+    },
+    "soaring-fastfly": {
+      "left": "anim/soaring-fastfly-left.anim",
+      "right": "anim/soaring-fastfly-right.anim"
+    },
+    "trot": {
+      "left": "anim/trot-left.anim",
+      "right": "anim/trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "idle",
+      "chance": 0.33,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot",
+      "chance": 0.33,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fly",
+      "chance": 0.33,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pie",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "pie",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "pie",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "fly",
+        "offsetX": -45,
+        "offsetY": 32,
+        "stoppedBehavior": "idle",
+        "target": "Spitfire"
+      },
+      "group": 0,
+      "id": "wonderbolts",
+      "linkedBehavior": "wonderbolts_1",
+      "movement": "None",
+      "name": "wonderbolts",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "soaring-fastfly",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "wonderbolts_1",
+        "offsetX": -45,
+        "offsetY": 32,
+        "stoppedBehavior": "wonderbolts_1",
+        "target": "Spitfire"
+      },
+      "group": 0,
+      "id": "wonderbolts_1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "wonderbolts_1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 600.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "smoke-trail",
+      "behavior": "wonderbolts_1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": false,
+      "id": "stormclouds_2",
+      "name": "stormclouds_2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 30
+    }
+  ],
+  "id": "soarin",
+  "interactions": [],
+  "name": "Soarin'",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "pegasi"
+  ]
+}

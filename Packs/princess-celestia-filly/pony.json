@@ -1,0 +1,331 @@
+{
+  "animations": {
+    "flap": {
+      "left": "anim/flap-left.anim",
+      "right": "anim/flap-right.anim"
+    },
+    "sit": {
+      "left": "anim/sit-left.anim",
+      "right": "anim/sit-right.anim"
+    },
+    "sleep": {
+      "left": "anim/sleep-left.anim",
+      "right": "anim/sleep-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "walk": {
+      "left": "anim/walk-left.anim",
+      "right": "anim/walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flap",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "flap",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "flap",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walk",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sleep",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sit",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1500,
+        "min": 1500
+      },
+      "endSpeech": "yes luna",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Princess Luna (Filly)"
+      },
+      "group": 0,
+      "id": "miss parents 1",
+      "linkedBehavior": "miss parents 2",
+      "movement": "None",
+      "name": "miss parents 1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": "me too",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Princess Luna (Filly)"
+      },
+      "group": 0,
+      "id": "miss parents 2",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "miss parents 2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": "hooves off",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Princess Luna (Filly)"
+      },
+      "group": 0,
+      "id": "alfalfa monster",
+      "linkedBehavior": "alfalfa monster 2",
+      "movement": "None",
+      "name": "alfalfa monster",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "must eat",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": "munch",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Princess Luna (Filly)"
+      },
+      "group": 0,
+      "id": "alfalfa monster 2",
+      "linkedBehavior": "alfalfa monster 3",
+      "movement": "None",
+      "name": "alfalfa monster 2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": "alfafa monster",
+      "follow": null,
+      "group": 0,
+      "id": "alfalfa monster 3",
+      "linkedBehavior": "walk",
+      "movement": "None",
+      "name": "alfalfa monster 3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flap",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1500,
+        "min": 1500
+      },
+      "endSpeech": "you can do it",
+      "follow": null,
+      "group": 0,
+      "id": "flapping",
+      "linkedBehavior": "walk",
+      "movement": "None",
+      "name": "flapping",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "princess-celestia-filly",
+  "interactions": [],
+  "name": "Princess Celestia",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "fillies",
+    "alicorns"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "atlas": "fleetfoot-fastfly-right.png",
+  "atlasSize": [
+    456,
+    384
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        114,
+        0,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        0,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        342,
+        0,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        96,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        114,
+        96,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        96,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        342,
+        96,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        192,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        114,
+        192,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        192,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        342,
+        192,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        288,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        114,
+        288,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        288,
+        114,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        342,
+        288,
+        114,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    59,
+    54
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,105 @@
+{
+  "atlas": "leapstart-right.png",
+  "atlasSize": [
+    392,
+    216
+  ],
+  "frames": [
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        0,
+        98,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        98,
+        0,
+        98,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        0,
+        98,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        294,
+        0,
+        98,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        72,
+        98,
+        72
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        98,
+        72,
+        98,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        196,
+        72,
+        98,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        294,
+        72,
+        98,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        144,
+        98,
+        72
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        98,
+        144,
+        98,
+        72
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    43,
+    36
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,123 @@
+{
+  "atlas": "crankydoodle-walk-right.png",
+  "atlasSize": [
+    368,
+    282
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        92,
+        0,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        184,
+        0,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        276,
+        0,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        94,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        92,
+        94,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        184,
+        94,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        276,
+        94,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        188,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        92,
+        188,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        184,
+        188,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        276,
+        188,
+        92,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    42,
+    46
+  ],
+  "schemaVersion": 1
+}

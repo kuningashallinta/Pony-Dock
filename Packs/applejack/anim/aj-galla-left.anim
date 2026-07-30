@@ -1,0 +1,24 @@
+{
+  "atlas": "aj-galla-left.png",
+  "atlasSize": [
+    80,
+    94
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        80,
+        94
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    39,
+    48
+  ],
+  "schemaVersion": 1
+}

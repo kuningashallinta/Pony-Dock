@@ -1,0 +1,159 @@
+{
+  "atlas": "gala-pinkie-trot-right-n-n-left.png",
+  "atlasSize": [
+    456,
+    368
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        114,
+        0,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        0,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        342,
+        0,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        92,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        114,
+        92,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        92,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        342,
+        92,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        184,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        114,
+        184,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        184,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        342,
+        184,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        276,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        114,
+        276,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        276,
+        114,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        342,
+        276,
+        114,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    46,
+    42
+  ],
+  "schemaVersion": 1
+}

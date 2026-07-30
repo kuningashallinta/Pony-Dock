@@ -1,0 +1,123 @@
+{
+  "atlas": "photorun-left.png",
+  "atlasSize": [
+    544,
+    240
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        136,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        136,
+        0,
+        136,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        272,
+        0,
+        136,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        408,
+        0,
+        136,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        80,
+        136,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        136,
+        80,
+        136,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        272,
+        80,
+        136,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        408,
+        80,
+        136,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        160,
+        136,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        136,
+        160,
+        136,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        272,
+        160,
+        136,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        408,
+        160,
+        136,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

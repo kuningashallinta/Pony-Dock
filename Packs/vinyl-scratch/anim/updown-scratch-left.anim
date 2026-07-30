@@ -1,0 +1,105 @@
+{
+  "atlas": "updown-scratch-left.png",
+  "atlasSize": [
+    368,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        0,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        184,
+        0,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        276,
+        0,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        84,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        84,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        184,
+        84,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        276,
+        84,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        168,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        168,
+        92,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

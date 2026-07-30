@@ -1,0 +1,60 @@
+{
+  "atlas": "saltostart-pinkie-pie-left.png",
+  "atlasSize": [
+    348,
+    172
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        116,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        116,
+        0,
+        116,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        232,
+        0,
+        116,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        86,
+        116,
+        86
+      ]
+    },
+    {
+      "durationMs": 1100,
+      "rect": [
+        116,
+        86,
+        116,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    46,
+    40
+  ],
+  "schemaVersion": 1
+}

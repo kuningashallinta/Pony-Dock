@@ -1,0 +1,126 @@
+{
+  "animations": {
+    "fillymaud-idle": {
+      "left": "anim/fillymaud-idle-left.anim",
+      "right": "anim/fillymaud-idle-right.anim"
+    },
+    "fillymaud-idle2": {
+      "left": "anim/fillymaud-idle2-left.anim",
+      "right": "anim/fillymaud-idle2-right.anim"
+    },
+    "fillymaud-trot": {
+      "left": "anim/fillymaud-trot-left.anim",
+      "right": "anim/fillymaud-trot-right.anim"
+    },
+    "fillymaud-trot2": {
+      "left": "anim/fillymaud-trot2-left.anim",
+      "right": "anim/fillymaud-trot2-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "fillymaud-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fillymaud-idle2",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle2",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fillymaud-trot",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 53.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fillymaud-trot2",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 53.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "maud-pie-filly",
+  "interactions": [],
+  "name": "Maud Pie",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "fillies",
+    "earth ponies",
+    "supporting ponies"
+  ]
+}

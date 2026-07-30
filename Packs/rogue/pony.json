@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "rogue-idle": {
+      "left": "anim/rogue-idle-left.anim",
+      "right": "anim/rogue-idle-right.anim"
+    },
+    "rogue-trot": {
+      "left": "anim/rogue-trot-left.anim",
+      "right": "anim/rogue-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "rogue-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "rogue-trot",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walking",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walking",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 86.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "rogue",
+  "interactions": [],
+  "name": "Rogue",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "earth ponies",
+    "supporting ponies"
+  ]
+}

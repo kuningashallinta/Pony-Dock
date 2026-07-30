@@ -1,0 +1,108 @@
+{
+  "animations": {
+    "colton-blink": {
+      "left": "anim/colton-blink-left.anim",
+      "right": "anim/colton-blink-right.anim"
+    },
+    "colton-stand": {
+      "left": "anim/colton-stand-left.anim",
+      "right": "anim/colton-stand-right.anim"
+    },
+    "colton-trot": {
+      "left": "anim/colton-trot-left.anim",
+      "right": "anim/colton-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "colton-stand",
+      "chance": 0.33,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "colton-trot",
+      "chance": 0.33,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "colton-blink",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10280,
+        "min": 10280
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "trot",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "blink",
+        "target": "Daisy"
+      },
+      "group": 0,
+      "id": "blink",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "sir-colton-vines",
+  "interactions": [],
+  "name": "Sir Colton Vines",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

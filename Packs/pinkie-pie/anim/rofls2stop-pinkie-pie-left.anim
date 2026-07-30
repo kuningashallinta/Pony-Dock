@@ -1,0 +1,105 @@
+{
+  "atlas": "rofls2stop-pinkie-pie-left.png",
+  "atlasSize": [
+    552,
+    330
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        138,
+        110
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        138,
+        0,
+        138,
+        110
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        276,
+        0,
+        138,
+        110
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        414,
+        0,
+        138,
+        110
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        110,
+        138,
+        110
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        138,
+        110,
+        138,
+        110
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        276,
+        110,
+        138,
+        110
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        414,
+        110,
+        138,
+        110
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        220,
+        138,
+        110
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        138,
+        220,
+        138,
+        110
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    48
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,208 @@
+{
+  "animations": {
+    "manticore-idle": {
+      "left": "anim/manticore-idle-left.anim",
+      "right": "anim/manticore-idle-right.anim"
+    },
+    "manticore-lick": {
+      "left": "anim/manticore-lick-left.anim",
+      "right": "anim/manticore-lick-right.anim"
+    },
+    "manticore-purr": {
+      "left": "anim/manticore-purr-left.anim",
+      "right": "anim/manticore-purr-right.anim"
+    },
+    "manticore-smilewalk": {
+      "left": "anim/manticore-smilewalk-left.anim",
+      "right": "anim/manticore-smilewalk-right.anim"
+    },
+    "manticore-walk": {
+      "left": "anim/manticore-walk-left.anim",
+      "right": "anim/manticore-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "manticore-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "manticore-walk",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "manticore-purr",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 8000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "purr",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "purr",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "manticore-smilewalk",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "smilewalk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "smilewalk",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "manticore-smilewalk",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": true,
+        "movingBehavior": null,
+        "offsetX": 40,
+        "offsetY": -13,
+        "stoppedBehavior": null,
+        "target": "Fluttershy"
+      },
+      "group": 0,
+      "id": "cuddle_manticore_start",
+      "linkedBehavior": "cuddles",
+      "movement": "All",
+      "name": "cuddle_manticore_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "manticore-lick",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "cuddles",
+        "offsetX": 0,
+        "offsetY": -6,
+        "stoppedBehavior": "cuddles",
+        "target": "Fluttershy"
+      },
+      "group": 0,
+      "id": "cuddles",
+      "linkedBehavior": "smilewalk",
+      "movement": "None",
+      "name": "cuddles",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "purring",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "manticore",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "cuddle_manticore_start"
+      ],
+      "chance": 0.1,
+      "id": "cuddle_manticore",
+      "name": "cuddle_manticore",
+      "proximityPx": 250,
+      "reactivationDelayMs": 280000,
+      "targets": [
+        "fluttershy"
+      ]
+    }
+  ],
+  "name": "Manticore",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "non-ponies"
+  ]
+}

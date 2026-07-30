@@ -1,0 +1,123 @@
+{
+  "atlas": "princess-pinkie-left.png",
+  "atlasSize": [
+    360,
+    306
+  ],
+  "frames": [
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        0,
+        90,
+        102
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        90,
+        0,
+        90,
+        102
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        180,
+        0,
+        90,
+        102
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        270,
+        0,
+        90,
+        102
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        102,
+        90,
+        102
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        90,
+        102,
+        90,
+        102
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        180,
+        102,
+        90,
+        102
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        270,
+        102,
+        90,
+        102
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        204,
+        90,
+        102
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        90,
+        204,
+        90,
+        102
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        180,
+        204,
+        90,
+        102
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        270,
+        204,
+        90,
+        102
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    39,
+    56
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,833 @@
+{
+  "animations": {
+    "breezie-twilight": {
+      "left": "anim/breezie-twilight-left.anim",
+      "right": "anim/breezie-twilight-right.anim"
+    },
+    "p-twi-flight": {
+      "left": "anim/p-twi-flight-left.anim",
+      "right": "anim/p-twi-flight-right.anim"
+    },
+    "p-twi-gallop": {
+      "left": "anim/p-twi-gallop-left.anim",
+      "right": "anim/p-twi-gallop-right.anim"
+    },
+    "p-twi-idle": {
+      "left": "anim/p-twi-idle-left.anim",
+      "right": "anim/p-twi-idle-right.anim"
+    },
+    "p-twi-idle-2": {
+      "left": "anim/p-twi-idle-2.anim",
+      "right": "anim/p-twi-idle-2.anim"
+    },
+    "p-twi-idle-3": {
+      "left": "anim/p-twi-idle-3.anim",
+      "right": "anim/p-twi-idle-3.anim"
+    },
+    "p-twi-trans": {
+      "left": "anim/p-twi-trans.anim",
+      "right": "anim/p-twi-trans.anim"
+    },
+    "p-twi-trans-2": {
+      "left": "anim/p-twi-trans-2.anim",
+      "right": "anim/p-twi-trans-2.anim"
+    },
+    "p-twi-trans-dress": {
+      "left": "anim/p-twi-trans-dress.anim",
+      "right": "anim/p-twi-trans-dress.anim"
+    },
+    "p-twi-trans-dress-2": {
+      "left": "anim/p-twi-trans-dress-2.anim",
+      "right": "anim/p-twi-trans-dress-2.anim"
+    },
+    "p-twi-trans-dress-left1": {
+      "left": "anim/p-twi-trans-dress-left1.anim",
+      "right": "anim/p-twi-trans-dress-left1.anim"
+    },
+    "p-twi-trans-dress-right1": {
+      "left": "anim/p-twi-trans-dress-right1.anim",
+      "right": "anim/p-twi-trans-dress-right1.anim"
+    },
+    "p-twi-trans-left1": {
+      "left": "anim/p-twi-trans-left1.anim",
+      "right": "anim/p-twi-trans-left1.anim"
+    },
+    "p-twi-trans-right1": {
+      "left": "anim/p-twi-trans-right1.anim",
+      "right": "anim/p-twi-trans-right1.anim"
+    },
+    "p-twi-trot": {
+      "left": "anim/p-twi-trot-left.anim",
+      "right": "anim/p-twi-trot-right.anim"
+    },
+    "p-twi-trot-2": {
+      "left": "anim/p-twi-trot-2-left.anim",
+      "right": "anim/p-twi-trot-2-right.anim"
+    },
+    "p-twi-trot-wings": {
+      "left": "anim/p-twi-trot-wings-left.anim",
+      "right": "anim/p-twi-trot-wings-right.anim"
+    },
+    "princess-twilight-flight": {
+      "left": "anim/princess-twilight-flight-left.anim",
+      "right": "anim/princess-twilight-flight-right.anim"
+    },
+    "princess-twilight-idle": {
+      "left": "anim/princess-twilight-idle-left.anim",
+      "right": "anim/princess-twilight-idle-right.anim"
+    },
+    "princess-twilight-idle-2": {
+      "left": "anim/princess-twilight-idle-2.anim",
+      "right": "anim/princess-twilight-idle-2.anim"
+    },
+    "princess-twilight-idle-3": {
+      "left": "anim/princess-twilight-idle-3.anim",
+      "right": "anim/princess-twilight-idle-3.anim"
+    },
+    "princess-twilight-trot": {
+      "left": "anim/princess-twilight-trot-left.anim",
+      "right": "anim/princess-twilight-trot-right.anim"
+    },
+    "princess-twilight-trot-wings": {
+      "left": "anim/princess-twilight-trot-wings-left.anim",
+      "right": "anim/princess-twilight-trot-wings-right.anim"
+    },
+    "princess-twilight-zoom": {
+      "left": "anim/princess-twilight-zoom-left.anim",
+      "right": "anim/princess-twilight-zoom-right.anim"
+    },
+    "sparkle": {
+      "left": "anim/sparkle.anim",
+      "right": "anim/sparkle.anim"
+    },
+    "starburst-big": {
+      "left": "anim/starburst-big.anim",
+      "right": "anim/starburst-big.anim"
+    },
+    "twi-crystal": {
+      "left": "anim/twi-crystal-left.anim",
+      "right": "anim/twi-crystal-right.anim"
+    },
+    "twilight-starswirl": {
+      "left": "anim/twilight-starswirl-left.anim",
+      "right": "anim/twilight-starswirl-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    },
+    {
+      "id": 2,
+      "name": "Coronation Dress"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "p-twi-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "p-twi-idle-2",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand r",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand r",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "p-twi-idle-3",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand l",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand l",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "p-twi-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "p-twi-trot-wings",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk-wings",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk-wings",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "p-twi-flight",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 12000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "princess-twilight-zoom",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "zoom",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "zoom",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 600.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "twilight-starswirl",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 24000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "starswirl",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "starswirl",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "p-twi-gallop",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 10000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "gallop",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "gallop",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "twi-crystal",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "crystallized",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "crystallized",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "p-twi-trans",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 1400,
+        "min": 1400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transformation start r",
+      "linkedBehavior": "dress transformation finish r",
+      "movement": "None",
+      "name": "transformation start r",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "p-twi-trans-right1",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1400,
+        "min": 1400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transformation finish r",
+      "linkedBehavior": "stand r",
+      "movement": "None",
+      "name": "transformation finish r",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "p-twi-trans-2",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 1400,
+        "min": 1400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transformation start l",
+      "linkedBehavior": "dress transformation finish l",
+      "movement": "None",
+      "name": "transformation start l",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "p-twi-trans-left1",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1400,
+        "min": 1400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transformation finish l",
+      "linkedBehavior": "stand l",
+      "movement": "None",
+      "name": "transformation finish l",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "princess-twilight-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "dress stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "dress stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "princess-twilight-idle-2",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "dress stand r",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "dress stand r",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "princess-twilight-idle-3",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "dress stand l",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "dress stand l",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "princess-twilight-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "dress walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "dress walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "princess-twilight-trot-wings",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "dress walk-wings",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "dress walk-wings",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "princess-twilight-flight",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 12000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "dress fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "dress fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "p-twi-trans-dress",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 1400,
+        "min": 1400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "dress transformation start r",
+      "linkedBehavior": "transformation finish r",
+      "movement": "None",
+      "name": "dress transformation start r",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "p-twi-trans-dress-right1",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1400,
+        "min": 1400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "dress transformation finish r",
+      "linkedBehavior": "dress stand r",
+      "movement": "None",
+      "name": "dress transformation finish r",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "p-twi-trans-dress-2",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 1400,
+        "min": 1400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "dress transformation start l",
+      "linkedBehavior": "transformation finish l",
+      "movement": "None",
+      "name": "dress transformation start l",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "p-twi-trans-dress-left1",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1400,
+        "min": 1400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "dress transformation finish l",
+      "linkedBehavior": "dress stand l",
+      "movement": "None",
+      "name": "dress transformation finish l",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "breezie-twilight",
+      "chance": 0.001,
+      "durationMs": {
+        "max": 40000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "breezie",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "breezie",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "p-twi-trot-2",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 8000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": -40,
+        "offsetY": -50,
+        "stoppedBehavior": "breezie",
+        "target": "Seabreeze"
+      },
+      "group": 0,
+      "id": "breezie_start",
+      "linkedBehavior": "breezie1",
+      "movement": "Horizontal_Only",
+      "name": "breezie_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "breezie-twilight",
+      "chance": 0.001,
+      "durationMs": {
+        "max": 40000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "breezie",
+        "offsetX": -40,
+        "offsetY": -50,
+        "stoppedBehavior": "breezie",
+        "target": "Seabreeze"
+      },
+      "group": 1,
+      "id": "breezie1",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "breezie1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "starburst-big",
+      "behavior": "zoom",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 4000,
+      "follow": false,
+      "id": "starburst",
+      "name": "starburst",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "sparkle",
+      "behavior": "crystallized",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "crystalspark",
+      "name": "crystalspark",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "princess-twilight-sparkle",
+  "interactions": [],
+  "name": "Princess Twilight Sparkle",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "mares",
+    "alicorns"
+  ]
+}

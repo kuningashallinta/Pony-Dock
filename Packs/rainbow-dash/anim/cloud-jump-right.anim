@@ -1,0 +1,69 @@
+{
+  "atlas": "cloud-jump-right.png",
+  "atlasSize": [
+    396,
+    512
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        132,
+        256
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        132,
+        0,
+        132,
+        256
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        264,
+        0,
+        132,
+        256
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        256,
+        132,
+        256
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        132,
+        256,
+        132,
+        256
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        264,
+        256,
+        132,
+        256
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    65,
+    165
+  ],
+  "schemaVersion": 1
+}

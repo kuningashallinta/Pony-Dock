@@ -1,0 +1,51 @@
+{
+  "atlas": "stand-oppp-left.png",
+  "atlasSize": [
+    176,
+    168
+  ],
+  "frames": [
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        84,
+        88,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    35,
+    50
+  ],
+  "schemaVersion": 1
+}

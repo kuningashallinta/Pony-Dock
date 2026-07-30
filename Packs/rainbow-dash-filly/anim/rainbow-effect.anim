@@ -1,0 +1,24 @@
+{
+  "atlas": "rainbow-effect.png",
+  "atlasSize": [
+    28,
+    48
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        28,
+        48
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "hench3-idle": {
+      "left": "anim/hench3-idle-left.anim",
+      "right": "anim/hench3-idle-right.anim"
+    },
+    "henchpony3-trot": {
+      "left": "anim/henchpony3-trot-left.anim",
+      "right": "anim/henchpony3-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "hench3-idle",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 7520
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "henchpony3-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 12000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "mane-iac-henchpony-3",
+  "interactions": [],
+  "name": "Henchpony #3",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

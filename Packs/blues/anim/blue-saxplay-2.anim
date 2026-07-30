@@ -1,0 +1,114 @@
+{
+  "atlas": "blue-saxplay-2.png",
+  "atlasSize": [
+    440,
+    258
+  ],
+  "frames": [
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        0,
+        110,
+        86
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        110,
+        0,
+        110,
+        86
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        220,
+        0,
+        110,
+        86
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        330,
+        0,
+        110,
+        86
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        86,
+        110,
+        86
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        110,
+        86,
+        110,
+        86
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        220,
+        86,
+        110,
+        86
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        330,
+        86,
+        110,
+        86
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        172,
+        110,
+        86
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        110,
+        172,
+        110,
+        86
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        220,
+        172,
+        110,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    64,
+    46
+  ],
+  "schemaVersion": 1
+}

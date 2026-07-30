@@ -1,0 +1,87 @@
+{
+  "atlas": "suitless-spitfire-stand-left.png",
+  "atlasSize": [
+    216,
+    264
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        72,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        72,
+        0,
+        72,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        144,
+        0,
+        72,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        88,
+        72,
+        88
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        72,
+        88,
+        72,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        144,
+        88,
+        72,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        176,
+        72,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        72,
+        176,
+        72,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

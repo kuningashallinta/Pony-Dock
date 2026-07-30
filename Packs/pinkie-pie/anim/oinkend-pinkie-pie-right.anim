@@ -1,0 +1,105 @@
+{
+  "atlas": "oinkend-pinkie-pie-right.png",
+  "atlasSize": [
+    416,
+    366
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        104,
+        122
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        104,
+        0,
+        104,
+        122
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        208,
+        0,
+        104,
+        122
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        312,
+        0,
+        104,
+        122
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        122,
+        104,
+        122
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        104,
+        122,
+        104,
+        122
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        208,
+        122,
+        104,
+        122
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        312,
+        122,
+        104,
+        122
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        244,
+        104,
+        122
+      ]
+    },
+    {
+      "durationMs": 1040,
+      "rect": [
+        104,
+        244,
+        104,
+        122
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    56,
+    74
+  ],
+  "schemaVersion": 1
+}

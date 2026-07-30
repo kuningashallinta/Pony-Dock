@@ -1,0 +1,150 @@
+{
+  "atlas": "bowhothoof-idle-left.png",
+  "atlasSize": [
+    368,
+    416
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        0,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        0,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        276,
+        0,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        104,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        104,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        184,
+        104,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        276,
+        104,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 3900,
+      "rect": [
+        0,
+        208,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        208,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        208,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        276,
+        208,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        312,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        312,
+        92,
+        104
+      ]
+    },
+    {
+      "durationMs": 3900,
+      "rect": [
+        184,
+        312,
+        92,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

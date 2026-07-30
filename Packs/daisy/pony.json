@@ -1,0 +1,123 @@
+{
+  "animations": {
+    "daisy-blink": {
+      "left": "anim/daisy-blink-left.anim",
+      "right": "anim/daisy-blink-right.anim"
+    },
+    "daisy-stand": {
+      "left": "anim/daisy-stand-left.anim",
+      "right": "anim/daisy-stand-right.anim"
+    },
+    "daisy-trot": {
+      "left": "anim/daisy-trot-left.anim",
+      "right": "anim/daisy-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "daisy-stand",
+      "chance": 0.33,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "daisy-trot",
+      "chance": 0.33,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "daisy-blink",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "trot",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "blink",
+        "target": "Sir Colton Vines"
+      },
+      "group": 0,
+      "id": "blink",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "daisy",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "blink"
+      ],
+      "chance": 0.5,
+      "id": "colton_daisy_meet",
+      "name": "colton_daisy_meet",
+      "proximityPx": 100,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "sir-colton-vines"
+      ]
+    }
+  ],
+  "name": "Daisy",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "atlas": "rollfinish-pinkiepie-right.png",
+  "atlasSize": [
+    72,
+    54
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        72,
+        54
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    22,
+    7
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,60 @@
+{
+  "atlas": "nmn-ss-close-left.png",
+  "atlasSize": [
+    288,
+    212
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        96,
+        106
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        96,
+        0,
+        96,
+        106
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        192,
+        0,
+        96,
+        106
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        106,
+        96,
+        106
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        96,
+        106,
+        96,
+        106
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    55,
+    62
+  ],
+  "schemaVersion": 1
+}

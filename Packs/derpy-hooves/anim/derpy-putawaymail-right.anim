@@ -1,0 +1,123 @@
+{
+  "atlas": "derpy-putawaymail-right.png",
+  "atlasSize": [
+    376,
+    240
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        94,
+        0,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        188,
+        0,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        282,
+        0,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        80,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        94,
+        80,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        188,
+        80,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        282,
+        80,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 160,
+      "rect": [
+        0,
+        160,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        94,
+        160,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        188,
+        160,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        282,
+        160,
+        94,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

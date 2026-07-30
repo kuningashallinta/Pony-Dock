@@ -1,0 +1,457 @@
+{
+  "animations": {
+    "smoke-trail": {
+      "left": "anim/smoke-trail.anim",
+      "right": "anim/smoke-trail.anim"
+    },
+    "spitfire-dash": {
+      "left": "anim/spitfire-dash-left.anim",
+      "right": "anim/spitfire-dash-right.anim"
+    },
+    "spitfire-fly": {
+      "left": "anim/spitfire-fly-left.anim",
+      "right": "anim/spitfire-fly-right.anim"
+    },
+    "spitfire-fly-2": {
+      "left": "anim/spitfire-fly-2-left.anim",
+      "right": "anim/spitfire-fly-2-right.anim"
+    },
+    "spitfire-goggles": {
+      "left": "anim/spitfire-goggles-left.anim",
+      "right": "anim/spitfire-goggles-right.anim"
+    },
+    "spitfire-stand": {
+      "left": "anim/spitfire-stand-left.anim",
+      "right": "anim/spitfire-stand-right.anim"
+    },
+    "spitfire-stand-2": {
+      "left": "anim/spitfire-stand-2-left.anim",
+      "right": "anim/spitfire-stand-2-right.anim"
+    },
+    "spitfire-trotcycle": {
+      "left": "anim/spitfire-trotcycle-left.anim",
+      "right": "anim/spitfire-trotcycle-right.anim"
+    },
+    "suitless-spitfire-fly": {
+      "left": "anim/suitless-spitfire-fly-left.anim",
+      "right": "anim/suitless-spitfire-fly-right.anim"
+    },
+    "suitless-spitfire-stand": {
+      "left": "anim/suitless-spitfire-stand-left.anim",
+      "right": "anim/suitless-spitfire-stand-right.anim"
+    },
+    "suitless-spitfire-stand-2": {
+      "left": "anim/suitless-spitfire-stand-2-left.anim",
+      "right": "anim/suitless-spitfire-stand-2-right.anim"
+    },
+    "suitless-spitfire-trotcycle": {
+      "left": "anim/suitless-spitfire-trotcycle-left.anim",
+      "right": "anim/suitless-spitfire-trotcycle-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    },
+    {
+      "id": 2,
+      "name": "No Suit"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "spitfire-stand",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "spitfire-fly",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "spitfire-fly-2",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "dash",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "dash",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "spitfire-trotcycle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 5000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "spitfire-goggles",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "goggles",
+      "linkedBehavior": "flight",
+      "movement": "None",
+      "name": "goggles",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Unnamed #1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spitfire-dash",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 5000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "flight",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "flight",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 600.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spitfire-goggles",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "wonderbolts",
+      "linkedBehavior": "wonderbolts_1",
+      "movement": "None",
+      "name": "wonderbolts",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Unnamed #1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spitfire-dash",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "wonderbolts_1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "wonderbolts_1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 600.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "suitless-spitfire-stand",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "stand-nosuit",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand-nosuit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "suitless-spitfire-fly",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "fly-nosuit",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly-nosuit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "suitless-spitfire-fly",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "dash-nosuit",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "dash-nosuit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "suitless-spitfire-trotcycle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 5000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "walk-nosuit",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk-nosuit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "spitfire-stand-2",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 10240,
+        "min": 10240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "remove-suit",
+      "linkedBehavior": "stand-nosuit",
+      "movement": "None",
+      "name": "remove-suit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "suitless-spitfire-stand-2",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10240,
+        "min": 10240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "get-dressed",
+      "linkedBehavior": "stand",
+      "movement": "None",
+      "name": "get-dressed",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "smoke-trail",
+      "behavior": "flight",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": false,
+      "id": "stormclouds",
+      "name": "stormclouds",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 20
+    },
+    {
+      "animation": "smoke-trail",
+      "behavior": "wonderbolts_1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": false,
+      "id": "stormclouds_2",
+      "name": "stormclouds_2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 20
+    }
+  ],
+  "id": "spitfire",
+  "interactions": [
+    {
+      "activation": "Any",
+      "behaviors": [
+        "Wonderbolts"
+      ],
+      "chance": 0.01,
+      "id": "Wonderbolts_flight",
+      "name": "Wonderbolts_flight",
+      "proximityPx": 200,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "soarin",
+        "surprise",
+        "fleetfoot"
+      ]
+    }
+  ],
+  "name": "Spitfire",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "pegasi"
+  ]
+}

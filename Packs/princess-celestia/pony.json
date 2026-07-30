@@ -1,0 +1,466 @@
+{
+  "animations": {
+    "fly": {
+      "left": "anim/fly-left.anim",
+      "right": "anim/fly-right.anim"
+    },
+    "scroll-arrive": {
+      "left": "anim/scroll-arrive-left.anim",
+      "right": "anim/scroll-arrive-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "walk": {
+      "left": "anim/walk-left.anim",
+      "right": "anim/walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walk",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3500,
+        "min": 3500
+      },
+      "endSpeech": "ah-ah-ah-ah",
+      "follow": null,
+      "group": 0,
+      "id": "theme 1",
+      "linkedBehavior": "theme 2",
+      "movement": "None",
+      "name": "theme 1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "my little pony",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walk",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "title drop",
+      "follow": null,
+      "group": 0,
+      "id": "theme 2",
+      "linkedBehavior": "theme 3",
+      "movement": "Diagonal_Horizontal",
+      "name": "theme 2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walk",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 4000,
+        "min": 4000
+      },
+      "endSpeech": "title drop",
+      "follow": null,
+      "group": 0,
+      "id": "theme 3",
+      "linkedBehavior": "theme 4",
+      "movement": "Diagonal_Horizontal",
+      "name": "theme 3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walk",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": "title drop",
+      "follow": null,
+      "group": 0,
+      "id": "theme 5",
+      "linkedBehavior": "theme 6",
+      "movement": "Diagonal_Horizontal",
+      "name": "theme 5",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 4500,
+        "min": 4500
+      },
+      "endSpeech": "friends",
+      "follow": null,
+      "group": 0,
+      "id": "theme 6",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "theme 6",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walk",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 9000,
+        "min": 9000
+      },
+      "endSpeech": "easy feat",
+      "follow": null,
+      "group": 0,
+      "id": "theme 4",
+      "linkedBehavior": "theme 5",
+      "movement": "Diagonal_Horizontal",
+      "name": "theme 4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 8000,
+        "min": 8000
+      },
+      "endSpeech": "tomorrow 2",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Nightmare Moon"
+      },
+      "group": 0,
+      "id": "tomorrow 1",
+      "linkedBehavior": "tomorrow 2",
+      "movement": "None",
+      "name": "tomorrow 1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "tomorrow 1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": "tomorrow 3",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Nightmare Moon"
+      },
+      "group": 0,
+      "id": "tomorrow 2",
+      "linkedBehavior": "tomorrow 3",
+      "movement": "None",
+      "name": "tomorrow 2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": "tomorrow 4",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Nightmare Moon"
+      },
+      "group": 0,
+      "id": "tomorrow 3",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "tomorrow 3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walk",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 40000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Pinkie Pie"
+      },
+      "group": 0,
+      "id": "parasprite_follow_circle",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "parasprite_follow_circle",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "scroll-arrive",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 3200,
+        "min": 3200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "scroll_arrive",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "scroll_arrive",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Shopkeeper"
+      },
+      "group": 0,
+      "id": "deal_celestia",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_celestia",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "princess-celestia",
+  "interactions": [
+    {
+      "activation": "All",
+      "behaviors": [
+        "theme 1",
+        "theme 1 gala"
+      ],
+      "chance": 0.2,
+      "id": "Theme 1",
+      "name": "Theme 1",
+      "proximityPx": 125,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "applejack",
+        "fluttershy",
+        "pinkie-pie",
+        "rainbow-dash",
+        "rarity",
+        "twilight-sparkle"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "tomorrow 1"
+      ],
+      "chance": 0.15,
+      "id": "Tomorrow 1",
+      "name": "Tomorrow 1",
+      "proximityPx": 150,
+      "reactivationDelayMs": 90000,
+      "targets": [
+        "nightmare-moon"
+      ]
+    }
+  ],
+  "name": "Princess Celestia",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "alicorns"
+  ]
+}

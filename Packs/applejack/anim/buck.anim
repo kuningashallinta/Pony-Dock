@@ -1,0 +1,114 @@
+{
+  "atlas": "buck.png",
+  "atlasSize": [
+    520,
+    288
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        130,
+        96
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        130,
+        0,
+        130,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        260,
+        0,
+        130,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        390,
+        0,
+        130,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        96,
+        130,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        130,
+        96,
+        130,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        260,
+        96,
+        130,
+        96
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        390,
+        96,
+        130,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        192,
+        130,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        130,
+        192,
+        130,
+        96
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        260,
+        192,
+        130,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    70,
+    46
+  ],
+  "schemaVersion": 1
+}

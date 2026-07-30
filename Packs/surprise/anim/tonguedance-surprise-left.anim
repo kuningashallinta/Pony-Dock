@@ -1,0 +1,96 @@
+{
+  "atlas": "tonguedance-surprise-left.png",
+  "atlasSize": [
+    366,
+    336
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        122,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        122,
+        0,
+        122,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        244,
+        0,
+        122,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        112,
+        122,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        122,
+        112,
+        122,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        244,
+        112,
+        122,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        224,
+        122,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        122,
+        224,
+        122,
+        112
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        244,
+        224,
+        122,
+        112
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    60,
+    64
+  ],
+  "schemaVersion": 1
+}

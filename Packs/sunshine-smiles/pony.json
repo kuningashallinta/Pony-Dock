@@ -1,0 +1,155 @@
+{
+  "animations": {
+    "0": {
+      "left": "anim/0.anim",
+      "right": "anim/0.anim"
+    },
+    "sunshinesmiles-idle": {
+      "left": "anim/sunshinesmiles-idle-left.anim",
+      "right": "anim/sunshinesmiles-idle-right.anim"
+    },
+    "sunshinesmiles-trot": {
+      "left": "anim/sunshinesmiles-trot-left.anim",
+      "right": "anim/sunshinesmiles-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "sunshinesmiles-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sunshinesmiles-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sunshinesmiles-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sunshinesmiles-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "walk",
+        "offsetX": 16,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Moonlight Raven"
+      },
+      "group": 0,
+      "id": "hug_start1",
+      "linkedBehavior": "hug",
+      "movement": "All",
+      "name": "hug_start1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": "Sis",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "0",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 10000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hug",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "hug",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "sunshine-smiles",
+  "interactions": [],
+  "name": "Sunshine Smiles",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "atlas": "thorax-trot-right.png",
+  "atlasSize": [
+    408,
+    512
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        102,
+        0,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        204,
+        0,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        306,
+        0,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        128,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        102,
+        128,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        204,
+        128,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        306,
+        128,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        256,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        102,
+        256,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        204,
+        256,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        306,
+        256,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        384,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        102,
+        384,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        204,
+        384,
+        102,
+        128
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        306,
+        384,
+        102,
+        128
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    60,
+    78
+  ],
+  "schemaVersion": 1
+}

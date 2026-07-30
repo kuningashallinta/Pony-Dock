@@ -1,0 +1,24 @@
+{
+  "atlas": "ruby-sleep-right.png",
+  "atlasSize": [
+    70,
+    52
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        70,
+        52
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    35,
+    18
+  ],
+  "schemaVersion": 1
+}

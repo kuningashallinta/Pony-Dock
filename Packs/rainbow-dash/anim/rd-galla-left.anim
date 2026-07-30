@@ -1,0 +1,24 @@
+{
+  "atlas": "rd-galla-left.png",
+  "atlasSize": [
+    114,
+    82
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        114,
+        82
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    45,
+    40
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,150 @@
+{
+  "atlas": "stand-aj-left.png",
+  "atlasSize": [
+    352,
+    376
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        88,
+        0,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        176,
+        0,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        264,
+        0,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        94,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 5100,
+      "rect": [
+        88,
+        94,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        94,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        264,
+        94,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        188,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        88,
+        188,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        176,
+        188,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        264,
+        188,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        282,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        88,
+        282,
+        88,
+        94
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        176,
+        282,
+        88,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    43,
+    46
+  ],
+  "schemaVersion": 1
+}

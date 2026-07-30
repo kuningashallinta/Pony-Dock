@@ -1,0 +1,51 @@
+{
+  "atlas": "para-purple-updown.png",
+  "atlasSize": [
+    68,
+    48
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        34,
+        24
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        34,
+        0,
+        34,
+        24
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        24,
+        34,
+        24
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        34,
+        24,
+        34,
+        24
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

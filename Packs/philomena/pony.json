@@ -1,0 +1,267 @@
+{
+  "animations": {
+    "phila-fusrohdah": {
+      "left": "anim/phila-fusrohdah-left.anim",
+      "right": "anim/phila-fusrohdah-right.anim"
+    },
+    "phila-idle": {
+      "left": "anim/phila-idle-left.anim",
+      "right": "anim/phila-idle-right.anim"
+    },
+    "phila-landing": {
+      "left": "anim/phila-landing-left.anim",
+      "right": "anim/phila-landing-right.anim"
+    },
+    "phila-liftoff": {
+      "left": "anim/phila-liftoff-left.anim",
+      "right": "anim/phila-liftoff-right.anim"
+    },
+    "phila-rise": {
+      "left": "anim/phila-rise-left.anim",
+      "right": "anim/phila-rise-right.anim"
+    },
+    "phila-the-chicken": {
+      "left": "anim/phila-the-chicken-left.anim",
+      "right": "anim/phila-the-chicken-right.anim"
+    },
+    "phila-tired": {
+      "left": "anim/phila-tired-left.anim",
+      "right": "anim/phila-tired-right.anim"
+    },
+    "philamina": {
+      "left": "anim/philamina-left.anim",
+      "right": "anim/philamina-right.anim"
+    },
+    "runlikeachicken1": {
+      "left": "anim/runlikeachicken1-left.anim",
+      "right": "anim/runlikeachicken1-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "philamina",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 18000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "portait",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "portait",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "phila-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "phila-liftoff",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 510,
+        "min": 510
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "liftoff",
+      "linkedBehavior": "tired",
+      "movement": "None",
+      "name": "liftoff",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "phila-tired",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 8000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "tired",
+      "linkedBehavior": "landing",
+      "movement": "All",
+      "name": "tired",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "phila-landing",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 300,
+        "min": 300
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "landing",
+      "linkedBehavior": "idle",
+      "movement": "None",
+      "name": "landing",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "phila-fusrohdah",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 3500,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fusrohdaAAHHH",
+      "linkedBehavior": "burnin'",
+      "movement": "None",
+      "name": "fusrohdaAAHHH",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "phila-the-chicken",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "burnin'",
+      "linkedBehavior": "rise",
+      "movement": "None",
+      "name": "burnin'",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "phila-rise",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "rise",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "rise",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "runlikeachicken1",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 18000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "running",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "running",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 266.6666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "philomena",
+  "interactions": [],
+  "name": "Philomena",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "pets",
+    "non-ponies"
+  ]
+}

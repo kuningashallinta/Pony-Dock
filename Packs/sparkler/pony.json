@@ -1,0 +1,128 @@
+{
+  "animations": {
+    "sparkler-jar-open": {
+      "left": "anim/sparkler-jar-open-left.anim",
+      "right": "anim/sparkler-jar-open-right.anim"
+    },
+    "sparkler-sit": {
+      "left": "anim/sparkler-sit-left.anim",
+      "right": "anim/sparkler-sit-right.anim"
+    },
+    "sparkler-stand": {
+      "left": "anim/sparkler-stand-left.anim",
+      "right": "anim/sparkler-stand-right.anim"
+    },
+    "sparkler-walk": {
+      "left": "anim/sparkler-walk-left.anim",
+      "right": "anim/sparkler-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "sparkler-stand",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sparkler-walk",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sparkler-sit",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 45000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sitting",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sitting",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sparkler-jar-open",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "jar",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "jar",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "sparkler",
+  "interactions": [],
+  "name": "Sparkler",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

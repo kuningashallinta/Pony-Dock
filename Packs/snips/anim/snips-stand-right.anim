@@ -1,0 +1,33 @@
+{
+  "atlas": "snips-stand-right.png",
+  "atlasSize": [
+    136,
+    62
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        68,
+        62
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        68,
+        0,
+        68,
+        62
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

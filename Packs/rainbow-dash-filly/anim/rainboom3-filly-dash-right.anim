@@ -1,0 +1,96 @@
+{
+  "atlas": "rainboom3-filly-dash-right.png",
+  "atlasSize": [
+    456,
+    348
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        0,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        304,
+        0,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        116,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        116,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        304,
+        116,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        232,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        232,
+        152,
+        116
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        304,
+        232,
+        152,
+        116
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

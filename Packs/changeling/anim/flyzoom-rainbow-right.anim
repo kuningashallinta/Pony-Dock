@@ -1,0 +1,159 @@
+{
+  "atlas": "flyzoom-rainbow-right.png",
+  "atlasSize": [
+    424,
+    296
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        0,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        0,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        318,
+        0,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        74,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        74,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        74,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        318,
+        74,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        148,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        148,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        148,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        318,
+        148,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        222,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        222,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        222,
+        106,
+        74
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        318,
+        222,
+        106,
+        74
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    64,
+    44
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,159 @@
+{
+  "atlas": "songbirdserenade-trot-right.png",
+  "atlasSize": [
+    376,
+    416
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        0,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        0,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        0,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        104,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        104,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        104,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        104,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        208,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        208,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        208,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        208,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        312,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        94,
+        312,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        188,
+        312,
+        94,
+        104
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        282,
+        312,
+        94,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    52
+  ],
+  "schemaVersion": 1
+}

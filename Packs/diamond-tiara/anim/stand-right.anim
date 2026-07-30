@@ -1,0 +1,87 @@
+{
+  "atlas": "stand-right.png",
+  "atlasSize": [
+    192,
+    234
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        64,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        64,
+        0,
+        64,
+        78
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        0,
+        64,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        78,
+        64,
+        78
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        64,
+        78,
+        64,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        128,
+        78,
+        64,
+        78
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        156,
+        64,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        64,
+        156,
+        64,
+        78
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    32,
+    39
+  ],
+  "schemaVersion": 1
+}

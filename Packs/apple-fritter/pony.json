@@ -1,0 +1,127 @@
+{
+  "animations": {
+    "applefritter-sit": {
+      "left": "anim/applefritter-sit-left.anim",
+      "right": "anim/applefritter-sit-right.anim"
+    },
+    "applefritter-sleep": {
+      "left": "anim/applefritter-sleep-left.anim",
+      "right": "anim/applefritter-sleep-right.anim"
+    },
+    "applefritter-stand": {
+      "left": "anim/applefritter-stand-left.anim",
+      "right": "anim/applefritter-stand-right.anim"
+    },
+    "applefritter-trot": {
+      "left": "anim/applefritter-trot-left.anim",
+      "right": "anim/applefritter-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "applefritter-stand",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 7080,
+        "min": 2360
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "applefritter-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "applefritter-sit",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 8560,
+        "min": 4280
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "applefritter-sleep",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 12000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "Sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "apple-fritter",
+  "interactions": [],
+  "name": "Apple Fritter",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

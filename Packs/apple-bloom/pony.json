@@ -1,0 +1,343 @@
+{
+  "animations": {
+    "apple-bloom-skipright": {
+      "left": "anim/apple-bloom-skipright-left.anim",
+      "right": "anim/apple-bloom-skipright-right.anim"
+    },
+    "applebloom-gallop": {
+      "left": "anim/applebloom-gallop-left.anim",
+      "right": "anim/applebloom-gallop-right.anim"
+    },
+    "aww": {
+      "left": "anim/aww.anim",
+      "right": "anim/aww.anim"
+    },
+    "dance": {
+      "left": "anim/dance-left.anim",
+      "right": "anim/dance-right.anim"
+    },
+    "push-ups": {
+      "left": "anim/push-ups.anim",
+      "right": "anim/push-ups.anim"
+    },
+    "spin": {
+      "left": "anim/spin.anim",
+      "right": "anim/spin.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "walking": {
+      "left": "anim/walking-left.anim",
+      "right": "anim/walking-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 16000,
+        "min": 9600
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": "Skip",
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walking",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "applebloom-gallop",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "gallop",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "gallop",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 150.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walking",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "walk",
+        "offsetX": -36,
+        "offsetY": 20,
+        "stoppedBehavior": "stand",
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "follow_aj",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_aj",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spin",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "spin_me_right_round",
+      "linkedBehavior": "aww",
+      "movement": "None",
+      "name": "spin_me_right_round",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "cutie_mark",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "push-ups",
+      "chance": 0.005,
+      "durationMs": {
+        "max": 3800,
+        "min": 3800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "workout",
+      "linkedBehavior": "spin_me_right_round",
+      "movement": "None",
+      "name": "workout",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "aww",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "aww",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "aww",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "aww",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walking",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 15000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "CMC",
+      "linkedBehavior": "spin_me_right_round",
+      "movement": "All",
+      "name": "CMC",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": "cmc",
+      "target": {
+        "x": 50.0,
+        "y": 50.0
+      },
+      "special": true
+    },
+    {
+      "animation": "dance",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "dance",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "dance",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "apple-bloom-skipright",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 14000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Skip",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "Skip",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Shopkeeper"
+      },
+      "group": 0,
+      "id": "deal_applebloom",
+      "linkedBehavior": "aww",
+      "movement": "None",
+      "name": "deal_applebloom",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "apple-bloom",
+  "interactions": [
+    {
+      "activation": "Any",
+      "behaviors": [
+        "CMC"
+      ],
+      "chance": 0.05,
+      "id": "CMC",
+      "name": "CMC",
+      "proximityPx": 200,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "scootaloo",
+        "sweetie-belle"
+      ]
+    }
+  ],
+  "name": "Apple Bloom",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "fillies",
+    "earth ponies"
+  ]
+}

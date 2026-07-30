@@ -1,0 +1,60 @@
+{
+  "atlas": "sonic-pinksneeze2-right.png",
+  "atlasSize": [
+    318,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        126,
+        106,
+        126
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

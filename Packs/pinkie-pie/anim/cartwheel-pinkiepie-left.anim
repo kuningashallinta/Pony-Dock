@@ -1,0 +1,87 @@
+{
+  "atlas": "cartwheel-pinkiepie-left.png",
+  "atlasSize": [
+    318,
+    324
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        106,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        0,
+        106,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        212,
+        0,
+        106,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        108,
+        106,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        108,
+        106,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        212,
+        108,
+        106,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        216,
+        106,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        216,
+        106,
+        108
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    52,
+    60
+  ],
+  "schemaVersion": 1
+}

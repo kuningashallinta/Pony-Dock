@@ -1,0 +1,99 @@
+{
+  "animations": {
+    "tenderheart-idle": {
+      "left": "anim/tenderheart-idle-left.anim",
+      "right": "anim/tenderheart-idle-right.anim"
+    },
+    "tenderheart-idle2": {
+      "left": "anim/tenderheart-idle2-left.anim",
+      "right": "anim/tenderheart-idle2-right.anim"
+    },
+    "tenderheart-trot": {
+      "left": "anim/tenderheart-trot-left.anim",
+      "right": "anim/tenderheart-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "tenderheart-idle2",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 16000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle2",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "idle2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "tenderheart-idle",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 16000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "tenderheart-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "nurse-tenderheart",
+  "interactions": [],
+  "name": "Nurse Tenderheart",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

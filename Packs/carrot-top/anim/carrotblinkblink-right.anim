@@ -1,0 +1,78 @@
+{
+  "atlas": "carrotblinkblink-right.png",
+  "atlasSize": [
+    360,
+    360
+  ],
+  "frames": [
+    {
+      "durationMs": 700,
+      "rect": [
+        0,
+        0,
+        120,
+        120
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        120,
+        0,
+        120,
+        120
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        240,
+        0,
+        120,
+        120
+      ]
+    },
+    {
+      "durationMs": 1890,
+      "rect": [
+        0,
+        120,
+        120,
+        120
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        120,
+        120,
+        120,
+        120
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        240,
+        120,
+        120,
+        120
+      ]
+    },
+    {
+      "durationMs": 210,
+      "rect": [
+        0,
+        240,
+        120,
+        120
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    60,
+    70
+  ],
+  "schemaVersion": 1
+}

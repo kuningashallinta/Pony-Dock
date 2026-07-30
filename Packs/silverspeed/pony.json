@@ -1,0 +1,337 @@
+{
+  "animations": {
+    "silverspeed-fly": {
+      "left": "anim/silverspeed-fly-left.anim",
+      "right": "anim/silverspeed-fly-right.anim"
+    },
+    "silverspeed-good-pace": {
+      "left": "anim/silverspeed-good-pace-left.anim",
+      "right": "anim/silverspeed-good-pace-right.anim"
+    },
+    "silverspeed-sit": {
+      "left": "anim/silverspeed-sit-left.anim",
+      "right": "anim/silverspeed-sit-right.anim"
+    },
+    "silverspeed-sleep": {
+      "left": "anim/silverspeed-sleep-left.anim",
+      "right": "anim/silverspeed-sleep-right.anim"
+    },
+    "silverspeed-stand": {
+      "left": "anim/silverspeed-stand-left.anim",
+      "right": "anim/silverspeed-stand-right.anim"
+    },
+    "silverspeed-stand-right-wing": {
+      "left": "anim/silverspeed-stand-right-wing-left.anim",
+      "right": "anim/silverspeed-stand-right-wing-right.anim"
+    },
+    "silverspeed-trot": {
+      "left": "anim/silverspeed-trot-left.anim",
+      "right": "anim/silverspeed-trot-right.anim"
+    },
+    "silverspeed-trot-right-blink": {
+      "left": "anim/silverspeed-trot-right-blink-left.anim",
+      "right": "anim/silverspeed-trot-right-blink-right.anim"
+    },
+    "silverspeed-trot-right-wing": {
+      "left": "anim/silverspeed-trot-right-wing-left.anim",
+      "right": "anim/silverspeed-trot-right-wing-right.anim"
+    },
+    "silverspeed-trot-right-wing-blink": {
+      "left": "anim/silverspeed-trot-right-wing-blink-left.anim",
+      "right": "anim/silverspeed-trot-right-wing-blink-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "silverspeed-stand",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "silverspeed-fly",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 25000,
+        "min": 19000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "silverspeed-stand-right-wing",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand wing",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "silverspeed-trot-right-wing-blink",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 27000,
+        "min": 19000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot wing blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot wing blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "silverspeed-trot-right-wing",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 22000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot wing",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "silverspeed-fly",
+      "chance": 0.16,
+      "durationMs": {
+        "max": 13000,
+        "min": 9000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "hover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "silverspeed-trot-right-blink",
+      "chance": 0.18,
+      "durationMs": {
+        "max": 18000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "silverspeed-trot",
+      "chance": 0.17,
+      "durationMs": {
+        "max": 18000,
+        "min": 14000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "silverspeed-sit",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 20000,
+        "min": 17000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "silverspeed-sleep",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 45000,
+        "min": 38000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": "sit",
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "silverspeed-good-pace",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "good pace",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "good pace",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "silverspeed-good-pace",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 17000,
+        "min": 17000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "training",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "training",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "silverspeed",
+  "interactions": [],
+  "name": "Silverspeed",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "pegasi"
+  ]
+}

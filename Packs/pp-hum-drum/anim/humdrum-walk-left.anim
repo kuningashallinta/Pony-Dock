@@ -1,0 +1,123 @@
+{
+  "atlas": "humdrum-walk-left.png",
+  "atlasSize": [
+    192,
+    180
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        48,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        48,
+        0,
+        48,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        96,
+        0,
+        48,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        144,
+        0,
+        48,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        60,
+        48,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        48,
+        60,
+        48,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        96,
+        60,
+        48,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        144,
+        60,
+        48,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        120,
+        48,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        48,
+        120,
+        48,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        96,
+        120,
+        48,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        144,
+        120,
+        48,
+        60
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

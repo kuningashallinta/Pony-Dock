@@ -1,0 +1,99 @@
+{
+  "animations": {
+    "lightning-dust-fly": {
+      "left": "anim/lightning-dust-fly-left.anim",
+      "right": "anim/lightning-dust-fly-right.anim"
+    },
+    "lightning-dust-idle": {
+      "left": "anim/lightning-dust-idle-left.anim",
+      "right": "anim/lightning-dust-idle-right.anim"
+    },
+    "lightning-dust-trot": {
+      "left": "anim/lightning-dust-trot-left.anim",
+      "right": "anim/lightning-dust-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "lightning-dust-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 12000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lightning-dust-trot",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lightning-dust-fly",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 12000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "lightning-dust",
+  "interactions": [],
+  "name": "Lightning Dust",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "mares",
+    "pegasi",
+    "supporting ponies"
+  ]
+}

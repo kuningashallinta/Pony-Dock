@@ -1,0 +1,132 @@
+{
+  "atlas": "nurseryrhyme-idle-left.png",
+  "atlasSize": [
+    232,
+    280
+  ],
+  "frames": [
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        0,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        58,
+        0,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        116,
+        0,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        174,
+        0,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        70,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        58,
+        70,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        116,
+        70,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 3700,
+      "rect": [
+        174,
+        70,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        140,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        58,
+        140,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        116,
+        140,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        174,
+        140,
+        58,
+        70
+      ]
+    },
+    {
+      "durationMs": 3700,
+      "rect": [
+        0,
+        210,
+        58,
+        70
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,105 @@
+{
+  "atlas": "gala-pinkie-idle-right.png",
+  "atlasSize": [
+    456,
+    264
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        114,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        114,
+        0,
+        114,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        228,
+        0,
+        114,
+        88
+      ]
+    },
+    {
+      "durationMs": 2300,
+      "rect": [
+        342,
+        0,
+        114,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        88,
+        114,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        114,
+        88,
+        114,
+        88
+      ]
+    },
+    {
+      "durationMs": 2300,
+      "rect": [
+        228,
+        88,
+        114,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        342,
+        88,
+        114,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        176,
+        114,
+        88
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        114,
+        176,
+        114,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    67,
+    42
+  ],
+  "schemaVersion": 1
+}

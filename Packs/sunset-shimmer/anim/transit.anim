@@ -1,0 +1,24 @@
+{
+  "atlas": "transit.png",
+  "atlasSize": [
+    1,
+    1
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    83,
+    78
+  ],
+  "schemaVersion": 1
+}

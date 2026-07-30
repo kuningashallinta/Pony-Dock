@@ -1,0 +1,60 @@
+{
+  "atlas": "mlp-gilda-cheer.png",
+  "atlasSize": [
+    318,
+    208
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        106,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        106,
+        0,
+        106,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        212,
+        0,
+        106,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        104,
+        106,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        106,
+        104,
+        106,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    62,
+    56
+  ],
+  "schemaVersion": 1
+}

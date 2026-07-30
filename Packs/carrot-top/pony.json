@@ -1,0 +1,440 @@
+{
+  "animations": {
+    "carrotblinkblink": {
+      "left": "anim/carrotblinkblink-left.anim",
+      "right": "anim/carrotblinkblink-right.anim"
+    },
+    "carrotchompsp": {
+      "left": "anim/carrotchompsp-left.anim",
+      "right": "anim/carrotchompsp-right.anim"
+    },
+    "carrottop-banner-raise": {
+      "left": "anim/carrottop-banner-raise-left.anim",
+      "right": "anim/carrottop-banner-raise-right.anim"
+    },
+    "carrottop-idle": {
+      "left": "anim/carrottop-idle-left.anim",
+      "right": "anim/carrottop-idle-right.anim"
+    },
+    "carrottop-idle-2": {
+      "left": "anim/carrottop-idle-2-left.anim",
+      "right": "anim/carrottop-idle-2-right.anim"
+    },
+    "carrottop-idle-3": {
+      "left": "anim/carrottop-idle-3-left.anim",
+      "right": "anim/carrottop-idle-3-right.anim"
+    },
+    "carrottop-nuzzle": {
+      "left": "anim/carrottop-nuzzle-left.anim",
+      "right": "anim/carrottop-nuzzle-right.anim"
+    },
+    "carrottop-trotright": {
+      "left": "anim/carrottop-trotright-left.anim",
+      "right": "anim/carrottop-trotright-right.anim"
+    },
+    "carrottop-trotright-2": {
+      "left": "anim/carrottop-trotright-2-left.anim",
+      "right": "anim/carrottop-trotright-2-right.anim"
+    },
+    "celest-banner": {
+      "left": "anim/celest-banner.anim",
+      "right": "anim/celest-banner.anim"
+    },
+    "spawningcarrot": {
+      "left": "anim/spawningcarrot-left.anim",
+      "right": "anim/spawningcarrot-right.anim"
+    },
+    "tv1": {
+      "left": "anim/tv1-left.anim",
+      "right": "anim/tv1-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "carrottop-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "carrottop-trotright",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 12000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "carrotblinkblink",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 4000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "watch tv",
+      "linkedBehavior": "chompy",
+      "movement": "MouseOver",
+      "name": "watch tv",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "carrotchompsp",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 4500,
+        "min": 4500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "chompy",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "chompy",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "carrottop-trotright",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 12000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "planting carrots",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "planting carrots",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "carrottop-idle-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "banner start",
+      "linkedBehavior": "banner raise",
+      "movement": "None",
+      "name": "banner start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "carrottop-banner-raise",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "banner raise",
+      "linkedBehavior": "banner fit",
+      "movement": "None",
+      "name": "banner raise",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "carrottop-idle-3",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 8000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "banner fit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "banner fit",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "fit",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "carrottop-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "walk",
+        "offsetX": 46,
+        "offsetY": 1,
+        "stoppedBehavior": "idle",
+        "target": "Written Script"
+      },
+      "group": 0,
+      "id": "nuzzle start",
+      "linkedBehavior": "nuzzle",
+      "movement": "All",
+      "name": "nuzzle start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "carrottop-nuzzle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "nuzzle",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "nuzzle",
+        "target": "Written Script"
+      },
+      "group": 0,
+      "id": "nuzzle",
+      "linkedBehavior": "follow_WS",
+      "movement": "None",
+      "name": "nuzzle",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "carrottop-trotright-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "walk",
+        "offsetX": -16,
+        "offsetY": 9,
+        "stoppedBehavior": "idle",
+        "target": "Written Script"
+      },
+      "group": 0,
+      "id": "follow_WS",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_WS",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "tv1",
+      "behavior": "watch tv",
+      "centering": {
+        "left": "Top_Center",
+        "right": "Top_Center"
+      },
+      "durationMs": 4050,
+      "follow": false,
+      "id": "tv",
+      "name": "tv",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "tv1",
+      "behavior": "chompy",
+      "centering": {
+        "left": "Top_Center",
+        "right": "Top_Center"
+      },
+      "durationMs": 4550,
+      "follow": false,
+      "id": "nomtv",
+      "name": "nomtv",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "spawningcarrot",
+      "behavior": "planting carrots",
+      "centering": {
+        "left": "Bottom_Center",
+        "right": "Bottom_Center"
+      },
+      "durationMs": 3000,
+      "follow": false,
+      "id": "Summoning Carrotz",
+      "name": "Summoning Carrotz",
+      "placement": {
+        "left": "Bottom_Right",
+        "right": "Bottom_Left"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 500
+    },
+    {
+      "animation": "celest-banner",
+      "behavior": "banner raise",
+      "centering": {
+        "left": "Bottom_Right",
+        "right": "Bottom_Left"
+      },
+      "durationMs": 15000,
+      "follow": false,
+      "id": "banner",
+      "name": "banner",
+      "placement": {
+        "left": "Bottom_Left",
+        "right": "Bottom_Right"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "carrot-top",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "banner start"
+      ],
+      "chance": 0.25,
+      "id": "banner",
+      "name": "banner",
+      "proximityPx": 300,
+      "reactivationDelayMs": 120000,
+      "targets": [
+        "twilight-sparkle"
+      ]
+    }
+  ],
+  "name": "Carrot Top",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

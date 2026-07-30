@@ -1,0 +1,545 @@
+{
+  "animations": {
+    "backtrack-surprise": {
+      "left": "anim/backtrack-surprise-left.anim",
+      "right": "anim/backtrack-surprise-right.anim"
+    },
+    "fly-surprise": {
+      "left": "anim/fly-surprise-left.anim",
+      "right": "anim/fly-surprise-right.anim"
+    },
+    "fly-surprise-2": {
+      "left": "anim/fly-surprise-2-left.anim",
+      "right": "anim/fly-surprise-2-right.anim"
+    },
+    "fly2-surprise": {
+      "left": "anim/fly2-surprise-left.anim",
+      "right": "anim/fly2-surprise-right.anim"
+    },
+    "hummingbirdmode-surprise": {
+      "left": "anim/hummingbirdmode-surprise-left.anim",
+      "right": "anim/hummingbirdmode-surprise-right.anim"
+    },
+    "smoke-trail": {
+      "left": "anim/smoke-trail.anim",
+      "right": "anim/smoke-trail.anim"
+    },
+    "stand-surprise": {
+      "left": "anim/stand-surprise-left.anim",
+      "right": "anim/stand-surprise-right.anim"
+    },
+    "surprise-change": {
+      "left": "anim/surprise-change-left.anim",
+      "right": "anim/surprise-change-right.anim"
+    },
+    "surprise-fastfly": {
+      "left": "anim/surprise-fastfly-left.anim",
+      "right": "anim/surprise-fastfly-right.anim"
+    },
+    "surprise-fly": {
+      "left": "anim/surprise-fly-left.anim",
+      "right": "anim/surprise-fly-right.anim"
+    },
+    "surprise-idle": {
+      "left": "anim/surprise-idle-left.anim",
+      "right": "anim/surprise-idle-right.anim"
+    },
+    "surprise-trot": {
+      "left": "anim/surprise-trot-left.anim",
+      "right": "anim/surprise-trot-right.anim"
+    },
+    "tonguedance-surprise": {
+      "left": "anim/tonguedance-surprise-left.anim",
+      "right": "anim/tonguedance-surprise-right.anim"
+    },
+    "trotcycle-surprise": {
+      "left": "anim/trotcycle-surprise-left.anim",
+      "right": "anim/trotcycle-surprise-right.anim"
+    },
+    "trotcycle-surprise-2": {
+      "left": "anim/trotcycle-surprise-2-left.anim",
+      "right": "anim/trotcycle-surprise-2-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    },
+    {
+      "id": 2,
+      "name": "Wonderbolt Uniform"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "stand-surprise",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-surprise",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-surprise-2",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 40000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 50,
+        "offsetY": 50,
+        "stoppedBehavior": null,
+        "target": "Rainbow Dash"
+      },
+      "group": 1,
+      "id": "Stalking_Dash",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "Stalking_Dash",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly2-surprise",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly_upside",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "fly_upside",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fly-surprise",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly_up",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "fly_up",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fly-surprise",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "hummingbirdmode-surprise",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 7000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "hummingbird",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "hummingbird",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "tonguedance-surprise",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 4500,
+        "min": 4500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "Dance_tongue",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Dance_tongue",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "backtrack-surprise",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 10000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "backtrack",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "backtrack",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly-surprise-2",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 8000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "get-dressed",
+      "linkedBehavior": "uniform_stand",
+      "movement": "Horizontal_Only",
+      "name": "get-dressed",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "surprise-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "uniform_stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "uniform_stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "surprise-fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 4000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "uniform_fly",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "uniform_fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "surprise-fly",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "uniform_dash",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "uniform_dash",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "surprise-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "uniform_walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "uniform_walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "surprise-change",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 1500,
+        "min": 1500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "undress",
+      "linkedBehavior": "stand",
+      "movement": "None",
+      "name": "undress",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "surprise-fly",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "uniform_fly",
+        "offsetX": -90,
+        "offsetY": 0,
+        "stoppedBehavior": "uniform_stand",
+        "target": "Spitfire"
+      },
+      "group": 0,
+      "id": "wonderbolts",
+      "linkedBehavior": "wonderbolts_1",
+      "movement": "None",
+      "name": "wonderbolts",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "surprise-fastfly",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "wonderbolts_1",
+        "offsetX": -90,
+        "offsetY": 0,
+        "stoppedBehavior": "wonderbolts_1",
+        "target": "Spitfire"
+      },
+      "group": 2,
+      "id": "wonderbolts_1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "wonderbolts_1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 600.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "smoke-trail",
+      "behavior": "wonderbolts_1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": false,
+      "id": "stormclouds_2",
+      "name": "stormclouds_2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 30
+    }
+  ],
+  "id": "surprise",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "Dance_tongue"
+      ],
+      "chance": 0.1,
+      "id": "DanceDance",
+      "name": "DanceDance",
+      "proximityPx": 300,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "pinkie-pie",
+        "surprise"
+      ]
+    }
+  ],
+  "name": "Surprise",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "mares",
+    "pegasi",
+    "supporting ponies"
+  ]
+}

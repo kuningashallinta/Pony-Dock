@@ -1,0 +1,87 @@
+{
+  "atlas": "horte-cuisine-stand-right.png",
+  "atlasSize": [
+    222,
+    240
+  ],
+  "frames": [
+    {
+      "durationMs": 1500,
+      "rect": [
+        0,
+        0,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        74,
+        0,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        148,
+        0,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        80,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 4500,
+      "rect": [
+        74,
+        80,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        148,
+        80,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        160,
+        74,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        74,
+        160,
+        74,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

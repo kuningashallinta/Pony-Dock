@@ -1,0 +1,159 @@
+{
+  "atlas": "sunshinesmiles-idle-right.png",
+  "atlasSize": [
+    352,
+    336
+  ],
+  "frames": [
+    {
+      "durationMs": 1050,
+      "rect": [
+        0,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        264,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        176,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        264,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 3800,
+      "rect": [
+        88,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        252,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        252,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        252,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 3800,
+      "rect": [
+        264,
+        252,
+        88,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    44,
+    42
+  ],
+  "schemaVersion": 1
+}

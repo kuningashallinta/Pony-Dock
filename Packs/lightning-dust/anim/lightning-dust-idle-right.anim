@@ -1,0 +1,168 @@
+{
+  "atlas": "lightning-dust-idle-right.png",
+  "atlasSize": [
+    430,
+    352
+  ],
+  "frames": [
+    {
+      "durationMs": 900,
+      "rect": [
+        0,
+        0,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        86,
+        0,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        172,
+        0,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        258,
+        0,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        344,
+        0,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        88,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        86,
+        88,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        172,
+        88,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 1500,
+      "rect": [
+        258,
+        88,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        344,
+        88,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        176,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        86,
+        176,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        172,
+        176,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        258,
+        176,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        344,
+        176,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        264,
+        86,
+        88
+      ]
+    },
+    {
+      "durationMs": 1900,
+      "rect": [
+        86,
+        264,
+        86,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    43,
+    50
+  ],
+  "schemaVersion": 1
+}

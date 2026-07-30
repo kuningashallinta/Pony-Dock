@@ -1,0 +1,60 @@
+{
+  "atlas": "fancy-blink-right.png",
+  "atlasSize": [
+    270,
+    208
+  ],
+  "frames": [
+    {
+      "durationMs": 840,
+      "rect": [
+        0,
+        0,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        90,
+        0,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        180,
+        0,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        104,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        90,
+        104,
+        90,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

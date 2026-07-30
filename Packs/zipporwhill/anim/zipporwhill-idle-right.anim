@@ -1,0 +1,150 @@
+{
+  "atlas": "zipporwhill-idle-right.png",
+  "atlasSize": [
+    256,
+    272
+  ],
+  "frames": [
+    {
+      "durationMs": 1300,
+      "rect": [
+        0,
+        0,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        64,
+        0,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        128,
+        0,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        192,
+        0,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        68,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        64,
+        68,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        68,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        192,
+        68,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 2500,
+      "rect": [
+        0,
+        136,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        64,
+        136,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        128,
+        136,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        192,
+        136,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        204,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        64,
+        204,
+        64,
+        68
+      ]
+    },
+    {
+      "durationMs": 2500,
+      "rect": [
+        128,
+        204,
+        64,
+        68
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    32,
+    34
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,141 @@
+{
+  "atlas": "sleep2-pinkie-pie-left.png",
+  "atlasSize": [
+    560,
+    368
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        140,
+        0,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        280,
+        0,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        420,
+        0,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        92,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 10000,
+      "rect": [
+        140,
+        92,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        280,
+        92,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 5050,
+      "rect": [
+        420,
+        92,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        184,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 655350,
+      "rect": [
+        140,
+        184,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        280,
+        184,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 50000,
+      "rect": [
+        420,
+        184,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        276,
+        140,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        140,
+        276,
+        140,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    44
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,100 @@
+{
+  "animations": {
+    "cheese-sandwich": {
+      "left": "anim/cheese-sandwich-left.anim",
+      "right": "anim/cheese-sandwich-right.anim"
+    },
+    "cheese-sandwich-accordion": {
+      "left": "anim/cheese-sandwich-accordion-left.anim",
+      "right": "anim/cheese-sandwich-accordion-right.anim"
+    },
+    "cheese-sandwich-idle": {
+      "left": "anim/cheese-sandwich-idle-left.anim",
+      "right": "anim/cheese-sandwich-idle-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "cheese-sandwich-idle",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 12000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cheese-sandwich",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 12000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cheese-sandwich-accordion",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 4000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "accordion",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "accordion",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Speech 2",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "cheese-sandwich",
+  "interactions": [],
+  "name": "Cheese Sandwich",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "animations": {
+    "cherry-balloon": {
+      "left": "anim/cherry-balloon-left.anim",
+      "right": "anim/cherry-balloon-right.anim"
+    },
+    "cherry-berry-sitting": {
+      "left": "anim/cherry-berry-sitting-left.anim",
+      "right": "anim/cherry-berry-sitting-right.anim"
+    },
+    "cherry-berry-sleeping": {
+      "left": "anim/cherry-berry-sleeping-left.anim",
+      "right": "anim/cherry-berry-sleeping-right.anim"
+    },
+    "cherry-berry-stand": {
+      "left": "anim/cherry-berry-stand-left.anim",
+      "right": "anim/cherry-berry-stand-right.anim"
+    },
+    "cherry-berry-trot": {
+      "left": "anim/cherry-berry-trot-left.anim",
+      "right": "anim/cherry-berry-trot-right.anim"
+    },
+    "cherry-berry-trot-right-blink": {
+      "left": "anim/cherry-berry-trot-right-blink-left.anim",
+      "right": "anim/cherry-berry-trot-right-blink-right.anim"
+    },
+    "cherryberry-pilot": {
+      "left": "anim/cherryberry-pilot-left.anim",
+      "right": "anim/cherryberry-pilot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "cherry-berry-stand",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 19000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cherry-berry-trot-right-blink",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 17000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cherry-berry-trot",
+      "chance": 0.14,
+      "durationMs": {
+        "max": 18000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cherry-berry-sitting",
+      "chance": 0.16,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cherry-berry-sleeping",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 40000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": "sit",
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cherryberry-pilot",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 18000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "pilot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "pilot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cherry-balloon",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 18000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "balloon",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "balloon",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 16.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cherry-balloon",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 18000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "balloon_drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "balloon_drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 16.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "cherry-berry",
+  "interactions": [],
+  "name": "Cherry Berry",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "mares",
+    "earth ponies",
+    "supporting ponies"
+  ]
+}

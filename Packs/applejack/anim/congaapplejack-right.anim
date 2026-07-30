@@ -1,0 +1,96 @@
+{
+  "atlas": "congaapplejack-right.png",
+  "atlasSize": [
+    264,
+    297
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        88,
+        99
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        88,
+        0,
+        88,
+        99
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        176,
+        0,
+        88,
+        99
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        99,
+        88,
+        99
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        88,
+        99,
+        88,
+        99
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        176,
+        99,
+        88,
+        99
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        198,
+        88,
+        99
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        88,
+        198,
+        88,
+        99
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        176,
+        198,
+        88,
+        99
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    42,
+    52
+  ],
+  "schemaVersion": 1
+}

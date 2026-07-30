@@ -1,0 +1,123 @@
+{
+  "atlas": "gala-pinkie-bounce-right.png",
+  "atlasSize": [
+    464,
+    378
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        116,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        116,
+        0,
+        116,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        232,
+        0,
+        116,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        348,
+        0,
+        116,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        126,
+        116,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        116,
+        126,
+        116,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        232,
+        126,
+        116,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        348,
+        126,
+        116,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        252,
+        116,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        116,
+        252,
+        116,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        232,
+        252,
+        116,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        348,
+        252,
+        116,
+        126
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    69,
+    80
+  ],
+  "schemaVersion": 1
+}

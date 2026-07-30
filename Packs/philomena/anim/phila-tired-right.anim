@@ -1,0 +1,87 @@
+{
+  "atlas": "phila-tired-right.png",
+  "atlasSize": [
+    120,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        0,
+        40,
+        84
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        40,
+        0,
+        40,
+        84
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        80,
+        0,
+        40,
+        84
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        84,
+        40,
+        84
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        40,
+        84,
+        40,
+        84
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        80,
+        84,
+        40,
+        84
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        168,
+        40,
+        84
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        40,
+        168,
+        40,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

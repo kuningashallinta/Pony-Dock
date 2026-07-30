@@ -1,0 +1,196 @@
+{
+  "animations": {
+    "makeitstop": {
+      "left": "anim/makeitstop-left.anim",
+      "right": "anim/makeitstop-right.anim"
+    },
+    "makeitstop1": {
+      "left": "anim/makeitstop1-left.anim",
+      "right": "anim/makeitstop1-right.anim"
+    },
+    "spot-blink": {
+      "left": "anim/spot-blink-left.anim",
+      "right": "anim/spot-blink-right.anim"
+    },
+    "spot-threat": {
+      "left": "anim/spot-threat-left.anim",
+      "right": "anim/spot-threat-right.anim"
+    },
+    "spot-walk": {
+      "left": "anim/spot-walk-left.anim",
+      "right": "anim/spot-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "spot-blink",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "spot-walk",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 71.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "spot-walk",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Rover"
+      },
+      "group": 0,
+      "id": "Follow_Rover",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Follow_Rover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 71.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "spot-threat",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "threat",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Rarity"
+      },
+      "group": 0,
+      "id": "threat",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "threat",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "makeitstop",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "cover",
+      "linkedBehavior": "covering",
+      "movement": "None",
+      "name": "cover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "makeitstop1",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 4000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "covering",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "covering",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "spot",
+  "interactions": [],
+  "name": "Spot",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "non-ponies",
+    "stallions",
+    "supporting ponies"
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "animations": {
+    "blank": {
+      "left": "anim/blank.anim",
+      "right": "anim/blank.anim"
+    },
+    "scoff": {
+      "left": "anim/scoff-left.anim",
+      "right": "anim/scoff-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "trot": {
+      "left": "anim/trot-left.anim",
+      "right": "anim/trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "scoff",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 7500,
+        "min": 7500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "scoff",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "scoff",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "blank_flank",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trot",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": "bump",
+        "offsetX": -38,
+        "offsetY": -2,
+        "stoppedBehavior": "bump",
+        "target": "Diamond Tiara"
+      },
+      "group": 0,
+      "id": "bump_left",
+      "linkedBehavior": "bump",
+      "movement": "All",
+      "name": "bump_left",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trot",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": "bump",
+        "offsetX": 38,
+        "offsetY": -2,
+        "stoppedBehavior": "bump",
+        "target": "Diamond Tiara"
+      },
+      "group": 0,
+      "id": "bump_right",
+      "linkedBehavior": "bump",
+      "movement": "All",
+      "name": "bump_right",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "blank",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "bump",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "bump",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "bump",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "silver-spoon",
+  "interactions": [],
+  "name": "Silver Spoon",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "fillies",
+    "earth ponies"
+  ]
+}

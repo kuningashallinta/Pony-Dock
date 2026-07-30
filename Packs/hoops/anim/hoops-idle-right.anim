@@ -1,0 +1,96 @@
+{
+  "atlas": "hoops-idle-right.png",
+  "atlasSize": [
+    288,
+    312
+  ],
+  "frames": [
+    {
+      "durationMs": 2500,
+      "rect": [
+        0,
+        0,
+        96,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        96,
+        0,
+        96,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        192,
+        0,
+        96,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        104,
+        96,
+        104
+      ]
+    },
+    {
+      "durationMs": 3600,
+      "rect": [
+        96,
+        104,
+        96,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        192,
+        104,
+        96,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        208,
+        96,
+        104
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        96,
+        208,
+        96,
+        104
+      ]
+    },
+    {
+      "durationMs": 3600,
+      "rect": [
+        192,
+        208,
+        96,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    48,
+    52
+  ],
+  "schemaVersion": 1
+}

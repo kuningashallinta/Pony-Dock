@@ -1,0 +1,51 @@
+{
+  "atlas": "stare-right.png",
+  "atlasSize": [
+    544,
+    316
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        272,
+        158
+      ]
+    },
+    {
+      "durationMs": 130,
+      "rect": [
+        272,
+        0,
+        272,
+        158
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        158,
+        272,
+        158
+      ]
+    },
+    {
+      "durationMs": 130,
+      "rect": [
+        272,
+        158,
+        272,
+        158
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

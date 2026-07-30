@@ -1,0 +1,159 @@
+{
+  "atlas": "cadance-trot-left.png",
+  "atlasSize": [
+    464,
+    408
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        0,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        0,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        0,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        102,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        102,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        102,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        102,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        204,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        204,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        204,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        204,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        306,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        306,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        306,
+        116,
+        102
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        306,
+        116,
+        102
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    50,
+    58
+  ],
+  "schemaVersion": 1
+}

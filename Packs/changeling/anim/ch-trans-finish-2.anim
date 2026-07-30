@@ -1,0 +1,60 @@
+{
+  "atlas": "ch-trans-finish-2.png",
+  "atlasSize": [
+    204,
+    168
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        68,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        68,
+        0,
+        68,
+        84
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        136,
+        0,
+        68,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        84,
+        68,
+        84
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        68,
+        84,
+        68,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    38,
+    54
+  ],
+  "schemaVersion": 1
+}

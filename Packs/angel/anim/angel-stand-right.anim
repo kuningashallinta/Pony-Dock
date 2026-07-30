@@ -1,0 +1,51 @@
+{
+  "atlas": "angel-stand-right.png",
+  "atlasSize": [
+    54,
+    70
+  ],
+  "frames": [
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        0,
+        27,
+        35
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        27,
+        0,
+        27,
+        35
+      ]
+    },
+    {
+      "durationMs": 1500,
+      "rect": [
+        0,
+        35,
+        27,
+        35
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        27,
+        35,
+        27,
+        35
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

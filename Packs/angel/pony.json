@@ -1,0 +1,131 @@
+{
+  "animations": {
+    "angel-hop": {
+      "left": "anim/angel-hop-left.anim",
+      "right": "anim/angel-hop-right.anim"
+    },
+    "angel-stand": {
+      "left": "anim/angel-stand-left.anim",
+      "right": "anim/angel-stand-right.anim"
+    },
+    "angel-stand-unannoyed": {
+      "left": "anim/angel-stand-unannoyed-left.anim",
+      "right": "anim/angel-stand-unannoyed-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "angel-stand",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "mouseover",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "mouseover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "angel-hop",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hop",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "hop",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "angel-hop",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "follow_fluttershy",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "stand",
+        "target": "Fluttershy"
+      },
+      "group": 0,
+      "id": "follow_fluttershy",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow_fluttershy",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "angel-stand-unannoyed",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "angel",
+  "interactions": [],
+  "name": "Angel",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "pets",
+    "non-ponies"
+  ]
+}

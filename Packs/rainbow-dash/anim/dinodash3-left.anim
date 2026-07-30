@@ -1,0 +1,141 @@
+{
+  "atlas": "dinodash3-left.png",
+  "atlasSize": [
+    512,
+    232
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        128,
+        0,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        256,
+        0,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        384,
+        0,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        58,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        128,
+        58,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        256,
+        58,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        384,
+        58,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        116,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        128,
+        116,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        256,
+        116,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        384,
+        116,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        174,
+        128,
+        58
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        128,
+        174,
+        128,
+        58
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    58,
+    14
+  ],
+  "schemaVersion": 1
+}

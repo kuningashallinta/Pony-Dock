@@ -1,0 +1,222 @@
+{
+  "atlas": "tenderheart-idle2-right.png",
+  "atlasSize": [
+    440,
+    440
+  ],
+  "frames": [
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        0,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        0,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        176,
+        0,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        0,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        352,
+        0,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        88,
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        176,
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 3800,
+      "rect": [
+        264,
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        352,
+        88,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        176,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        176,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        176,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        176,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        352,
+        176,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        264,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 4100,
+      "rect": [
+        88,
+        264,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        264,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        264,
+        264,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        352,
+        264,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        352,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        352,
+        88,
+        88
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        176,
+        352,
+        88,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    46,
+    42
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,122 @@
+{
+  "animations": {
+    "twilightfilly-dance": {
+      "left": "anim/twilightfilly-dance-left.anim",
+      "right": "anim/twilightfilly-dance-right.anim"
+    },
+    "twilightfilly-stand": {
+      "left": "anim/twilightfilly-stand-left.anim",
+      "right": "anim/twilightfilly-stand-right.anim"
+    },
+    "twilightfilly-walk": {
+      "left": "anim/twilightfilly-walk-left.anim",
+      "right": "anim/twilightfilly-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "twilightfilly-stand",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand2",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "twilightfilly-walk",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk2",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "twilightfilly-walk",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "twilightfilly-dance",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "twilight-sparkle-filly",
+  "interactions": [],
+  "name": "Twilight Sparkle",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "fillies",
+    "unicorns"
+  ]
+}

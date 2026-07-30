@@ -1,0 +1,87 @@
+{
+  "atlas": "colton-blink-left.png",
+  "atlasSize": [
+    234,
+    246
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        0,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        156,
+        0,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        82,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 8000,
+      "rect": [
+        78,
+        82,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        156,
+        82,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        164,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        78,
+        164,
+        78,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

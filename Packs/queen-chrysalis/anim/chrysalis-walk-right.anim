@@ -1,0 +1,159 @@
+{
+  "atlas": "chrysalis-walk-right.png",
+  "atlasSize": [
+    376,
+    488
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        94,
+        0,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        0,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        282,
+        0,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        122,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        94,
+        122,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        122,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        282,
+        122,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        244,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        94,
+        244,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        244,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        282,
+        244,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        366,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        94,
+        366,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        188,
+        366,
+        94,
+        122
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        282,
+        366,
+        94,
+        122
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    55,
+    76
+  ],
+  "schemaVersion": 1
+}

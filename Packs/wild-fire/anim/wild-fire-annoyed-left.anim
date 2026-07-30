@@ -1,0 +1,159 @@
+{
+  "atlas": "wild-fire-annoyed-left.png",
+  "atlasSize": [
+    280,
+    416
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        70,
+        0,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        140,
+        0,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        210,
+        0,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        104,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        70,
+        104,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        140,
+        104,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        210,
+        104,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        208,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        70,
+        208,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        140,
+        208,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        210,
+        208,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        312,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        70,
+        312,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        140,
+        312,
+        70,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        210,
+        312,
+        70,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,361 @@
+{
+  "animations": {
+    "flurryheart-flash": {
+      "left": "anim/flurryheart-flash-left.anim",
+      "right": "anim/flurryheart-flash-right.anim"
+    },
+    "flurryheart-fly": {
+      "left": "anim/flurryheart-fly-left.anim",
+      "right": "anim/flurryheart-fly-right.anim"
+    },
+    "flurryheart-happy": {
+      "left": "anim/flurryheart-happy-left.anim",
+      "right": "anim/flurryheart-happy-right.anim"
+    },
+    "flurryheart-idle": {
+      "left": "anim/flurryheart-idle-left.anim",
+      "right": "anim/flurryheart-idle-right.anim"
+    },
+    "transit": {
+      "left": "anim/transit.anim",
+      "right": "anim/transit.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "flurryheart-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 12000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flurryheart-fly",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flurryheart-happy",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flurryheart-fly",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 30000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "fly",
+        "offsetX": -20,
+        "offsetY": -26,
+        "stoppedBehavior": "fly",
+        "target": "Pinkie Pie"
+      },
+      "group": 0,
+      "id": "follow_pinkie",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_pinkie",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flurryheart-fly",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 30000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "fly",
+        "offsetX": -14,
+        "offsetY": -26,
+        "stoppedBehavior": "fly",
+        "target": "Princess Cadance"
+      },
+      "group": 0,
+      "id": "follow_cadance",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_cadance",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flurryheart-fly",
+      "chance": 0.06,
+      "durationMs": {
+        "max": 30000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "fly",
+        "offsetX": -20,
+        "offsetY": -26,
+        "stoppedBehavior": "fly",
+        "target": "Shining Armor"
+      },
+      "group": 0,
+      "id": "follow_shiningarmor",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_shiningarmor",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "transit",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 100,
+        "min": 50
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "teleport",
+      "linkedBehavior": "teleport1",
+      "movement": "All",
+      "name": "teleport",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "transit",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 200,
+        "min": 50
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "teleport1",
+      "linkedBehavior": "teleport2",
+      "movement": "Horizontal_Only",
+      "name": "teleport1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 666.6666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "transit",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 300,
+        "min": 38
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "teleport2",
+      "linkedBehavior": "teleport3",
+      "movement": "Diagonal_Vertical",
+      "name": "teleport2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 666.6666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "transit",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 200,
+        "min": 50
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "teleport3",
+      "linkedBehavior": "teleport_end",
+      "movement": "All",
+      "name": "teleport3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 333.33333333333337,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "transit",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 40,
+        "min": 40
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "teleport_end",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "teleport_end",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "flurryheart-flash",
+      "behavior": "teleport",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 400,
+      "follow": false,
+      "id": "Flash",
+      "name": "Flash",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "flurryheart-flash",
+      "behavior": "teleport_end",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 400,
+      "follow": false,
+      "id": "Flash",
+      "name": "Flash",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "flurry-heart",
+  "interactions": [],
+  "name": "Flurry Heart",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "fillies",
+    "alicorns",
+    "foals"
+  ]
+}

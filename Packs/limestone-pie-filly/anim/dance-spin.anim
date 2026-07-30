@@ -1,0 +1,51 @@
+{
+  "atlas": "dance-spin.png",
+  "atlasSize": [
+    132,
+    140
+  ],
+  "frames": [
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        0,
+        66,
+        70
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        66,
+        0,
+        66,
+        70
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        70,
+        66,
+        70
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        66,
+        70,
+        66,
+        70
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

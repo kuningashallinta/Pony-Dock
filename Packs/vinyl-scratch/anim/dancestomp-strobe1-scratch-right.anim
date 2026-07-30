@@ -1,0 +1,87 @@
+{
+  "atlas": "dancestomp-strobe1-scratch-right.png",
+  "atlasSize": [
+    318,
+    288
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        106,
+        0,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        212,
+        0,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        96,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        106,
+        96,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        212,
+        96,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        192,
+        106,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        106,
+        192,
+        106,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    56,
+    49
+  ],
+  "schemaVersion": 1
+}

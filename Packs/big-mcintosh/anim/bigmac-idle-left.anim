@@ -1,0 +1,150 @@
+{
+  "atlas": "bigmac-idle-left.png",
+  "atlasSize": [
+    360,
+    424
+  ],
+  "frames": [
+    {
+      "durationMs": 1200,
+      "rect": [
+        0,
+        0,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        90,
+        0,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        180,
+        0,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        270,
+        0,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        106,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        90,
+        106,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        180,
+        106,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        270,
+        106,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        212,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        90,
+        212,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        180,
+        212,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        270,
+        212,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        318,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        90,
+        318,
+        90,
+        106
+      ]
+    },
+    {
+      "durationMs": 3300,
+      "rect": [
+        180,
+        318,
+        90,
+        106
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

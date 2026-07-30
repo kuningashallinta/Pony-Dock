@@ -1,0 +1,159 @@
+{
+  "atlas": "trot-left.png",
+  "atlasSize": [
+    360,
+    416
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        90,
+        0,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        180,
+        0,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        270,
+        0,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        104,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        90,
+        104,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        180,
+        104,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        270,
+        104,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        208,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        90,
+        208,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        180,
+        208,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        270,
+        208,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        312,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        90,
+        312,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        180,
+        312,
+        90,
+        104
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        270,
+        312,
+        90,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

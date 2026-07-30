@@ -1,0 +1,159 @@
+{
+  "atlas": "troubleshoes-trot-left.png",
+  "atlasSize": [
+    464,
+    512
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        0,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        0,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        0,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        128,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        128,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        128,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        128,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        256,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        256,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        256,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        256,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        384,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        384,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        384,
+        116,
+        128
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        384,
+        116,
+        128
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    48,
+    64
+  ],
+  "schemaVersion": 1
+}

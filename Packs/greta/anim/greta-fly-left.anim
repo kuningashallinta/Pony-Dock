@@ -1,0 +1,123 @@
+{
+  "atlas": "greta-fly-left.png",
+  "atlasSize": [
+    472,
+    432
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        118,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        118,
+        0,
+        118,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        236,
+        0,
+        118,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        354,
+        0,
+        118,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        144,
+        118,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        118,
+        144,
+        118,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        236,
+        144,
+        118,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        354,
+        144,
+        118,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        288,
+        118,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        118,
+        288,
+        118,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        236,
+        288,
+        118,
+        144
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        354,
+        288,
+        118,
+        144
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    36,
+    84
+  ],
+  "schemaVersion": 1
+}

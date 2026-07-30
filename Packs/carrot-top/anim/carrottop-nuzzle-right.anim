@@ -1,0 +1,96 @@
+{
+  "atlas": "carrottop-nuzzle-right.png",
+  "atlasSize": [
+    288,
+    258
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        96,
+        0,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        192,
+        0,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        86,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 2900,
+      "rect": [
+        96,
+        86,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        192,
+        86,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        172,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        96,
+        172,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        192,
+        172,
+        96,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    44,
+    42
+  ],
+  "schemaVersion": 1
+}

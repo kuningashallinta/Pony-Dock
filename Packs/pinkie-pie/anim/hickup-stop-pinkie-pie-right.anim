@@ -1,0 +1,78 @@
+{
+  "atlas": "hickup-stop-pinkie-pie-right.png",
+  "atlasSize": [
+    384,
+    312
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        128,
+        104
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        128,
+        0,
+        128,
+        104
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        256,
+        0,
+        128,
+        104
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        104,
+        128,
+        104
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        128,
+        104,
+        128,
+        104
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        256,
+        104,
+        128,
+        104
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        208,
+        128,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    80,
+    46
+  ],
+  "schemaVersion": 1
+}

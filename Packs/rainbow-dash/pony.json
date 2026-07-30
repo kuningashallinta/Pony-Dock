@@ -1,0 +1,1027 @@
+{
+  "animations": {
+    "beep": {
+      "left": "anim/beep-left.anim",
+      "right": "anim/beep-right.anim"
+    },
+    "breezie-rainbowdash": {
+      "left": "anim/breezie-rainbowdash-left.anim",
+      "right": "anim/breezie-rainbowdash-right.anim"
+    },
+    "cloud-jump": {
+      "left": "anim/cloud-jump-left.anim",
+      "right": "anim/cloud-jump-right.anim"
+    },
+    "cloud-sleep": {
+      "left": "anim/cloud-sleep-left.anim",
+      "right": "anim/cloud-sleep-right.anim"
+    },
+    "congarainbowdash": {
+      "left": "anim/congarainbowdash-left.anim",
+      "right": "anim/congarainbowdash-right.anim"
+    },
+    "crystallizedrainbow": {
+      "left": "anim/crystallizedrainbow-left.anim",
+      "right": "anim/crystallizedrainbow-right.anim"
+    },
+    "dashing": {
+      "left": "anim/dashing-left.anim",
+      "right": "anim/dashing-right.anim"
+    },
+    "dinodash3": {
+      "left": "anim/dinodash3-left.anim",
+      "right": "anim/dinodash3-right.anim"
+    },
+    "fly-dizzy": {
+      "left": "anim/fly-dizzy-left.anim",
+      "right": "anim/fly-dizzy-right.anim"
+    },
+    "fly-rainbow": {
+      "left": "anim/fly-rainbow-left.anim",
+      "right": "anim/fly-rainbow-right.anim"
+    },
+    "fly-rainbow-2": {
+      "left": "anim/fly-rainbow-2-left.anim",
+      "right": "anim/fly-rainbow-2-right.anim"
+    },
+    "fly-rainbow-3": {
+      "left": "anim/fly-rainbow-3-left.anim",
+      "right": "anim/fly-rainbow-3-right.anim"
+    },
+    "flyzoom-rainbow": {
+      "left": "anim/flyzoom-rainbow-left.anim",
+      "right": "anim/flyzoom-rainbow-right.anim"
+    },
+    "hoverupdown-rainbow": {
+      "left": "anim/hoverupdown-rainbow-left.anim",
+      "right": "anim/hoverupdown-rainbow-right.anim"
+    },
+    "rainboomtest": {
+      "left": "anim/rainboomtest.anim",
+      "right": "anim/rainboomtest.anim"
+    },
+    "rainboomtest-trail": {
+      "left": "anim/rainboomtest-trail-left.anim",
+      "right": "anim/rainboomtest-trail-right.anim"
+    },
+    "rainbow-dash-motivate": {
+      "left": "anim/rainbow-dash-motivate-left.anim",
+      "right": "anim/rainbow-dash-motivate-right.anim"
+    },
+    "rainbow-dash-salute": {
+      "left": "anim/rainbow-dash-salute.anim",
+      "right": "anim/rainbow-dash-salute.anim"
+    },
+    "rd-dragged-right1": {
+      "left": "anim/rd-dragged-right1-left.anim",
+      "right": "anim/rd-dragged-right1-right.anim"
+    },
+    "rd-galla": {
+      "left": "anim/rd-galla-left.anim",
+      "right": "anim/rd-galla-right.anim"
+    },
+    "rd-swim": {
+      "left": "anim/rd-swim-left.anim",
+      "right": "anim/rd-swim-right.anim"
+    },
+    "sparkle": {
+      "left": "anim/sparkle.anim",
+      "right": "anim/sparkle.anim"
+    },
+    "stand-rainbow": {
+      "left": "anim/stand-rainbow-left.anim",
+      "right": "anim/stand-rainbow-right.anim"
+    },
+    "stand-rainbow-2": {
+      "left": "anim/stand-rainbow-2-left.anim",
+      "right": "anim/stand-rainbow-2-right.anim"
+    },
+    "stand-rainbow-3": {
+      "left": "anim/stand-rainbow-3-left.anim",
+      "right": "anim/stand-rainbow-3-right.anim"
+    },
+    "trotcycle-rainbow": {
+      "left": "anim/trotcycle-rainbow-left.anim",
+      "right": "anim/trotcycle-rainbow-right.anim"
+    },
+    "trotcycle-rainbow-wing": {
+      "left": "anim/trotcycle-rainbow-wing-left.anim",
+      "right": "anim/trotcycle-rainbow-wing-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand-rainbow",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flyzoom-rainbow",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "flyzoom",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "flyzoom",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 666.6666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fly-rainbow",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fly-rainbow",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "dash",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "dash",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-rainbow",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-rainbow-wing",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk_wings",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk_wings",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "cloud-jump",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "makerain",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "makerain",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "cloud-sleep",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 30000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "hoverupdown-rainbow",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "hover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand-rainbow-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": "junior speedsters 2",
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 1",
+      "linkedBehavior": "junior speedsters 2",
+      "movement": "None",
+      "name": "junior speedsters 1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "junior speedsters 1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly-rainbow-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": "junior speedsters 3",
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 2",
+      "linkedBehavior": "junior speedsters 3",
+      "movement": "None",
+      "name": "junior speedsters 2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly-rainbow-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "junior speedsters 4",
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 3",
+      "linkedBehavior": "junior speedsters 4",
+      "movement": "None",
+      "name": "junior speedsters 3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly-rainbow-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "junior speedsters 5",
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 4",
+      "linkedBehavior": "junior speedsters 5",
+      "movement": "None",
+      "name": "junior speedsters 4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly-rainbow-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "junior speedsters 6",
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 5",
+      "linkedBehavior": "junior speedsters 6",
+      "movement": "None",
+      "name": "junior speedsters 5",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-rainbow-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "junior speedsters 7",
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 6",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "junior speedsters 6",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly-rainbow-3",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 13000,
+        "min": 13000
+      },
+      "endSpeech": "theme 1",
+      "follow": null,
+      "group": 0,
+      "id": "theme 1",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "theme 1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rd-galla",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Galla_Dress",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Galla_Dress",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "dashing",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "dash_ground",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "dash_ground",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "dinodash3",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 5000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "dinodash",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "dinodash",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rd-dragged-right1",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2400,
+        "min": 0
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "drag",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand-rainbow-3",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": "wut",
+      "follow": null,
+      "group": 0,
+      "id": "RonboDosh",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "RonboDosh",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "beep",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 7200,
+        "min": 7200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "beep",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "beep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 266.6666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flyzoom-rainbow",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "fly",
+        "offsetX": 60,
+        "offsetY": -40,
+        "stoppedBehavior": "stand",
+        "target": "Pinkie Pie"
+      },
+      "group": 0,
+      "id": "Conga Start",
+      "linkedBehavior": "Conga",
+      "movement": "Diagonal_Horizontal",
+      "name": "Conga Start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 333.33333333333337,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "congarainbowdash",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "Conga",
+        "offsetX": -43,
+        "offsetY": 1,
+        "stoppedBehavior": "stand",
+        "target": "Fluttershy"
+      },
+      "group": 0,
+      "id": "Conga",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "Conga",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 40.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly-dizzy",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "dizzy",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "dizzy",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rainbow-dash-salute",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 2500,
+        "min": 2300
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Salute",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Salute",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rainbow-dash-motivate",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 17000,
+        "min": 17000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "training",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "training",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": "training",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rainbow-dash-motivate",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 20000,
+        "min": 16000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "coaching",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "coaching",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "crystallizedrainbow",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "crystallized",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "crystallized",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "breezie-rainbowdash",
+      "chance": 0.001,
+      "durationMs": {
+        "max": 40000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "breezie",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "breezie",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 8.333333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-rainbow",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 8000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "fly",
+        "offsetX": -40,
+        "offsetY": 50,
+        "stoppedBehavior": "breezie",
+        "target": "Seabreeze"
+      },
+      "group": 0,
+      "id": "breezie_start",
+      "linkedBehavior": "breezie1",
+      "movement": "Horizontal_Only",
+      "name": "breezie_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "breezie-rainbowdash",
+      "chance": 0.005,
+      "durationMs": {
+        "max": 40000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "breezie",
+        "offsetX": -40,
+        "offsetY": 50,
+        "stoppedBehavior": "breezie",
+        "target": "Seabreeze"
+      },
+      "group": 0,
+      "id": "breezie1",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "breezie1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rd-swim",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "swim",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "swim",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [
+    {
+      "animation": "rainboomtest",
+      "behavior": "flyzoom",
+      "centering": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "durationMs": 4000,
+      "follow": false,
+      "id": "rainboom",
+      "name": "rainboom",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "rainboomtest-trail",
+      "behavior": "flyzoom",
+      "centering": {
+        "left": "Center_Right",
+        "right": "Center_Left"
+      },
+      "durationMs": 0,
+      "follow": false,
+      "id": "rainboom trail",
+      "name": "rainboom trail",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "sparkle",
+      "behavior": "crystallized",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "crystalspark",
+      "name": "crystalspark",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "rainbow-dash",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "junior speedsters 1"
+      ],
+      "chance": 0.15,
+      "id": "Junior Speedsters 1",
+      "name": "Junior Speedsters 1",
+      "proximityPx": 150,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "gilda"
+      ]
+    },
+    {
+      "activation": "Any",
+      "behaviors": [
+        "training"
+      ],
+      "chance": 0.15,
+      "id": "training",
+      "name": "training",
+      "proximityPx": 300,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "blossomforth",
+        "cloudchaser",
+        "flitter",
+        "silverspeed",
+        "thunderlane"
+      ]
+    }
+  ],
+  "name": "Rainbow Dash",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "mares",
+    "pegasi"
+  ]
+}

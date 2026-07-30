@@ -1,0 +1,123 @@
+{
+  "atlas": "colton-stand-right.png",
+  "atlasSize": [
+    312,
+    246
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        0,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        156,
+        0,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        234,
+        0,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        82,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        82,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 5040,
+      "rect": [
+        156,
+        82,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        234,
+        82,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        164,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        164,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        156,
+        164,
+        78,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        234,
+        164,
+        78,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,150 @@
+{
+  "atlas": "stand-surprise-right.png",
+  "atlasSize": [
+    384,
+    344
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        96,
+        0,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        192,
+        0,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        288,
+        0,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        86,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 2100,
+      "rect": [
+        96,
+        86,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        86,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        288,
+        86,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        172,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        96,
+        172,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        192,
+        172,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        288,
+        172,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        258,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        96,
+        258,
+        96,
+        86
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        192,
+        258,
+        96,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    49,
+    42
+  ],
+  "schemaVersion": 1
+}

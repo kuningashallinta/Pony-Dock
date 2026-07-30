@@ -1,0 +1,24 @@
+{
+  "atlas": "twilight-galla-left.png",
+  "atlasSize": [
+    104,
+    82
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        104,
+        82
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    48,
+    31
+  ],
+  "schemaVersion": 1
+}

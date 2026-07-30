@@ -1,0 +1,159 @@
+{
+  "atlas": "flurryheart-fly-left.png",
+  "atlasSize": [
+    248,
+    328
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        62,
+        0,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        124,
+        0,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        186,
+        0,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        82,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        62,
+        82,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        124,
+        82,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        186,
+        82,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        164,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        62,
+        164,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        124,
+        164,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        186,
+        164,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        246,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        62,
+        246,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        124,
+        246,
+        62,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        186,
+        246,
+        62,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    26,
+    38
+  ],
+  "schemaVersion": 1
+}

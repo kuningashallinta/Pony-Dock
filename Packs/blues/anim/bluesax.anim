@@ -1,0 +1,96 @@
+{
+  "atlas": "bluesax.png",
+  "atlasSize": [
+    270,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        0,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        180,
+        0,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        84,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        84,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        180,
+        84,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        168,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        168,
+        90,
+        84
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        180,
+        168,
+        90,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    45,
+    40
+  ],
+  "schemaVersion": 1
+}

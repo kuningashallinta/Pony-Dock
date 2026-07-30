@@ -1,0 +1,123 @@
+{
+  "atlas": "spike-floating-left.png",
+  "atlasSize": [
+    224,
+    222
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        56,
+        74
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        56,
+        0,
+        56,
+        74
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        112,
+        0,
+        56,
+        74
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        168,
+        0,
+        56,
+        74
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        74,
+        56,
+        74
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        56,
+        74,
+        56,
+        74
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        112,
+        74,
+        56,
+        74
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        168,
+        74,
+        56,
+        74
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        148,
+        56,
+        74
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        56,
+        148,
+        56,
+        74
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        112,
+        148,
+        56,
+        74
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        168,
+        148,
+        56,
+        74
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    23,
+    44
+  ],
+  "schemaVersion": 1
+}

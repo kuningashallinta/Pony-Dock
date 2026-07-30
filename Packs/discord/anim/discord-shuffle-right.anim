@@ -1,0 +1,105 @@
+{
+  "atlas": "discord-shuffle-right.png",
+  "atlasSize": [
+    760,
+    636
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        190,
+        212
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        190,
+        0,
+        190,
+        212
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        380,
+        0,
+        190,
+        212
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        570,
+        0,
+        190,
+        212
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        212,
+        190,
+        212
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        190,
+        212,
+        190,
+        212
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        380,
+        212,
+        190,
+        212
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        570,
+        212,
+        190,
+        212
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        424,
+        190,
+        212
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        190,
+        424,
+        190,
+        212
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

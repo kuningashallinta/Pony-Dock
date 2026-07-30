@@ -1,0 +1,123 @@
+{
+  "atlas": "scootaloo-gallop-right.png",
+  "atlasSize": [
+    392,
+    192
+  ],
+  "frames": [
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        0,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        98,
+        0,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        196,
+        0,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        294,
+        0,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        64,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        98,
+        64,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        196,
+        64,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        294,
+        64,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        128,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        98,
+        128,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        196,
+        128,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        294,
+        128,
+        98,
+        64
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

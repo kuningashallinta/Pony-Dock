@@ -1,0 +1,42 @@
+{
+  "atlas": "seaswirl-stretch-left.png",
+  "atlasSize": [
+    208,
+    132
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        104,
+        66
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        104,
+        0,
+        104,
+        66
+      ]
+    },
+    {
+      "durationMs": 600,
+      "rect": [
+        0,
+        66,
+        104,
+        66
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    51,
+    26
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,259 @@
+{
+  "animations": {
+    "zipporwhill-fly": {
+      "left": "anim/zipporwhill-fly-left.anim",
+      "right": "anim/zipporwhill-fly-right.anim"
+    },
+    "zipporwhill-idle": {
+      "left": "anim/zipporwhill-idle-left.anim",
+      "right": "anim/zipporwhill-idle-right.anim"
+    },
+    "zipporwhill-trot": {
+      "left": "anim/zipporwhill-trot-left.anim",
+      "right": "anim/zipporwhill-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "zipporwhill-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "zipporwhill-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "zipporwhill-fly",
+      "chance": 0.22,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "zipporwhill-fly",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 20000,
+        "min": 9000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "fly",
+        "offsetX": -17,
+        "offsetY": -35,
+        "stoppedBehavior": "fly",
+        "target": "Zipporwhill's Father"
+      },
+      "group": 0,
+      "id": "follow_dad",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_dad",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "zipporwhill-fly",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 20000,
+        "min": 9000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "fly",
+        "offsetX": -28,
+        "offsetY": -24,
+        "stoppedBehavior": "fly",
+        "target": "Rarity"
+      },
+      "group": 0,
+      "id": "follow_rarity",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_rarity",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "zipporwhill-fly",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 20000,
+        "min": 9000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "fly",
+        "offsetX": -34,
+        "offsetY": -24,
+        "stoppedBehavior": "fly",
+        "target": "Torch Song"
+      },
+      "group": 0,
+      "id": "follow_torchsong",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_torchsong",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "zipporwhill-fly",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 20000,
+        "min": 9000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "fly",
+        "offsetX": -20,
+        "offsetY": -35,
+        "stoppedBehavior": "fly",
+        "target": "Toe-Tapper"
+      },
+      "group": 0,
+      "id": "follow_toetapper",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_toetapper",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "zipporwhill-fly",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 20000,
+        "min": 9000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "fly",
+        "offsetX": -23,
+        "offsetY": -35,
+        "stoppedBehavior": "fly",
+        "target": "Big McIntosh"
+      },
+      "group": 0,
+      "id": "follow_bigmac",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_bigmac",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "zipporwhill",
+  "interactions": [],
+  "name": "Zipporwhill",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "fillies",
+    "supporting ponies",
+    "pegasi"
+  ]
+}

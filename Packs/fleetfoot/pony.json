@@ -1,0 +1,524 @@
+{
+  "animations": {
+    "fleetfoot": {
+      "left": "anim/fleetfoot-left.anim",
+      "right": "anim/fleetfoot-right.anim"
+    },
+    "fleetfoot-embarrassed": {
+      "left": "anim/fleetfoot-embarrassed-left.anim",
+      "right": "anim/fleetfoot-embarrassed-right.anim"
+    },
+    "fleetfoot-fastfly": {
+      "left": "anim/fleetfoot-fastfly-left.anim",
+      "right": "anim/fleetfoot-fastfly-right.anim"
+    },
+    "fleetfoot-fly": {
+      "left": "anim/fleetfoot-fly-left.anim",
+      "right": "anim/fleetfoot-fly-right.anim"
+    },
+    "fleetfoot-glasses": {
+      "left": "anim/fleetfoot-glasses-left.anim",
+      "right": "anim/fleetfoot-glasses-right.anim"
+    },
+    "fleetfoot-heart": {
+      "left": "anim/fleetfoot-heart-left.anim",
+      "right": "anim/fleetfoot-heart-right.anim"
+    },
+    "fleetfoot-idle": {
+      "left": "anim/fleetfoot-idle-left.anim",
+      "right": "anim/fleetfoot-idle-right.anim"
+    },
+    "fleetfoot-love": {
+      "left": "anim/fleetfoot-love-left.anim",
+      "right": "anim/fleetfoot-love-right.anim"
+    },
+    "fleetfoot-wonderbolt-fly": {
+      "left": "anim/fleetfoot-wonderbolt-fly-left.anim",
+      "right": "anim/fleetfoot-wonderbolt-fly-right.anim"
+    },
+    "fleetfoot-wonderbolt-idle": {
+      "left": "anim/fleetfoot-wonderbolt-idle-left.anim",
+      "right": "anim/fleetfoot-wonderbolt-idle-right.anim"
+    },
+    "fleetfoot-wonderbolt-trot": {
+      "left": "anim/fleetfoot-wonderbolt-trot-left.anim",
+      "right": "anim/fleetfoot-wonderbolt-trot-right.anim"
+    },
+    "heart-big": {
+      "left": "anim/heart-big.anim",
+      "right": "anim/heart-big.anim"
+    },
+    "smoke-trail": {
+      "left": "anim/smoke-trail.anim",
+      "right": "anim/smoke-trail.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    },
+    {
+      "id": 2,
+      "name": "Wonderbolt Uniform"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "fleetfoot-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fleetfoot-fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 4000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fleetfoot-fly",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "dash",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "dash",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fleetfoot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fleetfoot-glasses",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 8000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "glasses",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "glasses",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fleetfoot-love",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "bigmac-start",
+        "offsetX": -10,
+        "offsetY": 20,
+        "stoppedBehavior": "bigmac-start",
+        "target": "Big McIntosh"
+      },
+      "group": 1,
+      "id": "bigmac-start",
+      "linkedBehavior": "bigmac-follow",
+      "movement": "None",
+      "name": "bigmac-start",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "BigMac #1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fleetfoot-heart",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 30000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "bigmac-follow",
+        "offsetX": -10,
+        "offsetY": 20,
+        "stoppedBehavior": "bigmac-start",
+        "target": "Big McIntosh"
+      },
+      "group": 1,
+      "id": "bigmac-follow",
+      "linkedBehavior": "bigmac-end",
+      "movement": "Diagonal_Horizontal",
+      "name": "bigmac-follow",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": "BigMac #2",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fleetfoot-embarrassed",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 8000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "bigmac-end",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "bigmac-end",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fleetfoot-glasses",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 8000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "get-dressed",
+      "linkedBehavior": "uniform_stand",
+      "movement": "Horizontal_Only",
+      "name": "get-dressed",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fleetfoot-wonderbolt-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "uniform_stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "uniform_stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fleetfoot-wonderbolt-fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 4000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "uniform_fly",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "uniform_fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fleetfoot-wonderbolt-fly",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "uniform_dash",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "uniform_dash",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fleetfoot-wonderbolt-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "uniform_walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "uniform_walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fleetfoot-wonderbolt-trot",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 8000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "undress",
+      "linkedBehavior": "stand",
+      "movement": "Horizontal_Only",
+      "name": "undress",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fleetfoot-wonderbolt-fly",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "uniform_fly",
+        "offsetX": -41,
+        "offsetY": -32,
+        "stoppedBehavior": "uniform_stand",
+        "target": "Spitfire"
+      },
+      "group": 0,
+      "id": "wonderbolts",
+      "linkedBehavior": "wonderbolts_1",
+      "movement": "None",
+      "name": "wonderbolts",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fleetfoot-fastfly",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "wonderbolts_1",
+        "offsetX": -41,
+        "offsetY": -32,
+        "stoppedBehavior": "wonderbolts_1",
+        "target": "Spitfire"
+      },
+      "group": 2,
+      "id": "wonderbolts_1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "wonderbolts_1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 600.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "heart-big",
+      "behavior": "bigmac-follow",
+      "centering": {
+        "left": "Center_Right",
+        "right": "Center_Left"
+      },
+      "durationMs": 1000,
+      "follow": false,
+      "id": "hearts",
+      "name": "hearts",
+      "placement": {
+        "left": "Top_Center",
+        "right": "Top_Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 500
+    },
+    {
+      "animation": "smoke-trail",
+      "behavior": "wonderbolts_1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 1000,
+      "follow": false,
+      "id": "stormclouds_2",
+      "name": "stormclouds_2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 30
+    }
+  ],
+  "id": "fleetfoot",
+  "interactions": [],
+  "name": "Fleetfoot",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "pegasi"
+  ]
+}

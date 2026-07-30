@@ -1,0 +1,123 @@
+{
+  "atlas": "dashing-left.png",
+  "atlasSize": [
+    432,
+    228
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        108,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        0,
+        108,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        216,
+        0,
+        108,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        324,
+        0,
+        108,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        76,
+        108,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        76,
+        108,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        216,
+        76,
+        108,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        324,
+        76,
+        108,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        152,
+        108,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        152,
+        108,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        216,
+        152,
+        108,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        324,
+        152,
+        108,
+        76
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    34
+  ],
+  "schemaVersion": 1
+}

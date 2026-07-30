@@ -1,0 +1,87 @@
+{
+  "atlas": "hickup-start-pinkie-pie-right.png",
+  "atlasSize": [
+    378,
+    324
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        126,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        126,
+        0,
+        126,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        252,
+        0,
+        126,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        108,
+        126,
+        108
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        126,
+        108,
+        126,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        252,
+        108,
+        126,
+        108
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        216,
+        126,
+        108
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        126,
+        216,
+        126,
+        108
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    80,
+    50
+  ],
+  "schemaVersion": 1
+}

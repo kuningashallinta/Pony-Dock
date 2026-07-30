@@ -1,0 +1,87 @@
+{
+  "atlas": "snails-stand-right.png",
+  "atlasSize": [
+    204,
+    258
+  ],
+  "frames": [
+    {
+      "durationMs": 2200,
+      "rect": [
+        0,
+        0,
+        68,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        68,
+        0,
+        68,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        136,
+        0,
+        68,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        86,
+        68,
+        86
+      ]
+    },
+    {
+      "durationMs": 4500,
+      "rect": [
+        68,
+        86,
+        68,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        136,
+        86,
+        68,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        172,
+        68,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        68,
+        172,
+        68,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

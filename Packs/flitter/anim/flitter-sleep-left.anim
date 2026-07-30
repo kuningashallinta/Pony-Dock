@@ -1,0 +1,33 @@
+{
+  "atlas": "flitter-sleep-left.png",
+  "atlasSize": [
+    132,
+    75
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        66,
+        75
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        66,
+        0,
+        66,
+        75
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

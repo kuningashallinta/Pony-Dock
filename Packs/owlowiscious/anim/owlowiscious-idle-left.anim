@@ -1,0 +1,123 @@
+{
+  "atlas": "owlowiscious-idle-left.png",
+  "atlasSize": [
+    136,
+    114
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        34,
+        38
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        34,
+        0,
+        34,
+        38
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        68,
+        0,
+        34,
+        38
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        102,
+        0,
+        34,
+        38
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        38,
+        34,
+        38
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        34,
+        38,
+        34,
+        38
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        68,
+        38,
+        34,
+        38
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        102,
+        38,
+        34,
+        38
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        76,
+        34,
+        38
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        34,
+        76,
+        34,
+        38
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        68,
+        76,
+        34,
+        38
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        102,
+        76,
+        34,
+        38
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    12,
+    28
+  ],
+  "schemaVersion": 1
+}

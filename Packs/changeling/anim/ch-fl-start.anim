@@ -1,0 +1,60 @@
+{
+  "atlas": "ch-fl-start.png",
+  "atlasSize": [
+    354,
+    200
+  ],
+  "frames": [
+    {
+      "durationMs": 400,
+      "rect": [
+        0,
+        0,
+        118,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        118,
+        0,
+        118,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        236,
+        0,
+        118,
+        100
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        100,
+        118,
+        100
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        118,
+        100,
+        118,
+        100
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    61,
+    68
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,123 @@
+{
+  "atlas": "twilight-gallop-left.png",
+  "atlasSize": [
+    520,
+    222
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        130,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        130,
+        0,
+        130,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        260,
+        0,
+        130,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        390,
+        0,
+        130,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        74,
+        130,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        130,
+        74,
+        130,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        260,
+        74,
+        130,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        390,
+        74,
+        130,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        148,
+        130,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        130,
+        148,
+        130,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        260,
+        148,
+        130,
+        74
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        390,
+        148,
+        130,
+        74
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    59,
+    28
+  ],
+  "schemaVersion": 1
+}

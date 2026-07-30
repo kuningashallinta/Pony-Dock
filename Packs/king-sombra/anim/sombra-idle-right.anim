@@ -1,0 +1,159 @@
+{
+  "atlas": "sombra-idle-right.png",
+  "atlasSize": [
+    456,
+    520
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        114,
+        0,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        228,
+        0,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        342,
+        0,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        130,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        114,
+        130,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        228,
+        130,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        342,
+        130,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        260,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        114,
+        260,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        228,
+        260,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        342,
+        260,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        390,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        114,
+        390,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        228,
+        390,
+        114,
+        130
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        342,
+        390,
+        114,
+        130
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    75,
+    88
+  ],
+  "schemaVersion": 1
+}

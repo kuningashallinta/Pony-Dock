@@ -1,0 +1,96 @@
+{
+  "atlas": "royalguard-idle1-right.png",
+  "atlasSize": [
+    258,
+    270
+  ],
+  "frames": [
+    {
+      "durationMs": 1600,
+      "rect": [
+        0,
+        0,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        0,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        0,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        90,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        90,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        90,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        180,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        86,
+        180,
+        86,
+        90
+      ]
+    },
+    {
+      "durationMs": 7200,
+      "rect": [
+        172,
+        180,
+        86,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

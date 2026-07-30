@@ -1,0 +1,69 @@
+{
+  "atlas": "mane-iac-sleep-right.png",
+  "atlasSize": [
+    594,
+    340
+  ],
+  "frames": [
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        0,
+        198,
+        170
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        198,
+        0,
+        198,
+        170
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        396,
+        0,
+        198,
+        170
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        170,
+        198,
+        170
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        198,
+        170,
+        198,
+        170
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        396,
+        170,
+        198,
+        170
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    98,
+    78
+  ],
+  "schemaVersion": 1
+}

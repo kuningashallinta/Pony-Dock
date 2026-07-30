@@ -1,0 +1,155 @@
+{
+  "animations": {
+    "writtenscript-idle": {
+      "left": "anim/writtenscript-idle-left.anim",
+      "right": "anim/writtenscript-idle-right.anim"
+    },
+    "writtenscript-nuzzle": {
+      "left": "anim/writtenscript-nuzzle-left.anim",
+      "right": "anim/writtenscript-nuzzle-right.anim"
+    },
+    "writtenscript-trot": {
+      "left": "anim/writtenscript-trot-left.anim",
+      "right": "anim/writtenscript-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "writtenscript-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "writtenscript-trot",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walking",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walking",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "writtenscript-trot",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "walking",
+        "offsetX": 46,
+        "offsetY": -1,
+        "stoppedBehavior": "stand",
+        "target": "Carrot Top"
+      },
+      "group": 0,
+      "id": "nuzzle start",
+      "linkedBehavior": "nuzzle",
+      "movement": "Diagonal_Horizontal",
+      "name": "nuzzle start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "writtenscript-nuzzle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "nuzzle",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "nuzzle",
+        "target": "Carrot Top"
+      },
+      "group": 0,
+      "id": "nuzzle",
+      "linkedBehavior": "walking",
+      "movement": "None",
+      "name": "nuzzle",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "written-script",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "nuzzle start"
+      ],
+      "chance": 0.25,
+      "id": "Nuzzling_CT_WS",
+      "name": "Nuzzling_CT_WS",
+      "proximityPx": 200,
+      "reactivationDelayMs": 240000,
+      "targets": [
+        "carrot-top"
+      ]
+    }
+  ],
+  "name": "Written Script",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "unicorns",
+    "supporting ponies"
+  ]
+}

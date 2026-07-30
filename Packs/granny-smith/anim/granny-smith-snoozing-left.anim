@@ -1,0 +1,87 @@
+{
+  "atlas": "granny-smith-snoozing-left.png",
+  "atlasSize": [
+    282,
+    240
+  ],
+  "frames": [
+    {
+      "durationMs": 300,
+      "rect": [
+        0,
+        0,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        94,
+        0,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        188,
+        0,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        80,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        94,
+        80,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        188,
+        80,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        160,
+        94,
+        80
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        94,
+        160,
+        94,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

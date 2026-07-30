@@ -1,0 +1,114 @@
+{
+  "atlas": "breezie-rainbowdash-right.png",
+  "atlasSize": [
+    336,
+    216
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        84,
+        0,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        168,
+        0,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        252,
+        0,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        72,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        84,
+        72,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        168,
+        72,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        252,
+        72,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        144,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        84,
+        144,
+        84,
+        72
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        168,
+        144,
+        84,
+        72
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

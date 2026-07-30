@@ -1,0 +1,114 @@
+{
+  "atlas": "breezie-rarity-left.png",
+  "atlasSize": [
+    344,
+    198
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        86,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        86,
+        0,
+        86,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        172,
+        0,
+        86,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        258,
+        0,
+        86,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        66,
+        86,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        86,
+        66,
+        86,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        172,
+        66,
+        86,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        258,
+        66,
+        86,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        132,
+        86,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        86,
+        132,
+        86,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        172,
+        132,
+        86,
+        66
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,96 @@
+{
+  "atlas": "pear-butter-stand-left.png",
+  "atlasSize": [
+    258,
+    246
+  ],
+  "frames": [
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        0,
+        86,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        0,
+        86,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        172,
+        0,
+        86,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        82,
+        86,
+        82
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        86,
+        82,
+        86,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        172,
+        82,
+        86,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        164,
+        86,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        86,
+        164,
+        86,
+        82
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        172,
+        164,
+        86,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

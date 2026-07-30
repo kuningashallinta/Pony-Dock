@@ -1,0 +1,87 @@
+{
+  "atlas": "spike-idle-right.png",
+  "atlasSize": [
+    102,
+    174
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        34,
+        58
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        34,
+        0,
+        34,
+        58
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        68,
+        0,
+        34,
+        58
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        58,
+        34,
+        58
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        34,
+        58,
+        34,
+        58
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        68,
+        58,
+        34,
+        58
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        116,
+        34,
+        58
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        34,
+        116,
+        34,
+        58
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    16,
+    28
+  ],
+  "schemaVersion": 1
+}

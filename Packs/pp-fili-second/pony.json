@@ -1,0 +1,188 @@
+{
+  "animations": {
+    "fili-second": {
+      "left": "anim/fili-second-left.anim",
+      "right": "anim/fili-second-right.anim"
+    },
+    "fili-second-gallop": {
+      "left": "anim/fili-second-gallop-left.anim",
+      "right": "anim/fili-second-gallop-right.anim"
+    },
+    "fili-second-idle": {
+      "left": "anim/fili-second-idle-left.anim",
+      "right": "anim/fili-second-idle-right.anim"
+    },
+    "fili-speed1": {
+      "left": "anim/fili-speed1-left.anim",
+      "right": "anim/fili-speed1-right.anim"
+    },
+    "fili-speed2": {
+      "left": "anim/fili-speed2-left.anim",
+      "right": "anim/fili-speed2-right.anim"
+    },
+    "fili-speed3": {
+      "left": "anim/fili-speed3-left.anim",
+      "right": "anim/fili-speed3-right.anim"
+    },
+    "fili-speed4": {
+      "left": "anim/fili-speed4-left.anim",
+      "right": "anim/fili-speed4-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "fili-second-idle",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fili-second",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fili-second-gallop",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 3000,
+        "min": 800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "gallop",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "gallop",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 600.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [
+    {
+      "animation": "fili-speed1",
+      "behavior": "gallop",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 350,
+      "follow": false,
+      "id": "Speed1",
+      "name": "Speed1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 40
+    },
+    {
+      "animation": "fili-speed2",
+      "behavior": "gallop",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 350,
+      "follow": false,
+      "id": "Speed2",
+      "name": "Speed2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 40
+    },
+    {
+      "animation": "fili-speed3",
+      "behavior": "gallop",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 350,
+      "follow": false,
+      "id": "Speed3",
+      "name": "Speed3",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 40
+    },
+    {
+      "animation": "fili-speed4",
+      "behavior": "gallop",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 350,
+      "follow": false,
+      "id": "Speed4",
+      "name": "Speed4",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 40
+    }
+  ],
+  "id": "pp-fili-second",
+  "interactions": [],
+  "name": "Fili-Second",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

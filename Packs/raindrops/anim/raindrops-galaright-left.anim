@@ -1,0 +1,24 @@
+{
+  "atlas": "raindrops-galaright-left.png",
+  "atlasSize": [
+    94,
+    80
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        94,
+        80
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    46,
+    38
+  ],
+  "schemaVersion": 1
+}

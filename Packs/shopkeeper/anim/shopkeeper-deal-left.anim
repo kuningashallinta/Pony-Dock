@@ -1,0 +1,186 @@
+{
+  "atlas": "shopkeeper-deal-left.png",
+  "atlasSize": [
+    390,
+    360
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        78,
+        0,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        156,
+        0,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        234,
+        0,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        312,
+        0,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        90,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        78,
+        90,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        156,
+        90,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        234,
+        90,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        312,
+        90,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        180,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        78,
+        180,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        156,
+        180,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        234,
+        180,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        312,
+        180,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        270,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        78,
+        270,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        156,
+        270,
+        78,
+        90
+      ]
+    },
+    {
+      "durationMs": 900,
+      "rect": [
+        234,
+        270,
+        78,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    44,
+    51
+  ],
+  "schemaVersion": 1
+}

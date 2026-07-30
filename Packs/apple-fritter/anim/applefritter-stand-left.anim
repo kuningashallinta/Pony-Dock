@@ -1,0 +1,105 @@
+{
+  "atlas": "applefritter-stand-left.png",
+  "atlasSize": [
+    312,
+    234
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        78,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        0,
+        78,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        156,
+        0,
+        78,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        234,
+        0,
+        78,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        78,
+        78,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        78,
+        78,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        156,
+        78,
+        78,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        234,
+        78,
+        78,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        156,
+        78,
+        78
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        156,
+        78,
+        78
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

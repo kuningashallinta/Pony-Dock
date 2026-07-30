@@ -1,0 +1,247 @@
+{
+  "animations": {
+    "saddle-rager": {
+      "left": "anim/saddle-rager-left.anim",
+      "right": "anim/saddle-rager-right.anim"
+    },
+    "saddle-rager-fly": {
+      "left": "anim/saddle-rager-fly-left.anim",
+      "right": "anim/saddle-rager-fly-right.anim"
+    },
+    "saddle-rager-idle": {
+      "left": "anim/saddle-rager-idle-left.anim",
+      "right": "anim/saddle-rager-idle-right.anim"
+    },
+    "saddle-rager-mad": {
+      "left": "anim/saddle-rager-mad-left.anim",
+      "right": "anim/saddle-rager-mad-right.anim"
+    },
+    "saddle-rager-mad1": {
+      "left": "anim/saddle-rager-mad1-left.anim",
+      "right": "anim/saddle-rager-mad1-right.anim"
+    },
+    "saddle-rager-mad2": {
+      "left": "anim/saddle-rager-mad2-left.anim",
+      "right": "anim/saddle-rager-mad2-right.anim"
+    },
+    "saddle-rager-transform": {
+      "left": "anim/saddle-rager-transform-left.anim",
+      "right": "anim/saddle-rager-transform-right.anim"
+    },
+    "saddle-rager-transform2": {
+      "left": "anim/saddle-rager-transform2-left.anim",
+      "right": "anim/saddle-rager-transform2-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    },
+    {
+      "id": 2,
+      "name": "Angry"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "saddle-rager-idle",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "saddle-rager",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "saddle-rager-fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "saddle-rager-transform",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 3300,
+        "min": 3300
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "transform",
+      "linkedBehavior": "angry roar",
+      "movement": "None",
+      "name": "transform",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Angry 2",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "saddle-rager-mad",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "angry idle",
+      "linkedBehavior": "transform back",
+      "movement": "MouseOver",
+      "name": "angry idle",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "saddle-rager-mad2",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "angry roar",
+      "linkedBehavior": "angry smash",
+      "movement": "None",
+      "name": "angry roar",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Angry 3",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "saddle-rager-mad1",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 7000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "angry smash",
+      "linkedBehavior": "angry idle",
+      "movement": "None",
+      "name": "angry smash",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "Angry 1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "saddle-rager-transform2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 500,
+        "min": 500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "transform back",
+      "linkedBehavior": "stand",
+      "movement": "None",
+      "name": "transform back",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "pp-saddle-rager",
+  "interactions": [],
+  "name": "Saddle Rager",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "mares",
+    "pegasi"
+  ]
+}

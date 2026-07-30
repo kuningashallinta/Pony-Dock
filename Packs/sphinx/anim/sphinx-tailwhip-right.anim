@@ -1,0 +1,105 @@
+{
+  "atlas": "sphinx-tailwhip-right.png",
+  "atlasSize": [
+    1064,
+    540
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        266,
+        180
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        266,
+        0,
+        266,
+        180
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        532,
+        0,
+        266,
+        180
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        798,
+        0,
+        266,
+        180
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        180,
+        266,
+        180
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        266,
+        180,
+        266,
+        180
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        532,
+        180,
+        266,
+        180
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        798,
+        180,
+        266,
+        180
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        360,
+        266,
+        180
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        266,
+        360,
+        266,
+        180
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    187,
+    90
+  ],
+  "schemaVersion": 1
+}

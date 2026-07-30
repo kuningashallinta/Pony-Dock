@@ -1,0 +1,159 @@
+{
+  "atlas": "gala-fluttershy-trot-right-wings-right.png",
+  "atlasSize": [
+    432,
+    352
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        0,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        216,
+        0,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        324,
+        0,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        88,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        88,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        216,
+        88,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        324,
+        88,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        176,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        176,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        216,
+        176,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        324,
+        176,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        264,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        264,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        216,
+        264,
+        108,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        324,
+        264,
+        108,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    57,
+    39
+  ],
+  "schemaVersion": 1
+}

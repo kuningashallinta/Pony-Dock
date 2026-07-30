@@ -1,0 +1,132 @@
+{
+  "atlas": "octavia-stand-left.png",
+  "atlasSize": [
+    368,
+    320
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        92,
+        0,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        184,
+        0,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        276,
+        0,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        80,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        92,
+        80,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        184,
+        80,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        276,
+        80,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        160,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        92,
+        160,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        184,
+        160,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        276,
+        160,
+        92,
+        80
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        240,
+        92,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

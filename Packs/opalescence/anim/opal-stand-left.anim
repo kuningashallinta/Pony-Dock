@@ -1,0 +1,69 @@
+{
+  "atlas": "opal-stand-left.png",
+  "atlasSize": [
+    132,
+    128
+  ],
+  "frames": [
+    {
+      "durationMs": 2500,
+      "rect": [
+        0,
+        0,
+        44,
+        64
+      ]
+    },
+    {
+      "durationMs": 400,
+      "rect": [
+        44,
+        0,
+        44,
+        64
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        88,
+        0,
+        44,
+        64
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        64,
+        44,
+        64
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        44,
+        64,
+        44,
+        64
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        88,
+        64,
+        44,
+        64
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

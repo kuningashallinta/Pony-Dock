@@ -1,0 +1,60 @@
+{
+  "atlas": "filly-pinkie-stand-curly-left.png",
+  "atlasSize": [
+    276,
+    156
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        92,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        0,
+        92,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        0,
+        92,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        78,
+        92,
+        78
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        92,
+        78,
+        92,
+        78
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    43,
+    46
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,249 @@
+{
+  "animations": {
+    "bump": {
+      "left": "anim/bump.anim",
+      "right": "anim/bump.anim"
+    },
+    "bump-2": {
+      "left": "anim/bump-2.anim",
+      "right": "anim/bump-2.anim"
+    },
+    "scoff": {
+      "left": "anim/scoff-left.anim",
+      "right": "anim/scoff-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "trot": {
+      "left": "anim/trot-left.anim",
+      "right": "anim/trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 25000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "scoff",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 7500,
+        "min": 7500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "scoff",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "scoff",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "blankflank",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trot",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 38,
+        "offsetY": 2,
+        "stoppedBehavior": null,
+        "target": "Silver Spoon"
+      },
+      "group": 0,
+      "id": "bump_left",
+      "linkedBehavior": "bump_left-1",
+      "movement": "All",
+      "name": "bump_left",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trot",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -38,
+        "offsetY": 2,
+        "stoppedBehavior": null,
+        "target": "Silver Spoon"
+      },
+      "group": 0,
+      "id": "bump_right",
+      "linkedBehavior": "bump_right-1",
+      "movement": "All",
+      "name": "bump_right",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bump",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "bump_left-1",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "bump_left-1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "bump",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bump-2",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 2500,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "bump_right-1",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "bump_right-1",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "bump",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "diamond-tiara",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "bump_left"
+      ],
+      "chance": 0.3,
+      "id": "bump_bump_left",
+      "name": "bump_bump_left",
+      "proximityPx": 250,
+      "reactivationDelayMs": 120000,
+      "targets": [
+        "silver-spoon"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "bump_right"
+      ],
+      "chance": 0.3,
+      "id": "bump_bump_right",
+      "name": "bump_bump_right",
+      "proximityPx": 250,
+      "reactivationDelayMs": 120000,
+      "targets": [
+        "silver-spoon"
+      ]
+    }
+  ],
+  "name": "Diamond Tiara",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "fillies",
+    "earth ponies"
+  ]
+}

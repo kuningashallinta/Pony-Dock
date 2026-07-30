@@ -1,0 +1,123 @@
+{
+  "atlas": "fili-second-gallop-right.png",
+  "atlasSize": [
+    536,
+    288
+  ],
+  "frames": [
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        0,
+        134,
+        96
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        134,
+        0,
+        134,
+        96
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        268,
+        0,
+        134,
+        96
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        402,
+        0,
+        134,
+        96
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        96,
+        134,
+        96
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        134,
+        96,
+        134,
+        96
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        268,
+        96,
+        134,
+        96
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        402,
+        96,
+        134,
+        96
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        192,
+        134,
+        96
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        134,
+        192,
+        134,
+        96
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        268,
+        192,
+        134,
+        96
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        402,
+        192,
+        134,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,123 @@
+{
+  "atlas": "applebloom-gallop-left.png",
+  "atlasSize": [
+    360,
+    210
+  ],
+  "frames": [
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        0,
+        90,
+        70
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        90,
+        0,
+        90,
+        70
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        180,
+        0,
+        90,
+        70
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        270,
+        0,
+        90,
+        70
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        70,
+        90,
+        70
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        90,
+        70,
+        90,
+        70
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        180,
+        70,
+        90,
+        70
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        270,
+        70,
+        90,
+        70
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        140,
+        90,
+        70
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        90,
+        140,
+        90,
+        70
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        180,
+        140,
+        90,
+        70
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        270,
+        140,
+        90,
+        70
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    45,
+    30
+  ],
+  "schemaVersion": 1
+}

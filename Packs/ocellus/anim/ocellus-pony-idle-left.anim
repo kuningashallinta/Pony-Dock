@@ -1,0 +1,186 @@
+{
+  "atlas": "ocellus-pony-idle-left.png",
+  "atlasSize": [
+    340,
+    256
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        68,
+        0,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        136,
+        0,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        204,
+        0,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        272,
+        0,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        64,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        68,
+        64,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        136,
+        64,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        204,
+        64,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        272,
+        64,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        128,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        68,
+        128,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 3900,
+      "rect": [
+        136,
+        128,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        204,
+        128,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        272,
+        128,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        192,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        68,
+        192,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        136,
+        192,
+        68,
+        64
+      ]
+    },
+    {
+      "durationMs": 3900,
+      "rect": [
+        204,
+        192,
+        68,
+        64
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    34,
+    42
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,1070 @@
+{
+  "animations": {
+    "aj-banjo": {
+      "left": "anim/aj-banjo.anim",
+      "right": "anim/aj-banjo.anim"
+    },
+    "aj-drag": {
+      "left": "anim/aj-drag-left.anim",
+      "right": "anim/aj-drag-right.anim"
+    },
+    "aj-galla": {
+      "left": "anim/aj-galla-left.anim",
+      "right": "anim/aj-galla-right.anim"
+    },
+    "aj-gallop": {
+      "left": "anim/aj-gallop-left.anim",
+      "right": "anim/aj-gallop-right.anim"
+    },
+    "aj-idle": {
+      "left": "anim/aj-idle-left.anim",
+      "right": "anim/aj-idle-right.anim"
+    },
+    "aj-lasso": {
+      "left": "anim/aj-lasso-left.anim",
+      "right": "anim/aj-lasso-right.anim"
+    },
+    "aj-pose": {
+      "left": "anim/aj-pose-left.anim",
+      "right": "anim/aj-pose-right.anim"
+    },
+    "aj-rear": {
+      "left": "anim/aj-rear-left.anim",
+      "right": "anim/aj-rear-right.anim"
+    },
+    "aj-trot": {
+      "left": "anim/aj-trot-left.anim",
+      "right": "anim/aj-trot-right.anim"
+    },
+    "aj-trot-2": {
+      "left": "anim/aj-trot-2.anim",
+      "right": "anim/aj-trot-2.anim"
+    },
+    "apple-drop": {
+      "left": "anim/apple-drop.anim",
+      "right": "anim/apple-drop.anim"
+    },
+    "breezie-applejack": {
+      "left": "anim/breezie-applejack-left.anim",
+      "right": "anim/breezie-applejack-right.anim"
+    },
+    "buck": {
+      "left": "anim/buck.anim",
+      "right": "anim/buck.anim"
+    },
+    "congaapplejack": {
+      "left": "anim/congaapplejack-left.anim",
+      "right": "anim/congaapplejack-right.anim"
+    },
+    "crystal-applejack": {
+      "left": "anim/crystal-applejack-left.anim",
+      "right": "anim/crystal-applejack-right.anim"
+    },
+    "gallop": {
+      "left": "anim/gallop-left.anim",
+      "right": "anim/gallop-right.anim"
+    },
+    "gallop-jump": {
+      "left": "anim/gallop-jump-left.anim",
+      "right": "anim/gallop-jump-right.anim"
+    },
+    "hurdle": {
+      "left": "anim/hurdle-left.anim",
+      "right": "anim/hurdle-right.anim"
+    },
+    "lasso2": {
+      "left": "anim/lasso2-left.anim",
+      "right": "anim/lasso2-right.anim"
+    },
+    "rear": {
+      "left": "anim/rear-left.anim",
+      "right": "anim/rear-right.anim"
+    },
+    "sleep": {
+      "left": "anim/sleep-left.anim",
+      "right": "anim/sleep-right.anim"
+    },
+    "sparkle": {
+      "left": "anim/sparkle.anim",
+      "right": "anim/sparkle.anim"
+    },
+    "stand-aj": {
+      "left": "anim/stand-aj-left.anim",
+      "right": "anim/stand-aj-right.anim"
+    },
+    "stand-aj-2": {
+      "left": "anim/stand-aj-2-left.anim",
+      "right": "anim/stand-aj-2-right.anim"
+    },
+    "tree": {
+      "left": "anim/tree.anim",
+      "right": "anim/tree.anim"
+    },
+    "trotcycle-aj": {
+      "left": "anim/trotcycle-aj-left.anim",
+      "right": "anim/trotcycle-aj-right.anim"
+    },
+    "trotcycle-aj-2": {
+      "left": "anim/trotcycle-aj-2-left.anim",
+      "right": "anim/trotcycle-aj-2-right.anim"
+    },
+    "truck-drive": {
+      "left": "anim/truck-drive-left.anim",
+      "right": "anim/truck-drive-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand-aj",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 10000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-aj",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 5000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "aj-idle",
+      "chance": 0.005,
+      "durationMs": {
+        "max": 10000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand-nnm",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand-nnm",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "aj-trot",
+      "chance": 0.005,
+      "durationMs": {
+        "max": 5000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk-nnm",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk-nnm",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "aj-rear",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 1400,
+        "min": 1200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "giddyup",
+      "linkedBehavior": "gallop",
+      "movement": "None",
+      "name": "giddyup",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": "giddyup_sound",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "aj-gallop",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 6000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "gallop",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "gallop",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 266.6666666666667,
+      "startSpeech": "gallop_sound",
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-aj-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 16000,
+        "min": 16000
+      },
+      "endSpeech": "theme 1",
+      "follow": null,
+      "group": 0,
+      "id": "theme 1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "theme 1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "aj-galla",
+      "chance": 0.0005,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Galla_Dress",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Galla_Dress",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "truck-drive",
+      "chance": 0.0005,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "truck_drive",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "truck_drive",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "truck-drive",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "truck_twilight",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "truck_twilight",
+        "target": "Twilight Sparkle"
+      },
+      "group": 0,
+      "id": "truck_twilight",
+      "linkedBehavior": "truck_twilight2",
+      "movement": "None",
+      "name": "truck_twilight",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "truck-drive",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "truck_twilight",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "truck_twilight",
+        "target": "Twilight Sparkle"
+      },
+      "group": 0,
+      "id": "truck_twilight2",
+      "linkedBehavior": "truck_twilight3",
+      "movement": "None",
+      "name": "truck_twilight2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "truck1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "truck-drive",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "truck_twilight",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "truck_twilight",
+        "target": "Twilight Sparkle"
+      },
+      "group": 0,
+      "id": "truck_twilight3",
+      "linkedBehavior": "truck_twilight4",
+      "movement": "None",
+      "name": "truck_twilight3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "truck2",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "truck-drive",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "truck_twilight",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "truck_twilight",
+        "target": "Twilight Sparkle"
+      },
+      "group": 0,
+      "id": "truck_twilight4",
+      "linkedBehavior": "truck_drive",
+      "movement": "None",
+      "name": "truck_twilight4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "truck3",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "buck",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 2900,
+        "min": 2900
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "tree_buck",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "tree_buck",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "stand-aj-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10240,
+        "min": 10240
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "ApploJock",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "ApploJock",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "aj-pose",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 7000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "pose",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "pose",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "aj-lasso",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 2600,
+        "min": 2600
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Lasso",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Lasso",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "lasso2",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 4400,
+        "min": 4400
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Lasso2",
+      "linkedBehavior": "Lasso",
+      "movement": "None",
+      "name": "Lasso2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gallop",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "gallop_old",
+        "offsetX": -60,
+        "offsetY": -40,
+        "stoppedBehavior": "stand",
+        "target": "Pinkie Pie"
+      },
+      "group": 0,
+      "id": "Conga Start",
+      "linkedBehavior": "Conga",
+      "movement": "All",
+      "name": "Conga Start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 333.33333333333337,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "congaapplejack",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "Conga",
+        "offsetX": -37,
+        "offsetY": -2,
+        "stoppedBehavior": "stand",
+        "target": "Rainbow Dash"
+      },
+      "group": 0,
+      "id": "Conga",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Conga",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 40.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gallop-jump",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 7800,
+        "min": 3900
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Hurdle",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "Hurdle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 233.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "sleep",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "Sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stand-aj-2",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Shopkeeper"
+      },
+      "group": 0,
+      "id": "deal_aj",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_aj",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "aj-rear",
+      "chance": 0.005,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "rear",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "rear",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": "Soundboard #23",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rear",
+      "chance": 0.001,
+      "durationMs": {
+        "max": 1000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "giddyup_old",
+      "linkedBehavior": "gallop_old",
+      "movement": "None",
+      "name": "giddyup_old",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "gallop",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 5000,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "gallop_old",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "gallop_old",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 200.0,
+      "startSpeech": "gallop_sound",
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "crystal-applejack",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 30000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "crystallized",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "crystallized",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "breezie-applejack",
+      "chance": 0.001,
+      "durationMs": {
+        "max": 40000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "breezie",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "breezie",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "aj-trot-2",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 8000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "walk",
+        "offsetX": 40,
+        "offsetY": -50,
+        "stoppedBehavior": "breezie",
+        "target": "Seabreeze"
+      },
+      "group": 0,
+      "id": "breezie_start",
+      "linkedBehavior": "breezie1",
+      "movement": "None",
+      "name": "breezie_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "breezie-applejack",
+      "chance": 0.001,
+      "durationMs": {
+        "max": 40000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "breezie",
+        "offsetX": 40,
+        "offsetY": -50,
+        "stoppedBehavior": "breezie",
+        "target": "Seabreeze"
+      },
+      "group": 0,
+      "id": "breezie1",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "breezie1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "aj-banjo",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 10000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "banjo",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "banjo",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "aj-drag",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 6900,
+        "min": 6900
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [
+    {
+      "animation": "apple-drop",
+      "behavior": "gallop",
+      "centering": {
+        "left": "Bottom_Center",
+        "right": "Bottom_Center"
+      },
+      "durationMs": 3300,
+      "follow": false,
+      "id": "Apple Drop",
+      "name": "Apple Drop",
+      "placement": {
+        "left": "Bottom_Center",
+        "right": "Bottom_Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 800
+    },
+    {
+      "animation": "apple-drop",
+      "behavior": "gallop_old",
+      "centering": {
+        "left": "Bottom_Center",
+        "right": "Bottom_Center"
+      },
+      "durationMs": 3300,
+      "follow": false,
+      "id": "Apple Drop1",
+      "name": "Apple Drop1",
+      "placement": {
+        "left": "Bottom_Center",
+        "right": "Bottom_Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 800
+    },
+    {
+      "animation": "tree",
+      "behavior": "tree_buck",
+      "centering": {
+        "left": "Bottom_Right",
+        "right": "Bottom_Right"
+      },
+      "durationMs": 8960,
+      "follow": false,
+      "id": "tree_buck",
+      "name": "tree_buck",
+      "placement": {
+        "left": "Bottom_Right",
+        "right": "Bottom_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "hurdle",
+      "behavior": "Hurdle",
+      "centering": {
+        "left": "Top_Right",
+        "right": "Top_Left"
+      },
+      "durationMs": 600,
+      "follow": false,
+      "id": "Hurdle",
+      "name": "Hurdle",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 1320
+    },
+    {
+      "animation": "sparkle",
+      "behavior": "crystallized",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "crystalspark",
+      "name": "crystalspark",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "applejack",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "truck_twilight"
+      ],
+      "chance": 0.05,
+      "id": "AJ Truck",
+      "name": "AJ Truck",
+      "proximityPx": 300,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "twilight-sparkle"
+      ]
+    }
+  ],
+  "name": "Applejack",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

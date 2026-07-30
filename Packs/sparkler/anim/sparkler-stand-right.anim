@@ -1,0 +1,60 @@
+{
+  "atlas": "sparkler-stand-right.png",
+  "atlasSize": [
+    276,
+    168
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        92,
+        0,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        184,
+        0,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        84,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        92,
+        84,
+        92,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    46,
+    42
+  ],
+  "schemaVersion": 1
+}

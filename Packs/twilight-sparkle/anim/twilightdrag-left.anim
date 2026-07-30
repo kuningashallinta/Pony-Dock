@@ -1,0 +1,33 @@
+{
+  "atlas": "twilightdrag-left.png",
+  "atlasSize": [
+    124,
+    134
+  ],
+  "frames": [
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        0,
+        62,
+        134
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        62,
+        0,
+        62,
+        134
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    32,
+    52
+  ],
+  "schemaVersion": 1
+}

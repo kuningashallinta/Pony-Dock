@@ -1,0 +1,139 @@
+{
+  "animations": {
+    "blank": {
+      "left": "anim/blank.anim",
+      "right": "anim/blank.anim"
+    },
+    "owlowiscious-fly": {
+      "left": "anim/owlowiscious-fly-left.anim",
+      "right": "anim/owlowiscious-fly-right.anim"
+    },
+    "owlowiscious-idle": {
+      "left": "anim/owlowiscious-idle-left.anim",
+      "right": "anim/owlowiscious-idle-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "owlowiscious-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "owlowiscious-fly",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 30000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "owlowiscious-fly",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Twilight Sparkle"
+      },
+      "group": 0,
+      "id": "ride-start",
+      "linkedBehavior": "ride",
+      "movement": "All",
+      "name": "ride-start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "blank",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 30000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "ride",
+        "offsetX": -10,
+        "offsetY": -20,
+        "stoppedBehavior": "ride",
+        "target": "Twilight Sparkle"
+      },
+      "group": 0,
+      "id": "ride",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "ride",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "owlowiscious",
+  "interactions": [],
+  "name": "Owlowiscious",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "pets",
+    "non-ponies"
+  ]
+}

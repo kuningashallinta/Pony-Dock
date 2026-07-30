@@ -1,0 +1,24 @@
+{
+  "atlas": "rover-hurting-right.png",
+  "atlasSize": [
+    112,
+    46
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        112,
+        46
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    31,
+    -2
+  ],
+  "schemaVersion": 1
+}

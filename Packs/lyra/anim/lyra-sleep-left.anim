@@ -1,0 +1,60 @@
+{
+  "atlas": "lyra-sleep-left.png",
+  "atlasSize": [
+    306,
+    176
+  ],
+  "frames": [
+    {
+      "durationMs": 1400,
+      "rect": [
+        0,
+        0,
+        102,
+        88
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        102,
+        0,
+        102,
+        88
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        204,
+        0,
+        102,
+        88
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        88,
+        102,
+        88
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        102,
+        88,
+        102,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

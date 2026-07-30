@@ -1,0 +1,205 @@
+{
+  "animations": {
+    "glitchwarp": {
+      "left": "anim/glitchwarp.anim",
+      "right": "anim/glitchwarp.anim"
+    },
+    "slendermane": {
+      "left": "anim/slendermane-left.anim",
+      "right": "anim/slendermane-right.anim"
+    },
+    "slendermane-glitch": {
+      "left": "anim/slendermane-glitch-left.anim",
+      "right": "anim/slendermane-glitch-right.anim"
+    },
+    "slendermane-glitchin": {
+      "left": "anim/slendermane-glitchin-left.anim",
+      "right": "anim/slendermane-glitchin-right.anim"
+    },
+    "slendermane-glitchout": {
+      "left": "anim/slendermane-glitchout-left.anim",
+      "right": "anim/slendermane-glitchout-right.anim"
+    },
+    "slendermane-idle": {
+      "left": "anim/slendermane-idle-left.anim",
+      "right": "anim/slendermane-idle-right.anim"
+    },
+    "slendermane-mouse": {
+      "left": "anim/slendermane-mouse-left.anim",
+      "right": "anim/slendermane-mouse-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "slendermane-idle",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "slendermane",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 12000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "slendermane-glitch",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 1700,
+        "min": 700
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "glitch",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "glitch",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "slendermane-mouse",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "mouseover",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "mouseover",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "glitchwarp",
+      "chance": 0.015,
+      "durationMs": {
+        "max": 462,
+        "min": 231
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "warp",
+      "linkedBehavior": "glitch-in",
+      "movement": "All",
+      "name": "warp",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 433.33333333333337,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "slendermane-glitchin",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 3000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "glitch-in",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "glitch-in",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "slendermane-glitchout",
+      "behavior": "warp",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 4000,
+      "follow": false,
+      "id": "glitch-out",
+      "name": "glitch-out",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "slendermane",
+  "interactions": [],
+  "name": "Slendermane",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "earth ponies"
+  ]
+}

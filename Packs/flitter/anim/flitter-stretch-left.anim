@@ -1,0 +1,60 @@
+{
+  "atlas": "flitter-stretch-left.png",
+  "atlasSize": [
+    306,
+    144
+  ],
+  "frames": [
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        0,
+        102,
+        72
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        102,
+        0,
+        102,
+        72
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        204,
+        0,
+        102,
+        72
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        72,
+        102,
+        72
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        102,
+        72,
+        102,
+        72
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

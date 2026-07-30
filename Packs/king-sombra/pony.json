@@ -1,0 +1,119 @@
+{
+  "animations": {
+    "black-crystal1": {
+      "left": "anim/black-crystal1.anim",
+      "right": "anim/black-crystal1.anim"
+    },
+    "sombra-idle": {
+      "left": "anim/sombra-idle-left.anim",
+      "right": "anim/sombra-idle-right.anim"
+    },
+    "sombra-trot": {
+      "left": "anim/sombra-trot-left.anim",
+      "right": "anim/sombra-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "sombra-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sombra-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 6000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 86.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sombra-trot",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 4000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "crystals",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "crystals",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 80.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "black-crystal1",
+      "behavior": "crystals",
+      "centering": {
+        "left": "Bottom_Center",
+        "right": "Bottom_Center"
+      },
+      "durationMs": 3000,
+      "follow": false,
+      "id": "Summon crystal",
+      "name": "Summon crystal",
+      "placement": {
+        "left": "Bottom_Right",
+        "right": "Bottom_Left"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 700
+    }
+  ],
+  "id": "king-sombra",
+  "interactions": [],
+  "name": "King Sombra",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "unicorns",
+    "supporting ponies"
+  ]
+}

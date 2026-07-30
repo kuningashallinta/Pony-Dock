@@ -1,0 +1,51 @@
+{
+  "atlas": "rose-stand-right.png",
+  "atlasSize": [
+    196,
+    172
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        98,
+        86
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        98,
+        0,
+        98,
+        86
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        86,
+        98,
+        86
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        98,
+        86,
+        98,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

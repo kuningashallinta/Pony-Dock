@@ -1,0 +1,141 @@
+{
+  "atlas": "tealove-idle-right.png",
+  "atlasSize": [
+    368,
+    336
+  ],
+  "frames": [
+    {
+      "durationMs": 900,
+      "rect": [
+        0,
+        0,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        0,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        0,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        276,
+        0,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        84,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        84,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        184,
+        84,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        276,
+        84,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        168,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        168,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        168,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        276,
+        168,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        252,
+        92,
+        84
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        92,
+        252,
+        92,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    46,
+    42
+  ],
+  "schemaVersion": 1
+}

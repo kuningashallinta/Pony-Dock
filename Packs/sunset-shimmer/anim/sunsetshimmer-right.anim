@@ -1,0 +1,159 @@
+{
+  "atlas": "sunsetshimmer-right.png",
+  "atlasSize": [
+    352,
+    360
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        0,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        0,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        0,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        90,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        90,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        90,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        90,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        180,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        180,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        180,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        180,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        270,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        270,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        270,
+        88,
+        90
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        270,
+        88,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    45,
+    50
+  ],
+  "schemaVersion": 1
+}

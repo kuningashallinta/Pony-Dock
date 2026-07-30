@@ -1,0 +1,421 @@
+{
+  "animations": {
+    "thunderlane-fly": {
+      "left": "anim/thunderlane-fly-left.anim",
+      "right": "anim/thunderlane-fly-right.anim"
+    },
+    "thunderlane-jogging": {
+      "left": "anim/thunderlane-jogging-left.anim",
+      "right": "anim/thunderlane-jogging-right.anim"
+    },
+    "thunderlane-panting": {
+      "left": "anim/thunderlane-panting-left.anim",
+      "right": "anim/thunderlane-panting-right.anim"
+    },
+    "thunderlane-sit": {
+      "left": "anim/thunderlane-sit-left.anim",
+      "right": "anim/thunderlane-sit-right.anim"
+    },
+    "thunderlane-sleep": {
+      "left": "anim/thunderlane-sleep-left.anim",
+      "right": "anim/thunderlane-sleep-right.anim"
+    },
+    "thunderlane-stand": {
+      "left": "anim/thunderlane-stand-left.anim",
+      "right": "anim/thunderlane-stand-right.anim"
+    },
+    "thunderlane-trot": {
+      "left": "anim/thunderlane-trot-left.anim",
+      "right": "anim/thunderlane-trot-right.anim"
+    },
+    "thunderlane-trot-right-blink": {
+      "left": "anim/thunderlane-trot-right-blink-left.anim",
+      "right": "anim/thunderlane-trot-right-blink-right.anim"
+    },
+    "thunderlane-wing": {
+      "left": "anim/thunderlane-wing-left.anim",
+      "right": "anim/thunderlane-wing-right.anim"
+    },
+    "thunderlane-wing-right-blink": {
+      "left": "anim/thunderlane-wing-right-blink-left.anim",
+      "right": "anim/thunderlane-wing-right-blink-right.anim"
+    },
+    "thunderlane-wing-stand": {
+      "left": "anim/thunderlane-wing-stand-left.anim",
+      "right": "anim/thunderlane-wing-stand-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "thunderlane-stand",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 17000,
+        "min": 13000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thunderlane-wing-right-blink",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 20000,
+        "min": 16000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot wing blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot wing blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thunderlane-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thunderlane-wing",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 16000,
+        "min": 13000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot wing",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thunderlane-wing-stand",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 17000,
+        "min": 14000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand wing",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thunderlane-trot-right-blink",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 16000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thunderlane-fly",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thunderlane-sit",
+      "chance": 0.13,
+      "durationMs": {
+        "max": 18000,
+        "min": 13000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "thunderlane-sleep",
+      "chance": 0.08,
+      "durationMs": {
+        "max": 46000,
+        "min": 37000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": "sit",
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thunderlane-fly",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 7000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "hover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "thunderlane-jogging",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 10000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "jogging",
+      "linkedBehavior": "panting",
+      "movement": "Diagonal_Horizontal",
+      "name": "jogging",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "thunderlane-panting",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "panting",
+      "linkedBehavior": "faster pace",
+      "movement": "None",
+      "name": "panting",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "thunderlane-jogging",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 4000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "faster pace",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "faster pace",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "thunderlane-wing-right-blink",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 27000,
+        "min": 16000
+      },
+      "endSpeech": "bye",
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "trot wing blink",
+        "offsetX": -30,
+        "offsetY": 0,
+        "stoppedBehavior": "stand wing",
+        "target": "Rumble"
+      },
+      "group": 0,
+      "id": "follow",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 91.66666666666667,
+      "startSpeech": "bro",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "thunderlane-jogging",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10350,
+        "min": 10350
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "training",
+      "linkedBehavior": "panting",
+      "movement": "Horizontal_Only",
+      "name": "training",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "thunderlane",
+  "interactions": [],
+  "name": "Thunderlane",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "pegasi"
+  ]
+}

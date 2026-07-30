@@ -1,0 +1,183 @@
+{
+  "animations": {
+    "grannysmith-idle": {
+      "left": "anim/grannysmith-idle-left.anim",
+      "right": "anim/grannysmith-idle-right.anim"
+    },
+    "grannysmith-idle2": {
+      "left": "anim/grannysmith-idle2-left.anim",
+      "right": "anim/grannysmith-idle2-right.anim"
+    },
+    "grannysmith-trot": {
+      "left": "anim/grannysmith-trot-left.anim",
+      "right": "anim/grannysmith-trot-right.anim"
+    },
+    "grannysmith-trot2": {
+      "left": "anim/grannysmith-trot2-left.anim",
+      "right": "anim/grannysmith-trot2-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Clothes"
+    },
+    {
+      "id": 2,
+      "name": "No clothes"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "grannysmith-idle2",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "grannysmith-trot2",
+      "chance": 0.45,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 86.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "grannysmith-idle2",
+      "chance": 0.06,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "change",
+      "linkedBehavior": "idle2",
+      "movement": "None",
+      "name": "change",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "grannysmith-idle",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "idle2",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "idle2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "grannysmith-trot",
+      "chance": 0.45,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "trot2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 86.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "grannysmith-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 3000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "change2",
+      "linkedBehavior": "idle",
+      "movement": "None",
+      "name": "change2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "granny-smith-teenager",
+  "interactions": [],
+  "name": "Miss Smith",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

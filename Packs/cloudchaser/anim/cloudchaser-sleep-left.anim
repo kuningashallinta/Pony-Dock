@@ -1,0 +1,33 @@
+{
+  "atlas": "cloudchaser-sleep-left.png",
+  "atlasSize": [
+    124,
+    72
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        62,
+        72
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        62,
+        0,
+        62,
+        72
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

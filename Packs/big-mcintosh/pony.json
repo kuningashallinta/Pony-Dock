@@ -1,0 +1,210 @@
+{
+  "animations": {
+    "bigmac-idle": {
+      "left": "anim/bigmac-idle-left.anim",
+      "right": "anim/bigmac-idle-right.anim"
+    },
+    "bigmac-ponytones-idle": {
+      "left": "anim/bigmac-ponytones-idle-left.anim",
+      "right": "anim/bigmac-ponytones-idle-right.anim"
+    },
+    "bigmac-ponytones-trot": {
+      "left": "anim/bigmac-ponytones-trot-left.anim",
+      "right": "anim/bigmac-ponytones-trot-right.anim"
+    },
+    "bigmac-sleep": {
+      "left": "anim/bigmac-sleep-left.anim",
+      "right": "anim/bigmac-sleep-right.anim"
+    },
+    "bigmac-trot": {
+      "left": "anim/bigmac-trot-left.anim",
+      "right": "anim/bigmac-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "normal"
+    },
+    {
+      "id": 2,
+      "name": "ponytones"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "bigmac-idle",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bigmac-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 80.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bigmac-sleep",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 40000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bigmac-ponytones-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "ponytones stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "ponytones stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bigmac-ponytones-trot",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "ponytones trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "ponytones trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 80.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bigmac-idle",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 2000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "get clothes",
+      "linkedBehavior": "ponytones stand",
+      "movement": "None",
+      "name": "get clothes",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bigmac-ponytones-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 2000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "remove clothes",
+      "linkedBehavior": "stand",
+      "movement": "None",
+      "name": "remove clothes",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "big-mcintosh",
+  "interactions": [],
+  "name": "Big McIntosh",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

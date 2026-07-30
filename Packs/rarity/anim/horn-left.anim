@@ -1,0 +1,33 @@
+{
+  "atlas": "horn-left.png",
+  "atlasSize": [
+    196,
+    84
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        98,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        0,
+        98,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    40
+  ],
+  "schemaVersion": 1
+}

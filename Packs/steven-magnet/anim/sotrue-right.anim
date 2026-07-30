@@ -1,0 +1,51 @@
+{
+  "atlas": "sotrue-right.png",
+  "atlasSize": [
+    544,
+    320
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        272,
+        160
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        272,
+        0,
+        272,
+        160
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        160,
+        272,
+        160
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        272,
+        160,
+        272,
+        160
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    136,
+    78
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,96 @@
+{
+  "atlas": "breakdown-right.png",
+  "atlasSize": [
+    288,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        96,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        96,
+        0,
+        96,
+        84
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        192,
+        0,
+        96,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        84,
+        96,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        96,
+        84,
+        96,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        192,
+        84,
+        96,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        168,
+        96,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        96,
+        168,
+        96,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        192,
+        168,
+        96,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    48,
+    38
+  ],
+  "schemaVersion": 1
+}

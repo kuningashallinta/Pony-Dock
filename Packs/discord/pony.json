@@ -1,0 +1,166 @@
+{
+  "animations": {
+    "chocolateraincloud": {
+      "left": "anim/chocolateraincloud.anim",
+      "right": "anim/chocolateraincloud.anim"
+    },
+    "discord-puppet": {
+      "left": "anim/discord-puppet.anim",
+      "right": "anim/discord-puppet.anim"
+    },
+    "discord-shuffle": {
+      "left": "anim/discord-shuffle-left.anim",
+      "right": "anim/discord-shuffle-right.anim"
+    },
+    "discord-skate": {
+      "left": "anim/discord-skate-left.anim",
+      "right": "anim/discord-skate-right.anim"
+    },
+    "discord-walk": {
+      "left": "anim/discord-walk-left.anim",
+      "right": "anim/discord-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "discord-shuffle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "discord-walk",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "discord-skate",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "skate",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "skate",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "discord-puppet",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 7500,
+        "min": 7500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Discorded",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Discorded",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": "puppet",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "chocolateraincloud",
+      "behavior": "stand",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": false,
+      "id": "raincloud",
+      "name": "raincloud",
+      "placement": {
+        "left": "Top_Right",
+        "right": "Top_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 200000
+    }
+  ],
+  "id": "discord",
+  "interactions": [
+    {
+      "activation": "Any",
+      "behaviors": [
+        "Discorded"
+      ],
+      "chance": 0.05,
+      "id": "Discorded",
+      "name": "Discorded",
+      "proximityPx": 160,
+      "reactivationDelayMs": 120000,
+      "targets": [
+        "twilight-sparkle"
+      ]
+    }
+  ],
+  "name": "Discord",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "non-ponies",
+    "supporting ponies",
+    "stallions"
+  ]
+}

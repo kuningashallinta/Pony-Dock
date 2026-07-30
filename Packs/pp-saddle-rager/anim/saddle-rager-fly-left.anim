@@ -1,0 +1,159 @@
+{
+  "atlas": "saddle-rager-fly-left.png",
+  "atlasSize": [
+    408,
+    392
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        102,
+        0,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        204,
+        0,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        306,
+        0,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        98,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        102,
+        98,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        204,
+        98,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        306,
+        98,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        196,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        102,
+        196,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        204,
+        196,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        306,
+        196,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        294,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        102,
+        294,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        204,
+        294,
+        102,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        306,
+        294,
+        102,
+        98
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

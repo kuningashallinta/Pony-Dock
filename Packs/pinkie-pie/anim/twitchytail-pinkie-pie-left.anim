@@ -1,0 +1,96 @@
+{
+  "atlas": "twitchytail-pinkie-pie-left.png",
+  "atlasSize": [
+    330,
+    264
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        110,
+        0,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        220,
+        0,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        88,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        110,
+        88,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        220,
+        88,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        176,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        110,
+        176,
+        110,
+        88
+      ]
+    },
+    {
+      "durationMs": 160,
+      "rect": [
+        220,
+        176,
+        110,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    42,
+    44
+  ],
+  "schemaVersion": 1
+}

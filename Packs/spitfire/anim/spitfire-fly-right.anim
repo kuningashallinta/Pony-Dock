@@ -1,0 +1,159 @@
+{
+  "atlas": "spitfire-fly-right.png",
+  "atlasSize": [
+    312,
+    392
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        0,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        156,
+        0,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        234,
+        0,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        98,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        98,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        156,
+        98,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        234,
+        98,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        196,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        196,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        156,
+        196,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        234,
+        196,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        294,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        294,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        156,
+        294,
+        78,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        234,
+        294,
+        78,
+        98
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    39,
+    48
+  ],
+  "schemaVersion": 1
+}

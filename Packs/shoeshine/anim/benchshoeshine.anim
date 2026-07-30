@@ -1,0 +1,51 @@
+{
+  "atlas": "benchshoeshine.png",
+  "atlasSize": [
+    260,
+    196
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        130,
+        98
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        130,
+        0,
+        130,
+        98
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        98,
+        130,
+        98
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        130,
+        98,
+        130,
+        98
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    64,
+    52
+  ],
+  "schemaVersion": 1
+}

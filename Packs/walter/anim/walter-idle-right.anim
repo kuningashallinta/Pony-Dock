@@ -1,0 +1,114 @@
+{
+  "atlas": "walter-idle-right.png",
+  "atlasSize": [
+    296,
+    258
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        74,
+        0,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        148,
+        0,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        222,
+        0,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        86,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        74,
+        86,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        148,
+        86,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        222,
+        86,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        172,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        74,
+        172,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        148,
+        172,
+        74,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

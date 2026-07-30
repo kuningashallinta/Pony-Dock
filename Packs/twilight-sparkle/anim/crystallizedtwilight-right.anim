@@ -1,0 +1,24 @@
+{
+  "atlas": "crystallizedtwilight-right.png",
+  "atlasSize": [
+    98,
+    78
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        98,
+        78
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    50,
+    32
+  ],
+  "schemaVersion": 1
+}

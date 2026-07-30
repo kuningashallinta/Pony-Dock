@@ -1,0 +1,60 @@
+{
+  "atlas": "windblown-left.png",
+  "atlasSize": [
+    234,
+    176
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        78,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        0,
+        78,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        156,
+        0,
+        78,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        88,
+        78,
+        88
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        78,
+        88,
+        78,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    45,
+    42
+  ],
+  "schemaVersion": 1
+}

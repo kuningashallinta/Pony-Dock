@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "smooze-idle": {
+      "left": "anim/smooze-idle-left.anim",
+      "right": "anim/smooze-idle-right.anim"
+    },
+    "smooze-slide": {
+      "left": "anim/smooze-slide-left.anim",
+      "right": "anim/smooze-slide-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "smooze-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "smooze-slide",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "slither",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "slither",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 53.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "smooze",
+  "interactions": [],
+  "name": "Smooze",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "non-ponies",
+    "supporting ponies"
+  ]
+}

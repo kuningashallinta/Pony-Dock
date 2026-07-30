@@ -1,0 +1,123 @@
+{
+  "atlas": "running-spike-left.png",
+  "atlasSize": [
+    136,
+    180
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        34,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        34,
+        0,
+        34,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        68,
+        0,
+        34,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        102,
+        0,
+        34,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        60,
+        34,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        34,
+        60,
+        34,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        68,
+        60,
+        34,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        102,
+        60,
+        34,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        120,
+        34,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        34,
+        120,
+        34,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        68,
+        120,
+        34,
+        60
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        102,
+        120,
+        34,
+        60
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    17,
+    30
+  ],
+  "schemaVersion": 1
+}

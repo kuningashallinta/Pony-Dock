@@ -1,0 +1,96 @@
+{
+  "atlas": "congatwilight-right.png",
+  "atlasSize": [
+    282,
+    264
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        94,
+        88
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        94,
+        0,
+        94,
+        88
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        188,
+        0,
+        94,
+        88
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        88,
+        94,
+        88
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        94,
+        88,
+        94,
+        88
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        188,
+        88,
+        94,
+        88
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        176,
+        94,
+        88
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        94,
+        176,
+        94,
+        88
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        188,
+        176,
+        94,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    43
+  ],
+  "schemaVersion": 1
+}

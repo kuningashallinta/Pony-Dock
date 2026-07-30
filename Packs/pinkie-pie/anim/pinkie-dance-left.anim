@@ -1,0 +1,159 @@
+{
+  "atlas": "pinkie-dance-left.png",
+  "atlasSize": [
+    368,
+    424
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        0,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        0,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        276,
+        0,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        106,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        106,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        106,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        276,
+        106,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        212,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        212,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        212,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        276,
+        212,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        318,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        318,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        318,
+        92,
+        106
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        276,
+        318,
+        92,
+        106
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    34,
+    64
+  ],
+  "schemaVersion": 1
+}

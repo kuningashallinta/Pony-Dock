@@ -1,0 +1,69 @@
+{
+  "atlas": "rumble-sit-left.png",
+  "atlasSize": [
+    240,
+    144
+  ],
+  "frames": [
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        0,
+        80,
+        72
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        80,
+        0,
+        80,
+        72
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        160,
+        0,
+        80,
+        72
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        72,
+        80,
+        72
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        80,
+        72,
+        80,
+        72
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        160,
+        72,
+        80,
+        72
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

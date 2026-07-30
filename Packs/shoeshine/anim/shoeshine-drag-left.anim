@@ -1,0 +1,132 @@
+{
+  "atlas": "shoeshine-drag-left.png",
+  "atlasSize": [
+    256,
+    384
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        64,
+        0,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        0,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        192,
+        0,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        96,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        64,
+        96,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        96,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        192,
+        96,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        64,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        192,
+        192,
+        64,
+        96
+      ]
+    },
+    {
+      "durationMs": 1500,
+      "rect": [
+        0,
+        288,
+        64,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    18,
+    50
+  ],
+  "schemaVersion": 1
+}

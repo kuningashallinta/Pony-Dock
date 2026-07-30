@@ -1,0 +1,69 @@
+{
+  "atlas": "colgate-brush-left.png",
+  "atlasSize": [
+    594,
+    64
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        198,
+        32
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        198,
+        0,
+        198,
+        32
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        396,
+        0,
+        198,
+        32
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        32,
+        198,
+        32
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        198,
+        32,
+        198,
+        32
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        396,
+        32,
+        198,
+        32
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

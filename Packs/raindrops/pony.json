@@ -1,0 +1,213 @@
+{
+  "animations": {
+    "raindrops-flyright": {
+      "left": "anim/raindrops-flyright-left.anim",
+      "right": "anim/raindrops-flyright-right.anim"
+    },
+    "raindrops-galaright": {
+      "left": "anim/raindrops-galaright-left.anim",
+      "right": "anim/raindrops-galaright-right.anim"
+    },
+    "raindrops-hoverright": {
+      "left": "anim/raindrops-hoverright-left.anim",
+      "right": "anim/raindrops-hoverright-right.anim"
+    },
+    "raindrops-sleepright": {
+      "left": "anim/raindrops-sleepright-left.anim",
+      "right": "anim/raindrops-sleepright-right.anim"
+    },
+    "raindrops-standright": {
+      "left": "anim/raindrops-standright-left.anim",
+      "right": "anim/raindrops-standright-right.anim"
+    },
+    "raindrops-walkrights": {
+      "left": "anim/raindrops-walkrights-left.anim",
+      "right": "anim/raindrops-walkrights-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "raindrops-standright",
+      "chance": 0.6,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "raindrops-hoverright",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "hover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "raindrops-walkrights",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "raindrops-flyright",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "raindrops-walkrights",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 30000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": true,
+        "movingBehavior": null,
+        "offsetX": 84,
+        "offsetY": 17,
+        "stoppedBehavior": null,
+        "target": "Derpy Hooves"
+      },
+      "group": 0,
+      "id": "follow",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": "hello",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "raindrops-sleepright",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "raindrops-galaright",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "gala",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "gala",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "raindrops",
+  "interactions": [],
+  "name": "Raindrops",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "pegasi"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "atlas": "fleetfoot-love-right.png",
+  "atlasSize": [
+    270,
+    184
+  ],
+  "frames": [
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        0,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        0,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        180,
+        0,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        92,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        92,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        180,
+        92,
+        90,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

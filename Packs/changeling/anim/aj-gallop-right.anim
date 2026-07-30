@@ -1,0 +1,123 @@
+{
+  "atlas": "aj-gallop-right.png",
+  "atlasSize": [
+    504,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        126,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        126,
+        0,
+        126,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        252,
+        0,
+        126,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        378,
+        0,
+        126,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        84,
+        126,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        126,
+        84,
+        126,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        252,
+        84,
+        126,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        378,
+        84,
+        126,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        168,
+        126,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        126,
+        168,
+        126,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        252,
+        168,
+        126,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        378,
+        168,
+        126,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    70,
+    54
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,151 @@
+{
+  "animations": {
+    "colgate-brush": {
+      "left": "anim/colgate-brush-left.anim",
+      "right": "anim/colgate-brush-right.anim"
+    },
+    "colgate-sit": {
+      "left": "anim/colgate-sit-left.anim",
+      "right": "anim/colgate-sit-right.anim"
+    },
+    "colgate-stand": {
+      "left": "anim/colgate-stand-left.anim",
+      "right": "anim/colgate-stand-right.anim"
+    },
+    "colgate-stretch": {
+      "left": "anim/colgate-stretch-left.anim",
+      "right": "anim/colgate-stretch-right.anim"
+    },
+    "colgate-walk": {
+      "left": "anim/colgate-walk-left.anim",
+      "right": "anim/colgate-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "colgate-stand",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "colgate-walk",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "colgate-stretch",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "brushie",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "brushie",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "brushie_speak",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "colgate-sit",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 45000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sitting",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sitting",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "colgate-brush",
+      "behavior": "brushie",
+      "centering": {
+        "left": "Bottom_Left",
+        "right": "Bottom_Right"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "brush",
+      "name": "brush",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "minuette",
+  "interactions": [],
+  "name": "Minuette",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

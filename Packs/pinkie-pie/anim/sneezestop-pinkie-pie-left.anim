@@ -1,0 +1,87 @@
+{
+  "atlas": "sneezestop-pinkie-pie-left.png",
+  "atlasSize": [
+    294,
+    270
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        98,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        0,
+        98,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        0,
+        98,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        90,
+        98,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        90,
+        98,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        90,
+        98,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        180,
+        98,
+        90
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        98,
+        180,
+        98,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    49,
+    44
+  ],
+  "schemaVersion": 1
+}

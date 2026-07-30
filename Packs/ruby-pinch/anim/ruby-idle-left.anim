@@ -1,0 +1,51 @@
+{
+  "atlas": "ruby-idle-left.png",
+  "atlasSize": [
+    140,
+    132
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        70,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        70,
+        0,
+        70,
+        66
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        66,
+        70,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        70,
+        66,
+        70,
+        66
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

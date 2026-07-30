@@ -1,0 +1,60 @@
+{
+  "atlas": "fleur-portrait-right.png",
+  "atlasSize": [
+    270,
+    196
+  ],
+  "frames": [
+    {
+      "durationMs": 840,
+      "rect": [
+        0,
+        0,
+        90,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        90,
+        0,
+        90,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        180,
+        0,
+        90,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        98,
+        90,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        90,
+        98,
+        90,
+        98
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

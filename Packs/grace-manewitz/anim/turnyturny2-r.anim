@@ -1,0 +1,87 @@
+{
+  "atlas": "turnyturny2-r.png",
+  "atlasSize": [
+    504,
+    360
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        168,
+        120
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        168,
+        0,
+        168,
+        120
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        336,
+        0,
+        168,
+        120
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        120,
+        168,
+        120
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        168,
+        120,
+        168,
+        120
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        336,
+        120,
+        168,
+        120
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        240,
+        168,
+        120
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        168,
+        240,
+        168,
+        120
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

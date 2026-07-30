@@ -1,0 +1,87 @@
+{
+  "atlas": "rollstart-pinkiepie-left.png",
+  "atlasSize": [
+    246,
+    300
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        82,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        82,
+        0,
+        82,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        164,
+        0,
+        82,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        100,
+        82,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        82,
+        100,
+        82,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        164,
+        100,
+        82,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        200,
+        82,
+        100
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        82,
+        200,
+        82,
+        100
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    40,
+    44
+  ],
+  "schemaVersion": 1
+}

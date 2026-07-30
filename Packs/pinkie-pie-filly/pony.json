@@ -1,0 +1,154 @@
+{
+  "animations": {
+    "filly-pinkie-stand": {
+      "left": "anim/filly-pinkie-stand-left.anim",
+      "right": "anim/filly-pinkie-stand-right.anim"
+    },
+    "filly-pinkie-stand-curly": {
+      "left": "anim/filly-pinkie-stand-curly-left.anim",
+      "right": "anim/filly-pinkie-stand-curly-right.anim"
+    },
+    "filly-pinkie-trot": {
+      "left": "anim/filly-pinkie-trot-left.anim",
+      "right": "anim/filly-pinkie-trot-right.anim"
+    },
+    "filly-pinkie-trotright": {
+      "left": "anim/filly-pinkie-trotright-left.anim",
+      "right": "anim/filly-pinkie-trotright-right.anim"
+    },
+    "pinkie-dancing": {
+      "left": "anim/pinkie-dancing-left.anim",
+      "right": "anim/pinkie-dancing-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "filly-pinkie-stand-curly",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 11000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Stand Curly",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "Stand Curly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "filly-pinkie-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 8000,
+        "min": 800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Trot Curly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Trot Curly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "filly-pinkie-trotright",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 8000,
+        "min": 800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "filly-pinkie-stand",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 11000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pinkie-dancing",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "DJ1",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "DJ1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "pinkie-pie-filly",
+  "interactions": [],
+  "name": "Pinkie Pie",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "fillies",
+    "earth ponies",
+    "main ponies"
+  ]
+}

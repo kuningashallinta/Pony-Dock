@@ -1,0 +1,123 @@
+{
+  "atlas": "sweetiebelle-gallop-right.png",
+  "atlasSize": [
+    376,
+    192
+  ],
+  "frames": [
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        0,
+        94,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        94,
+        0,
+        94,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        188,
+        0,
+        94,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        282,
+        0,
+        94,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        64,
+        94,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        94,
+        64,
+        94,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        188,
+        64,
+        94,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        282,
+        64,
+        94,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        128,
+        94,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        94,
+        128,
+        94,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        188,
+        128,
+        94,
+        64
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        282,
+        128,
+        94,
+        64
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    30
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,51 @@
+{
+  "atlas": "thunderlane-panting-left.png",
+  "atlasSize": [
+    164,
+    172
+  ],
+  "frames": [
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        0,
+        82,
+        86
+      ]
+    },
+    {
+      "durationMs": 800,
+      "rect": [
+        82,
+        0,
+        82,
+        86
+      ]
+    },
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        86,
+        82,
+        86
+      ]
+    },
+    {
+      "durationMs": 800,
+      "rect": [
+        82,
+        86,
+        82,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

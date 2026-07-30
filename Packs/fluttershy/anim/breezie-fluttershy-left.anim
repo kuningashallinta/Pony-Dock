@@ -1,0 +1,114 @@
+{
+  "atlas": "breezie-fluttershy-left.png",
+  "atlasSize": [
+    336,
+    198
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        84,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        84,
+        0,
+        84,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        168,
+        0,
+        84,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        252,
+        0,
+        84,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        66,
+        84,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        84,
+        66,
+        84,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        168,
+        66,
+        84,
+        66
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        252,
+        66,
+        84,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        132,
+        84,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        84,
+        132,
+        84,
+        66
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        168,
+        132,
+        84,
+        66
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

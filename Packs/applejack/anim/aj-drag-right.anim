@@ -1,0 +1,114 @@
+{
+  "atlas": "aj-drag-right.png",
+  "atlasSize": [
+    224,
+    444
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        56,
+        148
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        56,
+        0,
+        56,
+        148
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        112,
+        0,
+        56,
+        148
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        168,
+        0,
+        56,
+        148
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        148,
+        56,
+        148
+      ]
+    },
+    {
+      "durationMs": 3500,
+      "rect": [
+        56,
+        148,
+        56,
+        148
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        112,
+        148,
+        56,
+        148
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        168,
+        148,
+        56,
+        148
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        296,
+        56,
+        148
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        56,
+        296,
+        56,
+        148
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        112,
+        296,
+        56,
+        148
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    32,
+    61
+  ],
+  "schemaVersion": 1
+}

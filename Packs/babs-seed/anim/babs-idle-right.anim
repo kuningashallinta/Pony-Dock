@@ -1,0 +1,87 @@
+{
+  "atlas": "babs-idle-right.png",
+  "atlasSize": [
+    168,
+    210
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        56,
+        70
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        56,
+        0,
+        56,
+        70
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        112,
+        0,
+        56,
+        70
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        70,
+        56,
+        70
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        56,
+        70,
+        56,
+        70
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        112,
+        70,
+        56,
+        70
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        140,
+        56,
+        70
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        56,
+        140,
+        56,
+        70
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

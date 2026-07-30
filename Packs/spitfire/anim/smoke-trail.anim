@@ -1,0 +1,249 @@
+{
+  "atlas": "smoke-trail.png",
+  "atlasSize": [
+    456,
+    320
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        0,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        0,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        0,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        304,
+        0,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        380,
+        0,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        64,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        64,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        64,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        64,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        304,
+        64,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        380,
+        64,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        128,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        128,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        128,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        128,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        304,
+        128,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        380,
+        128,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        192,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        76,
+        192,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        152,
+        192,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        228,
+        192,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        304,
+        192,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        380,
+        192,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        256,
+        76,
+        64
+      ]
+    },
+    {
+      "durationMs": 180,
+      "rect": [
+        76,
+        256,
+        76,
+        64
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

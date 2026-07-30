@@ -1,0 +1,123 @@
+{
+  "atlas": "mister-breezy-blink-right.png",
+  "atlasSize": [
+    280,
+    240
+  ],
+  "frames": [
+    {
+      "durationMs": 1500,
+      "rect": [
+        0,
+        0,
+        70,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        70,
+        0,
+        70,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        140,
+        0,
+        70,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        210,
+        0,
+        70,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        80,
+        70,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        70,
+        80,
+        70,
+        80
+      ]
+    },
+    {
+      "durationMs": 4500,
+      "rect": [
+        140,
+        80,
+        70,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        210,
+        80,
+        70,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        160,
+        70,
+        80
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        70,
+        160,
+        70,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        140,
+        160,
+        70,
+        80
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        210,
+        160,
+        70,
+        80
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

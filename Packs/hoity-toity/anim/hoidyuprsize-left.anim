@@ -1,0 +1,87 @@
+{
+  "atlas": "hoidyuprsize-left.png",
+  "atlasSize": [
+    300,
+    264
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        100,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        100,
+        0,
+        100,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        200,
+        0,
+        100,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        88,
+        100,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        100,
+        88,
+        100,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        200,
+        88,
+        100,
+        88
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        176,
+        100,
+        88
+      ]
+    },
+    {
+      "durationMs": 2100,
+      "rect": [
+        100,
+        176,
+        100,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    36,
+    42
+  ],
+  "schemaVersion": 1
+}

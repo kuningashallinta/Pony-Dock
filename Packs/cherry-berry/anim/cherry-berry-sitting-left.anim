@@ -1,0 +1,96 @@
+{
+  "atlas": "cherry-berry-sitting-left.png",
+  "atlasSize": [
+    231,
+    183
+  ],
+  "frames": [
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        0,
+        77,
+        61
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        77,
+        0,
+        77,
+        61
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        154,
+        0,
+        77,
+        61
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        61,
+        77,
+        61
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        77,
+        61,
+        77,
+        61
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        154,
+        61,
+        77,
+        61
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        122,
+        77,
+        61
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        77,
+        122,
+        77,
+        61
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        154,
+        122,
+        77,
+        61
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    38,
+    18
+  ],
+  "schemaVersion": 1
+}

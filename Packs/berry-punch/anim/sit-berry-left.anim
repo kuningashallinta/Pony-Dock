@@ -1,0 +1,51 @@
+{
+  "atlas": "sit-berry-left.png",
+  "atlasSize": [
+    154,
+    122
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        77,
+        61
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        77,
+        0,
+        77,
+        61
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        61,
+        77,
+        61
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        77,
+        61,
+        77,
+        61
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    34,
+    30
+  ],
+  "schemaVersion": 1
+}

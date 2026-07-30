@@ -1,0 +1,229 @@
+{
+  "animations": {
+    "torchsong-idle": {
+      "left": "anim/torchsong-idle-left.anim",
+      "right": "anim/torchsong-idle-right.anim"
+    },
+    "torchsong-trot": {
+      "left": "anim/torchsong-trot-left.anim",
+      "right": "anim/torchsong-trot-right.anim"
+    },
+    "torchsong1-idle": {
+      "left": "anim/torchsong1-idle-left.anim",
+      "right": "anim/torchsong1-idle-right.anim"
+    },
+    "torchsong1-trot": {
+      "left": "anim/torchsong1-trot-left.anim",
+      "right": "anim/torchsong1-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "regular"
+    },
+    {
+      "id": 2,
+      "name": "clothes"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "torchsong1-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "torchsong1-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "torchsong1-trot",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "torchsong1-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 2000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "get clothes",
+      "linkedBehavior": "stand 1",
+      "movement": "MouseOver",
+      "name": "get clothes",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "torchsong-idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "stand 1",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand 1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "torchsong-trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "fly 1",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "fly 1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "torchsong-trot",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "walk 1",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk 1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "torchsong-idle",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 2000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "remove clothes",
+      "linkedBehavior": "stand",
+      "movement": "MouseOver",
+      "name": "remove clothes",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "torch-song",
+  "interactions": [],
+  "name": "Torch Song",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

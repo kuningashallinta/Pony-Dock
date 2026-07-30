@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "doctorhorse-idle": {
+      "left": "anim/doctorhorse-idle-left.anim",
+      "right": "anim/doctorhorse-idle-right.anim"
+    },
+    "doctorhorse-trot": {
+      "left": "anim/doctorhorse-trot-left.anim",
+      "right": "anim/doctorhorse-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "doctorhorse-idle",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 7520
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "doctorhorse-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 12000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "doctor-horse",
+  "interactions": [],
+  "name": "Doctor Horse",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "unicorns"
+  ]
+}

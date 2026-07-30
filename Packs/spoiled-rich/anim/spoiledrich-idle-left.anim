@@ -1,0 +1,267 @@
+{
+  "atlas": "spoiledrich-idle-left.png",
+  "atlasSize": [
+    444,
+    430
+  ],
+  "frames": [
+    {
+      "durationMs": 1100,
+      "rect": [
+        0,
+        0,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        74,
+        0,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        148,
+        0,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        222,
+        0,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        296,
+        0,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        370,
+        0,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        86,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        74,
+        86,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        148,
+        86,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        222,
+        86,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        296,
+        86,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        370,
+        86,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        172,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 1500,
+      "rect": [
+        74,
+        172,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        148,
+        172,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        222,
+        172,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 2500,
+      "rect": [
+        296,
+        172,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        370,
+        172,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        258,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        74,
+        258,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        148,
+        258,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        222,
+        258,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        296,
+        258,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        370,
+        258,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        344,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        74,
+        344,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        148,
+        344,
+        74,
+        86
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        222,
+        344,
+        74,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

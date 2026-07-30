@@ -1,0 +1,33 @@
+{
+  "atlas": "lemon-hearts-sleep-right.png",
+  "atlasSize": [
+    148,
+    66
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        74,
+        66
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        74,
+        0,
+        74,
+        66
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    39,
+    22
+  ],
+  "schemaVersion": 1
+}

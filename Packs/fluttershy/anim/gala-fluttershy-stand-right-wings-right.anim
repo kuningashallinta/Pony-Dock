@@ -1,0 +1,123 @@
+{
+  "atlas": "gala-fluttershy-stand-right-wings-right.png",
+  "atlasSize": [
+    432,
+    246
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        108,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        108,
+        0,
+        108,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        216,
+        0,
+        108,
+        82
+      ]
+    },
+    {
+      "durationMs": 2300,
+      "rect": [
+        324,
+        0,
+        108,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        82,
+        108,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        108,
+        82,
+        108,
+        82
+      ]
+    },
+    {
+      "durationMs": 400,
+      "rect": [
+        216,
+        82,
+        108,
+        82
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        324,
+        82,
+        108,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        164,
+        108,
+        82
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        108,
+        164,
+        108,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        216,
+        164,
+        108,
+        82
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        324,
+        164,
+        108,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    57,
+    33
+  ],
+  "schemaVersion": 1
+}

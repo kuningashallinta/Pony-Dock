@@ -1,0 +1,195 @@
+{
+  "atlas": "tank-fly-right.png",
+  "atlasSize": [
+    380,
+    304
+  ],
+  "frames": [
+    {
+      "durationMs": 20,
+      "rect": [
+        0,
+        0,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        76,
+        0,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        152,
+        0,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        228,
+        0,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        304,
+        0,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        0,
+        76,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        76,
+        76,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        152,
+        76,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        228,
+        76,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        304,
+        76,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        0,
+        152,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        76,
+        152,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        152,
+        152,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        228,
+        152,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        304,
+        152,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        0,
+        228,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        76,
+        228,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        152,
+        228,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        228,
+        228,
+        76,
+        76
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        304,
+        228,
+        76,
+        76
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,33 @@
+{
+  "atlas": "cloudchaser-stretch-right.png",
+  "atlasSize": [
+    196,
+    64
+  ],
+  "frames": [
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        0,
+        98,
+        64
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        98,
+        0,
+        98,
+        64
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

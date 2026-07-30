@@ -1,0 +1,195 @@
+{
+  "atlas": "mistress-marevelous-idle-right.png",
+  "atlasSize": [
+    440,
+    336
+  ],
+  "frames": [
+    {
+      "durationMs": 900,
+      "rect": [
+        0,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        176,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        264,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        352,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        88,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        176,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        352,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        176,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        264,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        352,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        252,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        88,
+        252,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        176,
+        252,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        252,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        352,
+        252,
+        88,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,267 @@
+{
+  "animations": {
+    "fly": {
+      "left": "anim/fly-left.anim",
+      "right": "anim/fly-right.anim"
+    },
+    "flyfast": {
+      "left": "anim/flyfast-left.anim",
+      "right": "anim/flyfast-right.anim"
+    },
+    "gallop": {
+      "left": "anim/gallop-left.anim",
+      "right": "anim/gallop-right.anim"
+    },
+    "magic": {
+      "left": "anim/magic-left.anim",
+      "right": "anim/magic-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "teleport": {
+      "left": "anim/teleport-left.anim",
+      "right": "anim/teleport-right.anim"
+    },
+    "teleportend": {
+      "left": "anim/teleportend-left.anim",
+      "right": "anim/teleportend-right.anim"
+    },
+    "transit": {
+      "left": "anim/transit.anim",
+      "right": "anim/transit.anim"
+    },
+    "trot": {
+      "left": "anim/trot-left.anim",
+      "right": "anim/trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Idle",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "Idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "gallop",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Gallop",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Gallop",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fly",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Fly 1",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "Fly 1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flyfast",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "flyfast",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "flyfast",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 200.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "magic",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 2440,
+        "min": 2440
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "magic",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "magic",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "teleport",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "teleport_start",
+      "linkedBehavior": "teleport",
+      "movement": "None",
+      "name": "teleport_start",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "transit",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 300,
+        "min": 200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "teleport",
+      "linkedBehavior": "teleport_end",
+      "movement": "All",
+      "name": "teleport",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 666.6666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "teleportend",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1500,
+        "min": 1500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "teleport_end",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "teleport_end",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "mysterious-mare-do-well",
+  "interactions": [],
+  "name": "Mysterious Mare Do Well",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "mares",
+    "supporting ponies",
+    "earth ponies",
+    "pegasi",
+    "unicorns"
+  ]
+}

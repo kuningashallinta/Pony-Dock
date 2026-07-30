@@ -1,0 +1,510 @@
+{
+  "animations": {
+    "nmn-ss-close": {
+      "left": "anim/nmn-ss-close-left.anim",
+      "right": "anim/nmn-ss-close-right.anim"
+    },
+    "nmn-ss-close2": {
+      "left": "anim/nmn-ss-close2-left.anim",
+      "right": "anim/nmn-ss-close2-right.anim"
+    },
+    "nmn-ss-open": {
+      "left": "anim/nmn-ss-open-left.anim",
+      "right": "anim/nmn-ss-open-right.anim"
+    },
+    "nmn-ss-scared": {
+      "left": "anim/nmn-ss-scared-left.anim",
+      "right": "anim/nmn-ss-scared-right.anim"
+    },
+    "nmn-ss-stand": {
+      "left": "anim/nmn-ss-stand-left.anim",
+      "right": "anim/nmn-ss-stand-right.anim"
+    },
+    "nmn-ss-stand2": {
+      "left": "anim/nmn-ss-stand2-left.anim",
+      "right": "anim/nmn-ss-stand2-right.anim"
+    },
+    "nmn-ss-trot": {
+      "left": "anim/nmn-ss-trot-left.anim",
+      "right": "anim/nmn-ss-trot-right.anim"
+    },
+    "seaswirl-horn0": {
+      "left": "anim/seaswirl-horn0-left.anim",
+      "right": "anim/seaswirl-horn0-right.anim"
+    },
+    "seaswirl-horn1": {
+      "left": "anim/seaswirl-horn1-left.anim",
+      "right": "anim/seaswirl-horn1-right.anim"
+    },
+    "seaswirl-horn2": {
+      "left": "anim/seaswirl-horn2-left.anim",
+      "right": "anim/seaswirl-horn2-right.anim"
+    },
+    "seaswirl-sit": {
+      "left": "anim/seaswirl-sit-left.anim",
+      "right": "anim/seaswirl-sit-right.anim"
+    },
+    "seaswirl-stand": {
+      "left": "anim/seaswirl-stand-left.anim",
+      "right": "anim/seaswirl-stand-right.anim"
+    },
+    "seaswirl-stretch": {
+      "left": "anim/seaswirl-stretch-left.anim",
+      "right": "anim/seaswirl-stretch-right.anim"
+    },
+    "seaswirl-trot": {
+      "left": "anim/seaswirl-trot-left.anim",
+      "right": "anim/seaswirl-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Normal"
+    },
+    {
+      "id": 2,
+      "name": "Nightmare_Night"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "seaswirl-stand",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "seaswirl-trot",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "seaswirl-horn0",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 1200,
+        "min": 1200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "horn0",
+      "linkedBehavior": "horn1",
+      "movement": "None",
+      "name": "horn0",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "seaswirl-horn1",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "horn1",
+      "linkedBehavior": "horn2",
+      "movement": "None",
+      "name": "horn1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "seaswirl-horn2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1200,
+        "min": 1200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "horn2",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "horn2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "seaswirl-sit",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 45000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "sitting",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sitting",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "seaswirl-stretch",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 4000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "stretch",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stretch",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "seaswirl-horn0",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1200,
+        "min": 1200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "NMN_on",
+      "linkedBehavior": "NMN_on1",
+      "movement": "None",
+      "name": "NMN_on",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "seaswirl-horn1",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 4000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "NMN_on1",
+      "linkedBehavior": "nmn-stand",
+      "movement": "None",
+      "name": "NMN_on1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "nmn-ss-stand",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "nmn-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "nmn-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "nmn-ss-trot",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "nmn-trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "nmn-trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "nmn-ss-open",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "nmn-open",
+      "linkedBehavior": "nmn-stand2",
+      "movement": "None",
+      "name": "nmn-open",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "nmn-ss-stand2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "nmn-stand2",
+      "linkedBehavior": "nmn-close",
+      "movement": "None",
+      "name": "nmn-stand2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "nmn-ss-close",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "nmn-close",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "nmn-close",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "nmn-ss-open",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "nmn-open2",
+      "linkedBehavior": "nmn-scared",
+      "movement": "None",
+      "name": "nmn-open2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "nmn-ss-scared",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "nmn-scared",
+      "linkedBehavior": "nmn-close2",
+      "movement": "None",
+      "name": "nmn-scared",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "nmn-ss-close2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "nmn-close2",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "nmn-close2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "nmn-ss-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "NMN_off",
+      "linkedBehavior": "stand",
+      "movement": "Diagonal_Horizontal",
+      "name": "NMN_off",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "sea-swirl",
+  "interactions": [],
+  "name": "Sea Swirl",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

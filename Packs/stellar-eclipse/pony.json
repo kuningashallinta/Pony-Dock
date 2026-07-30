@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "stellareclipse-idle": {
+      "left": "anim/stellareclipse-idle-left.anim",
+      "right": "anim/stellareclipse-idle-right.anim"
+    },
+    "stellareclipse-trot": {
+      "left": "anim/stellareclipse-trot-left.anim",
+      "right": "anim/stellareclipse-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stellareclipse-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 17000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "stellareclipse-trot",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "stellar-eclipse",
+  "interactions": [],
+  "name": "Stellar Eclipse",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "pegasi"
+  ]
+}

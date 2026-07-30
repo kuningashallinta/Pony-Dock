@@ -1,0 +1,231 @@
+{
+  "atlas": "chrysalis-flight-left.png",
+  "atlasSize": [
+    480,
+    630
+  ],
+  "frames": [
+    {
+      "durationMs": 20,
+      "rect": [
+        0,
+        0,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        96,
+        0,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        192,
+        0,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        288,
+        0,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        384,
+        0,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        0,
+        126,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        96,
+        126,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        192,
+        126,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        288,
+        126,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        384,
+        126,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        0,
+        252,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        96,
+        252,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        192,
+        252,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        288,
+        252,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        384,
+        252,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        0,
+        378,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        96,
+        378,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        192,
+        378,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        288,
+        378,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        384,
+        378,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        0,
+        504,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        96,
+        504,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        192,
+        504,
+        96,
+        126
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        288,
+        504,
+        96,
+        126
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    38,
+    84
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,159 @@
+{
+  "atlas": "carrottop-trotright-right.png",
+  "atlasSize": [
+    424,
+    504
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        106,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        212,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        318,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        106,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        212,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        318,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        252,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        106,
+        252,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        212,
+        252,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        318,
+        252,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        378,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        106,
+        378,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        212,
+        378,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        318,
+        378,
+        106,
+        126
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    55,
+    80
+  ],
+  "schemaVersion": 1
+}

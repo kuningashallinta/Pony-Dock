@@ -1,0 +1,196 @@
+{
+  "animations": {
+    "pumpkin-cake-trot": {
+      "left": "anim/pumpkin-cake-trot-left.anim",
+      "right": "anim/pumpkin-cake-trot-right.anim"
+    },
+    "pumpkin-happy": {
+      "left": "anim/pumpkin-happy-left.anim",
+      "right": "anim/pumpkin-happy-right.anim"
+    },
+    "pumpkin-idle": {
+      "left": "anim/pumpkin-idle-left.anim",
+      "right": "anim/pumpkin-idle-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "pumpkin-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 12000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pumpkin-cake-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pumpkin-happy",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "pumpkin-cake-trot",
+      "chance": 0.06,
+      "durationMs": {
+        "max": 15000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 24,
+        "stoppedBehavior": null,
+        "target": "Mrs Cake"
+      },
+      "group": 0,
+      "id": "follow_mrs_cake",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_mrs_cake",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pumpkin-cake-trot",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 32,
+        "stoppedBehavior": null,
+        "target": "Mr Cake"
+      },
+      "group": 0,
+      "id": "follow_mr_cake",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_mr_cake",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "pumpkin-cake-trot",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 15000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 40,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 0,
+      "id": "follow_pinkie",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_pinkie",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "pumpkin-cake",
+  "interactions": [],
+  "name": "Pumpkin Cake",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "fillies",
+    "unicorns",
+    "foals"
+  ]
+}

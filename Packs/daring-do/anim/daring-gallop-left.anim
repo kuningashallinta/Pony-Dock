@@ -1,0 +1,123 @@
+{
+  "atlas": "daring-gallop-left.png",
+  "atlasSize": [
+    496,
+    246
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        124,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        124,
+        0,
+        124,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        248,
+        0,
+        124,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        372,
+        0,
+        124,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        82,
+        124,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        124,
+        82,
+        124,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        248,
+        82,
+        124,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        372,
+        82,
+        124,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        164,
+        124,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        124,
+        164,
+        124,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        248,
+        164,
+        124,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        372,
+        164,
+        124,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    62,
+    36
+  ],
+  "schemaVersion": 1
+}

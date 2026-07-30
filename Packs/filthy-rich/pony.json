@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "filthy-rich-standing": {
+      "left": "anim/filthy-rich-standing-left.anim",
+      "right": "anim/filthy-rich-standing-right.anim"
+    },
+    "filthy-rich-trot": {
+      "left": "anim/filthy-rich-trot-left.anim",
+      "right": "anim/filthy-rich-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "filthy-rich-standing",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 25000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "Stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "filthy-rich-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Trot",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "Trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 36.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "filthy-rich",
+  "interactions": [],
+  "name": "Filthy Rich",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "earth ponies",
+    "supporting ponies"
+  ]
+}

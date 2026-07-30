@@ -1,0 +1,414 @@
+{
+  "animations": {
+    "fly-filly-dash": {
+      "left": "anim/fly-filly-dash-left.anim",
+      "right": "anim/fly-filly-dash-right.anim"
+    },
+    "flyfast-filly-dash": {
+      "left": "anim/flyfast-filly-dash-left.anim",
+      "right": "anim/flyfast-filly-dash-right.anim"
+    },
+    "flysonic-filly-dash": {
+      "left": "anim/flysonic-filly-dash-left.anim",
+      "right": "anim/flysonic-filly-dash-right.anim"
+    },
+    "flyup-filly-dash": {
+      "left": "anim/flyup-filly-dash-left.anim",
+      "right": "anim/flyup-filly-dash-right.anim"
+    },
+    "leap": {
+      "left": "anim/leap-left.anim",
+      "right": "anim/leap-right.anim"
+    },
+    "leapend": {
+      "left": "anim/leapend-left.anim",
+      "right": "anim/leapend-right.anim"
+    },
+    "leapstart": {
+      "left": "anim/leapstart-left.anim",
+      "right": "anim/leapstart-right.anim"
+    },
+    "rainboom1-filly-dash": {
+      "left": "anim/rainboom1-filly-dash-left.anim",
+      "right": "anim/rainboom1-filly-dash-right.anim"
+    },
+    "rainboom3-filly-dash": {
+      "left": "anim/rainboom3-filly-dash-left.anim",
+      "right": "anim/rainboom3-filly-dash-right.anim"
+    },
+    "rainboomtest": {
+      "left": "anim/rainboomtest.anim",
+      "right": "anim/rainboomtest.anim"
+    },
+    "rainbow-effect": {
+      "left": "anim/rainbow-effect.anim",
+      "right": "anim/rainbow-effect.anim"
+    },
+    "stand-filly-dash": {
+      "left": "anim/stand-filly-dash-left.anim",
+      "right": "anim/stand-filly-dash-right.anim"
+    },
+    "trot-filly-dash": {
+      "left": "anim/trot-filly-dash-left.anim",
+      "right": "anim/trot-filly-dash-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand-filly-dash",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 5960,
+        "min": 5960
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "Stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot-filly-dash",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 16000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flyfast-filly-dash",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 6400,
+        "min": 640
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "FlyFast",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "FlyFast",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "rainboom1-filly-dash",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1820,
+        "min": 1820
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "RainBoom1",
+      "linkedBehavior": "RainBoom2",
+      "movement": "None",
+      "name": "RainBoom1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "finishline",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flyfast-filly-dash",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1920,
+        "min": 1920
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "RainBoom2",
+      "linkedBehavior": "RainBoom3",
+      "movement": "Horizontal_Only",
+      "name": "RainBoom2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "rainboom3-filly-dash",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 360,
+        "min": 360
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "RainBoom3",
+      "linkedBehavior": "RainBoom4",
+      "movement": "Horizontal_Only",
+      "name": "RainBoom3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 333.33333333333337,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flysonic-filly-dash",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 640,
+        "min": 640
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "RainBoom4",
+      "linkedBehavior": "RainBoom5",
+      "movement": "Horizontal_Only",
+      "name": "RainBoom4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 500.00000000000006,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "flyfast-filly-dash",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2560,
+        "min": 2560
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "RainBoom5",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "RainBoom5",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 666.6666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fly-filly-dash",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 4000,
+        "min": 800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "flyup-filly-dash",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 4000,
+        "min": 800
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Hover",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "Hover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "leapstart",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Leap_start",
+      "linkedBehavior": "Leap",
+      "movement": "None",
+      "name": "Leap_start",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "leap",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 380,
+        "min": 380
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Leap",
+      "linkedBehavior": "Leap_end",
+      "movement": "Horizontal_Only",
+      "name": "Leap",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 800.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "leapend",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 2200,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Leap_end",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Leap_end",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "rainbow-effect",
+      "behavior": "RainBoom5",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 600,
+      "follow": false,
+      "id": "Rainbow",
+      "name": "Rainbow",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 10
+    },
+    {
+      "animation": "rainboomtest",
+      "behavior": "RainBoom5",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 950,
+      "follow": false,
+      "id": "Rainboom",
+      "name": "Rainboom",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "rainbow-dash-filly",
+  "interactions": [],
+  "name": "Rainbow Dash",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "fillies",
+    "pegasi"
+  ]
+}

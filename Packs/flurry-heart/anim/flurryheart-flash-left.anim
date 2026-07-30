@@ -1,0 +1,60 @@
+{
+  "atlas": "flurryheart-flash-left.png",
+  "atlasSize": [
+    600,
+    352
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        200,
+        176
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        200,
+        0,
+        200,
+        176
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        400,
+        0,
+        200,
+        176
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        176,
+        200,
+        176
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        200,
+        176,
+        200,
+        176
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

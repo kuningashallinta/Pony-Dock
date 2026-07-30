@@ -1,0 +1,33 @@
+{
+  "atlas": "lightning-bolt-sleep-left.png",
+  "atlasSize": [
+    120,
+    64
+  ],
+  "frames": [
+    {
+      "durationMs": 1300,
+      "rect": [
+        0,
+        0,
+        60,
+        64
+      ]
+    },
+    {
+      "durationMs": 600,
+      "rect": [
+        60,
+        0,
+        60,
+        64
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    24,
+    12
+  ],
+  "schemaVersion": 1
+}

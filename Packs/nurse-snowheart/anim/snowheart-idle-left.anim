@@ -1,0 +1,168 @@
+{
+  "atlas": "snowheart-idle-left.png",
+  "atlasSize": [
+    460,
+    360
+  ],
+  "frames": [
+    {
+      "durationMs": 900,
+      "rect": [
+        0,
+        0,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        0,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        0,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        276,
+        0,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        368,
+        0,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        90,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        92,
+        90,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        184,
+        90,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        276,
+        90,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        368,
+        90,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        180,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        180,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        180,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        276,
+        180,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        368,
+        180,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        270,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 1500,
+      "rect": [
+        92,
+        270,
+        92,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

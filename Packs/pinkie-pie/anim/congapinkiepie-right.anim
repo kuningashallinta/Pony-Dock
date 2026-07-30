@@ -1,0 +1,96 @@
+{
+  "atlas": "congapinkiepie-right.png",
+  "atlasSize": [
+    282,
+    288
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        94,
+        96
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        94,
+        0,
+        94,
+        96
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        188,
+        0,
+        94,
+        96
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        96,
+        94,
+        96
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        94,
+        96,
+        94,
+        96
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        188,
+        96,
+        94,
+        96
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        192,
+        94,
+        96
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        94,
+        192,
+        94,
+        96
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        188,
+        192,
+        94,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    44,
+    51
+  ],
+  "schemaVersion": 1
+}

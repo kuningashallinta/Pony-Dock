@@ -1,0 +1,87 @@
+{
+  "atlas": "celest-banner.png",
+  "atlasSize": [
+    1032,
+    600
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        344,
+        200
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        344,
+        0,
+        344,
+        200
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        688,
+        0,
+        344,
+        200
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        200,
+        344,
+        200
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        344,
+        200,
+        344,
+        200
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        688,
+        200,
+        344,
+        200
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        400,
+        344,
+        200
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        344,
+        400,
+        344,
+        200
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

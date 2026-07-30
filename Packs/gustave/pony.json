@@ -1,0 +1,99 @@
+{
+  "animations": {
+    "gustave-flight": {
+      "left": "anim/gustave-flight-left.anim",
+      "right": "anim/gustave-flight-right.anim"
+    },
+    "gustave-idle": {
+      "left": "anim/gustave-idle-left.anim",
+      "right": "anim/gustave-idle-right.anim"
+    },
+    "gustave-walk": {
+      "left": "anim/gustave-walk-left.anim",
+      "right": "anim/gustave-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "gustave-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 17000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "gustave-walk",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 12000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 93.33333333333333,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "gustave-flight",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 133.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "gustave",
+  "interactions": [],
+  "name": "Gustave le Grand",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "non-ponies"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "atlas": "paraspritestop-pinkie-pie-right.png",
+  "atlasSize": [
+    384,
+    368
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        96,
+        0,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        0,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        288,
+        0,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        92,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        96,
+        92,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        92,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        288,
+        92,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        184,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        96,
+        184,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        184,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        288,
+        184,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        276,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        96,
+        276,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        276,
+        96,
+        92
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        288,
+        276,
+        96,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    48,
+    48
+  ],
+  "schemaVersion": 1
+}

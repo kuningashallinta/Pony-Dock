@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "suri-idle": {
+      "left": "anim/suri-idle-left.anim",
+      "right": "anim/suri-idle-right.anim"
+    },
+    "suri-trot": {
+      "left": "anim/suri-trot-left.anim",
+      "right": "anim/suri-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "suri-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 12000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "suri-trot",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 80.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "suri-polomare",
+  "interactions": [],
+  "name": "Suri Polomare",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "mares",
+    "earth ponies",
+    "supporting ponies"
+  ]
+}

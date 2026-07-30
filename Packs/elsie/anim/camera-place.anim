@@ -1,0 +1,150 @@
+{
+  "atlas": "camera-place.png",
+  "atlasSize": [
+    520,
+    328
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        130,
+        0,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        260,
+        0,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        390,
+        0,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        82,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        130,
+        82,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        260,
+        82,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        390,
+        82,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        164,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        130,
+        164,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        260,
+        164,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        390,
+        164,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        246,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        130,
+        246,
+        130,
+        82
+      ]
+    },
+    {
+      "durationMs": 400,
+      "rect": [
+        260,
+        246,
+        130,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

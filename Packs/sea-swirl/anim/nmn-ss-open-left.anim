@@ -1,0 +1,42 @@
+{
+  "atlas": "nmn-ss-open-left.png",
+  "atlasSize": [
+    176,
+    212
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        88,
+        0,
+        88,
+        106
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        106,
+        88,
+        106
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    62
+  ],
+  "schemaVersion": 1
+}

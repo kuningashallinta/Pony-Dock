@@ -1,0 +1,159 @@
+{
+  "atlas": "mlp-gilda-walk-right-big-left.png",
+  "atlasSize": [
+    520,
+    376
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        130,
+        0,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        260,
+        0,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        390,
+        0,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        94,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        130,
+        94,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        260,
+        94,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        390,
+        94,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        188,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        130,
+        188,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        260,
+        188,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        390,
+        188,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        282,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        130,
+        282,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        260,
+        282,
+        130,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        390,
+        282,
+        130,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    54,
+    38
+  ],
+  "schemaVersion": 1
+}

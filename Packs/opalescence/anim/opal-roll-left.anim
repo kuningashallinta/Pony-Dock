@@ -1,0 +1,168 @@
+{
+  "atlas": "opal-roll-left.png",
+  "atlasSize": [
+    320,
+    264
+  ],
+  "frames": [
+    {
+      "durationMs": 700,
+      "rect": [
+        0,
+        0,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        64,
+        0,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        0,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        192,
+        0,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        256,
+        0,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        66,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        64,
+        66,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        66,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        192,
+        66,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        256,
+        66,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        132,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        64,
+        132,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        132,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        192,
+        132,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        256,
+        132,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        198,
+        64,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        64,
+        198,
+        64,
+        66
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

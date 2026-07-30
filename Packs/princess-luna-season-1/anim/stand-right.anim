@@ -1,0 +1,51 @@
+{
+  "atlas": "stand-right.png",
+  "atlasSize": [
+    192,
+    176
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        96,
+        0,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        88,
+        96,
+        88
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        96,
+        88,
+        96,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,313 @@
+{
+  "animations": {
+    "seabreeze": {
+      "left": "anim/seabreeze-left.anim",
+      "right": "anim/seabreeze-right.anim"
+    },
+    "seabreeze2": {
+      "left": "anim/seabreeze2-left.anim",
+      "right": "anim/seabreeze2-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "seabreeze2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 7000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "seabreeze2",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "hover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 3.333333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "seabreeze2",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "hover2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "seabreeze",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 16.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "seabreeze",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 7000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 23.333333333333332,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "seabreeze",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 40000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": true,
+        "movingBehavior": null,
+        "offsetX": -10,
+        "offsetY": -23,
+        "stoppedBehavior": null,
+        "target": "Fluttershy"
+      },
+      "group": 0,
+      "id": "follow_fluttershy",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_fluttershy",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 13.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "seabreeze2",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 8040,
+        "min": 8040
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "breezie_start",
+      "linkedBehavior": "breezie1",
+      "movement": "None",
+      "name": "breezie_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "seabreeze2",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "breezie1",
+      "linkedBehavior": "breezie2",
+      "movement": "Diagonal_Vertical",
+      "name": "breezie1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "seabreeze2",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "breezie2",
+      "linkedBehavior": "breezie3",
+      "movement": "Diagonal_Vertical",
+      "name": "breezie2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "seabreeze2",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "breezie3",
+      "linkedBehavior": "breezie4",
+      "movement": "Diagonal_Vertical",
+      "name": "breezie3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "seabreeze2",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "breezie4",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "breezie4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 6.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "seabreeze",
+  "interactions": [
+    {
+      "activation": "Any",
+      "behaviors": [
+        "breezie_start"
+      ],
+      "chance": 0.2,
+      "id": "Breezie_group",
+      "name": "Breezie_group",
+      "proximityPx": 125,
+      "reactivationDelayMs": 300000,
+      "targets": [
+        "applejack",
+        "fluttershy",
+        "pinkie-pie",
+        "rainbow-dash",
+        "rarity",
+        "princess-twilight-sparkle"
+      ]
+    }
+  ],
+  "name": "Seabreeze",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "non-ponies",
+    "breezies"
+  ]
+}

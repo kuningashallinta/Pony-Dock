@@ -1,0 +1,123 @@
+{
+  "atlas": "spitfire-goggles-right.png",
+  "atlasSize": [
+    336,
+    282
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        84,
+        0,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        168,
+        0,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        252,
+        0,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        94,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        84,
+        94,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        168,
+        94,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        252,
+        94,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        188,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 700,
+      "rect": [
+        84,
+        188,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        168,
+        188,
+        84,
+        94
+      ]
+    },
+    {
+      "durationMs": 2100,
+      "rect": [
+        252,
+        188,
+        84,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    46,
+    50
+  ],
+  "schemaVersion": 1
+}

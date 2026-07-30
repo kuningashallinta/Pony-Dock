@@ -1,0 +1,87 @@
+{
+  "atlas": "ironwill-walk-right.png",
+  "atlasSize": [
+    348,
+    432
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        116,
+        144
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        116,
+        0,
+        116,
+        144
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        232,
+        0,
+        116,
+        144
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        144,
+        116,
+        144
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        116,
+        144,
+        116,
+        144
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        232,
+        144,
+        116,
+        144
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        288,
+        116,
+        144
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        116,
+        288,
+        116,
+        144
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

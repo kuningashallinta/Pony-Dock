@@ -1,0 +1,78 @@
+{
+  "atlas": "violet-safe-drag-left.png",
+  "atlasSize": [
+    270,
+    258
+  ],
+  "frames": [
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        0,
+        90,
+        86
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        90,
+        0,
+        90,
+        86
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        180,
+        0,
+        90,
+        86
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        86,
+        90,
+        86
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        90,
+        86,
+        90,
+        86
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        180,
+        86,
+        90,
+        86
+      ]
+    },
+    {
+      "durationMs": 10000,
+      "rect": [
+        0,
+        172,
+        90,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    74,
+    26
+  ],
+  "schemaVersion": 1
+}

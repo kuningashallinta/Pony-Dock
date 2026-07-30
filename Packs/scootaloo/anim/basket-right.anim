@@ -1,0 +1,96 @@
+{
+  "atlas": "basket-right.png",
+  "atlasSize": [
+    198,
+    279
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        66,
+        93
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        66,
+        0,
+        66,
+        93
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        132,
+        0,
+        66,
+        93
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        93,
+        66,
+        93
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        66,
+        93,
+        66,
+        93
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        132,
+        93,
+        66,
+        93
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        186,
+        66,
+        93
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        66,
+        186,
+        66,
+        93
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        132,
+        186,
+        66,
+        93
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    26,
+    62
+  ],
+  "schemaVersion": 1
+}

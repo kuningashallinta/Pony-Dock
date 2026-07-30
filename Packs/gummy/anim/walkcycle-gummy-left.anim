@@ -1,0 +1,96 @@
+{
+  "atlas": "walkcycle-gummy-left.png",
+  "atlasSize": [
+    174,
+    126
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        58,
+        42
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        58,
+        0,
+        58,
+        42
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        116,
+        0,
+        58,
+        42
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        42,
+        58,
+        42
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        58,
+        42,
+        58,
+        42
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        116,
+        42,
+        58,
+        42
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        84,
+        58,
+        42
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        58,
+        84,
+        58,
+        42
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        116,
+        84,
+        58,
+        42
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

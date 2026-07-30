@@ -1,0 +1,60 @@
+{
+  "atlas": "rofls2-pinkie-pie-right.png",
+  "atlasSize": [
+    360,
+    184
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        120,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        120,
+        0,
+        120,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        240,
+        0,
+        120,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        92,
+        120,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        120,
+        92,
+        120,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    86,
+    19
+  ],
+  "schemaVersion": 1
+}

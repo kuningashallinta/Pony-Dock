@@ -1,0 +1,114 @@
+{
+  "atlas": "walk-pinkie-pie-right.png",
+  "atlasSize": [
+    384,
+    270
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        96,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        96,
+        0,
+        96,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        192,
+        0,
+        96,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        288,
+        0,
+        96,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        90,
+        96,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        96,
+        90,
+        96,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        192,
+        90,
+        96,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        288,
+        90,
+        96,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        180,
+        96,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        96,
+        180,
+        96,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        192,
+        180,
+        96,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    50,
+    44
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,114 @@
+{
+  "atlas": "goldiedelicious-walk-right.png",
+  "atlasSize": [
+    328,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        82,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        82,
+        0,
+        82,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        164,
+        0,
+        82,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        246,
+        0,
+        82,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        84,
+        82,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        82,
+        84,
+        82,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        164,
+        84,
+        82,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        246,
+        84,
+        82,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        168,
+        82,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        82,
+        168,
+        82,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        164,
+        168,
+        82,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

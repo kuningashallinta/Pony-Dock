@@ -1,0 +1,123 @@
+{
+  "animations": {
+    "little-strongheart-nervous": {
+      "left": "anim/little-strongheart-nervous-left.anim",
+      "right": "anim/little-strongheart-nervous-right.anim"
+    },
+    "little-strongheart-stand": {
+      "left": "anim/little-strongheart-stand-left.anim",
+      "right": "anim/little-strongheart-stand-right.anim"
+    },
+    "little-strongheart-trot": {
+      "left": "anim/little-strongheart-trot-left.anim",
+      "right": "anim/little-strongheart-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "little-strongheart-stand",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 7200,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "little-strongheart-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "little-strongheart-nervous",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 4400,
+        "min": 4400
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "nervous",
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": "nervous",
+        "target": "Braeburn"
+      },
+      "group": 0,
+      "id": "nervous",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "nervous",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "little-strongheart",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "nervous"
+      ],
+      "chance": 1.0,
+      "id": "nervous",
+      "name": "nervous",
+      "proximityPx": 100,
+      "reactivationDelayMs": 30000,
+      "targets": [
+        "braeburn"
+      ]
+    }
+  ],
+  "name": "Little Strongheart",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "non-ponies"
+  ]
+}

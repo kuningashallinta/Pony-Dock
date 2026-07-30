@@ -1,0 +1,123 @@
+{
+  "atlas": "p-twi-gallop-left.png",
+  "atlasSize": [
+    488,
+    216
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        122,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        122,
+        0,
+        122,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        244,
+        0,
+        122,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        366,
+        0,
+        122,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        72,
+        122,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        122,
+        72,
+        122,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        244,
+        72,
+        122,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        366,
+        72,
+        122,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        144,
+        122,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        122,
+        144,
+        122,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        244,
+        144,
+        122,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        366,
+        144,
+        122,
+        72
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    53,
+    32
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,114 @@
+{
+  "atlas": "ms-peachbottom-stand-right.png",
+  "atlasSize": [
+    360,
+    246
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        90,
+        0,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        180,
+        0,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        270,
+        0,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 140,
+      "rect": [
+        0,
+        82,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 5040,
+      "rect": [
+        90,
+        82,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        180,
+        82,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        270,
+        82,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        164,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        164,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        180,
+        164,
+        90,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

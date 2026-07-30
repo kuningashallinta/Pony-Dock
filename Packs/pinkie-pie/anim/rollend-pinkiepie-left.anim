@@ -1,0 +1,87 @@
+{
+  "atlas": "rollend-pinkiepie-left.png",
+  "atlasSize": [
+    270,
+    246
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        0,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        180,
+        0,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        82,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        82,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        180,
+        82,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        164,
+        90,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        90,
+        164,
+        90,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    46,
+    27
+  ],
+  "schemaVersion": 1
+}

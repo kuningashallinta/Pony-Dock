@@ -1,0 +1,291 @@
+{
+  "animations": {
+    "mlp-gilda-cheer": {
+      "left": "anim/mlp-gilda-cheer.anim",
+      "right": "anim/mlp-gilda-cheer.anim"
+    },
+    "mlp-gilda-cheer-2": {
+      "left": "anim/mlp-gilda-cheer-2.anim",
+      "right": "anim/mlp-gilda-cheer-2.anim"
+    },
+    "mlp-gilda-cheer1": {
+      "left": "anim/mlp-gilda-cheer1.anim",
+      "right": "anim/mlp-gilda-cheer1.anim"
+    },
+    "mlp-gilda-cheer1-final": {
+      "left": "anim/mlp-gilda-cheer1-final.anim",
+      "right": "anim/mlp-gilda-cheer1-final.anim"
+    },
+    "mlp-gilda-flight-right-big": {
+      "left": "anim/mlp-gilda-flight-right-big-left.anim",
+      "right": "anim/mlp-gilda-flight-right-big-right.anim"
+    },
+    "mlp-gilda-idle-right-big": {
+      "left": "anim/mlp-gilda-idle-right-big-left.anim",
+      "right": "anim/mlp-gilda-idle-right-big-right.anim"
+    },
+    "mlp-gilda-walk-right-big": {
+      "left": "anim/mlp-gilda-walk-right-big-left.anim",
+      "right": "anim/mlp-gilda-walk-right-big-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "mlp-gilda-idle-right-big",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 17000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "mlp-gilda-walk-right-big",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 12000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "mlp-gilda-flight-right-big",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 116.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "mlp-gilda-idle-right-big",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1500,
+        "min": 1500
+      },
+      "endSpeech": "junior speedsters 1",
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 1",
+      "linkedBehavior": "junior speedsters 2",
+      "movement": "None",
+      "name": "junior speedsters 1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "mlp-gilda-idle-right-big",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3500,
+        "min": 3500
+      },
+      "endSpeech": "junior speedsters 2",
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Rainbow Dash"
+      },
+      "group": 0,
+      "id": "junior speedsters 2",
+      "linkedBehavior": "junior speedsters 3",
+      "movement": "None",
+      "name": "junior speedsters 2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "mlp-gilda-cheer",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "junior speedsters 3",
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 3",
+      "linkedBehavior": "junior speedsters 4",
+      "movement": "None",
+      "name": "junior speedsters 3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "mlp-gilda-cheer-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "junior speedsters 4",
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 4",
+      "linkedBehavior": "junior speedsters 5",
+      "movement": "None",
+      "name": "junior speedsters 4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "mlp-gilda-cheer",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "junior speedsters 5",
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 5",
+      "linkedBehavior": "junior speedsters 6",
+      "movement": "None",
+      "name": "junior speedsters 5",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "mlp-gilda-cheer1",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": "junior speedsters 6",
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 6",
+      "linkedBehavior": "junior speedsters 7",
+      "movement": "None",
+      "name": "junior speedsters 6",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "mlp-gilda-cheer1-final",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "junior speedsters 7",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "junior speedsters 7",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "gilda",
+  "interactions": [],
+  "name": "Gilda",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "non-ponies"
+  ]
+}

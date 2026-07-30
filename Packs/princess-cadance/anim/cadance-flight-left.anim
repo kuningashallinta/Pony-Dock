@@ -1,0 +1,159 @@
+{
+  "atlas": "cadance-flight-left.png",
+  "atlasSize": [
+    464,
+    552
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        0,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        0,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        0,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        138,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        138,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        138,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        138,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        276,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        276,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        276,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        276,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        414,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        116,
+        414,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        232,
+        414,
+        116,
+        138
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        348,
+        414,
+        116,
+        138
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    50,
+    66
+  ],
+  "schemaVersion": 1
+}

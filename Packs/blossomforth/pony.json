@@ -1,0 +1,337 @@
+{
+  "animations": {
+    "blossomforth-fly": {
+      "left": "anim/blossomforth-fly-left.anim",
+      "right": "anim/blossomforth-fly-right.anim"
+    },
+    "blossomforth-sit": {
+      "left": "anim/blossomforth-sit-left.anim",
+      "right": "anim/blossomforth-sit-right.anim"
+    },
+    "blossomforth-sleep": {
+      "left": "anim/blossomforth-sleep-left.anim",
+      "right": "anim/blossomforth-sleep-right.anim"
+    },
+    "blossomforth-stand": {
+      "left": "anim/blossomforth-stand-left.anim",
+      "right": "anim/blossomforth-stand-right.anim"
+    },
+    "blossomforth-too-flexible": {
+      "left": "anim/blossomforth-too-flexible-left.anim",
+      "right": "anim/blossomforth-too-flexible-right.anim"
+    },
+    "blossomforth-trot": {
+      "left": "anim/blossomforth-trot-left.anim",
+      "right": "anim/blossomforth-trot-right.anim"
+    },
+    "blossomforth-trot-right-blink": {
+      "left": "anim/blossomforth-trot-right-blink-left.anim",
+      "right": "anim/blossomforth-trot-right-blink-right.anim"
+    },
+    "blossomforth-wing": {
+      "left": "anim/blossomforth-wing-left.anim",
+      "right": "anim/blossomforth-wing-right.anim"
+    },
+    "blossomforth-wing-right-blink": {
+      "left": "anim/blossomforth-wing-right-blink-left.anim",
+      "right": "anim/blossomforth-wing-right-blink-right.anim"
+    },
+    "blossomforth-wing-stand": {
+      "left": "anim/blossomforth-wing-stand-left.anim",
+      "right": "anim/blossomforth-wing-stand-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "blossomforth-stand",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 18000,
+        "min": 16000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "blossomforth-wing-right-blink",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 22000,
+        "min": 17000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot wing blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot wing blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "blossomforth-wing",
+      "chance": 0.12,
+      "durationMs": {
+        "max": 15000,
+        "min": 12000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot wing",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "blossomforth-wing-stand",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 13000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand wing",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "blossomforth-trot",
+      "chance": 0.16,
+      "durationMs": {
+        "max": 19000,
+        "min": 14000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "blossomforth-trot-right-blink",
+      "chance": 0.18,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot blink",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot blink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "blossomforth-fly",
+      "chance": 0.14,
+      "durationMs": {
+        "max": 10000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "hover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "blossomforth-fly",
+      "chance": 0.26,
+      "durationMs": {
+        "max": 23000,
+        "min": 17000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "blossomforth-sit",
+      "chance": 0.16,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "blossomforth-sleep",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 47000,
+        "min": 36000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": "sit",
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "blossomforth-too-flexible",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 20000,
+        "min": 16000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "too flexible",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "too flexible",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "blossomforth-too-flexible",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 17000,
+        "min": 17000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "training",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "training",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "blossomforth",
+  "interactions": [],
+  "name": "Blossomforth",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "pegasi"
+  ]
+}

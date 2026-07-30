@@ -1,0 +1,99 @@
+{
+  "animations": {
+    "grampagruff-fly": {
+      "left": "anim/grampagruff-fly-left.anim",
+      "right": "anim/grampagruff-fly-right.anim"
+    },
+    "grampagruff-idle": {
+      "left": "anim/grampagruff-idle-left.anim",
+      "right": "anim/grampagruff-idle-right.anim"
+    },
+    "grampagruff-walk": {
+      "left": "anim/grampagruff-walk-left.anim",
+      "right": "anim/grampagruff-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "grampagruff-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 17000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "grampagruff-walk",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 12000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 86.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "grampagruff-fly",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 10000,
+        "min": 2200
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 120.00000000000001,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "grampa-gruff",
+  "interactions": [],
+  "name": "Grampa Gruff",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "non-ponies"
+  ]
+}

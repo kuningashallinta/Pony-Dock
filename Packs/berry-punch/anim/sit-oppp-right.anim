@@ -1,0 +1,24 @@
+{
+  "atlas": "sit-oppp-right.png",
+  "atlasSize": [
+    77,
+    61
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        77,
+        61
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    42,
+    30
+  ],
+  "schemaVersion": 1
+}

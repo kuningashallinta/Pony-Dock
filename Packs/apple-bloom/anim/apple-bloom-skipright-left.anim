@@ -1,0 +1,222 @@
+{
+  "atlas": "apple-bloom-skipright-left.png",
+  "atlasSize": [
+    410,
+    520
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        82,
+        0,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        164,
+        0,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        246,
+        0,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        328,
+        0,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        104,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        82,
+        104,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        164,
+        104,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        246,
+        104,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        328,
+        104,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        208,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        82,
+        208,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        164,
+        208,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        246,
+        208,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        328,
+        208,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        312,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        82,
+        312,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        164,
+        312,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        246,
+        312,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        328,
+        312,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        416,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        82,
+        416,
+        82,
+        104
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        164,
+        416,
+        82,
+        104
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    40,
+    64
+  ],
+  "schemaVersion": 1
+}

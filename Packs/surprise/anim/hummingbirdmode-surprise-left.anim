@@ -1,0 +1,87 @@
+{
+  "atlas": "hummingbirdmode-surprise-left.png",
+  "atlasSize": [
+    276,
+    534
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        92,
+        178
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        0,
+        92,
+        178
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        184,
+        0,
+        92,
+        178
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        178,
+        92,
+        178
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        178,
+        92,
+        178
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        178,
+        92,
+        178
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        356,
+        92,
+        178
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        356,
+        92,
+        178
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

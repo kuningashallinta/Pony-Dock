@@ -1,0 +1,258 @@
+{
+  "atlas": "phila-the-chicken-left.png",
+  "atlasSize": [
+    528,
+    490
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        88,
+        0,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        176,
+        0,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        264,
+        0,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        352,
+        0,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        440,
+        0,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        98,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        88,
+        98,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        176,
+        98,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        264,
+        98,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        352,
+        98,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        440,
+        98,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        196,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        88,
+        196,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        176,
+        196,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        264,
+        196,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        352,
+        196,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        440,
+        196,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        294,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        88,
+        294,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        176,
+        294,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        264,
+        294,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        352,
+        294,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        440,
+        294,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        392,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        88,
+        392,
+        88,
+        98
+      ]
+    },
+    {
+      "durationMs": 980,
+      "rect": [
+        176,
+        392,
+        88,
+        98
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

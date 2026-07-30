@@ -1,0 +1,159 @@
+{
+  "atlas": "salto-pinkie-pie-right.png",
+  "atlasSize": [
+    576,
+    672
+  ],
+  "frames": [
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        0,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        144,
+        0,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        288,
+        0,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        432,
+        0,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        168,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        144,
+        168,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        288,
+        168,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        432,
+        168,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        336,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        144,
+        336,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        288,
+        336,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        432,
+        336,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        504,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        144,
+        504,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        288,
+        504,
+        144,
+        168
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        432,
+        504,
+        144,
+        168
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    84,
+    124
+  ],
+  "schemaVersion": 1
+}

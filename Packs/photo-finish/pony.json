@@ -1,0 +1,235 @@
+{
+  "animations": {
+    "idle": {
+      "left": "anim/idle-left.anim",
+      "right": "anim/idle-right.anim"
+    },
+    "itistimetomakehemagics-sinc": {
+      "left": "anim/itistimetomakehemagics-sinc.anim",
+      "right": "anim/itistimetomakehemagics-sinc.anim"
+    },
+    "photorun": {
+      "left": "anim/photorun-left.anim",
+      "right": "anim/photorun-right.anim"
+    },
+    "take-photos": {
+      "left": "anim/take-photos.anim",
+      "right": "anim/take-photos.anim"
+    },
+    "trot": {
+      "left": "anim/trot-left.anim",
+      "right": "anim/trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "idle",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trot",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "itistimetomakehemagics-sinc",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "photo_shoot_start",
+      "linkedBehavior": "stalk_fluttershy",
+      "movement": "None",
+      "name": "photo_shoot_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "magics",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trot",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": "magics",
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -220,
+        "offsetY": 20,
+        "stoppedBehavior": null,
+        "target": "Fluttershy"
+      },
+      "group": 0,
+      "id": "stalk_fluttershy",
+      "linkedBehavior": "take_photos",
+      "movement": "All",
+      "name": "stalk_fluttershy",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 666.6666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "take-photos",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 15000,
+        "min": 15000
+      },
+      "endSpeech": "wego",
+      "follow": null,
+      "group": 0,
+      "id": "take_photos",
+      "linkedBehavior": "run",
+      "movement": "None",
+      "name": "take_photos",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "idle",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "arrived",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "arrived",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "arrived",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "idle",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "point/shoot",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "point/shoot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "point/shoot",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "photorun",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "run",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "run",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 166.66666666666669,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "photo-finish",
+  "interactions": [],
+  "name": "Photo Finish",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "atlas": "congafluttershy-left.png",
+  "atlasSize": [
+    306,
+    270
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        102,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        102,
+        0,
+        102,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        204,
+        0,
+        102,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        90,
+        102,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        102,
+        90,
+        102,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        204,
+        90,
+        102,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        180,
+        102,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        102,
+        180,
+        102,
+        90
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        204,
+        180,
+        102,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    49,
+    44
+  ],
+  "schemaVersion": 1
+}

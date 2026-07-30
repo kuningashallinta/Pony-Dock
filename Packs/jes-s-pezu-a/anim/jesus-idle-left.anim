@@ -1,0 +1,87 @@
+{
+  "atlas": "jesus-idle-left.png",
+  "atlasSize": [
+    216,
+    276
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        72,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        72,
+        0,
+        72,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        144,
+        0,
+        72,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        92,
+        72,
+        92
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        72,
+        92,
+        72,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        144,
+        92,
+        72,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        184,
+        72,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        72,
+        184,
+        72,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

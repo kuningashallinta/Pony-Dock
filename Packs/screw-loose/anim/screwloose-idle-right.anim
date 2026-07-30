@@ -1,0 +1,276 @@
+{
+  "atlas": "screwloose-idle-right.png",
+  "atlasSize": [
+    552,
+    450
+  ],
+  "frames": [
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        0,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        92,
+        0,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        184,
+        0,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        276,
+        0,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        368,
+        0,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        460,
+        0,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        90,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        90,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        184,
+        90,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        276,
+        90,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        368,
+        90,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        460,
+        90,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        180,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        180,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        184,
+        180,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        276,
+        180,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        368,
+        180,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        460,
+        180,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        0,
+        270,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        270,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        184,
+        270,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 1500,
+      "rect": [
+        276,
+        270,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        368,
+        270,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        460,
+        270,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        360,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        92,
+        360,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 400,
+      "rect": [
+        184,
+        360,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 20,
+      "rect": [
+        276,
+        360,
+        92,
+        90
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        368,
+        360,
+        92,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    45,
+    44
+  ],
+  "schemaVersion": 1
+}

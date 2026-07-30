@@ -1,0 +1,51 @@
+{
+  "atlas": "aj-pose-left.png",
+  "atlasSize": [
+    164,
+    184
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        82,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        82,
+        0,
+        82,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        92,
+        82,
+        92
+      ]
+    },
+    {
+      "durationMs": 10000,
+      "rect": [
+        82,
+        92,
+        82,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

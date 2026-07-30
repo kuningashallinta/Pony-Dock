@@ -1,0 +1,159 @@
+{
+  "atlas": "rover-threatning-right.png",
+  "atlasSize": [
+    432,
+    344
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        108,
+        0,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        216,
+        0,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        324,
+        0,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        86,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        108,
+        86,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        216,
+        86,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        324,
+        86,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        172,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        108,
+        172,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        216,
+        172,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        324,
+        172,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        258,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        108,
+        258,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        216,
+        258,
+        108,
+        86
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        324,
+        258,
+        108,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    54,
+    40
+  ],
+  "schemaVersion": 1
+}

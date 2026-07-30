@@ -1,0 +1,159 @@
+{
+  "atlas": "stand-cheerilee-right.png",
+  "atlasSize": [
+    320,
+    336
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        80,
+        0,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        160,
+        0,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        240,
+        0,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        84,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 5100,
+      "rect": [
+        80,
+        84,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        160,
+        84,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        240,
+        84,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        168,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        80,
+        168,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        160,
+        168,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        240,
+        168,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        252,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        80,
+        252,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        160,
+        252,
+        80,
+        84
+      ]
+    },
+    {
+      "durationMs": 1900,
+      "rect": [
+        240,
+        252,
+        80,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

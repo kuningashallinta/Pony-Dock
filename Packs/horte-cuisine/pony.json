@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "horte-cuisine-stand": {
+      "left": "anim/horte-cuisine-stand-left.anim",
+      "right": "anim/horte-cuisine-stand-right.anim"
+    },
+    "horte-cuisine-trot": {
+      "left": "anim/horte-cuisine-trot-left.anim",
+      "right": "anim/horte-cuisine-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "horte-cuisine-stand",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "Stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "horte-cuisine-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "horte-cuisine",
+  "interactions": [],
+  "name": "Horte Cuisine",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

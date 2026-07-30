@@ -1,0 +1,141 @@
+{
+  "atlas": "sir-lints-a-lot.png",
+  "atlasSize": [
+    240,
+    400
+  ],
+  "frames": [
+    {
+      "durationMs": 1500,
+      "rect": [
+        0,
+        0,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 110,
+      "rect": [
+        60,
+        0,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 110,
+      "rect": [
+        120,
+        0,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 110,
+      "rect": [
+        180,
+        0,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        100,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 110,
+      "rect": [
+        60,
+        100,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 110,
+      "rect": [
+        120,
+        100,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 110,
+      "rect": [
+        180,
+        100,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 110,
+      "rect": [
+        0,
+        200,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 110,
+      "rect": [
+        60,
+        200,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        120,
+        200,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 110,
+      "rect": [
+        180,
+        200,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 110,
+      "rect": [
+        0,
+        300,
+        60,
+        100
+      ]
+    },
+    {
+      "durationMs": 110,
+      "rect": [
+        60,
+        300,
+        60,
+        100
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

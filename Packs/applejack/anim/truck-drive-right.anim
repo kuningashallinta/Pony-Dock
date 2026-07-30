@@ -1,0 +1,87 @@
+{
+  "atlas": "truck-drive-right.png",
+  "atlasSize": [
+    750,
+    522
+  ],
+  "frames": [
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        0,
+        250,
+        174
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        250,
+        0,
+        250,
+        174
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        500,
+        0,
+        250,
+        174
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        174,
+        250,
+        174
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        250,
+        174,
+        250,
+        174
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        500,
+        174,
+        250,
+        174
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        0,
+        348,
+        250,
+        174
+      ]
+    },
+    {
+      "durationMs": 120,
+      "rect": [
+        250,
+        348,
+        250,
+        174
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    125,
+    122
+  ],
+  "schemaVersion": 1
+}

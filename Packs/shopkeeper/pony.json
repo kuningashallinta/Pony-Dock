@@ -1,0 +1,423 @@
+{
+  "animations": {
+    "shopkeeper-deal": {
+      "left": "anim/shopkeeper-deal-left.anim",
+      "right": "anim/shopkeeper-deal-right.anim"
+    },
+    "shopkeeper-idle": {
+      "left": "anim/shopkeeper-idle-left.anim",
+      "right": "anim/shopkeeper-idle-right.anim"
+    },
+    "shopkeeper-trot": {
+      "left": "anim/shopkeeper-trot-left.anim",
+      "right": "anim/shopkeeper-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "shopkeeper-idle",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "shopkeeper-trot",
+      "chance": 0.4,
+      "durationMs": {
+        "max": 15000,
+        "min": 7000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 80.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "shopkeeper-deal",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "talk",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "talk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "speech 1",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "shopkeeper-deal",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Twilight Sparkle"
+      },
+      "group": 0,
+      "id": "deal_twi",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_twi",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "twi",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "shopkeeper-deal",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Applejack"
+      },
+      "group": 0,
+      "id": "deal_aj",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_aj",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "aj",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "shopkeeper-deal",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Apple Bloom"
+      },
+      "group": 0,
+      "id": "deal_applebloom",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_applebloom",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "applebloom",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "shopkeeper-deal",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Princess Celestia"
+      },
+      "group": 0,
+      "id": "deal_celestia",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_celestia",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "celestia",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "shopkeeper-deal",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Princess Cadance"
+      },
+      "group": 0,
+      "id": "deal_cadance",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_cadance",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "cadance",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "shopkeeper-deal",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Zecora"
+      },
+      "group": 0,
+      "id": "deal_zecora",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_zecora",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "zecora",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "shopkeeper-deal",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 3700,
+        "min": 3500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 0,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Trixie"
+      },
+      "group": 0,
+      "id": "deal_trixie",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "deal_trixie",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "trixie",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "shopkeeper",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "deal_twi"
+      ],
+      "chance": 0.1,
+      "id": "shopkeeper_twi",
+      "name": "shopkeeper_twi",
+      "proximityPx": 150,
+      "reactivationDelayMs": 220000,
+      "targets": [
+        "twilight-sparkle"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "deal_aj"
+      ],
+      "chance": 0.1,
+      "id": "shopkeeper_aj",
+      "name": "shopkeeper_aj",
+      "proximityPx": 150,
+      "reactivationDelayMs": 220000,
+      "targets": [
+        "applejack"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "deal_applebloom"
+      ],
+      "chance": 0.1,
+      "id": "shopkeeper_applebloom",
+      "name": "shopkeeper_applebloom",
+      "proximityPx": 150,
+      "reactivationDelayMs": 220000,
+      "targets": [
+        "apple-bloom"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "deal_celestia"
+      ],
+      "chance": 0.1,
+      "id": "shopkeeper_celestia",
+      "name": "shopkeeper_celestia",
+      "proximityPx": 150,
+      "reactivationDelayMs": 220000,
+      "targets": [
+        "princess-celestia"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "deal_cadance"
+      ],
+      "chance": 0.1,
+      "id": "shopkeeper_cadance",
+      "name": "shopkeeper_cadance",
+      "proximityPx": 150,
+      "reactivationDelayMs": 220000,
+      "targets": [
+        "princess-cadance"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "deal_zecora"
+      ],
+      "chance": 0.1,
+      "id": "shopkeeper_zecora",
+      "name": "shopkeeper_zecora",
+      "proximityPx": 150,
+      "reactivationDelayMs": 220000,
+      "targets": [
+        "zecora"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "deal_trixie"
+      ],
+      "chance": 0.1,
+      "id": "shopkeeper_trixie",
+      "name": "shopkeeper_trixie",
+      "proximityPx": 150,
+      "reactivationDelayMs": 220000,
+      "targets": [
+        "trixie"
+      ]
+    }
+  ],
+  "name": "Shopkeeper",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "earth ponies",
+    "supporting ponies"
+  ]
+}

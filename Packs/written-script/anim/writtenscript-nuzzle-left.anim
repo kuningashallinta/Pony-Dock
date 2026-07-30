@@ -1,0 +1,78 @@
+{
+  "atlas": "writtenscript-nuzzle-left.png",
+  "atlasSize": [
+    264,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 1500,
+      "rect": [
+        0,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        88,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        176,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 3500,
+      "rect": [
+        0,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        88,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        176,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        0,
+        168,
+        88,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    45,
+    42
+  ],
+  "schemaVersion": 1
+}

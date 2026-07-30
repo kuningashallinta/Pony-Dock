@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "standingmjolnaright": {
+      "left": "anim/standingmjolnaright-left.anim",
+      "right": "anim/standingmjolnaright-right.anim"
+    },
+    "trottingmjolnaright": {
+      "left": "anim/trottingmjolnaright-left.anim",
+      "right": "anim/trottingmjolnaright-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "standingmjolnaright",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Standing",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "Standing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trottingmjolnaright",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Trotting",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Trotting",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "mjolna",
+  "interactions": [],
+  "name": "Mjolna",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

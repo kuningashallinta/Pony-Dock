@@ -1,0 +1,87 @@
+{
+  "atlas": "stand-berry-right.png",
+  "atlasSize": [
+    300,
+    282
+  ],
+  "frames": [
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        0,
+        100,
+        94
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        100,
+        0,
+        100,
+        94
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        200,
+        0,
+        100,
+        94
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        94,
+        100,
+        94
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        100,
+        94,
+        100,
+        94
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        200,
+        94,
+        100,
+        94
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        188,
+        100,
+        94
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        100,
+        188,
+        100,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    56,
+    60
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,24 @@
+{
+  "atlas": "makeitstop1-left.png",
+  "atlasSize": [
+    72,
+    56
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        72,
+        56
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    46,
+    23
+  ],
+  "schemaVersion": 1
+}

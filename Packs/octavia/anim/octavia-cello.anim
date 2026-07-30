@@ -1,0 +1,87 @@
+{
+  "atlas": "octavia-cello.png",
+  "atlasSize": [
+    294,
+    342
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        98,
+        0,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        196,
+        0,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 400,
+      "rect": [
+        0,
+        114,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        114,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        196,
+        114,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 300,
+      "rect": [
+        0,
+        228,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 400,
+      "rect": [
+        98,
+        228,
+        98,
+        114
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    40,
+    69
+  ],
+  "schemaVersion": 1
+}

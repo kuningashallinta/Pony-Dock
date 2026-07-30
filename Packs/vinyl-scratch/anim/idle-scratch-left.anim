@@ -1,0 +1,87 @@
+{
+  "atlas": "idle-scratch-left.png",
+  "atlasSize": [
+    264,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        88,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        176,
+        0,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        88,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        176,
+        84,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        168,
+        88,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        88,
+        168,
+        88,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

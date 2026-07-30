@@ -1,0 +1,177 @@
+{
+  "atlas": "winona-stand-left.png",
+  "atlasSize": [
+    400,
+    256
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        80,
+        0,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        160,
+        0,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        240,
+        0,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        320,
+        0,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        64,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        80,
+        64,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        160,
+        64,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        240,
+        64,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        320,
+        64,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        128,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        80,
+        128,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        160,
+        128,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        240,
+        128,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        320,
+        128,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        192,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        80,
+        192,
+        80,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        160,
+        192,
+        80,
+        64
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,181 @@
+{
+  "animations": {
+    "fillyshy-fly": {
+      "left": "anim/fillyshy-fly-left.anim",
+      "right": "anim/fillyshy-fly-right.anim"
+    },
+    "fillyshy-flyup": {
+      "left": "anim/fillyshy-flyup-left.anim",
+      "right": "anim/fillyshy-flyup-right.anim"
+    },
+    "fillyshy-sitting": {
+      "left": "anim/fillyshy-sitting-left.anim",
+      "right": "anim/fillyshy-sitting-right.anim"
+    },
+    "fillyshy-sleep": {
+      "left": "anim/fillyshy-sleep-left.anim",
+      "right": "anim/fillyshy-sleep-right.anim"
+    },
+    "fillyshy-stand": {
+      "left": "anim/fillyshy-stand-left.anim",
+      "right": "anim/fillyshy-stand-right.anim"
+    },
+    "fillyshy-trot": {
+      "left": "anim/fillyshy-trot-left.anim",
+      "right": "anim/fillyshy-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "fillyshy-stand",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 8240,
+        "min": 4120
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "Stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fillyshy-trot",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 5120,
+        "min": 1280
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fillyshy-sitting",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 8240,
+        "min": 4120
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fillyshy-fly",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 5120,
+        "min": 1280
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "Fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fillyshy-flyup",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 2560,
+        "min": 1280
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "FlyUp",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "FlyUp",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fillyshy-sleep",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 60000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "Sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "fluttershy-filly",
+  "interactions": [],
+  "name": "Fluttershy",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "main ponies",
+    "fillies",
+    "pegasi"
+  ]
+}

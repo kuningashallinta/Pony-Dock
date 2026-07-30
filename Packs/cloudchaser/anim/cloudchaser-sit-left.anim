@@ -1,0 +1,33 @@
+{
+  "atlas": "cloudchaser-sit-left.png",
+  "atlasSize": [
+    140,
+    71
+  ],
+  "frames": [
+    {
+      "durationMs": 6000,
+      "rect": [
+        0,
+        0,
+        70,
+        71
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        70,
+        0,
+        70,
+        71
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

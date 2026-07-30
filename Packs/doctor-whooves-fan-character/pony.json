@@ -1,0 +1,178 @@
+{
+  "animations": {
+    "fez": {
+      "left": "anim/fez-left.anim",
+      "right": "anim/fez-right.anim"
+    },
+    "idle": {
+      "left": "anim/idle-left.anim",
+      "right": "anim/idle-right.anim"
+    },
+    "stand": {
+      "left": "anim/stand-left.anim",
+      "right": "anim/stand-right.anim"
+    },
+    "tardis1": {
+      "left": "anim/tardis1.anim",
+      "right": "anim/tardis1.anim"
+    },
+    "walking": {
+      "left": "anim/walking-left.anim",
+      "right": "anim/walking-right.anim"
+    },
+    "walking-2": {
+      "left": "anim/walking-2-left.anim",
+      "right": "anim/walking-2-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stand",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walking",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walking-2",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 15000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk tardis",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk tardis",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fez",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fez",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "fez",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "tardis1",
+      "behavior": "walk tardis",
+      "centering": {
+        "left": "Bottom_Center",
+        "right": "Bottom_Center"
+      },
+      "durationMs": 7000,
+      "follow": false,
+      "id": "TARDIS",
+      "name": "TARDIS",
+      "placement": {
+        "left": "Bottom_Right",
+        "right": "Bottom_Left"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "doctor-whooves-fan-character",
+  "interactions": [],
+  "name": "Doctor Whooves",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "earth ponies",
+    "stallions",
+    "supporting ponies",
+    "alternate art"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "atlas": "fluttershy-drag-left.png",
+  "atlasSize": [
+    204,
+    136
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        102,
+        68
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        102,
+        0,
+        102,
+        68
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        68,
+        102,
+        68
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        102,
+        68,
+        102,
+        68
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

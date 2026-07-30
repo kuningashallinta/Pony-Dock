@@ -1,0 +1,568 @@
+{
+  "animations": {
+    "dancestomp-scratch": {
+      "left": "anim/dancestomp-scratch-left.anim",
+      "right": "anim/dancestomp-scratch-right.anim"
+    },
+    "dancestomp-strobe1-scratch": {
+      "left": "anim/dancestomp-strobe1-scratch-left.anim",
+      "right": "anim/dancestomp-strobe1-scratch-right.anim"
+    },
+    "dancestomp-strobe2-scratch": {
+      "left": "anim/dancestomp-strobe2-scratch-left.anim",
+      "right": "anim/dancestomp-strobe2-scratch-right.anim"
+    },
+    "dancestomp-strobe3-scratch": {
+      "left": "anim/dancestomp-strobe3-scratch-left.anim",
+      "right": "anim/dancestomp-strobe3-scratch-right.anim"
+    },
+    "djdecks-down": {
+      "left": "anim/djdecks-down-left.anim",
+      "right": "anim/djdecks-down-right.anim"
+    },
+    "djdecks-playing": {
+      "left": "anim/djdecks-playing-left.anim",
+      "right": "anim/djdecks-playing-right.anim"
+    },
+    "djdecks-playing-strobe1": {
+      "left": "anim/djdecks-playing-strobe1-left.anim",
+      "right": "anim/djdecks-playing-strobe1-right.anim"
+    },
+    "djdecks-playing-strobe2": {
+      "left": "anim/djdecks-playing-strobe2-left.anim",
+      "right": "anim/djdecks-playing-strobe2-right.anim"
+    },
+    "djdecks-playing-strobe3": {
+      "left": "anim/djdecks-playing-strobe3-left.anim",
+      "right": "anim/djdecks-playing-strobe3-right.anim"
+    },
+    "djdecks-popup": {
+      "left": "anim/djdecks-popup-left.anim",
+      "right": "anim/djdecks-popup-right.anim"
+    },
+    "idle-scratch": {
+      "left": "anim/idle-scratch-left.anim",
+      "right": "anim/idle-scratch-right.anim"
+    },
+    "idle-smile-scratch": {
+      "left": "anim/idle-smile-scratch-left.anim",
+      "right": "anim/idle-smile-scratch-right.anim"
+    },
+    "idle-strobe1-scratch": {
+      "left": "anim/idle-strobe1-scratch-left.anim",
+      "right": "anim/idle-strobe1-scratch-right.anim"
+    },
+    "idle-strobe2-scratch": {
+      "left": "anim/idle-strobe2-scratch-left.anim",
+      "right": "anim/idle-strobe2-scratch-right.anim"
+    },
+    "idle-strobe3-scratch": {
+      "left": "anim/idle-strobe3-scratch-left.anim",
+      "right": "anim/idle-strobe3-scratch-right.anim"
+    },
+    "moonwalk-scratch": {
+      "left": "anim/moonwalk-scratch-left.anim",
+      "right": "anim/moonwalk-scratch-right.anim"
+    },
+    "trotcycle-scratch": {
+      "left": "anim/trotcycle-scratch-left.anim",
+      "right": "anim/trotcycle-scratch-right.anim"
+    },
+    "updown-scratch": {
+      "left": "anim/updown-scratch-left.anim",
+      "right": "anim/updown-scratch-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "idle-scratch",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 3000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "idle-smile-scratch",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 3000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "standsmile",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "standsmile",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "idle-strobe1-scratch",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 3000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "standstrobe1",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "standstrobe1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "idle-strobe2-scratch",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 3000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "standstrobe2",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "standstrobe2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "idle-strobe3-scratch",
+      "chance": 0.04,
+      "durationMs": {
+        "max": 3000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "standstrobe3",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "standstrobe3",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "dancestomp-scratch",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 1000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "DJ1",
+      "linkedBehavior": "DJ1a",
+      "movement": "MouseOver",
+      "name": "DJ1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "dancestomp-scratch",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 6000,
+        "min": 4000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "DJ1a",
+      "linkedBehavior": "DJ2",
+      "movement": "None",
+      "name": "DJ1a",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "dancestomp-strobe1-scratch",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 4000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "DJ2",
+      "linkedBehavior": "DJ3",
+      "movement": "None",
+      "name": "DJ2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "dancestomp-strobe2-scratch",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 2000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "DJ3",
+      "linkedBehavior": "DJ4",
+      "movement": "None",
+      "name": "DJ3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "dancestomp-strobe3-scratch",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 1000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "DJ4",
+      "linkedBehavior": "DJend",
+      "movement": "None",
+      "name": "DJ4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "dancestomp-scratch",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 1000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "DJend",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "DJend",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "trotcycle-scratch",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "trotcycle-scratch",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk2",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "moonwalk-scratch",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "moonwalk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "moonwalk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "updown-scratch",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Only",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [
+    {
+      "animation": "djdecks-popup",
+      "behavior": "DJ1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "discpopup",
+      "name": "discpopup",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "djdecks-playing",
+      "behavior": "DJ1a",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "discplay1",
+      "name": "discplay1",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "djdecks-playing-strobe1",
+      "behavior": "DJ2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "discplay2",
+      "name": "discplay2",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "djdecks-playing-strobe2",
+      "behavior": "DJ3",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "discplay3",
+      "name": "discplay3",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "djdecks-playing-strobe3",
+      "behavior": "DJ4",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "discplay4",
+      "name": "discplay4",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    },
+    {
+      "animation": "djdecks-down",
+      "behavior": "DJend",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 0,
+      "follow": true,
+      "id": "discdown",
+      "name": "discdown",
+      "placement": {
+        "left": "Center_Left",
+        "right": "Center_Right"
+      },
+      "preventAnimationLoop": true,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "vinyl-scratch",
+  "interactions": [
+    {
+      "activation": "Any",
+      "behaviors": [
+        "DJ1"
+      ],
+      "chance": 0.5,
+      "id": "Dance",
+      "name": "Dance",
+      "proximityPx": 300,
+      "reactivationDelayMs": 60000,
+      "targets": [
+        "limestone-pie-filly",
+        "pinkie-pie-filly",
+        "marble-pie-filly",
+        "cloudy-quartz"
+      ]
+    }
+  ],
+  "name": "Vinyl Scratch",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

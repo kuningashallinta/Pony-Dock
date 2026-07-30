@@ -1,0 +1,24 @@
+{
+  "atlas": "crystal-fluttershy-right.png",
+  "atlasSize": [
+    100,
+    86
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        100,
+        86
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    49,
+    36
+  ],
+  "schemaVersion": 1
+}

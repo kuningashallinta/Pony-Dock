@@ -1,0 +1,132 @@
+{
+  "atlas": "allie-idle-left.png",
+  "atlasSize": [
+    392,
+    392
+  ],
+  "frames": [
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        0,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        0,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        0,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        294,
+        0,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        98,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        98,
+        98,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        196,
+        98,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        294,
+        98,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        196,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        196,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        196,
+        196,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        294,
+        196,
+        98,
+        98
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        294,
+        98,
+        98
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    51,
+    44
+  ],
+  "schemaVersion": 1
+}

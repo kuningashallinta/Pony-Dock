@@ -1,0 +1,24 @@
+{
+  "atlas": "twi-crystal-left.png",
+  "atlasSize": [
+    92,
+    86
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        92,
+        86
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    42,
+    46
+  ],
+  "schemaVersion": 1
+}

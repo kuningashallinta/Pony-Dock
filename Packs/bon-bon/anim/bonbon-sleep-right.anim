@@ -1,0 +1,60 @@
+{
+  "atlas": "bonbon-sleep-right.png",
+  "atlasSize": [
+    252,
+    184
+  ],
+  "frames": [
+    {
+      "durationMs": 1400,
+      "rect": [
+        0,
+        0,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        84,
+        0,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        168,
+        0,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        92,
+        84,
+        92
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        84,
+        92,
+        84,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    42,
+    27
+  ],
+  "schemaVersion": 1
+}

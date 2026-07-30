@@ -1,0 +1,96 @@
+{
+  "atlas": "discord-puppet.png",
+  "atlasSize": [
+    540,
+    414
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        180,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        180,
+        0,
+        180,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        360,
+        0,
+        180,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        138,
+        180,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        180,
+        138,
+        180,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        360,
+        138,
+        180,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        276,
+        180,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        180,
+        276,
+        180,
+        138
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        360,
+        276,
+        180,
+        138
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

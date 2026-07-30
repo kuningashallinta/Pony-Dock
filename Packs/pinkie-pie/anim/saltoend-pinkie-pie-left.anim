@@ -1,0 +1,78 @@
+{
+  "atlas": "saltoend-pinkie-pie-left.png",
+  "atlasSize": [
+    420,
+    270
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        140,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        140,
+        0,
+        140,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        280,
+        0,
+        140,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        90,
+        140,
+        90
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        140,
+        90,
+        140,
+        90
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        280,
+        90,
+        140,
+        90
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        180,
+        140,
+        90
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    68,
+    44
+  ],
+  "schemaVersion": 1
+}

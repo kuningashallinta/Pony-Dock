@@ -1,0 +1,96 @@
+{
+  "atlas": "dig-zecora-left.png",
+  "atlasSize": [
+    318,
+    498
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        106,
+        166
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        0,
+        106,
+        166
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        212,
+        0,
+        106,
+        166
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        166,
+        106,
+        166
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        166,
+        106,
+        166
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        212,
+        166,
+        106,
+        166
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        332,
+        106,
+        166
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        106,
+        332,
+        106,
+        166
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        212,
+        332,
+        106,
+        166
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

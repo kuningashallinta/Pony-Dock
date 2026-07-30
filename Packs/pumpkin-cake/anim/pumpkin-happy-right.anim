@@ -1,0 +1,51 @@
+{
+  "atlas": "pumpkin-happy-right.png",
+  "atlasSize": [
+    72,
+    120
+  ],
+  "frames": [
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        0,
+        36,
+        60
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        36,
+        0,
+        36,
+        60
+      ]
+    },
+    {
+      "durationMs": 150,
+      "rect": [
+        0,
+        60,
+        36,
+        60
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        36,
+        60,
+        36,
+        60
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    22,
+    38
+  ],
+  "schemaVersion": 1
+}

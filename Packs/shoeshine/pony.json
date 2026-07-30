@@ -1,0 +1,247 @@
+{
+  "animations": {
+    "benchshoeshine": {
+      "left": "anim/benchshoeshine.anim",
+      "right": "anim/benchshoeshine.anim"
+    },
+    "shoeshine-dance": {
+      "left": "anim/shoeshine-dance-left.anim",
+      "right": "anim/shoeshine-dance-right.anim"
+    },
+    "shoeshine-drag": {
+      "left": "anim/shoeshine-drag-left.anim",
+      "right": "anim/shoeshine-drag-right.anim"
+    },
+    "shoeshine-idle": {
+      "left": "anim/shoeshine-idle-left.anim",
+      "right": "anim/shoeshine-idle-right.anim"
+    },
+    "shoeshine-trot": {
+      "left": "anim/shoeshine-trot-left.anim",
+      "right": "anim/shoeshine-trot-right.anim"
+    },
+    "shoeshine-trot-2": {
+      "left": "anim/shoeshine-trot-2-left.anim",
+      "right": "anim/shoeshine-trot-2-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "shoeshine-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "shoeshine-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "shoeshine-dance",
+      "chance": 0.06,
+      "durationMs": {
+        "max": 3100,
+        "min": 3100
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "dance",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "dance",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "shoeshine-trot",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 12000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 8,
+        "offsetY": 32,
+        "stoppedBehavior": null,
+        "target": "Carrot Top"
+      },
+      "group": 0,
+      "id": "follow_carrottop",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "follow_carrottop",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "shoeshine-drag",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "shoeshine-trot-2",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 3000,
+        "min": 2500
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "trot",
+        "offsetX": 0,
+        "offsetY": 4,
+        "stoppedBehavior": "stand",
+        "target": "Lyra"
+      },
+      "group": 0,
+      "id": "lyrashine",
+      "linkedBehavior": "bench-duo",
+      "movement": "Diagonal_Horizontal",
+      "name": "lyrashine",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "benchshoeshine",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 32000,
+        "min": 25000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "bench-duo",
+      "linkedBehavior": "bench-end",
+      "movement": "None",
+      "name": "bench-duo",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "shoeshine-trot-2",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "bench-end",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "bench-end",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "shoeshine",
+  "interactions": [],
+  "name": "Shoeshine",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

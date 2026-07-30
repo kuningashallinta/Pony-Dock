@@ -1,0 +1,60 @@
+{
+  "atlas": "sparkler-sit-right.png",
+  "atlasSize": [
+    222,
+    168
+  ],
+  "frames": [
+    {
+      "durationMs": 2000,
+      "rect": [
+        0,
+        0,
+        74,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        74,
+        0,
+        74,
+        84
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        148,
+        0,
+        74,
+        84
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        84,
+        74,
+        84
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        74,
+        84,
+        74,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    31,
+    18
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,60 @@
+{
+  "atlas": "ch-ra-finish.png",
+  "atlasSize": [
+    288,
+    164
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        96,
+        82
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        96,
+        0,
+        96,
+        82
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        192,
+        0,
+        96,
+        82
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        82,
+        96,
+        82
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        96,
+        82,
+        96,
+        82
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    53,
+    52
+  ],
+  "schemaVersion": 1
+}

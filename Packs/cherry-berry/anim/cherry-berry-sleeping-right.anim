@@ -1,0 +1,33 @@
+{
+  "atlas": "cherry-berry-sleeping-right.png",
+  "atlasSize": [
+    154,
+    63
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        77,
+        63
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        77,
+        0,
+        77,
+        63
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    38,
+    20
+  ],
+  "schemaVersion": 1
+}

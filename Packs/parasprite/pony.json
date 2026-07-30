@@ -1,0 +1,1126 @@
+{
+  "animations": {
+    "para-blue": {
+      "left": "anim/para-blue-left.anim",
+      "right": "anim/para-blue-right.anim"
+    },
+    "para-blue-updown": {
+      "left": "anim/para-blue-updown.anim",
+      "right": "anim/para-blue-updown.anim"
+    },
+    "para-brown": {
+      "left": "anim/para-brown-left.anim",
+      "right": "anim/para-brown-right.anim"
+    },
+    "para-brown-updown": {
+      "left": "anim/para-brown-updown.anim",
+      "right": "anim/para-brown-updown.anim"
+    },
+    "para-green": {
+      "left": "anim/para-green-left.anim",
+      "right": "anim/para-green-right.anim"
+    },
+    "para-green-updown": {
+      "left": "anim/para-green-updown.anim",
+      "right": "anim/para-green-updown.anim"
+    },
+    "para-orange": {
+      "left": "anim/para-orange-left.anim",
+      "right": "anim/para-orange-right.anim"
+    },
+    "para-orange-updown": {
+      "left": "anim/para-orange-updown.anim",
+      "right": "anim/para-orange-updown.anim"
+    },
+    "para-pink": {
+      "left": "anim/para-pink-left.anim",
+      "right": "anim/para-pink-right.anim"
+    },
+    "para-pink-updown": {
+      "left": "anim/para-pink-updown.anim",
+      "right": "anim/para-pink-updown.anim"
+    },
+    "para-purple": {
+      "left": "anim/para-purple-left.anim",
+      "right": "anim/para-purple-right.anim"
+    },
+    "para-purple-updown": {
+      "left": "anim/para-purple-updown.anim",
+      "right": "anim/para-purple-updown.anim"
+    },
+    "para-red": {
+      "left": "anim/para-red-left.anim",
+      "right": "anim/para-red-right.anim"
+    },
+    "para-red-updown": {
+      "left": "anim/para-red-updown.anim",
+      "right": "anim/para-red-updown.anim"
+    },
+    "para-yellow": {
+      "left": "anim/para-yellow-left.anim",
+      "right": "anim/para-yellow-right.anim"
+    },
+    "para-yellow-updown": {
+      "left": "anim/para-yellow-updown.anim",
+      "right": "anim/para-yellow-updown.anim"
+    }
+  },
+  "behaviorGroups": [
+    {
+      "id": 1,
+      "name": "Start"
+    },
+    {
+      "id": 2,
+      "name": "Blue"
+    },
+    {
+      "id": 3,
+      "name": "Brown"
+    },
+    {
+      "id": 4,
+      "name": "Orange"
+    },
+    {
+      "id": 5,
+      "name": "Pink"
+    },
+    {
+      "id": 6,
+      "name": "Purple"
+    },
+    {
+      "id": 7,
+      "name": "Yellow"
+    },
+    {
+      "id": 8,
+      "name": "Red"
+    },
+    {
+      "id": 9,
+      "name": "Green"
+    }
+  ],
+  "behaviors": [
+    {
+      "animation": "para-purple-updown",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 100,
+        "min": 10
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "start_purple",
+      "linkedBehavior": "purple-fly",
+      "movement": "None",
+      "name": "start_purple",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-blue-updown",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 100,
+        "min": 10
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "start_blue",
+      "linkedBehavior": "blue-fly",
+      "movement": "None",
+      "name": "start_blue",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-brown-updown",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 100,
+        "min": 10
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "start_brown",
+      "linkedBehavior": "brown-fly",
+      "movement": "None",
+      "name": "start_brown",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-orange-updown",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 100,
+        "min": 10
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "start_orange",
+      "linkedBehavior": "orange-fly",
+      "movement": "None",
+      "name": "start_orange",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-pink-updown",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 100,
+        "min": 10
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "start_pink",
+      "linkedBehavior": "pink-fly",
+      "movement": "None",
+      "name": "start_pink",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-yellow-updown",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 100,
+        "min": 10
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "start_yellow",
+      "linkedBehavior": "yellow-fly",
+      "movement": "None",
+      "name": "start_yellow",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-red-updown",
+      "chance": 0.003,
+      "durationMs": {
+        "max": 100,
+        "min": 10
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "start_red",
+      "linkedBehavior": "red-fly",
+      "movement": "None",
+      "name": "start_red",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-green-updown",
+      "chance": 0.002,
+      "durationMs": {
+        "max": 100,
+        "min": 10
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 1,
+      "id": "start_green",
+      "linkedBehavior": "green-fly",
+      "movement": "None",
+      "name": "start_green",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-blue-updown",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "blue-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "blue-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-blue",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "blue-fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "blue-fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-blue-updown",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 2,
+      "id": "blue-updown",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "blue-updown",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-blue",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 25000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": true,
+        "movingBehavior": null,
+        "offsetX": -12,
+        "offsetY": -20,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 2,
+      "id": "parasprite_follow_circle_2",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "parasprite_follow_circle_2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-brown-updown",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "brown-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "brown-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-brown",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "brown-fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "brown-fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-brown-updown",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 3,
+      "id": "brown-updown",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "brown-updown",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-brown",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 25000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": true,
+        "movingBehavior": null,
+        "offsetX": -21,
+        "offsetY": -23,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 3,
+      "id": "parasprite_follow_circle_3",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "parasprite_follow_circle_3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-orange-updown",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "orange-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "orange-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-orange",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "orange-fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "orange-fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-orange-updown",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 4,
+      "id": "orange-updown",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "orange-updown",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-orange",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 25000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": true,
+        "movingBehavior": null,
+        "offsetX": -34,
+        "offsetY": -20,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 4,
+      "id": "parasprite_follow_circle_4",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "parasprite_follow_circle_4",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-pink-updown",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pink-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "pink-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-pink",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pink-fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "pink-fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-pink-updown",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 5,
+      "id": "pink-updown",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "pink-updown",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-pink",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 25000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": true,
+        "movingBehavior": null,
+        "offsetX": -17,
+        "offsetY": -16,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 5,
+      "id": "parasprite_follow_circle_5",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "parasprite_follow_circle_5",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-purple-updown",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "purple-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "purple-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-purple",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "purple-fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "purple-fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-purple-updown",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 6,
+      "id": "purple-updown",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "purple-updown",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-purple",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 25000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": true,
+        "movingBehavior": null,
+        "offsetX": -26,
+        "offsetY": -31,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 6,
+      "id": "parasprite_follow_circle_6",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "parasprite_follow_circle_6",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-yellow-updown",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "yellow-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "yellow-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-yellow",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "yellow-fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "yellow-fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-yellow-updown",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 7,
+      "id": "yellow-updown",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "yellow-updown",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-yellow",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 25000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -12,
+        "offsetY": -20,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 7,
+      "id": "parasprite_follow_circle_7",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "parasprite_follow_circle_7",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-red-updown",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 8,
+      "id": "red-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "red-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-red",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 8,
+      "id": "red-fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "red-fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-red-updown",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 8,
+      "id": "red-updown",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "red-updown",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-red",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 25000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": true,
+        "movingBehavior": null,
+        "offsetX": -13,
+        "offsetY": -30,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 8,
+      "id": "parasprite_follow_circle_8",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "parasprite_follow_circle_8",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-green-updown",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 9,
+      "id": "green-stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "green-stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-green",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 9,
+      "id": "green-fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "green-fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 50.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "para-green-updown",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 9,
+      "id": "green-updown",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "green-updown",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "para-green",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 30000,
+        "min": 25000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": -16,
+        "offsetY": -24,
+        "stoppedBehavior": null,
+        "target": "Pinkie Pie"
+      },
+      "group": 9,
+      "id": "parasprite_follow_circle_9",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "parasprite_follow_circle_9",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "parasprite",
+  "interactions": [],
+  "name": "Parasprite",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "pets",
+    "non-ponies"
+  ]
+}

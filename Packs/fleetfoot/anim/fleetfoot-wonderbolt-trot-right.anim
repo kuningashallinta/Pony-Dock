@@ -1,0 +1,159 @@
+{
+  "atlas": "fleetfoot-wonderbolt-trot-right.png",
+  "atlasSize": [
+    344,
+    384
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        0,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        0,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        258,
+        0,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        96,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        96,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        96,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        258,
+        96,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        192,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        192,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        192,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        258,
+        192,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        288,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        86,
+        288,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        172,
+        288,
+        86,
+        96
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        258,
+        288,
+        86,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    43,
+    48
+  ],
+  "schemaVersion": 1
+}

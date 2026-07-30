@@ -1,0 +1,87 @@
+{
+  "atlas": "discord-skate-right.png",
+  "atlasSize": [
+    444,
+    600
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        148,
+        200
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        148,
+        0,
+        148,
+        200
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        296,
+        0,
+        148,
+        200
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        200,
+        148,
+        200
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        148,
+        200,
+        148,
+        200
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        296,
+        200,
+        148,
+        200
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        400,
+        148,
+        200
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        148,
+        400,
+        148,
+        200
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

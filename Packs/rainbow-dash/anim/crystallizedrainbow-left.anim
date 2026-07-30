@@ -1,0 +1,24 @@
+{
+  "atlas": "crystallizedrainbow-left.png",
+  "atlasSize": [
+    106,
+    96
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        106,
+        96
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    50,
+    50
+  ],
+  "schemaVersion": 1
+}

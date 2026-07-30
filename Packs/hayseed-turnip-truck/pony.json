@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "hayseed-idle": {
+      "left": "anim/hayseed-idle-left.anim",
+      "right": "anim/hayseed-idle-right.anim"
+    },
+    "hayseed-trot": {
+      "left": "anim/hayseed-trot-left.anim",
+      "right": "anim/hayseed-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "hayseed-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 7000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "hayseed-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "hayseed-turnip-truck",
+  "interactions": [],
+  "name": "Hayseed Turnip Truck",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Supporting Ponies",
+    "Stallions",
+    "Earth Ponies"
+  ]
+}

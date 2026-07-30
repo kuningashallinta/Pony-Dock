@@ -1,0 +1,123 @@
+{
+  "atlas": "teleportstart-pinkie-pie-right.png",
+  "atlasSize": [
+    512,
+    378
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        128,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        0,
+        128,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        256,
+        0,
+        128,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        384,
+        0,
+        128,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        126,
+        128,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        126,
+        128,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        256,
+        126,
+        128,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        384,
+        126,
+        128,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        252,
+        128,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        128,
+        252,
+        128,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        256,
+        252,
+        128,
+        126
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        384,
+        252,
+        128,
+        126
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    74,
+    80
+  ],
+  "schemaVersion": 1
+}

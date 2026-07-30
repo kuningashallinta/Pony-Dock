@@ -1,0 +1,78 @@
+{
+  "atlas": "pinkie-galopp-left.png",
+  "atlasSize": [
+    414,
+    258
+  ],
+  "frames": [
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        0,
+        138,
+        86
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        138,
+        0,
+        138,
+        86
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        276,
+        0,
+        138,
+        86
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        86,
+        138,
+        86
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        138,
+        86,
+        138,
+        86
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        276,
+        86,
+        138,
+        86
+      ]
+    },
+    {
+      "durationMs": 60,
+      "rect": [
+        0,
+        172,
+        138,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    56,
+    52
+  ],
+  "schemaVersion": 1
+}

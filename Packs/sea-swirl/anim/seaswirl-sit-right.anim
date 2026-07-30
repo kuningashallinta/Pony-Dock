@@ -1,0 +1,51 @@
+{
+  "atlas": "seaswirl-sit-right.png",
+  "atlasSize": [
+    184,
+    132
+  ],
+  "frames": [
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        0,
+        92,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        0,
+        92,
+        66
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        66,
+        92,
+        66
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        66,
+        92,
+        66
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    46,
+    24
+  ],
+  "schemaVersion": 1
+}

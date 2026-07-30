@@ -1,0 +1,60 @@
+{
+  "atlas": "caramel-sleep-right.png",
+  "atlasSize": [
+    198,
+    148
+  ],
+  "frames": [
+    {
+      "durationMs": 1400,
+      "rect": [
+        0,
+        0,
+        66,
+        74
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        66,
+        0,
+        66,
+        74
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        132,
+        0,
+        66,
+        74
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        74,
+        66,
+        74
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        66,
+        74,
+        66,
+        74
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    33,
+    20
+  ],
+  "schemaVersion": 1
+}

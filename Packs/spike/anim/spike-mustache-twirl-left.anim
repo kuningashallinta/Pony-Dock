@@ -1,0 +1,51 @@
+{
+  "atlas": "spike-mustache-twirl-left.png",
+  "atlasSize": [
+    72,
+    108
+  ],
+  "frames": [
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        0,
+        36,
+        54
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        36,
+        0,
+        36,
+        54
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        54,
+        36,
+        54
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        36,
+        54,
+        36,
+        54
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    16,
+    24
+  ],
+  "schemaVersion": 1
+}

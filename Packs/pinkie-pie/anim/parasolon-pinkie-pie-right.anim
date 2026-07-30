@@ -1,0 +1,159 @@
+{
+  "atlas": "parasolon-pinkie-pie-right.png",
+  "atlasSize": [
+    424,
+    504
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        106,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        212,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        318,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        106,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        212,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        318,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        252,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        252,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 1500,
+      "rect": [
+        212,
+        252,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        318,
+        252,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        378,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        106,
+        378,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        212,
+        378,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        318,
+        378,
+        106,
+        126
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    48,
+    82
+  ],
+  "schemaVersion": 1
+}

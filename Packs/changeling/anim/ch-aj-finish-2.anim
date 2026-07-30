@@ -1,0 +1,60 @@
+{
+  "atlas": "ch-aj-finish-2.png",
+  "atlasSize": [
+    270,
+    184
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        90,
+        0,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 600,
+      "rect": [
+        180,
+        0,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        92,
+        90,
+        92
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        90,
+        92,
+        90,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    46,
+    62
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,78 @@
+{
+  "atlas": "flitter-fly-right.png",
+  "atlasSize": [
+    258,
+    282
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        86,
+        0,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        172,
+        0,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        94,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        86,
+        94,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        172,
+        94,
+        86,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        188,
+        86,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

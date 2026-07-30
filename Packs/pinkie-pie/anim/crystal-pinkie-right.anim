@@ -1,0 +1,24 @@
+{
+  "atlas": "crystal-pinkie-right.png",
+  "atlasSize": [
+    96,
+    90
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        96,
+        90
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    48,
+    43
+  ],
+  "schemaVersion": 1
+}

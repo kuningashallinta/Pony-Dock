@@ -1,0 +1,41 @@
+{
+  "animations": {
+    "random-pony": {
+      "left": "anim/random-pony.anim",
+      "right": "anim/random-pony.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "random-pony",
+      "chance": 1.0,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "random-pony",
+  "interactions": [],
+  "name": "Random Pony",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": []
+}

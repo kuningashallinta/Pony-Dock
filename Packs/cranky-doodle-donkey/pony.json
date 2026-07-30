@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "crankydoodle-idle": {
+      "left": "anim/crankydoodle-idle-left.anim",
+      "right": "anim/crankydoodle-idle-right.anim"
+    },
+    "crankydoodle-walk": {
+      "left": "anim/crankydoodle-walk-left.anim",
+      "right": "anim/crankydoodle-walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "crankydoodle-idle",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "crankydoodle-walk",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walking",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walking",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 46.666666666666664,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "cranky-doodle-donkey",
+  "interactions": [],
+  "name": "Cranky",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "stallions",
+    "non-ponies",
+    "supporting ponies"
+  ]
+}

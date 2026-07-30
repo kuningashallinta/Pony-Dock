@@ -1,0 +1,295 @@
+{
+  "animations": {
+    "lyra-jump": {
+      "left": "anim/lyra-jump-left.anim",
+      "right": "anim/lyra-jump-right.anim"
+    },
+    "lyra-lyre": {
+      "left": "anim/lyra-lyre-left.anim",
+      "right": "anim/lyra-lyre-right.anim"
+    },
+    "lyra-sit": {
+      "left": "anim/lyra-sit-left.anim",
+      "right": "anim/lyra-sit-right.anim"
+    },
+    "lyra-sleep": {
+      "left": "anim/lyra-sleep-left.anim",
+      "right": "anim/lyra-sleep-right.anim"
+    },
+    "lyra-stand": {
+      "left": "anim/lyra-stand-left.anim",
+      "right": "anim/lyra-stand-right.anim"
+    },
+    "lyrabench-big": {
+      "left": "anim/lyrabench-big.anim",
+      "right": "anim/lyrabench-big.anim"
+    },
+    "walk": {
+      "left": "anim/walk-left.anim",
+      "right": "anim/walk-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "lyra-stand",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lyra-jump",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "happybounce",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "happybounce",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "walk",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lyra-sit",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "walk",
+      "chance": 0.02,
+      "durationMs": {
+        "max": 60000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 39,
+        "offsetY": 0,
+        "stoppedBehavior": null,
+        "target": "Bon-Bon"
+      },
+      "group": 0,
+      "id": "follow",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": "hi",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "lyra-sleep",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "lyrabench-big",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 40000,
+        "min": 35000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "lyrabon",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "lyrabon",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "sit",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "lyrabench-big",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 40000,
+        "min": 35000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "lyrashine",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "lyrashine",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "lyra-lyre",
+      "chance": 0.07,
+      "durationMs": {
+        "max": 14000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Lyre",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Lyre",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "lyra",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "lyrabon"
+      ],
+      "chance": 0.3,
+      "id": "Lyrabon_bench",
+      "name": "Lyrabon_bench",
+      "proximityPx": 200,
+      "reactivationDelayMs": 200000,
+      "targets": [
+        "bon-bon"
+      ]
+    },
+    {
+      "activation": "One",
+      "behaviors": [
+        "lyrashine"
+      ],
+      "chance": 0.2,
+      "id": "Lyrashine_bench",
+      "name": "Lyrashine_bench",
+      "proximityPx": 200,
+      "reactivationDelayMs": 200000,
+      "targets": [
+        "shoeshine"
+      ]
+    }
+  ],
+  "name": "Lyra",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

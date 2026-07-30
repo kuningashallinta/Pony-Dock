@@ -1,0 +1,60 @@
+{
+  "atlas": "ch-fl-finish-2.png",
+  "atlasSize": [
+    324,
+    156
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        108,
+        78
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        108,
+        0,
+        108,
+        78
+      ]
+    },
+    {
+      "durationMs": 900,
+      "rect": [
+        216,
+        0,
+        108,
+        78
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        78,
+        108,
+        78
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        108,
+        78,
+        108,
+        78
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    54,
+    48
+  ],
+  "schemaVersion": 1
+}

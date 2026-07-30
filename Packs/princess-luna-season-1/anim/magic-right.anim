@@ -1,0 +1,33 @@
+{
+  "atlas": "magic-right.png",
+  "atlasSize": [
+    208,
+    96
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        104,
+        96
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        104,
+        0,
+        104,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

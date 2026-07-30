@@ -1,0 +1,24 @@
+{
+  "atlas": "critter-right.png",
+  "atlasSize": [
+    112,
+    88
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        0,
+        112,
+        88
+      ]
+    }
+  ],
+  "loop": false,
+  "pivot": [
+    57,
+    39
+  ],
+  "schemaVersion": 1
+}

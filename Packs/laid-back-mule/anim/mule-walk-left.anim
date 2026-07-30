@@ -1,0 +1,123 @@
+{
+  "atlas": "mule-walk-left.png",
+  "atlasSize": [
+    344,
+    276
+  ],
+  "frames": [
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        0,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        86,
+        0,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        172,
+        0,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        258,
+        0,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        92,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        86,
+        92,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        172,
+        92,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        258,
+        92,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        184,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        86,
+        184,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        172,
+        184,
+        86,
+        92
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        258,
+        184,
+        86,
+        92
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

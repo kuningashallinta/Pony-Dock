@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "mr-cake-idle": {
+      "left": "anim/mr-cake-idle-left.anim",
+      "right": "anim/mr-cake-idle-right.anim"
+    },
+    "mr-cake-trot": {
+      "left": "anim/mr-cake-trot-left.anim",
+      "right": "anim/mr-cake-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "mr-cake-idle",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "mr-cake-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "mr-cake",
+  "interactions": [],
+  "name": "Mr Cake",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "earth ponies"
+  ]
+}

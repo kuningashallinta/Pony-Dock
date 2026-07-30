@@ -1,0 +1,210 @@
+{
+  "animations": {
+    "violet-mouse": {
+      "left": "anim/violet-mouse-left.anim",
+      "right": "anim/violet-mouse-right.anim"
+    },
+    "violet-safe-drag": {
+      "left": "anim/violet-safe-drag-left.anim",
+      "right": "anim/violet-safe-drag-right.anim"
+    },
+    "violet-sit": {
+      "left": "anim/violet-sit-left.anim",
+      "right": "anim/violet-sit-right.anim"
+    },
+    "violet-sit-up": {
+      "left": "anim/violet-sit-up-left.anim",
+      "right": "anim/violet-sit-up-right.anim"
+    },
+    "violet-stand": {
+      "left": "anim/violet-stand-left.anim",
+      "right": "anim/violet-stand-right.anim"
+    },
+    "violet-tea": {
+      "left": "anim/violet-tea-left.anim",
+      "right": "anim/violet-tea-right.anim"
+    },
+    "violet-trot": {
+      "left": "anim/violet-trot-left.anim",
+      "right": "anim/violet-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "violet-stand",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 3000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "violet-trot",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "violet-sit",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 30000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "violet-sit-up",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 30000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sit2",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "sit2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "violet-tea",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "applaud",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "applaud",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "violet-safe-drag",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 2400,
+        "min": 100
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "drag",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "violet-mouse",
+      "chance": 0.01,
+      "durationMs": {
+        "max": 5200,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "mouseover",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "mouseover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "violet",
+  "interactions": [],
+  "name": "Violet",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

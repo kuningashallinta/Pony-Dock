@@ -1,0 +1,159 @@
+{
+  "atlas": "greenhooves-walk-left.png",
+  "atlasSize": [
+    344,
+    424
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        86,
+        0,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        172,
+        0,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        258,
+        0,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        106,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        86,
+        106,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        172,
+        106,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        258,
+        106,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        212,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        86,
+        212,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        172,
+        212,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        258,
+        212,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        318,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        86,
+        318,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        172,
+        318,
+        86,
+        106
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        258,
+        318,
+        86,
+        106
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

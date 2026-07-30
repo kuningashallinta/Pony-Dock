@@ -1,0 +1,150 @@
+{
+  "atlas": "hatersstop-pinkie-pie-left.png",
+  "atlasSize": [
+    392,
+    456
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        0,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        0,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        294,
+        0,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        114,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        114,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        114,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        294,
+        114,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        228,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        228,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        196,
+        228,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        294,
+        228,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        342,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        98,
+        342,
+        98,
+        114
+      ]
+    },
+    {
+      "durationMs": 2000,
+      "rect": [
+        196,
+        342,
+        98,
+        114
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    47,
+    70
+  ],
+  "schemaVersion": 1
+}

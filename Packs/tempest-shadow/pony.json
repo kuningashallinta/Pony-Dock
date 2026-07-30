@@ -1,0 +1,142 @@
+{
+  "animations": {
+    "tempestshadow-idle": {
+      "left": "anim/tempestshadow-idle-left.anim",
+      "right": "anim/tempestshadow-idle-right.anim"
+    },
+    "tempestshadow-magic": {
+      "left": "anim/tempestshadow-magic-left.anim",
+      "right": "anim/tempestshadow-magic-right.anim"
+    },
+    "tempestshadow-trot": {
+      "left": "anim/tempestshadow-trot-left.anim",
+      "right": "anim/tempestshadow-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "tempestshadow-idle",
+      "chance": 0.23,
+      "durationMs": {
+        "max": 15000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "tempestshadow-trot",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 10000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "tempestshadow-trot",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "tempestshadow-idle",
+      "chance": 0.03,
+      "durationMs": {
+        "max": 15000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "magic",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "magic",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [
+    {
+      "animation": "tempestshadow-magic",
+      "behavior": "magic",
+      "centering": {
+        "left": "Bottom_Right",
+        "right": "Bottom_Left"
+      },
+      "durationMs": 1400,
+      "follow": false,
+      "id": "magic effect",
+      "name": "magic effect",
+      "placement": {
+        "left": "Bottom_Right",
+        "right": "Bottom_Left"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 0
+    }
+  ],
+  "id": "tempest-shadow",
+  "interactions": [],
+  "name": "Tempest Shadow",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

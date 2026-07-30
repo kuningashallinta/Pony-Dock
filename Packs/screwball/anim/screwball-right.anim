@@ -1,0 +1,87 @@
+{
+  "atlas": "screwball-right.png",
+  "atlasSize": [
+    318,
+    228
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        106,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        0,
+        106,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        0,
+        106,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        76,
+        106,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        76,
+        106,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        212,
+        76,
+        106,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        152,
+        106,
+        76
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        152,
+        106,
+        76
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,60 @@
+{
+  "atlas": "rover-pokpok-left.png",
+  "atlasSize": [
+    270,
+    192
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        90,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        90,
+        0,
+        90,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        180,
+        0,
+        90,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        96,
+        90,
+        96
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        90,
+        96,
+        90,
+        96
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    44,
+    52
+  ],
+  "schemaVersion": 1
+}

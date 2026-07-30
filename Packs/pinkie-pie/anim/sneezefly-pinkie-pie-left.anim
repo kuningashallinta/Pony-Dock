@@ -1,0 +1,51 @@
+{
+  "atlas": "sneezefly-pinkie-pie-left.png",
+  "atlasSize": [
+    212,
+    252
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        0,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        126,
+        106,
+        126
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        106,
+        126,
+        106,
+        126
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    52,
+    70
+  ],
+  "schemaVersion": 1
+}

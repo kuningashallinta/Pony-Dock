@@ -1,0 +1,168 @@
+{
+  "atlas": "toetapper1-idle-right.png",
+  "atlasSize": [
+    330,
+    344
+  ],
+  "frames": [
+    {
+      "durationMs": 1300,
+      "rect": [
+        0,
+        0,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        66,
+        0,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        132,
+        0,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        198,
+        0,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        264,
+        0,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        86,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        66,
+        86,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        132,
+        86,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        198,
+        86,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 3200,
+      "rect": [
+        264,
+        86,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        172,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        66,
+        172,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        132,
+        172,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        198,
+        172,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        264,
+        172,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        258,
+        66,
+        86
+      ]
+    },
+    {
+      "durationMs": 3200,
+      "rect": [
+        66,
+        258,
+        66,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

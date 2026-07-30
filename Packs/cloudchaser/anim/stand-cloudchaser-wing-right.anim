@@ -1,0 +1,69 @@
+{
+  "atlas": "stand-cloudchaser-wing-right.png",
+  "atlasSize": [
+    252,
+    176
+  ],
+  "frames": [
+    {
+      "durationMs": 5000,
+      "rect": [
+        0,
+        0,
+        84,
+        88
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        84,
+        0,
+        84,
+        88
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        168,
+        0,
+        84,
+        88
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        0,
+        88,
+        84,
+        88
+      ]
+    },
+    {
+      "durationMs": 5000,
+      "rect": [
+        84,
+        88,
+        84,
+        88
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        168,
+        88,
+        84,
+        88
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

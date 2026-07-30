@@ -1,0 +1,195 @@
+{
+  "atlas": "smolder-fly-left.png",
+  "atlasSize": [
+    320,
+    392
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        64,
+        0,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        128,
+        0,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        0,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        256,
+        0,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        98,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        64,
+        98,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        128,
+        98,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        98,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        256,
+        98,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        196,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        64,
+        196,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        128,
+        196,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        196,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        256,
+        196,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        294,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        64,
+        294,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        128,
+        294,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        294,
+        64,
+        98
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        256,
+        294,
+        64,
+        98
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    26,
+    52
+  ],
+  "schemaVersion": 1
+}

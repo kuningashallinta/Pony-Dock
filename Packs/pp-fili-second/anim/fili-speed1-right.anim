@@ -1,0 +1,96 @@
+{
+  "atlas": "fili-speed1-right.png",
+  "atlasSize": [
+    216,
+    192
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        72,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        72,
+        0,
+        72,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        144,
+        0,
+        72,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        64,
+        72,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        72,
+        64,
+        72,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        144,
+        64,
+        72,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        128,
+        72,
+        64
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        72,
+        128,
+        72,
+        64
+      ]
+    },
+    {
+      "durationMs": 500,
+      "rect": [
+        144,
+        128,
+        72,
+        64
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,72 @@
+{
+  "animations": {
+    "ms-peachbottom-stand": {
+      "left": "anim/ms-peachbottom-stand-left.anim",
+      "right": "anim/ms-peachbottom-stand-right.anim"
+    },
+    "ms-peachbottom-trot": {
+      "left": "anim/ms-peachbottom-trot-left.anim",
+      "right": "anim/ms-peachbottom-trot-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "ms-peachbottom-stand",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "ms-peachbottom-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "ms-peachbottom",
+  "interactions": [],
+  "name": "Ms Peachbottom",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "Mares",
+    "supporting ponies",
+    "Earth Ponies"
+  ]
+}

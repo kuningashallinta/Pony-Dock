@@ -1,0 +1,87 @@
+{
+  "atlas": "applefritter-sit-left.png",
+  "atlasSize": [
+    216,
+    168
+  ],
+  "frames": [
+    {
+      "durationMs": 4000,
+      "rect": [
+        0,
+        0,
+        72,
+        56
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        72,
+        0,
+        72,
+        56
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        144,
+        0,
+        72,
+        56
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        56,
+        72,
+        56
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        72,
+        56,
+        72,
+        56
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        144,
+        56,
+        72,
+        56
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        112,
+        72,
+        56
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        72,
+        112,
+        72,
+        56
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    37,
+    18
+  ],
+  "schemaVersion": 1
+}

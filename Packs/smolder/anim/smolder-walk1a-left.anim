@@ -1,0 +1,141 @@
+{
+  "atlas": "smolder-walk1a-left.png",
+  "atlasSize": [
+    200,
+    336
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        50,
+        0,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        100,
+        0,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        150,
+        0,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        84,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        50,
+        84,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        100,
+        84,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        150,
+        84,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        168,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        50,
+        168,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        100,
+        168,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        150,
+        168,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        252,
+        50,
+        84
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        50,
+        252,
+        50,
+        84
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    24,
+    46
+  ],
+  "schemaVersion": 1
+}

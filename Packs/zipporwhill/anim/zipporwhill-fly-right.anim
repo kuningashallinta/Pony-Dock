@@ -1,0 +1,321 @@
+{
+  "atlas": "zipporwhill-fly-right.png",
+  "atlasSize": [
+    348,
+    516
+  ],
+  "frames": [
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        0,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        58,
+        0,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        116,
+        0,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        174,
+        0,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        232,
+        0,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        290,
+        0,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        86,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        58,
+        86,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        116,
+        86,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        174,
+        86,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        232,
+        86,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        290,
+        86,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        172,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        58,
+        172,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        116,
+        172,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        174,
+        172,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        232,
+        172,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        290,
+        172,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        258,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        58,
+        258,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        116,
+        258,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        174,
+        258,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        232,
+        258,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        290,
+        258,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        344,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        58,
+        344,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        116,
+        344,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        174,
+        344,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        232,
+        344,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        290,
+        344,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        0,
+        430,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        58,
+        430,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        116,
+        430,
+        58,
+        86
+      ]
+    },
+    {
+      "durationMs": 30,
+      "rect": [
+        174,
+        430,
+        58,
+        86
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    29,
+    42
+  ],
+  "schemaVersion": 1
+}

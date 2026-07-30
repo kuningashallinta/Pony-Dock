@@ -1,0 +1,195 @@
+{
+  "atlas": "aww.png",
+  "atlasSize": [
+    420,
+    296
+  ],
+  "frames": [
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        0,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        84,
+        0,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        168,
+        0,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        252,
+        0,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        336,
+        0,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        74,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        84,
+        74,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        168,
+        74,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        252,
+        74,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        336,
+        74,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 140,
+      "rect": [
+        0,
+        148,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        84,
+        148,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        168,
+        148,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        252,
+        148,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        336,
+        148,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        0,
+        222,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        84,
+        222,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        168,
+        222,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 70,
+      "rect": [
+        252,
+        222,
+        84,
+        74
+      ]
+    },
+    {
+      "durationMs": 5490,
+      "rect": [
+        336,
+        222,
+        84,
+        74
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

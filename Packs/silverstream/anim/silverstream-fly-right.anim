@@ -1,0 +1,159 @@
+{
+  "atlas": "silverstream-fly-right.png",
+  "atlasSize": [
+    368,
+    456
+  ],
+  "frames": [
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        0,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        0,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        0,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        276,
+        0,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        114,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        114,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        114,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        276,
+        114,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        228,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        228,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        228,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        276,
+        228,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        0,
+        342,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        92,
+        342,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        342,
+        92,
+        114
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        276,
+        342,
+        92,
+        114
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    53,
+    58
+  ],
+  "schemaVersion": 1
+}

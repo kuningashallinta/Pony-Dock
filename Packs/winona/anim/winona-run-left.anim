@@ -1,0 +1,87 @@
+{
+  "atlas": "winona-run-left.png",
+  "atlasSize": [
+    324,
+    174
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        108,
+        58
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        0,
+        108,
+        58
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        216,
+        0,
+        108,
+        58
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        58,
+        108,
+        58
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        58,
+        108,
+        58
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        216,
+        58,
+        108,
+        58
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        116,
+        108,
+        58
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        108,
+        116,
+        108,
+        58
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,204 @@
+{
+  "atlas": "maud-lying-left.png",
+  "atlasSize": [
+    410,
+    360
+  ],
+  "frames": [
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        0,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        82,
+        0,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        164,
+        0,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        246,
+        0,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        328,
+        0,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        72,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        82,
+        72,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        164,
+        72,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        246,
+        72,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        328,
+        72,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        144,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        82,
+        144,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        164,
+        144,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        246,
+        144,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        328,
+        144,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        0,
+        216,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        82,
+        216,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        164,
+        216,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        246,
+        216,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        328,
+        216,
+        82,
+        72
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        0,
+        288,
+        82,
+        72
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    34,
+    26
+  ],
+  "schemaVersion": 1
+}

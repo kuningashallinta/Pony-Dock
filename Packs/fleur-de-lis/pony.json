@@ -1,0 +1,127 @@
+{
+  "animations": {
+    "fleur-idle1": {
+      "left": "anim/fleur-idle1-left.anim",
+      "right": "anim/fleur-idle1-right.anim"
+    },
+    "fleur-idle2": {
+      "left": "anim/fleur-idle2-left.anim",
+      "right": "anim/fleur-idle2-right.anim"
+    },
+    "fleur-portrait": {
+      "left": "anim/fleur-portrait-left.anim",
+      "right": "anim/fleur-portrait-right.anim"
+    },
+    "fleur-walk-right-8": {
+      "left": "anim/fleur-walk-right-8-left.anim",
+      "right": "anim/fleur-walk-right-8-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "fleur-portrait",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1120,
+        "min": 1120
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "portrait",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "portrait",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "fleur-walk-right-8",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8000,
+        "min": 6000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walking",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "walking",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 33.333333333333336,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fleur-idle1",
+      "chance": 0.8,
+      "durationMs": {
+        "max": 2000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle1",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle1",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "fleur-idle2",
+      "chance": 0.8,
+      "durationMs": {
+        "max": 3000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle2",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "idle2",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [],
+  "id": "fleur-de-lis",
+  "interactions": [],
+  "name": "Fleur de lis",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "unicorns"
+  ]
+}

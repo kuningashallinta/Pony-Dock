@@ -1,0 +1,100 @@
+{
+  "animations": {
+    "groove": {
+      "left": "anim/groove-left.anim",
+      "right": "anim/groove-right.anim"
+    },
+    "sotrue": {
+      "left": "anim/sotrue-left.anim",
+      "right": "anim/sotrue-right.anim"
+    },
+    "stare": {
+      "left": "anim/stare-left.anim",
+      "right": "anim/stare-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "stare",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "Stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "groove",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 8000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "sotrue",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 1300,
+        "min": 1300
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "So True",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "So True",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "so true",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "steven-magnet",
+  "interactions": [],
+  "name": "Steven Magnet",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "non-ponies",
+    "supporting ponies",
+    "stallions"
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "atlas": "masked-matterhorn-idle1-right.png",
+  "atlasSize": [
+    552,
+    564
+  ],
+  "frames": [
+    {
+      "durationMs": 800,
+      "rect": [
+        0,
+        0,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        92,
+        0,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        0,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        276,
+        0,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        368,
+        0,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 200,
+      "rect": [
+        460,
+        0,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        94,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        94,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 2300,
+      "rect": [
+        184,
+        94,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        276,
+        94,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        368,
+        94,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        460,
+        94,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        188,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 3000,
+      "rect": [
+        92,
+        188,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        188,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        276,
+        188,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        368,
+        188,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        460,
+        188,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 1000,
+      "rect": [
+        0,
+        282,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        92,
+        282,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 50,
+      "rect": [
+        184,
+        282,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        276,
+        282,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        368,
+        282,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 4000,
+      "rect": [
+        460,
+        282,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 100,
+      "rect": [
+        0,
+        376,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 1500,
+      "rect": [
+        92,
+        376,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        184,
+        376,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        276,
+        376,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 80,
+      "rect": [
+        368,
+        376,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        460,
+        376,
+        92,
+        94
+      ]
+    },
+    {
+      "durationMs": 1300,
+      "rect": [
+        0,
+        470,
+        92,
+        94
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    0,
+    0
+  ],
+  "schemaVersion": 1
+}

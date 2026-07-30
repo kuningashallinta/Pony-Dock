@@ -1,0 +1,129 @@
+{
+  "animations": {
+    "recall4-r": {
+      "left": "anim/recall4-r.anim",
+      "right": "anim/recall4-r.anim"
+    },
+    "returny1-r": {
+      "left": "anim/returny1-r.anim",
+      "right": "anim/returny1-r.anim"
+    },
+    "tapetapetiquetique-r": {
+      "left": "anim/tapetapetiquetique-r.anim",
+      "right": "anim/tapetapetiquetique-r.anim"
+    },
+    "turnyturny2-r": {
+      "left": "anim/turnyturny2-r.anim",
+      "right": "anim/turnyturny2-r.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "tapetapetiquetique-r",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "idle",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "idle",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "turnyturny2-r",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 1000,
+        "min": 1000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Turny",
+      "linkedBehavior": "Your schedule sir.",
+      "movement": "None",
+      "name": "Turny",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "recall4-r",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 3300,
+        "min": 3300
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Your schedule sir.",
+      "linkedBehavior": "returny",
+      "movement": "None",
+      "name": "Your schedule sir.",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "schedule",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "returny1-r",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 900,
+        "min": 900
+      },
+      "endSpeech": "interweb",
+      "follow": null,
+      "group": 0,
+      "id": "returny",
+      "linkedBehavior": "idle",
+      "movement": "None",
+      "name": "returny",
+      "preventAnimationLoop": true,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "grace-manewitz",
+  "interactions": [],
+  "name": "Grace Manewitz",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "mares",
+    "earth ponies"
+  ]
+}

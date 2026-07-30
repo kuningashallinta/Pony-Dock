@@ -1,0 +1,619 @@
+{
+  "animations": {
+    "derpy-cloud": {
+      "left": "anim/derpy-cloud-left.anim",
+      "right": "anim/derpy-cloud-right.anim"
+    },
+    "derpy-cloud-start": {
+      "left": "anim/derpy-cloud-start-left.anim",
+      "right": "anim/derpy-cloud-start-right.anim"
+    },
+    "derpy-fly": {
+      "left": "anim/derpy-fly-left.anim",
+      "right": "anim/derpy-fly-right.anim"
+    },
+    "derpy-flyupsidedown": {
+      "left": "anim/derpy-flyupsidedown-left.anim",
+      "right": "anim/derpy-flyupsidedown-right.anim"
+    },
+    "derpy-grabmail": {
+      "left": "anim/derpy-grabmail-left.anim",
+      "right": "anim/derpy-grabmail-right.anim"
+    },
+    "derpy-hover": {
+      "left": "anim/derpy-hover-left.anim",
+      "right": "anim/derpy-hover-right.anim"
+    },
+    "derpy-hoverupsidedown": {
+      "left": "anim/derpy-hoverupsidedown-left.anim",
+      "right": "anim/derpy-hoverupsidedown-right.anim"
+    },
+    "derpy-mail": {
+      "left": "anim/derpy-mail-left.anim",
+      "right": "anim/derpy-mail-right.anim"
+    },
+    "derpy-muffin": {
+      "left": "anim/derpy-muffin-left.anim",
+      "right": "anim/derpy-muffin-right.anim"
+    },
+    "derpy-putawaymail": {
+      "left": "anim/derpy-putawaymail-left.anim",
+      "right": "anim/derpy-putawaymail-right.anim"
+    },
+    "derpy-sit-left-short": {
+      "left": "anim/derpy-sit-left-short-left.anim",
+      "right": "anim/derpy-sit-left-short-right.anim"
+    },
+    "derpy-sleep": {
+      "left": "anim/derpy-sleep-left.anim",
+      "right": "anim/derpy-sleep-right.anim"
+    },
+    "derpy-stand": {
+      "left": "anim/derpy-stand-left.anim",
+      "right": "anim/derpy-stand-right.anim"
+    },
+    "derpy-stand-wing": {
+      "left": "anim/derpy-stand-wing-left.anim",
+      "right": "anim/derpy-stand-wing-right.anim"
+    },
+    "derpy-walking": {
+      "left": "anim/derpy-walking-left.anim",
+      "right": "anim/derpy-walking-right.anim"
+    },
+    "derpy-walking-wing": {
+      "left": "anim/derpy-walking-wing-left.anim",
+      "right": "anim/derpy-walking-wing-right.anim"
+    },
+    "drag": {
+      "left": "anim/drag-left.anim",
+      "right": "anim/drag-right.anim"
+    },
+    "mail": {
+      "left": "anim/mail-left.anim",
+      "right": "anim/mail-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "derpy-stand",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 12660,
+        "min": 12660
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-stand-wing",
+      "chance": 0.1,
+      "durationMs": {
+        "max": 12660,
+        "min": 12660
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand_wing",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand_wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-sleep",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 45000,
+        "min": 20000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "sleep",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "sleep",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-walking",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-walking-wing",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "walk_wing",
+      "linkedBehavior": null,
+      "movement": "Horizontal_Only",
+      "name": "walk_wing",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-fly",
+      "chance": 0.35,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-hover",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover_still",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "hover_still",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-flyupsidedown",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly_derp",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "fly_derp",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-hoverupsidedown",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover_derp",
+      "linkedBehavior": null,
+      "movement": "Vertical_Only",
+      "name": "hover_derp",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-grabmail",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 2880,
+        "min": 2880
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "grab_mail",
+      "linkedBehavior": "fly_mail_1",
+      "movement": "None",
+      "name": "grab_mail",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "mail",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "derpy-mail",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly_mail_1",
+      "linkedBehavior": "fly_mail_2",
+      "movement": "Diagonal_Only",
+      "name": "fly_mail_1",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-mail",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly_mail_2",
+      "linkedBehavior": "fly_mail_3",
+      "movement": "Diagonal_Horizontal",
+      "name": "fly_mail_2",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-mail",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly_mail_3",
+      "linkedBehavior": "putaway_mail",
+      "movement": "Diagonal_Horizontal",
+      "name": "fly_mail_3",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-putawaymail",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 1960,
+        "min": 1960
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "putaway_mail",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "putaway_mail",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "derpy-muffin",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 6520,
+        "min": 6520
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "muffin",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "muffin",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "muffin",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "derpy-walking",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 60000,
+        "min": 30000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": true,
+        "mirrorOffset": false,
+        "movingBehavior": null,
+        "offsetX": 100,
+        "offsetY": 100,
+        "stoppedBehavior": null,
+        "target": "Raindrops"
+      },
+      "group": 0,
+      "id": "follow",
+      "linkedBehavior": null,
+      "movement": "All",
+      "name": "follow",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": "Hello",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "derpy-sit-left-short",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 38240,
+        "min": 19120
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Sit",
+      "linkedBehavior": null,
+      "movement": "Sleep",
+      "name": "Sit",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "drag",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 60000,
+        "min": 60000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "Drag",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "Drag",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "derpy-cloud-start",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 5260,
+        "min": 5260
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "cloud_start",
+      "linkedBehavior": "cloud_bounce",
+      "movement": "None",
+      "name": "cloud_start",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "derpy-cloud",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 8650,
+        "min": 8650
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "cloud_bounce",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "cloud_bounce",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "wrong",
+      "target": {
+        "x": null,
+        "y": null
+      }
+    }
+  ],
+  "effects": [
+    {
+      "animation": "mail",
+      "behavior": "fly_mail_1",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 5000,
+      "follow": false,
+      "id": "drop_mail1",
+      "name": "drop_mail1",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 1000
+    },
+    {
+      "animation": "mail",
+      "behavior": "fly_mail_2",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 5000,
+      "follow": false,
+      "id": "drop_mail2",
+      "name": "drop_mail2",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 1000
+    },
+    {
+      "animation": "mail",
+      "behavior": "fly_mail_3",
+      "centering": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "durationMs": 5000,
+      "follow": false,
+      "id": "drop_mail3",
+      "name": "drop_mail3",
+      "placement": {
+        "left": "Center",
+        "right": "Center"
+      },
+      "preventAnimationLoop": false,
+      "repeatDelayMs": 1000
+    }
+  ],
+  "id": "derpy-hooves",
+  "interactions": [],
+  "name": "Derpy Hooves",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "pegasi",
+    "mares",
+    "supporting ponies"
+  ]
+}

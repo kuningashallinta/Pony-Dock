@@ -1,0 +1,323 @@
+{
+  "animations": {
+    "bulk-dragged": {
+      "left": "anim/bulk-dragged-left.anim",
+      "right": "anim/bulk-dragged-right.anim"
+    },
+    "bulk-fly": {
+      "left": "anim/bulk-fly-left.anim",
+      "right": "anim/bulk-fly-right.anim"
+    },
+    "bulk-hover": {
+      "left": "anim/bulk-hover-left.anim",
+      "right": "anim/bulk-hover-right.anim"
+    },
+    "bulk-idle": {
+      "left": "anim/bulk-idle-left.anim",
+      "right": "anim/bulk-idle-right.anim"
+    },
+    "bulk-lift": {
+      "left": "anim/bulk-lift-left.anim",
+      "right": "anim/bulk-lift-right.anim"
+    },
+    "bulk-muscles": {
+      "left": "anim/bulk-muscles-left.anim",
+      "right": "anim/bulk-muscles-right.anim"
+    },
+    "bulk-powerfly": {
+      "left": "anim/bulk-powerfly-left.anim",
+      "right": "anim/bulk-powerfly-right.anim"
+    },
+    "bulk-trot": {
+      "left": "anim/bulk-trot-left.anim",
+      "right": "anim/bulk-trot-right.anim"
+    },
+    "bulk-trot-2": {
+      "left": "anim/bulk-trot-2-left.anim",
+      "right": "anim/bulk-trot-2-right.anim"
+    },
+    "bulk-yeah": {
+      "left": "anim/bulk-yeah-left.anim",
+      "right": "anim/bulk-yeah-right.anim"
+    }
+  },
+  "behaviorGroups": [],
+  "behaviors": [
+    {
+      "animation": "bulk-idle",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 15000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "stand",
+      "linkedBehavior": null,
+      "movement": "MouseOver",
+      "name": "stand",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bulk-trot",
+      "chance": 0.5,
+      "durationMs": {
+        "max": 20000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "trot",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "trot",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 83.33333333333334,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bulk-fly",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 20000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "fly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Horizontal",
+      "name": "fly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bulk-hover",
+      "chance": 0.2,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "hover",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "hover",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 66.66666666666667,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bulk-yeah",
+      "chance": 0.15,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "yeah",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "yeah",
+      "preventAnimationLoop": true,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": "yeah",
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bulk-trot-2",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 5000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": true,
+        "movingBehavior": "trot",
+        "offsetX": 0,
+        "offsetY": 30,
+        "stoppedBehavior": "stand",
+        "target": "Fluttershy"
+      },
+      "group": 0,
+      "id": "lift_start",
+      "linkedBehavior": "lift",
+      "movement": "All",
+      "name": "lift_start",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 100.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bulk-lift",
+      "chance": 0.25,
+      "durationMs": {
+        "max": 10000,
+        "min": 10000
+      },
+      "endSpeech": null,
+      "follow": {
+        "autoSelectImages": false,
+        "mirrorOffset": false,
+        "movingBehavior": "lift",
+        "offsetX": 0,
+        "offsetY": -6,
+        "stoppedBehavior": "lift",
+        "target": "Fluttershy"
+      },
+      "group": 0,
+      "id": "lift",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "lift",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    },
+    {
+      "animation": "bulk-powerfly",
+      "chance": 0.3,
+      "durationMs": {
+        "max": 15000,
+        "min": 5000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "powerfly",
+      "linkedBehavior": null,
+      "movement": "Diagonal_Vertical",
+      "name": "powerfly",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 16.666666666666668,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bulk-dragged",
+      "chance": 0.0,
+      "durationMs": {
+        "max": 720,
+        "min": 720
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "dragged",
+      "linkedBehavior": null,
+      "movement": "Dragged",
+      "name": "dragged",
+      "preventAnimationLoop": false,
+      "skip": true,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      }
+    },
+    {
+      "animation": "bulk-muscles",
+      "chance": 0.05,
+      "durationMs": {
+        "max": 5000,
+        "min": 2000
+      },
+      "endSpeech": null,
+      "follow": null,
+      "group": 0,
+      "id": "pose",
+      "linkedBehavior": null,
+      "movement": "None",
+      "name": "pose",
+      "preventAnimationLoop": false,
+      "skip": false,
+      "speedPxPerSec": 0.0,
+      "startSpeech": null,
+      "target": {
+        "x": null,
+        "y": null
+      },
+      "special": true
+    }
+  ],
+  "effects": [],
+  "id": "bulk-biceps",
+  "interactions": [
+    {
+      "activation": "One",
+      "behaviors": [
+        "lift_start"
+      ],
+      "chance": 0.1,
+      "id": "Bulk_Fluttershy",
+      "name": "Bulk_Fluttershy",
+      "proximityPx": 250,
+      "reactivationDelayMs": 280000,
+      "targets": [
+        "fluttershy"
+      ]
+    }
+  ],
+  "name": "Bulk Biceps",
+  "preview": "preview.png",
+  "schemaVersion": 1,
+  "tags": [
+    "supporting ponies",
+    "stallions",
+    "pegasi"
+  ]
+}

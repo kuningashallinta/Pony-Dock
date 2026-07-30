@@ -1,0 +1,159 @@
+{
+  "atlas": "songbirdserenade-fly-right.png",
+  "atlasSize": [
+    384,
+    432
+  ],
+  "frames": [
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        0,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        96,
+        0,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        0,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        288,
+        0,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        108,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        96,
+        108,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        108,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        288,
+        108,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        216,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        96,
+        216,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        216,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        288,
+        216,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        0,
+        324,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        96,
+        324,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        192,
+        324,
+        96,
+        108
+      ]
+    },
+    {
+      "durationMs": 40,
+      "rect": [
+        288,
+        324,
+        96,
+        108
+      ]
+    }
+  ],
+  "loop": true,
+  "pivot": [
+    48,
+    58
+  ],
+  "schemaVersion": 1
+}
