@@ -11,7 +11,7 @@ bool PDOverlayWindow::initialize(HINSTANCE instance)
 	m_width = GetSystemMetrics(SM_CXSCREEN);
 	m_height = GetSystemMetrics(SM_CYSCREEN);
 
-	DWORD const exStyle = WS_EX_LAYERED | WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW | WS_EX_TOPMOST;
+	DWORD const exStyle = WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW | WS_EX_TOPMOST;
 	m_window = CreateWindowEx(exStyle, windowClass.lpszClassName, "", WS_POPUP, 0, 0, m_width, m_height, nullptr, nullptr, instance, nullptr);
 
 	SetWindowLongPtr(m_window, GWLP_USERDATA, reinterpret_cast<LONG_PTR>(this));
@@ -41,6 +41,17 @@ void PDOverlayWindow::shutdown()
 	UnregisterClass("PonyDockOverlayClassName", instance);
 
 	m_window = nullptr;
+}
+
+void PDOverlayWindow::pumpMessages()
+{
+	MSG message;
+
+	while (PeekMessage(&message, nullptr, 0, 0, PM_REMOVE) != 0)
+	{
+		TranslateMessage(&message);
+		DispatchMessage(&message);
+	}
 }
 
 void PDOverlayWindow::beginFrame()
@@ -75,8 +86,21 @@ bool PDOverlayWindow::createDevice()
 	D3D_FEATURE_LEVEL featureLevel;
 	constexpr D3D_FEATURE_LEVEL featureLevelArray[] = {D3D_FEATURE_LEVEL_11_0};
 
-	if (D3D11CreateDeviceAndSwapChain(nullptr, D3D_DRIVER_TYPE_HARDWARE, nullptr, 0, featureLevelArray, 1,
-			D3D11_SDK_VERSION, &swapChainDesc, &m_swapChain, &m_device, &featureLevel, &m_deviceContext) != S_OK)
+	HRESULT const result = D3D11CreateDeviceAndSwapChain(
+		nullptr,
+		D3D_DRIVER_TYPE_HARDWARE,
+		nullptr,
+		0,
+		featureLevelArray,
+		1,
+		D3D11_SDK_VERSION,
+		&swapChainDesc,
+		&m_swapChain,
+		&m_device,
+		&featureLevel,
+		&m_deviceContext);
+
+	if (result != S_OK)
 	{
 		return false;
 	}
@@ -140,9 +164,17 @@ LRESULT CALLBACK PDOverlayWindow::staticWndProc(HWND window, UINT message, WPARA
 
 LRESULT PDOverlayWindow::handleMessage(HWND window, UINT message, WPARAM wParam, LPARAM lParam)
 {
-	if (message == WM_DESTROY)
+	switch (message)
 	{
-		return 0;
+		case WM_NCHITTEST:
+		{
+			return HTTRANSPARENT;
+		}
+
+		case WM_DESTROY:
+		{
+			return 0;
+		}
 	}
 
 	return DefWindowProc(window, message, wParam, lParam);

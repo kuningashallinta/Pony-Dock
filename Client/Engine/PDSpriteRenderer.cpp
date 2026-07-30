@@ -36,8 +36,20 @@ bool PDSpriteRenderer::initialize(ID3D11Device *device)
 	ID3DBlob *pixelBlob = nullptr;
 	ID3DBlob *errorBlob = nullptr;
 
-	if (D3DCompile(VertexShaderSource.data(), VertexShaderSource.size(), nullptr, nullptr, nullptr, "main", "vs_4_0",
-			0, 0, &vertexBlob, &errorBlob) != S_OK)
+	HRESULT const vertexResult = D3DCompile(
+		VertexShaderSource.data(),
+		VertexShaderSource.size(),
+		nullptr,
+		nullptr,
+		nullptr,
+		"main",
+		"vs_4_0",
+		0,
+		0,
+		&vertexBlob,
+		&errorBlob);
+
+	if (vertexResult != S_OK)
 	{
 		if (errorBlob != nullptr)
 		{
@@ -47,8 +59,20 @@ bool PDSpriteRenderer::initialize(ID3D11Device *device)
 		return false;
 	}
 
-	if (D3DCompile(PixelShaderSource.data(), PixelShaderSource.size(), nullptr, nullptr, nullptr, "main", "ps_4_0", 0,
-			0, &pixelBlob, &errorBlob) != S_OK)
+	HRESULT const pixelResult = D3DCompile(
+		PixelShaderSource.data(),
+		PixelShaderSource.size(),
+		nullptr,
+		nullptr,
+		nullptr,
+		"main",
+		"ps_4_0",
+		0,
+		0,
+		&pixelBlob,
+		&errorBlob);
+
+	if (pixelResult != S_OK)
 	{
 		vertexBlob->Release();
 

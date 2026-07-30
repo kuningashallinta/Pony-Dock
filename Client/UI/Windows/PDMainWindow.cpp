@@ -60,7 +60,9 @@ namespace
 		const float offsetX = areaMin.x + margin + (areaWidth - drawWidth) * 0.5f;
 		const float offsetY = areaMin.y + margin + (areaHeight - drawHeight) * 0.5f;
 
-		drawList->AddImage(reinterpret_cast<ImTextureID>(texture->view()), ImVec2(offsetX, offsetY),
+		drawList->AddImage(
+			reinterpret_cast<ImTextureID>(texture->view()),
+			ImVec2(offsetX, offsetY),
 			ImVec2(offsetX + drawWidth, offsetY + drawHeight));
 	}
 } // namespace
@@ -100,8 +102,11 @@ void PDMainWindow::draw()
 
 	ImDrawList *drawList = ImGui::GetWindowDrawList();
 	const ImVec2 windowPos = ImGui::GetWindowPos();
-	drawList->AddLine(ImVec2(windowPos.x + NavWidth, windowPos.y), ImVec2(windowPos.x + NavWidth, windowPos.y + height),
-		u32(PDTheme::Divider), 1.0f);
+	drawList->AddLine(
+		ImVec2(windowPos.x + NavWidth, windowPos.y),
+		ImVec2(windowPos.x + NavWidth, windowPos.y + height),
+		u32(PDTheme::Divider),
+		1.0f);
 
 	ImGui::End();
 }
@@ -207,9 +212,18 @@ void PDMainWindow::drawRunControl()
 		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, PDTheme::StartHover);
 		ImGui::PushStyleColor(ImGuiCol_ButtonActive, PDTheme::StartPress);
 
+		ImGui::BeginDisabled(m_scene.empty());
+
 		if (ImGui::Button("Start", ImVec2(width, 42.0f)))
 		{
-			m_app.startScene();
+			m_app.startScene(m_scene);
+		}
+
+		ImGui::EndDisabled();
+
+		if (m_scene.empty() and ImGui::IsItemHovered(ImGuiHoveredFlags_AllowWhenDisabled))
+		{
+			ImGui::SetTooltip("Add ponies from Browser first");
 		}
 	}
 
@@ -298,8 +312,12 @@ void PDMainWindow::drawBrowserView()
 		ImGui::PushID(static_cast<int>(index));
 
 		bool doubleClicked = false;
-		const bool clicked = drawPonyCard(group.displayName, sub, thumbnail(group.variants.front().previewPath),
-			m_selectedGroup == static_cast<int>(index), doubleClicked);
+		const bool clicked = drawPonyCard(
+			group.displayName,
+			sub,
+			thumbnail(group.variants.front().previewPath),
+			m_selectedGroup == static_cast<int>(index),
+			doubleClicked);
 
 		if (clicked)
 		{
@@ -318,8 +336,12 @@ void PDMainWindow::drawBrowserView()
 	ImGui::EndChild();
 }
 
-bool PDMainWindow::drawPonyCard(std::string const &name, std::string const &sub, PDTexture const *texture,
-	bool selected, bool &outDoubleClicked)
+bool PDMainWindow::drawPonyCard(
+	std::string const &name,
+	std::string const &sub,
+	PDTexture const *texture,
+	bool selected,
+	bool &outDoubleClicked)
 {
 	const float nameHeight = ImGui::GetTextLineHeight();
 	const float subHeight = nameHeight * 0.85f;

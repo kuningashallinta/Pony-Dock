@@ -5,6 +5,8 @@
 	"dependencies": [
 		"nlohmann-json",
 		"entt",
-		"stb"
+		"stb",
+		"lua",
+		"sol2"
 	]
 }

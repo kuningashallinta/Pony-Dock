@@ -9,6 +9,8 @@ public:
 	bool initialize(HINSTANCE instance);
 	void shutdown();
 
+	void pumpMessages();
+
 	void beginFrame();
 	void endFrame();
 

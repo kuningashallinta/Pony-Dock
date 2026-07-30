@@ -11,9 +11,21 @@ target_include_directories(Client PRIVATE .)
 
 target_compile_definitions(Client PRIVATE
 	NOMINMAX
-	"PONYDOCK_PACKS_DIR=\"${CMAKE_SOURCE_DIR}/Packs\"")
+	"PONYDOCK_PACKS_DIR=\"${CMAKE_SOURCE_DIR}/Packs\""
+	"PONYDOCK_SCRIPTS_DIR=\"${CMAKE_SOURCE_DIR}/Scripts\"")
 
 find_package(nlohmann_json CONFIG REQUIRED)
 find_package(EnTT CONFIG REQUIRED)
+find_package(sol2 CONFIG REQUIRED)
+find_package(Lua REQUIRED)
 
-target_link_libraries(Client PRIVATE imgui nlohmann_json::nlohmann_json EnTT::EnTT d3dcompiler dwmapi)
+target_include_directories(Client PRIVATE ${LUA_INCLUDE_DIR})
+
+target_link_libraries(Client PRIVATE
+	imgui
+	nlohmann_json::nlohmann_json
+	EnTT::EnTT
+	sol2::sol2
+	${LUA_LIBRARIES}
+	d3dcompiler
+	dwmapi)
