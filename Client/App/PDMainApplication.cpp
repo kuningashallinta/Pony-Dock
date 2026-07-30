@@ -3,13 +3,16 @@
 #include <Assets/resource.h>
 
 PDMainApplication::PDMainApplication()
-	: m_mainWindow(*this)
+	: m_mainWindow(*this, m_host)
 {
 }
 
 int PDMainApplication::run(HINSTANCE instance)
 {
-	m_host.setFrameCallback([this]() { m_mainWindow.draw(); });
+	m_host.setFrameCallback([this]()
+	{
+		m_mainWindow.draw();
+	});
 
 	HICON const icon = LoadIcon(instance, MAKEINTRESOURCE(IDI_APPICON));
 
