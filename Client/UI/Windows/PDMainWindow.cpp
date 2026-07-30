@@ -8,7 +8,9 @@
 
 #include <algorithm>
 #include <cctype>
+#include <cstddef>
 #include <cstdio>
+#include <utility>
 
 namespace
 {
@@ -224,12 +226,23 @@ void PDMainWindow::drawContent()
 	switch (m_activeView)
 	{
 		case View::Browser:
+		{
 			drawBrowserView();
 
 			break;
+		}
+
+		case View::Scene:
+		{
+			drawSceneView();
+
+			break;
+		}
 
 		default:
+		{
 			break;
+		}
 	}
 }
 
@@ -284,12 +297,18 @@ void PDMainWindow::drawBrowserView()
 
 		ImGui::PushID(static_cast<int>(index));
 
+		bool doubleClicked = false;
 		const bool clicked = drawPonyCard(group.displayName, sub, thumbnail(group.variants.front().previewPath),
-			m_selectedGroup == static_cast<int>(index));
+			m_selectedGroup == static_cast<int>(index), doubleClicked);
 
 		if (clicked)
 		{
 			m_selectedGroup = static_cast<int>(index);
+		}
+
+		if (doubleClicked)
+		{
+			addToScene(group.displayName, group.variants.front());
 		}
 
 		ImGui::PopID();
@@ -299,7 +318,8 @@ void PDMainWindow::drawBrowserView()
 	ImGui::EndChild();
 }
 
-bool PDMainWindow::drawPonyCard(std::string const &name, std::string const &sub, PDTexture const *texture, bool selected)
+bool PDMainWindow::drawPonyCard(std::string const &name, std::string const &sub, PDTexture const *texture,
+	bool selected, bool &outDoubleClicked)
 {
 	const float nameHeight = ImGui::GetTextLineHeight();
 	const float subHeight = nameHeight * 0.85f;
@@ -311,6 +331,7 @@ bool PDMainWindow::drawPonyCard(std::string const &name, std::string const &sub,
 
 	const bool clicked = ImGui::InvisibleButton("card", size);
 	const bool hovered = ImGui::IsItemHovered();
+	outDoubleClicked = hovered and ImGui::IsMouseDoubleClicked(ImGuiMouseButton_Left);
 
 	ImDrawList *drawList = ImGui::GetWindowDrawList();
 	drawList->AddRectFilled(position, rectMax, u32(hovered ? PDTheme::CardBgHover : PDTheme::CardBg), 0.0f);
@@ -355,4 +376,168 @@ PDTexture *PDMainWindow::thumbnail(std::string const &path)
 	m_thumbnailBudget -= 1;
 
 	return &m_thumbnails.emplace(path, PDTexture(m_host.device(), path)).first->second;
+}
+
+void PDMainWindow::drawSceneView()
+{
+	if (ImGui::Button("Clear scene"))
+	{
+		m_scene.clear();
+	}
+
+	ImGui::SameLine();
+
+	char summary[64];
+	std::snprintf(summary, sizeof(summary), "%d across %zu packs", sceneTotalQuantity(), m_scene.size());
+	const float summaryWidth = ImGui::CalcTextSize(summary).x;
+	ImGui::SetCursorPosX(ImGui::GetCursorPosX() + ImGui::GetContentRegionAvail().x - summaryWidth);
+	ImGui::AlignTextToFramePadding();
+	ImGui::TextDisabled("%s", summary);
+
+	ImGui::Dummy(ImVec2(0.0f, 8.0f));
+
+	if (m_scene.empty())
+	{
+		ImGui::Dummy(ImVec2(0.0f, 40.0f));
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+
+		char const *const line1 = "Nothing staged yet";
+		char const *const line2 = "Double-click a pack in Browser to add it here.";
+		float width = ImGui::CalcTextSize(line1).x;
+		ImGui::SetCursorPosX((ImGui::GetContentRegionAvail().x - width) * 0.5f);
+		ImGui::TextUnformatted(line1);
+
+		width = ImGui::CalcTextSize(line2).x;
+		ImGui::SetCursorPosX((ImGui::GetContentRegionAvail().x - width) * 0.5f);
+		ImGui::TextUnformatted(line2);
+
+		ImGui::PopStyleColor();
+
+		return;
+	}
+
+	constexpr float rowHeight = 56.0f;
+	std::size_t removeIndex = m_scene.size();
+
+	for (std::size_t index = 0; index < m_scene.size(); index += 1)
+	{
+		PDSceneEntry &entry = m_scene[index];
+
+		ImGui::PushID(static_cast<int>(index));
+
+		const ImVec2 rowMin = ImGui::GetCursorScreenPos();
+		const ImVec2 rowSize(ImGui::GetContentRegionAvail().x, rowHeight);
+		const ImVec2 rowMax(rowMin.x + rowSize.x, rowMin.y + rowSize.y);
+
+		ImDrawList *drawList = ImGui::GetWindowDrawList();
+		drawList->AddRectFilled(rowMin, rowMax, u32(PDTheme::CardBg), 0.0f);
+		drawList->AddRect(rowMin, rowMax, u32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
+
+		const ImVec2 thumbMin(rowMin.x + 8.0f, rowMin.y + 8.0f);
+		const ImVec2 thumbMax(thumbMin.x + 40.0f, thumbMin.y + 40.0f);
+		drawList->AddRectFilled(thumbMin, thumbMax, u32(PDTheme::ThumbBg), 0.0f);
+		drawList->AddRect(thumbMin, thumbMax, u32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
+		addImageFitted(drawList, thumbnail(entry.previewPath), thumbMin, thumbMax, 3.0f);
+
+		drawList->AddText(ImVec2(thumbMax.x + 12.0f, rowMin.y + (rowHeight - ImGui::GetTextLineHeight()) * 0.5f), u32(PDTheme::White), entry.displayName.c_str());
+
+		const float stepperWidth = 24.0f + 32.0f + 24.0f;
+		const float removeWidth = ImGui::CalcTextSize("Remove").x + 24.0f;
+		const float controlsWidth = stepperWidth + 10.0f + removeWidth;
+
+		ImGui::SetCursorScreenPos(ImVec2(rowMax.x - controlsWidth - 10.0f, rowMin.y + (rowHeight - 24.0f) * 0.5f));
+
+		bool removed = false;
+
+		if (ImGui::Button("-", ImVec2(24.0f, 24.0f)))
+		{
+			if (entry.quantity > 1)
+			{
+				entry.quantity -= 1;
+			}
+			else
+			{
+				removed = true;
+			}
+		}
+
+		ImGui::SameLine(0.0f, 0.0f);
+
+		char quantity[16];
+		std::snprintf(quantity, sizeof(quantity), "%d", entry.quantity);
+		const float quantityWidth = ImGui::CalcTextSize(quantity).x;
+		const ImVec2 quantityPos = ImGui::GetCursorScreenPos();
+		drawList->AddText(ImVec2(quantityPos.x + (32.0f - quantityWidth) * 0.5f, quantityPos.y + 4.0f), u32(PDTheme::White), quantity);
+		ImGui::Dummy(ImVec2(32.0f, 24.0f));
+		ImGui::SameLine(0.0f, 0.0f);
+
+		if (ImGui::Button("+", ImVec2(24.0f, 24.0f)))
+		{
+			entry.quantity += 1;
+		}
+
+		ImGui::SameLine(0.0f, 10.0f);
+
+		if (ImGui::Button("Remove", ImVec2(removeWidth, 24.0f)))
+		{
+			removed = true;
+		}
+
+		ImGui::SetCursorScreenPos(rowMin);
+		ImGui::Dummy(ImVec2(rowSize.x, rowHeight + 8.0f));
+
+		ImGui::PopID();
+
+		if (removed)
+		{
+			removeIndex = index;
+		}
+	}
+
+	if (removeIndex < m_scene.size())
+	{
+		removeSceneEntry(removeIndex);
+	}
+}
+
+void PDMainWindow::addToScene(std::string const &displayName, PDPonyPack const &pack)
+{
+	for (PDSceneEntry &entry : m_scene)
+	{
+		if (entry.id == pack.id)
+		{
+			entry.quantity += 1;
+
+			return;
+		}
+	}
+
+	PDSceneEntry entry;
+	entry.id = pack.id;
+	entry.displayName = displayName;
+	entry.previewPath = pack.previewPath;
+	entry.quantity = 1;
+	m_scene.push_back(std::move(entry));
+}
+
+void PDMainWindow::removeSceneEntry(std::size_t index)
+{
+	if (index >= m_scene.size())
+	{
+		return;
+	}
+
+	m_scene.erase(m_scene.begin() + static_cast<std::ptrdiff_t>(index));
+}
+
+int PDMainWindow::sceneTotalQuantity() const
+{
+	int total = 0;
+
+	for (PDSceneEntry const &entry : m_scene)
+	{
+		total += entry.quantity;
+	}
+
+	return total;
 }

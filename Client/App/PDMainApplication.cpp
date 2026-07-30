@@ -18,7 +18,7 @@ int PDMainApplication::run(HINSTANCE instance)
 
 	HICON const icon = LoadIcon(instance, MAKEINTRESOURCE(IDI_APPICON));
 
-	if (not m_host.initialize(instance, "Pony Dock", 780, 600, icon))
+	if (not m_host.initialize(instance, "Pony Dock", 780, 600, icon, 610, 320))
 	{
 		return 1;
 	}

@@ -20,19 +20,49 @@ void PDImGui::setFrameCallback(std::function<void()> callback)
 	m_frameCallback = std::move(callback);
 }
 
-bool PDImGui::initialize(HINSTANCE instance, const char *title, int width, int height, HICON icon)
+bool PDImGui::initialize(
+	HINSTANCE instance,
+	const char *title,
+	int width,
+	int height,
+	HICON icon,
+	int minWidth,
+	int minHeight)
 {
 	s_instance = this;
+	m_minClientWidth = minWidth;
+	m_minClientHeight = minHeight;
 
-	WNDCLASSEX windowClass = {sizeof(WNDCLASSEX), CS_CLASSDC, staticWndProc, 0, 0, instance, icon, nullptr,
-		nullptr, nullptr, "PonyDockClassName", icon};
+	WNDCLASSEX windowClass = {
+		sizeof(WNDCLASSEX),
+		CS_CLASSDC,
+		staticWndProc,
+		0,
+		0,
+		instance,
+		icon,
+		nullptr,
+		nullptr,
+		nullptr,
+		"PonyDockClassName",
+		icon};
 	RegisterClassEx(&windowClass);
 
 	RECT windowRect = {0, 0, width, height};
 	AdjustWindowRect(&windowRect, WS_OVERLAPPEDWINDOW, FALSE);
 
-	m_window = CreateWindow(windowClass.lpszClassName, title, WS_OVERLAPPEDWINDOW, 100, 100,
-		windowRect.right - windowRect.left, windowRect.bottom - windowRect.top, nullptr, nullptr, instance, nullptr);
+	m_window = CreateWindow(
+		windowClass.lpszClassName,
+		title,
+		WS_OVERLAPPEDWINDOW,
+		100,
+		100,
+		windowRect.right - windowRect.left,
+		windowRect.bottom - windowRect.top,
+		nullptr,
+		nullptr,
+		instance,
+		nullptr);
 
 	if (not createDevice())
 	{
@@ -137,8 +167,21 @@ bool PDImGui::createDevice()
 	D3D_FEATURE_LEVEL featureLevel;
 	constexpr D3D_FEATURE_LEVEL featureLevelArray[] = {D3D_FEATURE_LEVEL_11_0};
 
-	if (D3D11CreateDeviceAndSwapChain(nullptr, D3D_DRIVER_TYPE_HARDWARE, nullptr, 0, featureLevelArray, 1,
-			D3D11_SDK_VERSION, &swapChainDesc, &m_swapChain, &m_device, &featureLevel, &m_deviceContext) != S_OK)
+	HRESULT const result = D3D11CreateDeviceAndSwapChain(
+		nullptr,
+		D3D_DRIVER_TYPE_HARDWARE,
+		nullptr,
+		0,
+		featureLevelArray,
+		1,
+		D3D11_SDK_VERSION,
+		&swapChainDesc,
+		&m_swapChain,
+		&m_device,
+		&featureLevel,
+		&m_deviceContext);
+
+	if (result != S_OK)
 	{
 		return false;
 	}
@@ -219,7 +262,23 @@ LRESULT PDImGui::handleMessage(HWND window, UINT message, WPARAM wParam, LPARAM 
 
 	switch (message)
 	{
+		case WM_GETMINMAXINFO:
+		{
+			if (m_minClientWidth > 0 and m_minClientHeight > 0)
+			{
+				RECT minRect = {0, 0, m_minClientWidth, m_minClientHeight};
+				AdjustWindowRect(&minRect, WS_OVERLAPPEDWINDOW, FALSE);
+
+				MINMAXINFO *const minMaxInfo = reinterpret_cast<MINMAXINFO *>(lParam);
+				minMaxInfo->ptMinTrackSize.x = minRect.right - minRect.left;
+				minMaxInfo->ptMinTrackSize.y = minRect.bottom - minRect.top;
+			}
+
+			return 0;
+		}
+
 		case WM_SIZE:
+		{
 			if (m_device != nullptr and wParam != SIZE_MINIMIZED)
 			{
 				destroyRenderTarget();
@@ -229,11 +288,14 @@ LRESULT PDImGui::handleMessage(HWND window, UINT message, WPARAM wParam, LPARAM 
 			}
 
 			return 0;
+		}
 
 		case WM_DESTROY:
+		{
 			PostQuitMessage(0);
 
 			return 0;
+		}
 	}
 
 	return DefWindowProc(window, message, wParam, lParam);

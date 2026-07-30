@@ -2,9 +2,11 @@
 
 #include <Engine/PDTexture.h>
 #include <Library/PDPonyCatalog.h>
+#include <Library/PDSceneEntry.h>
 
 #include <string>
 #include <unordered_map>
+#include <vector>
 
 class PDMainApplication;
 class PDImGui;
@@ -32,8 +34,13 @@ private:
 
 	void drawContent();
 	void drawBrowserView();
-	bool drawPonyCard(std::string const &name, std::string const &sub, PDTexture const *texture, bool selected);
+	bool drawPonyCard(std::string const &name, std::string const &sub, PDTexture const *texture, bool selected, bool &outDoubleClicked);
 	PDTexture *thumbnail(std::string const &path);
+
+	void drawSceneView();
+	void addToScene(std::string const &displayName, PDPonyPack const &pack);
+	void removeSceneEntry(std::size_t index);
+	int sceneTotalQuantity() const;
 
 	PDMainApplication &m_app;
 	PDImGui &m_host;
@@ -45,4 +52,6 @@ private:
 
 	char m_search[128] = "";
 	int m_selectedGroup = -1;
+
+	std::vector<PDSceneEntry> m_scene;
 };

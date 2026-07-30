@@ -10,7 +10,7 @@ class PDImGui
 public:
 	void setFrameCallback(std::function<void()> callback);
 
-	bool initialize(HINSTANCE instance, const char *title, int width, int height, HICON icon = nullptr);
+	bool initialize(HINSTANCE instance, const char *title, int width, int height, HICON icon = nullptr, int minWidth = 0, int minHeight = 0);
 	void shutdown();
 
 	bool pumpMessages();
@@ -40,6 +40,8 @@ private:
 	void endFrame();
 
 	HWND m_window = nullptr;
+	int m_minClientWidth = 0;
+	int m_minClientHeight = 0;
 
 	ID3D11Device *m_device = nullptr;
 	ID3D11DeviceContext *m_deviceContext = nullptr;
