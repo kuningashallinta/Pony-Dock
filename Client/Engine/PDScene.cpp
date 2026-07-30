@@ -5,12 +5,48 @@
 #include <cmath>
 #include <filesystem>
 
-void PDScene::initialize(ID3D11Device *device, PDDiagnostics &diagnostics)
+PDScene::~PDScene()
+{
+	m_registry.clear();
+}
+
+void PDScene::initialize(ID3D11Device *device, PDDiagnostics &diagnostics, std::string const &scriptsRoot)
 {
 	m_diagnostics = &diagnostics;
 	m_textures.initialize(device);
 	m_animations.initialize(m_textures, diagnostics);
-	m_lua.initialize();
+	m_lua.initialize(scriptsRoot, diagnostics);
+
+	m_lua.setPlayHandler([this](std::uint32_t entityId, std::string const &name, bool loop, bool restart)
+	{
+		return playAnimation(resolve(entityId), name, loop, restart);
+	});
+
+	m_lua.setFacingHandler([this](std::uint32_t entityId, bool facingRight)
+	{
+		setFacing(resolve(entityId), facingRight);
+	});
+}
+
+entt::entity PDScene::resolve(std::uint32_t entityId) const
+{
+	entt::entity const entity = static_cast<entt::entity>(entityId);
+
+	return m_registry.valid(entity) ? entity : entt::null;
+}
+
+void PDScene::reloadScripts()
+{
+	m_lua.reload();
+
+	auto view = m_registry.view<PDScript>();
+
+	for (auto const entity : view)
+	{
+		PDScript &script = view.get<PDScript>(entity);
+		script.spawned = false;
+		script.errorCount = 0;
+	}
 }
 
 PDPonyPackData const *PDScene::pack(std::string const &packPath)
@@ -35,9 +71,7 @@ PDPonyPackData const *PDScene::pack(std::string const &packPath)
 		return nullptr;
 	}
 
-	m_diagnostics->write("Loaded pack " + loaded.id + " ("
-		+ std::to_string(loaded.animations.size()) + " animations, "
-		+ std::to_string(loaded.behaviors.size()) + " behaviors)");
+	m_diagnostics->write("Loaded pack " + loaded.id + " (" + std::to_string(loaded.animations.size()) + " animations, " + std::to_string(loaded.behaviors.size()) + " behaviors)");
 
 	return &m_packs.emplace(key, std::move(loaded)).first->second;
 }
@@ -55,17 +89,25 @@ void PDScene::spawnEntity(std::string const &packPath, std::string const &script
 
 	entt::entity const entity = m_registry.create();
 	m_registry.emplace<PDPosition>(entity, x, y);
-	m_registry.emplace<PDVelocity>(entity, 60.0f, 0.0f);
 	m_registry.emplace<PDSprite>(entity, preview, 96.0f, 96.0f);
-	m_registry.emplace<PDBehavior>(entity, scriptPath);
 	m_registry.emplace<PDPack>(entity, packData);
 	m_registry.emplace<PDAnimation>(entity);
+
+	PDScript &script = m_registry.emplace<PDScript>(entity);
+	script.path = scriptPath;
+	script.self = m_lua.createSelf(static_cast<std::uint32_t>(entity));
+	script.self["pack"] = m_lua.packTable(*packData);
 
 	playAnimation(entity, packData->behaviors.front().animation, true, true);
 }
 
 bool PDScene::playAnimation(entt::entity entity, std::string const &name, bool loop, bool restart)
 {
+	if (not m_registry.valid(entity))
+	{
+		return false;
+	}
+
 	PDPack const *const packComponent = m_registry.try_get<PDPack>(entity);
 	PDAnimation *const animation = m_registry.try_get<PDAnimation>(entity);
 
@@ -119,6 +161,11 @@ bool PDScene::playAnimation(entt::entity entity, std::string const &name, bool l
 
 void PDScene::setFacing(entt::entity entity, bool facingRight)
 {
+	if (not m_registry.valid(entity))
+	{
+		return;
+	}
+
 	PDAnimation *const animation = m_registry.try_get<PDAnimation>(entity);
 
 	if (animation == nullptr or animation->facingRight == facingRight)
@@ -242,24 +289,61 @@ void PDScene::tick(float deltaSeconds, int boundsWidth, int boundsHeight)
 {
 	advanceAnimations(deltaSeconds);
 
-	auto view = m_registry.view<PDPosition, PDVelocity, PDSprite const, PDBehavior const>();
+	m_lua.beginFrame(static_cast<float>(boundsWidth), static_cast<float>(boundsHeight));
+
+	auto view = m_registry.view<PDPosition, PDSprite const, PDAnimation const, PDScript>();
 
 	for (auto const entity : view)
 	{
-		PDPosition &position = view.get<PDPosition>(entity);
-		PDVelocity &velocity = view.get<PDVelocity>(entity);
-		PDSprite const &sprite = view.get<PDSprite const>(entity);
-		PDBehavior const &behavior = view.get<PDBehavior const>(entity);
+		PDScript &script = view.get<PDScript>(entity);
 
-		m_lua.tick(
-			behavior.scriptPath,
-			position,
-			velocity,
-			deltaSeconds,
-			static_cast<float>(boundsWidth),
-			static_cast<float>(boundsHeight),
-			sprite.width,
-			sprite.height);
+		if (script.errorCount >= MaxScriptErrors)
+		{
+			continue;
+		}
+
+		PDPosition &position = view.get<PDPosition>(entity);
+		PDSprite const &sprite = view.get<PDSprite const>(entity);
+		PDAnimation const &animation = view.get<PDAnimation const>(entity);
+
+		script.self["x"] = position.x;
+		script.self["y"] = position.y;
+		script.self["width"] = sprite.width;
+		script.self["height"] = sprite.height;
+		script.self["offset_x"] = sprite.offsetX;
+		script.self["offset_y"] = sprite.offsetY;
+		script.self["facing"] = animation.facingRight ? "right" : "left";
+		script.self["animation"] = animation.name;
+		script.self["animation_finished"] = animation.finished;
+
+		bool succeeded = true;
+
+		if (not script.spawned)
+		{
+			succeeded = m_lua.callSpawn(script.path, script.self);
+			script.spawned = true;
+		}
+
+		if (succeeded)
+		{
+			succeeded = m_lua.callTick(script.path, script.self, deltaSeconds);
+		}
+
+		if (not succeeded)
+		{
+			script.errorCount += 1;
+
+			if (script.errorCount >= MaxScriptErrors)
+			{
+				m_diagnostics->write("Entity disabled after " + std::to_string(MaxScriptErrors) + " script errors: " + script.path);
+			}
+
+			continue;
+		}
+
+		script.errorCount = 0;
+		position.x = script.self["x"].get_or(position.x);
+		position.y = script.self["y"].get_or(position.y);
 	}
 }
 

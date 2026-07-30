@@ -5,28 +5,7 @@
 #include <filesystem>
 #include <fstream>
 
-namespace
-{
-	constexpr float MinFrameSeconds = 0.001f;
-
-	bool readSize(nlohmann::json const &value, float &outWidth, float &outHeight)
-	{
-		if (not value.is_array() or value.size() != 2)
-		{
-			return false;
-		}
-
-		if (not value[0].is_number() or not value[1].is_number())
-		{
-			return false;
-		}
-
-		outWidth = value[0].get<float>();
-		outHeight = value[1].get<float>();
-
-		return outWidth > 0.0f and outHeight > 0.0f;
-	}
-} // namespace
+static constexpr float MinFrameSeconds = 0.001f;
 
 bool loadAnimationClip(std::string const &animPath, PDAnimationClip &outClip, std::string &outError)
 {
@@ -61,12 +40,22 @@ bool loadAnimationClip(std::string const &animPath, PDAnimationClip &outClip, st
 		return false;
 	}
 
-	float atlasWidth = 0.0f;
-	float atlasHeight = 0.0f;
+	auto const atlasSize = document.find("atlasSize");
 
-	if (not document.contains("atlasSize") or not readSize(document["atlasSize"], atlasWidth, atlasHeight))
+	if (atlasSize == document.end() or not atlasSize->is_array() or atlasSize->size() != 2
+		or not (*atlasSize)[0].is_number() or not (*atlasSize)[1].is_number())
 	{
 		outError = animPath + " has a missing or invalid atlasSize";
+
+		return false;
+	}
+
+	float const atlasWidth = (*atlasSize)[0].get<float>();
+	float const atlasHeight = (*atlasSize)[1].get<float>();
+
+	if (atlasWidth <= 0.0f or atlasHeight <= 0.0f)
+	{
+		outError = animPath + " has a non-positive atlasSize";
 
 		return false;
 	}

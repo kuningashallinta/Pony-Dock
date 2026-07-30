@@ -12,60 +12,46 @@
 #include <cstdio>
 #include <utility>
 
-namespace
+std::string PDMainWindow::toLower(std::string text)
 {
-	constexpr float NavWidth = 224.0f;
-	constexpr float CardWidth = 150.0f;
-	constexpr float ThumbHeight = 108.0f;
-	constexpr float CardPad = 8.0f;
-	constexpr float CardSpacing = 14.0f;
-
-	ImU32 u32(const ImVec4 &color)
+	std::transform(text.begin(), text.end(), text.begin(), [](unsigned char c)
 	{
-		return ImGui::GetColorU32(color);
+		return static_cast<char>(std::tolower(c));
+	});
+
+	return text;
+}
+
+void PDMainWindow::addImageFitted(ImDrawList *drawList, PDTexture const *texture, ImVec2 areaMin, ImVec2 areaMax, float margin)
+{
+	if (texture == nullptr or not texture->valid() or texture->width() <= 0 or texture->height() <= 0)
+	{
+		return;
 	}
 
-	std::string toLower(std::string text)
-	{
-		std::transform(text.begin(), text.end(), text.begin(), [](unsigned char c)
-		{
-			return static_cast<char>(std::tolower(c));
-		});
+	const float areaWidth = areaMax.x - areaMin.x - margin * 2.0f;
+	const float areaHeight = areaMax.y - areaMin.y - margin * 2.0f;
 
-		return text;
+	if (areaWidth <= 0.0f or areaHeight <= 0.0f)
+	{
+		return;
 	}
 
-	void addImageFitted(ImDrawList *drawList, PDTexture const *texture, ImVec2 areaMin, ImVec2 areaMax, float margin)
-	{
-		if (texture == nullptr or not texture->valid() or texture->width() <= 0 or texture->height() <= 0)
-		{
-			return;
-		}
+	const float textureWidth = static_cast<float>(texture->width());
+	const float textureHeight = static_cast<float>(texture->height());
+	float scale = std::min(areaWidth / textureWidth, areaHeight / textureHeight);
+	scale = std::min(scale, 2.0f);
 
-		const float areaWidth = areaMax.x - areaMin.x - margin * 2.0f;
-		const float areaHeight = areaMax.y - areaMin.y - margin * 2.0f;
+	const float drawWidth = textureWidth * scale;
+	const float drawHeight = textureHeight * scale;
+	const float offsetX = areaMin.x + margin + (areaWidth - drawWidth) * 0.5f;
+	const float offsetY = areaMin.y + margin + (areaHeight - drawHeight) * 0.5f;
 
-		if (areaWidth <= 0.0f or areaHeight <= 0.0f)
-		{
-			return;
-		}
-
-		const float textureWidth = static_cast<float>(texture->width());
-		const float textureHeight = static_cast<float>(texture->height());
-		float scale = std::min(areaWidth / textureWidth, areaHeight / textureHeight);
-		scale = std::min(scale, 2.0f);
-
-		const float drawWidth = textureWidth * scale;
-		const float drawHeight = textureHeight * scale;
-		const float offsetX = areaMin.x + margin + (areaWidth - drawWidth) * 0.5f;
-		const float offsetY = areaMin.y + margin + (areaHeight - drawHeight) * 0.5f;
-
-		drawList->AddImage(
-			reinterpret_cast<ImTextureID>(texture->view()),
-			ImVec2(offsetX, offsetY),
-			ImVec2(offsetX + drawWidth, offsetY + drawHeight));
-	}
-} // namespace
+	drawList->AddImage(
+		reinterpret_cast<ImTextureID>(texture->view()),
+		ImVec2(offsetX, offsetY),
+		ImVec2(offsetX + drawWidth, offsetY + drawHeight));
+}
 
 PDMainWindow::PDMainWindow(PDMainApplication &app, PDImGui &host, PDDiagnostics &diagnostics)
 	: m_app(app),
@@ -106,7 +92,7 @@ void PDMainWindow::draw()
 	drawList->AddLine(
 		ImVec2(windowPos.x + NavWidth, windowPos.y),
 		ImVec2(windowPos.x + NavWidth, windowPos.y + height),
-		u32(PDTheme::Divider),
+		ImGui::GetColorU32(PDTheme::Divider),
 		1.0f);
 
 	ImGui::End();
@@ -175,17 +161,17 @@ void PDMainWindow::navItem(const char *label, View view)
 
 	if (active)
 	{
-		drawList->AddRectFilled(position, rectMax, u32(PDTheme::AccentSoft), 0.0f);
-		drawList->AddRectFilled(position, ImVec2(position.x + 3.0f, rectMax.y), u32(PDTheme::Accent), 0.0f);
+		drawList->AddRectFilled(position, rectMax, ImGui::GetColorU32(PDTheme::AccentSoft), 0.0f);
+		drawList->AddRectFilled(position, ImVec2(position.x + 3.0f, rectMax.y), ImGui::GetColorU32(PDTheme::Accent), 0.0f);
 	}
 	else if (hovered)
 	{
-		drawList->AddRectFilled(position, rectMax, u32(PDTheme::SidebarHover), 0.0f);
+		drawList->AddRectFilled(position, rectMax, ImGui::GetColorU32(PDTheme::SidebarHover), 0.0f);
 	}
 
 	const ImVec4 &textColor = active ? PDTheme::AccentText : (hovered ? PDTheme::White : PDTheme::TextDim);
 	const float textY = position.y + (itemHeight - ImGui::GetTextLineHeight()) * 0.5f;
-	drawList->AddText(ImVec2(position.x + 16.0f, textY), u32(textColor), label);
+	drawList->AddText(ImVec2(position.x + 16.0f, textY), ImGui::GetColorU32(textColor), label);
 
 	if (pressed)
 	{
@@ -366,22 +352,22 @@ bool PDMainWindow::drawPonyCard(
 	outDoubleClicked = hovered and ImGui::IsMouseDoubleClicked(ImGuiMouseButton_Left);
 
 	ImDrawList *drawList = ImGui::GetWindowDrawList();
-	drawList->AddRectFilled(position, rectMax, u32(hovered ? PDTheme::CardBgHover : PDTheme::CardBg), 0.0f);
+	drawList->AddRectFilled(position, rectMax, ImGui::GetColorU32(hovered ? PDTheme::CardBgHover : PDTheme::CardBg), 0.0f);
 
 	const ImVec2 thumbMin(position.x + CardPad, position.y + CardPad);
 	const ImVec2 thumbMax(rectMax.x - CardPad, position.y + CardPad + ThumbHeight);
-	drawList->AddRectFilled(thumbMin, thumbMax, u32(PDTheme::ThumbBg), 0.0f);
-	drawList->AddRect(thumbMin, thumbMax, u32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
+	drawList->AddRectFilled(thumbMin, thumbMax, ImGui::GetColorU32(PDTheme::ThumbBg), 0.0f);
+	drawList->AddRect(thumbMin, thumbMax, ImGui::GetColorU32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
 	addImageFitted(drawList, texture, thumbMin, thumbMax, 6.0f);
 
-	drawList->AddText(ImVec2(position.x + CardPad + 2.0f, thumbMax.y + 7.0f), u32(PDTheme::White), name.c_str());
+	drawList->AddText(ImVec2(position.x + CardPad + 2.0f, thumbMax.y + 7.0f), ImGui::GetColorU32(PDTheme::White), name.c_str());
 
 	if (not sub.empty())
 	{
-		drawList->AddText(ImVec2(position.x + CardPad + 2.0f, thumbMax.y + 7.0f + nameHeight + 2.0f), u32(PDTheme::TextFaint), sub.c_str());
+		drawList->AddText(ImVec2(position.x + CardPad + 2.0f, thumbMax.y + 7.0f + nameHeight + 2.0f), ImGui::GetColorU32(PDTheme::TextFaint), sub.c_str());
 	}
 
-	drawList->AddRect(position, rectMax, u32(selected ? PDTheme::Accent : PDTheme::CardBorder), 0.0f, 0, selected ? 2.0f : 1.0f);
+	drawList->AddRect(position, rectMax, ImGui::GetColorU32(selected ? PDTheme::Accent : PDTheme::CardBorder), 0.0f, 0, selected ? 2.0f : 1.0f);
 
 	return clicked;
 }
@@ -462,16 +448,16 @@ void PDMainWindow::drawSceneView()
 		const ImVec2 rowMax(rowMin.x + rowSize.x, rowMin.y + rowSize.y);
 
 		ImDrawList *drawList = ImGui::GetWindowDrawList();
-		drawList->AddRectFilled(rowMin, rowMax, u32(PDTheme::CardBg), 0.0f);
-		drawList->AddRect(rowMin, rowMax, u32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
+		drawList->AddRectFilled(rowMin, rowMax, ImGui::GetColorU32(PDTheme::CardBg), 0.0f);
+		drawList->AddRect(rowMin, rowMax, ImGui::GetColorU32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
 
 		const ImVec2 thumbMin(rowMin.x + 8.0f, rowMin.y + 8.0f);
 		const ImVec2 thumbMax(thumbMin.x + 40.0f, thumbMin.y + 40.0f);
-		drawList->AddRectFilled(thumbMin, thumbMax, u32(PDTheme::ThumbBg), 0.0f);
-		drawList->AddRect(thumbMin, thumbMax, u32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
+		drawList->AddRectFilled(thumbMin, thumbMax, ImGui::GetColorU32(PDTheme::ThumbBg), 0.0f);
+		drawList->AddRect(thumbMin, thumbMax, ImGui::GetColorU32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
 		addImageFitted(drawList, thumbnail(entry.previewPath), thumbMin, thumbMax, 3.0f);
 
-		drawList->AddText(ImVec2(thumbMax.x + 12.0f, rowMin.y + (rowHeight - ImGui::GetTextLineHeight()) * 0.5f), u32(PDTheme::White), entry.displayName.c_str());
+		drawList->AddText(ImVec2(thumbMax.x + 12.0f, rowMin.y + (rowHeight - ImGui::GetTextLineHeight()) * 0.5f), ImGui::GetColorU32(PDTheme::White), entry.displayName.c_str());
 
 		const float stepperWidth = 24.0f + 32.0f + 24.0f;
 		const float removeWidth = ImGui::CalcTextSize("Remove").x + 24.0f;
@@ -499,7 +485,7 @@ void PDMainWindow::drawSceneView()
 		std::snprintf(quantity, sizeof(quantity), "%d", entry.quantity);
 		const float quantityWidth = ImGui::CalcTextSize(quantity).x;
 		const ImVec2 quantityPos = ImGui::GetCursorScreenPos();
-		drawList->AddText(ImVec2(quantityPos.x + (32.0f - quantityWidth) * 0.5f, quantityPos.y + 4.0f), u32(PDTheme::White), quantity);
+		drawList->AddText(ImVec2(quantityPos.x + (32.0f - quantityWidth) * 0.5f, quantityPos.y + 4.0f), ImGui::GetColorU32(PDTheme::White), quantity);
 		ImGui::Dummy(ImVec2(32.0f, 24.0f));
 		ImGui::SameLine(0.0f, 0.0f);
 

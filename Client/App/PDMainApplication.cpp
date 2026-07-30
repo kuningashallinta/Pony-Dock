@@ -64,7 +64,7 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 		return;
 	}
 
-	m_scene.initialize(m_overlay.device(), m_diagnostics);
+	m_scene.initialize(m_overlay.device(), m_diagnostics, PONYDOCK_SCRIPTS_DIR);
 
 	m_diagnostics.write("Overlay ready at " + std::to_string(m_overlay.width()) + "x" + std::to_string(m_overlay.height()));
 
@@ -76,7 +76,8 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 		applyPendingScene();
 
 		std::chrono::steady_clock::time_point const now = std::chrono::steady_clock::now();
-		float const deltaSeconds = std::chrono::duration<float>(now - lastTick).count();
+		float const elapsedSeconds = std::chrono::duration<float>(now - lastTick).count();
+		float const deltaSeconds = elapsedSeconds < MaxDeltaSeconds ? elapsedSeconds : MaxDeltaSeconds;
 		lastTick = now;
 
 		m_scene.tick(deltaSeconds, m_overlay.width(), m_overlay.height());
@@ -116,7 +117,7 @@ void PDMainApplication::applyPendingScene()
 	{
 		for (int i = 0; i < entry.quantity; i += 1)
 		{
-			m_scene.spawnEntity(entry.packPath, std::string(PONYDOCK_SCRIPTS_DIR) + "/walk.lua", x, 0.0f);
+			m_scene.spawnEntity(entry.packPath, std::string(PONYDOCK_SCRIPTS_DIR) + "/core.lua", x, 0.0f);
 			x += 120.0f;
 		}
 	}

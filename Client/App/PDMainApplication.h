@@ -32,6 +32,8 @@ public:
 	void requestExit();
 
 private:
+	static constexpr float MaxDeltaSeconds = 0.1f;
+
 	void runOverlay(HINSTANCE instance);
 	void applyPendingScene();
 

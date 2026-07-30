@@ -5,46 +5,43 @@
 #include <filesystem>
 #include <fstream>
 
-namespace
+static std::string stringOr(nlohmann::json const &object, char const *key, std::string const &fallback)
 {
-	std::string stringOr(nlohmann::json const &object, char const *key, std::string const &fallback)
-	{
-		auto const found = object.find(key);
+	auto const found = object.find(key);
 
-		return found != object.end() and found->is_string() ? found->get<std::string>() : fallback;
+	return found != object.end() and found->is_string() ? found->get<std::string>() : fallback;
+}
+
+static float numberOr(nlohmann::json const &object, char const *key, float fallback)
+{
+	auto const found = object.find(key);
+
+	return found != object.end() and found->is_number() ? found->get<float>() : fallback;
+}
+
+static int intOr(nlohmann::json const &object, char const *key, int fallback)
+{
+	auto const found = object.find(key);
+
+	return found != object.end() and found->is_number_integer() ? found->get<int>() : fallback;
+}
+
+static bool boolOr(nlohmann::json const &object, char const *key, bool fallback)
+{
+	auto const found = object.find(key);
+
+	return found != object.end() and found->is_boolean() ? found->get<bool>() : fallback;
+}
+
+static std::string absolutePath(std::filesystem::path const &packPath, std::string const &relative)
+{
+	if (relative.empty())
+	{
+		return std::string();
 	}
 
-	float numberOr(nlohmann::json const &object, char const *key, float fallback)
-	{
-		auto const found = object.find(key);
-
-		return found != object.end() and found->is_number() ? found->get<float>() : fallback;
-	}
-
-	int intOr(nlohmann::json const &object, char const *key, int fallback)
-	{
-		auto const found = object.find(key);
-
-		return found != object.end() and found->is_number_integer() ? found->get<int>() : fallback;
-	}
-
-	bool boolOr(nlohmann::json const &object, char const *key, bool fallback)
-	{
-		auto const found = object.find(key);
-
-		return found != object.end() and found->is_boolean() ? found->get<bool>() : fallback;
-	}
-
-	std::string absolutePath(std::filesystem::path const &packPath, std::string const &relative)
-	{
-		if (relative.empty())
-		{
-			return std::string();
-		}
-
-		return (packPath / relative).lexically_normal().string();
-	}
-} // namespace
+	return (packPath / relative).lexically_normal().string();
+}
 
 bool loadPonyPack(std::string const &packPath, PDPonyPackData &outData, std::string &outError)
 {

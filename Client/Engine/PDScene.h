@@ -1,11 +1,10 @@
 #pragma once
 
 #include <Engine/Components/PDAnimation.h>
-#include <Engine/Components/PDBehavior.h>
 #include <Engine/Components/PDPack.h>
 #include <Engine/Components/PDPosition.h>
+#include <Engine/Components/PDScript.h>
 #include <Engine/Components/PDSprite.h>
-#include <Engine/Components/PDVelocity.h>
 #include <Engine/PDAnimationCache.h>
 #include <Engine/PDDiagnostics.h>
 #include <Engine/PDLua.h>
@@ -23,21 +22,27 @@
 class PDScene
 {
 public:
-	void initialize(ID3D11Device *device, PDDiagnostics &diagnostics);
+	~PDScene();
+
+	void initialize(ID3D11Device *device, PDDiagnostics &diagnostics, std::string const &scriptsRoot);
 
 	void spawnEntity(std::string const &packPath, std::string const &scriptPath, float x, float y);
 	void clear();
+	void reloadScripts();
 
 	void tick(float deltaSeconds, int boundsWidth, int boundsHeight);
 	void draw(PDSpriteRenderer &renderer) const;
 
-	bool playAnimation(entt::entity entity, std::string const &name, bool loop, bool restart);
-	void setFacing(entt::entity entity, bool facingRight);
-
 private:
+	static constexpr int MaxScriptErrors = 3;
+
 	PDPonyPackData const *pack(std::string const &packPath);
 	void advanceAnimations(float deltaSeconds);
 	void writeSpriteFromAnimation(PDAnimation const &animation, PDSprite &sprite) const;
+
+	bool playAnimation(entt::entity entity, std::string const &name, bool loop, bool restart);
+	void setFacing(entt::entity entity, bool facingRight);
+	entt::entity resolve(std::uint32_t entityId) const;
 
 	PDDiagnostics *m_diagnostics = nullptr;
 	PDTextureCache m_textures;

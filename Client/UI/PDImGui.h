@@ -29,6 +29,8 @@ public:
 	}
 
 private:
+	static PDImGui *s_instance;
+
 	static LRESULT CALLBACK staticWndProc(HWND window, UINT message, WPARAM wParam, LPARAM lParam);
 	LRESULT handleMessage(HWND window, UINT message, WPARAM wParam, LPARAM lParam);
 
