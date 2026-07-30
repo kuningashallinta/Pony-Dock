@@ -11,10 +11,11 @@ bool PDOverlayWindow::initialize(HINSTANCE instance)
 	m_width = GetSystemMetrics(SM_CXSCREEN);
 	m_height = GetSystemMetrics(SM_CYSCREEN);
 
-	DWORD const exStyle = WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW | WS_EX_TOPMOST;
+	DWORD const exStyle = WS_EX_LAYERED | WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW | WS_EX_TOPMOST;
 	m_window = CreateWindowEx(exStyle, windowClass.lpszClassName, "", WS_POPUP, 0, 0, m_width, m_height, nullptr, nullptr, instance, nullptr);
 
 	SetWindowLongPtr(m_window, GWLP_USERDATA, reinterpret_cast<LONG_PTR>(this));
+	SetLayeredWindowAttributes(m_window, 0, 255, LWA_ALPHA);
 
 	MARGINS const margins = {-1, -1, -1, -1};
 	DwmExtendFrameIntoClientArea(m_window, &margins);
