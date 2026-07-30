@@ -1,5 +1,7 @@
 #include <UI/PDImGui.h>
 
+#include <UI/PDTheme.h>
+
 #include <imgui.h>
 #include <imgui_impl_dx11.h>
 #include <imgui_impl_win32.h>
@@ -40,6 +42,7 @@ bool PDImGui::initialize(HINSTANCE instance, const char *title, int width, int h
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
 	ImGui::StyleColorsDark();
+	PDTheme::apply();
 
 	char windowsDirectory[MAX_PATH];
 	GetWindowsDirectoryA(windowsDirectory, MAX_PATH);

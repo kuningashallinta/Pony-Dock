@@ -2,6 +2,7 @@
 
 #include <App/PDMainApplication.h>
 #include <UI/PDImGui.h>
+#include <UI/PDTheme.h>
 
 #include <imgui.h>
 
@@ -11,29 +12,6 @@
 
 namespace
 {
-	const ImVec4 kAccent = ImVec4(0.6509804f, 0.14901961f, 0.34509805f, 1.0f);
-	const ImVec4 kAccentSoft = ImVec4(0.24705882f, 0.1254902f, 0.18823529f, 1.0f);
-	const ImVec4 kAccentText = ImVec4(0.92156863f, 0.61960787f, 0.7372549f, 1.0f);
-
-	const ImVec4 kStart = ImVec4(0.18f, 0.52f, 0.27f, 1.0f);
-	const ImVec4 kStartHover = ImVec4(0.22f, 0.6f, 0.31f, 1.0f);
-	const ImVec4 kStartPress = ImVec4(0.14f, 0.44f, 0.22f, 1.0f);
-	const ImVec4 kStop = ImVec4(0.6f, 0.16f, 0.16f, 1.0f);
-	const ImVec4 kStopHover = ImVec4(0.7f, 0.22f, 0.22f, 1.0f);
-	const ImVec4 kStopPress = ImVec4(0.5f, 0.12f, 0.12f, 1.0f);
-
-	const ImVec4 kSidebar = ImVec4(0.07f, 0.07f, 0.07f, 1.0f);
-	const ImVec4 kSidebarHover = ImVec4(0.14f, 0.14f, 0.14f, 1.0f);
-	const ImVec4 kDivider = ImVec4(0.22f, 0.22f, 0.22f, 1.0f);
-	const ImVec4 kTextDim = ImVec4(0.62f, 0.62f, 0.62f, 1.0f);
-	const ImVec4 kTextFaint = ImVec4(0.46f, 0.46f, 0.46f, 1.0f);
-	const ImVec4 kWhite = ImVec4(0.92f, 0.92f, 0.92f, 1.0f);
-
-	const ImVec4 kCardBg = ImVec4(0.13f, 0.13f, 0.13f, 1.0f);
-	const ImVec4 kCardBgHover = ImVec4(0.17f, 0.17f, 0.17f, 1.0f);
-	const ImVec4 kCardBorder = ImVec4(0.24f, 0.24f, 0.24f, 1.0f);
-	const ImVec4 kThumbBg = ImVec4(0.09f, 0.09f, 0.09f, 1.0f);
-
 	constexpr float NavWidth = 224.0f;
 	constexpr float CardWidth = 150.0f;
 	constexpr float ThumbHeight = 108.0f;
@@ -121,14 +99,14 @@ void PDMainWindow::draw()
 	ImDrawList *drawList = ImGui::GetWindowDrawList();
 	const ImVec2 windowPos = ImGui::GetWindowPos();
 	drawList->AddLine(ImVec2(windowPos.x + NavWidth, windowPos.y), ImVec2(windowPos.x + NavWidth, windowPos.y + height),
-		u32(kDivider), 1.0f);
+		u32(PDTheme::Divider), 1.0f);
 
 	ImGui::End();
 }
 
 void PDMainWindow::drawSidebar(float width, float height)
 {
-	ImGui::PushStyleColor(ImGuiCol_ChildBg, kSidebar);
+	ImGui::PushStyleColor(ImGuiCol_ChildBg, PDTheme::Sidebar);
 	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(12.0f, 14.0f));
 	ImGui::BeginChild("sidebar", ImVec2(width, height), ImGuiChildFlags_AlwaysUseWindowPadding, ImGuiWindowFlags_NoScrollbar);
 	ImGui::PopStyleVar();
@@ -153,10 +131,10 @@ void PDMainWindow::drawSidebar(float width, float height)
 	drawRunControl();
 
 	ImGui::Dummy(ImVec2(0.0f, 4.0f));
-	ImGui::PushStyleColor(ImGuiCol_Text, kTextFaint);
+	ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextFaint);
 	ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.0f, 0.0f, 0.0f, 0.0f));
-	ImGui::PushStyleColor(ImGuiCol_ButtonHovered, kSidebarHover);
-	ImGui::PushStyleColor(ImGuiCol_ButtonActive, kSidebarHover);
+	ImGui::PushStyleColor(ImGuiCol_ButtonHovered, PDTheme::SidebarHover);
+	ImGui::PushStyleColor(ImGuiCol_ButtonActive, PDTheme::SidebarHover);
 
 	if (ImGui::Button("Quit Pony Desk", ImVec2(ImGui::GetContentRegionAvail().x, 30.0f)))
 	{
@@ -187,15 +165,15 @@ void PDMainWindow::navItem(const char *label, View view)
 
 	if (active)
 	{
-		drawList->AddRectFilled(position, rectMax, u32(kAccentSoft), 0.0f);
-		drawList->AddRectFilled(position, ImVec2(position.x + 3.0f, rectMax.y), u32(kAccent), 0.0f);
+		drawList->AddRectFilled(position, rectMax, u32(PDTheme::AccentSoft), 0.0f);
+		drawList->AddRectFilled(position, ImVec2(position.x + 3.0f, rectMax.y), u32(PDTheme::Accent), 0.0f);
 	}
 	else if (hovered)
 	{
-		drawList->AddRectFilled(position, rectMax, u32(kSidebarHover), 0.0f);
+		drawList->AddRectFilled(position, rectMax, u32(PDTheme::SidebarHover), 0.0f);
 	}
 
-	const ImVec4 &textColor = active ? kAccentText : (hovered ? kWhite : kTextDim);
+	const ImVec4 &textColor = active ? PDTheme::AccentText : (hovered ? PDTheme::White : PDTheme::TextDim);
 	const float textY = position.y + (itemHeight - ImGui::GetTextLineHeight()) * 0.5f;
 	drawList->AddText(ImVec2(position.x + 16.0f, textY), u32(textColor), label);
 
@@ -212,9 +190,9 @@ void PDMainWindow::drawRunControl()
 
 	if (running)
 	{
-		ImGui::PushStyleColor(ImGuiCol_Button, kStop);
-		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, kStopHover);
-		ImGui::PushStyleColor(ImGuiCol_ButtonActive, kStopPress);
+		ImGui::PushStyleColor(ImGuiCol_Button, PDTheme::Stop);
+		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, PDTheme::StopHover);
+		ImGui::PushStyleColor(ImGuiCol_ButtonActive, PDTheme::StopPress);
 
 		if (ImGui::Button("Stop", ImVec2(width, 42.0f)))
 		{
@@ -223,9 +201,9 @@ void PDMainWindow::drawRunControl()
 	}
 	else
 	{
-		ImGui::PushStyleColor(ImGuiCol_Button, kStart);
-		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, kStartHover);
-		ImGui::PushStyleColor(ImGuiCol_ButtonActive, kStartPress);
+		ImGui::PushStyleColor(ImGuiCol_Button, PDTheme::Start);
+		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, PDTheme::StartHover);
+		ImGui::PushStyleColor(ImGuiCol_ButtonActive, PDTheme::StartPress);
 
 		if (ImGui::Button("Start", ImVec2(width, 42.0f)))
 		{
@@ -335,22 +313,22 @@ bool PDMainWindow::drawPonyCard(std::string const &name, std::string const &sub,
 	const bool hovered = ImGui::IsItemHovered();
 
 	ImDrawList *drawList = ImGui::GetWindowDrawList();
-	drawList->AddRectFilled(position, rectMax, u32(hovered ? kCardBgHover : kCardBg), 0.0f);
+	drawList->AddRectFilled(position, rectMax, u32(hovered ? PDTheme::CardBgHover : PDTheme::CardBg), 0.0f);
 
 	const ImVec2 thumbMin(position.x + CardPad, position.y + CardPad);
 	const ImVec2 thumbMax(rectMax.x - CardPad, position.y + CardPad + ThumbHeight);
-	drawList->AddRectFilled(thumbMin, thumbMax, u32(kThumbBg), 0.0f);
-	drawList->AddRect(thumbMin, thumbMax, u32(kCardBorder), 0.0f, 0, 1.0f);
+	drawList->AddRectFilled(thumbMin, thumbMax, u32(PDTheme::ThumbBg), 0.0f);
+	drawList->AddRect(thumbMin, thumbMax, u32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
 	addImageFitted(drawList, texture, thumbMin, thumbMax, 6.0f);
 
-	drawList->AddText(ImVec2(position.x + CardPad + 2.0f, thumbMax.y + 7.0f), u32(kWhite), name.c_str());
+	drawList->AddText(ImVec2(position.x + CardPad + 2.0f, thumbMax.y + 7.0f), u32(PDTheme::White), name.c_str());
 
 	if (not sub.empty())
 	{
-		drawList->AddText(ImVec2(position.x + CardPad + 2.0f, thumbMax.y + 7.0f + nameHeight + 2.0f), u32(kTextFaint), sub.c_str());
+		drawList->AddText(ImVec2(position.x + CardPad + 2.0f, thumbMax.y + 7.0f + nameHeight + 2.0f), u32(PDTheme::TextFaint), sub.c_str());
 	}
 
-	drawList->AddRect(position, rectMax, u32(selected ? kAccent : kCardBorder), 0.0f, 0, selected ? 2.0f : 1.0f);
+	drawList->AddRect(position, rectMax, u32(selected ? PDTheme::Accent : PDTheme::CardBorder), 0.0f, 0, selected ? 2.0f : 1.0f);
 
 	return clicked;
 }
