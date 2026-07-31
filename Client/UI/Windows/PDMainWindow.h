@@ -25,6 +25,10 @@ public:
 
 private:
 	static constexpr float NavWidth = 224.0f;
+	static constexpr float SidebarPad = 12.0f;
+	static constexpr float RunButtonHeight = 42.0f;
+	static constexpr float QuitButtonHeight = 30.0f;
+	static constexpr float FooterGap = 4.0f;
 	static constexpr float CardWidth = 150.0f;
 	static constexpr float ThumbHeight = 108.0f;
 	static constexpr float CardPad = 8.0f;

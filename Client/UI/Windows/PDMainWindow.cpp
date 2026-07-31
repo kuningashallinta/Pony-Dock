@@ -113,7 +113,7 @@ void PDMainWindow::draw()
 void PDMainWindow::drawSidebar(float width, float height)
 {
 	ImGui::PushStyleColor(ImGuiCol_ChildBg, PDTheme::Sidebar);
-	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(12.0f, 14.0f));
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(SidebarPad, SidebarPad));
 	ImGui::BeginChild("sidebar", ImVec2(width, height), ImGuiChildFlags_AlwaysUseWindowPadding, ImGuiWindowFlags_NoScrollbar);
 	ImGui::PopStyleVar();
 
@@ -127,8 +127,8 @@ void PDMainWindow::drawSidebar(float width, float height)
 	ImGui::Dummy(ImVec2(0.0f, 2.0f));
 	navItem("Log", View::Log);
 
-	constexpr float bottomGap = 20.0f;
-	constexpr float footerHeight = 42.0f + 8.0f + 30.0f + bottomGap;
+	const float spacing = ImGui::GetStyle().ItemSpacing.y;
+	const float footerHeight = RunButtonHeight + FooterGap + QuitButtonHeight + spacing * 3.0f;
 	const float remaining = ImGui::GetContentRegionAvail().y - footerHeight;
 
 	if (remaining > 0.0f)
@@ -138,19 +138,20 @@ void PDMainWindow::drawSidebar(float width, float height)
 
 	drawRunControl();
 
-	ImGui::Dummy(ImVec2(0.0f, 4.0f));
+	ImGui::Dummy(ImVec2(0.0f, FooterGap));
+	ImGui::PushStyleVar(ImGuiStyleVar_FrameBorderSize, 1.0f);
 	ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextFaint);
 	ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.0f, 0.0f, 0.0f, 0.0f));
 	ImGui::PushStyleColor(ImGuiCol_ButtonHovered, PDTheme::SidebarHover);
 	ImGui::PushStyleColor(ImGuiCol_ButtonActive, PDTheme::SidebarHover);
 
-	if (ImGui::Button("Quit Pony Desk", ImVec2(ImGui::GetContentRegionAvail().x, 30.0f)))
+	if (ImGui::Button("Quit Pony Dock", ImVec2(ImGui::GetContentRegionAvail().x, QuitButtonHeight)))
 	{
 		m_app.requestExit();
 	}
 
 	ImGui::PopStyleColor(4);
-	ImGui::Dummy(ImVec2(0.0f, bottomGap));
+	ImGui::PopStyleVar();
 
 	ImGui::EndChild();
 	ImGui::PopStyleColor();
@@ -221,7 +222,7 @@ void PDMainWindow::drawRunControl()
 		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, PDTheme::StopHover);
 		ImGui::PushStyleColor(ImGuiCol_ButtonActive, PDTheme::StopPress);
 
-		if (ImGui::Button("Stop", ImVec2(width, 42.0f)))
+		if (ImGui::Button("Stop", ImVec2(width, RunButtonHeight)))
 		{
 			m_app.stopScene();
 		}
@@ -234,7 +235,7 @@ void PDMainWindow::drawRunControl()
 
 		ImGui::BeginDisabled(m_scene.empty());
 
-		if (ImGui::Button("Start", ImVec2(width, 42.0f)))
+		if (ImGui::Button("Start", ImVec2(width, RunButtonHeight)))
 		{
 			m_app.startScene(m_scene);
 		}
