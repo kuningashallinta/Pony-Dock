@@ -3,6 +3,7 @@
 #include <Assets/resource.h>
 
 #include <chrono>
+#include <filesystem>
 #include <string>
 #include <utility>
 
@@ -65,6 +66,7 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 	}
 
 	m_scene.initialize(m_overlay.device(), m_diagnostics, PONYDOCK_SCRIPTS_DIR);
+	m_scene.loadScript(coreScriptPath());
 
 	m_diagnostics.write("Overlay ready at " + std::to_string(m_overlay.width()) + "x" + std::to_string(m_overlay.height()));
 
@@ -73,6 +75,14 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 	while (m_overlayRunning)
 	{
 		m_overlay.pumpMessages();
+
+		if (m_pendingReload.exchange(false))
+		{
+			m_scene.reloadScripts();
+			m_scene.loadScript(coreScriptPath());
+		}
+
+		applyPendingScripts();
 		applyPendingScene();
 
 		std::chrono::steady_clock::time_point const now = std::chrono::steady_clock::now();
@@ -81,6 +91,11 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 		lastTick = now;
 
 		m_scene.tick(deltaSeconds, m_overlay.width(), m_overlay.height());
+
+		{
+			std::lock_guard<std::mutex> const lock(m_scriptsMutex);
+			m_loadedScripts = m_scene.loadedScripts();
+		}
 
 		m_overlay.beginFrame();
 		m_spriteRenderer.begin(m_overlay.context(), m_overlay.width(), m_overlay.height());
@@ -117,8 +132,37 @@ void PDMainApplication::applyPendingScene()
 	{
 		for (int i = 0; i < entry.quantity; i += 1)
 		{
-			m_scene.spawnEntity(entry.packPath, std::string(PONYDOCK_SCRIPTS_DIR) + "/core.lua", x, 0.0f);
+			m_scene.spawnEntity(entry.packPath, coreScriptPath(), x, 0.0f);
 			x += 120.0f;
+		}
+	}
+}
+
+void PDMainApplication::applyPendingScripts()
+{
+	std::vector<ScriptCommand> commands;
+
+	{
+		std::lock_guard<std::mutex> const lock(m_scriptsMutex);
+
+		if (m_pendingScripts.empty())
+		{
+			return;
+		}
+
+		commands = std::move(m_pendingScripts);
+		m_pendingScripts.clear();
+	}
+
+	for (ScriptCommand const &command : commands)
+	{
+		if (command.load)
+		{
+			m_scene.loadScript(command.path);
+		}
+		else
+		{
+			m_scene.unloadScript(command.path);
 		}
 	}
 }
@@ -143,6 +187,40 @@ void PDMainApplication::stopScene()
 	}
 
 	m_sceneRunning = false;
+}
+
+void PDMainApplication::reloadScripts()
+{
+	m_pendingReload = true;
+}
+
+void PDMainApplication::setScriptLoaded(std::string const &scriptPath, bool loaded)
+{
+	ScriptCommand command;
+	command.path = scriptPath;
+	command.load = loaded;
+
+	std::lock_guard<std::mutex> const lock(m_scriptsMutex);
+	m_pendingScripts.push_back(std::move(command));
+}
+
+std::vector<std::string> PDMainApplication::loadedScripts() const
+{
+	std::lock_guard<std::mutex> const lock(m_scriptsMutex);
+
+	return m_loadedScripts;
+}
+
+std::string PDMainApplication::coreScriptPath()
+{
+	return std::filesystem::path(std::string(PONYDOCK_SCRIPTS_DIR) + "/core.lua").lexically_normal().string();
+}
+
+std::vector<std::string> PDMainApplication::requiredScripts()
+{
+	std::string const library = std::filesystem::path(std::string(PONYDOCK_SCRIPTS_DIR) + "/lib/pd.lua").lexically_normal().string();
+
+	return {coreScriptPath(), library};
 }
 
 void PDMainApplication::requestExit()

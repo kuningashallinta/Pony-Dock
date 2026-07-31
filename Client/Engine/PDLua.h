@@ -8,6 +8,7 @@
 #include <functional>
 #include <string>
 #include <unordered_map>
+#include <vector>
 
 class PDDiagnostics;
 
@@ -30,7 +31,12 @@ public:
 	bool callSpawn(std::string const &scriptPath, sol::table &self);
 	bool callTick(std::string const &scriptPath, sol::table &self, float deltaSeconds);
 
+	bool loadScript(std::string const &scriptPath);
+	void unloadScript(std::string const &scriptPath);
+
 	void reload();
+
+	std::vector<std::string> loadedScripts() const;
 
 private:
 	struct Module
@@ -43,6 +49,8 @@ private:
 
 	Module *module(std::string const &scriptPath);
 	bool report(std::string const &scriptPath, sol::protected_function_result const &result);
+	std::string modulePath(std::string const &name) const;
+	void forgetPackage(std::string const &normalizedPath);
 
 	sol::state m_lua;
 	PDDiagnostics *m_diagnostics = nullptr;

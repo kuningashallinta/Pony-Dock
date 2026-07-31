@@ -30,6 +30,21 @@ public:
 	void clear();
 	void reloadScripts();
 
+	std::vector<std::string> loadedScripts() const
+	{
+		return m_lua.loadedScripts();
+	}
+
+	bool loadScript(std::string const &scriptPath)
+	{
+		return m_lua.loadScript(scriptPath);
+	}
+
+	void unloadScript(std::string const &scriptPath)
+	{
+		m_lua.unloadScript(scriptPath);
+	}
+
 	void tick(float deltaSeconds, int boundsWidth, int boundsHeight);
 	void draw(PDSpriteRenderer &renderer) const;
 

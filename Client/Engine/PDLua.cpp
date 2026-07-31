@@ -2,6 +2,9 @@
 
 #include <Engine/PDDiagnostics.h>
 
+#include <algorithm>
+#include <filesystem>
+
 void PDLua::initialize(std::string const &scriptsRoot, PDDiagnostics &diagnostics)
 {
 	m_diagnostics = &diagnostics;
@@ -185,19 +188,13 @@ PDLua::Module *PDLua::module(std::string const &scriptPath)
 	}
 
 	sol::table const moduleTable = returned.as<sol::table>();
+	sol::reference const traceback = m_lua["debug"]["traceback"];
 	sol::object const tickObject = moduleTable["tick"];
 
-	if (not tickObject.is<sol::protected_function>())
+	if (tickObject.is<sol::protected_function>())
 	{
-		m_diagnostics->writeOnce(scriptPath, "Script has no tick function: " + scriptPath);
-		created.failed = true;
-		m_modules.emplace(scriptPath, std::move(created));
-
-		return nullptr;
+		created.tick = sol::protected_function(tickObject.as<sol::protected_function>(), traceback);
 	}
-
-	sol::reference const traceback = m_lua["debug"]["traceback"];
-	created.tick = sol::protected_function(tickObject.as<sol::protected_function>(), traceback);
 
 	sol::object const spawnObject = moduleTable["spawn"];
 
@@ -250,10 +247,149 @@ bool PDLua::callTick(std::string const &scriptPath, sol::table &self, float delt
 		return false;
 	}
 
+	if (not target->tick.valid())
+	{
+		m_diagnostics->writeOnce(scriptPath + ":tick", "Script has no tick function: " + scriptPath);
+
+		return false;
+	}
+
 	return report(scriptPath, target->tick(self, deltaSeconds));
+}
+
+bool PDLua::loadScript(std::string const &scriptPath)
+{
+	auto const existing = m_modules.find(scriptPath);
+
+	if (existing != m_modules.end() and existing->second.failed)
+	{
+		m_modules.erase(existing);
+	}
+
+	return module(scriptPath) != nullptr;
+}
+
+void PDLua::unloadScript(std::string const &scriptPath)
+{
+	std::string const normalized = std::filesystem::path(scriptPath).lexically_normal().string();
+
+	for (auto iterator = m_modules.begin(); iterator != m_modules.end();)
+	{
+		if (std::filesystem::path(iterator->first).lexically_normal().string() == normalized)
+		{
+			iterator = m_modules.erase(iterator);
+		}
+		else
+		{
+			++iterator;
+		}
+	}
+
+	forgetPackage(normalized);
+	m_diagnostics->write("Unloaded script " + normalized);
 }
 
 void PDLua::reload()
 {
 	m_modules.clear();
+	forgetPackage(std::string());
+}
+
+std::string PDLua::modulePath(std::string const &name) const
+{
+	std::string const candidates[] = {
+		m_scriptsRoot + "/" + name + ".lua",
+		m_scriptsRoot + "/lib/" + name + ".lua",
+	};
+
+	for (std::string const &candidate : candidates)
+	{
+		std::error_code error;
+
+		if (std::filesystem::exists(candidate, error))
+		{
+			return std::filesystem::path(candidate).lexically_normal().string();
+		}
+	}
+
+	return std::string();
+}
+
+void PDLua::forgetPackage(std::string const &normalizedPath)
+{
+	sol::optional<sol::table> loaded = m_lua["package"]["loaded"];
+
+	if (not loaded.has_value())
+	{
+		return;
+	}
+
+	std::vector<std::string> names;
+
+	for (auto const &entry : loaded.value())
+	{
+		sol::optional<std::string> const name = entry.first.as<sol::optional<std::string>>();
+
+		if (not name.has_value())
+		{
+			continue;
+		}
+
+		std::string const path = modulePath(name.value());
+
+		if (path.empty())
+		{
+			continue;
+		}
+
+		if (normalizedPath.empty() or path == normalizedPath)
+		{
+			names.push_back(name.value());
+		}
+	}
+
+	for (std::string const &name : names)
+	{
+		loaded.value()[name] = sol::nil;
+	}
+}
+
+std::vector<std::string> PDLua::loadedScripts() const
+{
+	std::vector<std::string> result;
+
+	for (auto const &entry : m_modules)
+	{
+		if (not entry.second.failed)
+		{
+			result.push_back(std::filesystem::path(entry.first).lexically_normal().string());
+		}
+	}
+
+	sol::optional<sol::table> const loaded = m_lua["package"]["loaded"];
+
+	if (loaded.has_value())
+	{
+		for (auto const &entry : loaded.value())
+		{
+			sol::optional<std::string> const name = entry.first.as<sol::optional<std::string>>();
+
+			if (not name.has_value())
+			{
+				continue;
+			}
+
+			std::string const path = modulePath(name.value());
+
+			if (not path.empty())
+			{
+				result.push_back(path);
+			}
+		}
+	}
+
+	std::sort(result.begin(), result.end());
+	result.erase(std::unique(result.begin(), result.end()), result.end());
+
+	return result;
 }
