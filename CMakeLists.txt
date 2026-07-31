@@ -25,6 +25,14 @@ target_include_directories(imgui PUBLIC
 
 target_link_libraries(imgui PUBLIC d3d11 dxgi)
 
+add_library(imgui_texteditor STATIC
+	vendor/ImGuiColorTextEdit/TextEditor.cpp)
+
+target_include_directories(imgui_texteditor PUBLIC
+	vendor/ImGuiColorTextEdit)
+
+target_link_libraries(imgui_texteditor PUBLIC imgui)
+
 add_subdirectory(Client)
 
 set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT Client)

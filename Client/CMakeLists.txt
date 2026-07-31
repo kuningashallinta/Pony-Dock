@@ -23,6 +23,7 @@ target_include_directories(Client PRIVATE ${LUA_INCLUDE_DIR})
 
 target_link_libraries(Client PRIVATE
 	imgui
+	imgui_texteditor
 	nlohmann_json::nlohmann_json
 	EnTT::EnTT
 	sol2::sol2
