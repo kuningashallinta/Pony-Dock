@@ -9,6 +9,7 @@ namespace PDTheme
 	inline ImVec4 const AccentText = ImVec4(0.92156863f, 0.61960787f, 0.7372549f, 1.0f);
 	inline ImVec4 const AccentHover = ImVec4(0.7254902f, 0.19607843f, 0.40392157f, 1.0f);
 	inline ImVec4 const AccentPress = ImVec4(0.54901963f, 0.11372549f, 0.28627452f, 1.0f);
+	inline ImVec4 const AccentSoftHover = ImVec4(0.32156864f, 0.16862746f, 0.24705882f, 1.0f);
 
 	inline ImVec4 const Start = ImVec4(0.18f, 0.52f, 0.27f, 1.0f);
 	inline ImVec4 const StartHover = ImVec4(0.22f, 0.6f, 0.31f, 1.0f);
@@ -31,6 +32,12 @@ namespace PDTheme
 	inline ImVec4 const Toolbar = ImVec4(0.105f, 0.105f, 0.105f, 1.0f);
 	inline ImVec4 const Badge = ImVec4(0.18f, 0.18f, 0.18f, 1.0f);
 	inline ImVec4 const Shadow = ImVec4(0.0f, 0.0f, 0.0f, 0.34f);
+	inline ImVec4 const Window = ImVec4(0.06f, 0.06f, 0.06f, 1.0f);
+	inline ImVec4 const Popup = ImVec4(0.11f, 0.11f, 0.11f, 1.0f);
+	inline ImVec4 const Scroll = ImVec4(0.26f, 0.26f, 0.26f, 1.0f);
+	inline ImVec4 const ScrollHover = ImVec4(0.34f, 0.34f, 0.34f, 1.0f);
+	inline ImVec4 const Clear = ImVec4(0.0f, 0.0f, 0.0f, 0.0f);
+	inline ImVec4 const Dim = ImVec4(0.0f, 0.0f, 0.0f, 0.55f);
 
 	inline ImVec4 const InputBg = ImVec4(0.1f, 0.1f, 0.1f, 1.0f);
 	inline ImVec4 const InputBgHover = ImVec4(0.14f, 0.14f, 0.14f, 1.0f);
