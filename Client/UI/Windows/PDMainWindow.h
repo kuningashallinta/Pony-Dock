@@ -5,8 +5,8 @@
 #include <Library/PDPonyCatalog.h>
 #include <Library/PDSceneEntry.h>
 #include <Library/PDScriptCatalog.h>
+#include <Library/PDSettings.h>
 
-#include <TextEditor.h>
 #include <imgui.h>
 
 #include <string>
@@ -15,6 +15,13 @@
 
 class PDMainApplication;
 class PDImGui;
+
+struct PDSettingTarget
+{
+	std::string id;
+	std::string label;
+	std::string previewPath;
+};
 
 class PDMainWindow
 {
@@ -41,6 +48,10 @@ private:
 	static constexpr float ToggleWidth = 78.0f;
 	static constexpr float ToggleHeight = 22.0f;
 	static constexpr float ShadowSpread = 6.0f;
+	static constexpr float SettingRowHeight = 48.0f;
+	static constexpr float SettingControlWidth = 190.0f;
+	static constexpr float TargetPickerWidth = 170.0f;
+	static constexpr float ModalPad = 16.0f;
 
 	enum class View
 	{
@@ -76,9 +87,13 @@ private:
 	void drawScriptColumn(const char *label, bool loadedColumn, float width);
 	void drawColumnHeader(const char *label, int count);
 	void drawScriptCard(PDScriptEntry const &entry, bool loaded);
-	void drawScriptEditor();
-	void openScript(PDScriptEntry const &entry);
-	void saveScript();
+	void openModule(PDScriptEntry const &entry);
+
+	void drawModuleSettings();
+	void drawSettingRow(PDSettingDeclaration const &declaration, bool loaded);
+	void drawTargetButton();
+	void drawTargetModal();
+	void openInEditor();
 
 	static void addImageFitted(ImDrawList *drawList, PDTexture const *texture, ImVec2 areaMin, ImVec2 areaMax, float margin);
 	static void addShadow(ImDrawList *drawList, ImVec2 rectMin, ImVec2 rectMax);
@@ -100,10 +115,12 @@ private:
 	PDScriptCatalog m_scripts;
 	std::vector<std::string> m_loadedScripts;
 	std::vector<std::string> m_requiredScripts;
-	TextEditor m_editor;
-	std::string m_editingPath;
-	std::string m_editingName;
-	std::string m_editingOriginal;
-	bool m_editorOpen = false;
-	bool m_editorDirty = false;
+	std::string m_settingsModule;
+	std::string m_settingsModulePath;
+	std::string m_settingsTarget;
+	std::string m_settingsTargetLabel;
+	char m_targetFilter[64] = "";
+	bool m_targetPickerOpen = false;
+
+	std::vector<PDSettingTarget> m_targets;
 };

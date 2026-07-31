@@ -5,13 +5,17 @@
 #include <UI/PDImGui.h>
 #include <UI/PDTheme.h>
 
+#include <windows.h>
+
+#include <shellapi.h>
+
 #include <imgui.h>
+#include <imgui_stdlib.h>
 
 #include <algorithm>
 #include <cstddef>
 #include <cstdio>
-#include <fstream>
-#include <iterator>
+#include <filesystem>
 #include <utility>
 
 void PDMainWindow::addImageFitted(ImDrawList *drawList, PDTexture const *texture, ImVec2 areaMin, ImVec2 areaMax, float margin)
@@ -71,6 +75,24 @@ PDMainWindow::PDMainWindow(PDMainApplication &app, PDImGui &host, PDDiagnostics 
 	m_catalog.load(PONYDOCK_PACKS_DIR);
 	m_scripts.load(PONYDOCK_SCRIPTS_DIR);
 	m_requiredScripts = PDMainApplication::requiredScripts();
+
+	for (PDPonyGroup const &group : m_catalog.groups())
+	{
+		for (PDPonyPack const &variant : group.variants)
+		{
+			PDSettingTarget target;
+			target.id = variant.id;
+			target.label = group.displayName;
+			target.previewPath = variant.previewPath;
+
+			if (group.variants.size() > 1)
+			{
+				target.label += "  (" + variant.id + ")";
+			}
+
+			m_targets.push_back(std::move(target));
+		}
+	}
 }
 
 void PDMainWindow::draw()
@@ -617,9 +639,9 @@ void PDMainWindow::removeSceneEntry(std::size_t index)
 
 void PDMainWindow::drawModulesView()
 {
-	if (m_editorOpen)
+	if (not m_settingsModule.empty())
 	{
-		drawScriptEditor();
+		drawModuleSettings();
 
 		return;
 	}
@@ -780,58 +802,400 @@ void PDMainWindow::drawScriptCard(PDScriptEntry const &entry, bool loaded)
 
 	if (clicked)
 	{
-		openScript(entry);
+		openModule(entry);
 	}
 
 	ImGui::SetCursorScreenPos(position);
 	ImGui::Dummy(ImVec2(size.x, ScriptRowHeight + 4.0f));
 }
 
-void PDMainWindow::openScript(PDScriptEntry const &entry)
+void PDMainWindow::openModule(PDScriptEntry const &entry)
 {
-	std::ifstream stream(entry.fullPath, std::ios::binary);
+	m_settingsModule = entry.relativePath;
+	m_settingsModulePath = entry.fullPath;
+	m_settingsTarget.clear();
+	m_settingsTargetLabel.clear();
+	m_targetFilter[0] = '\0';
+}
 
-	if (not stream)
+void PDMainWindow::openInEditor()
+{
+	std::wstring const path = std::filesystem::path(m_settingsModulePath).wstring();
+	HINSTANCE result = ShellExecuteW(nullptr, L"open", path.c_str(), nullptr, nullptr, SW_SHOWNORMAL);
+
+	if (reinterpret_cast<INT_PTR>(result) > 32)
 	{
-		m_diagnostics.write("Cannot open script " + entry.fullPath);
+		return;
+	}
+
+	result = ShellExecuteW(nullptr, L"openas", path.c_str(), nullptr, nullptr, SW_SHOWNORMAL);
+
+	if (reinterpret_cast<INT_PTR>(result) > 32)
+	{
+		return;
+	}
+
+	m_diagnostics.write("Cannot open " + m_settingsModulePath + " in an editor");
+}
+
+void PDMainWindow::drawTargetButton()
+{
+	std::string const label = m_settingsTarget.empty() ? std::string("Global defaults") : m_settingsTargetLabel;
+
+	if (ImGui::Button(label.c_str(), ImVec2(TargetPickerWidth, 0.0f)))
+	{
+		m_targetPickerOpen = true;
+	}
+
+	if (ImGui::IsItemHovered())
+	{
+		ImGui::SetTooltip("Choose which pack these settings apply to");
+	}
+}
+
+void PDMainWindow::drawTargetModal()
+{
+	if (m_targetPickerOpen)
+	{
+		m_targetFilter[0] = '\0';
+		m_targetPickerOpen = false;
+		ImGui::OpenPopup("Choose target");
+	}
+
+	const ImVec2 center = ImGui::GetMainViewport()->GetCenter();
+	ImGui::SetNextWindowPos(center, ImGuiCond_Always, ImVec2(0.5f, 0.5f));
+	ImGui::SetNextWindowSize(ImVec2(560.0f, 460.0f), ImGuiCond_Always);
+	ImGui::PushStyleColor(ImGuiCol_PopupBg, PDTheme::Popup);
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(ModalPad, ModalPad));
+
+	constexpr ImGuiWindowFlags modalFlags = ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoSavedSettings;
+	const bool open = ImGui::BeginPopupModal("Choose target", nullptr, modalFlags);
+
+	ImGui::PopStyleVar();
+
+	if (not open)
+	{
+		ImGui::PopStyleColor();
 
 		return;
 	}
 
-	std::string const text((std::istreambuf_iterator<char>(stream)), std::istreambuf_iterator<char>());
+	m_thumbnailBudget = 24;
 
-	m_editor.SetLanguage(TextEditor::Language::Lua());
-	m_editor.SetText(text);
-	m_editingOriginal = m_editor.GetText();
-	m_editingPath = entry.fullPath;
-	m_editingName = entry.relativePath;
-	m_editorOpen = true;
-	m_editorDirty = false;
-}
+	ImGui::SetNextItemWidth(-1.0f);
+	ImGui::InputTextWithHint("##targetFilter", "Search packs", m_targetFilter, sizeof(m_targetFilter));
+	ImGui::Dummy(ImVec2(0.0f, 10.0f));
 
-void PDMainWindow::saveScript()
-{
-	std::string const text = m_editor.GetText();
-	std::ofstream stream(m_editingPath, std::ios::binary);
+	std::string const filter = toLower(m_targetFilter);
+	std::vector<std::string> const overridden = m_app.settings().packsWithOverrides(m_settingsModule);
 
-	if (not stream)
+	std::vector<int> visible;
+
+	if (filter.empty())
 	{
-		m_diagnostics.write("Cannot write script " + m_editingPath);
-
-		return;
+		visible.push_back(-1);
 	}
 
-	stream << text;
-	stream.close();
+	for (std::size_t index = 0; index < m_targets.size(); index += 1)
+	{
+		if (filter.empty() or toLower(m_targets[index].label).find(filter) != std::string::npos)
+		{
+			visible.push_back(static_cast<int>(index));
+		}
+	}
 
-	m_editingOriginal = text;
-	m_editorDirty = false;
-	m_diagnostics.write("Saved " + m_editingName);
-	m_scripts.load(PONYDOCK_SCRIPTS_DIR);
-	m_app.reloadScripts();
+	ImGui::BeginChild("targetGrid", ImVec2(0.0f, -46.0f), ImGuiChildFlags_None, ImGuiWindowFlags_AlwaysVerticalScrollbar);
+
+	const float available = ImGui::GetContentRegionAvail().x;
+	const int columns = std::max(1, static_cast<int>((available + CardSpacing) / (CardWidth + CardSpacing)));
+	const float blockWidth = static_cast<float>(columns) * CardWidth + static_cast<float>(columns - 1) * CardSpacing;
+	const float indent = std::max(0.0f, (available - blockWidth) * 0.5f);
+
+	ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(CardSpacing, CardSpacing));
+
+	bool chosen = false;
+	std::string chosenId;
+	std::string chosenLabel;
+
+	for (std::size_t slot = 0; slot < visible.size(); slot += 1)
+	{
+		if (slot % static_cast<std::size_t>(columns) != 0)
+		{
+			ImGui::SameLine();
+		}
+		else
+		{
+			ImGui::SetCursorPosX(ImGui::GetCursorPosX() + indent);
+		}
+
+		const int index = visible[slot];
+		ImGui::PushID(index);
+
+		bool doubleClicked = false;
+		bool clicked = false;
+
+		if (index < 0)
+		{
+			clicked = drawPonyCard("Global defaults", "every pack", nullptr, m_settingsTarget.empty(), doubleClicked);
+		}
+		else
+		{
+			PDSettingTarget const &target = m_targets[static_cast<std::size_t>(index)];
+			const bool hasOverride = std::find(overridden.begin(), overridden.end(), target.id) != overridden.end();
+
+			clicked = drawPonyCard(
+				target.label,
+				hasOverride ? "overridden" : std::string(),
+				thumbnail(target.previewPath),
+				m_settingsTarget == target.id,
+				doubleClicked);
+		}
+
+		ImGui::PopID();
+
+		if (clicked)
+		{
+			chosen = true;
+
+			if (index >= 0)
+			{
+				chosenId = m_targets[static_cast<std::size_t>(index)].id;
+				chosenLabel = m_targets[static_cast<std::size_t>(index)].label;
+			}
+		}
+	}
+
+	ImGui::PopStyleVar();
+	ImGui::EndChild();
+
+	if (visible.empty())
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+		ImGui::TextUnformatted("No packs match that search.");
+		ImGui::PopStyleColor();
+	}
+
+	ImGui::Dummy(ImVec2(0.0f, 4.0f));
+
+	if (ImGui::Button("Cancel", ImVec2(110.0f, 32.0f)))
+	{
+		ImGui::CloseCurrentPopup();
+	}
+
+	if (chosen)
+	{
+		m_settingsTarget = chosenId;
+		m_settingsTargetLabel = chosenLabel;
+		ImGui::CloseCurrentPopup();
+	}
+
+	ImGui::EndPopup();
+	ImGui::PopStyleColor();
 }
 
-void PDMainWindow::drawScriptEditor()
+void PDMainWindow::drawSettingRow(PDSettingDeclaration const &declaration, bool loaded)
+{
+	PDSettingsStore &store = m_app.settings();
+
+	const bool packScope = not m_settingsTarget.empty();
+	const bool overridden = packScope and store.hasOverride(m_settingsModule, m_settingsTarget, declaration.id);
+	const bool isButton = declaration.kind == PDSettingKind::Button;
+	const bool editable = isButton or not packScope or overridden;
+
+	const ImVec2 position = ImGui::GetCursorScreenPos();
+	const ImVec2 size(ImGui::GetContentRegionAvail().x, SettingRowHeight);
+	const ImVec2 rectMax(position.x + size.x, position.y + size.y);
+
+	ImDrawList *drawList = ImGui::GetWindowDrawList();
+	drawList->AddRectFilled(position, rectMax, ImGui::GetColorU32(PDTheme::CardBg), 0.0f);
+	drawList->AddRect(position, rectMax, ImGui::GetColorU32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
+
+	const float lineHeight = ImGui::GetTextLineHeight();
+	const float firstY = position.y + (SettingRowHeight - lineHeight * 2.0f - 2.0f) * 0.5f;
+
+	drawList->AddText(
+		ImVec2(position.x + RowPad, firstY),
+		ImGui::GetColorU32(PDTheme::White),
+		declaration.label.c_str());
+
+	drawList->AddText(
+		ImVec2(position.x + RowPad, firstY + lineHeight + 2.0f),
+		ImGui::GetColorU32(PDTheme::TextFaint),
+		declaration.id.c_str());
+
+	const float controlHeight = ImGui::GetFrameHeight();
+	const float controlY = position.y + (SettingRowHeight - controlHeight) * 0.5f;
+	const float controlLeft = rectMax.x - RowPad - SettingControlWidth;
+	const float markerLeft = controlLeft - 8.0f - controlHeight;
+
+	PDSettingValue value = store.value(m_settingsModule, m_settingsTarget, declaration.id);
+	bool changed = false;
+	bool commit = false;
+
+	ImGui::SetCursorScreenPos(ImVec2(controlLeft, controlY));
+	ImGui::SetNextItemWidth(SettingControlWidth);
+	ImGui::BeginDisabled(not editable);
+
+	switch (declaration.kind)
+	{
+		case PDSettingKind::Checkbox:
+		{
+			bool current = value.boolean;
+
+			if (ImGui::Checkbox("##value", &current))
+			{
+				value.type = PDSettingValueType::Boolean;
+				value.boolean = current;
+				changed = true;
+				commit = true;
+			}
+
+			break;
+		}
+
+		case PDSettingKind::Slider:
+		{
+			float current = value.number;
+
+			if (ImGui::SliderFloat("##value", &current, declaration.minimum, declaration.maximum, "%.2f"))
+			{
+				value.type = PDSettingValueType::Number;
+				value.number = current;
+				changed = true;
+			}
+
+			commit = ImGui::IsItemDeactivatedAfterEdit();
+
+			break;
+		}
+
+		case PDSettingKind::Text:
+		{
+			std::string current = value.text;
+
+			if (ImGui::InputText("##value", &current))
+			{
+				value.type = PDSettingValueType::Text;
+				value.text = current;
+				changed = true;
+			}
+
+			commit = ImGui::IsItemDeactivatedAfterEdit();
+
+			break;
+		}
+
+		case PDSettingKind::Dropdown:
+		{
+			std::vector<const char *> items;
+			items.reserve(declaration.options.size());
+			int current = 0;
+
+			for (std::size_t index = 0; index < declaration.options.size(); index += 1)
+			{
+				items.push_back(declaration.options[index].c_str());
+
+				if (declaration.options[index] == value.text)
+				{
+					current = static_cast<int>(index);
+				}
+			}
+
+			if (not items.empty() and ImGui::Combo("##value", &current, items.data(), static_cast<int>(items.size())))
+			{
+				value.type = PDSettingValueType::Text;
+				value.text = declaration.options[static_cast<std::size_t>(current)];
+				changed = true;
+				commit = true;
+			}
+
+			break;
+		}
+
+		case PDSettingKind::Button:
+		{
+			ImGui::BeginDisabled(not loaded);
+
+			if (ImGui::Button("Run", ImVec2(SettingControlWidth, controlHeight)))
+			{
+				m_app.pressSettingButton(m_settingsModule, declaration.id);
+			}
+
+			ImGui::EndDisabled();
+
+			if (not loaded and ImGui::IsItemHovered(ImGuiHoveredFlags_AllowWhenDisabled))
+			{
+				ImGui::SetTooltip("Load this module to run its actions");
+			}
+
+			break;
+		}
+
+		default:
+		{
+			break;
+		}
+	}
+
+	ImGui::EndDisabled();
+
+	if (not isButton)
+	{
+		ImGui::SetCursorScreenPos(ImVec2(markerLeft, controlY));
+
+		if (packScope)
+		{
+			bool current = overridden;
+
+			if (ImGui::Checkbox("##override", &current))
+			{
+				if (current)
+				{
+					store.setValue(m_settingsModule, m_settingsTarget, declaration.id, value);
+				}
+				else
+				{
+					store.clearValue(m_settingsModule, m_settingsTarget, declaration.id);
+				}
+
+				store.save();
+			}
+
+			if (ImGui::IsItemHovered())
+			{
+				ImGui::SetTooltip("Override this setting for %s", m_settingsTargetLabel.c_str());
+			}
+		}
+		else if (store.hasStoredValue(m_settingsModule, declaration.id))
+		{
+			if (ImGui::Button("x", ImVec2(controlHeight, controlHeight)))
+			{
+				store.clearValue(m_settingsModule, std::string(), declaration.id);
+				store.save();
+			}
+
+			if (ImGui::IsItemHovered())
+			{
+				ImGui::SetTooltip("Reset to the script default");
+			}
+		}
+	}
+
+	if (changed)
+	{
+		store.setValue(m_settingsModule, m_settingsTarget, declaration.id, value);
+	}
+
+	if (commit)
+	{
+		store.save();
+	}
+
+	ImGui::SetCursorScreenPos(position);
+	ImGui::Dummy(ImVec2(size.x, SettingRowHeight + 4.0f));
+}
+
+void PDMainWindow::drawModuleSettings()
 {
 	bool back = false;
 
@@ -844,47 +1208,78 @@ void PDMainWindow::drawScriptEditor()
 
 	ImGui::SameLine();
 
-	if (ImGui::Button("Save"))
+	if (ImGui::Button("Open in editor"))
 	{
-		saveScript();
+		openInEditor();
 	}
 
 	ImGui::SameLine();
-	ImGui::AlignTextToFramePadding();
-
-	if (m_editorDirty)
-	{
-		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::AccentText);
-		ImGui::Text("%s *", m_editingName.c_str());
-		ImGui::PopStyleColor();
-	}
-	else
-	{
-		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
-		ImGui::TextUnformatted(m_editingName.c_str());
-		ImGui::PopStyleColor();
-	}
-
+	drawTargetButton();
+	toolbarSummary(m_settingsModule.c_str());
 	endToolbar();
+
+	drawTargetModal();
 
 	if (back)
 	{
-		m_editorOpen = false;
+		m_settingsModule.clear();
+		m_settingsModulePath.clear();
 
 		return;
 	}
 
-	const ImVec2 editorMin = ImGui::GetCursorScreenPos();
-	const ImVec2 editorSize = ImGui::GetContentRegionAvail();
-	const ImVec2 editorMax(editorMin.x + editorSize.x, editorMin.y + editorSize.y);
+	m_loadedScripts = m_app.loadedScripts();
 
-	addShadow(ImGui::GetWindowDrawList(), editorMin, editorMax);
+	const bool loaded = std::find(m_loadedScripts.begin(), m_loadedScripts.end(), m_settingsModulePath) != m_loadedScripts.end();
+	std::vector<PDSettingDeclaration> const declarations = m_app.settings().declarations(m_settingsModule);
 
+	const ImVec2 panelMin = ImGui::GetCursorScreenPos();
+	const ImVec2 panelSize = ImGui::GetContentRegionAvail();
+	const ImVec2 panelMax(panelMin.x + panelSize.x, panelMin.y + panelSize.y);
+
+	addShadow(ImGui::GetWindowDrawList(), panelMin, panelMax);
+
+	ImGui::PushStyleColor(ImGuiCol_ChildBg, PDTheme::Toolbar);
 	ImGui::PushStyleColor(ImGuiCol_Border, PDTheme::CardBorder);
-	m_editor.Render("scriptEditor", editorSize, ImGuiChildFlags_Borders);
-	ImGui::PopStyleColor();
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(12.0f, 12.0f));
+	ImGui::BeginChild("settingsPanel", panelSize, ImGuiChildFlags_Borders | ImGuiChildFlags_AlwaysUseWindowPadding);
 
-	m_editorDirty = m_editor.GetText() != m_editingOriginal;
+	if (declarations.empty() and loaded)
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+		ImGui::TextWrapped("This module does not declare any settings.");
+		ImGui::Dummy(ImVec2(0.0f, 6.0f));
+		ImGui::TextWrapped("Add one at the top of the script:");
+		ImGui::PopStyleColor();
+
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::AccentText);
+		ImGui::TextWrapped("settings.slider(\"speed\", \"Speed\", 1.0, 0.1, 4.0)");
+		ImGui::PopStyleColor();
+	}
+	else if (declarations.empty())
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+		ImGui::TextWrapped("Load this module to see the settings it declares.");
+		ImGui::PopStyleColor();
+
+		ImGui::Dummy(ImVec2(0.0f, 8.0f));
+
+		if (ImGui::Button("Load", ImVec2(ToggleWidth, 0.0f)))
+		{
+			m_app.setScriptLoaded(m_settingsModulePath, true);
+		}
+	}
+
+	for (PDSettingDeclaration const &declaration : declarations)
+	{
+		ImGui::PushID(declaration.id.c_str());
+		drawSettingRow(declaration, loaded);
+		ImGui::PopID();
+	}
+
+	ImGui::EndChild();
+	ImGui::PopStyleVar();
+	ImGui::PopStyleColor(2);
 }
 
 void PDMainWindow::drawLogView()
