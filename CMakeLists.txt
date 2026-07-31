@@ -1,8 +1,12 @@
 cmake_minimum_required(VERSION 3.28)
 
-if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
-	set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/vendor/vcpkg/scripts/buildsystems/vcpkg.cmake"
-		CACHE STRING "")
+set(PONYDOCK_TOOLCHAIN "${CMAKE_CURRENT_SOURCE_DIR}/vendor/vcpkg/scripts/buildsystems/vcpkg.cmake")
+
+if(NOT "${CMAKE_TOOLCHAIN_FILE}" STREQUAL "${PONYDOCK_TOOLCHAIN}")
+	set(CMAKE_TOOLCHAIN_FILE "${PONYDOCK_TOOLCHAIN}"
+		CACHE FILEPATH "" FORCE)
+	unset(Z_VCPKG_ROOT_DIR CACHE)
+	unset(VCPKG_ROOT_DIR CACHE)
 endif()
 
 project(PonyDock CXX)
