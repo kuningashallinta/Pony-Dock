@@ -7,6 +7,17 @@ local MaxLinkDepth = 16
 local AscendAngleMin = 30
 local AscendAngleMax = 75
 
+core.generation = 0
+
+settings.slider("speed", "Speed multiplier", 1.0, 0.1, 4.0)
+settings.checkbox("flying", "Allow flying", true)
+settings.dropdown("start", "Spawn position", {"Anywhere", "Ground", "Centre"}, "Anywhere")
+
+settings.button("shuffle", "Reshuffle behaviours", function()
+	core.generation = core.generation + 1
+	log("reshuffling every entity")
+end)
+
 local function eligible(self, behavior)
 	if behavior.chance <= 0 or behavior.skip then
 		return false
@@ -50,7 +61,11 @@ local function pick(self)
 	return pool[1]
 end
 
-local function wants(movement)
+local function wants(self, movement)
+	if self:setting("flying") == false then
+		return true, false
+	end
+
 	if movement == "Horizontal_Only" then
 		return true, false
 	elseif movement == "Vertical_Only" then
@@ -89,8 +104,8 @@ local function enter(self, behavior, depth)
 	local maximum = math.max(behavior.duration_max, minimum)
 	self.timer = math.max(MinDuration, minimum + math.random() * (maximum - minimum))
 
-	local horizontal, vertical = wants(behavior.movement)
-	local speed = behavior.speed
+	local horizontal, vertical = wants(self, behavior.movement)
+	local speed = behavior.speed * (self:setting("speed") or 1.0)
 
 	self.vx = 0
 	self.vy = 0
@@ -130,15 +145,34 @@ end
 
 function core.spawn(self)
 	self.group = 0
+	self.generation = core.generation
 	self.vx = 0
 	self.vy = 0
-	self.x = math.random() * PD.screen.width
-	self.y = math.random() * PD.screen.height
+
+	local start = self:setting("start")
+
+	if start == "Ground" then
+		self.x = math.random() * PD.screen.width
+		self.y = PD.screen.height - self.height + self.offset_y
+	elseif start == "Centre" then
+		self.x = PD.screen.width * 0.5
+		self.y = PD.screen.height * 0.5
+	else
+		self.x = math.random() * PD.screen.width
+		self.y = math.random() * PD.screen.height
+	end
 
 	enter(self, pick(self), 0)
 end
 
 function core.tick(self, dt)
+	if self.generation ~= core.generation then
+		self.generation = core.generation
+		advance(self)
+
+		return
+	end
+
 	self.timer = self.timer - dt
 
 	local done = self.timer <= 0

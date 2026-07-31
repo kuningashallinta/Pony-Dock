@@ -24,7 +24,11 @@ class PDScene
 public:
 	~PDScene();
 
-	void initialize(ID3D11Device *device, PDDiagnostics &diagnostics, std::string const &scriptsRoot);
+	void initialize(
+		ID3D11Device *device,
+		PDDiagnostics &diagnostics,
+		PDSettingsStore &settings,
+		std::string const &scriptsRoot);
 
 	void spawnEntity(std::string const &packPath, std::string const &scriptPath, float x, float y);
 	void clear();
@@ -43,6 +47,11 @@ public:
 	void unloadScript(std::string const &scriptPath)
 	{
 		m_lua.unloadScript(scriptPath);
+	}
+
+	bool pressSettingsButton(std::string const &moduleKey, std::string const &settingId)
+	{
+		return m_lua.pressButton(moduleKey, settingId);
 	}
 
 	void tick(float deltaSeconds, int boundsWidth, int boundsHeight);

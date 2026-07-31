@@ -5,10 +5,11 @@
 #include <algorithm>
 #include <filesystem>
 
-void PDLua::initialize(std::string const &scriptsRoot, PDDiagnostics &diagnostics)
+void PDLua::initialize(std::string const &scriptsRoot, PDDiagnostics &diagnostics, PDSettingsStore &settings)
 {
 	m_diagnostics = &diagnostics;
 	m_scriptsRoot = scriptsRoot;
+	m_settings = &settings;
 
 	m_lua.open_libraries(
 		sol::lib::base,
@@ -76,15 +77,25 @@ void PDLua::setFacingHandler(FacingHandler handler)
 
 void PDLua::beginFrame(float boundsWidth, float boundsHeight)
 {
+	m_settings->refresh(m_snapshot);
+
 	sol::table screen = m_frame["screen"];
 	screen["width"] = boundsWidth;
 	screen["height"] = boundsHeight;
 }
 
-sol::table PDLua::createSelf(std::uint32_t entityId)
+sol::table PDLua::createSelf(std::uint32_t entityId, std::string const &scriptPath, std::string const &packId)
 {
+	std::string const key = PDSettingsStore::moduleKey(m_scriptsRoot, scriptPath);
+
 	sol::table self = m_lua.create_table();
 	self["id"] = entityId;
+
+	self["setting"] = [this, key, packId](sol::this_state state, sol::table, std::string const &id)
+	{
+		return settingObject(state, key, packId, id);
+	};
+
 	self[sol::metatable_key] = m_metatable;
 
 	return self;
@@ -152,6 +163,216 @@ sol::table PDLua::packTable(PDPonyPackData const &pack)
 	return m_packTables.emplace(pack.packPath, proxy).first->second;
 }
 
+bool PDLua::declareSetting(std::string const &moduleKey, PDSettingDeclaration declaration)
+{
+	std::string warning;
+	bool const accepted = m_settings->declare(moduleKey, std::move(declaration), warning);
+
+	if (not warning.empty())
+	{
+		m_diagnostics->writeOnce(moduleKey + ":" + warning, moduleKey + ": " + warning);
+	}
+
+	return accepted;
+}
+
+PDSettingValue PDLua::settingValue(std::string const &moduleKey, std::string const &packId, std::string const &id) const
+{
+	auto const module = m_snapshot.modules.find(moduleKey);
+
+	if (module == m_snapshot.modules.end())
+	{
+		return {};
+	}
+
+	if (not packId.empty())
+	{
+		auto const pack = module->second.packs.find(packId);
+
+		if (pack != module->second.packs.end())
+		{
+			auto const overridden = pack->second.find(id);
+
+			if (overridden != pack->second.end())
+			{
+				return overridden->second;
+			}
+		}
+	}
+
+	auto const stored = module->second.values.find(id);
+
+	if (stored != module->second.values.end())
+	{
+		return stored->second;
+	}
+
+	return {};
+}
+
+sol::object PDLua::settingObject(sol::this_state state, std::string const &moduleKey, std::string const &packId, std::string const &id) const
+{
+	PDSettingValue const value = settingValue(moduleKey, packId, id);
+
+	switch (value.type)
+	{
+		case PDSettingValueType::Boolean:
+		{
+			return sol::make_object(state, value.boolean);
+		}
+
+		case PDSettingValueType::Number:
+		{
+			return sol::make_object(state, value.number);
+		}
+
+		case PDSettingValueType::Text:
+		{
+			return sol::make_object(state, value.text);
+		}
+
+		default:
+		{
+			return sol::make_object(state, sol::lua_nil);
+		}
+	}
+}
+
+sol::table PDLua::createSettingsTable(std::string const &moduleKey)
+{
+	sol::table table = m_lua.create_table();
+
+	table["checkbox"] = [this, moduleKey](std::string const &id, std::string const &label, sol::optional<bool> value)
+	{
+		PDSettingDeclaration declaration;
+		declaration.id = id;
+		declaration.label = label;
+		declaration.kind = PDSettingKind::Checkbox;
+		declaration.defaultValue.type = PDSettingValueType::Boolean;
+		declaration.defaultValue.boolean = value.value_or(false);
+
+		declareSetting(moduleKey, std::move(declaration));
+	};
+
+	table["slider"] = [this, moduleKey](
+						  std::string const &id,
+						  std::string const &label,
+						  float value,
+						  float minimum,
+						  float maximum)
+	{
+		PDSettingDeclaration declaration;
+		declaration.id = id;
+		declaration.label = label;
+		declaration.kind = PDSettingKind::Slider;
+		declaration.defaultValue.type = PDSettingValueType::Number;
+		declaration.defaultValue.number = value;
+		declaration.minimum = minimum;
+		declaration.maximum = maximum;
+
+		declareSetting(moduleKey, std::move(declaration));
+	};
+
+	table["text"] = [this, moduleKey](std::string const &id, std::string const &label, sol::optional<std::string> value)
+	{
+		PDSettingDeclaration declaration;
+		declaration.id = id;
+		declaration.label = label;
+		declaration.kind = PDSettingKind::Text;
+		declaration.defaultValue.type = PDSettingValueType::Text;
+		declaration.defaultValue.text = value.value_or(std::string());
+
+		declareSetting(moduleKey, std::move(declaration));
+	};
+
+	table["dropdown"] = [this, moduleKey](
+							std::string const &id,
+							std::string const &label,
+							sol::table options,
+							sol::optional<std::string> value)
+	{
+		PDSettingDeclaration declaration;
+		declaration.id = id;
+		declaration.label = label;
+		declaration.kind = PDSettingKind::Dropdown;
+
+		for (std::size_t index = 1; index <= options.size(); index += 1)
+		{
+			sol::optional<std::string> const option = options[index];
+
+			if (option.has_value())
+			{
+				declaration.options.push_back(option.value());
+			}
+		}
+
+		declaration.defaultValue.type = PDSettingValueType::Text;
+
+		if (value.has_value())
+		{
+			declaration.defaultValue.text = value.value();
+		}
+		else if (not declaration.options.empty())
+		{
+			declaration.defaultValue.text = declaration.options.front();
+		}
+
+		declareSetting(moduleKey, std::move(declaration));
+	};
+
+	table["button"] = [this, moduleKey](std::string const &id, std::string const &label, sol::protected_function handler)
+	{
+		PDSettingDeclaration declaration;
+		declaration.id = id;
+		declaration.label = label;
+		declaration.kind = PDSettingKind::Button;
+
+		if (not declareSetting(moduleKey, std::move(declaration)))
+		{
+			return;
+		}
+
+		sol::reference const traceback = m_lua["debug"]["traceback"];
+		m_buttonHandlers[moduleKey + "\n" + id] = sol::protected_function(handler, traceback);
+	};
+
+	table["get"] = [this, moduleKey](sol::this_state state, std::string const &id)
+	{
+		return settingObject(state, moduleKey, std::string(), id);
+	};
+
+	return table;
+}
+
+void PDLua::forgetButtons(std::string const &moduleKey)
+{
+	std::string const prefix = moduleKey + "\n";
+
+	for (auto iterator = m_buttonHandlers.begin(); iterator != m_buttonHandlers.end();)
+	{
+		if (iterator->first.rfind(prefix, 0) == 0)
+		{
+			iterator = m_buttonHandlers.erase(iterator);
+		}
+		else
+		{
+			++iterator;
+		}
+	}
+}
+
+bool PDLua::pressButton(std::string const &moduleKey, std::string const &settingId)
+{
+	auto const handler = m_buttonHandlers.find(moduleKey + "\n" + settingId);
+
+	if (handler == m_buttonHandlers.end())
+	{
+		return false;
+	}
+
+	return report(moduleKey, handler->second());
+}
+
 PDLua::Module *PDLua::module(std::string const &scriptPath)
 {
 	auto const existing = m_modules.find(scriptPath);
@@ -161,8 +382,19 @@ PDLua::Module *PDLua::module(std::string const &scriptPath)
 		return existing->second.failed ? nullptr : &existing->second;
 	}
 
+	std::string const key = PDSettingsStore::moduleKey(m_scriptsRoot, scriptPath);
+
 	Module created;
 	created.environment = sol::environment(m_lua, sol::create, m_lua.globals());
+	created.environment["settings"] = createSettingsTable(key);
+
+	created.environment["log"] = [this, key](std::string const &message)
+	{
+		m_diagnostics->write("[" + key + "] " + message);
+	};
+
+	forgetButtons(key);
+	m_settings->beginModule(key);
 
 	sol::protected_function_result const result = m_lua.script_file(scriptPath, created.environment, sol::script_pass_on_error);
 
@@ -170,6 +402,8 @@ PDLua::Module *PDLua::module(std::string const &scriptPath)
 	{
 		sol::error const error = result;
 		m_diagnostics->writeOnce(scriptPath, "Script load failed: " + std::string(error.what()));
+		m_settings->clearDeclarations(key);
+		forgetButtons(key);
 		created.failed = true;
 		m_modules.emplace(scriptPath, std::move(created));
 
@@ -181,6 +415,8 @@ PDLua::Module *PDLua::module(std::string const &scriptPath)
 	if (not returned.is<sol::table>())
 	{
 		m_diagnostics->writeOnce(scriptPath, "Script did not return a table: " + scriptPath);
+		m_settings->clearDeclarations(key);
+		forgetButtons(key);
 		created.failed = true;
 		m_modules.emplace(scriptPath, std::move(created));
 
@@ -285,6 +521,10 @@ void PDLua::unloadScript(std::string const &scriptPath)
 		}
 	}
 
+	std::string const key = PDSettingsStore::moduleKey(m_scriptsRoot, normalized);
+	m_settings->clearDeclarations(key);
+	forgetButtons(key);
+
 	forgetPackage(normalized);
 	m_diagnostics->write("Unloaded script " + normalized);
 }
@@ -292,6 +532,8 @@ void PDLua::unloadScript(std::string const &scriptPath)
 void PDLua::reload()
 {
 	m_modules.clear();
+	m_buttonHandlers.clear();
+	m_settings->clearAllDeclarations();
 	forgetPackage(std::string());
 }
 

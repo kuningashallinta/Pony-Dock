@@ -10,12 +10,16 @@ PDScene::~PDScene()
 	m_registry.clear();
 }
 
-void PDScene::initialize(ID3D11Device *device, PDDiagnostics &diagnostics, std::string const &scriptsRoot)
+void PDScene::initialize(
+	ID3D11Device *device,
+	PDDiagnostics &diagnostics,
+	PDSettingsStore &settings,
+	std::string const &scriptsRoot)
 {
 	m_diagnostics = &diagnostics;
 	m_textures.initialize(device);
 	m_animations.initialize(m_textures, diagnostics);
-	m_lua.initialize(scriptsRoot, diagnostics);
+	m_lua.initialize(scriptsRoot, diagnostics, settings);
 
 	m_lua.setPlayHandler([this](std::uint32_t entityId, std::string const &name, bool loop, bool restart)
 	{
@@ -95,7 +99,7 @@ void PDScene::spawnEntity(std::string const &packPath, std::string const &script
 
 	PDScript &script = m_registry.emplace<PDScript>(entity);
 	script.path = scriptPath;
-	script.self = m_lua.createSelf(static_cast<std::uint32_t>(entity));
+	script.self = m_lua.createSelf(static_cast<std::uint32_t>(entity), scriptPath, packData->id);
 	script.self["pack"] = m_lua.packTable(*packData);
 
 	playAnimation(entity, packData->behaviors.front().animation, true, true);

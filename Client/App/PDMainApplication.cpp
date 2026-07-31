@@ -26,6 +26,9 @@ int PDMainApplication::run(HINSTANCE instance)
 		return 1;
 	}
 
+	m_settings.load();
+	m_diagnostics.write("Settings at " + m_settings.path());
+
 	m_overlayRunning = true;
 	m_overlayThread = std::thread([this, instance]()
 	{
@@ -44,6 +47,7 @@ int PDMainApplication::run(HINSTANCE instance)
 		m_overlayThread.join();
 	}
 
+	m_settings.save();
 	m_host.shutdown();
 
 	return 0;
@@ -65,7 +69,7 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 		return;
 	}
 
-	m_scene.initialize(m_overlay.device(), m_diagnostics, PONYDOCK_SCRIPTS_DIR);
+	m_scene.initialize(m_overlay.device(), m_diagnostics, m_settings, PONYDOCK_SCRIPTS_DIR);
 	m_scene.loadScript(coreScriptPath());
 
 	m_diagnostics.write("Overlay ready at " + std::to_string(m_overlay.width()) + "x" + std::to_string(m_overlay.height()));
@@ -91,6 +95,7 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 		lastTick = now;
 
 		m_scene.tick(deltaSeconds, m_overlay.width(), m_overlay.height());
+		applyPendingButtons();
 
 		{
 			std::lock_guard<std::mutex> const lock(m_scriptsMutex);
@@ -194,6 +199,43 @@ void PDMainApplication::reloadScripts()
 	m_pendingReload = true;
 }
 
+void PDMainApplication::applyPendingButtons()
+{
+	std::vector<ButtonPress> presses;
+
+	{
+		std::lock_guard<std::mutex> const lock(m_buttonsMutex);
+
+		if (m_pendingButtons.empty())
+		{
+			return;
+		}
+
+		presses = std::move(m_pendingButtons);
+		m_pendingButtons.clear();
+	}
+
+	for (ButtonPress const &press : presses)
+	{
+		m_scene.pressSettingsButton(press.moduleKey, press.settingId);
+	}
+}
+
+void PDMainApplication::pressSettingButton(std::string const &moduleKey, std::string const &settingId)
+{
+	std::lock_guard<std::mutex> const lock(m_buttonsMutex);
+
+	if (m_pendingButtons.size() >= MaxPendingButtons)
+	{
+		return;
+	}
+
+	ButtonPress press;
+	press.moduleKey = moduleKey;
+	press.settingId = settingId;
+	m_pendingButtons.push_back(std::move(press));
+}
+
 void PDMainApplication::setScriptLoaded(std::string const &scriptPath, bool loaded)
 {
 	ScriptCommand command;
@@ -214,6 +256,11 @@ std::vector<std::string> PDMainApplication::loadedScripts() const
 std::string PDMainApplication::coreScriptPath()
 {
 	return std::filesystem::path(std::string(PONYDOCK_SCRIPTS_DIR) + "/core.lua").lexically_normal().string();
+}
+
+std::string PDMainApplication::scriptsRoot()
+{
+	return PONYDOCK_SCRIPTS_DIR;
 }
 
 std::vector<std::string> PDMainApplication::requiredScripts()

@@ -5,6 +5,7 @@
 #include <Engine/PDScene.h>
 #include <Engine/PDSpriteRenderer.h>
 #include <Library/PDSceneEntry.h>
+#include <Library/PDSettingsStore.h>
 #include <UI/PDImGui.h>
 #include <UI/Windows/PDMainWindow.h>
 
@@ -36,11 +37,20 @@ public:
 	void setScriptLoaded(std::string const &scriptPath, bool loaded);
 	std::vector<std::string> loadedScripts() const;
 
+	void pressSettingButton(std::string const &moduleKey, std::string const &settingId);
+
+	PDSettingsStore &settings()
+	{
+		return m_settings;
+	}
+
 	static std::string coreScriptPath();
+	static std::string scriptsRoot();
 	static std::vector<std::string> requiredScripts();
 
 private:
 	static constexpr float MaxDeltaSeconds = 0.1f;
+	static constexpr std::size_t MaxPendingButtons = 32;
 
 	struct ScriptCommand
 	{
@@ -48,11 +58,19 @@ private:
 		bool load = false;
 	};
 
+	struct ButtonPress
+	{
+		std::string moduleKey;
+		std::string settingId;
+	};
+
 	void runOverlay(HINSTANCE instance);
 	void applyPendingScene();
 	void applyPendingScripts();
+	void applyPendingButtons();
 
 	PDDiagnostics m_diagnostics;
+	PDSettingsStore m_settings;
 	PDImGui m_host;
 	PDMainWindow m_mainWindow;
 
@@ -73,4 +91,7 @@ private:
 	mutable std::mutex m_scriptsMutex;
 	std::vector<std::string> m_loadedScripts;
 	std::vector<ScriptCommand> m_pendingScripts;
+
+	std::mutex m_buttonsMutex;
+	std::vector<ButtonPress> m_pendingButtons;
 };

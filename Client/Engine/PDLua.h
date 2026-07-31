@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Library/PDPonyPackData.h>
+#include <Library/PDSettingsStore.h>
 
 #include <sol/sol.hpp>
 
@@ -18,15 +19,17 @@ public:
 	using PlayHandler = std::function<bool(std::uint32_t, std::string const &, bool, bool)>;
 	using FacingHandler = std::function<void(std::uint32_t, bool)>;
 
-	void initialize(std::string const &scriptsRoot, PDDiagnostics &diagnostics);
+	void initialize(std::string const &scriptsRoot, PDDiagnostics &diagnostics, PDSettingsStore &settings);
 
 	void setPlayHandler(PlayHandler handler);
 	void setFacingHandler(FacingHandler handler);
 
 	void beginFrame(float boundsWidth, float boundsHeight);
 
-	sol::table createSelf(std::uint32_t entityId);
+	sol::table createSelf(std::uint32_t entityId, std::string const &scriptPath, std::string const &packId);
 	sol::table packTable(PDPonyPackData const &pack);
+
+	bool pressButton(std::string const &moduleKey, std::string const &settingId);
 
 	bool callSpawn(std::string const &scriptPath, sol::table &self);
 	bool callTick(std::string const &scriptPath, sol::table &self, float deltaSeconds);
@@ -52,6 +55,12 @@ private:
 	std::string modulePath(std::string const &name) const;
 	void forgetPackage(std::string const &normalizedPath);
 
+	sol::table createSettingsTable(std::string const &moduleKey);
+	bool declareSetting(std::string const &moduleKey, PDSettingDeclaration declaration);
+	PDSettingValue settingValue(std::string const &moduleKey, std::string const &packId, std::string const &id) const;
+	sol::object settingObject(sol::this_state state, std::string const &moduleKey, std::string const &packId, std::string const &id) const;
+	void forgetButtons(std::string const &moduleKey);
+
 	sol::state m_lua;
 	PDDiagnostics *m_diagnostics = nullptr;
 	std::string m_scriptsRoot;
@@ -64,4 +73,8 @@ private:
 
 	std::unordered_map<std::string, Module> m_modules;
 	std::unordered_map<std::string, sol::table> m_packTables;
+
+	PDSettingsStore *m_settings = nullptr;
+	PDSettingsSnapshot m_snapshot;
+	std::unordered_map<std::string, sol::protected_function> m_buttonHandlers;
 };
