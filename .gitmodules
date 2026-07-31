@@ -4,6 +4,3 @@
 [submodule "vendor/vcpkg"]
 	path = vendor/vcpkg
 	url = https://github.com/microsoft/vcpkg.git
-[submodule "vendor/ImGuiColorTextEdit"]
-	path = vendor/ImGuiColorTextEdit
-	url = https://github.com/goossens/ImGuiColorTextEdit.git

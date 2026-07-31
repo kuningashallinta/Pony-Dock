@@ -17,21 +17,15 @@ add_library(imgui STATIC
 	vendor/imgui/imgui_tables.cpp
 	vendor/imgui/imgui_widgets.cpp
 	vendor/imgui/backends/imgui_impl_win32.cpp
-	vendor/imgui/backends/imgui_impl_dx11.cpp)
+	vendor/imgui/backends/imgui_impl_dx11.cpp
+	vendor/imgui/misc/cpp/imgui_stdlib.cpp)
 
 target_include_directories(imgui PUBLIC
 	vendor/imgui
-	vendor/imgui/backends)
+	vendor/imgui/backends
+	vendor/imgui/misc/cpp)
 
 target_link_libraries(imgui PUBLIC d3d11 dxgi)
-
-add_library(imgui_texteditor STATIC
-	vendor/ImGuiColorTextEdit/TextEditor.cpp)
-
-target_include_directories(imgui_texteditor PUBLIC
-	vendor/ImGuiColorTextEdit)
-
-target_link_libraries(imgui_texteditor PUBLIC imgui)
 
 add_subdirectory(Client)
 
