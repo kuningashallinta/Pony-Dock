@@ -4,7 +4,9 @@
 #include <Engine/PDTexture.h>
 #include <Library/PDPonyCatalog.h>
 #include <Library/PDSceneEntry.h>
+#include <Library/PDScriptCatalog.h>
 
+#include <TextEditor.h>
 #include <imgui.h>
 
 #include <string>
@@ -27,6 +29,14 @@ private:
 	static constexpr float ThumbHeight = 108.0f;
 	static constexpr float CardPad = 8.0f;
 	static constexpr float CardSpacing = 14.0f;
+	static constexpr float ScriptRowHeight = 34.0f;
+	static constexpr float ColumnGap = 18.0f;
+	static constexpr float RowPad = 10.0f;
+	static constexpr float ToolbarPadX = 10.0f;
+	static constexpr float ToolbarPadY = 6.0f;
+	static constexpr float ToggleWidth = 78.0f;
+	static constexpr float ToggleHeight = 22.0f;
+	static constexpr float ShadowSpread = 6.0f;
 
 	enum class View
 	{
@@ -42,6 +52,10 @@ private:
 	void drawRunControl();
 	void setView(View view);
 
+	void beginToolbar();
+	void endToolbar();
+	void toolbarSummary(const char *text);
+
 	void drawContent();
 	void drawBrowserView();
 	bool drawPonyCard(std::string const &name, std::string const &sub, PDTexture const *texture, bool selected, bool &outDoubleClicked);
@@ -54,8 +68,16 @@ private:
 
 	void drawLogView();
 
-	static std::string toLower(std::string text);
+	void drawModulesView();
+	void drawScriptColumn(const char *label, bool loadedColumn, float width);
+	void drawColumnHeader(const char *label, int count);
+	void drawScriptCard(PDScriptEntry const &entry, bool loaded);
+	void drawScriptEditor();
+	void openScript(PDScriptEntry const &entry);
+	void saveScript();
+
 	static void addImageFitted(ImDrawList *drawList, PDTexture const *texture, ImVec2 areaMin, ImVec2 areaMax, float margin);
+	static void addShadow(ImDrawList *drawList, ImVec2 rectMin, ImVec2 rectMax);
 
 	PDMainApplication &m_app;
 	PDImGui &m_host;
@@ -70,4 +92,14 @@ private:
 	int m_selectedGroup = -1;
 
 	std::vector<PDSceneEntry> m_scene;
+
+	PDScriptCatalog m_scripts;
+	std::vector<std::string> m_loadedScripts;
+	std::vector<std::string> m_requiredScripts;
+	TextEditor m_editor;
+	std::string m_editingPath;
+	std::string m_editingName;
+	std::string m_editingOriginal;
+	bool m_editorOpen = false;
+	bool m_editorDirty = false;
 };

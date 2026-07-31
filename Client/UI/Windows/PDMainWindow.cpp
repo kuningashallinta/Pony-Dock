@@ -1,26 +1,18 @@
 #include <UI/Windows/PDMainWindow.h>
 
 #include <App/PDMainApplication.h>
+#include <Core/PDString.h>
 #include <UI/PDImGui.h>
 #include <UI/PDTheme.h>
 
 #include <imgui.h>
 
 #include <algorithm>
-#include <cctype>
 #include <cstddef>
 #include <cstdio>
+#include <fstream>
+#include <iterator>
 #include <utility>
-
-std::string PDMainWindow::toLower(std::string text)
-{
-	std::transform(text.begin(), text.end(), text.begin(), [](unsigned char c)
-	{
-		return static_cast<char>(std::tolower(c));
-	});
-
-	return text;
-}
 
 void PDMainWindow::addImageFitted(ImDrawList *drawList, PDTexture const *texture, ImVec2 areaMin, ImVec2 areaMax, float margin)
 {
@@ -53,12 +45,32 @@ void PDMainWindow::addImageFitted(ImDrawList *drawList, PDTexture const *texture
 		ImVec2(offsetX + drawWidth, offsetY + drawHeight));
 }
 
+void PDMainWindow::addShadow(ImDrawList *drawList, ImVec2 rectMin, ImVec2 rectMax)
+{
+	for (int index = 0; index < 6; index += 1)
+	{
+		const float spread = ShadowSpread * static_cast<float>(index + 1) / 6.0f;
+		const float fade = 1.0f - static_cast<float>(index) / 6.0f;
+		const ImVec4 color(PDTheme::Shadow.x, PDTheme::Shadow.y, PDTheme::Shadow.z, PDTheme::Shadow.w * fade);
+
+		drawList->AddRect(
+			ImVec2(rectMin.x - spread, rectMin.y - spread),
+			ImVec2(rectMax.x + spread, rectMax.y + spread),
+			ImGui::GetColorU32(color),
+			0.0f,
+			0,
+			1.0f);
+	}
+}
+
 PDMainWindow::PDMainWindow(PDMainApplication &app, PDImGui &host, PDDiagnostics &diagnostics)
 	: m_app(app),
 	  m_host(host),
 	  m_diagnostics(diagnostics)
 {
 	m_catalog.load(PONYDOCK_PACKS_DIR);
+	m_scripts.load(PONYDOCK_SCRIPTS_DIR);
+	m_requiredScripts = PDMainApplication::requiredScripts();
 }
 
 void PDMainWindow::draw()
@@ -173,6 +185,25 @@ void PDMainWindow::navItem(const char *label, View view)
 	const float textY = position.y + (itemHeight - ImGui::GetTextLineHeight()) * 0.5f;
 	drawList->AddText(ImVec2(position.x + 16.0f, textY), ImGui::GetColorU32(textColor), label);
 
+	if (view == View::Scene)
+	{
+		const int total = sceneTotalQuantity();
+
+		if (total > 0)
+		{
+			char badge[16];
+			std::snprintf(badge, sizeof(badge), "%d", total);
+
+			const ImVec2 badgeSize = ImGui::CalcTextSize(badge);
+			constexpr float badgePadX = 8.0f;
+			const ImVec2 badgeMax(rectMax.x - 10.0f, position.y + (itemHeight + badgeSize.y + 6.0f) * 0.5f);
+			const ImVec2 badgeMin(badgeMax.x - badgeSize.x - badgePadX * 2.0f, position.y + (itemHeight - badgeSize.y - 6.0f) * 0.5f);
+
+			drawList->AddRectFilled(badgeMin, badgeMax, ImGui::GetColorU32(active ? PDTheme::Accent : PDTheme::Badge), 0.0f);
+			drawList->AddText(ImVec2(badgeMin.x + badgePadX, badgeMin.y + 3.0f), ImGui::GetColorU32(active ? PDTheme::White : PDTheme::TextDim), badge);
+		}
+	}
+
 	if (pressed)
 	{
 		setView(view);
@@ -224,6 +255,37 @@ void PDMainWindow::setView(View view)
 	m_activeView = view;
 }
 
+void PDMainWindow::beginToolbar()
+{
+	ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(ToolbarPadX, ToolbarPadY));
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(ToolbarPadX, ToolbarPadY));
+	ImGui::PushStyleColor(ImGuiCol_ChildBg, PDTheme::Toolbar);
+	ImGui::PushStyleColor(ImGuiCol_Border, PDTheme::CardBorder);
+
+	const float height = ImGui::GetFrameHeight() + ToolbarPadY * 2.0f + 2.0f;
+	constexpr ImGuiChildFlags childFlags = ImGuiChildFlags_Borders | ImGuiChildFlags_AlwaysUseWindowPadding;
+
+	ImGui::BeginChild("toolbar", ImVec2(0.0f, height), childFlags, ImGuiWindowFlags_NoScrollbar);
+}
+
+void PDMainWindow::endToolbar()
+{
+	ImGui::EndChild();
+	ImGui::PopStyleColor(2);
+	ImGui::PopStyleVar(2);
+	ImGui::Dummy(ImVec2(0.0f, 10.0f));
+}
+
+void PDMainWindow::toolbarSummary(const char *text)
+{
+	const float width = ImGui::CalcTextSize(text).x;
+
+	ImGui::SameLine();
+	ImGui::SetCursorPosX(ImGui::GetCursorPosX() + ImGui::GetContentRegionAvail().x - width);
+	ImGui::AlignTextToFramePadding();
+	ImGui::TextDisabled("%s", text);
+}
+
 void PDMainWindow::drawContent()
 {
 	switch (m_activeView)
@@ -238,6 +300,13 @@ void PDMainWindow::drawContent()
 		case View::Scene:
 		{
 			drawSceneView();
+
+			break;
+		}
+
+		case View::Modules:
+		{
+			drawModulesView();
 
 			break;
 		}
@@ -260,14 +329,13 @@ void PDMainWindow::drawBrowserView()
 {
 	m_thumbnailBudget = 24;
 
-	const float searchWidth = 250.0f;
-	ImGui::SetCursorPosX(ImGui::GetCursorPosX() + ImGui::GetContentRegionAvail().x - searchWidth);
-	ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(10.0f, 8.0f));
-	ImGui::SetNextItemWidth(searchWidth);
-	ImGui::InputTextWithHint("##search", "Search ponies", m_search, sizeof(m_search));
-	ImGui::PopStyleVar();
+	beginToolbar();
 
-	ImGui::Dummy(ImVec2(0.0f, 8.0f));
+	ImGui::SetNextItemWidth(250.0f);
+	ImGui::InputTextWithHint("##search", "Search ponies", m_search, sizeof(m_search));
+
+	endToolbar();
+
 	ImGui::BeginChild("grid");
 
 	std::string const query = toLower(m_search);
@@ -398,21 +466,18 @@ PDTexture *PDMainWindow::thumbnail(std::string const &path)
 
 void PDMainWindow::drawSceneView()
 {
+	beginToolbar();
+
 	if (ImGui::Button("Clear scene"))
 	{
 		m_scene.clear();
 	}
 
-	ImGui::SameLine();
-
 	char summary[64];
 	std::snprintf(summary, sizeof(summary), "%d across %zu packs", sceneTotalQuantity(), m_scene.size());
-	const float summaryWidth = ImGui::CalcTextSize(summary).x;
-	ImGui::SetCursorPosX(ImGui::GetCursorPosX() + ImGui::GetContentRegionAvail().x - summaryWidth);
-	ImGui::AlignTextToFramePadding();
-	ImGui::TextDisabled("%s", summary);
+	toolbarSummary(summary);
 
-	ImGui::Dummy(ImVec2(0.0f, 8.0f));
+	endToolbar();
 
 	if (m_scene.empty())
 	{
@@ -549,26 +614,295 @@ void PDMainWindow::removeSceneEntry(std::size_t index)
 	m_scene.erase(m_scene.begin() + static_cast<std::ptrdiff_t>(index));
 }
 
+void PDMainWindow::drawModulesView()
+{
+	if (m_editorOpen)
+	{
+		drawScriptEditor();
+
+		return;
+	}
+
+	beginToolbar();
+
+	if (ImGui::Button("Rescan"))
+	{
+		m_scripts.load(PONYDOCK_SCRIPTS_DIR);
+	}
+
+	ImGui::SameLine();
+
+	if (ImGui::Button("Reload scripts"))
+	{
+		m_app.reloadScripts();
+	}
+
+	char summary[64];
+	std::snprintf(summary, sizeof(summary), "%zu scripts", m_scripts.entries().size());
+	toolbarSummary(summary);
+
+	endToolbar();
+
+	if (m_scripts.entries().empty())
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+		ImGui::TextUnformatted("No scripts found.");
+		ImGui::PopStyleColor();
+
+		return;
+	}
+
+	m_loadedScripts = m_app.loadedScripts();
+
+	const float columnWidth = (ImGui::GetContentRegionAvail().x - ColumnGap) * 0.5f;
+
+	drawScriptColumn("LOADED", true, columnWidth);
+	ImGui::SameLine(0.0f, ColumnGap);
+	drawScriptColumn("UNLOADED", false, columnWidth);
+}
+
+void PDMainWindow::drawScriptColumn(const char *label, bool loadedColumn, float width)
+{
+	int count = 0;
+
+	for (PDScriptEntry const &entry : m_scripts.entries())
+	{
+		bool const loaded = std::find(m_loadedScripts.begin(), m_loadedScripts.end(), entry.fullPath) != m_loadedScripts.end();
+
+		if (loaded == loadedColumn)
+		{
+			count += 1;
+		}
+	}
+
+	ImGui::BeginChild(label, ImVec2(width, 0.0f));
+	drawColumnHeader(label, count);
+
+	for (std::size_t index = 0; index < m_scripts.entries().size(); index += 1)
+	{
+		PDScriptEntry const &entry = m_scripts.entries()[index];
+		bool const loaded = std::find(m_loadedScripts.begin(), m_loadedScripts.end(), entry.fullPath) != m_loadedScripts.end();
+
+		if (loaded != loadedColumn)
+		{
+			continue;
+		}
+
+		ImGui::PushID(static_cast<int>(index));
+		drawScriptCard(entry, loaded);
+		ImGui::PopID();
+	}
+
+	ImGui::EndChild();
+}
+
+void PDMainWindow::drawColumnHeader(const char *label, int count)
+{
+	ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+	ImGui::Text("%s  (%d)", label, count);
+	ImGui::PopStyleColor();
+	ImGui::Dummy(ImVec2(0.0f, 4.0f));
+}
+
+void PDMainWindow::drawScriptCard(PDScriptEntry const &entry, bool loaded)
+{
+	const bool required = std::find(m_requiredScripts.begin(), m_requiredScripts.end(), entry.fullPath) != m_requiredScripts.end();
+	const char *const requiredLabel = "Required";
+
+	const ImVec2 position = ImGui::GetCursorScreenPos();
+	const ImVec2 size(ImGui::GetContentRegionAvail().x, ScriptRowHeight);
+	const ImVec2 rectMax(position.x + size.x, position.y + size.y);
+
+	ImGui::SetNextItemAllowOverlap();
+	const bool clicked = ImGui::InvisibleButton("script", size);
+	const bool hovered = ImGui::IsItemHovered();
+
+	ImDrawList *drawList = ImGui::GetWindowDrawList();
+	drawList->AddRectFilled(position, rectMax, ImGui::GetColorU32(hovered ? PDTheme::CardBgHover : PDTheme::CardBg), 0.0f);
+	drawList->AddRect(position, rectMax, ImGui::GetColorU32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
+
+	const float controlLeft = rectMax.x - RowPad - ToggleWidth;
+	const float textY = position.y + (ScriptRowHeight - ImGui::GetTextLineHeight()) * 0.5f;
+
+	drawList->AddText(
+		ImVec2(position.x + RowPad, textY),
+		ImGui::GetColorU32(PDTheme::White),
+		entry.relativePath.c_str());
+
+	char lines[32];
+	std::snprintf(lines, sizeof(lines), "%d lines", entry.lineCount);
+	const float linesWidth = ImGui::CalcTextSize(lines).x;
+
+	drawList->AddText(
+		ImVec2(controlLeft - RowPad - linesWidth, textY),
+		ImGui::GetColorU32(PDTheme::TextFaint),
+		lines);
+
+	if (required)
+	{
+		const ImVec2 labelSize = ImGui::CalcTextSize(requiredLabel);
+		const ImVec2 chipMin(controlLeft, position.y + (ScriptRowHeight - ToggleHeight) * 0.5f);
+		const ImVec2 chipMax(chipMin.x + ToggleWidth, chipMin.y + ToggleHeight);
+
+		drawList->AddRectFilled(chipMin, chipMax, ImGui::GetColorU32(PDTheme::AccentSoft), 0.0f);
+
+		drawList->AddText(
+			ImVec2(chipMin.x + (ToggleWidth - labelSize.x) * 0.5f, chipMin.y + (ToggleHeight - labelSize.y) * 0.5f),
+			ImGui::GetColorU32(PDTheme::AccentText),
+			requiredLabel);
+	}
+	else
+	{
+		ImGui::SetCursorScreenPos(ImVec2(controlLeft, position.y + (ScriptRowHeight - ToggleHeight) * 0.5f));
+
+		if (loaded)
+		{
+			if (ImGui::Button("Unload", ImVec2(ToggleWidth, ToggleHeight)))
+			{
+				m_app.setScriptLoaded(entry.fullPath, false);
+			}
+		}
+		else
+		{
+			ImGui::PushStyleColor(ImGuiCol_Button, PDTheme::Accent);
+			ImGui::PushStyleColor(ImGuiCol_ButtonHovered, PDTheme::AccentHover);
+			ImGui::PushStyleColor(ImGuiCol_ButtonActive, PDTheme::AccentPress);
+
+			if (ImGui::Button("Load", ImVec2(ToggleWidth, ToggleHeight)))
+			{
+				m_app.setScriptLoaded(entry.fullPath, true);
+			}
+
+			ImGui::PopStyleColor(3);
+		}
+	}
+
+	if (clicked)
+	{
+		openScript(entry);
+	}
+
+	ImGui::SetCursorScreenPos(position);
+	ImGui::Dummy(ImVec2(size.x, ScriptRowHeight + 4.0f));
+}
+
+void PDMainWindow::openScript(PDScriptEntry const &entry)
+{
+	std::ifstream stream(entry.fullPath, std::ios::binary);
+
+	if (not stream)
+	{
+		m_diagnostics.write("Cannot open script " + entry.fullPath);
+
+		return;
+	}
+
+	std::string const text((std::istreambuf_iterator<char>(stream)), std::istreambuf_iterator<char>());
+
+	m_editor.SetLanguage(TextEditor::Language::Lua());
+	m_editor.SetText(text);
+	m_editingOriginal = m_editor.GetText();
+	m_editingPath = entry.fullPath;
+	m_editingName = entry.relativePath;
+	m_editorOpen = true;
+	m_editorDirty = false;
+}
+
+void PDMainWindow::saveScript()
+{
+	std::string const text = m_editor.GetText();
+	std::ofstream stream(m_editingPath, std::ios::binary);
+
+	if (not stream)
+	{
+		m_diagnostics.write("Cannot write script " + m_editingPath);
+
+		return;
+	}
+
+	stream << text;
+	stream.close();
+
+	m_editingOriginal = text;
+	m_editorDirty = false;
+	m_diagnostics.write("Saved " + m_editingName);
+	m_scripts.load(PONYDOCK_SCRIPTS_DIR);
+	m_app.reloadScripts();
+}
+
+void PDMainWindow::drawScriptEditor()
+{
+	bool back = false;
+
+	beginToolbar();
+
+	if (ImGui::Button("Back"))
+	{
+		back = true;
+	}
+
+	ImGui::SameLine();
+
+	if (ImGui::Button("Save"))
+	{
+		saveScript();
+	}
+
+	ImGui::SameLine();
+	ImGui::AlignTextToFramePadding();
+
+	if (m_editorDirty)
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::AccentText);
+		ImGui::Text("%s *", m_editingName.c_str());
+		ImGui::PopStyleColor();
+	}
+	else
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+		ImGui::TextUnformatted(m_editingName.c_str());
+		ImGui::PopStyleColor();
+	}
+
+	endToolbar();
+
+	if (back)
+	{
+		m_editorOpen = false;
+
+		return;
+	}
+
+	const ImVec2 editorMin = ImGui::GetCursorScreenPos();
+	const ImVec2 editorSize = ImGui::GetContentRegionAvail();
+	const ImVec2 editorMax(editorMin.x + editorSize.x, editorMin.y + editorSize.y);
+
+	addShadow(ImGui::GetWindowDrawList(), editorMin, editorMax);
+
+	ImGui::PushStyleColor(ImGuiCol_Border, PDTheme::CardBorder);
+	m_editor.Render("scriptEditor", editorSize, ImGuiChildFlags_Borders);
+	ImGui::PopStyleColor();
+
+	m_editorDirty = m_editor.GetText() != m_editingOriginal;
+}
+
 void PDMainWindow::drawLogView()
 {
+	std::vector<std::string> const lines = m_diagnostics.lines();
+	std::vector<std::pair<std::string, int>> const repeats = m_diagnostics.repeats();
+
+	beginToolbar();
+
 	if (ImGui::Button("Clear"))
 	{
 		m_diagnostics.clear();
 	}
 
-	std::vector<std::string> const lines = m_diagnostics.lines();
-	std::vector<std::pair<std::string, int>> const repeats = m_diagnostics.repeats();
-
-	ImGui::SameLine();
-
 	char summary[64];
 	std::snprintf(summary, sizeof(summary), "%zu lines", lines.size());
-	const float summaryWidth = ImGui::CalcTextSize(summary).x;
-	ImGui::SetCursorPosX(ImGui::GetCursorPosX() + ImGui::GetContentRegionAvail().x - summaryWidth);
-	ImGui::AlignTextToFramePadding();
-	ImGui::TextDisabled("%s", summary);
+	toolbarSummary(summary);
 
-	ImGui::Dummy(ImVec2(0.0f, 8.0f));
+	endToolbar();
 
 	if (not repeats.empty())
 	{
