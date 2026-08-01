@@ -778,7 +778,7 @@ void PDBehaviorEditor::drawDetail()
 	ImGui::SetNextWindowSizeConstraints(ImVec2(400.0f, 0.0f), ImVec2(900.0f, 4000.0f));
 	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(16.0f, 14.0f));
 
-	if (ImGui::Begin(title, &open, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoSavedSettings))
+	if (ImGui::Begin(title, &open, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse))
 	{
 		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextFaint);
 		ImGui::TextUnformatted(id.c_str());

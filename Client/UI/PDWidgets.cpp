@@ -14,9 +14,11 @@ void beginToolbar()
 	ImGui::PushStyleColor(ImGuiCol_Border, PDTheme::CardBorder);
 
 	const float height = ImGui::GetFrameHeight() + ToolbarPadY * 2.0f + 2.0f;
-	constexpr ImGuiChildFlags childFlags = ImGuiChildFlags_Borders | ImGuiChildFlags_AlwaysUseWindowPadding;
-
-	ImGui::BeginChild("toolbar", ImVec2(0.0f, height), childFlags, ImGuiWindowFlags_NoScrollbar);
+	ImGui::BeginChild(
+		"toolbar",
+		ImVec2(0.0f, height),
+		ImGuiChildFlags_Borders | ImGuiChildFlags_AlwaysUseWindowPadding,
+		ImGuiWindowFlags_NoScrollbar);
 }
 
 void endToolbar()
@@ -45,8 +47,10 @@ bool beginModal(const char *title, ImVec2 size)
 	ImGui::PushStyleColor(ImGuiCol_PopupBg, PDTheme::Popup);
 	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(ModalPad, ModalPad));
 
-	constexpr ImGuiWindowFlags flags = ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoSavedSettings;
-	const bool open = ImGui::BeginPopupModal(title, nullptr, flags);
+	const bool open = ImGui::BeginPopupModal(
+		title,
+		nullptr,
+		ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoSavedSettings);
 
 	ImGui::PopStyleVar();
 

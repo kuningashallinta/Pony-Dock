@@ -71,8 +71,10 @@ bool PDImGui::initialize(
 
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
+	ImGui::GetIO().ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;
 	ImGui::StyleColorsDark();
 	PDTheme::apply();
+	ImGui::GetStyle().WindowRounding = 0.0f;
 
 	char windowsDirectory[MAX_PATH];
 	GetWindowsDirectoryA(windowsDirectory, MAX_PATH);
@@ -146,6 +148,12 @@ void PDImGui::endFrame()
 	m_deviceContext->OMSetRenderTargets(1, &m_renderTargetView, nullptr);
 	m_deviceContext->ClearRenderTargetView(m_renderTargetView, clearColor);
 	ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
+
+	if ((ImGui::GetIO().ConfigFlags & ImGuiConfigFlags_ViewportsEnable) != 0)
+	{
+		ImGui::UpdatePlatformWindows();
+		ImGui::RenderPlatformWindowsDefault();
+	}
 
 	m_swapChain->Present(1, 0);
 }
