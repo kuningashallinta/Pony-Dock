@@ -146,6 +146,49 @@ local function enter(self, behavior, depth)
 	self:play(behavior.animation, not behavior.prevent_animation_loop)
 end
 
+local function pick_movement(self, movement)
+	local pool = self.pack.behaviors
+	local matches = 0
+
+	for index = 1, #pool do
+		if pool[index].movement == movement then
+			matches = matches + 1
+		end
+	end
+
+	if matches == 0 then
+		return nil
+	end
+
+	local roll = math.random(matches)
+
+	for index = 1, #pool do
+		if pool[index].movement == movement then
+			roll = roll - 1
+
+			if roll <= 0 then
+				return pool[index]
+			end
+		end
+	end
+
+	return nil
+end
+
+local HeldMovements = {"Dragged", "None", "MouseOver", "Sleep"}
+
+local function pick_held(self)
+	for index = 1, #HeldMovements do
+		local behavior = pick_movement(self, HeldMovements[index])
+
+		if behavior ~= nil then
+			return behavior
+		end
+	end
+
+	return nil
+end
+
 local function advance(self)
 	local linked = self.behavior.linked
 
@@ -204,6 +247,30 @@ end
 function core.tick(self, dt)
 	if self.generation ~= core.generation then
 		self.generation = core.generation
+		advance(self)
+
+		return
+	end
+
+	if self.dragged then
+		if not self.grabbed then
+			self.grabbed = true
+			local behavior = pick_held(self)
+
+			if behavior ~= nil then
+				enter(self, behavior, 0)
+			end
+		end
+
+		self.vx = 0
+		self.vy = 0
+
+		return
+	end
+
+	if self.grabbed then
+		self.grabbed = false
+		self.monitor = pd.monitor_at(self.x, self.y) or self.monitor
 		advance(self)
 
 		return

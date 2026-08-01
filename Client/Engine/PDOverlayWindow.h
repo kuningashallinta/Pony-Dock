@@ -3,10 +3,22 @@
 #include <d3d11.h>
 #include <windows.h>
 
+struct PDOverlayMouse
+{
+	int x = 0;
+	int y = 0;
+	bool down = false;
+	bool pressed = false;
+	bool released = false;
+};
+
 class PDOverlayWindow
 {
 public:
 	bool initialize(HINSTANCE instance);
+
+	PDOverlayMouse pollMouse();
+	void setInteractive(bool interactive);
 	void shutdown();
 
 	void pumpMessages();
@@ -58,6 +70,11 @@ private:
 	int m_originY = 0;
 	int m_width = 0;
 	int m_height = 0;
+
+	bool m_interactive = false;
+	bool m_mouseDown = false;
+	bool m_mousePressed = false;
+	bool m_mouseReleased = false;
 
 	ID3D11Device *m_device = nullptr;
 	ID3D11DeviceContext *m_deviceContext = nullptr;

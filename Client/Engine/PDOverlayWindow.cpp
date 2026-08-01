@@ -4,8 +4,20 @@
 
 bool PDOverlayWindow::initialize(HINSTANCE instance)
 {
-	WNDCLASSEX windowClass = {sizeof(WNDCLASSEX), CS_CLASSDC, staticWndProc, 0, 0, instance, nullptr, nullptr,
-		nullptr, nullptr, "PonyDockOverlayClassName", nullptr};
+	WNDCLASSEX windowClass = {
+		sizeof(WNDCLASSEX),
+		CS_CLASSDC,
+		staticWndProc,
+		0,
+		0,
+		instance,
+		nullptr,
+		LoadCursor(nullptr, IDC_SIZEALL),
+		nullptr,
+		nullptr,
+		"PonyDockOverlayClassName",
+		nullptr};
+
 	RegisterClassEx(&windowClass);
 
 	m_originX = GetSystemMetrics(SM_XVIRTUALSCREEN);
@@ -192,7 +204,25 @@ LRESULT PDOverlayWindow::handleMessage(HWND window, UINT message, WPARAM wParam,
 	{
 		case WM_NCHITTEST:
 		{
-			return HTTRANSPARENT;
+			return m_interactive ? HTCLIENT : HTTRANSPARENT;
+		}
+
+		case WM_LBUTTONDOWN:
+		{
+			m_mouseDown = true;
+			m_mousePressed = true;
+			SetCapture(window);
+
+			return 0;
+		}
+
+		case WM_LBUTTONUP:
+		{
+			m_mouseDown = false;
+			m_mouseReleased = true;
+			ReleaseCapture();
+
+			return 0;
 		}
 
 		case WM_DESTROY:
@@ -202,4 +232,50 @@ LRESULT PDOverlayWindow::handleMessage(HWND window, UINT message, WPARAM wParam,
 	}
 
 	return DefWindowProc(window, message, wParam, lParam);
+}
+
+PDOverlayMouse PDOverlayWindow::pollMouse()
+{
+	POINT point = {};
+	GetCursorPos(&point);
+
+	if (m_mouseDown and (GetKeyState(VK_LBUTTON) & 0x8000) == 0)
+	{
+		m_mouseDown = false;
+		m_mouseReleased = true;
+	}
+
+	PDOverlayMouse mouse;
+	mouse.x = point.x - m_originX;
+	mouse.y = point.y - m_originY;
+	mouse.down = m_mouseDown;
+	mouse.pressed = m_mousePressed;
+	mouse.released = m_mouseReleased;
+
+	m_mousePressed = false;
+	m_mouseReleased = false;
+
+	return mouse;
+}
+
+void PDOverlayWindow::setInteractive(bool interactive)
+{
+	if (m_interactive == interactive or m_window == nullptr)
+	{
+		return;
+	}
+
+	m_interactive = interactive;
+	LONG_PTR style = GetWindowLongPtr(m_window, GWL_EXSTYLE);
+
+	if (interactive)
+	{
+		style &= ~static_cast<LONG_PTR>(WS_EX_TRANSPARENT);
+	}
+	else
+	{
+		style |= WS_EX_TRANSPARENT;
+	}
+
+	SetWindowLongPtr(m_window, GWL_EXSTYLE, style);
 }

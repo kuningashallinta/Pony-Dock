@@ -99,6 +99,10 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 		float const deltaSeconds = elapsedSeconds < MaxDeltaSeconds ? elapsedSeconds : MaxDeltaSeconds;
 		lastTick = now;
 
+		PDOverlayMouse const mouse = m_overlay.pollMouse();
+		m_scene.updateMouse(mouse.x, mouse.y, mouse.pressed, mouse.released);
+		m_overlay.setInteractive(m_scene.wantsMouse());
+
 		m_scene.tick(deltaSeconds, m_overlay.width(), m_overlay.height(), walkableRects());
 		applyPendingButtons();
 

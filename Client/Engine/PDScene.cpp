@@ -72,6 +72,63 @@ void PDScene::reloadPack(std::string const &packPath)
 	m_diagnostics->write("Reloaded pack " + existing->second.id);
 }
 
+void PDScene::updateMouse(int x, int y, bool pressed, bool released)
+{
+	const float pointX = static_cast<float>(x);
+	const float pointY = static_cast<float>(y);
+
+	if (released)
+	{
+		m_dragged = entt::null;
+	}
+
+	m_hovered = entt::null;
+	auto view = m_registry.view<PDPosition const, PDSprite const>();
+
+	for (auto const entity : view)
+	{
+		PDPosition const &position = view.get<PDPosition const>(entity);
+		PDSprite const &sprite = view.get<PDSprite const>(entity);
+
+		const float left = position.x - sprite.offsetX;
+		const float top = position.y - sprite.offsetY;
+
+		if (pointX < left or pointX > left + sprite.width)
+		{
+			continue;
+		}
+
+		if (pointY < top or pointY > top + sprite.height)
+		{
+			continue;
+		}
+
+		m_hovered = entity;
+	}
+
+	if (pressed and m_registry.valid(m_hovered))
+	{
+		PDPosition const &position = m_registry.get<PDPosition>(m_hovered);
+		m_dragged = m_hovered;
+		m_dragOffsetX = pointX - position.x;
+		m_dragOffsetY = pointY - position.y;
+	}
+
+	if (not m_registry.valid(m_dragged))
+	{
+		return;
+	}
+
+	PDPosition &position = m_registry.get<PDPosition>(m_dragged);
+	position.x = pointX - m_dragOffsetX;
+	position.y = pointY - m_dragOffsetY;
+}
+
+bool PDScene::wantsMouse() const
+{
+	return m_registry.valid(m_hovered) or m_registry.valid(m_dragged);
+}
+
 entt::entity PDScene::resolve(std::uint32_t entityId) const
 {
 	entt::entity const entity = static_cast<entt::entity>(entityId);
@@ -326,6 +383,8 @@ void PDScene::advanceAnimations(float deltaSeconds)
 
 void PDScene::clear()
 {
+	m_hovered = entt::null;
+	m_dragged = entt::null;
 	m_registry.clear();
 }
 
@@ -363,6 +422,8 @@ void PDScene::tick(
 		script.self["facing"] = animation.facingRight ? "right" : "left";
 		script.self["animation"] = animation.name;
 		script.self["animation_finished"] = animation.finished;
+		script.self["mouse_over"] = entity == m_hovered;
+		script.self["dragged"] = entity == m_dragged;
 
 		bool succeeded = true;
 
@@ -390,6 +451,12 @@ void PDScene::tick(
 		}
 
 		script.errorCount = 0;
+
+		if (entity == m_dragged)
+		{
+			continue;
+		}
+
 		position.x = script.self["x"].get_or(position.x);
 		position.y = script.self["y"].get_or(position.y);
 	}

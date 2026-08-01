@@ -55,6 +55,9 @@ public:
 		return m_lua.pressButton(moduleKey, settingId);
 	}
 
+	void updateMouse(int x, int y, bool pressed, bool released);
+	bool wantsMouse() const;
+
 	void tick(
 		float deltaSeconds,
 		int boundsWidth,
@@ -79,4 +82,9 @@ private:
 	std::unordered_map<std::string, PDPonyPackData> m_packs;
 	PDLua m_lua;
 	entt::registry m_registry;
+
+	entt::entity m_hovered = entt::null;
+	entt::entity m_dragged = entt::null;
+	float m_dragOffsetX = 0.0f;
+	float m_dragOffsetY = 0.0f;
 };
