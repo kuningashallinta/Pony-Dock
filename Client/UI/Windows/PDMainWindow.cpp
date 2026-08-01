@@ -1588,28 +1588,37 @@ void PDMainWindow::drawLogView()
 		ImGui::Dummy(ImVec2(0.0f, 8.0f));
 	}
 
+	const ImVec2 panelMin = ImGui::GetCursorScreenPos();
+	const ImVec2 panelSize = ImGui::GetContentRegionAvail();
+	const ImVec2 panelMax(panelMin.x + panelSize.x, panelMin.y + panelSize.y);
+
+	addShadow(ImGui::GetWindowDrawList(), panelMin, panelMax);
+
+	ImGui::PushStyleColor(ImGuiCol_ChildBg, PDTheme::Toolbar);
+	ImGui::PushStyleColor(ImGuiCol_Border, PDTheme::CardBorder);
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(12.0f, 12.0f));
+	ImGui::BeginChild("logLines", panelSize, ImGuiChildFlags_Borders | ImGuiChildFlags_AlwaysUseWindowPadding);
+
 	if (lines.empty())
 	{
 		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
 		ImGui::TextUnformatted("Nothing logged yet.");
 		ImGui::PopStyleColor();
-
-		return;
 	}
-
-	ImGui::BeginChild("logLines");
 
 	for (std::string const &line : lines)
 	{
 		ImGui::TextWrapped("%s", line.c_str());
 	}
 
-	if (ImGui::GetScrollY() >= ImGui::GetScrollMaxY() - 1.0f)
+	if (not lines.empty() and ImGui::GetScrollY() >= ImGui::GetScrollMaxY() - 1.0f)
 	{
 		ImGui::SetScrollHereY(1.0f);
 	}
 
 	ImGui::EndChild();
+	ImGui::PopStyleVar();
+	ImGui::PopStyleColor(2);
 }
 
 int PDMainWindow::sceneTotalQuantity() const
