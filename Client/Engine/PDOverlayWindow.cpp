@@ -8,11 +8,34 @@ bool PDOverlayWindow::initialize(HINSTANCE instance)
 		nullptr, nullptr, "PonyDockOverlayClassName", nullptr};
 	RegisterClassEx(&windowClass);
 
-	m_width = GetSystemMetrics(SM_CXSCREEN);
-	m_height = GetSystemMetrics(SM_CYSCREEN);
+	m_originX = GetSystemMetrics(SM_XVIRTUALSCREEN);
+	m_originY = GetSystemMetrics(SM_YVIRTUALSCREEN);
+	m_width = GetSystemMetrics(SM_CXVIRTUALSCREEN);
+	m_height = GetSystemMetrics(SM_CYVIRTUALSCREEN);
+
+	if (m_width <= 0 or m_height <= 0)
+	{
+		m_originX = 0;
+		m_originY = 0;
+		m_width = GetSystemMetrics(SM_CXSCREEN);
+		m_height = GetSystemMetrics(SM_CYSCREEN);
+	}
 
 	DWORD const exStyle = WS_EX_LAYERED | WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW | WS_EX_TOPMOST;
-	m_window = CreateWindowEx(exStyle, windowClass.lpszClassName, "", WS_POPUP, 0, 0, m_width, m_height, nullptr, nullptr, instance, nullptr);
+
+	m_window = CreateWindowEx(
+		exStyle,
+		windowClass.lpszClassName,
+		"",
+		WS_POPUP,
+		m_originX,
+		m_originY,
+		m_width,
+		m_height,
+		nullptr,
+		nullptr,
+		instance,
+		nullptr);
 
 	SetWindowLongPtr(m_window, GWLP_USERDATA, reinterpret_cast<LONG_PTR>(this));
 	SetLayeredWindowAttributes(m_window, 0, 255, LWA_ALPHA);

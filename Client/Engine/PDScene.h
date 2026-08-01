@@ -54,7 +54,11 @@ public:
 		return m_lua.pressButton(moduleKey, settingId);
 	}
 
-	void tick(float deltaSeconds, int boundsWidth, int boundsHeight);
+	void tick(
+		float deltaSeconds,
+		int boundsWidth,
+		int boundsHeight,
+		std::vector<PDRect> const &monitors);
 	void draw(PDSpriteRenderer &renderer) const;
 
 private:

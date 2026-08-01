@@ -2,6 +2,7 @@
 
 #include <Library/PDPonyPackData.h>
 #include <Library/PDSettingsStore.h>
+#include <Math/PDRect.h>
 
 #include <sol/sol.hpp>
 
@@ -24,7 +25,7 @@ public:
 	void setPlayHandler(PlayHandler handler);
 	void setFacingHandler(FacingHandler handler);
 
-	void beginFrame(float boundsWidth, float boundsHeight);
+	void beginFrame(float boundsWidth, float boundsHeight, std::vector<PDRect> const &monitors);
 
 	sol::table createSelf(std::uint32_t entityId, std::string const &scriptPath, std::string const &packId);
 	sol::table packTable(PDPonyPackData const &pack);
@@ -76,5 +77,6 @@ private:
 
 	PDSettingsStore *m_settings = nullptr;
 	PDSettingsSnapshot m_snapshot;
+	std::vector<PDRect> m_monitors;
 	std::unordered_map<std::string, sol::protected_function> m_buttonHandlers;
 };

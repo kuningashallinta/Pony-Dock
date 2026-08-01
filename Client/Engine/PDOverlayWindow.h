@@ -34,6 +34,16 @@ public:
 		return m_height;
 	}
 
+	int originX() const
+	{
+		return m_originX;
+	}
+
+	int originY() const
+	{
+		return m_originY;
+	}
+
 private:
 	static LRESULT CALLBACK staticWndProc(HWND window, UINT message, WPARAM wParam, LPARAM lParam);
 	LRESULT handleMessage(HWND window, UINT message, WPARAM wParam, LPARAM lParam);
@@ -44,6 +54,8 @@ private:
 	void destroyRenderTarget();
 
 	HWND m_window = nullptr;
+	int m_originX = 0;
+	int m_originY = 0;
 	int m_width = 0;
 	int m_height = 0;
 

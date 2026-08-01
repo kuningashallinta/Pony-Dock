@@ -23,6 +23,7 @@ void PDLua::initialize(std::string const &scriptsRoot, PDDiagnostics &diagnostic
 
 	m_frame = m_lua.create_table();
 	m_frame["screen"] = m_lua.create_table();
+	m_frame["monitors"] = m_lua.create_table();
 	m_lua["PD"] = m_frame;
 
 	m_metatable = m_lua.create_table();
@@ -75,13 +76,33 @@ void PDLua::setFacingHandler(FacingHandler handler)
 	m_facingHandler = std::move(handler);
 }
 
-void PDLua::beginFrame(float boundsWidth, float boundsHeight)
+void PDLua::beginFrame(float boundsWidth, float boundsHeight, std::vector<PDRect> const &monitors)
 {
 	m_settings->refresh(m_snapshot);
 
 	sol::table screen = m_frame["screen"];
 	screen["width"] = boundsWidth;
 	screen["height"] = boundsHeight;
+
+	if (m_monitors == monitors)
+	{
+		return;
+	}
+
+	m_monitors = monitors;
+	sol::table areas = m_lua.create_table();
+
+	for (std::size_t index = 0; index < monitors.size(); index += 1)
+	{
+		sol::table area = m_lua.create_table();
+		area["x"] = monitors[index].x;
+		area["y"] = monitors[index].y;
+		area["width"] = monitors[index].width;
+		area["height"] = monitors[index].height;
+		areas[index + 1] = area;
+	}
+
+	m_frame["monitors"] = areas;
 }
 
 sol::table PDLua::createSelf(std::uint32_t entityId, std::string const &scriptPath, std::string const &packId)

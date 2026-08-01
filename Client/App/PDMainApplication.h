@@ -4,8 +4,10 @@
 #include <Engine/PDOverlayWindow.h>
 #include <Engine/PDScene.h>
 #include <Engine/PDSpriteRenderer.h>
+#include <Library/PDMonitor.h>
 #include <Library/PDSceneEntry.h>
 #include <Library/PDSettingsStore.h>
+#include <Math/PDRect.h>
 #include <UI/PDImGui.h>
 #include <UI/Windows/PDMainWindow.h>
 
@@ -65,6 +67,7 @@ private:
 	};
 
 	void runOverlay(HINSTANCE instance);
+	std::vector<PDRect> walkableRects() const;
 	void applyPendingScene();
 	void applyPendingScripts();
 	void applyPendingButtons();
@@ -77,6 +80,7 @@ private:
 	PDOverlayWindow m_overlay;
 	PDSpriteRenderer m_spriteRenderer;
 	PDScene m_scene;
+	std::vector<PDMonitor> m_monitors;
 
 	std::thread m_overlayThread;
 	std::atomic<bool> m_overlayRunning = false;

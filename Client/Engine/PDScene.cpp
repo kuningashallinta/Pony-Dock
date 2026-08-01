@@ -289,11 +289,15 @@ void PDScene::clear()
 	m_registry.clear();
 }
 
-void PDScene::tick(float deltaSeconds, int boundsWidth, int boundsHeight)
+void PDScene::tick(
+	float deltaSeconds,
+	int boundsWidth,
+	int boundsHeight,
+	std::vector<PDRect> const &monitors)
 {
 	advanceAnimations(deltaSeconds);
 
-	m_lua.beginFrame(static_cast<float>(boundsWidth), static_cast<float>(boundsHeight));
+	m_lua.beginFrame(static_cast<float>(boundsWidth), static_cast<float>(boundsHeight), monitors);
 
 	auto view = m_registry.view<PDPosition, PDSprite const, PDAnimation const, PDScript>();
 

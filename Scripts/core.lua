@@ -11,9 +11,9 @@ core.generation = 0
 
 settings.slider("speed", "Speed multiplier", 1.0, 0.1, 4.0)
 settings.checkbox("flying", "Allow flying", true)
-settings.dropdown("start", "Spawn position", {"Anywhere", "Ground", "Centre"}, "Anywhere")
+settings.dropdown("start", "Spawn position", {"Anywhere", "Ground", "Center"}, "Anywhere")
 
-settings.button("shuffle", "Reshuffle behaviours", function()
+settings.button("shuffle", "Reshuffle behaviors", function()
 	core.generation = core.generation + 1
 	log("reshuffling every entity")
 end)
@@ -149,17 +149,27 @@ function core.spawn(self)
 	self.vx = 0
 	self.vy = 0
 
+	self.monitor = 1
+
+	if #PD.monitors > 1 then
+		self.monitor = math.random(#PD.monitors)
+	end
+
+	local area = PD.monitors[self.monitor]
 	local start = self:setting("start")
 
-	if start == "Ground" then
-		self.x = math.random() * PD.screen.width
-		self.y = PD.screen.height - self.height + self.offset_y
-	elseif start == "Centre" then
-		self.x = PD.screen.width * 0.5
-		self.y = PD.screen.height * 0.5
-	else
+	if area == nil then
 		self.x = math.random() * PD.screen.width
 		self.y = math.random() * PD.screen.height
+	elseif start == "Ground" then
+		self.x = area.x + math.random() * area.width
+		self.y = area.y + area.height - self.height + self.offset_y
+	elseif start == "Center" then
+		self.x = area.x + area.width * 0.5
+		self.y = area.y + area.height * 0.5
+	else
+		self.x = area.x + math.random() * area.width
+		self.y = area.y + math.random() * area.height
 	end
 
 	enter(self, pick(self), 0)

@@ -69,8 +69,11 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 		return;
 	}
 
+	m_monitors = enumerateMonitors();
 	m_scene.initialize(m_overlay.device(), m_diagnostics, m_settings, PONYDOCK_SCRIPTS_DIR);
 	m_scene.loadScript(coreScriptPath());
+
+	m_diagnostics.write("Found " + std::to_string(m_monitors.size()) + " displays");
 
 	m_diagnostics.write("Overlay ready at " + std::to_string(m_overlay.width()) + "x" + std::to_string(m_overlay.height()));
 
@@ -94,7 +97,7 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 		float const deltaSeconds = elapsedSeconds < MaxDeltaSeconds ? elapsedSeconds : MaxDeltaSeconds;
 		lastTick = now;
 
-		m_scene.tick(deltaSeconds, m_overlay.width(), m_overlay.height());
+		m_scene.tick(deltaSeconds, m_overlay.width(), m_overlay.height(), walkableRects());
 		applyPendingButtons();
 
 		{
@@ -110,6 +113,42 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 
 	m_spriteRenderer.shutdown();
 	m_overlay.shutdown();
+}
+
+std::vector<PDRect> PDMainApplication::walkableRects() const
+{
+	std::vector<PDRect> rects;
+
+	for (PDMonitor const &monitor : m_monitors)
+	{
+		if (not m_settings.appFlag("monitor." + monitor.device, true))
+		{
+			continue;
+		}
+
+		PDRect rect;
+		rect.x = static_cast<float>(monitor.x - m_overlay.originX());
+		rect.y = static_cast<float>(monitor.y - m_overlay.originY());
+		rect.width = static_cast<float>(monitor.width);
+		rect.height = static_cast<float>(monitor.height);
+		rects.push_back(rect);
+	}
+
+	if (not rects.empty() or m_monitors.empty())
+	{
+		return rects;
+	}
+
+	PDMonitor const &fallback = m_monitors.front();
+
+	PDRect rect;
+	rect.x = static_cast<float>(fallback.x - m_overlay.originX());
+	rect.y = static_cast<float>(fallback.y - m_overlay.originY());
+	rect.width = static_cast<float>(fallback.width);
+	rect.height = static_cast<float>(fallback.height);
+	rects.push_back(rect);
+
+	return rects;
 }
 
 void PDMainApplication::applyPendingScene()
