@@ -1,5 +1,7 @@
 #include <Library/PDPonyPackLoader.h>
 
+#include <Library/PDPonyPackOverride.h>
+
 #include <nlohmann/json.hpp>
 
 #include <algorithm>
@@ -124,7 +126,7 @@ bool loadPonyPack(std::string const &packPath, PDPonyPackData &outData, std::str
 	outData = PDPonyPackData();
 
 	std::filesystem::path const root(packPath);
-	std::filesystem::path const jsonPath = root / "pony.json";
+	std::filesystem::path const jsonPath(ponyPackDocumentPath(packPath));
 
 	std::ifstream stream(jsonPath, std::ios::binary);
 
