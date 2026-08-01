@@ -533,9 +533,49 @@ void PDSettingsStore::clearValue(std::string const &key, std::string const &pack
 	m_version.fetch_add(1, std::memory_order_release);
 }
 
+bool PDSettingsStore::appFlag(std::string const &id, bool fallback) const
+{
+	std::shared_lock<std::shared_mutex> const lock(m_mutex);
+	auto const existing = m_app.find(id);
+
+	if (existing == m_app.end() or existing->second.type != PDSettingValueType::Boolean)
+	{
+		return fallback;
+	}
+
+	return existing->second.boolean;
+}
+
+void PDSettingsStore::setAppFlag(std::string const &id, bool value)
+{
+	std::unique_lock<std::shared_mutex> const lock(m_mutex);
+
+	PDSettingValue stored;
+	stored.type = PDSettingValueType::Boolean;
+	stored.boolean = value;
+	m_app[id] = std::move(stored);
+
+	m_version.fetch_add(1, std::memory_order_release);
+}
+
 bool PDSettingsStore::load()
 {
-	std::ifstream stream(m_path, std::ios::binary);
+	return readFrom(m_path, false);
+}
+
+bool PDSettingsStore::importFrom(std::string const &path)
+{
+	if (not readFrom(path, true))
+	{
+		return false;
+	}
+
+	return save();
+}
+
+bool PDSettingsStore::readFrom(std::string const &path, bool replace)
+{
+	std::ifstream stream(path, std::ios::binary);
 
 	if (not stream)
 	{
@@ -549,14 +589,34 @@ bool PDSettingsStore::load()
 		return false;
 	}
 
+	std::unique_lock<std::shared_mutex> const lock(m_mutex);
+
+	if (replace)
+	{
+		m_app.clear();
+
+		for (std::pair<std::string const, Module> &entry : m_modules)
+		{
+			entry.second.values.clear();
+			entry.second.packs.clear();
+		}
+	}
+
+	auto const app = document.find("app");
+
+	if (app != document.end())
+	{
+		readValues(*app, m_app);
+	}
+
 	auto const modules = document.find("modules");
 
 	if (modules == document.end() or not modules->is_object())
 	{
-		return false;
-	}
+		m_version.fetch_add(1, std::memory_order_release);
 
-	std::unique_lock<std::shared_mutex> const lock(m_mutex);
+		return true;
+	}
 
 	for (auto const &entry : modules->items())
 	{
@@ -586,12 +646,47 @@ bool PDSettingsStore::load()
 		}
 	}
 
+	for (std::pair<std::string const, Module> &entry : m_modules)
+	{
+		for (PDSettingDeclaration const &declaration : entry.second.declarations)
+		{
+			if (declaration.kind == PDSettingKind::Button)
+			{
+				entry.second.values.erase(declaration.id);
+
+				for (std::pair<std::string const, PDSettingValues> &pack : entry.second.packs)
+				{
+					pack.second.erase(declaration.id);
+				}
+
+				continue;
+			}
+
+			reconcile(declaration, entry.second.values);
+
+			for (std::pair<std::string const, PDSettingValues> &pack : entry.second.packs)
+			{
+				reconcile(declaration, pack.second);
+			}
+		}
+	}
+
 	m_version.fetch_add(1, std::memory_order_release);
 
 	return true;
 }
 
 bool PDSettingsStore::save() const
+{
+	return writeTo(m_path);
+}
+
+bool PDSettingsStore::exportTo(std::string const &path) const
+{
+	return writeTo(path);
+}
+
+bool PDSettingsStore::writeTo(std::string const &path) const
 {
 	nlohmann::json document;
 
@@ -630,11 +725,18 @@ bool PDSettingsStore::save() const
 			modules[entry.first] = std::move(module);
 		}
 
+		nlohmann::json app = writeValues(m_app);
+
 		document["version"] = 1;
 		document["modules"] = std::move(modules);
+
+		if (not app.empty())
+		{
+			document["app"] = std::move(app);
+		}
 	}
 
-	std::filesystem::path const target(m_path);
+	std::filesystem::path const target(path);
 	std::error_code error;
 	std::filesystem::create_directories(target.parent_path(), error);
 

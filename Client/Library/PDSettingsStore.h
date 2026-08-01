@@ -31,6 +31,9 @@ public:
 	bool load();
 	bool save() const;
 
+	bool exportTo(std::string const &path) const;
+	bool importFrom(std::string const &path);
+
 	std::string const &path() const
 	{
 		return m_path;
@@ -52,6 +55,9 @@ public:
 	void setValue(std::string const &key, std::string const &packId, std::string const &id, PDSettingValue value);
 	void clearValue(std::string const &key, std::string const &packId, std::string const &id);
 
+	bool appFlag(std::string const &id, bool fallback) const;
+	void setAppFlag(std::string const &id, bool value);
+
 private:
 	static constexpr std::size_t MaxDeclarations = 64;
 
@@ -67,10 +73,14 @@ private:
 	static PDSettingValueType expectedType(PDSettingKind kind);
 	static void reconcile(PDSettingDeclaration const &declaration, PDSettingValues &values);
 
+	bool readFrom(std::string const &path, bool replace);
+	bool writeTo(std::string const &path) const;
+
 	Module const *findModule(std::string const &key) const;
 
 	mutable std::shared_mutex m_mutex;
 	std::atomic<std::uint64_t> m_version = 1;
 	std::string m_path;
 	std::unordered_map<std::string, Module> m_modules;
+	PDSettingValues m_app;
 };
