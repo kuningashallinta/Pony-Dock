@@ -2,6 +2,7 @@
 
 #include <nlohmann/json.hpp>
 
+#include <algorithm>
 #include <filesystem>
 #include <fstream>
 
@@ -41,6 +42,81 @@ static std::string absolutePath(std::filesystem::path const &packPath, std::stri
 	}
 
 	return (packPath / relative).lexically_normal().string();
+}
+
+static bool groupHasBehavior(PDPonyPackData const &data, int group)
+{
+	for (PDPonyBehaviorData const &behavior : data.behaviors)
+	{
+		if (behavior.group == group)
+		{
+			return true;
+		}
+	}
+
+	return false;
+}
+
+static bool groupIsKnown(PDPonyPackData const &data, int group)
+{
+	for (PDPonyBehaviorGroup const &entry : data.groups)
+	{
+		if (entry.id == group)
+		{
+			return true;
+		}
+	}
+
+	return false;
+}
+
+static void readBehaviorGroups(nlohmann::json const &document, PDPonyPackData &outData)
+{
+	auto const declared = document.find("behaviorGroups");
+
+	if (declared != document.end() and declared->is_array())
+	{
+		for (nlohmann::json const &entry : *declared)
+		{
+			if (not entry.is_object())
+			{
+				continue;
+			}
+
+			PDPonyBehaviorGroup group;
+			group.id = intOr(entry, "id", 0);
+			group.name = stringOr(entry, "name", std::string());
+
+			if (group.id == 0 or groupIsKnown(outData, group.id) or not groupHasBehavior(outData, group.id))
+			{
+				continue;
+			}
+
+			outData.groups.push_back(std::move(group));
+		}
+	}
+
+	std::size_t const declaredCount = outData.groups.size();
+
+	for (PDPonyBehaviorData const &behavior : outData.behaviors)
+	{
+		if (behavior.group == 0 or groupIsKnown(outData, behavior.group))
+		{
+			continue;
+		}
+
+		PDPonyBehaviorGroup group;
+		group.id = behavior.group;
+		outData.groups.push_back(std::move(group));
+	}
+
+	std::sort(
+		outData.groups.begin() + static_cast<std::ptrdiff_t>(declaredCount),
+		outData.groups.end(),
+		[](PDPonyBehaviorGroup const &a, PDPonyBehaviorGroup const &b)
+	{
+		return a.id < b.id;
+	});
 }
 
 bool loadPonyPack(std::string const &packPath, PDPonyPackData &outData, std::string &outError)
@@ -176,6 +252,8 @@ bool loadPonyPack(std::string const &packPath, PDPonyPackData &outData, std::str
 
 		return false;
 	}
+
+	readBehaviorGroups(document, outData);
 
 	outData.valid = true;
 

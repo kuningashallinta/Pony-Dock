@@ -165,10 +165,18 @@ sol::table PDLua::packTable(PDPonyPackData const &pack)
 		}
 	}
 
+	sol::table groups = m_lua.create_table();
+
+	for (std::size_t index = 0; index < pack.groups.size(); index += 1)
+	{
+		groups[index + 1] = pack.groups[index].id;
+	}
+
 	sol::table real = m_lua.create_table();
 	real["id"] = pack.id;
 	real["behaviors"] = behaviors;
 	real["by_id"] = byId;
+	real["groups"] = groups;
 
 	sol::table proxy = m_lua.create_table();
 	sol::table meta = m_lua.create_table();

@@ -28,6 +28,12 @@ struct PDPonyBehaviorData
 	bool preventAnimationLoop = false;
 };
 
+struct PDPonyBehaviorGroup
+{
+	int id = 0;
+	std::string name;
+};
+
 struct PDPonyPackData
 {
 	std::string id;
@@ -36,5 +42,6 @@ struct PDPonyPackData
 
 	std::unordered_map<std::string, PDPonyAnimationRef> animations;
 	std::vector<PDPonyBehaviorData> behaviors;
+	std::vector<PDPonyBehaviorGroup> groups;
 	bool valid = false;
 };

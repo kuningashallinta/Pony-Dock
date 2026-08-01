@@ -18,6 +18,16 @@ settings.button("shuffle", "Reshuffle behaviors", function()
 	log("reshuffling every entity")
 end)
 
+local function start_group(self)
+	local groups = self.pack.groups
+
+	if groups == nil or #groups == 0 then
+		return 0
+	end
+
+	return groups[1]
+end
+
 local function eligible(self, behavior)
 	if behavior.chance <= 0 or behavior.skip then
 		return false
@@ -97,6 +107,10 @@ local function wants(self, movement)
 end
 
 local function enter(self, behavior, depth)
+	if behavior.group ~= 0 then
+		self.group = behavior.group
+	end
+
 	self.behavior = behavior
 	self.link_depth = depth
 
@@ -144,7 +158,7 @@ local function advance(self)
 end
 
 function core.spawn(self)
-	self.group = 0
+	self.group = start_group(self)
 	self.generation = core.generation
 	self.vx = 0
 	self.vy = 0
