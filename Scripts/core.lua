@@ -11,6 +11,7 @@ core.generation = 0
 
 settings.slider("speed", "Speed multiplier", 1.0, 0.1, 4.0)
 settings.checkbox("flying", "Allow flying", true)
+settings.checkbox("extended", "Allow extended behaviors", true)
 settings.dropdown("start", "Spawn position", {"Anywhere", "Ground", "Center"}, "Anywhere")
 
 settings.button("shuffle", "Reshuffle behaviors", function()
@@ -30,6 +31,10 @@ end
 
 local function eligible(self, behavior)
 	if behavior.chance <= 0 or behavior.skip then
+		return false
+	end
+
+	if behavior.special and self:setting("extended") == false then
 		return false
 	end
 
