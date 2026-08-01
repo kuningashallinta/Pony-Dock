@@ -2,6 +2,7 @@
 
 #include <App/PDMainApplication.h>
 #include <Core/PDString.h>
+#include <UI/PDFileDialog.h>
 #include <UI/PDImGui.h>
 #include <UI/PDTheme.h>
 
@@ -334,6 +335,13 @@ void PDMainWindow::drawContent()
 			break;
 		}
 
+		case View::Settings:
+		{
+			drawSettingsView();
+
+			break;
+		}
+
 		case View::Log:
 		{
 			drawLogView();
@@ -413,7 +421,15 @@ void PDMainWindow::drawBrowserView()
 
 		if (doubleClicked)
 		{
-			addToScene(group.displayName, group.variants.front());
+			if (group.variants.size() > 1)
+			{
+				m_variantGroup = static_cast<int>(index);
+				m_variantOpen = true;
+			}
+			else
+			{
+				addToScene(group.displayName, group.variants.front());
+			}
 		}
 
 		ImGui::PopID();
@@ -421,6 +437,8 @@ void PDMainWindow::drawBrowserView()
 
 	ImGui::PopStyleVar();
 	ImGui::EndChild();
+
+	drawVariantModal();
 }
 
 bool PDMainWindow::drawPonyCard(
@@ -838,6 +856,125 @@ void PDMainWindow::openInEditor()
 	m_diagnostics.write("Cannot open " + m_settingsModulePath + " in an editor");
 }
 
+int PDMainWindow::gridColumns(float available, float &outIndent)
+{
+	const int columns = std::max(1, static_cast<int>((available + CardSpacing) / (CardWidth + CardSpacing)));
+	const float blockWidth = static_cast<float>(columns) * CardWidth + static_cast<float>(columns - 1) * CardSpacing;
+	outIndent = std::max(0.0f, (available - blockWidth) * 0.5f);
+
+	return columns;
+}
+
+bool PDMainWindow::beginModal(const char *title, ImVec2 size)
+{
+	const ImVec2 center = ImGui::GetMainViewport()->GetCenter();
+	ImGui::SetNextWindowPos(center, ImGuiCond_Always, ImVec2(0.5f, 0.5f));
+	ImGui::SetNextWindowSize(size, ImGuiCond_Always);
+	ImGui::PushStyleColor(ImGuiCol_PopupBg, PDTheme::Popup);
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(ModalPad, ModalPad));
+
+	constexpr ImGuiWindowFlags flags = ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoSavedSettings;
+	const bool open = ImGui::BeginPopupModal(title, nullptr, flags);
+
+	ImGui::PopStyleVar();
+
+	if (not open)
+	{
+		ImGui::PopStyleColor();
+	}
+
+	return open;
+}
+
+void PDMainWindow::endModal()
+{
+	ImGui::EndPopup();
+	ImGui::PopStyleColor();
+}
+
+void PDMainWindow::drawVariantModal()
+{
+	if (m_variantOpen)
+	{
+		m_variantOpen = false;
+		ImGui::OpenPopup("Choose variant");
+	}
+
+	if (not beginModal("Choose variant", ImVec2(560.0f, 420.0f)))
+	{
+		return;
+	}
+
+	std::vector<PDPonyGroup> const &groups = m_catalog.groups();
+
+	if (m_variantGroup < 0 or m_variantGroup >= static_cast<int>(groups.size()))
+	{
+		ImGui::CloseCurrentPopup();
+		endModal();
+
+		return;
+	}
+
+	PDPonyGroup const &group = groups[static_cast<std::size_t>(m_variantGroup)];
+	m_thumbnailBudget = 24;
+
+	ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+	ImGui::Text("%s ships %zu variants.", group.displayName.c_str(), group.variants.size());
+	ImGui::PopStyleColor();
+	ImGui::Dummy(ImVec2(0.0f, 10.0f));
+
+	ImGui::BeginChild("variantGrid", ImVec2(0.0f, -46.0f), ImGuiChildFlags_None, ImGuiWindowFlags_AlwaysVerticalScrollbar);
+
+	float indent = 0.0f;
+	const int columns = gridColumns(ImGui::GetContentRegionAvail().x, indent);
+
+	ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(CardSpacing, CardSpacing));
+
+	int chosen = -1;
+
+	for (std::size_t index = 0; index < group.variants.size(); index += 1)
+	{
+		if (index % static_cast<std::size_t>(columns) != 0)
+		{
+			ImGui::SameLine();
+		}
+		else
+		{
+			ImGui::SetCursorPosX(ImGui::GetCursorPosX() + indent);
+		}
+
+		PDPonyPack const &variant = group.variants[index];
+		ImGui::PushID(static_cast<int>(index));
+
+		bool doubleClicked = false;
+		const bool clicked = drawPonyCard(variant.id, std::string(), thumbnail(variant.previewPath), false, doubleClicked);
+
+		ImGui::PopID();
+
+		if (clicked)
+		{
+			chosen = static_cast<int>(index);
+		}
+	}
+
+	ImGui::PopStyleVar();
+	ImGui::EndChild();
+	ImGui::Dummy(ImVec2(0.0f, 4.0f));
+
+	if (ImGui::Button("Cancel", ImVec2(110.0f, 32.0f)))
+	{
+		ImGui::CloseCurrentPopup();
+	}
+
+	if (chosen >= 0)
+	{
+		addToScene(group.displayName, group.variants[static_cast<std::size_t>(chosen)]);
+		ImGui::CloseCurrentPopup();
+	}
+
+	endModal();
+}
+
 void PDMainWindow::drawTargetButton()
 {
 	std::string const label = m_settingsTarget.empty() ? std::string("Global defaults") : m_settingsTargetLabel;
@@ -862,21 +999,8 @@ void PDMainWindow::drawTargetModal()
 		ImGui::OpenPopup("Choose target");
 	}
 
-	const ImVec2 center = ImGui::GetMainViewport()->GetCenter();
-	ImGui::SetNextWindowPos(center, ImGuiCond_Always, ImVec2(0.5f, 0.5f));
-	ImGui::SetNextWindowSize(ImVec2(560.0f, 460.0f), ImGuiCond_Always);
-	ImGui::PushStyleColor(ImGuiCol_PopupBg, PDTheme::Popup);
-	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(ModalPad, ModalPad));
-
-	constexpr ImGuiWindowFlags modalFlags = ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoSavedSettings;
-	const bool open = ImGui::BeginPopupModal("Choose target", nullptr, modalFlags);
-
-	ImGui::PopStyleVar();
-
-	if (not open)
+	if (not beginModal("Choose target", ImVec2(560.0f, 460.0f)))
 	{
-		ImGui::PopStyleColor();
-
 		return;
 	}
 
@@ -906,10 +1030,8 @@ void PDMainWindow::drawTargetModal()
 
 	ImGui::BeginChild("targetGrid", ImVec2(0.0f, -46.0f), ImGuiChildFlags_None, ImGuiWindowFlags_AlwaysVerticalScrollbar);
 
-	const float available = ImGui::GetContentRegionAvail().x;
-	const int columns = std::max(1, static_cast<int>((available + CardSpacing) / (CardWidth + CardSpacing)));
-	const float blockWidth = static_cast<float>(columns) * CardWidth + static_cast<float>(columns - 1) * CardSpacing;
-	const float indent = std::max(0.0f, (available - blockWidth) * 0.5f);
+	float indent = 0.0f;
+	const int columns = gridColumns(ImGui::GetContentRegionAvail().x, indent);
 
 	ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(CardSpacing, CardSpacing));
 
@@ -989,8 +1111,7 @@ void PDMainWindow::drawTargetModal()
 		ImGui::CloseCurrentPopup();
 	}
 
-	ImGui::EndPopup();
-	ImGui::PopStyleColor();
+	endModal();
 }
 
 void PDMainWindow::drawSettingRow(PDSettingDeclaration const &declaration, bool loaded)
@@ -1280,6 +1401,141 @@ void PDMainWindow::drawModuleSettings()
 	ImGui::EndChild();
 	ImGui::PopStyleVar();
 	ImGui::PopStyleColor(2);
+}
+
+void PDMainWindow::drawSettingsView()
+{
+	if (m_monitors.empty())
+	{
+		m_monitors = enumerateMonitors();
+	}
+
+	PDSettingsStore &store = m_app.settings();
+
+	beginToolbar();
+
+	if (ImGui::Button("Rescan displays"))
+	{
+		m_monitors = enumerateMonitors();
+	}
+
+	char summary[64];
+	std::snprintf(summary, sizeof(summary), "%zu displays", m_monitors.size());
+	toolbarSummary(summary);
+
+	endToolbar();
+
+	ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::White);
+	ImGui::TextUnformatted("Walkable displays");
+	ImGui::PopStyleColor();
+
+	ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+	ImGui::TextWrapped("Entities only walk on the displays you tick here. Unticking every display leaves the primary one walkable.");
+	ImGui::PopStyleColor();
+
+	ImGui::Dummy(ImVec2(0.0f, 10.0f));
+
+	for (PDMonitor const &monitor : m_monitors)
+	{
+		std::string const key = "monitor." + monitor.device;
+		bool walkable = store.appFlag(key, true);
+
+		const ImVec2 position = ImGui::GetCursorScreenPos();
+		const ImVec2 size(ImGui::GetContentRegionAvail().x, SettingRowHeight);
+		const ImVec2 rectMax(position.x + size.x, position.y + size.y);
+
+		ImDrawList *drawList = ImGui::GetWindowDrawList();
+		drawList->AddRectFilled(position, rectMax, ImGui::GetColorU32(PDTheme::CardBg), 0.0f);
+		drawList->AddRect(position, rectMax, ImGui::GetColorU32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
+
+		const float lineHeight = ImGui::GetTextLineHeight();
+		const float firstY = position.y + (SettingRowHeight - lineHeight * 2.0f - 2.0f) * 0.5f;
+
+		char geometry[96];
+		std::snprintf(geometry, sizeof(geometry), "%s  at  %d, %d", monitor.device.c_str(), monitor.x, monitor.y);
+
+		drawList->AddText(ImVec2(position.x + RowPad, firstY), ImGui::GetColorU32(PDTheme::White), monitor.label.c_str());
+		drawList->AddText(ImVec2(position.x + RowPad, firstY + lineHeight + 2.0f), ImGui::GetColorU32(PDTheme::TextFaint), geometry);
+
+		const float controlHeight = ImGui::GetFrameHeight();
+		ImGui::SetCursorScreenPos(ImVec2(rectMax.x - RowPad - controlHeight, position.y + (SettingRowHeight - controlHeight) * 0.5f));
+		ImGui::PushID(monitor.device.c_str());
+
+		if (ImGui::Checkbox("##walkable", &walkable))
+		{
+			store.setAppFlag(key, walkable);
+			store.save();
+		}
+
+		ImGui::PopID();
+		ImGui::SetCursorScreenPos(position);
+		ImGui::Dummy(ImVec2(size.x, SettingRowHeight + 4.0f));
+	}
+
+	ImGui::Dummy(ImVec2(0.0f, 18.0f));
+	ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::White);
+	ImGui::TextUnformatted("Configuration");
+	ImGui::PopStyleColor();
+
+	ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+	ImGui::TextWrapped("Module settings, pack overrides and walkable displays are stored here:");
+	ImGui::PopStyleColor();
+
+	ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextFaint);
+	ImGui::TextWrapped("%s", store.path().c_str());
+	ImGui::PopStyleColor();
+
+	ImGui::Dummy(ImVec2(0.0f, 10.0f));
+
+	if (ImGui::Button("Export...", ImVec2(120.0f, 32.0f)))
+	{
+		exportConfig();
+	}
+
+	ImGui::SameLine();
+
+	if (ImGui::Button("Import...", ImVec2(120.0f, 32.0f)))
+	{
+		importConfig();
+	}
+
+	if (not m_configStatus.empty())
+	{
+		ImGui::Dummy(ImVec2(0.0f, 8.0f));
+		ImGui::PushStyleColor(ImGuiCol_Text, m_configFailed ? PDTheme::Stop : PDTheme::AccentText);
+		ImGui::TextWrapped("%s", m_configStatus.c_str());
+		ImGui::PopStyleColor();
+	}
+}
+
+void PDMainWindow::exportConfig()
+{
+	std::string path;
+
+	if (not saveFileDialog(m_host.handle(), "Export Pony Dock config", "pony-dock-config.json", path))
+	{
+		return;
+	}
+
+	m_configFailed = not m_app.settings().exportTo(path);
+	m_configStatus = m_configFailed ? ("Could not write " + path) : ("Exported to " + path);
+	m_diagnostics.write(m_configStatus);
+}
+
+void PDMainWindow::importConfig()
+{
+	std::string path;
+
+	if (not openFileDialog(m_host.handle(), "Import Pony Dock config", path))
+	{
+		return;
+	}
+
+	m_configFailed = not m_app.settings().importFrom(path);
+
+	m_configStatus = m_configFailed ? ("Could not read " + path) : ("Imported from " + path);
+
+	m_diagnostics.write(m_configStatus);
 }
 
 void PDMainWindow::drawLogView()

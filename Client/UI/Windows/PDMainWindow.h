@@ -2,6 +2,7 @@
 
 #include <Engine/PDDiagnostics.h>
 #include <Engine/PDTexture.h>
+#include <Library/PDMonitor.h>
 #include <Library/PDPonyCatalog.h>
 #include <Library/PDSceneEntry.h>
 #include <Library/PDScriptCatalog.h>
@@ -82,6 +83,9 @@ private:
 	int sceneTotalQuantity() const;
 
 	void drawLogView();
+	void drawSettingsView();
+	void exportConfig();
+	void importConfig();
 
 	void drawModulesView();
 	void drawScriptColumn(const char *label, bool loadedColumn, float width);
@@ -93,7 +97,12 @@ private:
 	void drawSettingRow(PDSettingDeclaration const &declaration, bool loaded);
 	void drawTargetButton();
 	void drawTargetModal();
+	void drawVariantModal();
 	void openInEditor();
+
+	static int gridColumns(float available, float &outIndent);
+	static bool beginModal(const char *title, ImVec2 size);
+	static void endModal();
 
 	static void addImageFitted(ImDrawList *drawList, PDTexture const *texture, ImVec2 areaMin, ImVec2 areaMax, float margin);
 	static void addShadow(ImDrawList *drawList, ImVec2 rectMin, ImVec2 rectMax);
@@ -123,4 +132,11 @@ private:
 	bool m_targetPickerOpen = false;
 
 	std::vector<PDSettingTarget> m_targets;
+
+	int m_variantGroup = -1;
+	bool m_variantOpen = false;
+
+	std::vector<PDMonitor> m_monitors;
+	std::string m_configStatus;
+	bool m_configFailed = false;
 };
