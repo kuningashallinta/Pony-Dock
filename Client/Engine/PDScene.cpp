@@ -32,6 +32,46 @@ void PDScene::initialize(
 	});
 }
 
+void PDScene::reloadPack(std::string const &packPath)
+{
+	std::string const key = std::filesystem::path(packPath).lexically_normal().string();
+	auto const existing = m_packs.find(key);
+
+	if (existing == m_packs.end())
+	{
+		return;
+	}
+
+	PDPonyPackData loaded;
+	std::string error;
+
+	if (not loadPonyPack(key, loaded, error))
+	{
+		m_diagnostics->write("Pack reload failed: " + error);
+
+		return;
+	}
+
+	existing->second = std::move(loaded);
+	m_lua.refreshPackTable(existing->second);
+
+	auto view = m_registry.view<PDPack const, PDScript>();
+
+	for (auto const entity : view)
+	{
+		if (view.get<PDPack const>(entity).data != &existing->second)
+		{
+			continue;
+		}
+
+		PDScript &script = view.get<PDScript>(entity);
+		script.spawned = false;
+		script.errorCount = 0;
+	}
+
+	m_diagnostics->write("Reloaded pack " + existing->second.id);
+}
+
 entt::entity PDScene::resolve(std::uint32_t entityId) const
 {
 	entt::entity const entity = static_cast<entt::entity>(entityId);

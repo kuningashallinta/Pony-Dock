@@ -163,6 +163,13 @@ function core.spawn(self)
 	self.vx = 0
 	self.vy = 0
 
+	if self.placed then
+		enter(self, pick(self), 0)
+
+		return
+	end
+
+	self.placed = true
 	self.monitor = 1
 
 	if #PD.monitors > 1 then

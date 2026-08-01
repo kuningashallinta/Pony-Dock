@@ -2,6 +2,7 @@
 
 #include <Assets/resource.h>
 
+#include <algorithm>
 #include <chrono>
 #include <filesystem>
 #include <string>
@@ -90,6 +91,7 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 		}
 
 		applyPendingScripts();
+		applyPendingPacks();
 		applyPendingScene();
 
 		std::chrono::steady_clock::time_point const now = std::chrono::steady_clock::now();
@@ -236,6 +238,40 @@ void PDMainApplication::stopScene()
 void PDMainApplication::reloadScripts()
 {
 	m_pendingReload = true;
+}
+
+void PDMainApplication::applyPendingPacks()
+{
+	std::vector<std::string> paths;
+
+	{
+		std::lock_guard<std::mutex> const lock(m_packsMutex);
+
+		if (m_pendingPacks.empty())
+		{
+			return;
+		}
+
+		paths = std::move(m_pendingPacks);
+		m_pendingPacks.clear();
+	}
+
+	for (std::string const &path : paths)
+	{
+		m_scene.reloadPack(path);
+	}
+}
+
+void PDMainApplication::reloadPack(std::string const &packPath)
+{
+	std::lock_guard<std::mutex> const lock(m_packsMutex);
+
+	if (std::find(m_pendingPacks.begin(), m_pendingPacks.end(), packPath) != m_pendingPacks.end())
+	{
+		return;
+	}
+
+	m_pendingPacks.push_back(packPath);
 }
 
 void PDMainApplication::applyPendingButtons()

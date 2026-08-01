@@ -33,6 +33,7 @@ public:
 	void spawnEntity(std::string const &packPath, std::string const &scriptPath, float x, float y);
 	void clear();
 	void reloadScripts();
+	void reloadPack(std::string const &packPath);
 
 	std::vector<std::string> loadedScripts() const
 	{

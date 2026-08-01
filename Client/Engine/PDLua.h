@@ -29,6 +29,7 @@ public:
 
 	sol::table createSelf(std::uint32_t entityId, std::string const &scriptPath, std::string const &packId);
 	sol::table packTable(PDPonyPackData const &pack);
+	void refreshPackTable(PDPonyPackData const &pack);
 
 	bool pressButton(std::string const &moduleKey, std::string const &settingId);
 
@@ -50,6 +51,15 @@ private:
 		sol::protected_function tick;
 		bool failed = false;
 	};
+
+	struct PackTables
+	{
+		sol::table proxy;
+		sol::table meta;
+		sol::table real;
+	};
+
+	sol::table buildPackReal(PDPonyPackData const &pack);
 
 	Module *module(std::string const &scriptPath);
 	bool report(std::string const &scriptPath, sol::protected_function_result const &result);
@@ -73,7 +83,7 @@ private:
 	FacingHandler m_facingHandler;
 
 	std::unordered_map<std::string, Module> m_modules;
-	std::unordered_map<std::string, sol::table> m_packTables;
+	std::unordered_map<std::string, PackTables> m_packTables;
 
 	PDSettingsStore *m_settings = nullptr;
 	PDSettingsSnapshot m_snapshot;

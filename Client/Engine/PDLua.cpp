@@ -122,15 +122,8 @@ sol::table PDLua::createSelf(std::uint32_t entityId, std::string const &scriptPa
 	return self;
 }
 
-sol::table PDLua::packTable(PDPonyPackData const &pack)
+sol::table PDLua::buildPackReal(PDPonyPackData const &pack)
 {
-	auto const existing = m_packTables.find(pack.packPath);
-
-	if (existing != m_packTables.end())
-	{
-		return existing->second;
-	}
-
 	sol::table behaviors = m_lua.create_table();
 	sol::table byId = m_lua.create_table();
 
@@ -178,18 +171,46 @@ sol::table PDLua::packTable(PDPonyPackData const &pack)
 	real["by_id"] = byId;
 	real["groups"] = groups;
 
-	sol::table proxy = m_lua.create_table();
-	sol::table meta = m_lua.create_table();
-	meta["__index"] = real;
-	meta["__metatable"] = false;
-	meta["__newindex"] = [](sol::this_state state, sol::table, sol::object, sol::object)
+	return real;
+}
+
+sol::table PDLua::packTable(PDPonyPackData const &pack)
+{
+	auto const existing = m_packTables.find(pack.packPath);
+
+	if (existing != m_packTables.end())
+	{
+		return existing->second.proxy;
+	}
+
+	PackTables tables;
+	tables.real = buildPackReal(pack);
+	tables.meta = m_lua.create_table();
+	tables.meta["__index"] = tables.real;
+	tables.meta["__metatable"] = false;
+
+	tables.meta["__newindex"] = [](sol::this_state state, sol::table, sol::object, sol::object)
 	{
 		return luaL_error(state.lua_state(), "pack data is read-only");
 	};
 
-	proxy[sol::metatable_key] = meta;
+	tables.proxy = m_lua.create_table();
+	tables.proxy[sol::metatable_key] = tables.meta;
 
-	return m_packTables.emplace(pack.packPath, proxy).first->second;
+	return m_packTables.emplace(pack.packPath, std::move(tables)).first->second.proxy;
+}
+
+void PDLua::refreshPackTable(PDPonyPackData const &pack)
+{
+	auto const existing = m_packTables.find(pack.packPath);
+
+	if (existing == m_packTables.end())
+	{
+		return;
+	}
+
+	existing->second.real = buildPackReal(pack);
+	existing->second.meta["__index"] = existing->second.real;
 }
 
 bool PDLua::declareSetting(std::string const &moduleKey, PDSettingDeclaration declaration)

@@ -40,6 +40,7 @@ public:
 	std::vector<std::string> loadedScripts() const;
 
 	void pressSettingButton(std::string const &moduleKey, std::string const &settingId);
+	void reloadPack(std::string const &packPath);
 
 	PDSettingsStore &settings()
 	{
@@ -71,6 +72,7 @@ private:
 	void applyPendingScene();
 	void applyPendingScripts();
 	void applyPendingButtons();
+	void applyPendingPacks();
 
 	PDDiagnostics m_diagnostics;
 	PDSettingsStore m_settings;
@@ -98,4 +100,7 @@ private:
 
 	std::mutex m_buttonsMutex;
 	std::vector<ButtonPress> m_pendingButtons;
+
+	std::mutex m_packsMutex;
+	std::vector<std::string> m_pendingPacks;
 };
