@@ -17,16 +17,6 @@ struct PDBehaviorMode
 	std::string name;
 };
 
-struct PDFieldSlot
-{
-	ImVec2 position;
-	ImVec2 rectMax;
-	float width = 0.0f;
-	float controlLeft = 0.0f;
-	float controlY = 0.0f;
-	float markerLeft = 0.0f;
-};
-
 class PDBehaviorEditor
 {
 public:
@@ -41,12 +31,11 @@ public:
 	}
 
 	bool draw();
+	void drawDetail();
 
 private:
 	static constexpr float ListRowHeight = 46.0f;
-	static constexpr float FieldRowHeight = 40.0f;
-	static constexpr float FieldControlWidth = 190.0f;
-	static constexpr float FieldIndent = 18.0f;
+	static constexpr float LabelWidth = 150.0f;
 	static constexpr float ModePickerWidth = 150.0f;
 	static constexpr std::size_t NoBaseIndex = static_cast<std::size_t>(-1);
 
@@ -55,9 +44,8 @@ private:
 	void drawFields(std::size_t index);
 	void drawResetModal();
 
-	PDFieldSlot beginField(char const *label);
-	void endField(PDFieldSlot const &slot);
-	void drawRevertMarker(PDFieldSlot const &slot, std::size_t index, char const *key);
+	void drawFieldLabel(char const *label);
+	void drawRevertMarker(std::size_t index, char const *key);
 
 	void drawNameField(std::size_t index);
 	void drawChanceField(std::size_t index);

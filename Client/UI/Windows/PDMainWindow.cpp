@@ -133,6 +133,11 @@ void PDMainWindow::draw()
 		1.0f);
 
 	ImGui::End();
+
+	if (m_activeView == View::Behaviors)
+	{
+		m_behaviorEditor.drawDetail();
+	}
 }
 
 void PDMainWindow::drawSidebar(float width, float height)

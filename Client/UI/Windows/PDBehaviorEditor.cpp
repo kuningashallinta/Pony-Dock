@@ -395,58 +395,32 @@ double PDBehaviorEditor::eligibleTotal(int mode) const
 	return total;
 }
 
-PDFieldSlot PDBehaviorEditor::beginField(char const *label)
+void PDBehaviorEditor::drawFieldLabel(char const *label)
 {
-	PDFieldSlot slot;
-	slot.position = ImGui::GetCursorScreenPos();
-	slot.position.x += FieldIndent;
-	slot.width = ImGui::GetContentRegionAvail().x - FieldIndent;
-	slot.rectMax = ImVec2(slot.position.x + slot.width, slot.position.y + FieldRowHeight);
-
-	ImGui::Dummy(ImVec2(slot.width, FieldRowHeight));
-
-	const float controlHeight = ImGui::GetFrameHeight();
-	slot.controlY = slot.position.y + (FieldRowHeight - controlHeight) * 0.5f;
-	slot.controlLeft = slot.rectMax.x - 10.0f - FieldControlWidth;
-	slot.markerLeft = slot.controlLeft - 8.0f - controlHeight;
-
-	ImDrawList *drawList = ImGui::GetWindowDrawList();
-	drawList->AddRectFilled(slot.position, slot.rectMax, ImGui::GetColorU32(PDTheme::Toolbar), 0.0f);
-	drawList->AddRect(slot.position, slot.rectMax, ImGui::GetColorU32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
-
-	drawList->AddText(
-		ImVec2(slot.position.x + 10.0f, slot.position.y + (FieldRowHeight - ImGui::GetTextLineHeight()) * 0.5f),
-		ImGui::GetColorU32(PDTheme::White),
-		label);
-
-	ImGui::SetCursorScreenPos(ImVec2(slot.controlLeft, slot.controlY));
-	ImGui::SetNextItemWidth(FieldControlWidth);
-
-	return slot;
+	ImGui::AlignTextToFramePadding();
+	ImGui::TextUnformatted(label);
+	ImGui::SameLine(LabelWidth);
+	ImGui::SetNextItemWidth(-(ImGui::GetFrameHeight() + ImGui::GetStyle().ItemSpacing.x));
 }
 
-void PDBehaviorEditor::endField(PDFieldSlot const &slot)
-{
-	ImGui::SetCursorScreenPos(ImVec2(slot.position.x - FieldIndent, slot.position.y));
-	ImGui::Dummy(ImVec2(slot.width + FieldIndent, FieldRowHeight + 4.0f));
-}
-
-void PDBehaviorEditor::drawRevertMarker(PDFieldSlot const &slot, std::size_t index, char const *key)
+void PDBehaviorEditor::drawRevertMarker(std::size_t index, char const *key)
 {
 	nlohmann::json const *const base = baseValue(index, key);
 	nlohmann::json const &current = behaviorField(behaviors()[index], key);
 	const bool present = not current.is_null();
 	const bool modified = base == nullptr ? present : (not present or *base != current);
+	const float size = ImGui::GetFrameHeight();
+
+	ImGui::SameLine();
 
 	if (not modified)
 	{
+		ImGui::Dummy(ImVec2(size, size));
+
 		return;
 	}
 
-	const float controlHeight = ImGui::GetFrameHeight();
-	ImGui::SetCursorScreenPos(ImVec2(slot.markerLeft, slot.controlY));
-
-	if (ImGui::Button("x", ImVec2(controlHeight, controlHeight)))
+	if (ImGui::Button("x", ImVec2(size, size)))
 	{
 		revertField(index, key);
 	}
@@ -459,10 +433,12 @@ void PDBehaviorEditor::drawRevertMarker(PDFieldSlot const &slot, std::size_t ind
 
 void PDBehaviorEditor::drawNameField(std::size_t index)
 {
-	PDFieldSlot const slot = beginField("Name");
+	ImGui::PushID("name");
+	drawFieldLabel("Name");
+
 	std::string value = fieldString(behaviors()[index], "name");
 
-	if (ImGui::InputText("##name", &value))
+	if (ImGui::InputText("##v", &value))
 	{
 		behavior(index)["name"] = value;
 	}
@@ -472,16 +448,18 @@ void PDBehaviorEditor::drawNameField(std::size_t index)
 		commit();
 	}
 
-	drawRevertMarker(slot, index, "name");
-	endField(slot);
+	drawRevertMarker(index, "name");
+	ImGui::PopID();
 }
 
 void PDBehaviorEditor::drawChanceField(std::size_t index)
 {
-	PDFieldSlot const slot = beginField("Chance");
+	ImGui::PushID("chance");
+	drawFieldLabel("Chance");
+
 	double value = fieldNumber(behaviors()[index], "chance");
 
-	if (ImGui::InputDouble("##chance", &value, 0.0, 0.0, "%.6g"))
+	if (ImGui::InputDouble("##v", &value, 0.0, 0.0, "%.6g"))
 	{
 		behavior(index)["chance"] = value < 0.0 ? 0.0 : value;
 	}
@@ -491,16 +469,18 @@ void PDBehaviorEditor::drawChanceField(std::size_t index)
 		commit();
 	}
 
-	drawRevertMarker(slot, index, "chance");
-	endField(slot);
+	drawRevertMarker(index, "chance");
+	ImGui::PopID();
 }
 
 void PDBehaviorEditor::drawSpeedField(std::size_t index)
 {
-	PDFieldSlot const slot = beginField("Speed (px/s)");
+	ImGui::PushID("speed");
+	drawFieldLabel("Speed (px/s)");
+
 	double value = fieldNumber(behaviors()[index], "speedPxPerSec");
 
-	if (ImGui::InputDouble("##speed", &value, 0.0, 0.0, "%.6g"))
+	if (ImGui::InputDouble("##v", &value, 0.0, 0.0, "%.6g"))
 	{
 		behavior(index)["speedPxPerSec"] = value < 0.0 ? 0.0 : value;
 	}
@@ -510,19 +490,20 @@ void PDBehaviorEditor::drawSpeedField(std::size_t index)
 		commit();
 	}
 
-	drawRevertMarker(slot, index, "speedPxPerSec");
-	endField(slot);
+	drawRevertMarker(index, "speedPxPerSec");
+	ImGui::PopID();
 }
 
 void PDBehaviorEditor::drawDurationField(std::size_t index)
 {
-	PDFieldSlot const slot = beginField("Duration (ms)");
+	ImGui::PushID("durationMs");
+	drawFieldLabel("Duration (ms)");
 
 	int values[2] = {
 		static_cast<int>(fieldDuration(behaviors()[index], "min")),
 		static_cast<int>(fieldDuration(behaviors()[index], "max"))};
 
-	if (ImGui::InputInt2("##duration", values))
+	if (ImGui::InputInt2("##v", values))
 	{
 		values[0] = values[0] < 0 ? 0 : values[0];
 		values[1] = values[1] < values[0] ? values[0] : values[1];
@@ -536,13 +517,14 @@ void PDBehaviorEditor::drawDurationField(std::size_t index)
 		commit();
 	}
 
-	drawRevertMarker(slot, index, "durationMs");
-	endField(slot);
+	drawRevertMarker(index, "durationMs");
+	ImGui::PopID();
 }
 
 void PDBehaviorEditor::drawGroupField(std::size_t index)
 {
-	PDFieldSlot const slot = beginField("Mode");
+	ImGui::PushID("group");
+	drawFieldLabel("Mode");
 
 	std::vector<std::string> labels;
 	labels.push_back("0  -  any mode");
@@ -574,31 +556,33 @@ void PDBehaviorEditor::drawGroupField(std::size_t index)
 		items.push_back(label.c_str());
 	}
 
-	if (ImGui::Combo("##group", &current, items.data(), static_cast<int>(items.size())))
+	if (ImGui::Combo("##v", &current, items.data(), static_cast<int>(items.size())))
 	{
 		behavior(index)["group"] = current == 0 ? 0 : m_modes[static_cast<std::size_t>(current - 1)].id;
 		commit();
 	}
 
-	drawRevertMarker(slot, index, "group");
-	endField(slot);
+	drawRevertMarker(index, "group");
+	ImGui::PopID();
 }
 
 void PDBehaviorEditor::drawFlagField(std::size_t index, char const *key, char const *label)
 {
-	PDFieldSlot const slot = beginField(label);
+	ImGui::PushID(key);
+	ImGui::AlignTextToFramePadding();
+	ImGui::TextUnformatted(label);
+	ImGui::SameLine(LabelWidth);
+
 	bool value = fieldBool(behaviors()[index], key);
 
-	ImGui::SetCursorScreenPos(ImVec2(slot.controlLeft, slot.controlY));
-
-	if (ImGui::Checkbox("##flag", &value))
+	if (ImGui::Checkbox("##v", &value))
 	{
 		behavior(index)[key] = value;
 		commit();
 	}
 
-	drawRevertMarker(slot, index, key);
-	endField(slot);
+	drawRevertMarker(index, key);
+	ImGui::PopID();
 }
 
 void PDBehaviorEditor::drawChoiceField(
@@ -608,9 +592,10 @@ void PDBehaviorEditor::drawChoiceField(
 	std::vector<std::string> const &options,
 	bool allowNone)
 {
-	PDFieldSlot const slot = beginField(label);
-	std::string const value = fieldString(behaviors()[index], key);
+	ImGui::PushID(key);
+	drawFieldLabel(label);
 
+	std::string const value = fieldString(behaviors()[index], key);
 	std::vector<std::string> labels;
 
 	if (allowNone)
@@ -643,7 +628,7 @@ void PDBehaviorEditor::drawChoiceField(
 		items.push_back(entry.c_str());
 	}
 
-	if (ImGui::Combo("##choice", &current, items.data(), static_cast<int>(items.size())))
+	if (ImGui::Combo("##v", &current, items.data(), static_cast<int>(items.size())))
 	{
 		if (allowNone and current == 0)
 		{
@@ -657,8 +642,8 @@ void PDBehaviorEditor::drawChoiceField(
 		commit();
 	}
 
-	drawRevertMarker(slot, index, key);
-	endField(slot);
+	drawRevertMarker(index, key);
+	ImGui::PopID();
 }
 
 void PDBehaviorEditor::drawFields(std::size_t index)
@@ -671,6 +656,9 @@ void PDBehaviorEditor::drawFields(std::size_t index)
 	drawSpeedField(index);
 	drawChoiceField(index, "linkedBehavior", "Play next", m_behaviorIds, true);
 	drawGroupField(index);
+
+	ImGui::Dummy(ImVec2(0.0f, 6.0f));
+
 	drawFlagField(index, "skip", "Never pick at random");
 	drawFlagField(index, "special", "Extended behavior");
 	drawFlagField(index, "preventAnimationLoop", "Play animation once");
@@ -764,11 +752,48 @@ void PDBehaviorEditor::drawBehaviorRow(std::size_t index, double total)
 	}
 
 	endRowCard(card, ListRowHeight, 4.0f);
+}
 
-	if (m_expanded == static_cast<int>(index))
+void PDBehaviorEditor::drawDetail()
+{
+	if (m_expanded < 0 or m_expanded >= static_cast<int>(behaviors().size()))
 	{
+		return;
+	}
+
+	std::size_t const index = static_cast<std::size_t>(m_expanded);
+	std::string const id = fieldString(behaviors()[index], "id");
+	std::string const name = fieldString(behaviors()[index], "name");
+
+	char title[256];
+	std::snprintf(
+		title,
+		sizeof(title),
+		"%s  -  %s###behaviorDetail",
+		m_displayName.c_str(),
+		name.empty() ? id.c_str() : name.c_str());
+
+	bool open = true;
+	ImGui::SetNextWindowSize(ImVec2(480.0f, 0.0f), ImGuiCond_Appearing);
+	ImGui::SetNextWindowSizeConstraints(ImVec2(400.0f, 0.0f), ImVec2(900.0f, 4000.0f));
+	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(16.0f, 14.0f));
+
+	if (ImGui::Begin(title, &open, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoSavedSettings))
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextFaint);
+		ImGui::TextUnformatted(id.c_str());
+		ImGui::PopStyleColor();
+		ImGui::Dummy(ImVec2(0.0f, 8.0f));
+
 		drawFields(index);
-		ImGui::Dummy(ImVec2(0.0f, 6.0f));
+	}
+
+	ImGui::End();
+	ImGui::PopStyleVar();
+
+	if (not open)
+	{
+		m_expanded = -1;
 	}
 }
 
