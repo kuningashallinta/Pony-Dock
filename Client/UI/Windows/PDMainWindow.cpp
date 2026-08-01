@@ -73,7 +73,7 @@ PDMainWindow::PDMainWindow(PDMainApplication &app, PDImGui &host, PDDiagnostics 
 	: m_app(app),
 	  m_host(host),
 	  m_diagnostics(diagnostics),
-	  m_behaviorEditor(app, diagnostics)
+	  m_behaviorEditor(app, host, diagnostics)
 {
 	m_catalog.load(PONYDOCK_PACKS_DIR);
 	m_scripts.load(PONYDOCK_SCRIPTS_DIR);

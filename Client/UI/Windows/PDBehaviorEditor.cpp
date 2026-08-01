@@ -2,8 +2,10 @@
 
 #include <App/PDMainApplication.h>
 #include <Core/PDString.h>
+#include <Engine/PDAnimationLoader.h>
 #include <Engine/PDDiagnostics.h>
 #include <Library/PDPonyPackOverride.h>
+#include <UI/PDImGui.h>
 #include <UI/PDTheme.h>
 #include <UI/PDWidgets.h>
 
@@ -84,8 +86,9 @@ static bool readDocument(std::string const &path, nlohmann::json &outDocument)
 	return true;
 }
 
-PDBehaviorEditor::PDBehaviorEditor(PDMainApplication &app, PDDiagnostics &diagnostics)
+PDBehaviorEditor::PDBehaviorEditor(PDMainApplication &app, PDImGui &host, PDDiagnostics &diagnostics)
 	: m_app(app),
+	  m_host(host),
 	  m_diagnostics(diagnostics)
 {
 	m_movements = {
@@ -115,6 +118,7 @@ bool PDBehaviorEditor::open(std::string const &packPath, std::string const &disp
 	m_base = nlohmann::json();
 	readDocument((std::filesystem::path(packPath) / "pony.json").string(), m_base);
 
+	m_previews.clear();
 	m_packPath = packPath;
 	m_displayName = displayName;
 	m_hasOverride = ponyPackOverrideExists(packPath);
@@ -393,6 +397,367 @@ double PDBehaviorEditor::eligibleTotal(int mode) const
 	}
 
 	return total;
+}
+
+PDBehaviorPreview const *PDBehaviorEditor::preview(std::string const &animation)
+{
+	auto const cached = m_previews.find(animation);
+
+	if (cached != m_previews.end())
+	{
+		return cached->second.valid ? &cached->second : nullptr;
+	}
+
+	if (m_previewBudget <= 0)
+	{
+		return nullptr;
+	}
+
+	m_previewBudget -= 1;
+
+	PDBehaviorPreview entry;
+	auto const animations = m_document.find("animations");
+	std::string relative;
+
+	if (animations != m_document.end() and animations->is_object())
+	{
+		auto const found = animations->find(animation);
+
+		if (found != animations->end() and found->is_object())
+		{
+			relative = fieldString(*found, "right");
+
+			if (relative.empty())
+			{
+				relative = fieldString(*found, "left");
+			}
+		}
+	}
+
+	if (relative.empty())
+	{
+		m_previews.emplace(animation, std::move(entry));
+
+		return nullptr;
+	}
+
+	std::string const path = (std::filesystem::path(m_packPath) / relative).lexically_normal().string();
+
+	PDAnimationClip clip;
+	std::string error;
+
+	if (loadAnimationClip(path, clip, error) and not clip.frames.empty())
+	{
+		entry.texture = PDTexture(m_host.device(), clip.atlasPath);
+		entry.u0 = clip.frames.front().u0;
+		entry.v0 = clip.frames.front().v0;
+		entry.u1 = clip.frames.front().u1;
+		entry.v1 = clip.frames.front().v1;
+		entry.width = clip.frames.front().width;
+		entry.height = clip.frames.front().height;
+		entry.valid = entry.texture.valid();
+	}
+
+	PDBehaviorPreview const &stored = m_previews.emplace(animation, std::move(entry)).first->second;
+
+	return stored.valid ? &stored : nullptr;
+}
+
+nlohmann::json &PDBehaviorEditor::behaviorArray()
+{
+	if (not m_document["behaviors"].is_array())
+	{
+		m_document["behaviors"] = nlohmann::json::array();
+	}
+
+	return m_document["behaviors"];
+}
+
+std::string PDBehaviorEditor::uniqueId(std::string const &base) const
+{
+	std::string const stem = base.empty() ? std::string("behavior") : base;
+	std::string candidate = stem;
+	int suffix = 2;
+
+	while (std::find(m_behaviorIds.begin(), m_behaviorIds.end(), candidate) != m_behaviorIds.end())
+	{
+		candidate = stem + " " + std::to_string(suffix);
+		suffix += 1;
+	}
+
+	return candidate;
+}
+
+std::vector<std::string> PDBehaviorEditor::collectReferences(std::string const &id, bool apply)
+{
+	std::vector<std::string> found;
+
+	if (id.empty())
+	{
+		return found;
+	}
+
+	for (nlohmann::json &entry : behaviorArray())
+	{
+		if (not entry.is_object())
+		{
+			continue;
+		}
+
+		std::string const owner = fieldString(entry, "id");
+
+		if (fieldString(entry, "linkedBehavior") == id)
+		{
+			found.push_back("Play next on '" + owner + "'");
+
+			if (apply)
+			{
+				entry["linkedBehavior"] = nullptr;
+			}
+		}
+
+		auto const follow = entry.find("follow");
+
+		if (follow == entry.end() or not follow->is_object())
+		{
+			continue;
+		}
+
+		if (fieldString(*follow, "movingBehavior") == id)
+		{
+			found.push_back("Follow moving behavior on '" + owner + "'");
+
+			if (apply)
+			{
+				(*follow)["movingBehavior"] = nullptr;
+			}
+		}
+
+		if (fieldString(*follow, "stoppedBehavior") == id)
+		{
+			found.push_back("Follow stopped behavior on '" + owner + "'");
+
+			if (apply)
+			{
+				(*follow)["stoppedBehavior"] = nullptr;
+			}
+		}
+	}
+
+	auto const effects = m_document.find("effects");
+
+	if (effects != m_document.end() and effects->is_array())
+	{
+		for (nlohmann::json &effect : *effects)
+		{
+			if (not effect.is_object() or fieldString(effect, "behavior") != id)
+			{
+				continue;
+			}
+
+			found.push_back("Effect '" + fieldString(effect, "id") + "'");
+
+			if (apply)
+			{
+				effect["behavior"] = nullptr;
+			}
+		}
+	}
+
+	auto const interactions = m_document.find("interactions");
+
+	if (interactions == m_document.end() or not interactions->is_array())
+	{
+		return found;
+	}
+
+	for (nlohmann::json &interaction : *interactions)
+	{
+		if (not interaction.is_object())
+		{
+			continue;
+		}
+
+		auto const list = interaction.find("behaviors");
+
+		if (list == interaction.end() or not list->is_array())
+		{
+			continue;
+		}
+
+		nlohmann::json remaining = nlohmann::json::array();
+		bool referenced = false;
+
+		for (nlohmann::json const &value : *list)
+		{
+			if (value.is_string() and value.get<std::string>() == id)
+			{
+				referenced = true;
+			}
+			else
+			{
+				remaining.push_back(value);
+			}
+		}
+
+		if (not referenced)
+		{
+			continue;
+		}
+
+		found.push_back("Interaction '" + fieldString(interaction, "id") + "'");
+
+		if (apply)
+		{
+			*list = std::move(remaining);
+		}
+	}
+
+	return found;
+}
+
+void PDBehaviorEditor::addBehavior()
+{
+	nlohmann::json &pool = behaviorArray();
+	nlohmann::json entry = pool.empty() ? nlohmann::json::object() : pool.front();
+
+	entry["id"] = uniqueId("new-behavior");
+	entry["name"] = "New behavior";
+	entry["chance"] = 0.1;
+	entry["durationMs"] = nlohmann::json{{"min", 5000}, {"max", 15000}};
+	entry["movement"] = "None";
+	entry["speedPxPerSec"] = 0.0;
+	entry["group"] = 0;
+	entry["skip"] = false;
+	entry["preventAnimationLoop"] = false;
+	entry["linkedBehavior"] = nullptr;
+
+	for (char const *key : {"follow", "target", "startSpeech", "endSpeech"})
+	{
+		if (entry.contains(key))
+		{
+			entry[key] = nullptr;
+		}
+	}
+
+	if (entry.contains("special"))
+	{
+		entry["special"] = false;
+	}
+
+	if (not m_animations.empty())
+	{
+		entry["animation"] = m_animations.front();
+	}
+
+	pool.push_back(std::move(entry));
+	m_expanded = static_cast<int>(pool.size()) - 1;
+	commit();
+}
+
+void PDBehaviorEditor::duplicateBehavior(std::size_t index)
+{
+	nlohmann::json &pool = behaviorArray();
+
+	if (index >= pool.size())
+	{
+		return;
+	}
+
+	nlohmann::json entry = pool[index];
+	entry["id"] = uniqueId(fieldString(pool[index], "id"));
+	entry["name"] = fieldString(pool[index], "name") + " copy";
+
+	pool.push_back(std::move(entry));
+	m_expanded = static_cast<int>(pool.size()) - 1;
+	commit();
+}
+
+void PDBehaviorEditor::requestDelete(std::size_t index)
+{
+	if (index >= behaviors().size())
+	{
+		return;
+	}
+
+	m_deleteIndex = static_cast<int>(index);
+	m_deleteReferences = collectReferences(fieldString(behaviors()[index], "id"), false);
+	m_deleteOpen = true;
+}
+
+void PDBehaviorEditor::drawDeleteModal()
+{
+	if (m_deleteOpen)
+	{
+		m_deleteOpen = false;
+		ImGui::OpenPopup("Delete behavior");
+	}
+
+	if (not beginModal("Delete behavior", ImVec2(520.0f, 360.0f)))
+	{
+		return;
+	}
+
+	if (m_deleteIndex < 0 or m_deleteIndex >= static_cast<int>(behaviors().size()))
+	{
+		ImGui::CloseCurrentPopup();
+		endModal();
+
+		return;
+	}
+
+	std::size_t const index = static_cast<std::size_t>(m_deleteIndex);
+	std::string const id = fieldString(behaviors()[index], "id");
+
+	ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+	ImGui::TextWrapped("Delete '%s' from %s?", id.c_str(), m_displayName.c_str());
+	ImGui::PopStyleColor();
+
+	ImGui::Dummy(ImVec2(0.0f, 10.0f));
+	ImGui::BeginChild("deleteBody", ImVec2(0.0f, -46.0f));
+
+	if (m_deleteReferences.empty())
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextFaint);
+		ImGui::TextUnformatted("Nothing else references it.");
+		ImGui::PopStyleColor();
+	}
+	else
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::AccentText);
+		ImGui::Text("%zu references will be cleared:", m_deleteReferences.size());
+		ImGui::PopStyleColor();
+		ImGui::Dummy(ImVec2(0.0f, 6.0f));
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+
+		for (std::string const &reference : m_deleteReferences)
+		{
+			ImGui::BulletText("%s", reference.c_str());
+		}
+
+		ImGui::PopStyleColor();
+	}
+
+	ImGui::EndChild();
+
+	if (ImGui::Button("Delete", ImVec2(110.0f, 32.0f)))
+	{
+		collectReferences(id, true);
+		behaviorArray().erase(index);
+		m_expanded = -1;
+		m_deleteIndex = -1;
+		commit();
+		ImGui::CloseCurrentPopup();
+	}
+
+	ImGui::SameLine();
+
+	if (ImGui::Button("Cancel", ImVec2(110.0f, 32.0f)))
+	{
+		ImGui::CloseCurrentPopup();
+	}
+
+	endModal();
 }
 
 void PDBehaviorEditor::drawFieldLabel(char const *label)
@@ -674,10 +1039,40 @@ void PDBehaviorEditor::drawBehaviorRow(std::size_t index, double total)
 
 	const float lineHeight = ImGui::GetTextLineHeight();
 	const float firstY = card.position.y + (ListRowHeight - lineHeight * 2.0f - 2.0f) * 0.5f;
+	const float textX = card.position.x + 10.0f + PreviewSize + 12.0f;
 
 	ImDrawList *drawList = ImGui::GetWindowDrawList();
+
+	const ImVec2 thumbMin(card.position.x + 10.0f, card.position.y + (ListRowHeight - PreviewSize) * 0.5f);
+	const ImVec2 thumbMax(thumbMin.x + PreviewSize, thumbMin.y + PreviewSize);
+	drawList->AddRectFilled(thumbMin, thumbMax, ImGui::GetColorU32(PDTheme::ThumbBg), 0.0f);
+
+	if (ImGui::IsRectVisible(card.position, card.rectMax))
+	{
+		PDBehaviorPreview const *const frame = preview(fieldString(behavior, "animation"));
+
+		if (frame != nullptr and frame->width > 0.0f and frame->height > 0.0f)
+		{
+			float scale = std::min(PreviewSize / frame->width, PreviewSize / frame->height);
+			scale = std::min(scale, 1.0f);
+
+			const float drawWidth = frame->width * scale;
+			const float drawHeight = frame->height * scale;
+			const ImVec2 imageMin(
+				thumbMin.x + (PreviewSize - drawWidth) * 0.5f,
+				thumbMin.y + (PreviewSize - drawHeight) * 0.5f);
+
+			drawList->AddImage(
+				reinterpret_cast<ImTextureID>(frame->texture.view()),
+				imageMin,
+				ImVec2(imageMin.x + drawWidth, imageMin.y + drawHeight),
+				ImVec2(frame->u0, frame->v0),
+				ImVec2(frame->u1, frame->v1));
+		}
+	}
+
 	drawList->AddText(
-		ImVec2(card.position.x + 10.0f, firstY),
+		ImVec2(textX, firstY),
 		ImGui::GetColorU32(PDTheme::White),
 		name.empty() ? id.c_str() : name.c_str());
 
@@ -692,7 +1087,7 @@ void PDBehaviorEditor::drawBehaviorRow(std::size_t index, double total)
 		fieldString(behavior, "movement").c_str());
 
 	drawList->AddText(
-		ImVec2(card.position.x + 10.0f, firstY + lineHeight + 2.0f),
+		ImVec2(textX, firstY + lineHeight + 2.0f),
 		ImGui::GetColorU32(PDTheme::TextFaint),
 		subtitle);
 
@@ -732,6 +1127,7 @@ void PDBehaviorEditor::drawBehaviorRow(std::size_t index, double total)
 		chip);
 
 	int const group = fieldGroup(behavior);
+	float badgeRight = card.rectMax.x - 10.0f;
 
 	if (group != 0)
 	{
@@ -741,9 +1137,20 @@ void PDBehaviorEditor::drawBehaviorRow(std::size_t index, double total)
 
 		const float badgeWidth = ImGui::CalcTextSize(badge).x;
 		drawList->AddText(
-			ImVec2(card.rectMax.x - 10.0f - badgeWidth, firstY + lineHeight + 2.0f),
+			ImVec2(badgeRight - badgeWidth, firstY + lineHeight + 2.0f),
 			ImGui::GetColorU32(PDTheme::AccentText),
 			badge);
+
+		badgeRight -= badgeWidth + 10.0f;
+	}
+
+	if (fieldBool(behavior, "special"))
+	{
+		const float extWidth = ImGui::CalcTextSize("EXT").x;
+		drawList->AddText(
+			ImVec2(badgeRight - extWidth, firstY + lineHeight + 2.0f),
+			ImGui::GetColorU32(PDTheme::TextDim),
+			"EXT");
 	}
 
 	if (card.clicked)
@@ -786,6 +1193,27 @@ void PDBehaviorEditor::drawDetail()
 		ImGui::Dummy(ImVec2(0.0f, 8.0f));
 
 		drawFields(index);
+
+		ImGui::Dummy(ImVec2(0.0f, 12.0f));
+		ImGui::Separator();
+		ImGui::Dummy(ImVec2(0.0f, 8.0f));
+
+		if (ImGui::Button("Duplicate", ImVec2(110.0f, 30.0f)))
+		{
+			duplicateBehavior(index);
+		}
+
+		ImGui::SameLine();
+		ImGui::PushStyleColor(ImGuiCol_Button, PDTheme::Stop);
+		ImGui::PushStyleColor(ImGuiCol_ButtonHovered, PDTheme::StopHover);
+		ImGui::PushStyleColor(ImGuiCol_ButtonActive, PDTheme::StopPress);
+
+		if (ImGui::Button("Delete", ImVec2(110.0f, 30.0f)))
+		{
+			requestDelete(index);
+		}
+
+		ImGui::PopStyleColor(3);
 	}
 
 	ImGui::End();
@@ -885,6 +1313,18 @@ bool PDBehaviorEditor::draw()
 	}
 
 	ImGui::SameLine();
+
+	if (ImGui::Button("Add"))
+	{
+		addBehavior();
+	}
+
+	if (ImGui::IsItemHovered())
+	{
+		ImGui::SetTooltip("Add a new behavior to this pack");
+	}
+
+	ImGui::SameLine();
 	ImGui::BeginDisabled(not m_hasOverride);
 
 	if (ImGui::Button("Reset"))
@@ -915,6 +1355,7 @@ bool PDBehaviorEditor::draw()
 
 	endToolbar();
 	drawResetModal();
+	drawDeleteModal();
 
 	if (back)
 	{
@@ -931,6 +1372,7 @@ bool PDBehaviorEditor::draw()
 
 	std::string const filter = toLower(m_search);
 	double const total = eligibleTotal(m_mode);
+	m_previewBudget = PreviewsPerFrame;
 
 	ImGui::BeginChild("behaviorList");
 

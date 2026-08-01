@@ -1,14 +1,18 @@
 #pragma once
 
+#include <Engine/PDTexture.h>
+
 #include <nlohmann/json.hpp>
 
 #include <imgui.h>
 
 #include <cstddef>
 #include <string>
+#include <unordered_map>
 #include <vector>
 
 class PDDiagnostics;
+class PDImGui;
 class PDMainApplication;
 
 struct PDBehaviorMode
@@ -17,10 +21,22 @@ struct PDBehaviorMode
 	std::string name;
 };
 
+struct PDBehaviorPreview
+{
+	PDTexture texture;
+	float u0 = 0.0f;
+	float v0 = 0.0f;
+	float u1 = 1.0f;
+	float v1 = 1.0f;
+	float width = 0.0f;
+	float height = 0.0f;
+	bool valid = false;
+};
+
 class PDBehaviorEditor
 {
 public:
-	PDBehaviorEditor(PDMainApplication &app, PDDiagnostics &diagnostics);
+	PDBehaviorEditor(PDMainApplication &app, PDImGui &host, PDDiagnostics &diagnostics);
 
 	bool open(std::string const &packPath, std::string const &displayName);
 	void close();
@@ -35,6 +51,8 @@ public:
 
 private:
 	static constexpr float ListRowHeight = 46.0f;
+	static constexpr float PreviewSize = 34.0f;
+	static constexpr int PreviewsPerFrame = 6;
 	static constexpr float LabelWidth = 150.0f;
 	static constexpr float ModePickerWidth = 150.0f;
 	static constexpr std::size_t NoBaseIndex = static_cast<std::size_t>(-1);
@@ -43,6 +61,16 @@ private:
 	void drawBehaviorRow(std::size_t index, double total);
 	void drawFields(std::size_t index);
 	void drawResetModal();
+	void drawDeleteModal();
+
+	void addBehavior();
+	void duplicateBehavior(std::size_t index);
+	void requestDelete(std::size_t index);
+
+	std::vector<std::string> collectReferences(std::string const &id, bool apply);
+	std::string uniqueId(std::string const &base) const;
+	nlohmann::json &behaviorArray();
+	PDBehaviorPreview const *preview(std::string const &animation);
 
 	void drawFieldLabel(char const *label);
 	void drawRevertMarker(std::size_t index, char const *key);
@@ -74,7 +102,11 @@ private:
 	void resetToPack();
 
 	PDMainApplication &m_app;
+	PDImGui &m_host;
 	PDDiagnostics &m_diagnostics;
+
+	std::unordered_map<std::string, PDBehaviorPreview> m_previews;
+	int m_previewBudget = 0;
 
 	std::string m_packPath;
 	std::string m_displayName;
@@ -90,9 +122,13 @@ private:
 	std::vector<std::string> m_movements;
 	std::vector<std::size_t> m_baseByIndex;
 
+	std::vector<std::string> m_deleteReferences;
+
 	int m_mode = 0;
 	int m_expanded = -1;
+	int m_deleteIndex = -1;
 	bool m_hasOverride = false;
 	bool m_resetOpen = false;
+	bool m_deleteOpen = false;
 	char m_search[96] = "";
 };
