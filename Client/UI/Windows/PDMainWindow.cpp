@@ -5,6 +5,7 @@
 #include <UI/PDFileDialog.h>
 #include <UI/PDImGui.h>
 #include <UI/PDTheme.h>
+#include <UI/PDWidgets.h>
 
 #include <windows.h>
 
@@ -71,7 +72,8 @@ void PDMainWindow::addShadow(ImDrawList *drawList, ImVec2 rectMin, ImVec2 rectMa
 PDMainWindow::PDMainWindow(PDMainApplication &app, PDImGui &host, PDDiagnostics &diagnostics)
 	: m_app(app),
 	  m_host(host),
-	  m_diagnostics(diagnostics)
+	  m_diagnostics(diagnostics),
+	  m_behaviorEditor(diagnostics)
 {
 	m_catalog.load(PONYDOCK_PACKS_DIR);
 	m_scripts.load(PONYDOCK_SCRIPTS_DIR);
@@ -279,37 +281,6 @@ void PDMainWindow::setView(View view)
 	m_activeView = view;
 }
 
-void PDMainWindow::beginToolbar()
-{
-	ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(ToolbarPadX, ToolbarPadY));
-	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(ToolbarPadX, ToolbarPadY));
-	ImGui::PushStyleColor(ImGuiCol_ChildBg, PDTheme::Toolbar);
-	ImGui::PushStyleColor(ImGuiCol_Border, PDTheme::CardBorder);
-
-	const float height = ImGui::GetFrameHeight() + ToolbarPadY * 2.0f + 2.0f;
-	constexpr ImGuiChildFlags childFlags = ImGuiChildFlags_Borders | ImGuiChildFlags_AlwaysUseWindowPadding;
-
-	ImGui::BeginChild("toolbar", ImVec2(0.0f, height), childFlags, ImGuiWindowFlags_NoScrollbar);
-}
-
-void PDMainWindow::endToolbar()
-{
-	ImGui::EndChild();
-	ImGui::PopStyleColor(2);
-	ImGui::PopStyleVar(2);
-	ImGui::Dummy(ImVec2(0.0f, 10.0f));
-}
-
-void PDMainWindow::toolbarSummary(const char *text)
-{
-	const float width = ImGui::CalcTextSize(text).x;
-
-	ImGui::SameLine();
-	ImGui::SetCursorPosX(ImGui::GetCursorPosX() + ImGui::GetContentRegionAvail().x - width);
-	ImGui::AlignTextToFramePadding();
-	ImGui::TextDisabled("%s", text);
-}
-
 void PDMainWindow::drawContent()
 {
 	switch (m_activeView)
@@ -338,6 +309,17 @@ void PDMainWindow::drawContent()
 		case View::Settings:
 		{
 			drawSettingsView();
+
+			break;
+		}
+
+		case View::Behaviors:
+		{
+			if (not m_behaviorEditor.draw())
+			{
+				m_behaviorEditor.close();
+				m_activeView = m_returnView;
+			}
 
 			break;
 		}
@@ -406,30 +388,26 @@ void PDMainWindow::drawBrowserView()
 
 		ImGui::PushID(static_cast<int>(index));
 
-		bool doubleClicked = false;
-		const bool clicked = drawPonyCard(
+		PDCardInput const input = drawPonyCard(
 			group.displayName,
 			sub,
 			thumbnail(group.variants.front().previewPath),
-			m_selectedGroup == static_cast<int>(index),
-			doubleClicked);
+			m_selectedGroup == static_cast<int>(index));
 
-		if (clicked)
+		if (input.clicked)
 		{
 			m_selectedGroup = static_cast<int>(index);
 		}
 
-		if (doubleClicked)
+		if (input.doubleClicked)
 		{
-			if (group.variants.size() > 1)
-			{
-				m_variantGroup = static_cast<int>(index);
-				m_variantOpen = true;
-			}
-			else
-			{
-				addToScene(group.displayName, group.variants.front());
-			}
+			openGroup(index, VariantStage);
+		}
+
+		if (input.rightClicked)
+		{
+			m_selectedGroup = static_cast<int>(index);
+			openGroup(index, VariantEdit);
 		}
 
 		ImGui::PopID();
@@ -441,12 +419,52 @@ void PDMainWindow::drawBrowserView()
 	drawVariantModal();
 }
 
-bool PDMainWindow::drawPonyCard(
+void PDMainWindow::openGroup(std::size_t index, int action)
+{
+	PDPonyGroup const &group = m_catalog.groups()[index];
+	m_variantAction = action;
+
+	if (group.variants.size() > 1)
+	{
+		m_variantGroup = static_cast<int>(index);
+		m_variantOpen = true;
+
+		return;
+	}
+
+	applyVariant(group, group.variants.front());
+}
+
+void PDMainWindow::applyVariant(PDPonyGroup const &group, PDPonyPack const &variant)
+{
+	if (m_variantAction == VariantEdit)
+	{
+		openBehaviorEditor(variant.packPath, group.displayName);
+
+		return;
+	}
+
+	addToScene(group.displayName, variant);
+}
+
+void PDMainWindow::openBehaviorEditor(std::string const &packPath, std::string const &displayName)
+{
+	if (not m_behaviorEditor.open(packPath, displayName))
+	{
+		m_diagnostics.write("Cannot open the behavior editor for " + packPath);
+
+		return;
+	}
+
+	m_returnView = m_activeView;
+	m_activeView = View::Behaviors;
+}
+
+PDCardInput PDMainWindow::drawPonyCard(
 	std::string const &name,
 	std::string const &sub,
 	PDTexture const *texture,
-	bool selected,
-	bool &outDoubleClicked)
+	bool selected)
 {
 	const float nameHeight = ImGui::GetTextLineHeight();
 	const float subHeight = nameHeight * 0.85f;
@@ -456,9 +474,12 @@ bool PDMainWindow::drawPonyCard(
 	const ImVec2 size(CardWidth, cardHeight);
 	const ImVec2 rectMax(position.x + size.x, position.y + size.y);
 
-	const bool clicked = ImGui::InvisibleButton("card", size);
+	PDCardInput input;
+	input.clicked = ImGui::InvisibleButton("card", size);
+
 	const bool hovered = ImGui::IsItemHovered();
-	outDoubleClicked = hovered and ImGui::IsMouseDoubleClicked(ImGuiMouseButton_Left);
+	input.doubleClicked = hovered and ImGui::IsMouseDoubleClicked(ImGuiMouseButton_Left);
+	input.rightClicked = hovered and ImGui::IsMouseClicked(ImGuiMouseButton_Right);
 
 	ImDrawList *drawList = ImGui::GetWindowDrawList();
 	drawList->AddRectFilled(position, rectMax, ImGui::GetColorU32(hovered ? PDTheme::CardBgHover : PDTheme::CardBg), 0.0f);
@@ -478,7 +499,7 @@ bool PDMainWindow::drawPonyCard(
 
 	drawList->AddRect(position, rectMax, ImGui::GetColorU32(selected ? PDTheme::Accent : PDTheme::CardBorder), 0.0f, 0, selected ? 2.0f : 1.0f);
 
-	return clicked;
+	return input;
 }
 
 PDTexture *PDMainWindow::thumbnail(std::string const &path)
@@ -566,8 +587,9 @@ void PDMainWindow::drawSceneView()
 		drawList->AddText(ImVec2(thumbMax.x + 12.0f, rowMin.y + (rowHeight - ImGui::GetTextLineHeight()) * 0.5f), ImGui::GetColorU32(PDTheme::White), entry.displayName.c_str());
 
 		const float stepperWidth = 24.0f + 32.0f + 24.0f;
+		const float editWidth = ImGui::CalcTextSize("Edit").x + 20.0f;
 		const float removeWidth = ImGui::CalcTextSize("Remove").x + 24.0f;
-		const float controlsWidth = stepperWidth + 10.0f + removeWidth;
+		const float controlsWidth = stepperWidth + 10.0f + editWidth + 10.0f + removeWidth;
 
 		ImGui::SetCursorScreenPos(ImVec2(rowMax.x - controlsWidth - 10.0f, rowMin.y + (rowHeight - 24.0f) * 0.5f));
 
@@ -598,6 +620,18 @@ void PDMainWindow::drawSceneView()
 		if (ImGui::Button("+", ImVec2(24.0f, 24.0f)))
 		{
 			entry.quantity += 1;
+		}
+
+		ImGui::SameLine(0.0f, 10.0f);
+
+		if (ImGui::Button("Edit", ImVec2(editWidth, 24.0f)))
+		{
+			openBehaviorEditor(entry.packPath, entry.displayName);
+		}
+
+		if (ImGui::IsItemHovered())
+		{
+			ImGui::SetTooltip("Edit this pack's behaviors");
 		}
 
 		ImGui::SameLine(0.0f, 10.0f);
@@ -865,33 +899,6 @@ int PDMainWindow::gridColumns(float available, float &outIndent)
 	return columns;
 }
 
-bool PDMainWindow::beginModal(const char *title, ImVec2 size)
-{
-	const ImVec2 center = ImGui::GetMainViewport()->GetCenter();
-	ImGui::SetNextWindowPos(center, ImGuiCond_Always, ImVec2(0.5f, 0.5f));
-	ImGui::SetNextWindowSize(size, ImGuiCond_Always);
-	ImGui::PushStyleColor(ImGuiCol_PopupBg, PDTheme::Popup);
-	ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(ModalPad, ModalPad));
-
-	constexpr ImGuiWindowFlags flags = ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoSavedSettings;
-	const bool open = ImGui::BeginPopupModal(title, nullptr, flags);
-
-	ImGui::PopStyleVar();
-
-	if (not open)
-	{
-		ImGui::PopStyleColor();
-	}
-
-	return open;
-}
-
-void PDMainWindow::endModal()
-{
-	ImGui::EndPopup();
-	ImGui::PopStyleColor();
-}
-
 void PDMainWindow::drawVariantModal()
 {
 	if (m_variantOpen)
@@ -946,12 +953,11 @@ void PDMainWindow::drawVariantModal()
 		PDPonyPack const &variant = group.variants[index];
 		ImGui::PushID(static_cast<int>(index));
 
-		bool doubleClicked = false;
-		const bool clicked = drawPonyCard(variant.id, std::string(), thumbnail(variant.previewPath), false, doubleClicked);
+		PDCardInput const input = drawPonyCard(variant.id, std::string(), thumbnail(variant.previewPath), false);
 
 		ImGui::PopID();
 
-		if (clicked)
+		if (input.clicked)
 		{
 			chosen = static_cast<int>(index);
 		}
@@ -968,7 +974,7 @@ void PDMainWindow::drawVariantModal()
 
 	if (chosen >= 0)
 	{
-		addToScene(group.displayName, group.variants[static_cast<std::size_t>(chosen)]);
+		applyVariant(group, group.variants[static_cast<std::size_t>(chosen)]);
 		ImGui::CloseCurrentPopup();
 	}
 
@@ -1053,29 +1059,27 @@ void PDMainWindow::drawTargetModal()
 		const int index = visible[slot];
 		ImGui::PushID(index);
 
-		bool doubleClicked = false;
-		bool clicked = false;
+		PDCardInput input;
 
 		if (index < 0)
 		{
-			clicked = drawPonyCard("Global defaults", "every pack", nullptr, m_settingsTarget.empty(), doubleClicked);
+			input = drawPonyCard("Global defaults", "every pack", nullptr, m_settingsTarget.empty());
 		}
 		else
 		{
 			PDSettingTarget const &target = m_targets[static_cast<std::size_t>(index)];
 			const bool hasOverride = std::find(overridden.begin(), overridden.end(), target.id) != overridden.end();
 
-			clicked = drawPonyCard(
+			input = drawPonyCard(
 				target.label,
 				hasOverride ? "overridden" : std::string(),
 				thumbnail(target.previewPath),
-				m_settingsTarget == target.id,
-				doubleClicked);
+				m_settingsTarget == target.id);
 		}
 
 		ImGui::PopID();
 
-		if (clicked)
+		if (input.clicked)
 		{
 			chosen = true;
 

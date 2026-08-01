@@ -7,6 +7,7 @@
 #include <Library/PDSceneEntry.h>
 #include <Library/PDScriptCatalog.h>
 #include <Library/PDSettings.h>
+#include <UI/Windows/PDBehaviorEditor.h>
 
 #include <imgui.h>
 
@@ -22,6 +23,13 @@ struct PDSettingTarget
 	std::string id;
 	std::string label;
 	std::string previewPath;
+};
+
+struct PDCardInput
+{
+	bool clicked = false;
+	bool doubleClicked = false;
+	bool rightClicked = false;
 };
 
 class PDMainWindow
@@ -44,15 +52,12 @@ private:
 	static constexpr float ScriptRowHeight = 34.0f;
 	static constexpr float ColumnGap = 18.0f;
 	static constexpr float RowPad = 10.0f;
-	static constexpr float ToolbarPadX = 10.0f;
-	static constexpr float ToolbarPadY = 6.0f;
 	static constexpr float ToggleWidth = 78.0f;
 	static constexpr float ToggleHeight = 22.0f;
 	static constexpr float ShadowSpread = 6.0f;
 	static constexpr float SettingRowHeight = 48.0f;
 	static constexpr float SettingControlWidth = 190.0f;
 	static constexpr float TargetPickerWidth = 170.0f;
-	static constexpr float ModalPad = 16.0f;
 
 	enum class View
 	{
@@ -60,7 +65,14 @@ private:
 		Scene,
 		Modules,
 		Settings,
-		Log
+		Log,
+		Behaviors
+	};
+
+	enum VariantAction
+	{
+		VariantStage,
+		VariantEdit
 	};
 
 	void drawSidebar(float width, float height);
@@ -68,14 +80,18 @@ private:
 	void drawRunControl();
 	void setView(View view);
 
-	void beginToolbar();
-	void endToolbar();
-	void toolbarSummary(const char *text);
-
 	void drawContent();
 	void drawBrowserView();
-	bool drawPonyCard(std::string const &name, std::string const &sub, PDTexture const *texture, bool selected, bool &outDoubleClicked);
+	PDCardInput drawPonyCard(
+		std::string const &name,
+		std::string const &sub,
+		PDTexture const *texture,
+		bool selected);
 	PDTexture *thumbnail(std::string const &path);
+
+	void openGroup(std::size_t index, int action);
+	void applyVariant(PDPonyGroup const &group, PDPonyPack const &variant);
+	void openBehaviorEditor(std::string const &packPath, std::string const &displayName);
 
 	void drawSceneView();
 	void addToScene(std::string const &displayName, PDPonyPack const &pack);
@@ -101,8 +117,6 @@ private:
 	void openInEditor();
 
 	static int gridColumns(float available, float &outIndent);
-	static bool beginModal(const char *title, ImVec2 size);
-	static void endModal();
 
 	static void addImageFitted(ImDrawList *drawList, PDTexture const *texture, ImVec2 areaMin, ImVec2 areaMax, float margin);
 	static void addShadow(ImDrawList *drawList, ImVec2 rectMin, ImVec2 rectMax);
@@ -134,7 +148,11 @@ private:
 	std::vector<PDSettingTarget> m_targets;
 
 	int m_variantGroup = -1;
+	int m_variantAction = VariantStage;
 	bool m_variantOpen = false;
+
+	PDBehaviorEditor m_behaviorEditor;
+	View m_returnView = View::Browser;
 
 	std::vector<PDMonitor> m_monitors;
 	std::string m_configStatus;
