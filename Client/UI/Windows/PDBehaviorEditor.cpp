@@ -1,5 +1,6 @@
 #include <UI/Windows/PDBehaviorEditor.h>
 
+#include <App/PDMainApplication.h>
 #include <Core/PDString.h>
 #include <Engine/PDDiagnostics.h>
 #include <Library/PDPonyPackOverride.h>
@@ -7,9 +8,11 @@
 #include <UI/PDWidgets.h>
 
 #include <imgui.h>
+#include <imgui_stdlib.h>
 
 #include <algorithm>
 #include <cstdio>
+#include <filesystem>
 #include <fstream>
 
 static nlohmann::json const &behaviorField(nlohmann::json const &behavior, char const *key)
@@ -60,14 +63,8 @@ static double fieldDuration(nlohmann::json const &behavior, char const *key)
 	return fieldNumber(duration, key);
 }
 
-PDBehaviorEditor::PDBehaviorEditor(PDDiagnostics &diagnostics)
-	: m_diagnostics(diagnostics)
+static bool readDocument(std::string const &path, nlohmann::json &outDocument)
 {
-}
-
-bool PDBehaviorEditor::open(std::string const &packPath, std::string const &displayName)
-{
-	std::string const path = ponyPackDocumentPath(packPath);
 	std::ifstream stream(path, std::ios::binary);
 
 	if (not stream)
@@ -82,13 +79,50 @@ bool PDBehaviorEditor::open(std::string const &packPath, std::string const &disp
 		return false;
 	}
 
+	outDocument = std::move(document);
+
+	return true;
+}
+
+PDBehaviorEditor::PDBehaviorEditor(PDMainApplication &app, PDDiagnostics &diagnostics)
+	: m_app(app),
+	  m_diagnostics(diagnostics)
+{
+	m_movements = {
+		"None",
+		"MouseOver",
+		"Sleep",
+		"Dragged",
+		"Horizontal_Only",
+		"Vertical_Only",
+		"Diagonal_Only",
+		"Horizontal_Vertical",
+		"Diagonal_Horizontal",
+		"Diagonal_Vertical",
+		"All"};
+}
+
+bool PDBehaviorEditor::open(std::string const &packPath, std::string const &displayName)
+{
+	nlohmann::json document;
+
+	if (not readDocument(ponyPackDocumentPath(packPath), document))
+	{
+		return false;
+	}
+
 	m_document = std::move(document);
+	m_base = nlohmann::json();
+	readDocument((std::filesystem::path(packPath) / "pony.json").string(), m_base);
+
 	m_packPath = packPath;
 	m_displayName = displayName;
 	m_hasOverride = ponyPackOverrideExists(packPath);
 	m_expanded = -1;
+	m_resetOpen = false;
 	m_search[0] = '\0';
 	m_status.clear();
+	m_mode = 0;
 
 	rebuildIndex();
 
@@ -115,19 +149,70 @@ nlohmann::json const &PDBehaviorEditor::behaviors() const
 
 void PDBehaviorEditor::rebuildIndex()
 {
+	int const previousMode = m_mode;
+
 	m_modes.clear();
 	m_linkTargets.clear();
+	m_behaviorIds.clear();
+	m_animations.clear();
+	m_baseByIndex.clear();
 
 	nlohmann::json const &pool = behaviors();
 
-	for (nlohmann::json const &behavior : pool)
+	auto const animations = m_document.find("animations");
+
+	if (animations != m_document.end() and animations->is_object())
 	{
-		std::string const link = fieldString(behavior, "linkedBehavior");
+		for (auto const &entry : animations->items())
+		{
+			if (not entry.value().is_object())
+			{
+				continue;
+			}
+
+			if (fieldString(entry.value(), "left").empty() and fieldString(entry.value(), "right").empty())
+			{
+				continue;
+			}
+
+			m_animations.push_back(entry.key());
+		}
+	}
+
+	std::sort(m_animations.begin(), m_animations.end());
+
+	for (nlohmann::json const &entry : pool)
+	{
+		std::string const link = fieldString(entry, "linkedBehavior");
 
 		if (not link.empty())
 		{
 			m_linkTargets.push_back(link);
 		}
+
+		m_behaviorIds.push_back(fieldString(entry, "id"));
+	}
+
+	auto const basePool = m_base.find("behaviors");
+
+	for (std::string const &id : m_behaviorIds)
+	{
+		std::size_t match = NoBaseIndex;
+
+		if (basePool != m_base.end() and basePool->is_array())
+		{
+			for (std::size_t index = 0; index < basePool->size(); index += 1)
+			{
+				if (fieldString((*basePool)[index], "id") == id)
+				{
+					match = index;
+
+					break;
+				}
+			}
+		}
+
+		m_baseByIndex.push_back(match);
 	}
 
 	std::sort(m_linkTargets.begin(), m_linkTargets.end());
@@ -168,6 +253,99 @@ void PDBehaviorEditor::rebuildIndex()
 	}
 
 	m_mode = m_modes.empty() ? 0 : m_modes.front().id;
+
+	for (PDBehaviorMode const &mode : m_modes)
+	{
+		if (mode.id == previousMode)
+		{
+			m_mode = previousMode;
+
+			break;
+		}
+	}
+}
+
+nlohmann::json &PDBehaviorEditor::behavior(std::size_t index)
+{
+	return m_document["behaviors"][index];
+}
+
+nlohmann::json const *PDBehaviorEditor::baseValue(std::size_t index, char const *key) const
+{
+	if (index >= m_baseByIndex.size() or m_baseByIndex[index] == NoBaseIndex)
+	{
+		return nullptr;
+	}
+
+	auto const basePool = m_base.find("behaviors");
+
+	if (basePool == m_base.end() or not basePool->is_array())
+	{
+		return nullptr;
+	}
+
+	nlohmann::json const &entry = (*basePool)[m_baseByIndex[index]];
+	auto const found = entry.find(key);
+
+	return found != entry.end() ? &(*found) : nullptr;
+}
+
+void PDBehaviorEditor::commit()
+{
+	std::string error;
+
+	if (not writePonyPackOverride(m_packPath, m_document.dump(2), error))
+	{
+		m_status = error;
+		m_diagnostics.write("Behavior editor: " + error);
+
+		return;
+	}
+
+	m_hasOverride = true;
+	m_status.clear();
+	rebuildIndex();
+	m_app.reloadPack(m_packPath);
+}
+
+void PDBehaviorEditor::revertField(std::size_t index, char const *key)
+{
+	nlohmann::json const *const base = baseValue(index, key);
+
+	if (base == nullptr)
+	{
+		behavior(index).erase(key);
+	}
+	else
+	{
+		behavior(index)[key] = *base;
+	}
+
+	commit();
+}
+
+void PDBehaviorEditor::resetToPack()
+{
+	std::string error;
+
+	if (not removePonyPackOverride(m_packPath, error))
+	{
+		m_status = error;
+		m_diagnostics.write("Behavior editor: " + error);
+
+		return;
+	}
+
+	m_hasOverride = false;
+	m_status.clear();
+
+	if (not m_base.is_null())
+	{
+		m_document = m_base;
+	}
+
+	rebuildIndex();
+	m_app.reloadPack(m_packPath);
 }
 
 char const *PDBehaviorEditor::modeName(int id) const
@@ -215,6 +393,287 @@ double PDBehaviorEditor::eligibleTotal(int mode) const
 	}
 
 	return total;
+}
+
+PDFieldSlot PDBehaviorEditor::beginField(char const *label)
+{
+	PDFieldSlot slot;
+	slot.position = ImGui::GetCursorScreenPos();
+	slot.position.x += FieldIndent;
+	slot.width = ImGui::GetContentRegionAvail().x - FieldIndent;
+	slot.rectMax = ImVec2(slot.position.x + slot.width, slot.position.y + FieldRowHeight);
+
+	ImGui::Dummy(ImVec2(slot.width, FieldRowHeight));
+
+	const float controlHeight = ImGui::GetFrameHeight();
+	slot.controlY = slot.position.y + (FieldRowHeight - controlHeight) * 0.5f;
+	slot.controlLeft = slot.rectMax.x - 10.0f - FieldControlWidth;
+	slot.markerLeft = slot.controlLeft - 8.0f - controlHeight;
+
+	ImDrawList *drawList = ImGui::GetWindowDrawList();
+	drawList->AddRectFilled(slot.position, slot.rectMax, ImGui::GetColorU32(PDTheme::Toolbar), 0.0f);
+	drawList->AddRect(slot.position, slot.rectMax, ImGui::GetColorU32(PDTheme::CardBorder), 0.0f, 0, 1.0f);
+
+	drawList->AddText(
+		ImVec2(slot.position.x + 10.0f, slot.position.y + (FieldRowHeight - ImGui::GetTextLineHeight()) * 0.5f),
+		ImGui::GetColorU32(PDTheme::White),
+		label);
+
+	ImGui::SetCursorScreenPos(ImVec2(slot.controlLeft, slot.controlY));
+	ImGui::SetNextItemWidth(FieldControlWidth);
+
+	return slot;
+}
+
+void PDBehaviorEditor::endField(PDFieldSlot const &slot)
+{
+	ImGui::SetCursorScreenPos(ImVec2(slot.position.x - FieldIndent, slot.position.y));
+	ImGui::Dummy(ImVec2(slot.width + FieldIndent, FieldRowHeight + 4.0f));
+}
+
+void PDBehaviorEditor::drawRevertMarker(PDFieldSlot const &slot, std::size_t index, char const *key)
+{
+	nlohmann::json const *const base = baseValue(index, key);
+	nlohmann::json const &current = behaviorField(behaviors()[index], key);
+	const bool present = not current.is_null();
+	const bool modified = base == nullptr ? present : (not present or *base != current);
+
+	if (not modified)
+	{
+		return;
+	}
+
+	const float controlHeight = ImGui::GetFrameHeight();
+	ImGui::SetCursorScreenPos(ImVec2(slot.markerLeft, slot.controlY));
+
+	if (ImGui::Button("x", ImVec2(controlHeight, controlHeight)))
+	{
+		revertField(index, key);
+	}
+
+	if (ImGui::IsItemHovered())
+	{
+		ImGui::SetTooltip("Reset to the pack value");
+	}
+}
+
+void PDBehaviorEditor::drawNameField(std::size_t index)
+{
+	PDFieldSlot const slot = beginField("Name");
+	std::string value = fieldString(behaviors()[index], "name");
+
+	if (ImGui::InputText("##name", &value))
+	{
+		behavior(index)["name"] = value;
+	}
+
+	if (ImGui::IsItemDeactivatedAfterEdit())
+	{
+		commit();
+	}
+
+	drawRevertMarker(slot, index, "name");
+	endField(slot);
+}
+
+void PDBehaviorEditor::drawChanceField(std::size_t index)
+{
+	PDFieldSlot const slot = beginField("Chance");
+	double value = fieldNumber(behaviors()[index], "chance");
+
+	if (ImGui::InputDouble("##chance", &value, 0.0, 0.0, "%.6g"))
+	{
+		behavior(index)["chance"] = value < 0.0 ? 0.0 : value;
+	}
+
+	if (ImGui::IsItemDeactivatedAfterEdit())
+	{
+		commit();
+	}
+
+	drawRevertMarker(slot, index, "chance");
+	endField(slot);
+}
+
+void PDBehaviorEditor::drawSpeedField(std::size_t index)
+{
+	PDFieldSlot const slot = beginField("Speed (px/s)");
+	double value = fieldNumber(behaviors()[index], "speedPxPerSec");
+
+	if (ImGui::InputDouble("##speed", &value, 0.0, 0.0, "%.6g"))
+	{
+		behavior(index)["speedPxPerSec"] = value < 0.0 ? 0.0 : value;
+	}
+
+	if (ImGui::IsItemDeactivatedAfterEdit())
+	{
+		commit();
+	}
+
+	drawRevertMarker(slot, index, "speedPxPerSec");
+	endField(slot);
+}
+
+void PDBehaviorEditor::drawDurationField(std::size_t index)
+{
+	PDFieldSlot const slot = beginField("Duration (ms)");
+
+	int values[2] = {
+		static_cast<int>(fieldDuration(behaviors()[index], "min")),
+		static_cast<int>(fieldDuration(behaviors()[index], "max"))};
+
+	if (ImGui::InputInt2("##duration", values))
+	{
+		values[0] = values[0] < 0 ? 0 : values[0];
+		values[1] = values[1] < values[0] ? values[0] : values[1];
+
+		behavior(index)["durationMs"]["min"] = values[0];
+		behavior(index)["durationMs"]["max"] = values[1];
+	}
+
+	if (ImGui::IsItemDeactivatedAfterEdit())
+	{
+		commit();
+	}
+
+	drawRevertMarker(slot, index, "durationMs");
+	endField(slot);
+}
+
+void PDBehaviorEditor::drawGroupField(std::size_t index)
+{
+	PDFieldSlot const slot = beginField("Mode");
+
+	std::vector<std::string> labels;
+	labels.push_back("0  -  any mode");
+
+	int current = 0;
+	int const group = fieldGroup(behaviors()[index]);
+
+	for (std::size_t entry = 0; entry < m_modes.size(); entry += 1)
+	{
+		char label[96];
+		std::snprintf(
+			label,
+			sizeof(label),
+			"%d  -  %s",
+			m_modes[entry].id,
+			m_modes[entry].name.empty() ? "unnamed" : m_modes[entry].name.c_str());
+		labels.push_back(label);
+
+		if (m_modes[entry].id == group)
+		{
+			current = static_cast<int>(entry) + 1;
+		}
+	}
+
+	std::vector<const char *> items;
+
+	for (std::string const &label : labels)
+	{
+		items.push_back(label.c_str());
+	}
+
+	if (ImGui::Combo("##group", &current, items.data(), static_cast<int>(items.size())))
+	{
+		behavior(index)["group"] = current == 0 ? 0 : m_modes[static_cast<std::size_t>(current - 1)].id;
+		commit();
+	}
+
+	drawRevertMarker(slot, index, "group");
+	endField(slot);
+}
+
+void PDBehaviorEditor::drawFlagField(std::size_t index, char const *key, char const *label)
+{
+	PDFieldSlot const slot = beginField(label);
+	bool value = fieldBool(behaviors()[index], key);
+
+	ImGui::SetCursorScreenPos(ImVec2(slot.controlLeft, slot.controlY));
+
+	if (ImGui::Checkbox("##flag", &value))
+	{
+		behavior(index)[key] = value;
+		commit();
+	}
+
+	drawRevertMarker(slot, index, key);
+	endField(slot);
+}
+
+void PDBehaviorEditor::drawChoiceField(
+	std::size_t index,
+	char const *key,
+	char const *label,
+	std::vector<std::string> const &options,
+	bool allowNone)
+{
+	PDFieldSlot const slot = beginField(label);
+	std::string const value = fieldString(behaviors()[index], key);
+
+	std::vector<std::string> labels;
+
+	if (allowNone)
+	{
+		labels.push_back("(none)");
+	}
+
+	int current = 0;
+
+	for (std::string const &option : options)
+	{
+		if (option == value)
+		{
+			current = static_cast<int>(labels.size());
+		}
+
+		labels.push_back(option);
+	}
+
+	if (not value.empty() and std::find(options.begin(), options.end(), value) == options.end())
+	{
+		current = static_cast<int>(labels.size());
+		labels.push_back(value);
+	}
+
+	std::vector<const char *> items;
+
+	for (std::string const &entry : labels)
+	{
+		items.push_back(entry.c_str());
+	}
+
+	if (ImGui::Combo("##choice", &current, items.data(), static_cast<int>(items.size())))
+	{
+		if (allowNone and current == 0)
+		{
+			behavior(index).erase(key);
+		}
+		else
+		{
+			behavior(index)[key] = labels[static_cast<std::size_t>(current)];
+		}
+
+		commit();
+	}
+
+	drawRevertMarker(slot, index, key);
+	endField(slot);
+}
+
+void PDBehaviorEditor::drawFields(std::size_t index)
+{
+	drawNameField(index);
+	drawChoiceField(index, "animation", "Animation", m_animations, false);
+	drawChanceField(index);
+	drawDurationField(index);
+	drawChoiceField(index, "movement", "Movement", m_movements, false);
+	drawSpeedField(index);
+	drawChoiceField(index, "linkedBehavior", "Play next", m_behaviorIds, true);
+	drawGroupField(index);
+	drawFlagField(index, "skip", "Never pick at random");
+	drawFlagField(index, "special", "Extended behavior");
+	drawFlagField(index, "preventAnimationLoop", "Play animation once");
 }
 
 void PDBehaviorEditor::drawBehaviorRow(std::size_t index, double total)
@@ -305,6 +764,47 @@ void PDBehaviorEditor::drawBehaviorRow(std::size_t index, double total)
 	}
 
 	endRowCard(card, ListRowHeight, 4.0f);
+
+	if (m_expanded == static_cast<int>(index))
+	{
+		drawFields(index);
+		ImGui::Dummy(ImVec2(0.0f, 6.0f));
+	}
+}
+
+void PDBehaviorEditor::drawResetModal()
+{
+	if (m_resetOpen)
+	{
+		m_resetOpen = false;
+		ImGui::OpenPopup("Reset behaviors");
+	}
+
+	if (not beginModal("Reset behaviors", ImVec2(420.0f, 180.0f)))
+	{
+		return;
+	}
+
+	ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
+	ImGui::TextWrapped("Discard every edit for %s and go back to the values the pack ships with?", m_displayName.c_str());
+	ImGui::PopStyleColor();
+
+	ImGui::Dummy(ImVec2(0.0f, 16.0f));
+
+	if (ImGui::Button("Reset", ImVec2(110.0f, 32.0f)))
+	{
+		resetToPack();
+		ImGui::CloseCurrentPopup();
+	}
+
+	ImGui::SameLine();
+
+	if (ImGui::Button("Cancel", ImVec2(110.0f, 32.0f)))
+	{
+		ImGui::CloseCurrentPopup();
+	}
+
+	endModal();
 }
 
 bool PDBehaviorEditor::draw()
@@ -360,6 +860,21 @@ bool PDBehaviorEditor::draw()
 	}
 
 	ImGui::SameLine();
+	ImGui::BeginDisabled(not m_hasOverride);
+
+	if (ImGui::Button("Reset"))
+	{
+		m_resetOpen = true;
+	}
+
+	ImGui::EndDisabled();
+
+	if (m_hasOverride and ImGui::IsItemHovered())
+	{
+		ImGui::SetTooltip("Discard every edit for this pack");
+	}
+
+	ImGui::SameLine();
 	ImGui::SetNextItemWidth(180.0f);
 	ImGui::InputTextWithHint("##behaviorSearch", "Search behaviors", m_search, sizeof(m_search));
 
@@ -374,10 +889,19 @@ bool PDBehaviorEditor::draw()
 	toolbarSummary(summary);
 
 	endToolbar();
+	drawResetModal();
 
 	if (back)
 	{
 		return false;
+	}
+
+	if (not m_status.empty())
+	{
+		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::Stop);
+		ImGui::TextWrapped("%s", m_status.c_str());
+		ImGui::PopStyleColor();
+		ImGui::Dummy(ImVec2(0.0f, 6.0f));
 	}
 
 	std::string const filter = toLower(m_search);
