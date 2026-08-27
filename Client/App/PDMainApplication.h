@@ -48,7 +48,6 @@ public:
 	}
 
 	static std::string coreScriptPath();
-	static std::string scriptsRoot();
 	static std::vector<std::string> requiredScripts();
 
 private:

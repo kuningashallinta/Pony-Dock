@@ -1,6 +1,7 @@
 #include <App/PDMainApplication.h>
 
 #include <Assets/resource.h>
+#include <Core/PDPaths.h>
 
 #include <algorithm>
 #include <chrono>
@@ -71,7 +72,7 @@ void PDMainApplication::runOverlay(HINSTANCE instance)
 	}
 
 	m_monitors = enumerateMonitors();
-	m_scene.initialize(m_overlay.device(), m_diagnostics, m_settings, PONYDOCK_SCRIPTS_DIR);
+	m_scene.initialize(m_overlay.device(), m_diagnostics, m_settings, scriptsRoot());
 	m_scene.loadScript(coreScriptPath());
 
 	m_diagnostics.write("Found " + std::to_string(m_monitors.size()) + " displays");
@@ -334,17 +335,12 @@ std::vector<std::string> PDMainApplication::loadedScripts() const
 
 std::string PDMainApplication::coreScriptPath()
 {
-	return std::filesystem::path(std::string(PONYDOCK_SCRIPTS_DIR) + "/core.lua").lexically_normal().string();
-}
-
-std::string PDMainApplication::scriptsRoot()
-{
-	return PONYDOCK_SCRIPTS_DIR;
+	return std::filesystem::path(scriptsRoot() + "/core.lua").lexically_normal().string();
 }
 
 std::vector<std::string> PDMainApplication::requiredScripts()
 {
-	std::string const library = std::filesystem::path(std::string(PONYDOCK_SCRIPTS_DIR) + "/lib/pd.lua").lexically_normal().string();
+	std::string const library = std::filesystem::path(scriptsRoot() + "/lib/pd.lua").lexically_normal().string();
 
 	return {coreScriptPath(), library};
 }

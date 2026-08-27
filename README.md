@@ -31,7 +31,7 @@ cmake --build --preset x64-Release
 
 vcpkg is a submodule and builds nlohmann-json, EnTT, stb, Lua and sol2 on the first configure, so expect that step to take a while. Dear ImGui is vendored as well, on the docking branch.
 
-The overlay is a click-through layered window over the virtual desktop, taking clicks only while the cursor is on a pony. Pack and script directories are compile definitions pointing at the source tree, so the build runs in place. Copying `Client.exe` elsewhere gets you an app with no ponies.
+The overlay is a click-through layered window over the virtual desktop, taking clicks only while the cursor is on a pony. `Packs/` and `Scripts/` are copied next to `Client.exe` after every build and loaded from there, so the build output already has the layout a release needs.
 
 ## License
 

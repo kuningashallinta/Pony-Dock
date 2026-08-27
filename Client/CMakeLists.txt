@@ -9,10 +9,7 @@ set_property(TARGET Client PROPERTY CXX_STANDARD 23)
 
 target_include_directories(Client PRIVATE .)
 
-target_compile_definitions(Client PRIVATE
-	NOMINMAX
-	"PONYDOCK_PACKS_DIR=\"${CMAKE_SOURCE_DIR}/Packs\""
-	"PONYDOCK_SCRIPTS_DIR=\"${CMAKE_SOURCE_DIR}/Scripts\"")
+target_compile_definitions(Client PRIVATE NOMINMAX)
 
 find_package(nlohmann_json CONFIG REQUIRED)
 find_package(EnTT CONFIG REQUIRED)
@@ -29,3 +26,12 @@ target_link_libraries(Client PRIVATE
 	${LUA_LIBRARIES}
 	d3dcompiler
 	dwmapi)
+
+add_custom_command(TARGET Client POST_BUILD
+	COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
+		"${CMAKE_SOURCE_DIR}/Packs" "$<TARGET_FILE_DIR:Client>/Packs"
+	COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
+		"${CMAKE_SOURCE_DIR}/Scripts" "$<TARGET_FILE_DIR:Client>/Scripts"
+	COMMAND ${CMAKE_COMMAND} -E copy_if_different
+		"${CMAKE_SOURCE_DIR}/LICENSE" "${CMAKE_SOURCE_DIR}/CREDITS.md" "$<TARGET_FILE_DIR:Client>"
+	VERBATIM)

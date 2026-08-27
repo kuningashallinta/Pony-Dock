@@ -1,6 +1,7 @@
 #include <UI/Windows/PDMainWindow.h>
 
 #include <App/PDMainApplication.h>
+#include <Core/PDPaths.h>
 #include <Core/PDString.h>
 #include <UI/PDFileDialog.h>
 #include <UI/PDImGui.h>
@@ -75,8 +76,8 @@ PDMainWindow::PDMainWindow(PDMainApplication &app, PDImGui &host, PDDiagnostics 
 	  m_diagnostics(diagnostics),
 	  m_behaviorEditor(app, host, diagnostics)
 {
-	m_catalog.load(PONYDOCK_PACKS_DIR);
-	m_scripts.load(PONYDOCK_SCRIPTS_DIR);
+	m_catalog.load(packsRoot());
+	m_scripts.load(scriptsRoot());
 	m_requiredScripts = PDMainApplication::requiredScripts();
 
 	for (PDPonyGroup const &group : m_catalog.groups())
@@ -710,7 +711,7 @@ void PDMainWindow::drawModulesView()
 
 	if (ImGui::Button("Rescan"))
 	{
-		m_scripts.load(PONYDOCK_SCRIPTS_DIR);
+		m_scripts.load(scriptsRoot());
 	}
 
 	ImGui::SameLine();
