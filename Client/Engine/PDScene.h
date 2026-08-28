@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Engine/Components/PDAnimation.h>
+#include <Engine/Components/PDLabel.h>
 #include <Engine/Components/PDPack.h>
 #include <Engine/Components/PDPosition.h>
 #include <Engine/Components/PDScript.h>
@@ -9,6 +10,7 @@
 #include <Engine/PDDiagnostics.h>
 #include <Engine/PDLua.h>
 #include <Engine/PDSpriteRenderer.h>
+#include <Engine/PDTextCache.h>
 #include <Engine/PDTextureCache.h>
 #include <Library/PDPonyPackData.h>
 
@@ -78,6 +80,7 @@ private:
 
 	PDDiagnostics *m_diagnostics = nullptr;
 	PDTextureCache m_textures;
+	PDTextCache m_labels;
 	PDAnimationCache m_animations;
 	std::unordered_map<std::string, PDPonyPackData> m_packs;
 	PDLua m_lua;

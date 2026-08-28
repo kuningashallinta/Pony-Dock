@@ -25,7 +25,9 @@ target_link_libraries(Client PRIVATE
 	sol2::sol2
 	${LUA_LIBRARIES}
 	d3dcompiler
-	dwmapi)
+	dwmapi
+	d2d1
+	dwrite)
 
 add_custom_command(TARGET Client POST_BUILD
 	COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different

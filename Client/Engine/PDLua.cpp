@@ -167,6 +167,7 @@ sol::table PDLua::buildPackReal(PDPonyPackData const &pack)
 
 	sol::table real = m_lua.create_table();
 	real["id"] = pack.id;
+	real["name"] = pack.name;
 	real["behaviors"] = behaviors;
 	real["by_id"] = byId;
 	real["groups"] = groups;

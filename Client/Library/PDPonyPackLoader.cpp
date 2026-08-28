@@ -159,6 +159,7 @@ bool loadPonyPack(std::string const &packPath, PDPonyPackData &outData, std::str
 
 	outData.packPath = root.lexically_normal().string();
 	outData.id = stringOr(document, "id", root.filename().string());
+	outData.name = stringOr(document, "name", outData.id);
 	outData.previewPath = absolutePath(root, stringOr(document, "preview", std::string()));
 
 	auto const animations = document.find("animations");

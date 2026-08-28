@@ -18,6 +18,7 @@ void PDScene::initialize(
 {
 	m_diagnostics = &diagnostics;
 	m_textures.initialize(device);
+	m_labels.initialize(device);
 	m_animations.initialize(m_textures, diagnostics);
 	m_lua.initialize(scriptsRoot, diagnostics, settings);
 
@@ -193,6 +194,7 @@ void PDScene::spawnEntity(std::string const &packPath, std::string const &script
 	m_registry.emplace<PDSprite>(entity, preview, 96.0f, 96.0f);
 	m_registry.emplace<PDPack>(entity, packData);
 	m_registry.emplace<PDAnimation>(entity);
+	m_registry.emplace<PDLabel>(entity);
 
 	PDScript &script = m_registry.emplace<PDScript>(entity);
 	script.path = scriptPath;
@@ -398,7 +400,7 @@ void PDScene::tick(
 
 	m_lua.beginFrame(static_cast<float>(boundsWidth), static_cast<float>(boundsHeight), monitors);
 
-	auto view = m_registry.view<PDPosition, PDSprite const, PDAnimation const, PDScript>();
+	auto view = m_registry.view<PDPosition, PDSprite const, PDAnimation const, PDScript, PDLabel>();
 
 	for (auto const entity : view)
 	{
@@ -452,6 +454,15 @@ void PDScene::tick(
 
 		script.errorCount = 0;
 
+		PDLabel &label = view.get<PDLabel>(entity);
+		std::string const text = script.self["label"].get_or(std::string());
+
+		if (text != label.text)
+		{
+			label.text = text;
+			label.texture = text.empty() ? nullptr : m_labels.texture(text);
+		}
+
 		if (entity == m_dragged)
 		{
 			continue;
@@ -486,5 +497,33 @@ void PDScene::draw(PDSpriteRenderer &renderer) const
 			sprite.v0,
 			sprite.u1,
 			sprite.v1);
+	}
+
+	auto labels = m_registry.view<PDPosition const, PDSprite const, PDLabel const>();
+
+	for (auto const entity : labels)
+	{
+		PDLabel const &label = labels.get<PDLabel const>(entity);
+
+		if (label.texture == nullptr or not label.texture->valid())
+		{
+			continue;
+		}
+
+		PDPosition const &position = labels.get<PDPosition const>(entity);
+		PDSprite const &sprite = labels.get<PDSprite const>(entity);
+		float const width = static_cast<float>(label.texture->width());
+		float const height = static_cast<float>(label.texture->height());
+
+		renderer.draw(
+			label.texture->view(),
+			std::floor(position.x - sprite.offsetX + (sprite.width - width) * 0.5f + 0.5f),
+			std::floor(position.y - sprite.offsetY - height - 4.0f + 0.5f),
+			width,
+			height,
+			0.0f,
+			0.0f,
+			1.0f,
+			1.0f);
 	}
 }

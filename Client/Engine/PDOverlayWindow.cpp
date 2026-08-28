@@ -126,7 +126,7 @@ bool PDOverlayWindow::createDevice()
 		nullptr,
 		D3D_DRIVER_TYPE_HARDWARE,
 		nullptr,
-		0,
+		D3D11_CREATE_DEVICE_BGRA_SUPPORT,
 		featureLevelArray,
 		1,
 		D3D11_SDK_VERSION,

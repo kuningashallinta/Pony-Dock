@@ -13,6 +13,7 @@ settings.slider("speed", "Speed multiplier", 1.0, 0.1, 4.0)
 settings.checkbox("flying", "Allow flying", true)
 settings.checkbox("extended", "Allow extended behaviors", true)
 settings.dropdown("start", "Spawn position", {"Anywhere", "Ground", "Center"}, "Anywhere")
+settings.checkbox("names", "Show names on hover", true)
 
 settings.button("shuffle", "Reshuffle behaviors", function()
 	core.generation = core.generation + 1
@@ -245,6 +246,12 @@ function core.spawn(self)
 end
 
 function core.tick(self, dt)
+	if self.mouse_over and self:setting("names") ~= false then
+		self.label = self.pack.name
+	else
+		self.label = nil
+	end
+
 	if self.generation ~= core.generation then
 		self.generation = core.generation
 		advance(self)

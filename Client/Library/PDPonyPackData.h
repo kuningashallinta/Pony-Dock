@@ -37,6 +37,7 @@ struct PDPonyBehaviorGroup
 struct PDPonyPackData
 {
 	std::string id;
+	std::string name;
 	std::string packPath;
 	std::string previewPath;
 

@@ -5,6 +5,42 @@
 
 #include <utility>
 
+static ID3D11ShaderResourceView *upload(ID3D11Device *device, unsigned char const *pixels, int width, int height)
+{
+	D3D11_TEXTURE2D_DESC textureDesc = {};
+	textureDesc.Width = static_cast<UINT>(width);
+	textureDesc.Height = static_cast<UINT>(height);
+	textureDesc.MipLevels = 1;
+	textureDesc.ArraySize = 1;
+	textureDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
+	textureDesc.SampleDesc.Count = 1;
+	textureDesc.Usage = D3D11_USAGE_IMMUTABLE;
+	textureDesc.BindFlags = D3D11_BIND_SHADER_RESOURCE;
+
+	D3D11_SUBRESOURCE_DATA data = {};
+	data.pSysMem = pixels;
+	data.SysMemPitch = static_cast<UINT>(width) * 4;
+
+	ID3D11Texture2D *texture = nullptr;
+	device->CreateTexture2D(&textureDesc, &data, &texture);
+
+	if (texture == nullptr)
+	{
+		return nullptr;
+	}
+
+	D3D11_SHADER_RESOURCE_VIEW_DESC viewDesc = {};
+	viewDesc.Format = textureDesc.Format;
+	viewDesc.ViewDimension = D3D11_SRV_DIMENSION_TEXTURE2D;
+	viewDesc.Texture2D.MipLevels = 1;
+
+	ID3D11ShaderResourceView *view = nullptr;
+	device->CreateShaderResourceView(texture, &viewDesc, &view);
+	texture->Release();
+
+	return view;
+}
+
 PDTexture::PDTexture(ID3D11Device *device, std::string const &path)
 {
 	int channels = 0;
@@ -15,40 +51,21 @@ PDTexture::PDTexture(ID3D11Device *device, std::string const &path)
 		return;
 	}
 
-	D3D11_TEXTURE2D_DESC textureDesc = {};
-	textureDesc.Width = static_cast<UINT>(m_width);
-	textureDesc.Height = static_cast<UINT>(m_height);
-	textureDesc.MipLevels = 1;
-	textureDesc.ArraySize = 1;
-	textureDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
-	textureDesc.SampleDesc.Count = 1;
-	textureDesc.Usage = D3D11_USAGE_IMMUTABLE;
-	textureDesc.BindFlags = D3D11_BIND_SHADER_RESOURCE;
-
-	D3D11_SUBRESOURCE_DATA data = {};
-	data.pSysMem = pixels;
-	data.SysMemPitch = static_cast<UINT>(m_width) * 4;
-
-	ID3D11Texture2D *texture = nullptr;
-	device->CreateTexture2D(&textureDesc, &data, &texture);
-
+	m_view = upload(device, pixels, m_width, m_height);
 	stbi_image_free(pixels);
 
-	if (texture == nullptr)
+	if (m_view == nullptr)
 	{
 		m_width = 0;
 		m_height = 0;
-
-		return;
 	}
+}
 
-	D3D11_SHADER_RESOURCE_VIEW_DESC viewDesc = {};
-	viewDesc.Format = textureDesc.Format;
-	viewDesc.ViewDimension = D3D11_SRV_DIMENSION_TEXTURE2D;
-	viewDesc.Texture2D.MipLevels = 1;
-
-	device->CreateShaderResourceView(texture, &viewDesc, &m_view);
-	texture->Release();
+PDTexture::PDTexture(ID3D11Device *device, unsigned char const *pixels, int width, int height)
+	: m_width(width),
+	  m_height(height)
+{
+	m_view = upload(device, pixels, width, height);
 
 	if (m_view == nullptr)
 	{

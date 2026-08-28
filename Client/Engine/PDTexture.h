@@ -9,6 +9,7 @@ class PDTexture
 public:
 	PDTexture() = default;
 	PDTexture(ID3D11Device *device, std::string const &path);
+	PDTexture(ID3D11Device *device, unsigned char const *pixels, int width, int height);
 	~PDTexture();
 
 	PDTexture(PDTexture const &) = delete;
