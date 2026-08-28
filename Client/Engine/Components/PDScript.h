@@ -15,4 +15,5 @@ struct PDScript
 
 	sol::table self;
 	std::unordered_map<std::string, Module> modules;
+	bool busy = false;
 };

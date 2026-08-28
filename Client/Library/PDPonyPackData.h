@@ -34,6 +34,19 @@ struct PDPonyBehaviorGroup
 	std::string name;
 };
 
+struct PDPonyInteractionData
+{
+	std::string id;
+	std::string activation;
+
+	std::vector<std::string> targets;
+	std::vector<std::string> behaviors;
+
+	float chance = 0.0f;
+	float proximityPx = 0.0f;
+	float reactivationDelaySeconds = 0.0f;
+};
+
 struct PDPonyPackData
 {
 	std::string id;
@@ -44,5 +57,6 @@ struct PDPonyPackData
 	std::unordered_map<std::string, PDPonyAnimationRef> animations;
 	std::vector<PDPonyBehaviorData> behaviors;
 	std::vector<PDPonyBehaviorGroup> groups;
+	std::vector<PDPonyInteractionData> interactions;
 	bool valid = false;
 };

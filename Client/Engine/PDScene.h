@@ -70,12 +70,20 @@ public:
 private:
 	static constexpr int MaxScriptErrors = 3;
 
+	struct Invite
+	{
+		std::uint32_t from = 0;
+		std::string behavior;
+	};
+
 	PDPonyPackData const *pack(std::string const &packPath);
 	void advanceAnimations(float deltaSeconds);
 	void writeSpriteFromAnimation(PDAnimation const &animation, PDSprite &sprite) const;
 
 	bool playAnimation(entt::entity entity, std::string const &name, bool loop, bool restart);
 	void setFacing(entt::entity entity, bool facingRight);
+	std::vector<PDNeighbor> neighbors(std::uint32_t entityId, float radius) const;
+	bool invite(std::uint32_t fromId, std::uint32_t toId, std::string const &behavior);
 	entt::entity resolve(std::uint32_t entityId) const;
 
 	PDDiagnostics *m_diagnostics = nullptr;
@@ -85,6 +93,7 @@ private:
 	std::unordered_map<std::string, PDPonyPackData> m_packs;
 	PDLua m_lua;
 	entt::registry m_registry;
+	std::unordered_map<std::uint32_t, Invite> m_invites;
 
 	entt::entity m_hovered = entt::null;
 	entt::entity m_dragged = entt::null;

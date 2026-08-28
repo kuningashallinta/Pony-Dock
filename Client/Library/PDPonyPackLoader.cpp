@@ -36,6 +36,27 @@ static bool boolOr(nlohmann::json const &object, char const *key, bool fallback)
 	return found != object.end() and found->is_boolean() ? found->get<bool>() : fallback;
 }
 
+static std::vector<std::string> stringArray(nlohmann::json const &object, char const *key)
+{
+	std::vector<std::string> values;
+	auto const found = object.find(key);
+
+	if (found == object.end() or not found->is_array())
+	{
+		return values;
+	}
+
+	for (nlohmann::json const &entry : *found)
+	{
+		if (entry.is_string())
+		{
+			values.push_back(entry.get<std::string>());
+		}
+	}
+
+	return values;
+}
+
 static std::string absolutePath(std::filesystem::path const &packPath, std::string const &relative)
 {
 	if (relative.empty())
@@ -119,6 +140,40 @@ static void readBehaviorGroups(nlohmann::json const &document, PDPonyPackData &o
 	{
 		return a.id < b.id;
 	});
+}
+
+static void readInteractions(nlohmann::json const &document, PDPonyPackData &outData)
+{
+	auto const interactions = document.find("interactions");
+
+	if (interactions == document.end() or not interactions->is_array())
+	{
+		return;
+	}
+
+	for (nlohmann::json const &entry : *interactions)
+	{
+		if (not entry.is_object())
+		{
+			continue;
+		}
+
+		PDPonyInteractionData interaction;
+		interaction.id = stringOr(entry, "id", std::string());
+		interaction.activation = stringOr(entry, "activation", "One");
+		interaction.targets = stringArray(entry, "targets");
+		interaction.behaviors = stringArray(entry, "behaviors");
+		interaction.chance = numberOr(entry, "chance", 0.0f);
+		interaction.proximityPx = numberOr(entry, "proximityPx", 0.0f);
+		interaction.reactivationDelaySeconds = numberOr(entry, "reactivationDelayMs", 0.0f) / 1000.0f;
+
+		if (interaction.id.empty() or interaction.targets.empty() or interaction.behaviors.empty())
+		{
+			continue;
+		}
+
+		outData.interactions.push_back(std::move(interaction));
+	}
 }
 
 bool loadPonyPack(std::string const &packPath, PDPonyPackData &outData, std::string &outError)
@@ -257,6 +312,7 @@ bool loadPonyPack(std::string const &packPath, PDPonyPackData &outData, std::str
 	}
 
 	readBehaviorGroups(document, outData);
+	readInteractions(document, outData);
 
 	outData.valid = true;
 

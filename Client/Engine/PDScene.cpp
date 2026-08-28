@@ -31,6 +31,16 @@ void PDScene::initialize(
 	{
 		setFacing(resolve(entityId), facingRight);
 	});
+
+	m_lua.setNeighborHandler([this](std::uint32_t entityId, float radius)
+	{
+		return neighbors(entityId, radius);
+	});
+
+	m_lua.setInviteHandler([this](std::uint32_t fromId, std::uint32_t toId, std::string const &behavior)
+	{
+		return invite(fromId, toId, behavior);
+	});
 }
 
 void PDScene::reloadPack(std::string const &packPath)
@@ -127,6 +137,75 @@ void PDScene::updateMouse(int x, int y, bool pressed, bool released)
 bool PDScene::wantsMouse() const
 {
 	return m_registry.valid(m_hovered) or m_registry.valid(m_dragged);
+}
+
+std::vector<PDNeighbor> PDScene::neighbors(std::uint32_t entityId, float radius) const
+{
+	std::vector<PDNeighbor> found;
+	entt::entity const source = resolve(entityId);
+
+	if (source == entt::null or radius <= 0.0f)
+	{
+		return found;
+	}
+
+	PDPosition const &origin = m_registry.get<PDPosition>(source);
+	PDSprite const &originSprite = m_registry.get<PDSprite>(source);
+	float const originX = origin.x - originSprite.offsetX + originSprite.width * 0.5f;
+	float const originY = origin.y - originSprite.offsetY + originSprite.height * 0.5f;
+
+	auto view = m_registry.view<PDPosition const, PDSprite const, PDPack const, PDScript const>();
+
+	for (auto const entity : view)
+	{
+		PDPack const &packComponent = view.get<PDPack const>(entity);
+
+		if (entity == source or packComponent.data == nullptr)
+		{
+			continue;
+		}
+
+		PDPosition const &position = view.get<PDPosition const>(entity);
+		PDSprite const &sprite = view.get<PDSprite const>(entity);
+		float const x = position.x - sprite.offsetX + sprite.width * 0.5f;
+		float const y = position.y - sprite.offsetY + sprite.height * 0.5f;
+
+		if ((x - originX) * (x - originX) + (y - originY) * (y - originY) > radius * radius)
+		{
+			continue;
+		}
+
+		PDNeighbor neighbor;
+		neighbor.id = static_cast<std::uint32_t>(entity);
+		neighbor.pack = packComponent.data->id;
+		neighbor.x = x;
+		neighbor.y = y;
+		neighbor.busy = view.get<PDScript const>(entity).busy;
+
+		found.push_back(std::move(neighbor));
+	}
+
+	return found;
+}
+
+bool PDScene::invite(std::uint32_t fromId, std::uint32_t toId, std::string const &behavior)
+{
+	if (behavior.empty() or fromId == toId or resolve(toId) == entt::null)
+	{
+		return false;
+	}
+
+	if (m_invites.find(toId) != m_invites.end())
+	{
+		return false;
+	}
+
+	Invite pending;
+	pending.from = fromId;
+	pending.behavior = behavior;
+	m_invites.emplace(toId, std::move(pending));
+
+	return true;
 }
 
 entt::entity PDScene::resolve(std::uint32_t entityId) const
@@ -382,6 +461,7 @@ void PDScene::advanceAnimations(float deltaSeconds)
 
 void PDScene::clear()
 {
+	m_invites.clear();
 	m_hovered = entt::null;
 	m_dragged = entt::null;
 	m_registry.clear();
@@ -396,6 +476,9 @@ void PDScene::tick(
 	advanceAnimations(deltaSeconds);
 
 	m_lua.beginFrame(static_cast<float>(boundsWidth), static_cast<float>(boundsHeight), monitors);
+
+	std::unordered_map<std::uint32_t, Invite> const delivered = std::move(m_invites);
+	m_invites.clear();
 
 	std::vector<std::string> const scripts = m_lua.modules();
 	auto view = m_registry.view<PDPosition, PDSprite const, PDAnimation const, PDScript, PDLabel>();
@@ -418,6 +501,17 @@ void PDScene::tick(
 		script.self["animation_finished"] = animation.finished;
 		script.self["mouse_over"] = entity == m_hovered;
 		script.self["dragged"] = entity == m_dragged;
+
+		auto const invitation = delivered.find(static_cast<std::uint32_t>(entity));
+
+		if (invitation != delivered.end())
+		{
+			script.self["invited"] = m_lua.createInvite(invitation->second.from, invitation->second.behavior);
+		}
+		else
+		{
+			script.self["invited"] = sol::nil;
+		}
 
 		for (std::string const &path : scripts)
 		{
@@ -455,6 +549,8 @@ void PDScene::tick(
 
 			state.errorCount = 0;
 		}
+
+		script.busy = script.self["busy"].get_or(false);
 
 		PDLabel &label = view.get<PDLabel>(entity);
 		std::string const text = script.self["label"].get_or(std::string());

@@ -2,10 +2,6 @@ local pd = require("pd")
 
 local core = {}
 
-local MinDuration = 0.25
-local MaxLinkDepth = 16
-local AscendAngleMin = 30
-local AscendAngleMax = 75
 
 core.generation = 0
 
@@ -14,6 +10,10 @@ settings.checkbox("flying", "Allow flying", true)
 settings.checkbox("extended", "Allow extended behaviors", true)
 settings.dropdown("start", "Spawn position", {"Anywhere", "Ground", "Center"}, "Anywhere")
 settings.checkbox("names", "Show names on hover", true)
+settings.slider("hold", "Minimum behavior seconds", 0.25, 0.05, 3.0)
+settings.slider("links", "Linked behavior limit", 16, 1, 64)
+settings.slider("climb_min", "Minimum climb angle", 30, 0, 90)
+settings.slider("climb_max", "Maximum climb angle", 75, 0, 90)
 
 settings.button("shuffle", "Reshuffle behaviors", function()
 	core.generation = core.generation + 1
@@ -122,7 +122,7 @@ local function enter(self, behavior, depth)
 
 	local minimum = behavior.duration_min
 	local maximum = math.max(behavior.duration_max, minimum)
-	self.timer = math.max(MinDuration, minimum + math.random() * (maximum - minimum))
+	self.timer = math.max(self:setting("hold"), minimum + math.random() * (maximum - minimum))
 
 	local horizontal, vertical = wants(self, behavior.movement)
 	local speed = behavior.speed * (self:setting("speed") or 1.0)
@@ -135,7 +135,9 @@ local function enter(self, behavior, depth)
 		local verticalSign = pd.sign()
 
 		if vertical then
-			local angle = math.rad(AscendAngleMin + math.random() * (AscendAngleMax - AscendAngleMin))
+			local low = self:setting("climb_min")
+			local high = math.max(self:setting("climb_max"), low)
+			local angle = math.rad(low + math.random() * (high - low))
 			self.vx = math.cos(angle) * horizontalSign * speed
 			self.vy = math.sin(angle) * verticalSign * speed
 		elseif horizontal then
@@ -193,7 +195,7 @@ end
 local function advance(self)
 	local linked = self.behavior.linked
 
-	if linked ~= nil and self.link_depth < MaxLinkDepth then
+	if linked ~= nil and self.link_depth < self:setting("links") then
 		local next_behavior = self.pack.by_id[linked]
 
 		if next_behavior ~= nil then
@@ -250,6 +252,17 @@ function core.tick(self, dt)
 		self.label = self.pack.name
 	else
 		self.label = nil
+	end
+
+	if self.request ~= nil then
+		local behavior = self.pack.by_id[self.request]
+		self.request = nil
+
+		if behavior ~= nil and not self.dragged then
+			enter(self, behavior, 0)
+
+			return
+		end
 	end
 
 	if self.generation ~= core.generation then

@@ -58,6 +58,41 @@ void PDLua::initialize(std::string const &scriptsRoot, PDDiagnostics &diagnostic
 		m_facingHandler(self["id"].get<std::uint32_t>(), facing != "left");
 	};
 
+	m_metatable["nearby"] = [this](sol::table self, float radius)
+	{
+		sol::table list = m_lua.create_table();
+
+		if (not m_neighborHandler)
+		{
+			return list;
+		}
+
+		std::vector<PDNeighbor> const found = m_neighborHandler(self["id"].get<std::uint32_t>(), radius);
+
+		for (std::size_t i = 0; i < found.size(); i += 1)
+		{
+			sol::table neighbor = m_lua.create_table();
+			neighbor["id"] = found[i].id;
+			neighbor["pack"] = found[i].pack;
+			neighbor["x"] = found[i].x;
+			neighbor["y"] = found[i].y;
+			neighbor["busy"] = found[i].busy;
+			list[i + 1] = neighbor;
+		}
+
+		return list;
+	};
+
+	m_metatable["invite"] = [this](sol::table self, std::uint32_t id, std::string const &behavior)
+	{
+		if (not m_inviteHandler)
+		{
+			return false;
+		}
+
+		return m_inviteHandler(self["id"].get<std::uint32_t>(), id, behavior);
+	};
+
 	m_metatable["log"] = [this](sol::table self, std::string const &message)
 	{
 		m_diagnostics->write("[entity " + std::to_string(self["id"].get<std::uint32_t>()) + "] " + message);
@@ -74,6 +109,16 @@ void PDLua::setPlayHandler(PlayHandler handler)
 void PDLua::setFacingHandler(FacingHandler handler)
 {
 	m_facingHandler = std::move(handler);
+}
+
+void PDLua::setNeighborHandler(NeighborHandler handler)
+{
+	m_neighborHandler = std::move(handler);
+}
+
+void PDLua::setInviteHandler(InviteHandler handler)
+{
+	m_inviteHandler = std::move(handler);
 }
 
 void PDLua::beginFrame(float boundsWidth, float boundsHeight, std::vector<PDRect> const &monitors)
@@ -120,6 +165,15 @@ sol::table PDLua::createSelf(std::uint32_t entityId, std::string const &packId)
 	return self;
 }
 
+sol::table PDLua::createInvite(std::uint32_t from, std::string const &behavior)
+{
+	sol::table invite = m_lua.create_table();
+	invite["from"] = from;
+	invite["behavior"] = behavior;
+
+	return invite;
+}
+
 sol::table PDLua::buildPackReal(PDPonyPackData const &pack)
 {
 	sol::table behaviors = m_lua.create_table();
@@ -163,12 +217,45 @@ sol::table PDLua::buildPackReal(PDPonyPackData const &pack)
 		groups[index + 1] = pack.groups[index].id;
 	}
 
+	sol::table interactions = m_lua.create_table();
+
+	for (std::size_t i = 0; i < pack.interactions.size(); i += 1)
+	{
+		PDPonyInteractionData const &source = pack.interactions[i];
+
+		sol::table targets = m_lua.create_table();
+
+		for (std::size_t j = 0; j < source.targets.size(); j += 1)
+		{
+			targets[j + 1] = source.targets[j];
+		}
+
+		sol::table behaviorIds = m_lua.create_table();
+
+		for (std::size_t j = 0; j < source.behaviors.size(); j += 1)
+		{
+			behaviorIds[j + 1] = source.behaviors[j];
+		}
+
+		sol::table interaction = m_lua.create_table();
+		interaction["id"] = source.id;
+		interaction["activation"] = source.activation;
+		interaction["targets"] = targets;
+		interaction["behaviors"] = behaviorIds;
+		interaction["chance"] = source.chance;
+		interaction["proximity"] = source.proximityPx;
+		interaction["delay"] = source.reactivationDelaySeconds;
+
+		interactions[i + 1] = interaction;
+	}
+
 	sol::table real = m_lua.create_table();
 	real["id"] = pack.id;
 	real["name"] = pack.name;
 	real["behaviors"] = behaviors;
 	real["by_id"] = byId;
 	real["groups"] = groups;
+	real["interactions"] = interactions;
 
 	return real;
 }

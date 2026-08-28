@@ -14,20 +14,35 @@
 
 class PDDiagnostics;
 
+struct PDNeighbor
+{
+	std::uint32_t id = 0;
+	std::string pack;
+
+	float x = 0.0f;
+	float y = 0.0f;
+	bool busy = false;
+};
+
 class PDLua
 {
 public:
 	using PlayHandler = std::function<bool(std::uint32_t, std::string const &, bool, bool)>;
 	using FacingHandler = std::function<void(std::uint32_t, bool)>;
+	using NeighborHandler = std::function<std::vector<PDNeighbor>(std::uint32_t, float)>;
+	using InviteHandler = std::function<bool(std::uint32_t, std::uint32_t, std::string const &)>;
 
 	void initialize(std::string const &scriptsRoot, PDDiagnostics &diagnostics, PDSettingsStore &settings);
 
 	void setPlayHandler(PlayHandler handler);
 	void setFacingHandler(FacingHandler handler);
+	void setNeighborHandler(NeighborHandler handler);
+	void setInviteHandler(InviteHandler handler);
 
 	void beginFrame(float boundsWidth, float boundsHeight, std::vector<PDRect> const &monitors);
 
 	sol::table createSelf(std::uint32_t entityId, std::string const &packId);
+	sol::table createInvite(std::uint32_t from, std::string const &behavior);
 	sol::table packTable(PDPonyPackData const &pack);
 	void refreshPackTable(PDPonyPackData const &pack);
 
@@ -84,6 +99,8 @@ private:
 
 	PlayHandler m_playHandler;
 	FacingHandler m_facingHandler;
+	NeighborHandler m_neighborHandler;
+	InviteHandler m_inviteHandler;
 
 	std::unordered_map<std::string, Module> m_modules;
 	std::unordered_map<std::string, PackTables> m_packTables;
