@@ -66,8 +66,7 @@ void PDScene::reloadPack(std::string const &packPath)
 		}
 
 		PDScript &script = view.get<PDScript>(entity);
-		script.spawned = false;
-		script.errorCount = 0;
+		script.modules.clear();
 	}
 
 	m_diagnostics->write("Reloaded pack " + existing->second.id);
@@ -146,8 +145,7 @@ void PDScene::reloadScripts()
 	for (auto const entity : view)
 	{
 		PDScript &script = view.get<PDScript>(entity);
-		script.spawned = false;
-		script.errorCount = 0;
+		script.modules.clear();
 	}
 }
 
@@ -178,7 +176,7 @@ PDPonyPackData const *PDScene::pack(std::string const &packPath)
 	return &m_packs.emplace(key, std::move(loaded)).first->second;
 }
 
-void PDScene::spawnEntity(std::string const &packPath, std::string const &scriptPath, float x, float y)
+void PDScene::spawnEntity(std::string const &packPath, float x, float y)
 {
 	PDPonyPackData const *const packData = pack(packPath);
 
@@ -197,8 +195,7 @@ void PDScene::spawnEntity(std::string const &packPath, std::string const &script
 	m_registry.emplace<PDLabel>(entity);
 
 	PDScript &script = m_registry.emplace<PDScript>(entity);
-	script.path = scriptPath;
-	script.self = m_lua.createSelf(static_cast<std::uint32_t>(entity), scriptPath, packData->id);
+	script.self = m_lua.createSelf(static_cast<std::uint32_t>(entity), packData->id);
 	script.self["pack"] = m_lua.packTable(*packData);
 
 	playAnimation(entity, packData->behaviors.front().animation, true, true);
@@ -400,17 +397,12 @@ void PDScene::tick(
 
 	m_lua.beginFrame(static_cast<float>(boundsWidth), static_cast<float>(boundsHeight), monitors);
 
+	std::vector<std::string> const scripts = m_lua.modules();
 	auto view = m_registry.view<PDPosition, PDSprite const, PDAnimation const, PDScript, PDLabel>();
 
 	for (auto const entity : view)
 	{
 		PDScript &script = view.get<PDScript>(entity);
-
-		if (script.errorCount >= MaxScriptErrors)
-		{
-			continue;
-		}
-
 		PDPosition &position = view.get<PDPosition>(entity);
 		PDSprite const &sprite = view.get<PDSprite const>(entity);
 		PDAnimation const &animation = view.get<PDAnimation const>(entity);
@@ -427,32 +419,42 @@ void PDScene::tick(
 		script.self["mouse_over"] = entity == m_hovered;
 		script.self["dragged"] = entity == m_dragged;
 
-		bool succeeded = true;
-
-		if (not script.spawned)
+		for (std::string const &path : scripts)
 		{
-			succeeded = m_lua.callSpawn(script.path, script.self);
-			script.spawned = true;
-		}
+			PDScript::Module &state = script.modules[path];
 
-		if (succeeded)
-		{
-			succeeded = m_lua.callTick(script.path, script.self, deltaSeconds);
-		}
-
-		if (not succeeded)
-		{
-			script.errorCount += 1;
-
-			if (script.errorCount >= MaxScriptErrors)
+			if (state.errorCount >= MaxScriptErrors)
 			{
-				m_diagnostics->write("Entity disabled after " + std::to_string(MaxScriptErrors) + " script errors: " + script.path);
+				continue;
 			}
 
-			continue;
-		}
+			bool succeeded = true;
 
-		script.errorCount = 0;
+			if (not state.spawned)
+			{
+				succeeded = m_lua.callSpawn(path, script.self);
+				state.spawned = true;
+			}
+
+			if (succeeded)
+			{
+				succeeded = m_lua.callTick(path, script.self, deltaSeconds);
+			}
+
+			if (not succeeded)
+			{
+				state.errorCount += 1;
+
+				if (state.errorCount >= MaxScriptErrors)
+				{
+					m_diagnostics->write("Module disabled after " + std::to_string(MaxScriptErrors) + " errors: " + path);
+				}
+
+				continue;
+			}
+
+			state.errorCount = 0;
+		}
 
 		PDLabel &label = view.get<PDLabel>(entity);
 		std::string const text = script.self["label"].get_or(std::string());

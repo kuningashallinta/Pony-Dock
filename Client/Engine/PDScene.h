@@ -32,7 +32,7 @@ public:
 		PDSettingsStore &settings,
 		std::string const &scriptsRoot);
 
-	void spawnEntity(std::string const &packPath, std::string const &scriptPath, float x, float y);
+	void spawnEntity(std::string const &packPath, float x, float y);
 	void clear();
 	void reloadScripts();
 	void reloadPack(std::string const &packPath);

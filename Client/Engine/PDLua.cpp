@@ -105,16 +105,14 @@ void PDLua::beginFrame(float boundsWidth, float boundsHeight, std::vector<PDRect
 	m_frame["monitors"] = areas;
 }
 
-sol::table PDLua::createSelf(std::uint32_t entityId, std::string const &scriptPath, std::string const &packId)
+sol::table PDLua::createSelf(std::uint32_t entityId, std::string const &packId)
 {
-	std::string const key = PDSettingsStore::moduleKey(m_scriptsRoot, scriptPath);
-
 	sol::table self = m_lua.create_table();
 	self["id"] = entityId;
 
-	self["setting"] = [this, key, packId](sol::this_state state, sol::table, std::string const &id)
+	self["setting"] = [this, packId](sol::this_state state, sol::table, std::string const &id)
 	{
-		return settingObject(state, key, packId, id);
+		return settingObject(state, m_currentModule, packId, id);
 	};
 
 	self[sol::metatable_key] = m_metatable;
@@ -421,6 +419,8 @@ bool PDLua::pressButton(std::string const &moduleKey, std::string const &setting
 		return false;
 	}
 
+	m_currentModule = moduleKey;
+
 	return report(moduleKey, handler->second());
 }
 
@@ -436,6 +436,7 @@ PDLua::Module *PDLua::module(std::string const &scriptPath)
 	std::string const key = PDSettingsStore::moduleKey(m_scriptsRoot, scriptPath);
 
 	Module created;
+	created.key = key;
 	created.environment = sol::environment(m_lua, sol::create, m_lua.globals());
 	created.environment["settings"] = createSettingsTable(key);
 
@@ -522,6 +523,8 @@ bool PDLua::callSpawn(std::string const &scriptPath, sol::table &self)
 		return true;
 	}
 
+	m_currentModule = target->key;
+
 	return report(scriptPath, target->spawn(self));
 }
 
@@ -540,6 +543,8 @@ bool PDLua::callTick(std::string const &scriptPath, sol::table &self, float delt
 
 		return false;
 	}
+
+	m_currentModule = target->key;
 
 	return report(scriptPath, target->tick(self, deltaSeconds));
 }
@@ -645,6 +650,23 @@ void PDLua::forgetPackage(std::string const &normalizedPath)
 	{
 		loaded.value()[name] = sol::nil;
 	}
+}
+
+std::vector<std::string> PDLua::modules() const
+{
+	std::vector<std::string> result;
+
+	for (auto const &entry : m_modules)
+	{
+		if (not entry.second.failed)
+		{
+			result.push_back(entry.first);
+		}
+	}
+
+	std::sort(result.begin(), result.end());
+
+	return result;
 }
 
 std::vector<std::string> PDLua::loadedScripts() const

@@ -183,7 +183,7 @@ void PDMainApplication::applyPendingScene()
 	{
 		for (int i = 0; i < entry.quantity; i += 1)
 		{
-			m_scene.spawnEntity(entry.packPath, coreScriptPath(), x, 0.0f);
+			m_scene.spawnEntity(entry.packPath, x, 0.0f);
 			x += 120.0f;
 		}
 	}

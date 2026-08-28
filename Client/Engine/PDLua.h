@@ -27,7 +27,7 @@ public:
 
 	void beginFrame(float boundsWidth, float boundsHeight, std::vector<PDRect> const &monitors);
 
-	sol::table createSelf(std::uint32_t entityId, std::string const &scriptPath, std::string const &packId);
+	sol::table createSelf(std::uint32_t entityId, std::string const &packId);
 	sol::table packTable(PDPonyPackData const &pack);
 	void refreshPackTable(PDPonyPackData const &pack);
 
@@ -42,11 +42,13 @@ public:
 	void reload();
 
 	std::vector<std::string> loadedScripts() const;
+	std::vector<std::string> modules() const;
 
 private:
 	struct Module
 	{
 		sol::environment environment;
+		std::string key;
 		sol::protected_function spawn;
 		sol::protected_function tick;
 		bool failed = false;
@@ -75,6 +77,7 @@ private:
 	sol::state m_lua;
 	PDDiagnostics *m_diagnostics = nullptr;
 	std::string m_scriptsRoot;
+	std::string m_currentModule;
 
 	sol::table m_metatable;
 	sol::table m_frame;

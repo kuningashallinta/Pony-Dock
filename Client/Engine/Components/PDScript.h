@@ -3,11 +3,16 @@
 #include <sol/sol.hpp>
 
 #include <string>
+#include <unordered_map>
 
 struct PDScript
 {
-	std::string path;
+	struct Module
+	{
+		int errorCount = 0;
+		bool spawned = false;
+	};
+
 	sol::table self;
-	int errorCount = 0;
-	bool spawned = false;
+	std::unordered_map<std::string, Module> modules;
 };
