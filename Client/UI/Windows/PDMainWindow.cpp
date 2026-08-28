@@ -1382,12 +1382,6 @@ void PDMainWindow::drawModuleSettings()
 	{
 		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::TextDim);
 		ImGui::TextWrapped("This module does not declare any settings.");
-		ImGui::Dummy(ImVec2(0.0f, 6.0f));
-		ImGui::TextWrapped("Add one at the top of the script:");
-		ImGui::PopStyleColor();
-
-		ImGui::PushStyleColor(ImGuiCol_Text, PDTheme::AccentText);
-		ImGui::TextWrapped("settings.slider(\"speed\", \"Speed\", 1.0, 0.1, 4.0)");
 		ImGui::PopStyleColor();
 	}
 	else if (declarations.empty())
